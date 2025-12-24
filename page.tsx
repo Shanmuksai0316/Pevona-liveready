@@ -168,7 +168,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black bg-opacity-40 lg:hidden"></div>
         <div className="relative z-10 flex flex-col gap-[16px] items-start max-w-[600px] text-white w-full">
           <div className="flex flex-col gap-[8px] items-start">
-            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">About Pevona</h2>
+            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">About Pevona</h2>
             <p className="font-manrope font-normal text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px] leading-[20px] sm:leading-[24px] md:leading-[26px] lg:leading-[32px]">Rooted in Trust. Driven by Expertise.</p>
           </div>
           <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] opacity-80">
@@ -208,15 +208,15 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:flex-row gap-[26px] items-center justify-center w-full max-w-[1100px]">
           <div className="flex-1 w-full border-t border-[rgba(0,0,0,0.12)] flex flex-col gap-[8px] items-center justify-center py-8 lg:p-[26px] text-center">
-            <p className="font-crimson font-bold text-[30px] sm:text-[36px] lg:text-[42px] text-[#002f57]">500+</p>
+            <p className="font-crimson font-bold text-[30px] md:text-[42px] text-[#002f57]">500+</p>
             <p className="font-manrope font-light text-[16px] sm:text-[18px] lg:text-[22px] text-[#333333]">properties sold</p>
           </div>
           <div className="flex-1 w-full border-t border-[rgba(0,0,0,0.12)] flex flex-col gap-[8px] items-center justify-center py-8 lg:p-[26px] text-center">
-            <p className="font-crimson font-bold text-[30px] sm:text-[36px] lg:text-[42px] text-[#002f57]">20</p>
+            <p className="font-crimson font-bold text-[30px] md:text-[42px] text-[#002f57]">20</p>
             <p className="font-manrope font-light text-[16px] sm:text-[18px] lg:text-[22px] text-[#333333]">years of experience</p>
           </div>
           <div className="flex-1 w-full border-t border-[rgba(0,0,0,0.12)] flex flex-col gap-[8px] items-center justify-center py-8 lg:p-[26px] text-center">
-            <p className="font-crimson font-bold text-[30px] sm:text-[36px] lg:text-[42px] text-[#002f57]">50+</p>
+            <p className="font-crimson font-bold text-[30px] md:text-[42px] text-[#002f57]">50+</p>
             <p className="font-manrope font-light text-[16px] sm:text-[18px] lg:text-[22px] text-[#333333]">Awards & Recognitions</p>
           </div>
         </div>
