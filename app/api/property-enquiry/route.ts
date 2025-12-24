@@ -23,7 +23,18 @@ export async function POST(request: NextRequest) {
     }
 
     // Save to Strapi
-    const enquiryData = {
+    const enquiryData: {
+      data: {
+        name: string;
+        email: string;
+        phone: string;
+        message: string;
+        property_slug: string;
+        property_title: string;
+        status: string;
+        property?: number;
+      };
+    } = {
       data: {
         name,
         email,
