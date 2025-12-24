@@ -203,38 +203,6 @@ export default function Navbar() {
           {navLinks.map((link) => {
             const isDropdownOpen = openDropdown === link.name;
             
-            // Use PropertyManagementDropdown component for Property Management on mobile
-            if (link.name === "Property Management" && 'hasDropdown' in link && link.hasDropdown && 'submenu' in link) {
-              return (
-                <div key={link.name} className="border-b border-gray-100">
-                  <PropertyManagementDropdown
-                    className="w-full"
-                    property1={isDropdownOpen ? "Variant2" : "Default"}
-                    items={link.submenu?.map(item => ({ name: item.name, href: item.href })) || []}
-                    onToggle={(isOpen) => {
-                      setOpenDropdown(isOpen ? link.name : null);
-                    }}
-                  />
-                </div>
-              );
-            }
-
-            // Use InvestmentsDropdown component for Investments on mobile
-            if (link.name === "Investments" && 'hasDropdown' in link && link.hasDropdown && 'submenu' in link) {
-              return (
-                <div key={link.name} className="border-b border-gray-100">
-                  <InvestmentsDropdown
-                    className="w-full"
-                    property1={isDropdownOpen ? "Variant2" : "Default"}
-                    items={link.submenu?.map(item => ({ name: item.name, href: item.href })) || []}
-                    onToggle={(isOpen) => {
-                      setOpenDropdown(isOpen ? link.name : null);
-                    }}
-                  />
-                </div>
-              );
-            }
-            
             return (
               <div key={link.name} className="border-b border-gray-100">
                 {'hasDropdown' in link && link.hasDropdown ? (
