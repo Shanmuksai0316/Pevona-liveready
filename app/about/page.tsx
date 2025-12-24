@@ -514,33 +514,35 @@ export default function AboutUsPage() {
             <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">
               A Network of Reputed Clients
             </h2>
-            <p className="font-manrope text-[18px] leading-[28px]">
+            <p className="font-manrope text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] opacity-90">
               Our expanding client list reflects the confidence major brands place in our
               professionalism, expertise, and commitment to quality service.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6 w-full">
             {[
-              "/images/About us/our team - Card 1.png",
-              "/images/About us/our team - Card 2.png",
-              "/images/About us/our team - Card 3.png",
-              "/images/About us/our team - Card 4.png",
-              "/images/About us/Our Values - Integrity.png",
-              "/images/About us/Our Values - Approachability.png",
-              "/images/About us/Our Values - Collaboration.png",
-              "/images/About us/Our Values - Enterprise.png",
+              "/images/network-logos/A Network of Reputed Clients-img.svg",
+              "/images/network-logos/A Network of Reputed Clients-img1.svg.svg",
+              "/images/network-logos/A Network of Reputed Clients-img2.svg",
+              "/images/network-logos/A Network of Reputed Clients-img3.svg",
+              "/images/network-logos/A Network of Reputed Clients-img4.svg",
+              "/images/network-logos/A Network of Reputed Clients-img5.svg",
+              "/images/network-logos/A Network of Reputed Clients-img6.svg",
+              "/images/network-logos/A Network of Reputed Clients-img8.svg",
+              "/images/network-logos/A Network of Reputed Clients-img8 (1).svg",
             ].map((logo, index) => (
               <div
                 key={index}
-                className="bg-white rounded-[16px] h-[150px] flex items-center justify-center p-6"
+                className="bg-white rounded-[12px] sm:rounded-[16px] h-[100px] sm:h-[120px] md:h-[140px] lg:h-[150px] flex items-center justify-center p-4 sm:p-5 md:p-6 hover:shadow-lg transition-shadow"
               >
                 <Image
                   src={logo}
                   alt={`Client logo ${index + 1}`}
                   width={200}
                   height={80}
-                  className="object-contain max-h-full"
+                  className="object-contain max-w-full max-h-full w-auto h-auto"
+                  unoptimized
                 />
               </div>
             ))}
