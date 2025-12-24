@@ -83,7 +83,7 @@ rental market with good long-term fundamentals.`,
         {/* Left: intro + image */}
         <div className="lg:w-[40%] flex flex-col gap-8">
           <div className="space-y-4 text-center lg:text-left">
-            <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-0.06em] text-[#002f57]">
+            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-0.06em] text-[#002f57]">
               Quick Buying Guide
             </h2>
             <p className="font-manrope text-[18px] leading-[28px] text-[#333333]/80">
