@@ -52,7 +52,7 @@ export default function MaintenanceRepairPage() {
           </div>
 
           <div className="relative max-w-[880px] space-y-4 text-white mt-[120px]">
-            <h1 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] xl:text-[66px] leading-tight lg:leading-[66px] tracking-tight lg:tracking-[-1.98px]">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[66px] tracking-tight md:tracking-[-1.98px]">
               Property Care That Never Stops
             </h1>
             <p className="font-manrope text-[18px] leading-[28px] text-white/90">
@@ -78,7 +78,7 @@ export default function MaintenanceRepairPage() {
 
         <div className="flex-1 max-w-[589px] space-y-6">
           <div className="space-y-4">
-            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
               Proactive. Transparent. Reliable.
             </h2>
             <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
@@ -107,7 +107,7 @@ export default function MaintenanceRepairPage() {
       {/* Comprehensive Property Care */}
       <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] flex flex-col gap-[36px] items-center">
         <div className="text-center space-y-3">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Comprehensive Property Care
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
@@ -135,7 +135,7 @@ export default function MaintenanceRepairPage() {
       {/* How We Handle Maintenance Requests */}
       <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] flex flex-col gap-[80px]">
         <div className="space-y-9">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             How We Handle Maintenance Requests
           </h2>
 
@@ -206,7 +206,7 @@ export default function MaintenanceRepairPage() {
         {/* Maintenance That Meets UK Standards */}
         <div className="flex flex-col lg:flex-row items-center gap-[80px]">
           <div className="flex-1 max-w-[609px] space-y-4">
-            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
               Maintenance That Meets UK Standards
             </h2>
             <div className="space-y-3 font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
@@ -249,7 +249,7 @@ export default function MaintenanceRepairPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#002f57] via-[#002f57]/85 to-transparent" />
 
           <div className="absolute right-[98px] left-[98px] lg:left-auto lg:w-[620px] top-1/2 -translate-y-1/2 text-white space-y-4">
-            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">
+            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
               Working Together to Keep Properties Safe
             </h2>
             <p className="font-manrope text-[18px] leading-[28px]">
@@ -277,7 +277,7 @@ export default function MaintenanceRepairPage() {
         </div>
 
         <div className="flex-1 max-w-[609px] space-y-4">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Full Transparency, Every Step of the Way
           </h2>
           <div className="space-y-3 font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">

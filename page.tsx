@@ -107,7 +107,7 @@ export default function Home() {
           <div className="flex-grow flex items-center lg:items-end pb-8 lg:pb-20">
             <div className="flex flex-col items-center lg:items-start gap-[24px] sm:gap-[36px] w-full">
               <div className="flex flex-col items-center lg:items-start gap-[12px] sm:gap-[16px]">
-                <h1 className="font-crimson text-[22px] sm:text-[28px] md:text-[36px] lg:text-[66px] leading-tight lg:leading-[66px] text-white text-center lg:text-left tracking-tight lg:tracking-[-1.98px] max-w-[653px]">
+                <h1 className="font-crimson text-[22px] md:text-[66px] leading-tight md:leading-[66px] text-white text-center lg:text-left tracking-tight md:tracking-[-1.98px] max-w-[653px]">
                   Managing, Letting, & Investing - the Right Way
                 </h1>
                 <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[26px] lg:leading-[28px] text-white text-center lg:text-left max-w-[500px] px-4 sm:px-0">
@@ -199,7 +199,7 @@ export default function Home() {
 
       <div className="flex flex-col gap-[36px] items-center justify-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="flex flex-col gap-[10px] items-center text-center max-w-[800px]">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] text-[#002f57] tracking-tight lg:tracking-[-1.68px]">
+            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] text-[#002f57] tracking-tight md:tracking-[-1.68px]">
             Proven Results Backed by Experience
           </h2>
           <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[26px] lg:leading-[28px] text-[#333333]">
@@ -223,7 +223,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col gap-[26px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-        <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] text-[#002f57] text-center tracking-tight lg:tracking-[-1.68px] max-w-[562px]">
+        <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] text-[#002f57] text-center tracking-tight md:tracking-[-1.68px] max-w-[562px]">
           Solutions That Protect and Grow Your Assets.
         </h2>
         <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[26px] items-start justify-center w-full max-w-[1400px]">

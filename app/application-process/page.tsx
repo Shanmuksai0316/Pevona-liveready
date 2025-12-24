@@ -23,7 +23,7 @@ export default function ApplicationProcessPage() {
 
           {/* Hero copy */}
           <div className="relative max-w-[680px] mt-10 space-y-6 text-white">
-            <h1 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] xl:text-[66px] leading-tight lg:leading-[66px] tracking-tight lg:tracking-[-1.98px]">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[66px] tracking-tight md:tracking-[-1.98px]">
               A Simple, Transparent Rental Application Process
             </h1>
             <p className="font-manrope text-[18px] leading-[28px] text-white/90">
@@ -43,7 +43,7 @@ export default function ApplicationProcessPage() {
       {/* What to Expect */}
       <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
         <div className="flex-1 max-w-[589px] space-y-4">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             What to Expect
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
@@ -70,7 +70,7 @@ export default function ApplicationProcessPage() {
           <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px] text-[#002f57]">
             How It Works
           </p>
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Step-by-Step Application Process
           </h2>
           <div className="relative w-full max-w-[506px] h-[320px] rounded-[26px] overflow-hidden">
@@ -158,7 +158,7 @@ export default function ApplicationProcessPage() {
       {/* Compliance & Tenant Protection */}
       <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] mb-[140px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
         <div className="basis-0 grow min-w-px min-h-px space-y-4 max-w-[640px]">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Compliance &amp; Tenant Protection
           </h2>
           <div className="space-y-3 font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">

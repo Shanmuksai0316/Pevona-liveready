@@ -66,7 +66,7 @@ export default async function SellPage() {
 
           {/* Hero copy */}
           <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
-            <h1 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] xl:text-[66px] leading-tight lg:leading-[1.05] tracking-tight lg:tracking-[-0.06em]">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Sell your property with clarity and confidence
             </h1>
             <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
@@ -94,7 +94,7 @@ export default async function SellPage() {
             <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#0073B5]">
               How We Sell
             </p>
-            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] xl:text-[66px] leading-tight lg:leading-[1.05] tracking-tight lg:tracking-[-0.06em] text-[#002F57]">
+            <h2 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em] text-[#002F57]">
               A Simple 5-Step Process
             </h2>
             <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333333]">
@@ -162,7 +162,7 @@ export default async function SellPage() {
       <section className="bg-white py-[40px] sm:py-[60px] md:py-[80px] lg:py-[120px]">
         <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
           {/* Title */}
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] xl:text-[66px] leading-tight lg:leading-[1.05] tracking-tight lg:tracking-[-0.04em] text-[#002F57] text-center mb-[40px] sm:mb-[60px] md:mb-[80px]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.04em] text-[#002F57] text-center mb-[40px] sm:mb-[60px] md:mb-[80px]">
             What's Included
           </h2>
 
@@ -219,7 +219,7 @@ export default async function SellPage() {
       {/* Marketing Strategy */}
       <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
         <div className="flex-1 w-full max-w-[589px] space-y-4">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Marketing Strategy
           </h2>
           <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333] opacity-80">
@@ -259,7 +259,7 @@ export default async function SellPage() {
         </div>
 
         <div className="flex-1 w-full max-w-[589px] space-y-4 order-1 lg:order-2">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Legal &amp; Compliance Support
           </h2>
           <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333] opacity-80">
@@ -278,7 +278,7 @@ export default async function SellPage() {
       {/* Get an Accurate Market Valuation */}
       <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
         <div className="flex-1 w-full max-w-[589px] space-y-4">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Get an Accurate Market Valuation
           </h2>
           <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333] opacity-80">
@@ -307,7 +307,7 @@ export default async function SellPage() {
       {/* Properties List Section */}
       <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px]">
         <div className="max-w-[861px] text-center space-y-4 mb-9">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Featured Properties
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">

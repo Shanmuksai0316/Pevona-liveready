@@ -23,7 +23,7 @@ export default function HMOPage() {
 
           {/* Hero copy */}
           <div className="relative max-w-[780px] mt-10 space-y-6 text-white">
-            <h1 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] xl:text-[66px] leading-tight lg:leading-[1.05] tracking-tight lg:tracking-[-0.06em]">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               House of Multiple Occupation (HMO) Management
             </h1>
             <p className="font-manrope text-[18px] leading-[28px] text-white/90">
@@ -44,7 +44,7 @@ export default function HMOPage() {
       {/* What is an HMO */}
       <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px]">
         <div className="flex-1 max-w-[589px] space-y-4">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             What is an HMO?
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">

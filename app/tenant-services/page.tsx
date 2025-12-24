@@ -44,7 +44,7 @@ export default function TenantServicesPage() {
       {/* Renting with Confidence */}
       <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
         <div className="flex-1 max-w-[589px] space-y-4">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Renting with Confidence
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
@@ -78,7 +78,7 @@ export default function TenantServicesPage() {
         </div>
 
         <div className="flex-1 max-w-[600px] space-y-4">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Your Renting Journey
           </h2>
           <ul className="space-y-2 font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 list-disc list-inside">
@@ -109,7 +109,7 @@ export default function TenantServicesPage() {
       {/* Your Rights and Responsibilities */}
       <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] flex flex-col gap-[26px]">
         <div className="max-w-[974px] space-y-4 mx-auto text-left">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Your Rights and Responsibilities
           </h2>
           <div className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 space-y-[10px]">
@@ -158,7 +158,7 @@ export default function TenantServicesPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#002f57] to-transparent" />
 
           <div className="relative max-w-[520px] space-y-4 text-white">
-            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">
+            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
               Maintenance and Communication
             </h2>
             <p className="font-manrope text-[18px] leading-[28px]">

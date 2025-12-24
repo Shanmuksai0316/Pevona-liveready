@@ -55,7 +55,7 @@ export default function ComplianceLicensingPage() {
           </div>
 
           <div className="relative max-w-[880px] space-y-4 text-white mt-[120px]">
-            <h1 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] xl:text-[66px] leading-tight lg:leading-[66px] tracking-tight lg:tracking-[-1.98px]">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[66px] tracking-tight md:tracking-[-1.98px]">
               Protecting Properties Through Full Compliance
             </h1>
             <p className="font-manrope text-[18px] leading-[28px] text-white/90">
@@ -80,7 +80,7 @@ export default function ComplianceLicensingPage() {
         </div>
 
         <div className="flex-1 max-w-[589px] space-y-4">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Our Commitment to Compliance
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
@@ -94,7 +94,7 @@ export default function ComplianceLicensingPage() {
 
       {/* Key Compliance Areas */}
       <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] flex flex-col gap-[36px] items-center">
-        <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57] text-center">
+        <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] text-center">
           Key Compliance Areas
         </h2>
 
@@ -140,7 +140,7 @@ export default function ComplianceLicensingPage() {
         <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center text-white">
           <div className="flex-1 max-w-[621px] space-y-[24px]">
             <div className="space-y-4">
-              <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">
+              <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
                 How We Manage Compliance
               </h2>
               <p className="font-manrope text-[18px] leading-[28px] text-white/80">

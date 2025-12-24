@@ -347,7 +347,7 @@ export default function AboutUsPage() {
           <div className="flex flex-col lg:flex-row gap-[78px] items-center">
             <div className="flex-1 max-w-[672px] space-y-[36px]">
               <div className="space-y-4">
-                <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-white">
+                <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-white">
                   Our Services
                 </h2>
                 <p className="font-manrope text-[22px] leading-[32px] text-white opacity-80">
@@ -414,7 +414,7 @@ export default function AboutUsPage() {
         </div>
 
         <div className="flex-1 space-y-0">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57] mb-[36px]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] mb-[36px]">
             Our Values
           </h2>
           <div className="space-y-0">
@@ -439,7 +439,7 @@ export default function AboutUsPage() {
       {false && (
       <section className="max-w-[1300px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
         <div className="text-center space-y-4 max-w-[942px]">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Our Team
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333]">
@@ -475,7 +475,7 @@ export default function AboutUsPage() {
       {/* Recognized by Leading Authorities */}
       <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[40px] 1300:gap-[150px] items-center">
         <div className="flex-1 max-w-[507px] space-y-4">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Recognized by Leading Authorities
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333]">
@@ -511,7 +511,7 @@ export default function AboutUsPage() {
       <section className="bg-[#002f57] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] py-[60px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="max-w-[1296px] mx-auto flex flex-col gap-[36px] items-center">
           <div className="text-center space-y-4 max-w-[942px] text-white">
-            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">
+            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
               A Network of Reputed Clients
             </h2>
             <p className="font-manrope text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] opacity-90">
@@ -643,7 +643,7 @@ export default function AboutUsPage() {
       {/* Testimonials */}
       <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[150px] flex flex-col gap-[50px] items-center w-full">
         <div className="text-center space-y-4 max-w-[942px]">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Experiences That Inspire Confidence
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333]">
@@ -748,7 +748,7 @@ export default function AboutUsPage() {
         </div>
 
         <div className="relative z-10 max-w-[618px] pt-[105px] pb-[105px] space-y-4 text-white">
-          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">
+            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
             Environmental &amp;
             <br />
             Social Governance (ESG)
