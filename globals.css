@@ -55,19 +55,25 @@ body {
 
 /* Mobile heading size corrections */
 @media (max-width: 640px) {
-  .font-crimson.text-\[26px\] {
+  /* 26px → 22px on mobile */
+  h3.font-crimson[class*="text-[26px]"],
+  .font-crimson[class*="text-[26px]"]:not([class*="md:text-"]):not([class*="sm:text-"]) {
     font-size: 22px !important;
   }
   
-  .font-crimson.text-\[22px\] {
+  /* 22px → 16px on mobile */
+  .font-crimson[class*="text-[22px]"]:not([class*="md:text-"]):not([class*="sm:text-"]) {
     font-size: 16px !important;
   }
   
-  .font-crimson.text-\[40px\] {
+  /* 40px → 22px on mobile */
+  h1.font-crimson[class*="text-[40px]"]:not([class*="md:text-"]):not([class*="sm:text-"]),
+  h2.font-crimson[class*="text-[40px]"]:not([class*="md:text-"]):not([class*="sm:text-"]) {
     font-size: 22px !important;
   }
   
-  .font-crimson.text-\[42px\] {
+  /* 42px → 30px on mobile */
+  .font-crimson[class*="text-[42px]"]:not([class*="md:text-"]):not([class*="sm:text-"]) {
     font-size: 30px !important;
   }
 }
