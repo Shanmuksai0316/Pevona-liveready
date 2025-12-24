@@ -648,9 +648,9 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
         </div>
       </section>
 
-      {/* Location */}
+      {/* Location - At bottom */}
       {(attributes.map_embed || fullAddress || (attributes.latitude && attributes.longitude)) && (
-        <section className="bg-gray-50 border-t border-gray-100">
+        <section className="bg-gray-50 border-t border-gray-200 mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
           <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-10 md:py-14">
             <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
               Location
