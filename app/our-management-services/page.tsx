@@ -333,9 +333,15 @@ export default function OurManagementServicesPage() {
                   "GDPR & Data Privacy",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3 min-w-[220px]">
-                    <span className="inline-flex items-center justify-center size-[26px] rounded-full bg-white/5 border border-white/30">
-                      <span className="inline-block size-[14px] rounded-full bg-[#4ade80]" />
-                    </span>
+                    <div className="relative size-[26px] flex-shrink-0">
+                      <Image
+                        src="/images/icons/check-mark_5290058 1.png"
+                        alt="Checkmark"
+                        fill
+                        className="object-contain"
+                        unoptimized
+                      />
+                    </div>
                     <p className="font-manrope text-[18px] leading-[28px] text-white">
                       {item}
                     </p>
@@ -365,8 +371,14 @@ export default function OurManagementServicesPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] px-8 py-10 space-y-6">
-            <div className="inline-flex items-center justify-center size-[36px] rounded-full bg-[#FCE6E9]">
-              <span className="inline-block size-5 rounded-full bg-[#002f57]" />
+            <div className="relative size-[36px] flex-shrink-0">
+              <Image
+                src="/images/icons/time saving efficiency.png"
+                alt="Time-Saving Efficiency"
+                fill
+                className="object-contain"
+                unoptimized
+              />
             </div>
             <div className="space-y-3">
               <h3 className="font-crimson text-[24px] md:text-[26px] leading-[30px] text-[#002f57]">
@@ -380,8 +392,14 @@ export default function OurManagementServicesPage() {
           </article>
 
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] px-8 py-10 space-y-6">
-            <div className="inline-flex items-center justify-center size-[36px] rounded-full bg-[#FCE6E9]">
-              <span className="inline-block size-5 rounded-full bg-[#002f57]" />
+            <div className="relative size-[36px] flex-shrink-0">
+              <Image
+                src="/images/icons/check-mark_5290058 1.png"
+                alt="Compliance Confidence"
+                fill
+                className="object-contain"
+                unoptimized
+              />
             </div>
             <div className="space-y-3">
               <h3 className="font-crimson text-[24px] md:text-[26px] leading-[30px] text-[#002f57]">
@@ -395,8 +413,14 @@ export default function OurManagementServicesPage() {
           </article>
 
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] px-8 py-10 space-y-6">
-            <div className="inline-flex items-center justify-center size-[36px] rounded-full bg-[#FCE6E9]">
-              <span className="inline-block size-5 rounded-full bg-[#002f57]" />
+            <div className="relative size-[36px] flex-shrink-0">
+              <Image
+                src="/images/icons/transparent operations.png"
+                alt="Transparent Operations"
+                fill
+                className="object-contain"
+                unoptimized
+              />
             </div>
             <div className="space-y-3">
               <h3 className="font-crimson text-[24px] md:text-[26px] leading-[30px] text-[#002f57]">
