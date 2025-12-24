@@ -296,10 +296,11 @@ export default async function SellPage() {
 
         <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">
           <Image
-            src="/images/Marketing Strategy img.png"
+            src="/images/Sell/2nd_sec_image_-_1.png"
             alt="Market valuation"
             fill
             className="object-cover"
+            unoptimized
           />
         </div>
       </section>
