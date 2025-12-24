@@ -61,7 +61,7 @@ rental market with good long-term fundamentals.`,
           </div>
 
           <div className="relative max-w-[700px] mt-10 space-y-6 text-white">
-            <h1 className="font-crimson text-[40px] md:text-[56px] lg:text-[66px] leading-[1.05] tracking-[-0.06em]">
+            <h1 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] xl:text-[66px] leading-tight lg:leading-[1.05] tracking-tight lg:tracking-[-0.06em]">
               Buy with Clarity – Guidance, Areas &amp; Property Search in One Place
             </h1>
             <p className="font-manrope text-[18px] leading-[28px]">
@@ -126,7 +126,7 @@ rental market with good long-term fundamentals.`,
       <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[140px] flex flex-col lg:flex-row items-center gap-[70px]">
         <div className="lg:w-[50%] space-y-8">
           <div className="space-y-4">
-            <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-0.06em] text-[#002f57]">
+            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-0.06em] text-[#002f57]">
               How We Help You Find the Right Property
             </h2>
             <p className="font-manrope text-[18px] leading-[28px] text-[#333333]/80">
@@ -172,7 +172,7 @@ rental market with good long-term fundamentals.`,
       <section className="mt-[160px] w-full bg-[#002f57] py-[80px]">
         <div className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] text-white space-y-10">
           <div className="text-center space-y-3">
-            <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-0.06em]">
+            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-0.06em]">
               Area Insights
             </h2>
             <p className="font-manrope text-[18px] leading-[28px] opacity-80 max-w-[720px] mx-auto">
@@ -290,7 +290,7 @@ rental market with good long-term fundamentals.`,
         </div>
 
         <div className="lg:w-[50%] space-y-6">
-          <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-0.06em] text-[#002f57]">
+          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-0.06em] text-[#002f57]">
             Preparing to Buy – Quick Checklist
           </h2>
           <ul className="font-manrope text-[18px] leading-[28px] text-[#333333]/80 space-y-2">
