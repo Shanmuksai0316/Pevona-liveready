@@ -74,12 +74,12 @@ export default function PropertiesFilterSection({
   return (
     <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px]">
       {/* Search Filter */}
-      <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] px-[36px] py-[26px] space-y-[10px]">
+      <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[12px] sm:rounded-[16px] px-4 sm:px-6 md:px-[36px] py-4 sm:py-6 md:py-[26px] space-y-4 sm:space-y-6 md:space-y-[10px]">
         {/* Top row: Location, Min Price, Max Price, Beds, Type, Apply/Clear */}
         <div className="flex flex-wrap items-end gap-4 lg:gap-6">
           {/* Location */}
-          <div className="flex-1 min-w-[200px]">
-            <label className="block font-crimson font-semibold text-[18px] leading-[28px] text-[#002f57] mb-[30px] pl-[10px]">
+          <div className="flex-1 min-w-full sm:min-w-[200px]">
+            <label className="block font-crimson font-semibold text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#002f57] mb-3 sm:mb-4 md:mb-[30px] pl-[10px]">
               Location
             </label>
             <input
@@ -87,22 +87,22 @@ export default function PropertiesFilterSection({
               placeholder="Address, postcode or city"
               value={locationQuery}
               onChange={(e) => setLocationQuery(e.target.value)}
-              className="w-full bg-[#FAFAFA] rounded-[16px] px-4 py-[10px] font-manrope text-[14px] leading-[24px] text-[#333] placeholder:text-[#333]/60 outline-none"
+              className="w-full bg-[#FAFAFA] rounded-[12px] sm:rounded-[16px] px-3 sm:px-4 py-2 sm:py-[10px] font-manrope text-[13px] sm:text-[14px] leading-[20px] sm:leading-[24px] text-[#333] placeholder:text-[#333]/60 outline-none"
             />
           </div>
 
           {/* Min Price */}
-          <div className="w-[130px]">
-            <label className="block font-crimson font-semibold text-[18px] leading-[28px] text-[#002f57] mb-[30px] pl-[10px]">
+          <div className="w-full sm:w-[130px]">
+            <label className="block font-crimson font-semibold text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#002f57] mb-3 sm:mb-4 md:mb-[30px] pl-[10px]">
               Min Price
             </label>
-            <div className="bg-[#FAFAFA] rounded-[16px] px-4 py-[10px] flex items-center justify-between">
+            <div className="bg-[#FAFAFA] rounded-[12px] sm:rounded-[16px] px-3 sm:px-4 py-2 sm:py-[10px] flex items-center justify-between">
               <select
                 value={minPrice ?? ""}
                 onChange={(e) =>
                   setMinPrice(e.target.value ? Number(e.target.value) : null)
                 }
-                className="bg-transparent outline-none font-manrope text-[14px] leading-[24px] text-[#333]/80 w-full"
+                className="bg-transparent outline-none font-manrope text-[13px] sm:text-[14px] leading-[20px] sm:leading-[24px] text-[#333]/80 w-full"
               >
                 <option value="">No min</option>
                 <option value={100000}>£100,000</option>
@@ -114,17 +114,17 @@ export default function PropertiesFilterSection({
           </div>
 
           {/* Max Price */}
-          <div className="w-[130px]">
-            <label className="block font-crimson font-semibold text-[18px] leading-[28px] text-[#002f57] mb-[30px] pl-[10px]">
+          <div className="w-full sm:w-[130px]">
+            <label className="block font-crimson font-semibold text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#002f57] mb-3 sm:mb-4 md:mb-[30px] pl-[10px]">
               Max Price
             </label>
-            <div className="bg-[#FAFAFA] rounded-[16px] px-4 py-[10px] flex items-center justify-between">
+            <div className="bg-[#FAFAFA] rounded-[12px] sm:rounded-[16px] px-3 sm:px-4 py-2 sm:py-[10px] flex items-center justify-between">
               <select
                 value={maxPrice ?? ""}
                 onChange={(e) =>
                   setMaxPrice(e.target.value ? Number(e.target.value) : null)
                 }
-                className="bg-transparent outline-none font-manrope text-[14px] leading-[24px] text-[#333]/80 w-full"
+                className="bg-transparent outline-none font-manrope text-[13px] sm:text-[14px] leading-[20px] sm:leading-[24px] text-[#333]/80 w-full"
               >
                 <option value="">No max</option>
                 <option value={250000}>£250,000</option>
@@ -136,17 +136,17 @@ export default function PropertiesFilterSection({
           </div>
 
           {/* Beds */}
-          <div className="w-[120px]">
-            <label className="block font-crimson font-semibold text-[18px] leading-[28px] text-[#002f57] mb-[30px] pl-[10px]">
+          <div className="w-full sm:w-[120px]">
+            <label className="block font-crimson font-semibold text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#002f57] mb-3 sm:mb-4 md:mb-[30px] pl-[10px]">
               Beds
             </label>
-            <div className="bg-[#FAFAFA] rounded-[16px] px-4 py-[10px] flex items-center justify-between">
+            <div className="bg-[#FAFAFA] rounded-[12px] sm:rounded-[16px] px-3 sm:px-4 py-2 sm:py-[10px] flex items-center justify-between">
               <select
                 value={beds ?? ""}
                 onChange={(e) =>
                   setBeds(e.target.value ? Number(e.target.value) : null)
                 }
-                className="bg-transparent outline-none font-manrope text-[14px] leading-[24px] text-[#333]/80 w-full"
+                className="bg-transparent outline-none font-manrope text-[13px] sm:text-[14px] leading-[20px] sm:leading-[24px] text-[#333]/80 w-full"
               >
                 <option value="">Any</option>
                 <option value={1}>1+ bed</option>
@@ -158,17 +158,17 @@ export default function PropertiesFilterSection({
           </div>
 
           {/* Type (maps to status) */}
-          <div className="w-[130px]">
-            <label className="block font-crimson font-semibold text-[18px] leading-[28px] text-[#002f57] mb-[30px] pl-[10px]">
+          <div className="w-full sm:w-[130px]">
+            <label className="block font-crimson font-semibold text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#002f57] mb-3 sm:mb-4 md:mb-[30px] pl-[10px]">
               Type
             </label>
-            <div className="bg-[#FAFAFA] rounded-[16px] px-4 py-[10px] flex items-center justify-between">
+            <div className="bg-[#FAFAFA] rounded-[12px] sm:rounded-[16px] px-3 sm:px-4 py-2 sm:py-[10px] flex items-center justify-between">
               <select
                 value={type}
                 onChange={(e) =>
                   setType(e.target.value as typeof type)
                 }
-                className="bg-transparent outline-none font-manrope text-[14px] leading-[24px] text-[#333]/80 w-full"
+                className="bg-transparent outline-none font-manrope text-[13px] sm:text-[14px] leading-[20px] sm:leading-[24px] text-[#333]/80 w-full"
               >
                 <option value="Any">Any</option>
                 <option value="For Sale">For Sale</option>
@@ -179,17 +179,17 @@ export default function PropertiesFilterSection({
           </div>
 
           {/* Apply & Clear */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
             <button
               type="button"
-              className="h-[48px] px-5 bg-[#29902E] rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] text-white hover:bg-[#0073B5] transition-colors"
+              className="h-[44px] sm:h-[48px] px-4 sm:px-5 bg-[#29902E] rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white hover:bg-[#0073B5] transition-colors flex-1 sm:flex-initial"
             >
               Apply
             </button>
             <button
               type="button"
               onClick={clearFilters}
-              className="font-manrope font-semibold text-[18px] leading-[26px] text-[#333] underline underline-offset-2"
+              className="font-manrope font-semibold text-[16px] sm:text-[18px] leading-[22px] sm:leading-[26px] text-[#333] underline underline-offset-2"
             >
               Clear
             </button>
@@ -198,17 +198,17 @@ export default function PropertiesFilterSection({
 
         {/* Bottom row: Focus tabs */}
         <div>
-          <label className="block font-crimson font-semibold text-[18px] leading-[28px] text-[#002f57] mb-[30px] pl-[10px]">
+          <label className="block font-crimson font-semibold text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#002f57] mb-4 sm:mb-[20px] md:mb-[30px] pl-[10px]">
             Focus
           </label>
-          <div className="inline-flex bg-[#FAFAFA] rounded-[16px] px-[10px] py-[8px] gap-1">
+          <div className="flex flex-wrap bg-[#FAFAFA] rounded-[12px] sm:rounded-[16px] px-2 sm:px-[10px] py-2 sm:py-[8px] gap-1 sm:gap-1">
             {(["All", "Residential", "Commercial", "Investment"] as FocusFilter[]).map(
               (item) => (
                 <button
                   key={item}
                   type="button"
                   onClick={() => setFocus(item)}
-                  className={`px-[6px] py-[2px] rounded-[10px] font-manrope text-[14px] leading-[24px] ${
+                  className={`px-3 sm:px-[6px] py-1.5 sm:py-[2px] rounded-[8px] sm:rounded-[10px] font-manrope text-[12px] sm:text-[13px] md:text-[14px] leading-[18px] sm:leading-[22px] md:leading-[24px] whitespace-nowrap ${
                     focus === item
                       ? "bg-[#002f57] text-white"
                       : "text-[#333] hover:bg-[#002f57]/10"
