@@ -263,7 +263,7 @@ export default function Navbar() {
                               setIsOpen(false);
                               setOpenDropdown(null);
                             }}
-                            className="block py-3 font-manrope font-medium text-[20px] text-[#666666] hover:text-[#002f57] transition-colors"
+                            className="block py-3 font-manrope font-medium text-[24px] text-[#666666] hover:text-[#002f57] transition-colors"
                           >
                             {item.name}
                           </Link>
