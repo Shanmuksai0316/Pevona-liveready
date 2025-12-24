@@ -13,7 +13,7 @@ export default async function FindingPropertyPage() {
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
         {/* Desktop Layout */}
-        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] min-h-[760px] flex items-center">
+        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] min-h-[760px] flex items-end pb-[120px]">
           {/* Background image (includes blue gradient baked into asset) */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] overflow-hidden rounded-b-[36px]">
