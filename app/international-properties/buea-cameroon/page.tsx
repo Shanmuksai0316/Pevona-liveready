@@ -54,7 +54,7 @@ export default function BueaCameroonProject() {
       <section className="relative h-[600px] sm:h-[700px] lg:h-[760px] mx-5 mb-20 rounded-b-[36px] overflow-hidden pt-[100px] lg:pt-[120px]">
         <div className="absolute inset-0">
           <Image
-            src="/images/International-Properties/Mask group (4).png"
+            src="/images/International-Properties/Group 7614.png"
             alt="Shopping Centre Buea Cameroon"
             fill
             className="object-cover"
@@ -83,7 +83,7 @@ export default function BueaCameroonProject() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-[139px] items-center">
           <div className="w-full lg:w-[638px] h-[400px] sm:h-[450px] lg:h-[512px] rounded-[36px] overflow-hidden relative flex-shrink-0">
             <Image
-              src="/images/International-Properties/Mask group (5).png"
+              src="/images/International-Properties/Mask group (4).png"
               alt="Shopping Centre exterior"
               fill
               className="object-cover"
@@ -130,7 +130,7 @@ export default function BueaCameroonProject() {
           </div>
           <div className="w-full lg:w-[609px] h-[350px] sm:h-[400px] lg:h-[450px] rounded-[26px] overflow-hidden border border-[rgba(0,0,0,0.12)] relative flex-shrink-0">
             <Image
-              src="/images/International-Properties/Mask group (3).png"
+              src="/images/International-Properties/Mask group (5).png"
               alt="Modern restaurant interior"
               fill
               className="object-cover"
@@ -145,7 +145,7 @@ export default function BueaCameroonProject() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-[100px] items-start">
           <div className="w-full lg:w-[650px] h-[400px] sm:h-[500px] lg:h-[656px] rounded-[36px] overflow-hidden relative flex-shrink-0">
             <Image
-              src="/images/International-Properties/Mask group (6).png"
+              src="/images/International-Properties/Mask group (3).png"
               alt="Masterplan overview"
               fill
               className="object-cover"
@@ -230,17 +230,42 @@ export default function BueaCameroonProject() {
 
           {/* Right Column - Images */}
           <div className="flex-1 flex flex-col gap-4 sm:gap-6 lg:gap-[26px]">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="w-full h-[200px] sm:h-[226px] rounded-[24px] overflow-hidden">
-                <Image
-                  src={`/images/International-Properties/Mask group (${i === 1 ? 3 : i === 2 ? 4 : i === 3 ? 5 : 6}).png`}
-                  alt={`Architectural detail ${i}`}
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
-            ))}
+            <div className="w-full h-[200px] sm:h-[226px] rounded-[24px] overflow-hidden relative">
+              <Image
+                src="/images/International-Properties/Mask group (4).png"
+                alt="Architectural detail 1"
+                fill
+                className="object-cover"
+                unoptimized
+              />
+            </div>
+            <div className="w-full h-[200px] sm:h-[226px] rounded-[24px] overflow-hidden relative">
+              <Image
+                src="/images/International-Properties/Mask group (5).png"
+                alt="Architectural detail 2"
+                fill
+                className="object-cover"
+                unoptimized
+              />
+            </div>
+            <div className="w-full h-[200px] sm:h-[226px] rounded-[24px] overflow-hidden relative">
+              <Image
+                src="/images/International-Properties/Mask group (6).png"
+                alt="Architectural detail 3"
+                fill
+                className="object-cover"
+                unoptimized
+              />
+            </div>
+            <div className="w-full h-[200px] sm:h-[226px] rounded-[24px] overflow-hidden relative">
+              <Image
+                src="/images/International-Properties/Mask group (3).png"
+                alt="Architectural detail 4"
+                fill
+                className="object-cover"
+                unoptimized
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -376,9 +401,9 @@ export default function BueaCameroonProject() {
                 ))}
               </ul>
             </div>
-            <div className="w-full lg:w-[520px] h-[300px] sm:h-[350px] rounded-[16px] overflow-hidden flex-shrink-0">
+            <div className="w-full lg:w-[520px] h-[300px] sm:h-[350px] rounded-[16px] overflow-hidden flex-shrink-0 relative">
               <Image
-                src="/images/International-Properties/Mask group (3).png"
+                src="/images/International-Properties/Mask group (6).png"
                 alt="Investment opportunity"
                 fill
                 className="object-cover"
