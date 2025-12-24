@@ -746,9 +746,10 @@ export default function AboutUsPage() {
           />
           {/* Desktop: Gradient overlay */}
           <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/60 to-transparent" />
-          {/* Mobile: Dark blue overlay covering bottom 2/3 */}
-          <div className="lg:hidden absolute inset-0 bg-[#002f57] opacity-90" style={{ clipPath: 'inset(33% 0 0 0)' }} />
         </div>
+
+        {/* Mobile: Dark blue overlay covering bottom portion (approximately 2/3) */}
+        <div className="lg:hidden absolute bottom-0 left-0 right-0 h-[66.67%] bg-[#002f57] opacity-95 z-[1]" />
 
         {/* Desktop Layout */}
         <div className="hidden lg:block relative z-10 max-w-[618px] pt-[105px] pb-[105px] space-y-4 text-white">
@@ -765,7 +766,7 @@ export default function AboutUsPage() {
           </p>
         </div>
 
-        {/* Mobile Layout */}
+        {/* Mobile Layout - positioned on the dark overlay */}
         <div className="lg:hidden absolute bottom-0 left-0 right-0 z-10 px-4 sm:px-6 py-6 sm:py-8 space-y-3 sm:space-y-4 text-white">
           <h2 className="font-crimson text-[22px] sm:text-[28px] leading-tight tracking-tight">
             Environmental &amp; Social Governance (ESG)
