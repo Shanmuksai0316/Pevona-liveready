@@ -85,7 +85,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full h-[700px] lg:h-[900px] overflow-hidden rounded-b-[36px]">
+      <div className="relative w-full h-[600px] sm:h-[700px] lg:h-[900px] overflow-hidden rounded-b-[36px]">
         <div className="absolute inset-0">
           <Image
             src="http://localhost:3845/assets/383fd913059b8fb108d652e2bd3bf80d19e18a3e.png"
@@ -102,27 +102,29 @@ export default function Home() {
 
 
 
-        <div className="relative z-10 flex flex-col h-full px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[37px] justify-end">
-          <div className="flex-grow flex items-end pb-12 lg:pb-20">
-            <div className="flex flex-col items-center lg:items-start gap-[36px] w-full">
-              <div className="flex flex-col items-center lg:items-start gap-[16px]">
-                <h1 className="font-crimson text-[40px] lg:text-[66px] leading-tight lg:leading-[66px] text-white text-center lg:text-left tracking-tight lg:tracking-[-1.98px] max-w-[653px]">
+        <div className="relative z-10 flex flex-col h-full px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[80px] sm:py-[100px] lg:py-[37px] justify-center lg:justify-end">
+          {/* Mobile: Centered content */}
+          <div className="flex-grow flex items-center lg:items-end pb-8 lg:pb-20">
+            <div className="flex flex-col items-center lg:items-start gap-[24px] sm:gap-[36px] w-full">
+              <div className="flex flex-col items-center lg:items-start gap-[12px] sm:gap-[16px]">
+                <h1 className="font-crimson text-[22px] sm:text-[28px] md:text-[36px] lg:text-[66px] leading-tight lg:leading-[66px] text-white text-center lg:text-left tracking-tight lg:tracking-[-1.98px] max-w-[653px]">
                   Managing, Letting, & Investing - the Right Way
                 </h1>
-                <p className="font-manrope font-normal text-[16px] lg:text-[18px] leading-[26px] lg:leading-[28px] text-white text-center lg:text-left max-w-[500px]">
+                <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[26px] lg:leading-[28px] text-white text-center lg:text-left max-w-[500px] px-4 sm:px-0">
                   Expert management, lettings, and investment opportunities across the UK - powered by transparency and modern compliance.
                 </p>
               </div>
-              <Link href="/about" className="bg-white px-[10px] py-[10px] rounded-[8px] w-full sm:w-[217px] h-[56px] inline-block text-center flex items-center justify-center">
-                <span className="font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57]">Speak To Our Team</span>
+              <Link href="/about" className="bg-white px-[10px] py-[10px] rounded-[8px] w-full sm:w-[217px] h-[48px] sm:h-[56px] inline-block text-center flex items-center justify-center">
+                <span className="font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#002f57]">Speak To Our Team</span>
               </Link>
             </div>
           </div>
 
-          <div className="flex flex-col gap-[16px] items-center lg:items-start px-0 lg:pl-[60px] pb-12 lg:pb-0 w-full">
-            <div className="h-[66px] w-[176px] relative">
+          {/* Social Proof Section - Mobile: Bottom, Desktop: Bottom left */}
+          <div className="flex flex-col gap-[12px] sm:gap-[16px] items-center lg:items-start px-0 lg:pl-[60px] pb-8 lg:pb-0 w-full">
+            <div className="h-[50px] sm:h-[66px] w-[140px] sm:w-[176px] relative">
               {[0, 1, 2, 3].map((i) => (
-                <div key={i} className="absolute w-[58px] h-[58px]" style={{ left: `${i * 37}px`, top: '4.35px' }}>
+                <div key={i} className="absolute w-[46px] sm:w-[58px] h-[46px] sm:h-[58px]" style={{ left: `${i * 29}px`, top: '2px' }}>
                   <Image
                     src={`http://localhost:3845/assets/${['dfa6305a9e48ea1ed03addef9eb64fb12bad5810', '411de54d61a7617902ad97c7fd9973fb72ec2506', '12b4974b719ef2c1b71d0fea78774c141bb45b0d', '2c44a0f83d50d3df5cc3ee99e6bf5a6051da2f67'][i]}.png`}
                     alt={`Avatar ${i + 1}`}
@@ -133,7 +135,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <p className="font-manrope font-semibold text-[18px] lg:text-[20px] leading-[28px] lg:leading-[30px] text-white text-center lg:text-left max-w-[450px]">
+            <p className="font-manrope font-semibold text-[14px] sm:text-[16px] lg:text-[20px] leading-[20px] sm:leading-[24px] lg:leading-[30px] text-white text-center lg:text-left max-w-[450px] px-4 sm:px-0">
               Thousands of residents have chosen our community to call home.
             </p>
           </div>

@@ -4,13 +4,18 @@
 
 @layer base {
   h1 {
-    font-size: clamp(2.8125rem, 2.445rem + 1.68vw, 4.125rem) !important;
+    font-size: clamp(2.8125rem, 2.1875rem + 3.125vw, 3.125rem) !important;
     line-height: 1.2 !important;
+  }
+  
+  h2 {
+    font-size: clamp(1.75rem, 1.5rem + 1.25vw, 1.875rem) !important;
   }
   
   /* Apply Manrope font to all paragraphs and lists */
   p {
     font-family: 'Manrope', sans-serif !important;
+    font-size: clamp(0.9375rem, 0.8125rem + 0.625vw, 1rem) !important;
   }
   
   ul, ol {
@@ -46,6 +51,25 @@ body {
 
 .font-crimson {
   font-family: 'Crimson Text', serif;
+}
+
+/* Mobile heading size corrections */
+@media (max-width: 640px) {
+  .font-crimson.text-\[26px\] {
+    font-size: 22px !important;
+  }
+  
+  .font-crimson.text-\[22px\] {
+    font-size: 16px !important;
+  }
+  
+  .font-crimson.text-\[40px\] {
+    font-size: 22px !important;
+  }
+  
+  .font-crimson.text-\[42px\] {
+    font-size: 30px !important;
+  }
 }
 
 /* Custom utilities */
