@@ -1,0 +1,302 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function PortfolioManagementPage() {
+  return (
+    <div className="bg-[#FAFAFA] min-h-screen">
+      {/* Hero Banner */}
+      <section className="relative w-full overflow-hidden">
+        <div className="relative max-w-[1560px] mx-auto px-6 lg:px-[130px] pt-[39px] pb-[628px]">
+          {/* Background with solid color and image */}
+          <div className="absolute inset-0 z-0">
+            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden bg-[#002f57]">
+              <Image
+                src="/images/Portfolio page/Portfolio_page_banne.png"
+                alt="House investments elements"
+                fill
+                className="object-cover opacity-80"
+                unoptimized
+              />
+            </div>
+          </div>
+
+          {/* Hero Content */}
+          <div className="relative max-w-[738px] mt-[255px] space-y-4 text-white">
+            <h1 className="font-crimson text-[66px] leading-[66px] tracking-[-1.98px]">
+              Build, Optimise &amp; Scale Your Property Portfolio
+            </h1>
+            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
+              Whether you own a single rental home or a multi-property portfolio, effective
+              management is essential for long-term value and sustained returns. Our approach is
+              structured around financial performance, compliance, tenant reliability, and ongoing
+              asset growth - helping investors increase yield, minimise void periods, and maintain
+              market stability.
+            </p>
+            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
+              We manage portfolios with complete transparency, regular reporting, and hands-on
+              operational support across the UK's rental landscape.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What Our Portfolio Management Covers */}
+      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col gap-[36px] items-center">
+        <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
+          What Our Portfolio Management Covers
+        </h2>
+
+        <div className="w-full space-y-[26px]">
+          {/* Top row - 2 cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {/* Portfolio Structuring & Planning */}
+            <div className="flex flex-col">
+              <div className="relative h-[300px] rounded-[16px] overflow-hidden">
+                <Image
+                  src="/images/Portfolio page/2nd_Our_Portfolio_img_-_1.png"
+                  alt="Real estate agent team analysis"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]" />
+                <div className="absolute bottom-0 left-0 right-0 px-[26px] py-[20px]">
+                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-white text-center">
+                    Portfolio Structuring &amp; Planning
+                  </h3>
+                </div>
+              </div>
+              <div className="px-5 py-0 mt-4">
+                <p className="font-manrope font-medium text-[16px] leading-[26px] text-[#333]">
+                  We review your current assets, income performance, area risk, and long-term
+                  objectives to create a data-driven growth strategy.
+                </p>
+              </div>
+            </div>
+
+            {/* Yield & Performance Monitoring */}
+            <div className="flex flex-col">
+              <div className="relative h-[300px] rounded-[16px] overflow-hidden">
+                <Image
+                  src="/images/Portfolio page/2nd_Our_Portfolio_img_-_2.png"
+                  alt="Finances elements wooden cubes"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]" />
+                <div className="absolute bottom-0 left-0 right-0 px-[26px] py-[20px]">
+                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-white text-center">
+                    Yield &amp; Performance Monitoring
+                  </h3>
+                </div>
+              </div>
+              <div className="px-5 py-0 mt-4">
+                <p className="font-manrope font-medium text-[16px] leading-[26px] text-[#333]">
+                  Ongoing tracking of rental income, expenses, occupancy rates, and value movement
+                  - with periodic reporting to keep you informed.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom row - 3 cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Risk Management & Compliance */}
+            <div className="flex flex-col">
+              <div className="relative h-[300px] rounded-[16px] overflow-hidden">
+                <Image
+                  src="/images/Portfolio page/2nd_Our_Portfolio_img_-_3.png"
+                  alt="Business hand typing tablet with checklist"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]" />
+                <div className="absolute bottom-0 left-0 right-0 px-[26px] py-[20px]">
+                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-white text-center">
+                    Risk Management &amp; Compliance
+                  </h3>
+                </div>
+              </div>
+              <div className="px-5 py-0 mt-4">
+                <p className="font-manrope font-medium text-[16px] leading-[26px] text-[#333]">
+                  End-to-end compliance oversight including documentation, rental legislation, HMO
+                  standards, tenancy laws and safety certification.
+                </p>
+              </div>
+            </div>
+
+            {/* Tenant & Operational Oversight */}
+            <div className="flex flex-col">
+              <div className="relative h-[300px] rounded-[16px] overflow-hidden">
+                <Image
+                  src="/images/Portfolio page/2nd_Our_Portfolio_img_-_4.png"
+                  alt="Jurist passing taking documents"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]" />
+                <div className="absolute bottom-0 left-0 right-0 px-[26px] py-[20px]">
+                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-white text-center">
+                    Tenant &amp; Operational Oversight
+                  </h3>
+                </div>
+              </div>
+              <div className="px-5 py-0 mt-4">
+                <p className="font-manrope font-medium text-[16px] leading-[26px] text-[#333]">
+                  Full coordination of tenant sourcing, referencing, property maintenance, renewals,
+                  and periodic inspections
+                </p>
+              </div>
+            </div>
+
+            {/* Growth Strategy & Expansion Support */}
+            <div className="flex flex-col">
+              <div className="relative h-[300px] rounded-[16px] overflow-hidden">
+                <Image
+                  src="/images/Portfolio page/2nd_Our_Portfolio_img_-_5.png"
+                  alt="Composite image manager presenting whiteboard"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]" />
+                <div className="absolute bottom-0 left-0 right-0 px-[26px] py-[20px]">
+                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-white text-center">
+                    Growth Strategy &amp; Expansion Support
+                  </h3>
+                </div>
+              </div>
+              <div className="px-5 py-0 mt-4">
+                <p className="font-manrope font-medium text-[16px] leading-[26px] text-[#333]">
+                  Guidance on where, when and how to acquire next - aligned to yield goals, capital
+                  appreciation areas and market timing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Investors Choose Managed Portfolios */}
+      <section className="max-w-[1053px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col gap-[26px]">
+        <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
+          Why Investors Choose Managed Portfolios
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            "Reduced administrative burden and improved efficiency",
+            "Data-based reporting, not guesswork",
+            "Better rental continuity and reduced void periods",
+            "Consistent long-term asset appreciation",
+            "One partner, one point of contact, fully accountable",
+            "Stress-free portfolio scaling with expert oversight",
+          ].map((benefit) => (
+            <div
+              key={benefit}
+              className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] px-[26px] py-5 h-[160px] flex items-center justify-center"
+            >
+              <p className="font-manrope text-[22px] leading-[24px] text-[#002f57] text-center">
+                {benefit}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Portfolio Review & Onboarding */}
+      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col gap-[36px] items-center">
+        <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center max-w-[750px]">
+          Portfolio Review &amp; Onboarding
+        </h2>
+
+        <div className="flex flex-col lg:flex-row gap-4 items-center justify-center w-full">
+          {[
+            {
+              title: "Initial Assessment",
+              description: "We review yield, income, tenancy status and compliance.",
+              image: "/images/Portfolio page/4th_Portfolio_Review__Onboarding_img_-_1.png",
+            },
+            {
+              title: "Strategy Setup",
+              description: "Clear plan for performance improvement and growth.",
+              image: "/images/Portfolio page/4th_Portfolio_Review__Onboarding_img_-_2.png",
+            },
+            {
+              title: "Ongoing Management",
+              description: "Hands-on oversight with reports and scheduled reviews.",
+              image: "/images/Portfolio page/4th_Portfolio_Review__Onboarding_img_-_3.png",
+            },
+          ].map((step, index) => (
+            <div
+              key={index}
+              className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-[5px] flex flex-col gap-5 h-[310px] w-full max-w-[460px]"
+            >
+              <div className="relative w-full h-[200px] rounded-[16px] overflow-hidden flex-shrink-0">
+                <Image
+                  src={step.image}
+                  alt={step.title}
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div className="px-[10px] py-0 flex flex-col gap-1">
+                <h3 className="font-crimson font-semibold text-[20px] leading-[30px] text-[#002f57]">
+                  {step.title}
+                </h3>
+                <p className="font-manrope font-medium text-[16px] leading-[26px] text-[#333]">
+                  {step.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <Link
+          href="/contact"
+          className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] transition-colors mt-8"
+        >
+          Book a Portfolio Assessment
+        </Link>
+      </section>
+
+      {/* Suitable For */}
+      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pr-[60px]">
+        <div className="flex-1 relative w-full max-w-[675px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
+          <Image
+            src="/images/Portfolio page/5th_Suitable_For.png"
+            alt="Team inspecting house model"
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+
+        <div className="flex-1 max-w-[589px] space-y-[12px] order-1 lg:order-2">
+          <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
+            Suitable For
+          </h2>
+          <div className="space-y-2">
+            {[
+              "First-time landlords building a foundation",
+              "Growing investors scaling into multiple units",
+              "Overseas or remote investors needing reliable oversight",
+              "Established landlords wanting improved ROI & time-free management",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3">
+                <div className="w-[6px] h-[6px] rounded-full bg-[#002f57] mt-[11px] flex-shrink-0" />
+                <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

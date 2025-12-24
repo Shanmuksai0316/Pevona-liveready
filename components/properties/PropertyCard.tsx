@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getImageUrl } from "@/lib/images";
+import { formatNumber } from "@/lib/format";
 import type { StrapiProperty } from "@/types/strapi";
 
 interface PropertyCardProps {
@@ -9,14 +10,29 @@ interface PropertyCardProps {
 
 export default function PropertyCard({ property }: PropertyCardProps) {
   const { attributes } = property;
+
+  // Use gallery image when available, otherwise rotate through the 6 static card images
+  const fallbackImages = [
+    "/images/prop_card_image-1.png",
+    "/images/prop_card_image-2.png",
+    "/images/prop_card_image-3.png",
+    "/images/prop_card_image-4.png",
+    "/images/prop_card_image-5.png",
+    "/images/prop_card_image-6.png",
+  ];
+
+  const fallbackImage =
+    fallbackImages[(property.id || 0) % fallbackImages.length];
+
   const imageUrl = attributes.gallery?.data?.[0]
     ? getImageUrl(attributes.gallery.data[0])
-    : "/images/prop_card_image-1.png";
+    : fallbackImage;
 
   return (
     <Link href={`/properties/${attributes.slug}`}>
       <div className="bg-white border border-[rgba(0,0,0,0.12)] flex flex-col gap-[26px] pb-[31px] pt-[5px] px-[5px] rounded-[16px] h-full">
-        <div className="flex-1 relative min-h-[400px] rounded-[12px] overflow-hidden">
+        {/* Image wrapper with fixed aspect ratio to avoid vertical stretching */}
+        <div className="relative w-full aspect-[4/3] rounded-[12px] overflow-hidden">
           <Image
             src={imageUrl}
             alt={attributes.title}
@@ -29,7 +45,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           <div className="flex items-center justify-between w-full text-[#333333]">
             <p className="font-manrope font-normal text-[22px] leading-[24px]">{attributes.title}</p>
             <p className="font-crimson font-semibold text-[26px] leading-[36px]">
-              {attributes.currency || '$'}{attributes.price.toLocaleString()}
+              {attributes.currency || '$'}{formatNumber(attributes.price)}
             </p>
           </div>
           <div className="flex gap-[26px] items-center justify-end w-full">

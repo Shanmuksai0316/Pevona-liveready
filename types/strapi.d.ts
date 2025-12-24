@@ -71,6 +71,37 @@ export interface StrapiProperty {
     latitude?: number;
     longitude?: number;
     map_embed?: string;
+    tenure_information?: string;
+    deposit?: number;
+    council_tax_band?: string;
+    property_type?: string;
+    utilities?: string;
+    parking?: string;
+    accessibility?: string;
+    cladding_building_safety?: string;
+    rights_restrictions?: string;
+    flood_risk?: string;
+    listed_status?: string;
+    epc_rating?: string;
+    service_charge?: number;
+    ground_rent?: number;
+    review_period?: string;
+    lease_remaining?: string;
+    documents?: {
+      data: StrapiImage[];
+    };
+    epc_document?: {
+      data: StrapiImage;
+    };
+    gas_safety_certificate?: {
+      data: StrapiImage;
+    };
+    electrical_safety_report?: {
+      data: StrapiImage;
+    };
+    hmo_licence?: {
+      data: StrapiImage;
+    };
     seo?: StrapiSEO;
     createdAt: string;
     updatedAt: string;

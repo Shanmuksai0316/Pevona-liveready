@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    font-size: clamp(2.8125rem, 2.445rem + 1.68vw, 4.125rem) !important;
+    line-height: 1.2 !important;
+  }
+}
+
 /* Font imports from Figma design */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Manrope:wght@300;400;500;600&display=swap');
 

@@ -1,7 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import { fetchStrapi } from "@/lib/strapi";
+import type { StrapiBlog } from "@/types/strapi";
 
-export default function Footer() {
+export default async function Footer() {
+  // Fetch recent blogs
+  const blogsResponse = await fetchStrapi<StrapiBlog[]>(
+    "/api/blogs?populate=*&sort=publishedAt:desc&pagination[limit]=5"
+  );
+  const recentBlogs = blogsResponse?.data || [];
   return (
     <footer className="bg-[#002f57] flex flex-col gap-[36px] items-center justify-end px-6 lg:px-0 pt-[73px] pb-12 lg:pb-[16px] w-full mt-[100px] lg:mt-[150px]">
       <div className="flex flex-col lg:flex-row items-start justify-between lg:px-[135px] w-full max-w-[1560px] gap-12 lg:gap-0">
@@ -45,6 +52,23 @@ export default function Footer() {
               <Link href="/cookie-policy" className="hover:text-white hover:opacity-100 transition-opacity">Cookie Policy</Link>
               <Link href="/terms" className="hover:text-white hover:opacity-100 transition-opacity">Terms & Conditions</Link>
               <Link href="/legal" className="hover:text-white hover:opacity-100 transition-opacity">Legal & Compliance</Link>
+            </div>
+          </div>
+
+          {/* Blogs */}
+          <div className="flex flex-col gap-[10px] items-start min-w-[140px]">
+            <p className="font-crimson font-semibold text-[26px] leading-[30px] text-white">Blogs</p>
+            <div className="flex flex-col gap-[10px] items-start font-manrope font-normal text-[18px] leading-[28px] text-white opacity-80">
+              <Link href="/blog" className="hover:text-white hover:opacity-100 transition-opacity">All Blogs</Link>
+              {recentBlogs.slice(0, 4).map((blog) => (
+                <Link
+                  key={blog.id}
+                  href={`/blog/${blog.attributes.slug}`}
+                  className="hover:text-white hover:opacity-100 transition-opacity line-clamp-1"
+                >
+                  {blog.attributes.title}
+                </Link>
+              ))}
             </div>
           </div>
 

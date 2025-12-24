@@ -1,11 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import PropertyManagementDropdown from "./PropertyManagementDropdown";
+import InvestmentsDropdown from "./InvestmentsDropdown";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const dropdownRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   // Lock scroll when mobile menu is open
   useEffect(() => {
@@ -16,18 +20,71 @@ export default function Navbar() {
     }
   }, [isOpen]);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (openDropdown) {
+        const ref = dropdownRefs.current[openDropdown];
+        if (ref && !ref.contains(event.target as Node)) {
+          setOpenDropdown(null);
+        }
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [openDropdown]);
+
   const navLinks = [
     { name: "About Us", href: "/about" },
-    { name: "Buy", href: "/buy", hasIcon: true },
+    { 
+      name: "Buy", 
+      href: "/buy", 
+      hasDropdown: true,
+      submenu: [
+        { name: "Finding Property", href: "/finding-property" },
+        { name: "Buy Guide & Area Guide", href: "/buy-guide" },
+      ]
+    },
     { name: "Sell", href: "/sell" },
-    { name: "Rent", href: "/rent", hasIcon: true },
-    { name: "Property Management", href: "/property-management", hasIcon: true },
-    { name: "Investments", href: "/investments", hasIcon: true },
+    { 
+      name: "Rent", 
+      href: "/rent", 
+      hasDropdown: true,
+      submenu: [
+        { name: "Properties to Let", href: "/properties-to-let" },
+        { name: "Tenant Services", href: "/tenant-services" },
+        { name: "Landlord Services", href: "/landlord-services" },
+        { name: "Application Process", href: "/application-process" },
+      ]
+    },
+    { 
+      name: "Property Management", 
+      href: "/property-management", 
+      hasDropdown: true,
+      submenu: [
+        { name: "Our Management Services", href: "/our-management-services" },
+        { name: "Compliance & Licensing", href: "/compliance-licensing" },
+        { name: "Maintenance & repair", href: "/maintenance-repair" },
+        { name: "House Of Multiple Occupations (HMO)", href: "/hmo" },
+      ]
+    },
+    { 
+      name: "Investments", 
+      href: "/investments", 
+      hasDropdown: true,
+      submenu: [
+        { name: "Investment Opportunities", href: "/investments" },
+        { name: "Market Insights", href: "/market-insights" },
+        { name: "Portfolio Management", href: "/portfolio-management" },
+        { name: "International Properties", href: "/international-properties" },
+      ]
+    },
     { name: "Contact Us", href: "/contact" },
   ];
 
   return (
-    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-6 lg:px-[60px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4">
+    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-6 lg:px-[60px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible">
       {/* Logo */}
       <div className="h-[40px] lg:h-[60px] w-[110px] lg:w-[145px] relative z-[10001]">
         <Link href="/" onClick={() => setIsOpen(false)}>
@@ -41,19 +98,83 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden lg:flex items-center gap-[36px]">
-        {navLinks.map((link) => (
-          <div key={link.name} className="flex items-center gap-[2px]">
-            <Link href={link.href} className="font-manrope font-medium text-[16px] leading-[26px] text-[#002f57] hover:text-[#29902e] transition-colors">
-              {link.name}
-            </Link>
-            {link.hasIcon && (
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
-              </svg>
-            )}
-          </div>
-        ))}
+      <nav className="hidden lg:flex items-center gap-[24px] flex-shrink-0">
+        {navLinks.map((link) => {
+          // Use PropertyManagementDropdown component for Property Management
+          if (link.name === "Property Management" && 'hasDropdown' in link && link.hasDropdown && 'submenu' in link) {
+            return (
+              <PropertyManagementDropdown
+                key={link.name}
+                className="relative"
+                property1={openDropdown === link.name ? "Variant2" : "Default"}
+                items={link.submenu?.map(item => ({ name: item.name, href: item.href })) || []}
+                onToggle={(isOpen) => setOpenDropdown(isOpen ? link.name : null)}
+                triggerHover={true}
+              />
+            );
+          }
+
+          // Use InvestmentsDropdown component for Investments
+          if (link.name === "Investments" && 'hasDropdown' in link && link.hasDropdown && 'submenu' in link) {
+            return (
+              <InvestmentsDropdown
+                key={link.name}
+                className="relative"
+                property1={openDropdown === link.name ? "Variant2" : "Default"}
+                items={link.submenu?.map(item => ({ name: item.name, href: item.href })) || []}
+                onToggle={(isOpen) => setOpenDropdown(isOpen ? link.name : null)}
+                triggerHover={true}
+              />
+            );
+          }
+
+          // Regular dropdown for other menu items
+          return (
+            <div 
+              key={link.name} 
+              className="relative"
+              ref={(el) => {
+                if ('hasDropdown' in link && link.hasDropdown) {
+                  dropdownRefs.current[link.name] = el;
+                }
+              }}
+              onMouseEnter={() => 'hasDropdown' in link && link.hasDropdown && setOpenDropdown(link.name)}
+              onMouseLeave={() => 'hasDropdown' in link && link.hasDropdown && setOpenDropdown(null)}
+            >
+              <div className="flex items-center gap-[2px] cursor-pointer">
+                <Link href={link.href} className="font-manrope font-medium text-[16px] leading-[26px] text-[#002f57] hover:text-[#29902e] transition-colors">
+                  {link.name}
+                </Link>
+                {'hasDropdown' in link && link.hasDropdown && (
+                  <svg 
+                    className={`w-4 h-4 transition-transform ${openDropdown === link.name ? 'rotate-45' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
+                  </svg>
+                )}
+              </div>
+              
+              {/* Dropdown Menu */}
+              {'hasDropdown' in link && link.hasDropdown && openDropdown === link.name && (
+                <div className="absolute top-full left-0 mt-2 bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg min-w-[220px] py-2 z-[10002]">
+                  {'submenu' in link && link.submenu?.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="block px-6 py-3 font-manrope font-medium text-[16px] leading-[26px] text-[#002f57] hover:bg-[#FAFAFA] hover:text-[#29902e] transition-colors first:rounded-t-[16px] last:rounded-b-[16px]"
+                      onClick={() => setOpenDropdown(null)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
       </nav>
 
       {/* Desktop CTA */}
@@ -78,23 +199,91 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 bg-white z-[10000] lg:hidden transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex flex-col h-full pt-32 px-8 gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="font-manrope font-medium text-[24px] text-[#002f57] border-b border-gray-100 pb-2 flex justify-between items-center"
-            >
-              {link.name}
-              {link.hasIcon && (
-                <svg className="w-5 h-5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
-                </svg>
-              )}
-            </Link>
-          ))}
-          <button className="bg-[#002f57] mt-4 px-[10px] py-[18px] rounded-[12px] w-full transition-all">
+        <div className="flex flex-col h-full pt-32 px-8 gap-0 overflow-y-auto">
+          {navLinks.map((link) => {
+            const isDropdownOpen = openDropdown === link.name;
+            
+            // Use PropertyManagementDropdown component for Property Management on mobile
+            if (link.name === "Property Management" && 'hasDropdown' in link && link.hasDropdown && 'submenu' in link) {
+              return (
+                <div key={link.name} className="border-b border-gray-100">
+                  <PropertyManagementDropdown
+                    className="w-full"
+                    property1={isDropdownOpen ? "Variant2" : "Default"}
+                    items={link.submenu?.map(item => ({ name: item.name, href: item.href })) || []}
+                    onToggle={(isOpen) => {
+                      setOpenDropdown(isOpen ? link.name : null);
+                    }}
+                  />
+                </div>
+              );
+            }
+
+            // Use InvestmentsDropdown component for Investments on mobile
+            if (link.name === "Investments" && 'hasDropdown' in link && link.hasDropdown && 'submenu' in link) {
+              return (
+                <div key={link.name} className="border-b border-gray-100">
+                  <InvestmentsDropdown
+                    className="w-full"
+                    property1={isDropdownOpen ? "Variant2" : "Default"}
+                    items={link.submenu?.map(item => ({ name: item.name, href: item.href })) || []}
+                    onToggle={(isOpen) => {
+                      setOpenDropdown(isOpen ? link.name : null);
+                    }}
+                  />
+                </div>
+              );
+            }
+            
+            return (
+              <div key={link.name} className="border-b border-gray-100">
+                {'hasDropdown' in link && link.hasDropdown ? (
+                  <>
+                    <button
+                      onClick={() => setOpenDropdown(isDropdownOpen ? null : link.name)}
+                      className="w-full font-manrope font-medium text-[24px] text-[#002f57] py-4 flex justify-between items-center"
+                    >
+                      {link.name}
+                      <svg 
+                        className={`w-5 h-5 transition-transform ${isDropdownOpen ? 'rotate-45' : ''}`}
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
+                      </svg>
+                    </button>
+                    {isDropdownOpen && 'submenu' in link && link.submenu && (
+                      <div className="pl-4 pb-2">
+                        {link.submenu.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            onClick={() => {
+                              setIsOpen(false);
+                              setOpenDropdown(null);
+                            }}
+                            className="block py-3 font-manrope font-medium text-[20px] text-[#666666] hover:text-[#002f57] transition-colors"
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block font-manrope font-medium text-[24px] text-[#002f57] py-4"
+                  >
+                    {link.name}
+                  </Link>
+                )}
+              </div>
+            );
+          })}
+          <button className="bg-[#002f57] mt-6 px-[10px] py-[18px] rounded-[12px] w-full transition-all">
             <span className="font-manrope font-semibold text-[18px] text-white">Book a Free Valuation</span>
           </button>
         </div>
