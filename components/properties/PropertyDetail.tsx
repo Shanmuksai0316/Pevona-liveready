@@ -515,7 +515,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
           {/* Right: booking form sidebar (floating) */}
           <aside className="lg:col-span-1">
-            <div className="border border-gray-200 rounded-lg shadow-lg sticky top-6 bg-white overflow-hidden">
+            <div className="border border-gray-200 rounded-lg shadow-lg sticky top-6 bg-white overflow-hidden z-10">
               <button
                 type="button"
                 onClick={() => setIsFormOpen((open) => !open)}
