@@ -22,10 +22,11 @@ export default function Navbar() {
     }
   }, [isOpen]);
 
-  // Close dropdown when clicking outside
+  // Close dropdown when clicking outside (desktop only)
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (openDropdown) {
+      // Only handle desktop dropdowns, ignore mobile menu
+      if (openDropdown && !isOpen) {
         const ref = dropdownRefs.current[openDropdown];
         if (ref && !ref.contains(event.target as Node)) {
           setOpenDropdown(null);
@@ -35,7 +36,7 @@ export default function Navbar() {
 
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [openDropdown]);
+  }, [openDropdown, isOpen]);
 
   const navLinks = [
     { name: "About Us", href: "/about" },
@@ -235,10 +236,12 @@ export default function Navbar() {
                             key={item.name}
                             href={item.href}
                             onClick={(e) => {
+                              // Don't prevent default - let Link handle navigation
                               e.stopPropagation();
                               setIsOpen(false);
                               setOpenDropdown(null);
                             }}
+                            onMouseDown={(e) => e.stopPropagation()}
                             className="block py-3 font-manrope font-medium text-[24px] text-[#666666] hover:text-[#002f57] transition-colors pointer-events-auto cursor-pointer"
                           >
                             {item.name}

@@ -1,94 +1,267 @@
 export default function PrivacyPolicyPage() {
   return (
-    <div className="container mx-auto px-4 py-16 max-w-4xl">
-      <h1 className="font-crimson text-5xl font-bold text-pevona-dark mb-8">
-        Privacy Policy
-      </h1>
-      
-      <div className="prose prose-lg max-w-none">
-        <p className="text-gray-600 mb-6">Last updated: {new Date().toLocaleDateString()}</p>
+    <div className="bg-[#FAFAFA] min-h-screen">
+      <div className="max-w-4xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-16">
+        <h1 className="font-crimson text-[40px] md:text-5xl font-bold text-[#002f57] mb-4">
+          Pevona Ltd — Privacy Policy
+        </h1>
+        <p className="font-manrope text-gray-600 mb-12">Last Updated: 2025</p>
         
-        <section className="mb-8">
-          <h2 className="font-crimson text-3xl font-semibold text-pevona-dark mb-4">
-            Introduction
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Pevona Ltd ("we", "our", or "us") is committed to protecting your privacy. 
-            This Privacy Policy explains how we collect, use, disclose, and safeguard 
-            your information when you visit our website.
+        <div className="prose prose-lg max-w-none">
+          <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-12">
+            This document explains how Pevona Ltd collects, uses, and protects your personal information
+            in accordance with the UK General Data Protection Regulation (UK GDPR).
           </p>
-        </section>
+          
+          <section className="mb-12">
+            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+              1. Who We Are
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+              Pevona Ltd is the Data Controller for your information.
+            </p>
+            <div className="space-y-3 mb-6">
+              <div>
+                <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">Registered Address</p>
+                <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                  Pevona Ltd<br />
+                  123 Property Plaza<br />
+                  London, UK<br />
+                  SW1A 1AA
+                </p>
+              </div>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                ICO Registration Number: ZA123456
+              </p>
+            </div>
+            <div>
+              <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">Data Protection Officer (DPO)</p>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                Peter Banyong<br />
+                Email: <a href="mailto:dpo@pevona.com" className="text-[#0073B5] hover:underline">dpo@pevona.com</a><br />
+                Phone: <a href="tel:+442071234567" className="text-[#0073B5] hover:underline">+44 (0) 20 7123 4567</a>
+              </p>
+            </div>
+          </section>
 
-        <section className="mb-8">
-          <h2 className="font-crimson text-3xl font-semibold text-pevona-dark mb-4">
-            Information We Collect
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            We may collect information about you in a variety of ways:
-          </p>
-          <ul className="list-disc pl-6 text-gray-700 space-y-2">
-            <li>Personal information you provide (name, email, phone number)</li>
-            <li>Property inquiry information</li>
-            <li>Usage data and analytics</li>
-            <li>Cookies and tracking technologies</li>
-          </ul>
-        </section>
+          <section className="mb-12">
+            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+              2. Scope of Services
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+              This policy covers personal data processed across all our service lines, including:
+            </p>
+            <ol className="list-decimal pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+              <li>Sales & Lettings Agency (Let-Only, Rent Collection, Full Management)</li>
+              <li>Property Management</li>
+              <li>Investment & Portfolio Management</li>
+              <li>Compliance Services (EPC, EICR, Gas Safety, Licensing, AML/KYC)</li>
+              <li>Franchise & Branch Operations</li>
+            </ol>
+          </section>
 
-        <section className="mb-8">
-          <h2 className="font-crimson text-3xl font-semibold text-pevona-dark mb-4">
-            How We Use Your Information
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            We use the information we collect to:
-          </p>
-          <ul className="list-disc pl-6 text-gray-700 space-y-2">
-            <li>Provide and maintain our services</li>
-            <li>Process property inquiries and valuations</li>
-            <li>Send you marketing communications (with consent)</li>
-            <li>Improve our website and services</li>
-            <li>Comply with legal obligations</li>
-          </ul>
-        </section>
+          <section className="mb-12">
+            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+              3. Data We Collect
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
+              We collect personal data through the following methods:
+            </p>
+            
+            <div className="mb-6">
+              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+                A. Data You Provide
+              </h3>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+                Information you voluntarily submit to us via forms, emails, or phone:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <li><strong>Identity Data:</strong> Passport, Driving License.</li>
+                <li><strong>Contact Data:</strong> Name, Email, Phone Number, Current Address.</li>
+                <li><strong>Financial Data:</strong> Bank details, Proof of funds.</li>
+                <li><strong>Property Data:</strong> Title deeds, proof of ownership.</li>
+              </ul>
+            </div>
 
-        <section className="mb-8">
-          <h2 className="font-crimson text-3xl font-semibold text-pevona-dark mb-4">
-            Data Protection
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            We implement appropriate technical and organizational measures to protect 
-            your personal information. However, no method of transmission over the 
-            Internet is 100% secure.
-          </p>
-        </section>
+            <div className="mb-6">
+              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+                B. Data From Third Parties
+              </h3>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+                Information we receive from external verification sources:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <li>Credit Reference Agencies (for tenant referencing).</li>
+                <li>Anti-Money Laundering (AML) Databases.</li>
+                <li>Solicitors & Developers.</li>
+              </ul>
+            </div>
 
-        <section className="mb-8">
-          <h2 className="font-crimson text-3xl font-semibold text-pevona-dark mb-4">
-            Your Rights
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Under GDPR, you have the right to:
-          </p>
-          <ul className="list-disc pl-6 text-gray-700 space-y-2">
-            <li>Access your personal data</li>
-            <li>Rectify inaccurate data</li>
-            <li>Request erasure of your data</li>
-            <li>Object to processing</li>
-            <li>Data portability</li>
-          </ul>
-        </section>
+            <div className="mb-6">
+              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+                C. Technical Data
+              </h3>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+                Automated data collection from website interactions:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <li>IP Address & Browser Type.</li>
+                <li>Analytics & Usage Data.</li>
+                <li>Cookies.</li>
+              </ul>
+            </div>
 
-        <section className="mb-8">
-          <h2 className="font-crimson text-3xl font-semibold text-pevona-dark mb-4">
-            Contact Us
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            If you have questions about this Privacy Policy, please contact us at:
-          </p>
-          <p className="text-gray-700 mt-2">
-            Email: privacy@pevona.com<br />
-            Address: [Your Company Address]
-          </p>
-        </section>
+            <div className="bg-[#FCE6E9] border-l-4 border-[#002f57] p-4 rounded">
+              <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">Notice: Special Category Data</p>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                We process sensitive data (such as criminal record checks or Politically Exposed
+                Person status) strictly for AML/KYC compliance and fraud prevention purposes
+                under the lawful basis of substantial public interest.
+              </p>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+              4. Lawful Bases for Processing
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+              We only process your data when we have a legal ground to do so.
+            </p>
+            <ul className="list-disc pl-6 space-y-3 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+              <li><strong>Performance of Contract:</strong> Necessary to fulfill a contract with you (e.g., Tenancy
+                Agreements, processing rent payments, arranging viewings).</li>
+              <li><strong>Legal Obligation:</strong> Necessary for compliance with the law (e.g., Right to Rent checks,
+                AML checks, HMRC tax reporting).</li>
+              <li><strong>Legitimate Interest:</strong> Necessary for running our business (e.g., debt recovery, website
+                security, B2B marketing), provided your rights do not override these interests.</li>
+              <li><strong>Consent:</strong> Where you have given explicit permission (e.g., third-party marketing, optional
+                tracking cookies).</li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+              5. How We Use Your Data
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+              We use your data for specific business purposes depending on the service you use:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+              <li><strong>Lettings Services:</strong> Referencing tenants, drafting agreements, collecting rent, registering
+                deposits, and coordinating maintenance.</li>
+              <li><strong>Sales Agency:</strong> Verifying ownership, marketing properties, arranging viewings,
+                negotiating offers, and sales progression.</li>
+              <li><strong>Compliance Services:</strong> Issuing EPC/EICR certificates, Gas Safety checks, and managing
+                licensing applications.</li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+              6. Sharing Your Data
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+              We may share your data with the following categories of third parties:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
+              <li><strong>Professional Advisers:</strong> Solicitors, Surveyors, Bankers, Insurers.</li>
+              <li><strong>Service Providers:</strong> IT/System Administrators, CRM providers, Maintenance contractors.</li>
+              <li><strong>Regulators:</strong> HMRC, The Property Ombudsman, Local Authorities, Police (upon valid
+                request).</li>
+              <li><strong>Internal Group:</strong> Franchise branches and Pevona group companies.</li>
+            </ul>
+            <div>
+              <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">International Transfers:</p>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                Given our base of international investors, data may be transferred outside the UK. These
+                transfers are protected by Standard Contractual Clauses (SCCs) or Adequacy Decisions.
+              </p>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+              7. Data Retention
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
+              We retain your data only as long as necessary to fulfill the purposes we collected it for.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-gray-300 mb-6">
+                <thead>
+                  <tr className="bg-[#002f57] text-white">
+                    <th className="border border-gray-300 px-4 py-3 text-left font-manrope font-semibold text-[16px]">Data Type</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-manrope font-semibold text-[16px]">Retention Period</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-manrope font-semibold text-[16px]">Reason</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Transaction Records</td>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">7 Years</td>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Tax (HMRC) & Legal Claims</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">AML / ID Checks</td>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">5 Years</td>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Money Laundering Regulations</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Tenancy Agreements</td>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">6 Years</td>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Limitation Act 1980</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Marketing Data</td>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Until Opt-out</td>
+                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Consent / Legitimate Interest</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+              8. Your Rights Under UK GDPR
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+              You have the following rights regarding your personal data:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+              <li><strong>Right of Access:</strong> Request a copy of the personal data we hold about you.</li>
+              <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete data.</li>
+              <li><strong>Right to Erasure:</strong> Ask us to delete your data where there is no good reason for us to
+                continue processing it (also known as the "Right to be Forgotten").</li>
+              <li><strong>Right to Object:</strong> Object to processing for direct marketing or where we rely on legitimate interest.</li>
+              <li><strong>Right to Restrict Processing:</strong> Ask us to suspend the processing of your data.</li>
+              <li><strong>Right to Data Portability:</strong> Request the transfer of your data to you or a third party.</li>
+              <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time where we are relying on it to process your data.</li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+              9. Contact Us
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+              If you have any questions about this Privacy Policy or our data practices, please contact our
+              Data Protection Team.
+            </p>
+            <div className="space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
+              <p>
+                Email: <a href="mailto:privacy@pevona.com" className="text-[#0073B5] hover:underline">privacy@pevona.com</a>
+              </p>
+              <p>
+                Phone: <a href="tel:+442071234567" className="text-[#0073B5] hover:underline">+44 (0) 20 7123 4567</a>
+              </p>
+            </div>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+              You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) if you believe your data protection rights have been breached. Visit <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#0073B5] hover:underline">ico.org.uk</a> for more information.
+            </p>
+          </section>
+        </div>
       </div>
     </div>
   );
