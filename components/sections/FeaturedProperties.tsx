@@ -10,7 +10,7 @@ export default async function FeaturedProperties() {
 
   return (
 
-    <div className="flex flex-col gap-[36px] items-center px-[139.5px] py-0 w-full mt-[150px] overflow-hidden">
+    <div className="flex flex-col gap-[36px] items-center px-[139.5px] py-0 w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] overflow-hidden">
       <div className="flex flex-col gap-[26px] items-center w-full">
         <h2 className="font-crimson text-[56px] leading-[56px] text-[#002f57] text-center tracking-[-1.68px] w-full">
           Explore a curated range of properties managed<br />and marketed by Pevona.

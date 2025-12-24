@@ -5,7 +5,7 @@ const PAGE_PADDING =
 
 export default function SellingOverwhelmingSection() {
   return (
-    <section className={`${PAGE_PADDING} mt-[150px]`}>
+    <section className={`${PAGE_PADDING} mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]`}>
       <div className="w-full bg-white rounded-[24px] border border-[rgba(0,0,0,0.08)] flex flex-col lg:flex-row overflow-hidden">
         <div className="flex-1 p-6 sm:p-8 space-y-4">
           <h2 className="font-crimson text-[40px] sm:text-[48px] md:text-[56px] leading-[1.05] tracking-[-1.68px] text-[#002f57]">

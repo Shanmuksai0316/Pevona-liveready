@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NewsSection() {
   return (
-    <div className="flex flex-col gap-[26px] items-start px-[135px] w-full mt-[150px]">
+    <div className="flex flex-col gap-[26px] items-start px-[135px] w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
       <div className="flex gap-[110px] items-center justify-center w-full">
         <div className="flex-1 flex flex-col gap-[5px] items-start">
           <h2 className="font-crimson text-[56px] leading-[56px] text-[#002f57] tracking-[-1.68px] w-full">

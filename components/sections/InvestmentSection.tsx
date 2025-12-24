@@ -6,7 +6,7 @@ export default function InvestmentSection() {
       className="
         relative w-full flex flex-col gap-[10px] items-center overflow-hidden
         py-[120px] sm:py-[160px] lg:py-[204px]
-        mt-[100px] sm:mt-[120px] lg:mt-[150px]
+        mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]
       "
     >
       {/* BACKGROUND IMAGE + STRIP */}

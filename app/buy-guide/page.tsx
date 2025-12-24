@@ -47,7 +47,7 @@ rental market with good long-term fundamentals.`,
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-10 pb-[80px]">
+        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[80px]">
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[40px] overflow-hidden">
               <Image
@@ -248,9 +248,9 @@ rental market with good long-term fundamentals.`,
             <p className="font-manrope text-[18px] leading-[28px]">
               Area guidance, viewing support and help coordinating surveys and conveyancing.
             </p>
-            <button className="font-crimson text-[18px] leading-[28px] underline">
+            <Link href="/finding-property" className="font-crimson text-[18px] leading-[28px] underline hover:no-underline">
               Start Home Search
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -270,9 +270,9 @@ rental market with good long-term fundamentals.`,
             <p className="font-manrope text-[18px] leading-[28px]">
               Yield insights, tenancy notes and suitability checks for buy-to-let and HMO options.
             </p>
-            <button className="font-crimson text-[18px] leading-[28px] underline">
+            <Link href="/investments" className="font-crimson text-[18px] leading-[28px] underline hover:no-underline">
               Explore Investment Properties
-            </button>
+            </Link>
           </div>
         </div>
       </section>

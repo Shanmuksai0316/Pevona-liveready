@@ -6,7 +6,7 @@ export default function PropertyManagementPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[39px] pb-[260px]">
+        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[260px]">
           {/* Background image with mask-like rounded bottom */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
@@ -41,7 +41,7 @@ export default function PropertyManagementPage() {
       </section>
 
       {/* Managing Every Detail */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
         <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
             src="http://localhost:3845/assets/8c635a6811cac99f508d3af65acc70648e8d9e5c.png"
@@ -75,7 +75,7 @@ export default function PropertyManagementPage() {
       </section>
 
       {/* What's Included in Our Management Service */}
-      <section className="max-w-[1380px] mx-auto px-6 lg:px-0 mt-[140px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1380px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[140px] flex flex-col gap-[36px] items-center">
         <div className="text-center max-w-[840px] space-y-3">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             What's Included in Our Management Service
@@ -222,7 +222,7 @@ export default function PropertyManagementPage() {
       </section>
 
       {/* Our Process */}
-      <section className="max-w-[1360px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col gap-[26px]">
+      <section className="max-w-[1360px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[26px]">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-left">
           Our Process – Simple, Transparent, Effective
         </h2>
@@ -288,7 +288,7 @@ export default function PropertyManagementPage() {
       </section>
 
       {/* Fully Compliant, Always Protected */}
-      <section className="mt-[150px] bg-[#002f57]">
+      <section className="mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] bg-[#002f57]">
         <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center">
           <div className="flex-1 max-w-[590px] space-y-6 text-white">
             <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px]">
@@ -336,7 +336,7 @@ export default function PropertyManagementPage() {
       </section>
 
       {/* Why Choose Our Management Services */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[120px] mb-[140px] flex flex-col gap-[46px] items-center">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] mb-[140px] flex flex-col gap-[46px] items-center">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Why Choose Our Management Services
         </h2>

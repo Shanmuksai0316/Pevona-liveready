@@ -21,7 +21,7 @@ export default function ProcessSection() {
   };
 
   return (
-    <div className="flex flex-col gap-[36px] items-center w-full mt-[120px] lg:mt-[150px] overflow-hidden px-4 sm:px-6 lg:px-0">
+    <div className="flex flex-col gap-[36px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] overflow-hidden px-4 sm:px-6 lg:px-0">
       
       {/* HEADING */}
       <div className="flex flex-col gap-[10px] items-center text-center w-full">

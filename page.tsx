@@ -144,7 +144,7 @@ export default function Home() {
       <FeaturedProperties />
 
       {/* About Us Section */}
-      <div className="relative w-full min-h-[600px] lg:h-[800px] flex flex-col gap-[31px] items-start justify-center lg:justify-end pb-12 lg:pb-[36px] pt-12 lg:pt-0 px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[100px] lg:mt-[150px]">
+      <div className="relative w-full min-h-[600px] lg:h-[800px] flex flex-col gap-[31px] items-start justify-center lg:justify-end pb-12 lg:pb-[36px] pt-12 lg:pt-0 px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         <Image
           src="http://localhost:3845/assets/069af032e465c46ca3308131d6b7c34885ece7db.png"
           alt="About Us Background"
@@ -184,7 +184,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="flex flex-col gap-[36px] items-center justify-center w-full mt-[100px] lg:mt-[150px] px-6">
+      <div className="flex flex-col gap-[36px] items-center justify-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-6">
         <div className="flex flex-col gap-[10px] items-center text-center max-w-[800px]">
           <h2 className="font-crimson text-[36px] lg:text-[56px] leading-tight lg:leading-[56px] text-[#002f57] tracking-tight lg:tracking-[-1.68px]">
             Proven Results Backed by Experience
@@ -209,7 +209,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-[26px] items-center w-full mt-[100px] lg:mt-[150px] px-6">
+      <div className="flex flex-col gap-[26px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-6">
         <h2 className="font-crimson text-[36px] lg:text-[56px] leading-tight lg:leading-[56px] text-[#002f57] text-center tracking-tight lg:tracking-[-1.68px] max-w-[562px]">
           Solutions That Protect and Grow Your Assets.
         </h2>
@@ -241,7 +241,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative w-full flex flex-col gap-[10px] items-center overflow-hidden py-[100px] lg:py-[204px] mt-[100px] lg:mt-[150px] px-6">
+      <div className="relative w-full flex flex-col gap-[10px] items-center overflow-hidden py-[100px] lg:py-[204px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-6">
         <div className="absolute inset-0 w-full flex justify-center">
           <div className="relative w-full max-w-[1336px] h-full">
             <Image
@@ -270,7 +270,7 @@ export default function Home() {
       </div>
 
       {/* Footer Section */}
-      <footer className="bg-[#002f57] flex flex-col gap-[36px] items-center justify-end px-6 lg:px-0 pt-[73px] pb-12 lg:pb-[16px] w-full mt-[100px] lg:mt-[150px]">
+      <footer className="bg-[#002f57] flex flex-col gap-[36px] items-center justify-end px-6 lg:px-0 pt-[73px] pb-12 lg:pb-[16px] w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         <div className="flex flex-col lg:flex-row items-start justify-between lg:px-[135px] w-full max-w-[1560px] gap-12 lg:gap-0">
           <div className="flex flex-col gap-[26px] items-start w-full lg:w-[480px]">
             <div className="h-[50px] w-[193px] relative">

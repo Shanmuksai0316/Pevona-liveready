@@ -84,7 +84,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible">
+    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[50px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible z-[10001]">
       {/* Logo */}
       <div className="h-[40px] lg:h-[60px] w-[110px] lg:w-[145px] relative z-[10001]">
         <Link href="/" onClick={() => setIsOpen(false)}>
@@ -98,7 +98,7 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden lg:flex items-center gap-[24px] flex-shrink-0">
+      <nav className="hidden lg:flex items-center gap-5 flex-shrink-0">
         {navLinks.map((link) => {
           // Use PropertyManagementDropdown component for Property Management
           if (link.name === "Property Management" && 'hasDropdown' in link && link.hasDropdown && 'submenu' in link) {
@@ -159,12 +159,12 @@ export default function Navbar() {
               
               {/* Dropdown Menu */}
               {'hasDropdown' in link && link.hasDropdown && openDropdown === link.name && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg min-w-[220px] py-2 z-[10002]">
+                <div className="absolute top-full left-0 mt-2 bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg min-w-[220px] py-2 z-[10002] pointer-events-auto">
                   {'submenu' in link && link.submenu?.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="block px-6 py-3 font-manrope font-medium text-[16px] leading-[26px] text-[#002f57] hover:bg-[#FAFAFA] hover:text-[#29902e] transition-colors first:rounded-t-[16px] last:rounded-b-[16px]"
+                      className="block px-6 py-3 font-manrope font-medium text-[16px] leading-[26px] text-[#002f57] hover:bg-[#FAFAFA] hover:text-[#29902e] transition-colors first:rounded-t-[16px] last:rounded-b-[16px] pointer-events-auto"
                       onClick={() => setOpenDropdown(null)}
                     >
                       {item.name}

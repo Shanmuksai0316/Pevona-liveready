@@ -10,7 +10,7 @@ export default function AboutSection() {
         h-[620px] sm:h-[700px] lg:h-[800px]
         pb-[24px] sm:pb-[30px] lg:pb-[36px]
         px-4 sm:px-[40px] lg:px-[98px]
-        mt-[100px] sm:mt-[120px] lg:mt-[150px]
+        mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]
       "
     >
       {/* BACKGROUND IMAGE */}
