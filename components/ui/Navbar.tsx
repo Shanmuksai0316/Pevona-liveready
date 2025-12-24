@@ -84,7 +84,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-6 lg:px-[60px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible">
+    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible">
       {/* Logo */}
       <div className="h-[40px] lg:h-[60px] w-[110px] lg:w-[145px] relative z-[10001]">
         <Link href="/" onClick={() => setIsOpen(false)}>
@@ -179,9 +179,9 @@ export default function Navbar() {
 
       {/* Desktop CTA */}
       <div className="hidden lg:block">
-        <button className="bg-[#002f57] hover:bg-[#001f3a] px-[10px] py-[12px] rounded-[100px] w-[225px] transition-all">
+        <Link href="/contact" className="bg-[#002f57] hover:bg-[#001f3a] px-[10px] py-[12px] rounded-[100px] w-[225px] transition-all inline-block text-center">
           <span className="font-manrope font-semibold text-[18px] leading-[28px] text-white">Book a Free Valuation</span>
-        </button>
+        </Link>
       </div>
 
       {/* Mobile Menu Button */}
@@ -283,9 +283,9 @@ export default function Navbar() {
               </div>
             );
           })}
-          <button className="bg-[#002f57] mt-6 px-[10px] py-[18px] rounded-[12px] w-full transition-all">
+          <Link href="/contact" className="bg-[#002f57] mt-6 px-[10px] py-[18px] rounded-[12px] w-full transition-all inline-block text-center">
             <span className="font-manrope font-semibold text-[18px] text-white">Book a Free Valuation</span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>

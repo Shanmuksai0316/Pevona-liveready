@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PropertyManagementPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-6 lg:px-[130px] pt-[39px] pb-[260px]">
+        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[39px] pb-[260px]">
           {/* Background image with mask-like rounded bottom */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
@@ -29,12 +30,12 @@ export default function PropertyManagementPage() {
               Comprehensive management services for landlords across the UK – from tenant
               placement and rent collection to compliance, maintenance, and reporting.
             </p>
-            <button
-              type="button"
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Free Valuation
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -288,7 +289,7 @@ export default function PropertyManagementPage() {
 
       {/* Fully Compliant, Always Protected */}
       <section className="mt-[150px] bg-[#002f57]">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-[105px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center">
+        <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center">
           <div className="flex-1 max-w-[590px] space-y-6 text-white">
             <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px]">
               Fully Compliant, Always Protected

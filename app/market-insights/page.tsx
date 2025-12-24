@@ -6,7 +6,7 @@ export default function MarketInsightsPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Banner */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-6 lg:px-[130px] pt-[39px] pb-[628px]">
+        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[39px] pb-[628px]">
           {/* Background image with gradient */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
@@ -35,7 +35,7 @@ export default function MarketInsightsPage() {
       </section>
 
       {/* Market Overview */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[80px] mt-[150px] flex flex-col gap-[26px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col gap-[26px]">
         <div className="flex flex-col gap-4">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Market Overview
@@ -68,7 +68,7 @@ export default function MarketInsightsPage() {
       </section>
 
       {/* Regional Snapshots */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col gap-[36px] items-center">
         <div className="text-center space-y-4 max-w-[1035px]">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Regional Snapshots
@@ -189,7 +189,7 @@ export default function MarketInsightsPage() {
       </section>
 
       {/* Key Trends */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pr-[60px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pr-[80px] 1300:pr-[80px] 1400:pr-[80px] 1500:pr-[100px] 1600:pr-[130px]">
         <div className="flex-1 relative w-full max-w-[675px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
           <Image
             src="/images/Market Insights/Market_Insights_blog_-1.png"
@@ -228,7 +228,7 @@ export default function MarketInsightsPage() {
       </section>
 
       {/* Regulatory Notes */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[80px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[80px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
         <div className="flex-1 max-w-[589px] space-y-[12px]">
           <div className="space-y-[10px]">
             <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
@@ -266,7 +266,7 @@ export default function MarketInsightsPage() {
       </section>
 
       {/* Market Insights Articles */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mb-[120px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] flex flex-col gap-[36px] items-center">
         <div className="text-center space-y-4 max-w-[1035px]">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Market Insights

@@ -6,7 +6,7 @@ export default function HMOPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero section */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-6 lg:px-[130px] pt-[39px] pb-[260px]">
+        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[39px] pb-[260px]">
           {/* Background image with gradient */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
@@ -42,7 +42,7 @@ export default function HMOPage() {
       </section>
 
       {/* What is an HMO */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[60px] mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px]">
         <div className="flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             What is an HMO?
@@ -72,7 +72,7 @@ export default function HMOPage() {
       </section>
 
       {/* HMO Services */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[60px] mt-[80px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[80px]">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] mb-12">
           Our HMO Management Services
         </h2>
@@ -119,7 +119,7 @@ export default function HMOPage() {
       </section>
 
       {/* HMO Requirements */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[60px] mt-[140px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[140px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px]">
         <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/House Of Multiple Occupations (HMO)/3rd_Our_HMO_Services.png"

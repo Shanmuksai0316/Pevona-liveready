@@ -15,6 +15,8 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
   const gallery = (attributes.gallery?.data as any[]) || [];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFormOpen, setIsFormOpen] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
   const addressParts = [
     attributes.address,
@@ -42,6 +44,48 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
   const goToImage = (index: number) => {
     if (!hasImages) return;
     setCurrentIndex(index);
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      message: formData.get("message") as string,
+      propertySlug: attributes.slug,
+      propertyTitle: attributes.title,
+    };
+
+    try {
+      const response = await fetch("/api/property-enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        (e.target as HTMLFormElement).reset();
+        // Reset success message after 5 seconds
+        setTimeout(() => setSubmitStatus("idle"), 5000);
+      } else {
+        const errorData = await response.json().catch(() => ({}));
+        console.error("Form submission error:", response.status, errorData);
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -134,7 +178,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
       {/* Top summary bar */}
       <section className="border-b border-gray-200">
-        <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-[120px] py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em] mb-1">
               For Sale
@@ -157,7 +201,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
       </section>
 
       {/* Main content + sidebar form */}
-      <section className="mx-auto max-w-6xl px-4 md:px-6 lg:px-[120px] py-10 md:py-14">
+      <section className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-10 md:py-14">
         <div className="grid grid-cols-1 lg:[grid-template-columns:minmax(0,1.7fr)_minmax(0,1.3fr)] gap-10 lg:gap-12">
           {/* Left: details */}
           <div className="lg:col-span-2 space-y-8">
@@ -513,7 +557,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     you through the next steps.
                   </p>
 
-                  <form className="space-y-4">
+                  <form className="space-y-4" onSubmit={handleSubmit}>
                     <div>
                       <label
                         htmlFor="name"
@@ -573,11 +617,29 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                         className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-manrope focus:outline-none focus:ring-2 focus:ring-pevona-green focus:border-pevona-green"
                       />
                     </div>
+
+                    {submitStatus === "success" && (
+                      <div className="rounded-lg bg-green-50 border border-green-200 p-3">
+                        <p className="font-manrope text-sm text-green-800">
+                          ✓ Thank you! We'll be in touch shortly.
+                        </p>
+                      </div>
+                    )}
+
+                    {submitStatus === "error" && (
+                      <div className="rounded-lg bg-red-50 border border-red-200 p-3">
+                        <p className="font-manrope text-sm text-red-800">
+                          Something went wrong. Please try again or contact us directly.
+                        </p>
+                      </div>
+                    )}
+
                     <button
                       type="submit"
-                      className="w-full rounded-lg bg-pevona-green py-2.5 px-4 text-sm font-manrope font-semibold text-white hover:bg-[#00a86b] transition-colors"
+                      disabled={isSubmitting}
+                      className="w-full rounded-lg bg-pevona-green py-2.5 px-4 text-sm font-manrope font-semibold text-white hover:bg-[#00a86b] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Register Your Interest
+                      {isSubmitting ? "Submitting..." : "Register Your Interest"}
                     </button>
                   </form>
                 </div>
@@ -590,7 +652,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
       {/* Location */}
       {(attributes.map_embed || fullAddress || (attributes.latitude && attributes.longitude)) && (
         <section className="bg-gray-50 border-t border-gray-100">
-          <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-[120px] py-10 md:py-14">
+          <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-10 md:py-14">
             <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
               Location
             </h2>

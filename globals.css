@@ -7,6 +7,19 @@
     font-size: clamp(2.8125rem, 2.445rem + 1.68vw, 4.125rem) !important;
     line-height: 1.2 !important;
   }
+  
+  /* Apply Manrope font to all paragraphs and lists */
+  p {
+    font-family: 'Manrope', sans-serif !important;
+  }
+  
+  ul, ol {
+    font-family: 'Manrope', sans-serif !important;
+  }
+  
+  li {
+    font-family: 'Manrope', sans-serif !important;
+  }
 }
 
 /* Font imports from Figma design */

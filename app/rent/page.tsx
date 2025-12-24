@@ -11,7 +11,7 @@ export default async function RentPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero section */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-6 lg:px-[130px] pt-[39px] pb-[120px]">
+        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[39px] pb-[120px]">
           {/* Background image with gradient */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
@@ -40,7 +40,7 @@ export default async function RentPage() {
       </section>
 
       {/* Property Search + grid */}
-      <section className="max-w-[1440px] mx-auto px-6 lg:px-[94px] mt-[120px] flex flex-col items-center gap-9">
+      <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] flex flex-col items-center gap-9">
         <div className="max-w-[861px] text-center space-y-4">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Property Search

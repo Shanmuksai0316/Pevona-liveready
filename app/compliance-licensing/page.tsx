@@ -39,7 +39,7 @@ export default function ComplianceLicensingPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero: Protecting Properties Through Full Compliance */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-6 lg:px-[130px] pt-[39px] pb-[260px] flex items-center justify-center text-center">
+        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[39px] pb-[260px] flex items-center justify-center text-center">
           {/* Background image with mask-like rounded bottom */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
@@ -93,7 +93,7 @@ export default function ComplianceLicensingPage() {
       </section>
 
       {/* Key Compliance Areas */}
-      <section className="max-w-[1560px] mx-auto px-6 lg:px-[120px] mt-[160px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Key Compliance Areas
         </h2>
@@ -137,7 +137,7 @@ export default function ComplianceLicensingPage() {
 
       {/* How We Manage Compliance */}
       <section className="mt-[160px] bg-[#002f57]">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-[105px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center text-white">
+        <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center text-white">
           <div className="flex-1 max-w-[621px] space-y-[24px]">
             <div className="space-y-4">
               <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px]">
@@ -176,7 +176,7 @@ export default function ComplianceLicensingPage() {
       </section>
 
       {/* Responsibilities – Landlords and Tenants */}
-      <section className="max-w-[1560px] mx-auto px-6 lg:px-[120px] mt-[160px] mb-[120px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] mb-[120px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
           Responsibilities
         </h2>

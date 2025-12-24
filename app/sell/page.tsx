@@ -44,7 +44,7 @@ export default function SellPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero section */}
       <section className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] overflow-hidden">
-        <div className="relative max-w-[1600px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           {/* Background image with gradient */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
@@ -82,7 +82,7 @@ export default function SellPage() {
 
       {/* Our Selling Process */}
       <section className="bg-white mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] mb-[60px] sm:mb-0 py-[40px] sm:py-[60px] md:py-[80px] lg:py-[120px]">
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[80px] items-start">
+        <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[80px] items-start">
           {/* Left Section */}
           <div className="flex-1 w-full max-w-[600px] space-y-6 sm:space-y-8">
             <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#0073B5]">
@@ -154,7 +154,7 @@ export default function SellPage() {
 
       {/* What's Included */}
       <section className="bg-white py-[40px] sm:py-[60px] md:py-[80px] lg:py-[120px]">
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+        <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
           {/* Title */}
           <h2 className="font-crimson text-[40px] sm:text-[48px] md:text-[56px] lg:text-[66px] leading-[1.05] tracking-[-0.04em] text-[#002F57] text-center mb-[40px] sm:mb-[60px] md:mb-[80px]">
             What's Included
@@ -211,7 +211,7 @@ export default function SellPage() {
       </section>
 
       {/* Marketing Strategy */}
-      <section className="max-w-[1600px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
         <div className="flex-1 w-full max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[40px] sm:text-[48px] md:text-[56px] leading-[1.1] sm:leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Marketing Strategy
@@ -242,7 +242,7 @@ export default function SellPage() {
       </section>
 
       {/* Legal & Compliance Support */}
-      <section className="max-w-[1600px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
         <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none order-2 lg:order-1">
           <Image
             src="/images/Sell/2nd_sec_image_-_1.png"
@@ -270,7 +270,7 @@ export default function SellPage() {
       </section>
 
       {/* Get an Accurate Market Valuation */}
-      <section className="max-w-[1600px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
         <div className="flex-1 w-full max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[40px] sm:text-[48px] md:text-[56px] leading-[1.1] sm:leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Get an Accurate Market Valuation

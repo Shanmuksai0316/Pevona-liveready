@@ -12,7 +12,7 @@ export default async function FindingPropertyPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden min-h-[760px]">
-        <div className="relative max-w-[1560px] mx-auto px-6 lg:px-[130px] min-h-[760px] flex items-center">
+        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] min-h-[760px] flex items-center">
           {/* Background image (includes blue gradient baked into asset) */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] overflow-hidden rounded-b-[36px]">
@@ -42,7 +42,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* Your Property Search, Simplified */}
-      <section className="max-w-[1320px] mx-auto px-4 lg:px-[40px] mt-[150px] flex flex-col lg:flex-row items-center gap-[80px]">
+      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row items-center gap-[80px]">
         <div className="max-w-[526px] space-y-9">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Your Property Search, Simplified
@@ -69,7 +69,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* What We Help You Buy */}
-      <section className="max-w-[1600px] mx-auto px-3 lg:px-[40px] mt-[150px] flex flex-col items-center gap-9">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col items-center gap-9">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           What We Help You Buy
         </h2>
@@ -108,7 +108,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* How We Support Your Purchase */}
-      <section className="max-w-[1320px] mx-auto px-4 lg:px-[40px] mt-[150px] flex flex-col items-center gap-9">
+      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col items-center gap-9">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           How We Support Your Purchase
         </h2>
@@ -179,7 +179,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* For Residential Buyers / For Investors Split */}
-      <section className="max-w-[1560px] mx-auto px-4 lg:px-[40px] mt-[150px] flex gap-4">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex gap-4">
         <div className="relative flex-1 min-h-[422px] rounded-[24px] overflow-hidden">
           <Image
             src="/images/finding-property/for-residential.png"
@@ -220,7 +220,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* Our Buying Process */}
-      <section className="max-w-[1269px] mx-auto px-4 lg:px-[40px] mt-[150px] flex flex-col gap-[40px]">
+      <section className="max-w-[1269px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col gap-[40px]">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Our Buying Process
         </h2>

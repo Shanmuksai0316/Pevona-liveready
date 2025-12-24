@@ -14,7 +14,7 @@ export default function Home() {
 
       {/* Header Section */}
       <div className="fixed top-0 left-0 right-0 z-[9999] flex justify-center px-4">
-        <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-6 lg:px-[60px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4">
+        <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4">
           <div className="h-[40px] lg:h-[60px] w-[110px] lg:w-[145px] relative">
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
               <Image
@@ -48,9 +48,9 @@ export default function Home() {
             <Link href="#" className="font-manrope font-medium text-[16px] leading-[26px] text-[#002f57]">Contact Us</Link>
           </nav>
 
-          <button className="hidden lg:block bg-[#002f57] px-[10px] py-[10px] rounded-[100px] w-[225px]">
+          <Link href="/contact" className="hidden lg:block bg-[#002f57] px-[10px] py-[10px] rounded-[100px] w-[225px] text-center inline-block">
             <span className="font-manrope font-semibold text-[18px] leading-[28px] text-white">Book a Free Valuation</span>
-          </button>
+          </Link>
 
           <button
             className="lg:hidden p-2"
@@ -78,9 +78,9 @@ export default function Home() {
               {item}
             </Link>
           ))}
-          <button className="bg-[#002f57] mt-4 px-[10px] py-[18px] rounded-[12px] w-full">
+          <Link href="/contact" className="bg-[#002f57] mt-4 px-[10px] py-[18px] rounded-[12px] w-full text-center inline-block">
             <span className="font-manrope font-semibold text-[18px] text-white">Book a Free Valuation</span>
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -102,7 +102,7 @@ export default function Home() {
 
 
 
-        <div className="relative z-10 flex flex-col h-full px-6 lg:px-[20px] py-[37px] justify-end">
+        <div className="relative z-10 flex flex-col h-full px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[37px] justify-end">
           <div className="flex-grow flex items-end pb-12 lg:pb-20">
             <div className="flex flex-col items-center lg:items-start gap-[36px] w-full">
               <div className="flex flex-col items-center lg:items-start gap-[16px]">
@@ -113,9 +113,9 @@ export default function Home() {
                   Expert management, lettings, and investment opportunities across the UK - powered by transparency and modern compliance.
                 </p>
               </div>
-              <button className="bg-white px-[10px] py-[10px] rounded-[8px] w-full sm:w-[217px] h-[56px]">
+              <Link href="/about" className="bg-white px-[10px] py-[10px] rounded-[8px] w-full sm:w-[217px] h-[56px] inline-block text-center flex items-center justify-center">
                 <span className="font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57]">Speak To Our Team</span>
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -144,7 +144,7 @@ export default function Home() {
       <FeaturedProperties />
 
       {/* About Us Section */}
-      <div className="relative w-full min-h-[600px] lg:h-[800px] flex flex-col gap-[31px] items-start justify-center lg:justify-end pb-12 lg:pb-[36px] pt-12 lg:pt-0 px-6 lg:px-[98px] mt-[100px] lg:mt-[150px]">
+      <div className="relative w-full min-h-[600px] lg:h-[800px] flex flex-col gap-[31px] items-start justify-center lg:justify-end pb-12 lg:pb-[36px] pt-12 lg:pt-0 px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[100px] lg:mt-[150px]">
         <Image
           src="http://localhost:3845/assets/069af032e465c46ca3308131d6b7c34885ece7db.png"
           alt="About Us Background"
@@ -286,9 +286,9 @@ export default function Home() {
             <p className="font-manrope font-normal text-[18px] leading-[28px] text-white">
               Get an accurate, expert-led valuation tailored to your property and local market. Book now and take the next step with confidence.
             </p>
-            <button className="bg-white hover:bg-gray-100 px-[10px] py-[10px] rounded-[8px] w-full lg:w-[240px] h-[56px] transition-colors">
+            <Link href="/contact" className="bg-white hover:bg-gray-100 px-[10px] py-[10px] rounded-[8px] w-full lg:w-[240px] h-[56px] transition-colors inline-block text-center flex items-center justify-center">
               <span className="font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57]">Book a Free Valuation</span>
-            </button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row gap-12 lg:gap-[60px] w-full lg:w-auto">

@@ -6,7 +6,7 @@ export default function InternationalPropertiesPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Banner */}
       <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-6 lg:px-[130px] pt-[39px] pb-[628px]">
+        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[39px] pb-[628px]">
           {/* Background image with gradient */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
@@ -42,7 +42,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* Introduction */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
         <div className="flex-1 max-w-[589px] space-y-[10px] order-2 lg:order-1">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Introduction
@@ -66,7 +66,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* Why Invest Internationally */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
         <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
           <Image
             src="/images/International-Properties/why-invest.jpg"
@@ -98,7 +98,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* Featured Global Properties */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
         <div className="flex-1 max-w-[589px] space-y-[26px]">
           <div className="space-y-[10px]">
             <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
@@ -129,7 +129,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* Investment Process */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col gap-[26px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col gap-[26px]">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Investment Process
         </h2>
@@ -194,7 +194,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* Expert Support */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
         <div className="flex-1 max-w-[589px] space-y-[26px]">
           <div className="space-y-[10px]">
             <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
@@ -225,7 +225,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* Trust Signals */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mt-[150px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pr-[60px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pr-[80px] 1300:pr-[80px] 1400:pr-[80px] 1500:pr-[100px] 1600:pr-[130px]">
         <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
           <Image
             src="/images/International-Properties/trust-signals.jpg"
@@ -248,7 +248,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* SEO Strategy */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
         <div className="flex-1 max-w-[589px] space-y-[10px]">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             SEO Strategy
@@ -274,7 +274,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* Comparison Insights */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-[40px] mb-[120px] flex flex-col gap-[26px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] flex flex-col gap-[26px]">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
           Comparison Insights
         </h2>

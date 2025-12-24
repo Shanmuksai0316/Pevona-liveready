@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // Custom breakpoints for responsive padding
+      screens: {
+        '350': '350px',
+        '480': '480px',
+        '650': '650px',
+        '1300': '1300px',
+        '1400': '1400px',
+        '1500': '1500px',
+        '1600': '1600px',
+      },
       // Colors extracted from Figma design
       colors: {
         'pevona-dark': '#002F57',
@@ -22,7 +32,7 @@ module.exports = {
       // Font families from Figma
       fontFamily: {
         'crimson': ['Crimson Text', 'serif'],
-        'manrope': ['Crimson Text', 'serif'],
+        'manrope': ['Manrope', 'sans-serif'],
       },
       // Font sizes from Figma design
       fontSize: {

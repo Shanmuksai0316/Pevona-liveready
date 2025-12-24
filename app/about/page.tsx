@@ -238,7 +238,7 @@ export default function AboutUsPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/50 to-transparent" />
 
-        <div className="relative h-full max-w-[1600px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] flex flex-col justify-center">
+        <div className="relative h-full max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] flex flex-col justify-center">
           <div className="max-w-[600px] space-y-6 text-white">
             <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] leading-tight tracking-[-1.1px]">
               Built on Trust.
@@ -301,7 +301,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Our Mission & Our Vision */}
-      <section className="max-w-[1300px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1300px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[48px] sm:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Our Mission &amp; Our Vision
         </h2>
@@ -342,7 +342,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Our Services */}
-      <section className="bg-[#002f57] mt-[150px] py-[60px] px-6 lg:px-[47px]">
+      <section className="bg-[#002f57] mt-[150px] py-[60px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="max-w-[1506px] mx-auto">
           <div className="flex flex-col lg:flex-row gap-[78px] items-center">
             <div className="flex-1 max-w-[672px] space-y-[36px]">
@@ -403,7 +403,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Our Values */}
-      <section className="max-w-[1300px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-12 items-center">
+      <section className="max-w-[1300px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-12 items-center">
         <div className="flex-1 relative w-full lg:w-[610px] h-[750px] rounded-[16px] overflow-hidden">
           <Image
             src="/images/Our_Values_-_Integrity.png"
@@ -438,7 +438,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Our Team */}
-      <section className="max-w-[1300px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1300px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col gap-[36px] items-center">
         <div className="text-center space-y-4 max-w-[942px]">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Our Team
@@ -473,7 +473,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Recognized by Leading Authorities */}
-      <section className="max-w-[1336px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-[40px] 1300:gap-[150px] items-center">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] flex flex-col lg:flex-row gap-[40px] 1300:gap-[150px] items-center">
         <div className="flex-1 max-w-[507px] space-y-4">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Recognized by Leading Authorities
@@ -508,7 +508,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* A Network of Reputed Clients */}
-      <section className="bg-[#002f57] mt-[150px] py-[60px] px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+      <section className="bg-[#002f57] mt-[150px] py-[60px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="max-w-[1296px] mx-auto flex flex-col gap-[36px] items-center">
           <div className="text-center space-y-4 max-w-[942px] text-white">
             <h2 className="font-crimson text-[48px] sm:text-[56px] leading-[56px] tracking-[-1.68px]">
@@ -549,7 +549,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Why Choose Pevona? */}
-      <section className="max-w-[1337px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] mb-[120px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1337px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[150px] mb-[120px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Why Choose Pevona?
         </h2>
@@ -637,7 +637,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="max-w-[1600px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[150px] flex flex-col gap-[50px] items-center w-full">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[150px] flex flex-col gap-[50px] items-center w-full">
         <div className="text-center space-y-4 max-w-[942px]">
           <h2 className="font-crimson text-[48px] sm:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Experiences That Inspire Confidence
@@ -732,7 +732,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* ESG Section */}
-      <section className="max-w-[1600px] mx-auto px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] relative h-[450px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] relative h-[450px] rounded-[26px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/ESG_section_Bg_img.png"

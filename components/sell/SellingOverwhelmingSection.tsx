@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const PAGE_PADDING =
-  "w-full px-4 sm:px-[60px] md:px-[60px] lg:px-[60px] 1300:px-[60px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]";
+  "w-full px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]";
 
 export default function SellingOverwhelmingSection() {
   return (
