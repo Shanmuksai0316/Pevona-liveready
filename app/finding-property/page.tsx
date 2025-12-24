@@ -294,7 +294,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* Properties Section with Filter (client-side, Strapi-backed) */}
-      <PropertiesFilterSection properties={properties} />
+      <PropertiesFilterSection properties={properties} limit={7} />
     </div>
   );
 }

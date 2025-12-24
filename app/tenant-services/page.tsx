@@ -81,37 +81,28 @@ export default function TenantServicesPage() {
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Your Renting Journey
           </h2>
-          <div className="space-y-[10px] font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-            <p>
-              Every step of your move is supported – from finding the right home to settling
-              in with confidence.
-            </p>
-            <ul className="space-y-2">
-              <li>
-                <span className="font-semibold">Find Your Property – </span>
-                Browse verified listings and book a viewing online.
-              </li>
-              <li>
-                <span className="font-semibold">Apply Securely – </span>
-                Submit your documents through our trusted system.
-              </li>
-              <li>
-                <span className="font-semibold">Referencing &amp; Approval – </span>
-                Checks are completed promptly and fairly.
-              </li>
-              <li>
-                <span className="font-semibold">Tenancy Agreement – </span>
-                Review and sign your contract digitally.
-              </li>
-              <li>
-                <span className="font-semibold">Move In – </span>
-                Collect your keys and settle in with peace of mind.
-              </li>
-            </ul>
-          </div>
-          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-            Every stage is managed by professionals who value your time and peace of mind.
-          </p>
+          <ul className="space-y-2 font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 list-disc list-inside">
+            <li>
+              <span className="font-semibold">Find Your Property – </span>
+              Browse verified listings and book a viewing online.
+            </li>
+            <li>
+              <span className="font-semibold">Apply Securely – </span>
+              Submit your documents through our trusted system.
+            </li>
+            <li>
+              <span className="font-semibold">Referencing &amp; Approval – </span>
+              Checks are completed promptly and fairly.
+            </li>
+            <li>
+              <span className="font-semibold">Tenancy Agreement – </span>
+              Review and sign your contract digitally.
+            </li>
+            <li>
+              <span className="font-semibold">Move In – </span>
+              Collect your keys and settle in with peace of mind.
+            </li>
+          </ul>
         </div>
       </section>
 

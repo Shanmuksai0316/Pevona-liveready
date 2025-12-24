@@ -3,6 +3,7 @@ import Link from "next/link";
 import { fetchStrapi } from "@/lib/strapi";
 import type { StrapiProperty } from "@/types/strapi";
 import PropertiesFilterSection from "@/components/finding-property/PropertiesFilterSection";
+import AreaInsights from "@/components/sections/AreaInsights";
 
 const tenantDocs = [
   "Energy Performance Certificate (EPC)",
@@ -60,7 +61,7 @@ export default async function PropertiesToLetPage() {
         </div>
 
         {/* Filters + dynamic grid from Strapi */}
-        <PropertiesFilterSection properties={properties} />
+        <PropertiesFilterSection properties={properties} limit={6} />
       </section>
 
       {/* How We Maintain Quality Standards */}
@@ -138,6 +139,9 @@ export default async function PropertiesToLetPage() {
           ))}
         </div>
       </section>
+
+      {/* Area Insights Section */}
+      <AreaInsights />
 
       {/* CTA: Ready to Find Your Next Home? */}
       <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px]">

@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { fetchStrapi } from "@/lib/strapi";
+import type { StrapiProperty } from "@/types/strapi";
+import PropertiesFilterSection from "@/components/finding-property/PropertiesFilterSection";
 import SellingOverwhelmingSection from "@/components/sell/SellingOverwhelmingSection";
 
 function Card({
@@ -39,7 +42,10 @@ function Card({
   );
 }
 
-export default function SellPage() {
+export default async function SellPage() {
+  const res = await fetchStrapi<StrapiProperty[]>("/api/properties?populate=*");
+  const properties = res?.data ?? [];
+
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero section */}
@@ -296,6 +302,19 @@ export default function SellPage() {
             className="object-cover"
           />
         </div>
+      </section>
+
+      {/* Properties List Section */}
+      <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px]">
+        <div className="max-w-[861px] text-center space-y-4 mb-9">
+          <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
+            Featured Properties
+          </h2>
+          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+            Explore our current listings and find your perfect property.
+          </p>
+        </div>
+        <PropertiesFilterSection properties={properties} limit={6} />
       </section>
     </div>
   );

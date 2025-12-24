@@ -19,3 +19,4 @@ module.exports = createCoreService('api::property.property');
 
 
 
+

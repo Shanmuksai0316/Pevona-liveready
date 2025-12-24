@@ -9,10 +9,12 @@ type FocusFilter = "All" | "Residential" | "Commercial" | "Investment";
 
 interface PropertiesFilterSectionProps {
   properties: StrapiProperty[];
+  limit?: number;
 }
 
 export default function PropertiesFilterSection({
   properties,
+  limit,
 }: PropertiesFilterSectionProps) {
   const [locationQuery, setLocationQuery] = useState("");
   const [minPrice, setMinPrice] = useState<number | null>(null);
@@ -229,7 +231,7 @@ export default function PropertiesFilterSection({
         </div>
       ) : (
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filtered.map((property) => (
+          {filtered.slice(0, limit).map((property) => (
             <PropertyCard key={property.id} property={property} />
           ))}
         </div>

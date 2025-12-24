@@ -17,14 +17,25 @@ export default function SellingOverwhelmingSection() {
             in future iterations.
           </p>
         </div>
-        <div className="relative w-full lg:w-[40%] h-[260px] sm:h-[300px] lg:h-auto">
-          <Image
-            src="/images/Sell/2nd_sec_image_-_1.png"
-            alt="Selling overview"
-            fill
-            className="object-cover"
-            unoptimized
-          />
+        <div className="flex gap-4 w-full lg:w-[40%]">
+          <div className="relative flex-1 h-[260px] sm:h-[300px] lg:h-auto">
+            <Image
+              src="/images/Sell/2nd_sec_image_-_1.png"
+              alt="Selling overview"
+              fill
+              className="object-cover"
+              unoptimized
+            />
+          </div>
+          <div className="relative flex-1 h-[260px] sm:h-[300px] lg:h-auto">
+            <Image
+              src="/images/Sell/2nd_sec_image_-_2.png"
+              alt="Selling process"
+              fill
+              className="object-cover"
+              unoptimized
+            />
+          </div>
         </div>
       </div>
     </section>

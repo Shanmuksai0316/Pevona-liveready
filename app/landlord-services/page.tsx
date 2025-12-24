@@ -131,14 +131,8 @@ export default function LandlordServicesPage() {
             ].map((step, index) => (
               <div key={index} className="relative flex gap-4">
                 <div className="flex-shrink-0 absolute left-[-60px] top-[6px]">
-                  <div className="w-[20px] h-[20px] relative">
-                    <Image
-                      src="http://localhost:3845/assets/7f7da36ee475d28dd8dbb567ff75903658ba4b9b.svg"
-                      alt=""
-                      fill
-                      className="object-contain"
-                      unoptimized
-                    />
+                  <div className="w-[20px] h-[20px] rounded-full bg-[#002f57] flex items-center justify-center">
+                    <span className="w-[12px] h-[12px] rounded-full bg-white" />
                   </div>
                 </div>
                 <div className="space-y-[2px]">

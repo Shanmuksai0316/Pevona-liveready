@@ -97,7 +97,6 @@ export default function OurManagementServicesPage() {
                 attract reliable tenants quickly.
               </p>
             </div>
-            <div className="h-[10px] bg-[#0c4a6f]" />
           </article>
 
           {/* Card 2 */}

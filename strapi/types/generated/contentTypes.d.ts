@@ -475,6 +475,51 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   };
 }
 
+export interface ApiPropertyEnquiryPropertyEnquiry
+  extends Schema.CollectionType {
+  collectionName: 'property_enquiries';
+  info: {
+    description: 'Enquiries from property viewing/reservation forms';
+    displayName: 'Property Enquiry';
+    pluralName: 'property-enquiries';
+    singularName: 'property-enquiry';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::property-enquiry.property-enquiry',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    email: Attribute.Email & Attribute.Required;
+    message: Attribute.Text;
+    name: Attribute.String & Attribute.Required;
+    phone: Attribute.String & Attribute.Required;
+    property: Attribute.Relation<
+      'api::property-enquiry.property-enquiry',
+      'manyToOne',
+      'api::property.property'
+    >;
+    property_slug: Attribute.String;
+    property_title: Attribute.String;
+    status: Attribute.Enumeration<
+      ['new', 'contacted', 'viewing_scheduled', 'closed']
+    > &
+      Attribute.DefaultTo<'new'>;
+    updatedAt: Attribute.DateTime;
+    updatedBy: Attribute.Relation<
+      'api::property-enquiry.property-enquiry',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPropertyProperty extends Schema.CollectionType {
   collectionName: 'properties';
   info: {
@@ -1046,6 +1091,7 @@ declare module '@strapi/types' {
       'api::about-page.about-page': ApiAboutPageAboutPage;
       'api::blog.blog': ApiBlogBlog;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::property-enquiry.property-enquiry': ApiPropertyEnquiryPropertyEnquiry;
       'api::property.property': ApiPropertyProperty;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'plugin::content-releases.release': PluginContentReleasesRelease;
