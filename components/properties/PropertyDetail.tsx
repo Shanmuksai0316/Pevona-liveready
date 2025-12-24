@@ -196,7 +196,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     Tenure
                   </p>
                   <p className="font-manrope text-base text-gray-900">
-                    {attributes.tenure_information ?? attributes.tenure ?? "-"}
+                    {attributes.tenure_information ?? "-"}
                   </p>
                 </div>
                 <div className="space-y-1">
