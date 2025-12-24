@@ -272,11 +272,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="relative z-10 flex flex-col gap-[20px] items-center justify-center text-center text-white w-full max-w-[800px] lg:pt-[100px]">
-          <h2 className="font-crimson text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">
+        <div className="relative z-10 flex flex-col gap-[20px] items-center justify-center text-center text-white w-full max-w-[800px] pt-[60px] sm:pt-[80px] lg:pt-[100px] px-4">
+          <h2 className="font-crimson text-[32px] sm:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">
             Investment Opportunities
           </h2>
-          <p className="font-manrope font-normal text-[16px] lg:text-[18px] leading-[26px] lg:leading-[28px]">
+          <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[22px] sm:leading-[26px] lg:leading-[28px]">
             Pevona identifies high-yield UK properties through detailed research and financial analysis to maximise returns and safeguard your portfolio.
           </p>
         </div>

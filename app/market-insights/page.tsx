@@ -35,7 +35,7 @@ export default function MarketInsightsPage() {
         </div>
 
         {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
+        <div className="lg:hidden flex flex-col h-[850px] pt-[100px]">
           {/* Top Half: Image */}
           <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
             <Image

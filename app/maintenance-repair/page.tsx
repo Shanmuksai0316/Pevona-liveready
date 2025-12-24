@@ -43,7 +43,7 @@ export default function MaintenanceRepairPage() {
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
               <Image
-                src="/images/maintenance & repair/main_bg_img.png"
+                src="/images/maintenance%20%26%20repair/main_bg_img.png"
                 alt="Property maintenance and repairs background"
                 fill
                 className="object-cover"
@@ -70,7 +70,7 @@ export default function MaintenanceRepairPage() {
           {/* Top Half: Image */}
           <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
             <Image
-              src="/images/maintenance & repair/main_bg_img.png"
+              src="/images/maintenance%20%26%20repair/main_bg_img.png"
               alt="Property maintenance and repairs background"
               fill
               className="object-cover"
@@ -102,7 +102,7 @@ export default function MaintenanceRepairPage() {
       <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[80px]">
         <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
-            src="/images/maintenance & repair/main_2nd_sec_img.png"
+            src="/images/maintenance%20%26%20repair/main_2nd_sec_img.png"
             alt="Property maintenance team at work"
             fill
             className="object-cover"
@@ -177,7 +177,7 @@ export default function MaintenanceRepairPage() {
             {/* Image stack */}
             <div className="flex-1 relative w-full max-w-[720px] h-[480px] rounded-[26px] overflow-hidden">
               <Image
-                src="/images/maintenance & repair/4th_main_Requestssec_img.png"
+                src="/images/maintenance%20%26%20repair/4th_main_Requestssec_img.png"
                 alt="Maintenance request management"
                 fill
                 className="object-cover"
@@ -260,7 +260,7 @@ export default function MaintenanceRepairPage() {
 
           <div className="flex-1 relative w-full max-w-[640px] h-[460px] rounded-[26px] overflow-hidden">
             <Image
-              src="/images/maintenance & repair/5th_Maintenance.png"
+              src="/images/maintenance%20%26%20repair/5th_Maintenance.png"
               alt="Maintenance meeting UK standards"
               fill
               className="object-cover"
@@ -274,7 +274,7 @@ export default function MaintenanceRepairPage() {
       <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px]">
         <div className="relative h-[450px] rounded-[26px] overflow-hidden">
           <Image
-            src="/images/maintenance & repair/6th_Properties_Safe.png"
+            src="/images/maintenance%20%26%20repair/6th_Properties_Safe.png"
             alt="Safe, well-maintained homes"
             fill
             className="object-cover"
@@ -302,7 +302,7 @@ export default function MaintenanceRepairPage() {
       <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] mb-[140px] flex flex-col lg:flex-row items-center gap-[80px]">
         <div className="flex-1 relative w-full max-w-[640px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
-            src="/images/maintenance & repair/7th_Full_Transparency.png"
+            src="/images/maintenance%20%26%20repair/7th_Full_Transparency.png"
             alt="Transparent maintenance process"
             fill
             className="object-cover"
