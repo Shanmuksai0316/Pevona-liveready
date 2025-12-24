@@ -229,23 +229,30 @@ export default function AboutUsPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Banner */}
       <section className="relative w-full h-[600px] sm:h-[700px] lg:h-[760px] overflow-hidden rounded-b-[36px]">
-        <Image
-          src="/images/Banner_image.png"
-          alt="About us hero"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/50 to-transparent" />
+        {/* Desktop: Background Image */}
+        <div className="hidden lg:block absolute inset-0">
+          <Image
+            src="/images/Banner_image.png"
+            alt="About us hero"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/50 to-transparent" />
+        </div>
 
-        <div className="relative h-full max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] flex flex-col justify-center">
+        {/* Mobile: Solid Dark Blue Background */}
+        <div className="lg:hidden absolute inset-0 bg-[#002f57]" />
+
+        {/* Desktop Layout */}
+        <div className="hidden lg:flex relative h-full max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] flex-col justify-center">
           <div className="max-w-[600px] space-y-6 text-white">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] leading-tight tracking-[-1.1px]">
+            <h1 className="font-crimson text-[36px] leading-tight tracking-[-1.1px]">
               Built on Trust.
               <br />
               Driven by Expertise.
             </h1>
-            <p className="font-manrope text-[16px] sm:text-[18px] leading-[28px] text-white/90">
+            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
               We believe in the personal touch welcoming clients with familiar voices and friendly
               faces. Our limited portfolio ensures dedicated service and long-term relationships. We
               are committed to sustainability, ethical leadership, and environmental responsibility,
@@ -258,6 +265,29 @@ export default function AboutUsPage() {
               Speak To Our Team
             </Link>
           </div>
+        </div>
+
+        {/* Mobile Layout - Centered Design */}
+        <div className="lg:hidden relative h-full flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-6 text-white text-center">
+          <div className="space-y-4 sm:space-y-6 max-w-full">
+            <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] leading-tight tracking-[-1.1px]">
+              Built on Trust.
+              <br />
+              Driven by Expertise.
+            </h1>
+            <p className="font-manrope text-[14px] sm:text-[16px] leading-[22px] sm:leading-[26px] text-left max-w-[600px] mx-auto">
+              We believe in the personal touch welcoming clients with familiar voices and friendly
+              faces. Our limited portfolio ensures dedicated service and long-term relationships. We
+              are committed to sustainability, ethical leadership, and environmental responsibility,
+              actively supporting animal welfare and reducing waste.
+            </p>
+          </div>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 sm:px-[35px] rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] transition-all hover:bg-[#0073B5] hover:text-white mt-4"
+          >
+            Speak To Our Team
+          </Link>
         </div>
       </section>
 
