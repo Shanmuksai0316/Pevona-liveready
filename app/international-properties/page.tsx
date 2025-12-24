@@ -4,345 +4,64 @@ import Link from "next/link";
 export default function InternationalPropertiesPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
-      {/* Hero Banner */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
-        {/* Desktop Layout */}
-        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[628px]">
-          {/* Background image with gradient */}
-          <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
-              <Image
-                src="/images/International-Properties/hero.jpg"
-                alt="Global property investment consultation"
-                fill
-                className="object-cover object-right"
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/75 to-transparent" />
-            </div>
-          </div>
-
-          {/* Hero Content */}
-          <div className="relative max-w-[718px] mt-[299px] space-y-[26px] text-white">
-            <div className="space-y-4">
-              <h1 className="font-crimson text-[66px] leading-[66px] tracking-[-1.98px]">
-                Your Gateway to Global Property Investments
-              </h1>
-              <p className="font-manrope text-[18px] leading-[28px]">
-                Explore, Invest, and Grow Beyond Borders.
-              </p>
-            </div>
+      {/* Hero Section */}
+      <section className="max-w-[1400px] mx-auto mt-[100px] lg:mt-[120px] mb-[60px] 650:mb-[80px] lg:mb-[100px] 1500:mb-[130px] 1600:mb-[150px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px] sm:min-h-[450px] lg:min-h-[520px] rounded-[24px] overflow-hidden bg-[#002f57]">
+          <div className="p-8 sm:p-12 lg:p-16 text-white flex flex-col justify-center">
+            <h1 className="font-crimson text-[28px] sm:text-[36px] md:text-[42px] leading-tight mb-4">
+              Your Gateway to <br /> International Property Investments
+            </h1>
+            <p className="font-manrope text-[14px] sm:text-[15px] leading-[20px] sm:leading-[24px] text-white/80 max-w-md mb-6">
+              Explore high-growth markets, diversify your portfolio, and access
+              exclusive development opportunities across Africa, Europe, and emerging global regions.
+            </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-[56px] px-5 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+              className="bg-white text-[#002f57] px-6 py-3 rounded-[8px] text-sm sm:text-base font-manrope font-semibold w-fit hover:bg-[#0073B5] hover:text-white transition-colors"
             >
-              Book a Global Consultation
+              Explore Projects
             </Link>
           </div>
-        </div>
 
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
+          <div className="relative w-full h-[300px] sm:h-[400px] lg:h-full min-h-[300px]">
             <Image
               src="/images/International-Properties/hero.jpg"
-              alt="Global property investment consultation"
+              alt="International property investment"
               fill
               className="object-cover"
               unoptimized
             />
           </div>
-
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
-              Your Gateway to Global Property Investments
-            </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
-              Explore, Invest, and Grow Beyond Borders.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
-            >
-              Book a Global Consultation
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Introduction */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
-        <div className="flex-1 max-w-[589px] space-y-[10px] order-2 lg:order-1">
-          <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-            Introduction
-          </h2>
-          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-            Welcome to Pevona Ltd's International Property Hub - your gateway to global real estate
-            opportunities. Our mission is to connect discerning investors with premium properties
-            worldwide, ensuring compliance, transparency, and exceptional returns.
-          </p>
-        </div>
-
-        <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden order-1 lg:order-2">
-          <Image
-            src="/images/International-Properties/introduction.jpg"
-            alt="International property investment"
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-      </section>
-
-      {/* Why Invest Internationally */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
-        <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
-          <Image
-            src="/images/International-Properties/why-invest.jpg"
-            alt="Why invest internationally"
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-
-        <div className="flex-1 max-w-[589px] space-y-[26px] order-1 lg:order-2">
-          <div className="space-y-[10px]">
-            <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-              Why Invest Internationally
-            </h2>
-            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-              Investing internationally diversifies your portfolio, mitigates risk, and opens doors
-              to high-growth markets. Pevona ensures compliance with local laws, tax efficiency, and
-              currency risk management.
-            </p>
-          </div>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] transition-colors"
-          >
-            Discover Global Benefits
-          </Link>
-        </div>
-      </section>
-
-      {/* Featured Global Properties */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
-        <div className="flex-1 max-w-[589px] space-y-[26px]">
-          <div className="space-y-[10px]">
-            <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-              Featured Global Properties
-            </h2>
-            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-              Showcase premium properties across Europe, Asia, and the Americas. Each listing
-              includes detailed descriptions, ROI projections, and compliance notes.
-            </p>
-          </div>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center h-[48px] px-[20px] rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] transition-colors"
-          >
-            Explore Overseas Opportunities
-          </Link>
-        </div>
-
-        <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden">
-          <Image
-            src="/images/International-Properties/featured-properties.jpg"
-            alt="Featured global properties - city sunset"
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-      </section>
-
-      {/* Investment Process */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[26px]">
-        <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
-          Investment Process
+      {/* Featured Projects */}
+      <section className="max-w-[1400px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] text-center">
+        <h2 className="font-crimson text-[26px] sm:text-[30px] md:text-[36px] lg:text-[40px] mb-3 text-[#002f57]">
+          Featured International Projects
         </h2>
+        <p className="font-manrope text-[14px] sm:text-[16px] text-gray-500 mb-12">
+          Discover curated developments across global destinations
+        </p>
 
-        <div className="flex flex-col lg:flex-row gap-[68px] items-end">
-          <div className="flex-1 relative w-full max-w-[720px] h-[660px] rounded-[26px] overflow-hidden">
+        {/* Project Card */}
+        <Link
+          href="/international-properties/buea-cameroon"
+          className="block max-w-sm mx-auto bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition"
+        >
+          <div className="relative w-full h-[240px]">
             <Image
-              src="/images/International-Properties/investment-process.jpg"
-              alt="Investment process consultation"
-              fill
+              src="/images/International-Properties/buea-cameroon.jpg"
               className="object-cover"
+              alt="Shopping Centre – Buea, Cameroon"
+              fill
               unoptimized
             />
           </div>
-
-          <div className="flex-1 max-w-[662px] space-y-[32px]">
-            {[
-              {
-                step: "STEP 1",
-                title: "Consultation",
-                description: "Understand your goals and budget.",
-              },
-              {
-                step: "STEP 2",
-                title: "Property Selection",
-                description: "Curated listings tailored to your needs.",
-              },
-              {
-                step: "STEP 3",
-                title: "Legal & Compliance",
-                description: "Navigate cross-border regulations.",
-              },
-              {
-                step: "STEP 4",
-                title: "Transaction & Management",
-                description: "Secure, transparent, and efficient.",
-              },
-              {
-                step: "STEP 5",
-                title: "Ongoing Support",
-                description: "Continuous monitoring and portfolio optimization.",
-              },
-            ].map((item, index) => (
-              <div key={index} className="flex flex-col gap-[6px]">
-                <div className="bg-[#fce6e9] inline-flex items-center justify-center px-[10px] py-[4px] rounded-[100px] w-fit">
-                  <p className="font-manrope font-medium text-[12px] leading-[16px] text-[#333]">
-                    {item.step}
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57]">
-                    {item.title}
-                  </h3>
-                  <p className="font-manrope text-[18px] leading-[28px] text-[#333]">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Expert Support */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
-        <div className="flex-1 max-w-[589px] space-y-[26px]">
-          <div className="space-y-[10px]">
-            <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-              Expert Support
-            </h2>
-            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-              Our team offers legal, tax, and currency exchange advisory to simplify international
-              transactions. Multilingual support ensures seamless communication.
-            </p>
-          </div>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] transition-colors"
-          >
-            Speak to Our Experts
-          </Link>
-        </div>
-
-        <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden">
-          <Image
-            src="/images/International-Properties/expert-support.jpg"
-            alt="Expert support team"
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-      </section>
-
-      {/* Trust Signals */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pr-[80px] 1300:pr-[80px] 1400:pr-[80px] 1500:pr-[100px] 1600:pr-[130px]">
-        <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
-          <Image
-            src="/images/International-Properties/trust-signals.jpg"
-            alt="Trust signals and partnerships"
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-
-        <div className="flex-1 max-w-[589px] space-y-[10px] order-1 lg:order-2">
-          <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-            Trust Signals
-          </h2>
-          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-            CMP certification, compliance badges, and partnerships with global property networks
-            reinforce trust and credibility.
+          <p className="font-manrope text-sm p-4 text-gray-700">
+            Shopping Centre – Buea, Cameroon
           </p>
-        </div>
-      </section>
-
-      {/* SEO Strategy */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
-        <div className="flex-1 max-w-[589px] space-y-[10px]">
-          <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-            SEO Strategy
-          </h2>
-          <div className="space-y-2 font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-            <p>
-              Meta Description: Pevona Ltd connects you to premium international properties with expert
-              guidance and compliance assurance.
-            </p>
-            <p>Alt Tags: Global property investments, overseas real estate opportunities.</p>
-          </div>
-        </div>
-
-        <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden">
-          <Image
-            src="/images/blog_sec_img.png"
-            alt="Search engine optimization"
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-      </section>
-
-      {/* Comparison Insights */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] flex flex-col gap-[26px]">
-        <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-          Comparison Insights
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
-            {
-              title: "Knight Frank & Savills",
-              description: "Global listings and bespoke valuation services.",
-            },
-            {
-              title: "Foxtons",
-              description: "London-centric investments with portfolio growth strategies.",
-            },
-            {
-              title: "Chestertons",
-              description: "Dedicated China Desk and multilingual support.",
-            },
-            {
-              title: "Hamptons",
-              description: "Split teams for International Sales & Lettings, Private Office for UHNW clients.",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] px-[30px] py-[26px] flex flex-col justify-start"
-            >
-              <div className="space-y-2">
-                <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57]">
-                  {item.title}
-                </h3>
-                <p className="font-manrope font-medium text-[16px] leading-[26px] text-[#333] line-clamp-2">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+        </Link>
       </section>
     </div>
   );
