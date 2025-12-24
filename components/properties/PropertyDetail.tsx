@@ -210,7 +210,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
               <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
                 Property Essentials
               </h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="space-y-1">
                   <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
                     Bedrooms

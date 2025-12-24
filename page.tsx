@@ -146,21 +146,32 @@ export default function Home() {
       <FeaturedProperties />
 
       {/* About Us Section */}
-      <div className="relative w-full min-h-[600px] lg:h-[800px] flex flex-col gap-[31px] items-start justify-center lg:justify-end pb-12 lg:pb-[36px] pt-12 lg:pt-0 px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+      <div className="relative w-full h-[811px] lg:h-[800px] flex flex-col gap-[31px] items-start justify-center lg:justify-end pb-12 lg:pb-[36px] pt-12 lg:pt-0 px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+        {/* Desktop Background */}
         <Image
           src="http://localhost:3845/assets/069af032e465c46ca3308131d6b7c34885ece7db.png"
           alt="About Us Background"
           fill
-          className="object-cover"
+          className="object-cover hidden lg:block"
           unoptimized
         />
+        {/* Mobile Background - will be provided by user */}
+        <div className="absolute inset-0 lg:hidden">
+          <Image
+            src="/images/About_Pevona_sec.png"
+            alt="About Us Background Mobile"
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
         <div className="absolute inset-0 bg-black bg-opacity-40 lg:hidden"></div>
         <div className="relative z-10 flex flex-col gap-[16px] items-start max-w-[600px] text-white w-full">
           <div className="flex flex-col gap-[8px] items-start">
-            <h2 className="font-crimson text-[36px] lg:text-[56px] leading-[42px] lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">About Pevona</h2>
-            <p className="font-manrope font-normal text-[18px] lg:text-[22px] leading-[26px] lg:leading-[32px]">Rooted in Trust. Driven by Expertise.</p>
+            <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">About Pevona</h2>
+            <p className="font-manrope font-normal text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px] leading-[20px] sm:leading-[24px] md:leading-[26px] lg:leading-[32px]">Rooted in Trust. Driven by Expertise.</p>
           </div>
-          <p className="font-manrope font-normal text-[16px] lg:text-[18px] leading-[26px] lg:leading-[28px] opacity-80">
+          <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] opacity-80">
             Pevona Ltd is a UK real estate company specialising in lettings, management, and investments. We deliver transparent, compliant, and client-focused solutions that protect assets and maximise returns.
           </p>
         </div>
@@ -186,33 +197,33 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="flex flex-col gap-[36px] items-center justify-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-6">
+      <div className="flex flex-col gap-[36px] items-center justify-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="flex flex-col gap-[10px] items-center text-center max-w-[800px]">
-          <h2 className="font-crimson text-[36px] lg:text-[56px] leading-tight lg:leading-[56px] text-[#002f57] tracking-tight lg:tracking-[-1.68px]">
+          <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] text-[#002f57] tracking-tight lg:tracking-[-1.68px]">
             Proven Results Backed by Experience
           </h2>
-          <p className="font-manrope font-normal text-[16px] lg:text-[18px] leading-[26px] lg:leading-[28px] text-[#333333]">
+          <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[26px] lg:leading-[28px] text-[#333333]">
             With decades of industry expertise and hundreds of successful sales, we deliver trusted property guidance rooted in performance and reliability.
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-[26px] items-center justify-center w-full max-w-[1100px]">
           <div className="flex-1 w-full border-t border-[rgba(0,0,0,0.12)] flex flex-col gap-[8px] items-center justify-center py-8 lg:p-[26px] text-center">
-            <p className="font-crimson font-bold text-[36px] lg:text-[42px] text-[#002f57]">500+</p>
-            <p className="font-manrope font-light text-[18px] lg:text-[22px] text-[#333333]">properties sold</p>
+            <p className="font-crimson font-bold text-[30px] sm:text-[36px] lg:text-[42px] text-[#002f57]">500+</p>
+            <p className="font-manrope font-light text-[16px] sm:text-[18px] lg:text-[22px] text-[#333333]">properties sold</p>
           </div>
           <div className="flex-1 w-full border-t border-[rgba(0,0,0,0.12)] flex flex-col gap-[8px] items-center justify-center py-8 lg:p-[26px] text-center">
-            <p className="font-crimson font-bold text-[36px] lg:text-[42px] text-[#002f57]">20</p>
-            <p className="font-manrope font-light text-[18px] lg:text-[22px] text-[#333333]">years of experience</p>
+            <p className="font-crimson font-bold text-[30px] sm:text-[36px] lg:text-[42px] text-[#002f57]">20</p>
+            <p className="font-manrope font-light text-[16px] sm:text-[18px] lg:text-[22px] text-[#333333]">years of experience</p>
           </div>
           <div className="flex-1 w-full border-t border-[rgba(0,0,0,0.12)] flex flex-col gap-[8px] items-center justify-center py-8 lg:p-[26px] text-center">
-            <p className="font-crimson font-bold text-[36px] lg:text-[42px] text-[#002f57]">50+</p>
-            <p className="font-manrope font-light text-[18px] lg:text-[22px] text-[#333333]">Awards & Recognitions</p>
+            <p className="font-crimson font-bold text-[30px] sm:text-[36px] lg:text-[42px] text-[#002f57]">50+</p>
+            <p className="font-manrope font-light text-[16px] sm:text-[18px] lg:text-[22px] text-[#333333]">Awards & Recognitions</p>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-[26px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-6">
-        <h2 className="font-crimson text-[36px] lg:text-[56px] leading-tight lg:leading-[56px] text-[#002f57] text-center tracking-tight lg:tracking-[-1.68px] max-w-[562px]">
+      <div className="flex flex-col gap-[26px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+        <h2 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] text-[#002f57] text-center tracking-tight lg:tracking-[-1.68px] max-w-[562px]">
           Solutions That Protect and Grow Your Assets.
         </h2>
         <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[26px] items-start justify-center w-full max-w-[1400px]">
@@ -222,7 +233,7 @@ export default function Home() {
             { title: 'Investments', image: '67b55c6ccaa7e563976cce39b0d51b258d560847', desc: 'Tailored UK property investment opportunities designed for performance and security.' }
           ].map((service, i) => (
             <div key={i} className="flex flex-col gap-[21px] items-center w-full lg:w-[445px]">
-              <div className="relative w-full h-[350px] lg:h-[480px] rounded-[12px] overflow-hidden">
+              <div className="relative w-full h-[280px] sm:h-[350px] lg:h-[480px] rounded-[12px] overflow-hidden">
                 <Image
                   src={`http://localhost:3845/assets/${service.image}.png`}
                   alt={service.title}
@@ -232,10 +243,10 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60"></div>
                 <div className="absolute bottom-[20px] left-[20px] lg:left-[38px]">
-                  <h3 className="font-crimson font-semibold text-[32px] lg:text-[40px] leading-tight text-white capitalize">{service.title}</h3>
+                  <h3 className="font-crimson font-semibold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] leading-tight text-white capitalize">{service.title}</h3>
                 </div>
               </div>
-              <p className="font-manrope font-normal text-[16px] lg:text-[18px] leading-[26px] lg:leading-[28px] text-[#333333] text-center lg:text-left max-w-[370px]">
+              <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[22px] sm:leading-[26px] lg:leading-[28px] text-[#333333] text-center lg:text-left max-w-[370px]">
                 {service.desc}
               </p>
             </div>
