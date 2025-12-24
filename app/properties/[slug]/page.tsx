@@ -9,10 +9,10 @@ export default async function PropertyDetailPage({
   params: { slug: string };
 }) {
   const properties = await fetchStrapi<StrapiProperty[]>(
-    `/api/properties?filters[slug][$eq]=${params.slug}&populate=*`
+    `/api/properties?filters[slug][$eq]=${params.slug}&populate[gallery]=*&populate[floor_plans]=*&populate[documents]=*&populate[epc_document]=*&populate[gas_safety_certificate]=*&populate[electrical_safety_report]=*&populate[hmo_licence]=*&populate[seo]=*&populate=*`
   );
 
-  if (!properties.data || properties.data.length === 0) {
+  if (!properties?.data || properties.data.length === 0) {
     notFound();
   }
 
