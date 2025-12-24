@@ -73,10 +73,10 @@ export default function InternationalPropertiesPage() {
             luxury residential projects.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="flex justify-center max-w-6xl mx-auto">
             <Link
               href="/international-properties/buea-cameroon"
-              className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition"
+              className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition max-w-md w-full"
             >
               <div className="relative h-[400px]">
                 <Image
@@ -89,24 +89,6 @@ export default function InternationalPropertiesPage() {
               </div>
               <p className="mt-4 p-4 text-center font-manrope text-[16px] sm:text-[18px] font-semibold text-[#002f57] group-hover:text-[#29902e] transition-colors">
                 Shopping Centre – Buea, Cameroon
-              </p>
-            </Link>
-
-            <Link
-              href="/international-properties/luxury-residential-lagos"
-              className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition"
-            >
-              <div className="relative h-[400px]">
-                <Image
-                  src="/images/International-Properties/Mask group (5).png"
-                  alt="Luxury Residential – Lagos, Nigeria"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  unoptimized
-                />
-              </div>
-              <p className="mt-4 p-4 text-center font-manrope text-[16px] sm:text-[18px] font-semibold text-[#002f57] group-hover:text-[#29902e] transition-colors">
-                Luxury Residential – Lagos, Nigeria
               </p>
             </Link>
           </div>
