@@ -11,8 +11,9 @@ export default async function FindingPropertyPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden min-h-[760px]">
-        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] min-h-[760px] flex items-center">
+      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
+        {/* Desktop Layout */}
+        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] min-h-[760px] flex items-center">
           {/* Background image (includes blue gradient baked into asset) */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] overflow-hidden rounded-b-[36px]">
@@ -28,13 +29,40 @@ export default async function FindingPropertyPage() {
 
           {/* Hero Content on left over gradient */}
           <div className="relative z-10 max-w-[600px] space-y-9 text-white">
-            <h1 className="font-crimson text-[48px] md:text-[56px] lg:text-[66px] leading-[1.05] tracking-[-1.98px]">
+            <h1 className="font-crimson text-[66px] leading-[1.05] tracking-[-1.98px]">
               Find the Right Property With Confidence
             </h1>
             <p className="font-manrope text-[18px] leading-[28px] text-white/90">
               Buying a home or investing in UK property should feel simple, transparent, and well-supported. We help you navigate every stage with market insight, verified information, and guidance tailored to your goal.
             </p>
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-[#002f57] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-white/90 transition-colors">
+              Book a Consultation
+            </Link>
+          </div>
+        </div>
+
+        {/* Mobile Layout - Split Design */}
+        <div className="lg:hidden flex flex-col h-[850px]">
+          {/* Top Half: Image */}
+          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
+            <Image
+              src="/images/bg_img.png"
+              alt="Modern real estate house"
+              fill
+              className="object-cover"
+              unoptimized
+            />
+          </div>
+
+          {/* Bottom Half: Dark Blue with Text */}
+          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
+            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+              Find the Right Property With Confidence
+            </h1>
+            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
+              Buying a home or investing in UK property should feel simple, transparent, and well-supported. We help you navigate every stage with market insight, verified information, and guidance tailored to your goal.
+            </p>
+            <Link href="/contact" className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2">
               Book a Consultation
             </Link>
           </div>

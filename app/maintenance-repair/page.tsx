@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MaintenanceRepairPage() {
   const comprehensiveCards = [
@@ -35,8 +36,9 @@ export default function MaintenanceRepairPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero – Property Care That Never Stops */}
-      <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[260px] flex items-center justify-center text-center">
+      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
+        {/* Desktop Layout */}
+        <div className="hidden lg:flex relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[260px] items-center justify-center text-center">
           {/* Background image with layered look */}
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
@@ -52,7 +54,7 @@ export default function MaintenanceRepairPage() {
           </div>
 
           <div className="relative max-w-[880px] space-y-4 text-white mt-[120px]">
-            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[66px] tracking-tight md:tracking-[-1.98px]">
+            <h1 className="font-crimson text-[66px] leading-[66px] tracking-[-1.98px]">
               Property Care That Never Stops
             </h1>
             <p className="font-manrope text-[18px] leading-[28px] text-white/90">
@@ -60,6 +62,38 @@ export default function MaintenanceRepairPage() {
               inspections to urgent repairs, Pevona ensures your property stays safe, efficient, and well
               looked after — 365 days a year.
             </p>
+          </div>
+        </div>
+
+        {/* Mobile Layout - Split Design */}
+        <div className="lg:hidden flex flex-col h-[850px]">
+          {/* Top Half: Image */}
+          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
+            <Image
+              src="/images/maintenance & repair/main_bg_img.png"
+              alt="Property maintenance and repairs background"
+              fill
+              className="object-cover"
+              unoptimized
+            />
+          </div>
+
+          {/* Bottom Half: Dark Blue with Text */}
+          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
+            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+              Property Care That Never Stops
+            </h1>
+            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
+              We manage every maintenance request with speed, care, and compliance. From preventive
+              inspections to urgent repairs, Pevona ensures your property stays safe, efficient, and well
+              looked after — 365 days a year.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+            >
+              Book a Consultation
+            </Link>
           </div>
         </div>
       </section>
