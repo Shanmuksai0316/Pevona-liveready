@@ -181,7 +181,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
         <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em] mb-1">
-              For Sale
+              {attributes.status || "For Sale"}
             </p>
             <h1 className="font-crimson text-2xl md:text-3xl font-semibold text-pevona-dark leading-snug">
               {attributes.title}
@@ -193,7 +193,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
           <div className="flex flex-col items-start md:items-end gap-1">
             <span className="font-manrope text-sm text-gray-500">Guide Price</span>
             <span className="font-crimson text-2xl md:text-3xl font-semibold text-pevona-dark">
-              {attributes.currency}
+              {attributes.currency || "GBP"}
               {attributes.price?.toLocaleString?.("en-GB") ?? attributes.price}
             </span>
           </div>
@@ -205,12 +205,57 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
         <div className="grid grid-cols-1 lg:[grid-template-columns:minmax(0,1.7fr)_minmax(0,1.3fr)] gap-10 lg:gap-12">
           {/* Left: details */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Essentials */}
+            {/* Tenure Information & Deposit */}
+            {(attributes.tenure_information || attributes.deposit || attributes.council_tax_band) && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {attributes.tenure_information && (
+                  <div>
+                    <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                      Tenure Information:
+                    </p>
+                    <p className="font-manrope text-sm md:text-base text-gray-700">
+                      {attributes.tenure_information}
+                    </p>
+                  </div>
+                )}
+                {attributes.deposit && (
+                  <div>
+                    <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                      Deposit:
+                    </p>
+                    <p className="font-manrope text-sm md:text-base text-gray-700">
+                      {attributes.currency || "GBP"}
+                      {attributes.deposit.toLocaleString("en-GB")}
+                    </p>
+                  </div>
+                )}
+                {attributes.council_tax_band && (
+                  <div>
+                    <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                      Council Tax band:
+                    </p>
+                    <p className="font-manrope text-sm md:text-base text-gray-700">
+                      {attributes.council_tax_band}
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Property Essentials */}
             <div>
               <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
                 Property Essentials
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="space-y-1">
+                  <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                    Property Type
+                  </p>
+                  <p className="font-manrope text-base text-gray-900">
+                    {attributes.property_type ?? "-"}
+                  </p>
+                </div>
                 <div className="space-y-1">
                   <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
                     Bedrooms
@@ -229,40 +274,119 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                 </div>
                 <div className="space-y-1">
                   <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
-                    Type
-                  </p>
-                  <p className="font-manrope text-base text-gray-900">
-                    {attributes.property_type ?? "-"}
-                  </p>
-                </div>
-                <div className="space-y-1">
-                  <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
-                    Tenure
-                  </p>
-                  <p className="font-manrope text-base text-gray-900">
-                    {attributes.tenure_information ?? "-"}
-                  </p>
-                </div>
-                <div className="space-y-1">
-                  <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
                     Area (sq ft)
                   </p>
                   <p className="font-manrope text-base text-gray-900">
                     {attributes.area ? attributes.area.toLocaleString("en-GB") : "-"}
                   </p>
                 </div>
-                <div className="space-y-1">
-                  <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
-                    EPC Rating
-                  </p>
-                  <p className="font-manrope text-base text-gray-900">
-                    {attributes.epc_rating ?? "-"}
-                  </p>
-                </div>
               </div>
             </div>
 
-            {/* Description */}
+            {/* Utilities, Parking, Accessibility */}
+            {(attributes.utilities || attributes.parking || attributes.accessibility) && (
+              <div>
+                <div className="space-y-3">
+                  {attributes.utilities && (
+                    <div>
+                      <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                        Utilities:
+                      </p>
+                      <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
+                        {attributes.utilities}
+                      </p>
+                    </div>
+                  )}
+                  {attributes.parking && (
+                    <div>
+                      <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                        Parking:
+                      </p>
+                      <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
+                        {attributes.parking}
+                      </p>
+                    </div>
+                  )}
+                  {attributes.accessibility && (
+                    <div>
+                      <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                        Accessibility:
+                      </p>
+                      <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
+                        {attributes.accessibility}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Risk, Safety & Legal Status */}
+            {(attributes.cladding_building_safety ||
+              attributes.rights_restrictions ||
+              attributes.flood_risk ||
+              attributes.listed_status) && (
+              <div>
+                <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+                  Risk, Safety & Legal Status
+                </h2>
+                <div className="space-y-3">
+                  {attributes.cladding_building_safety && (
+                    <div className="flex justify-between border-b border-gray-100 pb-2">
+                      <span className="font-manrope text-sm text-gray-600">
+                        Cladding / Building Safety:
+                      </span>
+                      <span className="font-manrope text-sm text-gray-900">
+                        {attributes.cladding_building_safety}
+                      </span>
+                    </div>
+                  )}
+                  {attributes.rights_restrictions && (
+                    <div className="flex justify-between border-b border-gray-100 pb-2">
+                      <span className="font-manrope text-sm text-gray-600">
+                        Rights & Restrictions:
+                      </span>
+                      <span className="font-manrope text-sm text-gray-900">
+                        {attributes.rights_restrictions}
+                      </span>
+                    </div>
+                  )}
+                  {attributes.flood_risk && (
+                    <div className="flex justify-between border-b border-gray-100 pb-2">
+                      <span className="font-manrope text-sm text-gray-600">Flood Risk:</span>
+                      <span className="font-manrope text-sm text-gray-900">
+                        {attributes.flood_risk}
+                      </span>
+                    </div>
+                  )}
+                  {attributes.listed_status && (
+                    <div className="flex justify-between border-b border-gray-100 pb-2">
+                      <span className="font-manrope text-sm text-gray-600">Listed Status:</span>
+                      <span className="font-manrope text-sm text-gray-900">
+                        {attributes.listed_status}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* EPC - Energy Performance Certificate */}
+            {attributes.epc_rating && (
+              <div>
+                <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+                  EPC - Energy Performance Certificate
+                </h2>
+                <div className="flex justify-between border-b border-gray-100 pb-2">
+                  <span className="font-manrope text-sm text-gray-600">EPC Rating:</span>
+                  <span className="font-manrope text-sm text-gray-900">
+                    {attributes.epc_rating}
+                  </span>
+                </div>
+              </div>
+            )}
+
+            {/* Property Description */}
             <div>
               <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
                 Property Description
@@ -273,72 +397,51 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                   dangerouslySetInnerHTML={{ __html: attributes.description }}
                 />
               ) : (
-                <p className="font-manrope text-sm text-gray-500">
-                  Full property description will be available soon.
-                </p>
+                <p className="font-manrope text-sm text-gray-500">NO Description</p>
               )}
             </div>
 
-            {/* Key Financials */}
-            {(attributes.deposit ||
-              attributes.service_charge ||
+            {/* Leasehold Financials */}
+            {(attributes.service_charge ||
               attributes.ground_rent ||
-              attributes.lease_remaining ||
               attributes.review_period ||
-              attributes.council_tax_band) && (
+              attributes.lease_remaining) && (
               <div>
                 <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
-                  Key Financial Information
+                  Leasehold Financials
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {attributes.deposit && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Deposit</span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.currency}
-                        {attributes.deposit.toLocaleString("en-GB")}
-                      </span>
-                    </div>
-                  )}
+                <div className="space-y-3">
                   {attributes.service_charge && (
                     <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Service Charge</span>
+                      <span className="font-manrope text-sm text-gray-600">Service Charge:</span>
                       <span className="font-manrope text-sm text-gray-900">
-                        {attributes.currency}
+                        {attributes.currency || "GBP"}
                         {attributes.service_charge.toLocaleString("en-GB")}
                       </span>
                     </div>
                   )}
                   {attributes.ground_rent && (
                     <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Ground Rent</span>
+                      <span className="font-manrope text-sm text-gray-600">Ground Rent:</span>
                       <span className="font-manrope text-sm text-gray-900">
-                        {attributes.currency}
+                        {attributes.currency || "GBP"}
                         {attributes.ground_rent.toLocaleString("en-GB")}
-                      </span>
-                    </div>
-                  )}
-                  {attributes.council_tax_band && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Council Tax Band</span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.council_tax_band}
-                      </span>
-                    </div>
-                  )}
-                  {attributes.lease_remaining && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Lease Remaining</span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.lease_remaining}
                       </span>
                     </div>
                   )}
                   {attributes.review_period && (
                     <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Review Period</span>
+                      <span className="font-manrope text-sm text-gray-600">Review Period:</span>
                       <span className="font-manrope text-sm text-gray-900">
                         {attributes.review_period}
+                      </span>
+                    </div>
+                  )}
+                  {attributes.lease_remaining && (
+                    <div className="flex justify-between border-b border-gray-100 pb-2">
+                      <span className="font-manrope text-sm text-gray-600">Lease Remaining:</span>
+                      <span className="font-manrope text-sm text-gray-900">
+                        {attributes.lease_remaining}
                       </span>
                     </div>
                   )}
@@ -346,92 +449,6 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
               </div>
             )}
 
-            {/* Additional Information */}
-            {(attributes.utilities ||
-              attributes.parking ||
-              attributes.accessibility ||
-              attributes.cladding_building_safety ||
-              attributes.rights_restrictions ||
-              attributes.flood_risk ||
-              attributes.listed_status) && (
-              <div>
-                <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
-                  Additional Information
-                </h2>
-                <div className="space-y-3">
-                  {attributes.utilities && (
-                    <div>
-                      <p className="font-manrope text-sm font-medium text-gray-800 mb-1">
-                        Utilities
-                      </p>
-                      <p className="font-manrope text-sm text-gray-700 whitespace-pre-line">
-                        {attributes.utilities}
-                      </p>
-                    </div>
-                  )}
-                  {attributes.parking && (
-                    <div>
-                      <p className="font-manrope text-sm font-medium text-gray-800 mb-1">
-                        Parking
-                      </p>
-                      <p className="font-manrope text-sm text-gray-700 whitespace-pre-line">
-                        {attributes.parking}
-                      </p>
-                    </div>
-                  )}
-                  {attributes.accessibility && (
-                    <div>
-                      <p className="font-manrope text-sm font-medium text-gray-800 mb-1">
-                        Accessibility
-                      </p>
-                      <p className="font-manrope text-sm text-gray-700 whitespace-pre-line">
-                        {attributes.accessibility}
-                      </p>
-                    </div>
-                  )}
-                  {attributes.cladding_building_safety && (
-                    <div>
-                      <p className="font-manrope text-sm font-medium text-gray-800 mb-1">
-                        Cladding & Building Safety
-                      </p>
-                      <p className="font-manrope text-sm text-gray-700 whitespace-pre-line">
-                        {attributes.cladding_building_safety}
-                      </p>
-                    </div>
-                  )}
-                  {attributes.rights_restrictions && (
-                    <div>
-                      <p className="font-manrope text-sm font-medium text-gray-800 mb-1">
-                        Rights & Restrictions
-                      </p>
-                      <p className="font-manrope text-sm text-gray-700 whitespace-pre-line">
-                        {attributes.rights_restrictions}
-                      </p>
-                    </div>
-                  )}
-                  {attributes.flood_risk && (
-                    <div>
-                      <p className="font-manrope text-sm font-medium text-gray-800 mb-1">
-                        Flood Risk
-                      </p>
-                      <p className="font-manrope text-sm text-gray-700 whitespace-pre-line">
-                        {attributes.flood_risk}
-                      </p>
-                    </div>
-                  )}
-                  {attributes.listed_status && (
-                    <div>
-                      <p className="font-manrope text-sm font-medium text-gray-800 mb-1">
-                        Listed Status
-                      </p>
-                      <p className="font-manrope text-sm text-gray-700 whitespace-pre-line">
-                        {attributes.listed_status}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
 
             {/* Documents & Certifications */}
             {(attributes.epc_document ||
