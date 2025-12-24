@@ -1,31 +1,28 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function ChargesFeesPage() {
   return (
-    <main className="bg-white text-[#002f57] min-h-screen">
+    <main className="bg-white text-[#0B2D4D] min-h-screen">
       {/* ================= HERO ================= */}
       <section className="relative h-[520px] w-full rounded-b-[28px] overflow-hidden pt-[100px] lg:pt-[120px]">
-        <div className="absolute inset-0 bg-[#002f57]">
-          <Image
-            src="/images/charges-fees-hero.jpg"
-            alt="Charges & Fees"
-            fill
-            priority
-            className="object-cover opacity-30"
-            unoptimized
-          />
-        </div>
+        <Image
+          src="/images/charges-fees-hero.png"
+          alt="Charges & Fees"
+          fill
+          priority
+          className="object-cover"
+          unoptimized
+        />
 
         {/* overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/95 to-[#002f57]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#062B4C]/95 to-[#062B4C]/40" />
 
         <div className="relative z-10 h-full flex items-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
           <div>
             <h1 className="font-crimson text-white text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-[1.1] mb-4">
               Charges & Fees
             </h1>
-            <p className="max-w-[520px] font-manrope text-white/90 text-[16px] lg:text-[18px] leading-[26px] sm:leading-[28px]">
+            <p className="max-w-[520px] font-manrope text-white/90 text-[16px] lg:text-[18px] leading-[24px] sm:leading-[28px]">
               Clear, transparent and compliant — our fees explained for tenants
               and landlords.
             </p>
@@ -34,11 +31,11 @@ export default function ChargesFeesPage() {
       </section>
 
       {/* ================= INTRO ================= */}
-      <section className="py-[100px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] text-center">
-        <h2 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] mb-4">
+      <section className="py-[60px] 650:py-[80px] lg:py-[100px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] text-center">
+        <h2 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] mb-4 text-[#002f57]">
           Transparent & Competitive Estate Agency Fees
         </h2>
-        <p className="max-w-[820px] mx-auto font-manrope text-[#5F6F7F] text-[16px] sm:text-[18px] leading-[26px] sm:leading-[28px]">
+        <p className="max-w-[820px] mx-auto font-manrope text-[#5F6F7F] text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
           Our fees are fully inclusive, clearly structured, and designed to offer
           excellent value with complete transparency and compliance.
         </p>
@@ -124,10 +121,10 @@ export default function ChargesFeesPage() {
           ].map(([label, value], i) => (
             <div
               key={i}
-              className="flex justify-between px-8 py-5 border-b border-[rgba(0,0,0,0.12)] last:border-none text-[15px] font-manrope"
+              className="flex justify-between px-6 sm:px-8 py-5 border-b border-[rgba(0,0,0,0.12)] last:border-none text-[14px] sm:text-[15px] font-manrope"
             >
-              <span>{label}</span>
-              <span className="font-semibold">{value}</span>
+              <span className="text-gray-700">{label}</span>
+              <span className="font-semibold text-[#002f57]">{value}</span>
             </div>
           ))}
         </div>
@@ -171,9 +168,9 @@ export default function ChargesFeesPage() {
 
 function Section({ title, children }: { title?: string; children: React.ReactNode }) {
   return (
-    <section className="py-[90px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+    <section className="py-[60px] 650:py-[80px] lg:py-[90px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
       {title && (
-        <h3 className="font-crimson text-[24px] sm:text-[28px] text-center mb-12">
+        <h3 className="font-crimson text-[24px] sm:text-[28px] text-center mb-8 sm:mb-12 text-[#002f57]">
           {title}
         </h3>
       )}
@@ -187,7 +184,7 @@ function Grid({ cols, children }: { cols: number; children: React.ReactNode }) {
     2: "grid-cols-1 sm:grid-cols-2",
     3: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
     4: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
-    5: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5",
+    5: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5",
   }[cols] || "grid-cols-1 sm:grid-cols-2";
 
   return (
@@ -200,7 +197,7 @@ function Grid({ cols, children }: { cols: number; children: React.ReactNode }) {
 function FeeCard({ title, value }: { title: string; value: string }) {
   return (
     <div className="border border-[rgba(0,0,0,0.12)] rounded-xl px-6 py-8 text-center hover:shadow-md transition">
-      <p className="font-manrope font-semibold mb-2 text-[#002f57]">{title}</p>
+      <p className="font-manrope font-semibold mb-2 text-[#002f57] text-[16px] sm:text-[18px]">{title}</p>
       <p className="font-manrope text-[14px] text-[#5F6F7F]">{value}</p>
     </div>
   );
@@ -216,18 +213,18 @@ function InfoCard({
   desc: string;
 }) {
   return (
-    <div className="border border-[rgba(0,0,0,0.12)] rounded-xl px-8 py-8">
-      <h4 className="font-manrope font-semibold mb-2 text-[#002f57]">{title}</h4>
-      <p className="font-manrope font-semibold mb-3 text-[#002f57]">{price}</p>
-      <p className="font-manrope text-[14px] text-[#5F6F7F]">{desc}</p>
+    <div className="border border-[rgba(0,0,0,0.12)] rounded-xl px-6 sm:px-8 py-8">
+      <h4 className="font-manrope font-semibold mb-2 text-[#002f57] text-[16px] sm:text-[18px]">{title}</h4>
+      <p className="font-manrope font-semibold mb-3 text-[#002f57] text-[18px] sm:text-[20px]">{price}</p>
+      <p className="font-manrope text-[14px] text-[#5F6F7F] leading-[22px]">{desc}</p>
     </div>
   );
 }
 
 function ListCard({ title, items }: { title: string; items: string[] }) {
   return (
-    <div className="border border-[rgba(0,0,0,0.12)] rounded-xl px-8 py-8">
-      <h4 className="font-manrope font-semibold mb-4 text-[#002f57]">{title}</h4>
+    <div className="border border-[rgba(0,0,0,0.12)] rounded-xl px-6 sm:px-8 py-8">
+      <h4 className="font-manrope font-semibold mb-4 text-[#002f57] text-[16px] sm:text-[18px]">{title}</h4>
       <ul className="space-y-2 font-manrope text-[14px] text-[#5F6F7F]">
         {items.map((item, i) => (
           <li key={i}>• {item}</li>
@@ -239,10 +236,9 @@ function ListCard({ title, items }: { title: string; items: string[] }) {
 
 function MiniCard({ title, desc }: { title: string; desc?: string }) {
   return (
-    <div className="border border-[rgba(0,0,0,0.12)] rounded-xl p-4 text-center text-[14px]">
+    <div className="border border-[rgba(0,0,0,0.12)] rounded-xl p-4 sm:p-6 text-center text-[14px]">
       <p className="font-manrope font-semibold text-[#002f57]">{title}</p>
       {desc && <p className="font-manrope text-[#5F6F7F] mt-1">{desc}</p>}
     </div>
   );
 }
-

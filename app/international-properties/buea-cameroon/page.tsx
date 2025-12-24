@@ -124,7 +124,7 @@ export default function BueaCameroonProject() {
             <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57] mb-4">
               A New Standard of Place‑Making
             </h2>
-            <p className="font-manrope text-[#333] opacity-80 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
+            <p className="font-manrope text-gray-700 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
               Situated in Buea's thriving Molyko corridor, the Shopping Centre reimagines local commerce and everyday convenience with a refined retail boulevard, modern commercial spaces, and flexible units for tenants of all categories. The masterplan blends functionality with contemporary design creating a dynamic retail destination built for strong long‑term returns.
             </p>
           </div>
@@ -159,7 +159,7 @@ export default function BueaCameroonProject() {
 
             <div className="space-y-9">
               <div>
-                <h3 className="font-crimson font-semibold text-[#1e1e1e] text-[22px] sm:text-[24px] lg:text-[26px] leading-[28px] sm:leading-[32px] lg:leading-[36px] mb-3">
+                <h3 className="font-crimson font-semibold text-[#002f57] text-[22px] sm:text-[24px] lg:text-[26px] leading-[28px] sm:leading-[32px] lg:leading-[36px] mb-3">
                   Site Characteristics
                 </h3>
                 <div className="space-y-2">
@@ -176,7 +176,7 @@ export default function BueaCameroonProject() {
               </div>
 
               <div>
-                <h3 className="font-crimson font-semibold text-[#1e1e1e] text-[22px] sm:text-[24px] lg:text-[26px] leading-[28px] sm:leading-[32px] lg:leading-[36px] mb-3">
+                <h3 className="font-crimson font-semibold text-[#002f57] text-[22px] sm:text-[24px] lg:text-[26px] leading-[28px] sm:leading-[32px] lg:leading-[36px] mb-3">
                   Design Intent
                 </h3>
                 <div className="space-y-2">
@@ -205,13 +205,13 @@ export default function BueaCameroonProject() {
               <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57] mb-4">
                 Crafted for Elegance, Engineered for Performance
               </h2>
-              <p className="font-manrope text-[#333] opacity-80 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
+              <p className="font-manrope text-gray-700 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
                 The architectural concept balances practicality with contemporary visual appeal. The building massing maximises frontage for retailers, while its façade integrates clean geometric lines, prominent signage zones, and glazed surfaces that elevate the customer experience.
               </p>
             </div>
 
             <div className="mb-6">
-              <h3 className="font-crimson font-semibold text-[#1e1e1e] text-[18px] sm:text-[20px] leading-[24px] sm:leading-[28px] mb-4">
+              <h3 className="font-crimson font-semibold text-[#002f57] text-[18px] sm:text-[20px] leading-[24px] sm:leading-[28px] mb-4">
                 Key Features
               </h3>
               <div className="space-y-2">
@@ -332,7 +332,7 @@ export default function BueaCameroonProject() {
             <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[46px] leading-tight lg:leading-[56px] mb-3 text-[#002f57]">
               Explore the Collection
             </h2>
-            <p className="font-manrope text-[#333] opacity-70 text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px]">
+            <p className="font-manrope text-gray-600 text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px]">
               Build your modern lifestyle or invest in the design, retail, and commercial anchors that bring the destination to life.
             </p>
           </div>
@@ -367,10 +367,10 @@ export default function BueaCameroonProject() {
                   ].map((row, i) => (
                     <tr key={i} className="border-b border-[rgba(0,0,0,0.08)]">
                       <td className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.type}</td>
-                      <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.level}</td>
-                      <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.size}</td>
-                      <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.price}</td>
-                      <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.availability}</td>
+                      <td className="font-manrope text-gray-700 text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.level}</td>
+                      <td className="font-manrope text-gray-700 text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.size}</td>
+                      <td className="font-manrope text-gray-700 text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.price}</td>
+                      <td className="font-manrope text-gray-700 text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.availability}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -395,7 +395,7 @@ export default function BueaCameroonProject() {
                   "Diverse tenant opportunities",
                   "Positioned adjacent to a high-density residential",
                 ].map((item, i) => (
-                  <li key={i} className="font-manrope text-[#333] text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px]">
+                  <li key={i} className="font-manrope text-gray-700 text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px]">
                     • {item}
                   </li>
                 ))}
@@ -421,14 +421,14 @@ export default function BueaCameroonProject() {
             <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[46px] leading-tight lg:leading-[56px] text-[#002f57]">
               Payment Plans & Ownership Options
             </h2>
-            <div className="flex items-center gap-4 font-manrope text-[#333] text-[14px] sm:text-[16px]">
+            <div className="flex items-center gap-4 font-manrope text-gray-700 text-[14px] sm:text-[16px]">
               <span>•</span>
               <span>XAF</span>
               <span>USD</span>
               <span>GBP</span>
             </div>
           </div>
-          <p className="font-manrope text-[#333] opacity-70 text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] mb-10">
+          <p className="font-manrope text-gray-600 text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] mb-10">
             Flexible pathways designed for both local and international clients. Prices displayed in XAF with optional USD/GBP toggle.
           </p>
 
@@ -463,7 +463,7 @@ export default function BueaCameroonProject() {
                 </h3>
                 <ul className="space-y-3">
                   {card.items.map((item, idx) => (
-                    <li key={idx} className="font-manrope text-[#333] text-[13px] sm:text-[15px] leading-[20px] sm:leading-[22px]">
+                    <li key={idx} className="font-manrope text-gray-700 text-[13px] sm:text-[15px] leading-[20px] sm:leading-[22px]">
                       • {item}
                     </li>
                   ))}
@@ -521,7 +521,7 @@ export default function BueaCameroonProject() {
               <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[46px] leading-tight lg:leading-[56px] mb-4 text-[#002f57]">
                 Register Your Interest
               </h2>
-              <p className="font-manrope text-[#333] opacity-70 text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px]">
+              <p className="font-manrope text-gray-600 text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px]">
                 Get in touch with us early and you can lock your spot in the property. We're currently in the early commercial phase.
               </p>
             </div>
@@ -531,7 +531,7 @@ export default function BueaCameroonProject() {
               </h3>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
-                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Full Name</label>
+                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Full Name</label>
                   <input
                     type="text"
                     name="name"
@@ -541,7 +541,7 @@ export default function BueaCameroonProject() {
                   />
                 </div>
                 <div>
-                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Email Address</label>
+                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Email Address</label>
                   <input
                     type="email"
                     name="email"
@@ -551,7 +551,7 @@ export default function BueaCameroonProject() {
                   />
                 </div>
                 <div>
-                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Phone Number</label>
+                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Phone Number</label>
                   <input
                     type="tel"
                     name="phone"
@@ -561,7 +561,7 @@ export default function BueaCameroonProject() {
                   />
                 </div>
                 <div>
-                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Budget</label>
+                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Budget</label>
                   <select
                     name="budget"
                     className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white focus:outline-none focus:border-[#002f57]"
@@ -573,7 +573,7 @@ export default function BueaCameroonProject() {
                   </select>
                 </div>
                 <div>
-                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Message</label>
+                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Message</label>
                   <textarea
                     name="message"
                     rows={4}
@@ -611,7 +611,7 @@ function BulletPoint({ text }: { text: string }) {
   return (
     <div className="flex items-start gap-3">
       <div className="w-[6px] h-[6px] rounded-full bg-[#002f57] mt-3 flex-shrink-0" />
-      <p className="font-manrope text-[#333] opacity-80 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
+      <p className="font-manrope text-gray-700 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
         {text}
       </p>
     </div>
@@ -622,7 +622,7 @@ function KeyFeatureBullet({ text }: { text: string }) {
   return (
     <div className="flex items-start gap-4">
       <div className="w-[7px] h-[7px] rounded-full bg-[#002f57] mt-3 flex-shrink-0" />
-      <p className="font-manrope text-[#333] opacity-80 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
+      <p className="font-manrope text-gray-700 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
         {text}
       </p>
     </div>
