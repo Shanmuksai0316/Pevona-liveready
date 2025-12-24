@@ -104,7 +104,7 @@ export default function Home() {
 
         <div className="relative z-10 flex flex-col h-full px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[80px] sm:py-[100px] lg:py-[37px] justify-center lg:justify-end">
           {/* Mobile: Centered content */}
-          <div className="flex-grow flex items-center lg:items-end pb-8 lg:pb-20">
+          <div className="flex-grow flex items-center lg:items-end pb-8 lg:pb-[120px]">
             <div className="flex flex-col items-center lg:items-start gap-[24px] sm:gap-[36px] w-full">
               <div className="flex flex-col items-center lg:items-start gap-[12px] sm:gap-[16px]">
                 <h1 className="font-crimson text-[22px] md:text-[66px] leading-tight md:leading-[66px] text-white text-center lg:text-left tracking-tight md:tracking-[-1.98px] max-w-[653px]">

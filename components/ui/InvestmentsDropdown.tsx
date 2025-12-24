@@ -119,7 +119,7 @@ export default function InvestmentsDropdown({
           <span className="font-manrope font-bold leading-[26px] text-[#002f57] text-[24px] lg:text-[16px] ml-[2px]">−</span>
         </button>
         <div 
-          className="dropdown-menu absolute top-full left-0 mt-2 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10003] py-2 pointer-events-auto"
+          className="dropdown-menu absolute top-full left-0 mt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] py-2 pointer-events-auto"
           onMouseEnter={triggerHover ? () => { setIsOpen(true); onToggle?.(true); } : undefined}
           onMouseLeave={triggerHover ? (e) => {
             const relatedTarget = e.relatedTarget as HTMLElement;

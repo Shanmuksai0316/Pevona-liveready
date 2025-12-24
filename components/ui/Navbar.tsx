@@ -159,13 +159,18 @@ export default function Navbar() {
               
               {/* Dropdown Menu */}
               {'hasDropdown' in link && link.hasDropdown && openDropdown === link.name && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg min-w-[220px] py-2 z-[10002] pointer-events-auto">
+                <div 
+                  className="absolute top-full left-0 mt-1 bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg min-w-[220px] py-2 z-[10005] pointer-events-auto"
+                  onMouseEnter={() => setOpenDropdown(link.name)}
+                  onMouseLeave={() => setOpenDropdown(null)}
+                >
                   {'submenu' in link && link.submenu?.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
                       className="block px-6 py-3 font-manrope font-medium text-[16px] leading-[26px] text-[#002f57] hover:bg-[#FAFAFA] hover:text-[#29902e] transition-colors first:rounded-t-[16px] last:rounded-b-[16px] pointer-events-auto"
                       onClick={() => setOpenDropdown(null)}
+                      onMouseDown={(e) => e.stopPropagation()}
                     >
                       {item.name}
                     </Link>
