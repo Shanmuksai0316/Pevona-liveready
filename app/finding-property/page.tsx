@@ -11,7 +11,7 @@ export default async function FindingPropertyPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
+      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px] pt-[100px] lg:pt-[120px]">
         {/* Desktop Layout - Split Design */}
         <div className="hidden lg:flex relative max-w-[1560px] mx-auto min-h-[760px] rounded-b-[36px] overflow-hidden">
           {/* Left: Dark Blue Section with Text */}
