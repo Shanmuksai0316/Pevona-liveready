@@ -227,20 +227,16 @@ export default function Navbar() {
                       </svg>
                     </button>
                     {isDropdownOpen && 'submenu' in link && link.submenu && (
-                      <div className="pl-4 pb-2">
+                      <div className="pl-4 pb-2" onClick={(e) => e.stopPropagation()}>
                         {link.submenu.map((item) => (
                           <Link
                             key={item.name}
                             href={item.href}
                             onClick={(e) => {
-                              // Ensure navigation happens
+                              // Close menu and navigate
                               setIsOpen(false);
                               setOpenDropdown(null);
-                              // Don't prevent default - let Link handle navigation
-                            }}
-                            onMouseDown={(e) => {
-                              // Prevent any interference with click
-                              e.stopPropagation();
+                              // Let Link handle navigation naturally
                             }}
                             className="block py-3 font-manrope font-medium text-[24px] text-[#666666] hover:text-[#002f57] transition-colors pointer-events-auto"
                           >
