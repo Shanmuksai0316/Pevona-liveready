@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import PropertyManagementDropdown from "./PropertyManagementDropdown";
 import InvestmentsDropdown from "./InvestmentsDropdown";
@@ -10,6 +11,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const router = useRouter();
 
   // Lock scroll when mobile menu is open
   useEffect(() => {
@@ -229,19 +231,20 @@ export default function Navbar() {
                     {isDropdownOpen && 'submenu' in link && link.submenu && (
                       <div className="pl-4 pb-2" onClick={(e) => e.stopPropagation()}>
                         {link.submenu.map((item) => (
-                          <Link
+                          <a
                             key={item.name}
                             href={item.href}
                             onClick={(e) => {
-                              // Close menu and navigate
+                              e.preventDefault();
+                              e.stopPropagation();
                               setIsOpen(false);
                               setOpenDropdown(null);
-                              // Let Link handle navigation naturally
+                              router.push(item.href);
                             }}
-                            className="block py-3 font-manrope font-medium text-[24px] text-[#666666] hover:text-[#002f57] transition-colors pointer-events-auto"
+                            className="block py-3 font-manrope font-medium text-[24px] text-[#666666] hover:text-[#002f57] transition-colors pointer-events-auto cursor-pointer"
                           >
                             {item.name}
-                          </Link>
+                          </a>
                         ))}
                       </div>
                     )}
