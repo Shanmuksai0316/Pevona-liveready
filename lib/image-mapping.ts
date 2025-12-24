@@ -20,7 +20,6 @@ export const imageMap: Record<string, string> = {
   "19feda37ef69497eca7d91cbd01090baaab3f743.png": "/images/RB1.png",
   "46472afdf2bdc3cfd299193dd3a17ab8e076dc31.png": "/images/RB2.png",
   "39c743fab306ee25242788dab6dfb936987df437.png": "/images/RB3.png",
-  "6271a7d00ed6ac50b236623f908417de9ef70cc1.png": "/images/services_-_For_Landlords.png",
   
   // Solutions Section
   "6271a7d00ed6ac50b236623f908417de9ef70cc1.png": "/images/5th_sec_Lettings.png",
