@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getImageUrl } from "@/lib/images";
 import { formatNumber } from "@/lib/format";
+import { getPropertyImages } from "@/lib/property-image-mapping";
 import type { StrapiProperty } from "@/types/strapi";
 
 interface PropertyCardProps {
@@ -11,7 +12,7 @@ interface PropertyCardProps {
 export default function PropertyCard({ property }: PropertyCardProps) {
   const { attributes } = property;
 
-  // Use gallery image when available, otherwise rotate through the 6 static card images
+  // Use gallery image when available, otherwise try property-specific images, then fallback
   const fallbackImages = [
     "/images/prop_card_image-1.png",
     "/images/prop_card_image-2.png",
@@ -21,12 +22,21 @@ export default function PropertyCard({ property }: PropertyCardProps) {
     "/images/prop_card_image-6.png",
   ];
 
-  const fallbackImage =
-    fallbackImages[(property.id || 0) % fallbackImages.length];
-
-  const imageUrl = attributes.gallery?.data?.[0]
-    ? getImageUrl(attributes.gallery.data[0])
-    : fallbackImage;
+  let imageUrl: string;
+  
+  if (attributes.gallery?.data?.[0]) {
+    // Use Strapi gallery image
+    imageUrl = getImageUrl(attributes.gallery.data[0]);
+  } else {
+    // Try to get property-specific images
+    const propertyImages = getPropertyImages(attributes.slug, attributes.title);
+    if (propertyImages.length > 0) {
+      imageUrl = propertyImages[0];
+    } else {
+      // Fallback to rotating static images
+      imageUrl = fallbackImages[(property.id || 0) % fallbackImages.length];
+    }
+  }
 
   return (
     <Link href={`/properties/${attributes.slug}`}>
