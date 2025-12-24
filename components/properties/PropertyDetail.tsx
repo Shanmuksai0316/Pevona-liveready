@@ -33,12 +33,12 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
   const nextImage = () => {
     if (!hasImages) return;
-    setCurrentIndex((prev) => (prev + 1) % allImages.length);
+    setCurrentIndex((prev) => (prev + 1) % gallery.length);
   };
 
   const prevImage = () => {
     if (!hasImages) return;
-    setCurrentIndex((prev) => (prev - 1 + allImages.length) % allImages.length);
+    setCurrentIndex((prev) => (prev - 1 + gallery.length) % gallery.length);
   };
 
   const goToImage = (index: number) => {
