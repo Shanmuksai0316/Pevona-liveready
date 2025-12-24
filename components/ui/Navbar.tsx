@@ -229,22 +229,20 @@ export default function Navbar() {
                       </svg>
                     </button>
                     {isDropdownOpen && 'submenu' in link && link.submenu && (
-                      <div className="pl-4 pb-2" onClick={(e) => e.stopPropagation()}>
+                      <div className="pl-4 pb-2">
                         {link.submenu.map((item) => (
-                          <a
+                          <Link
                             key={item.name}
                             href={item.href}
                             onClick={(e) => {
-                              e.preventDefault();
                               e.stopPropagation();
                               setIsOpen(false);
                               setOpenDropdown(null);
-                              router.push(item.href);
                             }}
                             className="block py-3 font-manrope font-medium text-[24px] text-[#666666] hover:text-[#002f57] transition-colors pointer-events-auto cursor-pointer"
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     )}
