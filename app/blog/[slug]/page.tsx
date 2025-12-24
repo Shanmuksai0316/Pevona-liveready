@@ -12,7 +12,7 @@ export default async function BlogDetailPage({
     `/api/blogs?filters[slug][$eq]=${params.slug}&populate=*`
   );
 
-  if (!blogs.data || blogs.data.length === 0) {
+  if (!blogs?.data || blogs.data.length === 0) {
     notFound();
   }
 
