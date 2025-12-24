@@ -23,7 +23,7 @@ export default function LandlordServicesPage() {
 
           {/* Hero copy */}
           <div className="relative max-w-[780px] mt-10 space-y-6 text-white">
-            <h1 className="font-crimson text-[40px] md:text-[56px] lg:text-[66px] leading-[1.05] tracking-[-0.06em]">
+            <h1 className="font-crimson text-[22px] sm:text-[32px] md:text-[40px] lg:text-[56px] xl:text-[66px] leading-tight lg:leading-[1.05] tracking-tight lg:tracking-[-0.06em]">
               Professional Lettings and Management for UK Landlords
             </h1>
             <p className="font-manrope text-[18px] leading-[28px] text-white/90">
