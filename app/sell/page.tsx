@@ -307,8 +307,8 @@ export default async function SellPage() {
 
       {/* Properties List Section */}
       <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px]">
-        <div className="max-w-[861px] text-center space-y-4 mb-9">
-          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
+        <div className="max-w-[861px] mx-auto text-center space-y-4 mb-9">
+          <h2 className="font-crimson text-[32px] md:text-[66px] leading-tight md:leading-[66px] tracking-tight md:tracking-[-1.98px] text-[#002f57]">
             Featured Properties
           </h2>
           <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
