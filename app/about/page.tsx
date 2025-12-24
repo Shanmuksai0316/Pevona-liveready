@@ -736,7 +736,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* ESG Section */}
-      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] relative h-[450px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] relative h-[400px] sm:h-[450px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/ESG_section_Bg_img.png"
@@ -744,16 +744,33 @@ export default function AboutUsPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/60 to-transparent" />
+          {/* Desktop: Gradient overlay */}
+          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/60 to-transparent" />
+          {/* Mobile: Dark blue overlay covering bottom 2/3 */}
+          <div className="lg:hidden absolute inset-0 bg-[#002f57] opacity-90" style={{ clipPath: 'inset(33% 0 0 0)' }} />
         </div>
 
-        <div className="relative z-10 max-w-[618px] pt-[105px] pb-[105px] space-y-4 text-white">
-            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
+        {/* Desktop Layout */}
+        <div className="hidden lg:block relative z-10 max-w-[618px] pt-[105px] pb-[105px] space-y-4 text-white">
+          <h2 className="font-crimson text-[56px] leading-tight leading-[56px] tracking-tight tracking-[-1.68px]">
             Environmental &amp;
             <br />
             Social Governance (ESG)
           </h2>
           <p className="font-manrope text-[18px] leading-[28px]">
+            Pevona Ltd integrates ESG principles into its operations. We promote sustainable
+            practices, ethical leadership, and community engagement. Our directors advocate vegan
+            values and support animal charities, aligning our business with future-focused
+            environmental responsibility.
+          </p>
+        </div>
+
+        {/* Mobile Layout */}
+        <div className="lg:hidden absolute bottom-0 left-0 right-0 z-10 px-4 sm:px-6 py-6 sm:py-8 space-y-3 sm:space-y-4 text-white">
+          <h2 className="font-crimson text-[22px] sm:text-[28px] leading-tight tracking-tight">
+            Environmental &amp; Social Governance (ESG)
+          </h2>
+          <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px]">
             Pevona Ltd integrates ESG principles into its operations. We promote sustainable
             practices, ethical leadership, and community engagement. Our directors advocate vegan
             values and support animal charities, aligning our business with future-focused
