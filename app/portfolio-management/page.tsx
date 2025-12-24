@@ -5,7 +5,7 @@ export default function PortfolioManagementPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Banner */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
+      <section className="relative w-full overflow-hidden min-h-[950px] lg:min-h-[760px]">
         {/* Desktop Layout */}
         <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[628px]">
           {/* Background with solid color and image */}
@@ -41,9 +41,9 @@ export default function PortfolioManagementPage() {
         </div>
 
         {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
+        <div className="lg:hidden flex flex-col min-h-[950px]">
           {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
+          <div className="relative w-full h-[400px] overflow-hidden rounded-t-[20px]">
             <Image
               src="/images/Portfolio page/Portfolio_page_banne.png"
               alt="House investments elements"
@@ -54,7 +54,7 @@ export default function PortfolioManagementPage() {
           </div>
 
           {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
+          <div className="relative w-full min-h-[550px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
             <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
               Build, Optimise &amp; Scale Your Property Portfolio
             </h1>
