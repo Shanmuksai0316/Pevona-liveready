@@ -513,13 +513,13 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
             )}
           </div>
 
-          {/* Right: booking form sidebar (original layout) */}
+          {/* Right: booking form sidebar (floating) */}
           <aside className="lg:col-span-1">
-            <div className="border border-gray-200 rounded-lg shadow-sm sticky top-6 bg-white overflow-hidden">
+            <div className="border border-gray-200 rounded-lg shadow-lg sticky top-6 bg-white overflow-hidden">
               <button
                 type="button"
                 onClick={() => setIsFormOpen((open) => !open)}
-                className="w-full px-6 py-4 flex items-center justify-between gap-3"
+                className="w-full px-6 py-4 flex items-center justify-between gap-3 hover:bg-gray-50 transition-colors"
               >
                 <div className="text-left">
                   <h3 className="font-crimson text-xl font-semibold text-pevona-dark">
@@ -552,9 +552,8 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
               {isFormOpen && (
                 <div className="px-6 pb-6 pt-1 border-t border-gray-100">
-                  <p className="font-manrope text-sm text-gray-600 mb-5">
-                    Share your details and our team will be in touch to arrange a viewing or talk
-                    you through the next steps.
+                  <p className="font-manrope text-sm text-gray-600 mb-5 text-center">
+                    Share your details and our team will contact you
                   </p>
 
                   <form className="space-y-4" onSubmit={handleSubmit}>
