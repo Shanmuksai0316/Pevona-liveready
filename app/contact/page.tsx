@@ -4,29 +4,29 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col items-center w-full min-h-screen">
       {/* Hero Section */}
-      <div className="relative w-full h-[500px] flex items-center justify-center">
+      <div className="relative w-full h-[400px] sm:h-[450px] lg:h-[500px] flex items-center justify-center pt-[100px] lg:pt-[120px]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#002f57] to-[#001a2e]"></div>
-        <div className="relative z-10 flex flex-col items-center gap-[16px] text-center px-4">
-          <h1 className="font-crimson text-[56px] leading-[56px] text-white tracking-[-1.68px]">
+        <div className="relative z-10 flex flex-col items-center gap-[12px] sm:gap-[16px] text-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+          <h1 className="font-crimson text-[28px] sm:text-[36px] md:text-[42px] lg:text-[56px] leading-tight lg:leading-[56px] text-white tracking-tight lg:tracking-[-1.68px]">
             Get In Touch
           </h1>
-          <p className="font-manrope font-normal text-[18px] leading-[28px] text-white opacity-90 max-w-[600px]">
+          <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-white opacity-90 max-w-[600px]">
             Have questions? We're here to help. Reach out to our team for expert guidance on property management, lettings, and investments.
           </p>
         </div>
       </div>
 
       {/* Contact Content */}
-      <div className="flex flex-col lg:flex-row gap-[60px] items-start justify-center px-[135px] py-[80px] w-full max-w-[1560px]">
+      <div className="flex flex-col lg:flex-row gap-[40px] sm:gap-[50px] lg:gap-[60px] items-start justify-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[40px] sm:py-[60px] lg:py-[80px] w-full max-w-[1560px]">
         {/* Contact Form */}
         <div className="flex-1 w-full max-w-[600px]">
-          <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-[40px]">
-            <h2 className="font-crimson text-[42px] leading-[42px] text-[#002f57] tracking-[-1.26px] mb-[32px]">
+          <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-[24px] sm:p-[32px] lg:p-[40px]">
+            <h2 className="font-crimson text-[26px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-tight lg:leading-[42px] text-[#002f57] tracking-tight lg:tracking-[-1.26px] mb-[24px] sm:mb-[32px]">
               Send Us a Message
             </h2>
-            <form className="flex flex-col gap-[24px]">
-              <div className="flex flex-col gap-[8px]">
-                <label htmlFor="name" className="font-manrope font-medium text-[16px] leading-[26px] text-[#333333]">
+            <form className="flex flex-col gap-[20px] sm:gap-[24px]">
+              <div className="flex flex-col gap-[6px] sm:gap-[8px]">
+                <label htmlFor="name" className="font-manrope font-medium text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333]">
                   Full Name *
                 </label>
                 <input
@@ -34,13 +34,13 @@ export default function ContactPage() {
                   id="name"
                   name="name"
                   required
-                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[16px] py-[12px] font-manrope text-[16px] leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57]"
+                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[12px] sm:px-[16px] py-[10px] sm:py-[12px] font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57]"
                   placeholder="John Doe"
                 />
               </div>
 
-              <div className="flex flex-col gap-[8px]">
-                <label htmlFor="email" className="font-manrope font-medium text-[16px] leading-[26px] text-[#333333]">
+              <div className="flex flex-col gap-[6px] sm:gap-[8px]">
+                <label htmlFor="email" className="font-manrope font-medium text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333]">
                   Email Address *
                 </label>
                 <input
@@ -48,33 +48,33 @@ export default function ContactPage() {
                   id="email"
                   name="email"
                   required
-                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[16px] py-[12px] font-manrope text-[16px] leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57]"
+                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[12px] sm:px-[16px] py-[10px] sm:py-[12px] font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57]"
                   placeholder="john.doe@example.com"
                 />
               </div>
 
-              <div className="flex flex-col gap-[8px]">
-                <label htmlFor="phone" className="font-manrope font-medium text-[16px] leading-[26px] text-[#333333]">
+              <div className="flex flex-col gap-[6px] sm:gap-[8px]">
+                <label htmlFor="phone" className="font-manrope font-medium text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333]">
                   Phone Number
                 </label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[16px] py-[12px] font-manrope text-[16px] leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57]"
+                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[12px] sm:px-[16px] py-[10px] sm:py-[12px] font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57]"
                   placeholder="+44 20 1234 5678"
                 />
               </div>
 
-              <div className="flex flex-col gap-[8px]">
-                <label htmlFor="subject" className="font-manrope font-medium text-[16px] leading-[26px] text-[#333333]">
+              <div className="flex flex-col gap-[6px] sm:gap-[8px]">
+                <label htmlFor="subject" className="font-manrope font-medium text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333]">
                   Subject *
                 </label>
                 <select
                   id="subject"
                   name="subject"
                   required
-                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[16px] py-[12px] font-manrope text-[16px] leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57] bg-white"
+                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[12px] sm:px-[16px] py-[10px] sm:py-[12px] font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57] bg-white"
                 >
                   <option value="">Select a subject</option>
                   <option value="property-management">Property Management</option>
@@ -85,8 +85,8 @@ export default function ContactPage() {
                 </select>
               </div>
 
-              <div className="flex flex-col gap-[8px]">
-                <label htmlFor="message" className="font-manrope font-medium text-[16px] leading-[26px] text-[#333333]">
+              <div className="flex flex-col gap-[6px] sm:gap-[8px]">
+                <label htmlFor="message" className="font-manrope font-medium text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333]">
                   Message *
                 </label>
                 <textarea
@@ -94,16 +94,16 @@ export default function ContactPage() {
                   name="message"
                   required
                   rows={6}
-                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[16px] py-[12px] font-manrope text-[16px] leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57] resize-none"
+                  className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[12px] sm:px-[16px] py-[10px] sm:py-[12px] font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57] resize-none"
                   placeholder="Tell us how we can help you..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="bg-[#002f57] px-[10px] py-[10px] rounded-[8px] w-full h-[56px] mt-[8px] hover:bg-[#001a2e] transition-colors"
+                className="bg-[#002f57] px-[10px] py-[10px] rounded-[8px] w-full h-[48px] sm:h-[56px] mt-[8px] hover:bg-[#001a2e] transition-colors"
               >
-                <span className="font-manrope font-semibold text-[18px] leading-[28px] text-white">
+                <span className="font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white">
                   Send Message
                 </span>
               </button>
@@ -113,70 +113,70 @@ export default function ContactPage() {
 
         {/* Contact Information */}
         <div className="flex-1 w-full max-w-[500px]">
-          <div className="flex flex-col gap-[40px]">
+          <div className="flex flex-col gap-[32px] sm:gap-[40px]">
             <div>
-              <h2 className="font-crimson text-[42px] leading-[42px] text-[#002f57] tracking-[-1.26px] mb-[32px]">
+              <h2 className="font-crimson text-[26px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-tight lg:leading-[42px] text-[#002f57] tracking-tight lg:tracking-[-1.26px] mb-[24px] sm:mb-[32px]">
                 Contact Information
               </h2>
-              <p className="font-manrope font-normal text-[18px] leading-[28px] text-[#333333] mb-[32px]">
+              <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] mb-[24px] sm:mb-[32px]">
                 We're here to help with all your property needs. Reach out through any of the channels below.
               </p>
             </div>
 
-            <div className="flex flex-col gap-[32px]">
+            <div className="flex flex-col gap-[24px] sm:gap-[32px]">
               {/* Email */}
-              <div className="flex gap-[20px] items-start">
-                <div className="w-[48px] h-[48px] bg-[#002f57] rounded-[12px] flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex gap-[16px] sm:gap-[20px] items-start">
+                <div className="w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] bg-[#002f57] rounded-[12px] flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                   </svg>
                 </div>
                 <div className="flex flex-col gap-[4px]">
-                  <h3 className="font-crimson font-semibold text-[22px] leading-[32px] text-[#002f57]">
+                  <h3 className="font-crimson font-semibold text-[18px] sm:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] lg:leading-[32px] text-[#002f57]">
                     Email
                   </h3>
-                  <a href="mailto:info@pevona.com" className="font-manrope font-normal text-[18px] leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
+                  <a href="mailto:info@pevona.com" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
                     info@pevona.com
                   </a>
-                  <a href="mailto:support@pevona.com" className="font-manrope font-normal text-[18px] leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
+                  <a href="mailto:support@pevona.com" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
                     support@pevona.com
                   </a>
                 </div>
               </div>
 
               {/* Phone */}
-              <div className="flex gap-[20px] items-start">
-                <div className="w-[48px] h-[48px] bg-[#002f57] rounded-[12px] flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex gap-[16px] sm:gap-[20px] items-start">
+                <div className="w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] bg-[#002f57] rounded-[12px] flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                   </svg>
                 </div>
                 <div className="flex flex-col gap-[4px]">
-                  <h3 className="font-crimson font-semibold text-[22px] leading-[32px] text-[#002f57]">
+                  <h3 className="font-crimson font-semibold text-[18px] sm:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] lg:leading-[32px] text-[#002f57]">
                     Phone
                   </h3>
-                  <a href="tel:+442012345678" className="font-manrope font-normal text-[18px] leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
+                  <a href="tel:+442012345678" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
                     +44 20 1234 5678
                   </a>
-                  <p className="font-manrope font-normal text-[16px] leading-[26px] text-[#666666]">
+                  <p className="font-manrope font-normal text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#666666]">
                     Mon-Fri: 9:00 AM - 6:00 PM
                   </p>
                 </div>
               </div>
 
               {/* Address */}
-              <div className="flex gap-[20px] items-start">
-                <div className="w-[48px] h-[48px] bg-[#002f57] rounded-[12px] flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex gap-[16px] sm:gap-[20px] items-start">
+                <div className="w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] bg-[#002f57] rounded-[12px] flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                   </svg>
                 </div>
                 <div className="flex flex-col gap-[4px]">
-                  <h3 className="font-crimson font-semibold text-[22px] leading-[32px] text-[#002f57]">
+                  <h3 className="font-crimson font-semibold text-[18px] sm:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] lg:leading-[32px] text-[#002f57]">
                     Office Address
                   </h3>
-                  <p className="font-manrope font-normal text-[18px] leading-[28px] text-[#333333]">
+                  <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333]">
                     123 Property Street<br />
                     London, SW1A 1AA<br />
                     United Kingdom
@@ -186,11 +186,11 @@ export default function ContactPage() {
             </div>
 
             {/* Social Media */}
-            <div className="flex flex-col gap-[16px]">
-              <h3 className="font-crimson font-semibold text-[22px] leading-[32px] text-[#002f57]">
+            <div className="flex flex-col gap-[12px] sm:gap-[16px]">
+              <h3 className="font-crimson font-semibold text-[18px] sm:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] lg:leading-[32px] text-[#002f57]">
                 Follow Us
               </h3>
-              <div className="flex gap-[16px] items-center">
+              <div className="flex gap-[12px] sm:gap-[16px] items-center">
                 {[
                   { name: "LinkedIn", icon: "M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" },
                   { name: "Twitter", icon: "M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" },
@@ -200,10 +200,10 @@ export default function ContactPage() {
                   <a
                     key={social.name}
                     href="#"
-                    className="w-[40px] h-[40px] bg-[#002f57] rounded-[8px] flex items-center justify-center hover:bg-[#001a2e] transition-colors"
+                    className="w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] bg-[#002f57] rounded-[8px] flex items-center justify-center hover:bg-[#001a2e] transition-colors"
                     aria-label={social.name}
                   >
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d={social.icon} />
                     </svg>
                   </a>

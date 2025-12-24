@@ -227,11 +227,17 @@ export default function Navbar() {
                           <Link
                             key={item.name}
                             href={item.href}
-                            onClick={() => {
+                            onClick={(e) => {
+                              // Ensure navigation happens
                               setIsOpen(false);
                               setOpenDropdown(null);
+                              // Don't prevent default - let Link handle navigation
                             }}
-                            className="block py-3 font-manrope font-medium text-[24px] text-[#666666] hover:text-[#002f57] transition-colors"
+                            onMouseDown={(e) => {
+                              // Prevent any interference with click
+                              e.stopPropagation();
+                            }}
+                            className="block py-3 font-manrope font-medium text-[24px] text-[#666666] hover:text-[#002f57] transition-colors pointer-events-auto"
                           >
                             {item.name}
                           </Link>
