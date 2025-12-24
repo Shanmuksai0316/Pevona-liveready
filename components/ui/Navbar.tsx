@@ -84,7 +84,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[50px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible z-[10001]">
+    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-center lg:justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[50px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible z-[10001]">
       {/* Logo */}
       <div className="h-[40px] lg:h-[60px] w-[110px] lg:w-[145px] relative z-[10001]">
         <Link href="/" onClick={() => setIsOpen(false)}>
@@ -186,7 +186,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Button */}
       <button
-        className="lg:hidden z-[10001] p-2"
+        className="lg:hidden z-[10001] p-2 absolute right-5 350:right-5 480:right-5 650:right-[60px]"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle Menu"
       >
