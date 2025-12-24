@@ -241,8 +241,18 @@ export default function AboutUsPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/50 to-transparent" />
         </div>
 
-        {/* Mobile: Solid Dark Blue Background */}
-        <div className="lg:hidden absolute inset-0 bg-[#002f57]" />
+        {/* Mobile: Background Image */}
+        <div className="lg:hidden absolute inset-0">
+          <Image
+            src="/images/Banner_image.png"
+            alt="About us hero"
+            fill
+            className="object-cover"
+            priority
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-[#002f57]/80" />
+        </div>
 
         {/* Desktop Layout */}
         <div className="hidden lg:flex relative h-full max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] flex-col justify-center">
