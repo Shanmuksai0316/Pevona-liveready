@@ -228,7 +228,7 @@ export default function AboutUsPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Banner */}
-      <section className="relative w-full h-[600px] sm:h-[700px] lg:h-[760px] overflow-hidden rounded-b-[36px]">
+      <section className="relative w-full overflow-hidden min-h-[850px] lg:h-[760px] rounded-b-[36px]">
         {/* Desktop: Background Image */}
         <div className="hidden lg:block absolute inset-0">
           <Image
@@ -239,19 +239,6 @@ export default function AboutUsPage() {
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/50 to-transparent" />
-        </div>
-
-        {/* Mobile: Background Image */}
-        <div className="lg:hidden absolute inset-0">
-          <Image
-            src="/images/Banner_image.png"
-            alt="About us hero"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
-          />
-          <div className="absolute inset-0 bg-[#002f57]/80" />
         </div>
 
         {/* Desktop Layout */}
@@ -277,27 +264,42 @@ export default function AboutUsPage() {
           </div>
         </div>
 
-        {/* Mobile Layout - Centered Design */}
-        <div className="lg:hidden relative h-full flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-6 text-white text-center">
-          <div className="space-y-4 sm:space-y-6 max-w-full">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] leading-tight tracking-[-1.1px]">
-              Built on Trust.
-              <br />
-              Driven by Expertise.
-            </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[22px] sm:leading-[26px] text-left max-w-[600px] mx-auto">
-              We believe in the personal touch welcoming clients with familiar voices and friendly
-              faces. Our limited portfolio ensures dedicated service and long-term relationships. We
-              are committed to sustainability, ethical leadership, and environmental responsibility,
-              actively supporting animal welfare and reducing waste.
-            </p>
+        {/* Mobile Layout - Split Design: Text on top, Image on bottom */}
+        <div className="lg:hidden flex flex-col min-h-[850px]">
+          {/* Top Half: Dark Blue with Text */}
+          <div className="relative w-full min-h-[425px] bg-[#002f57] rounded-t-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
+            <div className="space-y-4 sm:space-y-6 max-w-[600px]">
+              <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] leading-tight tracking-[-1.1px]">
+                Built on Trust.
+                <br />
+                Driven by Expertise.
+              </h1>
+              <p className="font-manrope text-[14px] sm:text-[16px] leading-[22px] sm:leading-[26px] text-left">
+                We believe in the personal touch welcoming clients with familiar voices and friendly
+                faces. Our limited portfolio ensures dedicated service and long-term relationships. We
+                are committed to sustainability, ethical leadership, and environmental responsibility,
+                actively supporting animal welfare and reducing waste.
+              </p>
+            </div>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 sm:px-[35px] rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] transition-all hover:bg-[#0073B5] hover:text-white mt-2"
+            >
+              Speak To Our Team
+            </Link>
           </div>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 sm:px-[35px] rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] transition-all hover:bg-[#0073B5] hover:text-white mt-4"
-          >
-            Speak To Our Team
-          </Link>
+
+          {/* Bottom Half: Building Image */}
+          <div className="relative w-full h-[425px] overflow-hidden rounded-b-[20px]">
+            <Image
+              src="/images/Banner_image.png"
+              alt="About us building"
+              fill
+              className="object-cover object-center"
+              priority
+              unoptimized
+            />
+          </div>
         </div>
       </section>
 
