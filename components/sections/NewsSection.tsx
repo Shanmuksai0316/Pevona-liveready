@@ -47,18 +47,18 @@ export default async function NewsSection() {
                 <p className="font-manrope font-normal text-[12px] sm:text-[14px] leading-[20px] sm:leading-[24px] text-white">Latest update</p>
               </div>
             </Link>
-            <div className="flex flex-col gap-4 sm:gap-6 lg:gap-[26px] items-start w-full px-2 sm:px-0">
-              <div className="flex flex-col items-start">
+            <div className="flex flex-col gap-4 sm:gap-6 lg:gap-[26px] items-center w-full px-2 sm:px-0">
+              <div className="flex flex-col items-center text-center">
                 <Link href={`/blog/${firstBlog.attributes.slug}`}>
-                  <h4 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[26px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-[#002f57] max-w-full lg:max-w-[322px] hover:opacity-80 transition-opacity">{firstBlog.attributes.title}</h4>
+                  <h4 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[26px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-[#002f57] hover:opacity-80 transition-opacity md:whitespace-nowrap text-center px-2">{firstBlog.attributes.title}</h4>
                 </Link>
                 <p className="font-manrope font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#333333]">
                   {firstBlog.attributes.excerpt || "Explore high-return real estate opportunities designed for modern lifestyles"}
                 </p>
               </div>
-              <Link href="/contact" className="w-full sm:w-auto">
+              <Link href={`/blog/${firstBlog.attributes.slug}`} className="w-full sm:w-auto">
                 <button className="bg-[#29902e] px-[10px] py-[10px] rounded-[8px] w-full sm:w-[229px] h-[48px]">
-                  <span className="font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white">Book a Consultation</span>
+                  <span className="font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white">Read More</span>
                 </button>
               </Link>
             </div>
