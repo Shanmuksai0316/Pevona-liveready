@@ -12,6 +12,13 @@ const tenantDocs = [
   "Tenancy agreement and inventory before move-in",
 ] as const;
 
+const tenantDocIcons: Record<string, string> = {
+  "Energy Performance Certificate (EPC)": "/images/Energy Performance Certificate (EPC)-icon.svg",
+  "Gas Safety Certificate (where applicable)": "/images/Gas Safety Certificate (where applicable).svg",
+  '"How to Rent" government checklist': '/images/government checklist.svg',
+  "Tenancy agreement and inventory before move-in": "/images/Tenancy agreement and inventory before move-in.svg",
+};
+
 export default async function PropertiesToLetPage() {
   const res = await fetchStrapi<StrapiProperty[]>("/api/properties?populate=*");
   const properties = res?.data ?? [];
@@ -105,8 +112,8 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* How We Maintain Quality Standards */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 mx-5 lg:mx-auto">
-        <div className="flex-1 max-w-[589px] space-y-[10px]">
+      <section className="max-w-[1336px] mx-5 md:mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[26px] lg:gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] lg:py-0">
+        <div className="flex-1 max-w-[589px] space-y-[10px] p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             How We Maintain Quality Standards
           </h2>
@@ -130,7 +137,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* Renting with Pevona */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[80px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 mx-5 lg:mx-auto">
+      <section className="max-w-[1336px] mx-5 md:mx-5 lg:mx-auto mt-[80px] flex flex-col lg:flex-row items-center gap-[26px] lg:gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] lg:py-0">
         <div className="flex-1 relative w-full max-w-[696px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Properties to let/4rd_Renting_with_Pevona.png"
@@ -142,7 +149,7 @@ export default async function PropertiesToLetPage() {
           />
         </div>
 
-        <div className="flex-1 max-w-[589px] space-y-[10px]">
+        <div className="flex-1 max-w-[589px] space-y-[10px] p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Renting with Pevona (Educational Touchpoint)
           </h2>
@@ -154,7 +161,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* Key Tenant Information */}
-      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[80px] items-start mb-[120px]">
+      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[30px] lg:gap-[80px] items-start mb-[60px] lg:mb-[120px]">
         <div className="flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Key Tenant Information (Mandatory Transparency)
@@ -171,8 +178,15 @@ export default async function PropertiesToLetPage() {
         <div className="flex-1 space-y-6">
           {tenantDocs.map((label) => (
             <div key={label} className="flex items-center gap-4">
-              <div className="w-[46px] h-[46px] rounded-[10px] bg-[#002f57] flex items-center justify-center">
-                <span className="w-[28px] h-[28px] rounded-full border border-white/60" />
+              <div className="w-[46px] h-[46px] rounded-[10px] bg-[#002f57] flex items-center justify-center flex-shrink-0">
+                <Image
+                  src={tenantDocIcons[label]}
+                  alt={label}
+                  width={28}
+                  height={28}
+                  className="object-contain"
+                  unoptimized
+                />
               </div>
               <span className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
                 {label}
@@ -182,11 +196,11 @@ export default async function PropertiesToLetPage() {
         </div>
       </section>
 
-      {/* Area Insights Section */}
-      <AreaInsights />
+      {/* Area Insights Section - Hidden */}
+      {/* <AreaInsights /> */}
 
       {/* CTA: Ready to Find Your Next Home? */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[150px] mb-[120px]">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[150px] mb-[60px] lg:mb-[120px]">
         {/* Mobile Layout */}
         <div className="lg:hidden relative w-full min-h-[450px] rounded-[26px] overflow-hidden">
           <Image

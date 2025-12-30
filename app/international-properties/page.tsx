@@ -10,16 +10,16 @@ export default function InternationalPropertiesPage() {
         <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
-              <Image
-                src="/images/International-Properties/Group 7614.png"
-                alt="International property background"
-                fill
-                className="object-cover"
+          <Image
+            src="/images/International-Properties/Group 7614.png"
+            alt="International property background"
+            fill
+            className="object-cover"
                 sizes="100vw"
-                unoptimized
-              />
+            unoptimized
+          />
             </div>
-          </div>
+        </div>
 
           <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
             <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
@@ -73,34 +73,8 @@ export default function InternationalPropertiesPage() {
         </div>
       </section>
 
-      {/* ================= WHY INVEST ================= */}
-      <section className="pt-16 bg-white mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] mb-6">
-              Why Invest Internationally?
-            </h2>
-            <p className="font-manrope text-[16px] sm:text-[18px] leading-[26px] sm:leading-[28px] text-[#333] opacity-80">
-              Global investments unlock access to high-growth markets, strong
-              rental demand, and currency diversification. Pevona ensures full
-              compliance and seamless cross-border support.
-            </p>
-          </div>
-
-          <div className="relative h-[400px] rounded-lg overflow-hidden">
-            <Image
-              src="/images/International-Properties/Mask group (3).png"
-              alt="Business meeting discussion"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-          </div>
-        </div>
-      </section>
-
       {/* ================= FEATURED PROJECTS ================= */}
-      <section className="py-16 bg-[#FAFAFA] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+      <section className="py-16 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
           <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-center text-[#002f57] mb-4">
             Featured International Projects
@@ -128,6 +102,32 @@ export default function InternationalPropertiesPage() {
                 Shopping Centre – Buea, Cameroon
               </p>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= WHY INVEST ================= */}
+      <section className="bg-white mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] mb-6">
+              Why Invest Internationally?
+            </h2>
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[26px] sm:leading-[28px] text-[#333] opacity-80">
+              Global investments unlock access to high-growth markets, strong
+              rental demand, and currency diversification. Pevona ensures full
+              compliance and seamless cross-border support.
+            </p>
+          </div>
+
+          <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <Image
+              src="/images/International-Properties/Mask group (3).png"
+              alt="Business meeting discussion"
+              fill
+              className="object-cover"
+              unoptimized
+            />
           </div>
         </div>
       </section>

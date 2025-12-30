@@ -71,7 +71,7 @@ export default function ApplicationProcessPage() {
 
       {/* What to Expect */}
       <section className="max-w-[1336px] mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
-        <div className="flex-1 max-w-[589px] space-y-4 pl-[5%]">
+        <div className="w-full lg:flex-1 max-w-[589px] space-y-4 p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             What to Expect
           </h2>
@@ -95,7 +95,7 @@ export default function ApplicationProcessPage() {
 
       {/* Step-by-step Application Process */}
       <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[80px] flex flex-col lg:flex-row gap-[60px] items-start">
-        <div className="flex-1 flex flex-col gap-6 max-w-[526px]">
+        <div className="w-full lg:flex-1 flex flex-col gap-6 max-w-[526px]">
           <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px] text-[#002f57]">
             How It Works
           </p>
@@ -186,7 +186,7 @@ export default function ApplicationProcessPage() {
 
       {/* Compliance & Tenant Protection */}
       <section className="max-w-[1336px] mx-5 lg:mx-auto mt-[60px] lg:mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
-        <div className="basis-0 grow min-w-px space-y-4 max-w-[640px] pl-[5%]">
+        <div className="basis-0 grow min-w-px space-y-4 max-w-[640px] p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Compliance &amp; Tenant Protection
           </h2>

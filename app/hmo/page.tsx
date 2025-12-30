@@ -56,7 +56,7 @@ export default function HMOPage() {
       {/* Why Choose Pevona Ltd for HMO Management? */}
       <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-[78px] items-center">
         {/* Image on left */}
-        <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[16px] sm:rounded-[20px] lg:rounded-[26px] overflow-hidden order-2 lg:order-1">
+        <div className="w-full lg:flex-1 relative max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[16px] sm:rounded-[20px] lg:rounded-[26px] overflow-hidden order-2 lg:order-1">
           <Image
             src="/images/House Of Multiple Occupations (HMO)/2nd_HMO_Management_.png"
             alt="Why Choose Pevona Ltd for HMO Management"
@@ -67,7 +67,7 @@ export default function HMOPage() {
         </div>
 
         {/* Text on right */}
-        <div className="flex-1 w-full max-w-[589px] space-y-3 sm:space-y-4 order-1 lg:order-2">
+        <div className="w-full lg:flex-1 max-w-[589px] space-y-3 sm:space-y-4 order-1 lg:order-2">
           <h2 className="font-crimson text-[22px] sm:text-[28px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Why Choose Pevona Ltd for HMO Management?
           </h2>

@@ -118,7 +118,7 @@ export default async function SellPage() {
       </section>
 
       {/* Properties List Section */}
-      <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px]">
+      <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[60px] lg:mb-[120px]">
         <div className="max-w-[861px] mx-auto text-center space-y-4 mb-9">
           <h2 className="font-crimson text-[32px] md:text-[66px] leading-tight md:leading-[66px] tracking-tight md:tracking-[-1.98px] text-[#002f57]">
             Featured Properties
@@ -266,7 +266,7 @@ export default async function SellPage() {
 
       {/* Marketing Strategy */}
       <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
-        <div className="flex-1 w-full max-w-[589px] space-y-4">
+        <div className="w-full lg:flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Marketing Strategy
           </h2>
@@ -285,7 +285,7 @@ export default async function SellPage() {
           </ul>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] min-w-0 rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">
+        <div className="w-full lg:flex-1 relative max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] min-w-0 rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">
           <Image
             src="/images/Sell/Marketing Strategy img.png"
             alt="Marketing strategy"
@@ -298,7 +298,7 @@ export default async function SellPage() {
 
       {/* Legal & Compliance Support */}
       <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
-        <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none order-2 lg:order-1">
+        <div className="w-full lg:flex-1 relative max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none order-2 lg:order-1">
           <Image
             src="/images/Sell/Legal & Compliance Support image.png"
             alt="Legal and compliance support"
@@ -308,7 +308,7 @@ export default async function SellPage() {
           />
         </div>
 
-        <div className="flex-1 w-full max-w-[589px] space-y-4 order-1 lg:order-2">
+        <div className="w-full lg:flex-1 max-w-[589px] space-y-4 order-1 lg:order-2">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Legal &amp; Compliance Support
           </h2>
@@ -327,7 +327,7 @@ export default async function SellPage() {
 
       {/* Get an Accurate Market Valuation */}
       <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
-        <div className="flex-1 w-full max-w-[589px] space-y-4">
+        <div className="w-full lg:flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Get an Accurate Market Valuation
           </h2>
@@ -344,7 +344,7 @@ export default async function SellPage() {
           </Link>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] min-w-0 rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">
+        <div className="w-full lg:flex-1 relative max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] min-w-0 rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">
           <Image
             src="/images/Sell/Valuation sec image.png"
             alt="Market valuation"

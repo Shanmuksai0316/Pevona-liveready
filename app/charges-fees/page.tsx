@@ -9,14 +9,14 @@ export default function ChargesFeesPage() {
         <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
-              <Image
-                src="/images/charges-fees-hero.png"
-                alt="Charges & Fees"
-                fill
-                priority
-                className="object-cover"
-                unoptimized
-              />
+        <Image
+          src="/images/charges-fees-hero.png"
+          alt="Charges & Fees"
+          fill
+          priority
+          className="object-cover"
+          unoptimized
+        />
             </div>
           </div>
 

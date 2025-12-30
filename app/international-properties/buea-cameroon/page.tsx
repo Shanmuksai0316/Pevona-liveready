@@ -2,12 +2,95 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import svgPaths from "../imports/svg-q9n7c86uub";
 
 export default function BueaCameroonProject() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [selectedCurrency, setSelectedCurrency] = useState<"XAF" | "USD" | "GBP">("XAF");
+  const mobileVideoRef = useRef<HTMLVideoElement>(null);
+  const desktopVideoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Wait a bit for DOM to be ready
+    const timer = setTimeout(() => {
+      const setupVideo = (video: HTMLVideoElement | null, name: string) => {
+        if (!video) {
+          console.log(`${name} video ref is null`);
+          return;
+        }
+
+        console.log(`Setting up ${name} video`, video);
+
+        // Ensure video is muted and can play inline
+        video.muted = true;
+        video.playsInline = true;
+        video.setAttribute("muted", "true");
+        video.setAttribute("playsinline", "true");
+        video.setAttribute("webkit-playsinline", "true");
+
+        const attemptPlay = () => {
+          console.log(`${name} video readyState:`, video.readyState);
+          if (video.readyState >= 2) {
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+              playPromise
+                .then(() => {
+                  console.log(`${name} video is now playing`);
+                })
+                .catch((error) => {
+                  console.error(`${name} video play error:`, error);
+                  // Retry after delay
+                  setTimeout(() => {
+                    video.play().catch((err) => {
+                      console.error(`${name} video retry failed:`, err);
+                    });
+                  }, 500);
+                });
+            }
+          }
+        };
+
+        // Try to play when video can play
+        const handleCanPlay = () => {
+          console.log(`${name} video can play`);
+          attemptPlay();
+        };
+
+        const handleLoadedData = () => {
+          console.log(`${name} video loaded data`);
+          attemptPlay();
+        };
+
+        const handleLoadedMetadata = () => {
+          console.log(`${name} video loaded metadata`);
+          attemptPlay();
+        };
+
+        // Add event listeners
+        video.addEventListener("canplay", handleCanPlay);
+        video.addEventListener("loadeddata", handleLoadedData);
+        video.addEventListener("loadedmetadata", handleLoadedMetadata);
+        video.addEventListener("canplaythrough", handleCanPlay);
+
+        // Try immediately if already loaded
+        if (video.readyState >= 2) {
+          attemptPlay();
+        }
+
+        // Also try after a short delay
+        setTimeout(attemptPlay, 100);
+        setTimeout(attemptPlay, 500);
+        setTimeout(attemptPlay, 1000);
+      };
+
+      setupVideo(mobileVideoRef.current, "Mobile");
+      setupVideo(desktopVideoRef.current, "Desktop");
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -51,20 +134,93 @@ export default function BueaCameroonProject() {
 
   return (
     <div className="bg-[#fafafa] min-h-screen">
-      {/* Hero Section with Image Background */}
-      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] mb-[30px] md:mb-[75px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/International-Properties/buea-cameroon-bg.png"
-            alt="Shopping Centre - Buea, Cameroon"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            unoptimized
-          />
+      {/* Hero Section with Video Background */}
+      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] mb-[30px] md:mb-[75px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden bg-[#002f57]">
+        {/* Mobile Video Background */}
+        <div className="absolute inset-0 lg:hidden z-0">
+          <video
+            ref={mobileVideoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="w-full h-full object-cover"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            onLoadedData={(e) => {
+              const video = e.currentTarget;
+              video.muted = true;
+              video.play().catch((err) => console.error("Mobile video play error:", err));
+            }}
+            onCanPlay={(e) => {
+              const video = e.currentTarget;
+              video.muted = true;
+              video.play().catch((err) => console.error("Mobile video play error:", err));
+            }}
+            onLoadedMetadata={(e) => {
+              const video = e.currentTarget;
+              video.muted = true;
+              video.play().catch((err) => console.error("Mobile video play error:", err));
+            }}
+            onError={(e) => {
+              console.error("Mobile video error:", e);
+              const video = e.currentTarget;
+              console.error("Video error details:", {
+                error: video.error,
+                networkState: video.networkState,
+                readyState: video.readyState,
+                src: video.currentSrc
+              });
+            }}
+            onStalled={() => console.log("Mobile video stalled")}
+            onWaiting={() => console.log("Mobile video waiting")}
+          >
+            <source src="/images/International-Properties/buea-cameroon-mbl-bg.webm" type="video/webm" />
+          </video>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]" />
-        <div className="relative h-full flex flex-col items-center justify-end text-center px-4 sm:px-6 max-w-[1300px] mx-auto pb-4 sm:pb-6 md:pb-[31px]">
+        {/* Desktop Video Background */}
+        <div className="hidden lg:block absolute inset-0 z-0">
+          <video
+            ref={desktopVideoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="w-full h-full object-cover"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            onLoadedData={(e) => {
+              const video = e.currentTarget;
+              video.muted = true;
+              video.play().catch((err) => console.error("Desktop video play error:", err));
+            }}
+            onCanPlay={(e) => {
+              const video = e.currentTarget;
+              video.muted = true;
+              video.play().catch((err) => console.error("Desktop video play error:", err));
+            }}
+            onLoadedMetadata={(e) => {
+              const video = e.currentTarget;
+              video.muted = true;
+              video.play().catch((err) => console.error("Desktop video play error:", err));
+            }}
+            onError={(e) => {
+              console.error("Desktop video error:", e);
+              const video = e.currentTarget;
+              console.error("Video error details:", {
+                error: video.error,
+                networkState: video.networkState,
+                readyState: video.readyState,
+                src: video.currentSrc
+              });
+            }}
+            onStalled={() => console.log("Desktop video stalled")}
+            onWaiting={() => console.log("Desktop video waiting")}
+          >
+            <source src="/images/International-Properties/buea-cameroon-bg-dsk.webm" type="video/webm" />
+          </video>
+        </div>
+        <div className="relative z-10 h-full flex flex-col items-center justify-end text-center px-4 sm:px-6 max-w-[1300px] mx-auto pb-4 sm:pb-6 md:pb-[31px]">
           <h1 className="font-crimson text-white text-[28px] sm:text-[36px] md:text-[48px] lg:text-[66px] leading-tight sm:leading-[42px] md:leading-[56px] lg:leading-[72px] tracking-tight lg:tracking-[-1.98px] mb-3 sm:mb-4">
             Shopping Centre - Buea, Cameroon
           </h1>
@@ -184,7 +340,7 @@ export default function BueaCameroonProject() {
       {/* A New Standard Section */}
       <section className="max-w-[1300px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
-          <div className="flex-1">
+          <div className="w-full lg:flex-1">
             <h2 className="font-crimson text-[#002f57] text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] mb-4">
               A New Standard of Place‑Making
             </h2>
@@ -283,7 +439,7 @@ export default function BueaCameroonProject() {
           </div>
 
           {/* Right Column - Images */}
-          <div className="flex-1 flex flex-col gap-4 sm:gap-6 lg:gap-[26px]">
+          <div className="w-full lg:flex-1 flex flex-col gap-4 sm:gap-6 lg:gap-[26px]">
             <div className="w-full h-[180px] sm:h-[200px] lg:h-[226px] min-h-[180px] min-w-0 rounded-[20px] sm:rounded-[24px] overflow-hidden relative">
               <Image
                 src="/images/International-Properties/Crafted for Elegance, Engineered for Performance-1.png"
@@ -470,11 +626,38 @@ export default function BueaCameroonProject() {
             <h2 className="font-crimson text-[#002f57] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[46px] leading-tight lg:leading-[56px]">
               Payment Plans & Ownership Options
             </h2>
-            <div className="flex items-center gap-3 sm:gap-4 font-manrope text-[#333] text-[14px] sm:text-[16px]">
+            <div className="flex items-center gap-2 sm:gap-3 font-manrope text-[#333] text-[14px] sm:text-[16px]">
               <span>•</span>
-              <span>XAF</span>
-              <span>USD</span>
-              <span>GBP</span>
+              <button
+                onClick={() => setSelectedCurrency("XAF")}
+                className={`px-3 py-1.5 rounded-[6px] transition-colors font-semibold ${
+                  selectedCurrency === "XAF"
+                    ? "bg-[#002f57] text-white"
+                    : "bg-transparent text-[#333] hover:bg-[#002f57]/10"
+                }`}
+              >
+                XAF
+              </button>
+              <button
+                onClick={() => setSelectedCurrency("USD")}
+                className={`px-3 py-1.5 rounded-[6px] transition-colors font-semibold ${
+                  selectedCurrency === "USD"
+                    ? "bg-[#002f57] text-white"
+                    : "bg-transparent text-[#333] hover:bg-[#002f57]/10"
+                }`}
+              >
+                USD
+              </button>
+              <button
+                onClick={() => setSelectedCurrency("GBP")}
+                className={`px-3 py-1.5 rounded-[6px] transition-colors font-semibold ${
+                  selectedCurrency === "GBP"
+                    ? "bg-[#002f57] text-white"
+                    : "bg-transparent text-[#333] hover:bg-[#002f57]/10"
+                }`}
+              >
+                GBP
+              </button>
             </div>
           </div>
           <p className="font-manrope text-[#333] opacity-70 text-[14px] sm:text-[16px] mb-8 sm:mb-10">
@@ -495,7 +678,12 @@ export default function BueaCameroonProject() {
             <div className="bg-white rounded-[16px] p-6 sm:p-8 border border-[rgba(0,0,0,0.08)]">
               <h3 className="font-crimson font-semibold text-[#002f57] text-[20px] sm:text-[24px] mb-4 sm:mb-6">Reservation</h3>
               <ul className="space-y-2 sm:space-y-3">
-                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• Secure your unit from 500,000 XAF</li>
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">
+                  • Secure your unit from{" "}
+                  {selectedCurrency === "XAF" && "500,000 XAF"}
+                  {selectedCurrency === "USD" && "833 USD"}
+                  {selectedCurrency === "GBP" && "667 GBP"}
+                </li>
               </ul>
             </div>
             <div className="bg-white rounded-[16px] p-6 sm:p-8 border border-[rgba(0,0,0,0.08)]">

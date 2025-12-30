@@ -74,7 +74,7 @@ rental market with good long-term fundamentals.`,
         </div>
 
         <div className="mt-8 flex flex-col lg:flex-row items-center gap-10">
-          <div className="lg:w-1/2 space-y-6">
+          <div className="w-full lg:w-1/2 space-y-6">
             <h3 className="font-crimson text-[26px] leading-[30px] text-white">
               {active.title}
             </h3>
@@ -89,7 +89,7 @@ rental market with good long-term fundamentals.`,
             </ul>
           </div>
 
-          <div className="lg:w-1/2 flex justify-center">
+          <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative w-full max-w-[520px] h-[360px] rounded-[24px] overflow-hidden">
               <Image
                 src={active.image}

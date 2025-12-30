@@ -105,8 +105,8 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* Proactive. Transparent. Reliable. */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[80px]">
-        <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[30px] lg:gap-[80px]">
+        <div className="w-full lg:flex-1 relative max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/maintenance%20%26%20repair/main_2nd_sec_img.png"
             alt="Property maintenance team at work"
@@ -116,7 +116,7 @@ export default function MaintenanceRepairPage() {
           />
         </div>
 
-        <div className="flex-1 max-w-[589px] space-y-6">
+        <div className="w-full lg:flex-1 max-w-[589px] space-y-6">
           <div className="space-y-4">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
               Proactive. Transparent. Reliable.
@@ -173,7 +173,7 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* How We Handle Maintenance Requests */}
-      <section className="max-w-[1560px] mx-auto px-[37px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[80px]">
+      <section className="max-w-[1560px] mx-auto px-[37px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[30px] lg:gap-[80px]">
         <div className="space-y-9 w-full">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             How We Handle Maintenance Requests
@@ -181,7 +181,7 @@ export default function MaintenanceRepairPage() {
 
           <div className="flex flex-col lg:flex-row items-center gap-[60px] w-full">
             {/* Image stack */}
-            <div className="flex-1 relative w-full max-w-[720px] h-[480px] rounded-[26px] overflow-hidden">
+            <div className="w-full lg:flex-1 relative max-w-[720px] h-[480px] rounded-[26px] overflow-hidden">
               <Image
                 src="/images/maintenance%20%26%20repair/4th_main_Requestssec_img.png"
                 alt="Maintenance request management"
@@ -192,7 +192,7 @@ export default function MaintenanceRepairPage() {
             </div>
 
             {/* Steps */}
-            <div className="flex-1 max-w-[660px] space-y-6">
+            <div className="w-full lg:flex-1 max-w-[660px] space-y-6">
               <div className="space-y-6">
                 {[
                   {
@@ -244,8 +244,8 @@ export default function MaintenanceRepairPage() {
         </div>
 
         {/* Maintenance That Meets UK Standards */}
-        <div className="flex flex-col lg:flex-row items-center gap-[80px]">
-          <div className="flex-1 max-w-[609px] space-y-4">
+        <div className="flex flex-col lg:flex-row items-center gap-[30px] lg:gap-[80px]">
+          <div className="w-full lg:flex-1 max-w-[609px] space-y-4">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
               Maintenance That Meets UK Standards
             </h2>
@@ -264,7 +264,7 @@ export default function MaintenanceRepairPage() {
             </div>
           </div>
 
-          <div className="flex-1 relative w-full max-w-[640px] h-[460px] rounded-[26px] overflow-hidden">
+          <div className="w-full lg:flex-1 relative max-w-[640px] h-[460px] rounded-[26px] overflow-hidden">
             <Image
               src="/images/maintenance%20%26%20repair/5th_Maintenance.png"
               alt="Maintenance meeting UK standards"
@@ -304,8 +304,8 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* Full Transparency, Every Step of the Way */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row items-center gap-[80px]">
-        <div className="flex-1 relative w-full max-w-[640px] h-[460px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row items-center gap-[30px] lg:gap-[80px]">
+        <div className="w-full lg:flex-1 relative max-w-[640px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/maintenance%20%26%20repair/7th_Full_Transparency.png"
             alt="Transparent maintenance process"
@@ -315,7 +315,7 @@ export default function MaintenanceRepairPage() {
           />
         </div>
 
-        <div className="flex-1 max-w-[609px] space-y-4">
+        <div className="w-full lg:flex-1 max-w-[609px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Full Transparency, Every Step of the Way
           </h2>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../ui/Button";
 
 type HeroProps = {
@@ -40,11 +41,11 @@ export default function Hero({
               {subtitle}
             </p>
           </div>
-          <button className="bg-white px-[10px] py-[10px] rounded-[8px] w-[217px] h-[56px]">
-            <span className="font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57]">
+          <Link href="/contact" className="bg-white px-[10px] py-[10px] rounded-[8px] w-[217px] h-[56px] flex items-center justify-center hover:bg-[#0073B5] transition-colors group">
+            <span className="font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57] group-hover:text-white transition-colors">
               {buttonText}
             </span>
-          </button>
+          </Link>
         </div>
 
         {/* Credibility Section */}

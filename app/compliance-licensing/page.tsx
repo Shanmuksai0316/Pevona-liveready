@@ -104,8 +104,8 @@ export default function ComplianceLicensingPage() {
       </section>
 
       {/* Our Commitment to Compliance */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[80px]">
-        <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[30px] lg:gap-[80px]">
+        <div className="w-full lg:flex-1 relative max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/com_2nd_sec_img.png"
             alt="Compliance and property review"
@@ -115,7 +115,7 @@ export default function ComplianceLicensingPage() {
           />
         </div>
 
-        <div className="flex-1 max-w-[589px] space-y-4">
+        <div className="w-full lg:flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Our Commitment to Compliance
           </h2>
@@ -174,7 +174,7 @@ export default function ComplianceLicensingPage() {
       {/* How We Manage Compliance */}
       <section className="mt-[60px] lg:mt-[160px] bg-[#002f57]">
         <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center text-white">
-          <div className="flex-1 max-w-[621px] space-y-[24px]">
+          <div className="w-full lg:flex-1 max-w-[621px] space-y-[24px]">
             <div className="space-y-4">
               <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
                 How We Manage Compliance
@@ -199,7 +199,7 @@ export default function ComplianceLicensingPage() {
             </div>
           </div>
 
-          <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
+          <div className="w-full lg:flex-1 relative max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
             <Image
               src="/images/Compliance & Licensing/5thn_sec_How_We_Manage_Compliance.png"
               alt="How we manage compliance visually"
@@ -219,7 +219,7 @@ export default function ComplianceLicensingPage() {
 
         <div className="flex flex-col lg:flex-row gap-[40px] w-full">
           {/* Landlords card */}
-          <article className="relative flex-1 h-[320px] rounded-[24px] overflow-hidden">
+          <article className="relative w-full lg:flex-1 h-[320px] rounded-[24px] overflow-hidden">
             <Image
               src="/images/Compliance & Licensing/4th_secLandlords.png"
               alt="Landlord responsibilities"
@@ -238,7 +238,7 @@ export default function ComplianceLicensingPage() {
           </article>
 
           {/* Tenants card */}
-          <article className="relative flex-1 h-[320px] rounded-[24px] overflow-hidden">
+          <article className="relative w-full lg:flex-1 h-[320px] rounded-[24px] overflow-hidden">
             <Image
               src="/images/Compliance & Licensing/4th_secTenants.png"
               alt="Tenant responsibilities"
