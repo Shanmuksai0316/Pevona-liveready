@@ -27,6 +27,20 @@ export default function ContactPage() {
     const subject = formData.get("subject") as string;
     const message = formData.get("message") as string;
 
+    // Validate required fields before submission
+    if (!name || !email || !phone || !subject || !message) {
+      console.error("Validation failed: Missing required fields", { 
+        name: !!name, 
+        email: !!email, 
+        phone: !!phone,
+        subject: !!subject,
+        message: !!message
+      });
+      setSubmitStatus("error");
+      setIsSubmitting(false);
+      return;
+    }
+
     // Format message to include subject
     const subjectLabel = subjectLabels[subject] || subject;
     const fullMessage = `Subject: ${subjectLabel}\n\n${message}`;
@@ -35,9 +49,9 @@ export default function ContactPage() {
     const propertyTitle = subjectLabel;
 
     const data = {
-      name,
-      email,
-      phone: phone || "", // Make phone optional but send empty string if not provided
+      name: name.trim(),
+      email: email.trim(),
+      phone: phone.trim(),
       message: fullMessage,
       propertySlug: "",
       propertyTitle,
@@ -61,10 +75,22 @@ export default function ContactPage() {
       } else {
         const errorData = await response.json().catch(() => ({}));
         console.error("Form submission error:", response.status, errorData);
+        // Log more details for debugging
+        console.error("Error details:", {
+          status: response.status,
+          statusText: response.statusText,
+          error: errorData,
+          submittedData: { name, email, phone: phone ? "provided" : "missing", subject, message: message ? "provided" : "missing" }
+        });
         setSubmitStatus("error");
       }
     } catch (error) {
       console.error("Form submission error:", error);
+      // Log network errors
+      if (error instanceof Error) {
+        console.error("Error message:", error.message);
+        console.error("Error stack:", error.stack);
+      }
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -181,8 +207,14 @@ export default function ContactPage() {
 
               {submitStatus === "error" && (
                 <div className="bg-red-50 border border-red-200 rounded-[8px] p-4">
-                  <p className="font-manrope text-[14px] sm:text-[16px] text-red-800">
+                  <p className="font-manrope text-[14px] sm:text-[16px] text-red-800 mb-2">
                     Sorry, there was an error sending your message. Please try again or contact us directly.
+                  </p>
+                  <p className="font-manrope text-[12px] sm:text-[14px] text-red-600">
+                    If the problem persists, please email us at{" "}
+                    <a href="mailto:pebans@pevonaltd.co.uk" className="underline">pebans@pevonaltd.co.uk</a>
+                    {" "}or call us at{" "}
+                    <a href="tel:+4420386329485" className="underline">+44-203-8632-9485</a>.
                   </p>
                 </div>
               )}
