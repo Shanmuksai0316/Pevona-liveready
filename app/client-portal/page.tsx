@@ -8,7 +8,7 @@ export default function ClientPortalPage() {
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/client-portal-banner.png"
+            src="/images/Client%20Portal%20page/Bannerh.png"
             alt="Client Portal"
             fill
             className="object-cover"
