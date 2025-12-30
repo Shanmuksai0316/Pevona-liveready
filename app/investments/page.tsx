@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { fetchStrapi } from "@/lib/strapi";
 import type { StrapiProperty } from "@/types/strapi";
-import PropertyCard from "@/components/properties/PropertyCard";
+import FilteredProperties from "@/components/investments/FilteredProperties";
 
 export default async function InvestmentOpportunitiesPage() {
   // Fetch properties from Strapi
@@ -91,8 +91,8 @@ export default async function InvestmentOpportunitiesPage() {
       </section>
 
       {/* Featured Investment Properties */}
-      <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col items-center gap-9">
-        <div className="max-w-[861px] text-center space-y-4">
+      <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-9">
+        <div className="max-w-[861px] mx-auto text-center space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Featured Investment Properties
           </h2>
@@ -101,26 +101,17 @@ export default async function InvestmentOpportunitiesPage() {
           </p>
         </div>
 
-        {featuredProperties.length > 0 ? (
-          <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-              {featuredProperties.map((property) => (
-                <PropertyCard key={property.id} property={property} />
-              ))}
-            </div>
+        {/* Search Filter and Properties - Always show filter */}
+        <FilteredProperties properties={featuredProperties} />
 
+        {featuredProperties.length > 0 && (
+          <div className="flex justify-center w-full">
             <Link
               href="/finding-property"
-              className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#001f3a] transition-colors mt-4"
+              className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#001f3a] transition-colors"
             >
               View All Properties
             </Link>
-          </>
-        ) : (
-          <div className="w-full text-center py-12">
-            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-              Properties will be displayed here once available. Please check back soon or contact us for current investment opportunities.
-            </p>
           </div>
         )}
       </section>

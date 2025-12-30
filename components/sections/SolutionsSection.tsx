@@ -77,13 +77,14 @@ export default function SolutionsSection() {
                 className="object-cover"
                 unoptimized
               />
-              <div className="absolute bottom-[20px] left-[38px]">
+              <div className="absolute bottom-[20px] left-[20px] sm:left-[30px] lg:left-[38px]">
                 <h3
                   className="
                     font-crimson font-semibold text-white capitalize
-                    text-[28px] leading-[32px]
-                    sm:text-[34px] sm:leading-[36px]
-                    lg:text-[40px] lg:leading-[40px]
+                    text-[24px] leading-[28px]
+                    sm:text-[26px] sm:leading-[30px]
+                    md:text-[28px] md:leading-[32px]
+                    lg:text-[30px] lg:leading-[34px]
                   "
                 >
                   {service.title}

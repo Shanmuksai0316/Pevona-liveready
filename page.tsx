@@ -333,8 +333,8 @@ export default function Home() {
                   unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60"></div>
-                <div className="absolute bottom-[20px] left-[20px] lg:left-[38px]">
-                  <h3 className="font-crimson font-semibold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] leading-tight text-white capitalize">{service.title}</h3>
+                <div className="absolute bottom-[20px] left-[20px] sm:left-[30px] lg:left-[38px]">
+                  <h3 className="font-crimson font-semibold text-[24px] leading-[28px] sm:text-[26px] sm:leading-[30px] md:text-[28px] md:leading-[32px] lg:text-[30px] lg:leading-[34px] text-white capitalize">{service.title}</h3>
                 </div>
               </div>
               <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[22px] sm:leading-[26px] lg:leading-[28px] text-[#333333] text-center lg:text-left max-w-[370px]">
