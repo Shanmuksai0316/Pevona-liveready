@@ -20,9 +20,9 @@ cd /path/to/pevona
 nano .env.local
 ```
 
-Add this line:
+Add this line (replace with your actual token):
 ```env
-STRAPI_API_TOKEN=c4ff7f15e34413ac57a6a10826b560e4ff579d71262450402f83ec180ba78c906e8908777a809a015009d92072903799f32f1349829a1cb6e205c3eba9b5a0c98bac847093cc7a7787f1abcc184d35e1413d2bc05832ba5b629d68e5d6f53263e60e337a92075352bff0a154527c7fe6db185e272f35d5e43e98bd4eadec47a7
+STRAPI_API_TOKEN=your-token-here
 ```
 
 Also ensure these are set:
@@ -45,7 +45,7 @@ Add to the env section:
   "apps": [{
     "name": "next",
     "env": {
-      "STRAPI_API_TOKEN": "c4ff7f15e34413ac57a6a10826b560e4ff579d71262450402f83ec180ba78c906e8908777a809a015009d92072903799f32f1349829a1cb6e205c3eba9b5a0c98bac847093cc7a7787f1abcc184d35e1413d2bc05832ba5b629d68e5d6f53263e60e337a92075352bff0a154527c7fe6db185e272f35d5e43e98bd4eadec47a7",
+      "STRAPI_API_TOKEN": "your-token-here",
       "NEXT_PUBLIC_STRAPI_URL": "http://31.97.117.9:1337",
       "NEXT_PUBLIC_SITE_URL": "http://31.97.117.9:3000"
     }
