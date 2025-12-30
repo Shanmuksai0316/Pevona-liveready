@@ -63,7 +63,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
   return (
     <div className="container mx-auto px-6 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 max-w-7xl">
       {/* Header */}
-      <header className="mb-6 sm:mb-8">
+      <header className="mb-6 sm:mb-8 text-center">
         {attributes.category && (
           <span className="inline-block bg-pevona-dark text-white text-sm font-manrope px-3 py-1 rounded-full mb-4">
             {attributes.category}
@@ -72,7 +72,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
         <h1 className="font-crimson text-3xl sm:text-4xl md:text-5xl font-bold text-pevona-dark mb-4">
           {attributes.title}
         </h1>
-        <div className="flex items-center gap-4 text-gray-600">
+        <div className="flex items-center justify-center gap-4 text-gray-600">
           {attributes.author && (
             <span className="font-manrope">By {attributes.author}</span>
           )}
@@ -99,7 +99,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
       
       {/* Excerpt */}
       {attributes.excerpt && (
-        <p className="font-manrope text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 italic">
+        <p className="font-manrope text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 italic text-center">
           {attributes.excerpt}
         </p>
       )}
