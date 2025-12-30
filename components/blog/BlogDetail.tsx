@@ -61,7 +61,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
   ];
 
   return (
-    <div className="container mx-auto px-6 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 max-w-7xl">
+    <div className="container mx-auto px-6 sm:px-8 lg:px-12 pt-[100px] sm:pt-[120px] lg:pt-[140px] pb-8 sm:pb-12 lg:pb-16 max-w-7xl">
       {/* Header */}
       <header className="mb-6 sm:mb-8 text-center">
         <h1 className="font-crimson text-2xl sm:text-3xl md:text-4xl font-bold text-pevona-dark mb-4">
