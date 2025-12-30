@@ -15,7 +15,6 @@ export default function ClientPortalPage() {
             unoptimized
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/65" />
         </div>
         
         <div className="relative z-10 h-full flex items-center justify-center px-4">
