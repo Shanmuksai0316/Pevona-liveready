@@ -14,18 +14,6 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
 
   return (
     <article className="container mx-auto px-4 py-16 max-w-4xl">
-      {attributes.featured_image?.data && (
-        <div className="relative h-96 w-full rounded-2xl overflow-hidden mb-8">
-          <Image
-            src={imageUrl}
-            alt={attributes.title}
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-      )}
-      
       <header className="mb-8">
         {attributes.category && (
           <span className="inline-block bg-pevona-dark text-white text-sm font-manrope px-3 py-1 rounded-full mb-4">
@@ -46,6 +34,18 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
           )}
         </div>
       </header>
+      
+      {attributes.featured_image?.data && (
+        <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden mb-8">
+          <Image
+            src={imageUrl}
+            alt={attributes.title}
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+      )}
       
       {attributes.excerpt && (
         <p className="font-manrope text-xl text-gray-700 mb-8 italic">
