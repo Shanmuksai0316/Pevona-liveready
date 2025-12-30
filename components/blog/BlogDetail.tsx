@@ -69,7 +69,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
             {attributes.category}
           </span>
         )}
-        <h1 className="font-crimson text-3xl sm:text-4xl md:text-5xl font-bold text-pevona-dark mb-4">
+        <h1 className="font-crimson text-2xl sm:text-3xl md:text-4xl font-bold text-pevona-dark mb-4">
           {attributes.title}
         </h1>
         <div className="flex items-center justify-center gap-4 text-gray-600">
@@ -145,9 +145,9 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
         </aside>
 
         {/* Main Content */}
-        <article className="flex-1 max-w-4xl">
+        <article className="flex-1 max-w-4xl px-4 sm:px-6 lg:px-8">
           {attributes.content && (
-            <div className="prose prose-lg max-w-none blog-content">
+            <div className="prose prose-base lg:prose-lg max-w-none blog-content">
               <div dangerouslySetInnerHTML={{ __html: attributes.content }} />
             </div>
           )}

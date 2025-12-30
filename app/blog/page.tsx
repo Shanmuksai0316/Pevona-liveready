@@ -141,31 +141,6 @@ export default async function BlogPage() {
         </section>
         )}
 
-      {/* Pagination */}
-      {blogList.length > 0 && (
-        <section className="max-w-[1336px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] pb-[60px] sm:pb-[80px]">
-          <div className="flex items-center justify-center gap-2 sm:gap-4">
-            <button
-              className="px-3 sm:px-4 py-2 font-manrope text-[14px] sm:text-[16px] leading-[24px] text-[#002f57] hover:text-[#0073B5] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              disabled
-            >
-              &lt;
-            </button>
-            <button className="px-3 sm:px-4 py-2 font-manrope text-[14px] sm:text-[16px] leading-[24px] bg-[#002f57] text-white rounded-[8px]">
-              1
-            </button>
-            <button className="px-3 sm:px-4 py-2 font-manrope text-[14px] sm:text-[16px] leading-[24px] text-[#002f57] hover:text-[#0073B5] transition-colors">
-              2
-            </button>
-            <button className="px-3 sm:px-4 py-2 font-manrope text-[14px] sm:text-[16px] leading-[24px] text-[#002f57] hover:text-[#0073B5] transition-colors">
-              3
-            </button>
-            <button className="px-3 sm:px-4 py-2 font-manrope text-[14px] sm:text-[16px] leading-[24px] text-[#002f57] hover:text-[#0073B5] transition-colors">
-              &gt;
-            </button>
-      </div>
-        </section>
-      )}
     </div>
   );
 }
