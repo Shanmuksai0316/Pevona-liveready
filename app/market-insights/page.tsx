@@ -366,13 +366,6 @@ export default async function MarketInsightsPage() {
             </div>
           ))}
         </div>
-
-        <Link
-          href="/blog"
-          className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] transition-colors"
-        >
-          View More
-        </Link>
       </section>
     </div>
   );
