@@ -15,7 +15,7 @@ export default function Home() {
       {/* Header Section */}
       <div className="fixed top-0 left-0 right-0 z-[9999] flex justify-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4">
-          <div className="h-[80px] lg:h-[110px] w-[110px] lg:w-[145px] relative">
+          <div className="h-[40px] lg:h-[60px] w-[110px] lg:w-[145px] relative">
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
               <Image
                 src="/images/Header-logo.svg"
