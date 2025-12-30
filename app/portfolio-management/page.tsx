@@ -51,7 +51,7 @@ export default function PortfolioManagementPage() {
               unoptimized
             />
           </div>
-        </div>
+          </div>
 
         <div className="relative w-full h-full flex flex-col justify-end items-center px-5 pb-[50px] z-10">
           <div className="max-w-[600px] space-y-4 text-white text-center">

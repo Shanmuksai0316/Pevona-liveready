@@ -47,7 +47,7 @@ export default function WhyChooseSection() {
         {/* 4 */}
     <ImageCard
           title="End-to-End Solutions"
-          img="/images/End-to-End Solutions image.png"
+          img="/images/Market Insights/Market_Insights_blog_-3.png"
           text="From tenant placement to portfolio growth - we manage it all seamlessly."
         />
 

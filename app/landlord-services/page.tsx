@@ -46,14 +46,14 @@ export default function LandlordServicesPage() {
           {/* Mobile Background */}
           <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">
             <div className="relative w-full h-[850px] rounded-b-[24px] sm:rounded-b-[30px] overflow-hidden">
-              <Image
+            <Image
                 src="/images/Landlord/landlord-services-bg-mbl.png"
-                alt="Business meeting with landlords"
-                fill
-                className="object-cover"
-                sizes="100vw"
-                unoptimized
-              />
+              alt="Business meeting with landlords"
+              fill
+              className="object-cover"
+              sizes="100vw"
+              unoptimized
+            />
             </div>
           </div>
 
@@ -61,19 +61,19 @@ export default function LandlordServicesPage() {
           <div className="lg:hidden relative flex items-end justify-center pb-[50px] h-[850px]">
             <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
               <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
-                Professional Lettings and Management for UK Landlords
-              </h1>
+              Professional Lettings and Management for UK Landlords
+            </h1>
               <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
-                End-to-end property management that saves time, reduces risk, and ensures
-                full legal compliance. Trusted by landlords who value clear communication and
-                consistent results.
-              </p>
-              <Link
-                href="/contact"
+              End-to-end property management that saves time, reduces risk, and ensures
+              full legal compliance. Trusted by landlords who value clear communication and
+              consistent results.
+            </p>
+            <Link
+              href="/contact"
                 className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-              >
-                Request a Consultation
-              </Link>
+            >
+              Request a Consultation
+            </Link>
             </div>
           </div>
         </div>
@@ -192,63 +192,63 @@ export default function LandlordServicesPage() {
       <div className="lg:px-0 px-5 overflow-x-auto">
         <section className="max-w-[1336px] mx-auto mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
           <div className="w-full lg:flex-1 max-w-[589px] space-y-4 pl-[5%]">
-            <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-              Renting with Confidence
-            </h2>
-            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-              Every property we manage adheres to UK government regulations, including:
-            </p>
-            <ul className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 space-y-2 mt-2">
-              <li>Tenant Fees Act 2019</li>
-              <li>Deposit Protection Scheme registration (DPS / MyDeposits / TDS)</li>
-              <li>Energy Performance Certificate (EPC)</li>
-              <li>Gas &amp; Electrical Safety checks</li>
-              <li>Right to Rent verification</li>
-            </ul>
-            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 mt-2">
-              We operate with complete transparency, ensuring landlords and tenants are always
-              protected.
-            </p>
-          </div>
+          <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
+            Renting with Confidence
+          </h2>
+          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+            Every property we manage adheres to UK government regulations, including:
+          </p>
+          <ul className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 space-y-2 mt-2">
+            <li>Tenant Fees Act 2019</li>
+            <li>Deposit Protection Scheme registration (DPS / MyDeposits / TDS)</li>
+            <li>Energy Performance Certificate (EPC)</li>
+            <li>Gas &amp; Electrical Safety checks</li>
+            <li>Right to Rent verification</li>
+          </ul>
+          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 mt-2">
+            We operate with complete transparency, ensuring landlords and tenants are always
+            protected.
+          </p>
+        </div>
 
-          <div className="flex-1 relative w-full max-w-[675px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
-            <Image
-              src="/images/Landlord/4th_Landlord_Renting_with_Confidence.png"
-              alt="Tenant and landlord agreement"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 675px"
-              unoptimized
-            />
-          </div>
-        </section>
+        <div className="flex-1 relative w-full max-w-[675px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
+          <Image
+            src="/images/Landlord/4th_Landlord_Renting_with_Confidence.png"
+            alt="Tenant and landlord agreement"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 675px"
+            unoptimized
+          />
+        </div>
+      </section>
       </div>
 
       {/* Smart Management. Seamless Support. */}
       <div className="lg:px-0 px-5 overflow-x-auto">
         <section className="max-w-[1336px] mx-auto mt-[80px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
-          <div className="flex-1 relative w-full max-w-[680px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
-            <Image
-              src="/images/Landlord/5th_Smart_Management._Seamless_Support..png"
-              alt="Property management team"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 680px"
-              unoptimized
-            />
-          </div>
+        <div className="flex-1 relative w-full max-w-[680px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
+          <Image
+            src="/images/Landlord/5th_Smart_Management._Seamless_Support..png"
+            alt="Property management team"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 680px"
+            unoptimized
+          />
+        </div>
 
           <div className="w-full lg:flex-1 max-w-[589px] space-y-4 p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
-            <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-              Smart Management. Seamless Support.
-            </h2>
-            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-              We handle every detail – from rent collection and maintenance to inspection
-              reports and renewals – all through a streamlined, fully digital system that
-              keeps you informed and in control.
-            </p>
-          </div>
-        </section>
+          <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
+            Smart Management. Seamless Support.
+          </h2>
+          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+            We handle every detail – from rent collection and maintenance to inspection
+            reports and renewals – all through a streamlined, fully digital system that
+            keeps you informed and in control.
+          </p>
+        </div>
+      </section>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export default function Home() {
       {/* Header Section */}
       <div className="fixed top-0 left-0 right-0 z-[9999] flex justify-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4">
-          <div className="h-[40px] lg:h-[60px] w-[110px] lg:w-[145px] relative">
+          <div className="h-[80px] lg:h-[110px] w-[110px] lg:w-[145px] relative">
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
               <Image
                 src="/images/Header-logo.svg"
@@ -282,7 +282,7 @@ export default function Home() {
           </div>
 
           {/* Learn More Button */}
-          <Link href="/about" className="bg-white border border-[rgba(0,0,0,0.12)] hover:bg-gray-50 px-[10px] py-[10px] rounded-[8px] w-full sm:w-[240px] h-[48px] sm:h-[56px] transition-colors inline-flex items-center justify-center mt-2 lg:mt-0">
+          <Link href="/contact" className="bg-white border border-[rgba(0,0,0,0.12)] hover:bg-gray-50 px-[10px] py-[10px] rounded-[8px] w-full sm:w-[240px] h-[48px] sm:h-[56px] transition-colors inline-flex items-center justify-center mt-2 lg:mt-0">
             <span className="font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#002f57]">Learn More About Us</span>
           </Link>
         </div>
@@ -410,7 +410,6 @@ export default function Home() {
               <p className="font-crimson font-semibold text-[26px] leading-[30px] text-white">Legal</p>
               <div className="flex flex-col gap-[10px] items-start font-manrope font-normal text-[18px] leading-[28px] text-white opacity-80">
                 <Link href="#" className="hover:text-white transition-opacity">Privacy Policy</Link>
-                <Link href="#" className="hover:text-white transition-opacity">Cookie Policy</Link>
                 <Link href="#" className="hover:text-white transition-opacity">Terms & Conditions</Link>
                 <Link href="#" className="hover:text-white transition-opacity">Legal & Compliance</Link>
               </div>

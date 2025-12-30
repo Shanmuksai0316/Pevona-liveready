@@ -41,31 +41,31 @@ export default function ApplicationProcessPage() {
       {/* Mobile Layout */}
       <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
         <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
-          <Image
+            <Image
             src="/images/Application process/application-process-bg-mbl.png"
-            alt="Rental application form"
-            fill
-            className="object-cover"
+              alt="Rental application form"
+              fill
+              className="object-cover"
             sizes="100vw"
-            unoptimized
-          />
-        </div>
+              unoptimized
+            />
+          </div>
 
         {/* Content positioned 50px from bottom, center-aligned */}
         <div className="absolute bottom-[50px] left-0 right-0 flex flex-col items-center px-5 sm:px-8 space-y-4 sm:space-y-6 text-white text-center">
-          <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
-            A Simple, Transparent Rental Application Process
-          </h1>
+            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+              A Simple, Transparent Rental Application Process
+            </h1>
           <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] max-w-[600px]">
-            Brief explanation that applying for a property is straightforward, digital, and
-            in line with UK housing standards.
-          </p>
-          <Link
-            href="/properties-to-let"
-            className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
-          >
-            View Available Properties
-          </Link>
+              Brief explanation that applying for a property is straightforward, digital, and
+              in line with UK housing standards.
+            </p>
+            <Link
+              href="/properties-to-let"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+            >
+              View Available Properties
+            </Link>
         </div>
       </section>
 

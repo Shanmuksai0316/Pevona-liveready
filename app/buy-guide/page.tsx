@@ -80,20 +80,20 @@ rental market with good long-term fundamentals.`,
           <div className="lg:hidden relative flex items-end justify-center h-[850px] pb-[50px]">
             <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
               <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
-                Buy with Clarity – Guidance, Areas &amp; Property Search in One Place
-              </h1>
-              <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
-                Your complete buying hub — a simple step-by-step guide, quick area insights and an easy
-                way to find the right property across the UK.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-              >
-                Book a Consultation
-              </Link>
-            </div>
+              Buy with Clarity – Guidance, Areas &amp; Property Search in One Place
+            </h1>
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
+              Your complete buying hub — a simple step-by-step guide, quick area insights and an easy
+              way to find the right property across the UK.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+            >
+              Book a Consultation
+            </Link>
           </div>
+        </div>
 
           {/* Desktop Content - Original Layout */}
           <div className="hidden lg:block relative max-w-[780px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] space-y-4 sm:space-y-6 text-white">
@@ -224,9 +224,9 @@ rental market with good long-term fundamentals.`,
                 key={city}
                 type="button"
                 className={`px-4 py-2 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] ${activeCity === city
-                  ? "bg-white text-[#002f57]"
-                  : "bg-white/20 text-white hover:bg-white/30"
-                  }`}
+                    ? "bg-white text-[#002f57]"
+                    : "bg-white/20 text-white hover:bg-white/30"
+                }`}
                 onClick={() => setActiveCity(city)}
               >
                 {city.toUpperCase()}

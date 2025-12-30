@@ -626,7 +626,7 @@ export default function AboutUsPage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6 w-full">
             {[
               "/images/Reputed Clients.svg",
-              "/images/Reputed Clients-1.svg",
+              "/images/propertymark-logo-white-1.svg",
               "/images/Reputed Clients-2.svg",
               "/images/Reputed Clients-3.svg",
               "/images/Reputed Clients-4.svg",

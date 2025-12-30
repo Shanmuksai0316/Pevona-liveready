@@ -278,7 +278,7 @@ export default function InternationalPropertiesPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-[#22C55E] text-white px-8 py-3 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] hover:bg-[#16A34A] transition-colors"
+              className="inline-block bg-[#002f57] text-white px-8 py-3 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] hover:bg-[#003d70] transition-colors"
             >
               Speak to Our Experts
             </Link>

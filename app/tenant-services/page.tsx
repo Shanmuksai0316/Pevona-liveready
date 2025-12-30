@@ -39,21 +39,21 @@ export default function TenantServicesPage() {
           <div className="lg:hidden relative flex items-end justify-center h-[850px] pb-[50px]">
             <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
               <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
-                Support You Can Count On
-              </h1>
-              <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
-                Renting a home should be simple and stress-free. From your first viewing to
-                move-in day, our lettings team ensures every step is transparent, compliant,
-                and handled with care.
-              </p>
-              <Link
-                href="/properties-to-let"
-                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-              >
-                View Available Properties
-              </Link>
-            </div>
+              Support You Can Count On
+            </h1>
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
+              Renting a home should be simple and stress-free. From your first viewing to
+              move-in day, our lettings team ensures every step is transparent, compliant,
+              and handled with care.
+            </p>
+            <Link
+              href="/properties-to-let"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+            >
+              View Available Properties
+            </Link>
           </div>
+        </div>
 
           {/* Desktop Content - Original Layout */}
           <div className="hidden lg:block relative max-w-[780px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] space-y-4 sm:space-y-6 text-white">

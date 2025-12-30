@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../ui/Button";
 
 export default function AboutSection() {
@@ -138,12 +139,15 @@ export default function AboutSection() {
       </div>
 
       {/* BUTTON */}
-      <button
+      <Link
+        href="/contact"
         className="
           relative z-10 bg-white rounded-[8px]
           w-full sm:w-[240px]
           h-[52px] sm:h-[56px]
           px-[10px] py-[10px]
+          inline-flex items-center justify-center
+          hover:bg-gray-50 transition-colors
         "
       >
         <span
@@ -155,7 +159,7 @@ export default function AboutSection() {
         >
           Learn More About Us
         </span>
-      </button>
+      </Link>
     </div>
   );
 }

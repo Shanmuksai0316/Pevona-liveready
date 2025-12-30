@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { fetchStrapi } from "@/lib/strapi";
+import { getImageUrl } from "@/lib/images";
+import type { StrapiBlog } from "@/types/strapi";
 
-export default function MarketInsightsPage() {
+export default async function MarketInsightsPage() {
+  const blogs = await fetchStrapi<StrapiBlog[]>("/api/blogs?populate=*&sort=publishedAt:desc");
+  const blogList = blogs?.data || [];
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Banner */}
@@ -36,30 +41,30 @@ export default function MarketInsightsPage() {
       {/* Mobile Layout */}
       <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
         <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
-          <Image
+            <Image
             src="/images/Market Insights/market-insights-bg-mbl.png"
-            alt="Examining business documents"
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
+              alt="Examining business documents"
+              fill
+              className="object-cover"
+              unoptimized
+            />
+          </div>
 
         {/* Content positioned 50px from bottom, center-aligned */}
         <div className="absolute bottom-[50px] left-0 right-0 flex flex-col items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-          <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
-            Market Insights
-          </h1>
+            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+              Market Insights
+            </h1>
           <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] max-w-[600px]">
-            Simple updates and clear snapshots to help you understand today's UK property
-            market.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
-          >
-            Book a Consultation
-          </Link>
+              Simple updates and clear snapshots to help you understand today's UK property
+              market.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+            >
+              Book a Consultation
+            </Link>
         </div>
       </section>
 
@@ -225,40 +230,40 @@ export default function MarketInsightsPage() {
       {/* Key Trends */}
       <section className="max-w-[1336px] mx-[15px] lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         <div className="flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
-          <div className="flex-1 relative w-full max-w-[675px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden order-2 lg:order-1">
-            <Image
-              src="/images/Market Insights/Market_Insights_blog_-1.png"
-              alt="Business person planning"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 675px"
-              unoptimized
-            />
-          </div>
+        <div className="flex-1 relative w-full max-w-[675px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden order-2 lg:order-1">
+          <Image
+            src="/images/Market Insights/Market_Insights_blog_-1.png"
+            alt="Business person planning"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 675px"
+            unoptimized
+          />
+        </div>
 
           <div className="w-full lg:flex-1 max-w-[589px] space-y-[12px] order-1 lg:order-2 p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
-            <div className="space-y-[10px]">
-              <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-                Key Trends
-              </h2>
-              <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-                Quick insights into what's shaping investment choices
-              </p>
-            </div>
-            <div className="space-y-2">
-              {[
-                "Higher-yield northern areas gaining more attention",
-                "Regeneration corridors showing long-term potential",
-                "Student-friendly markets remaining stable",
-                "Energy-efficient homes rising in demand",
-              ].map((trend) => (
-                <div key={trend} className="flex items-start gap-3">
-                  <div className="w-[6px] h-[6px] rounded-full bg-[#002f57] mt-[11px] flex-shrink-0" />
-                  <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-                    {trend}
-                  </p>
-                </div>
-              ))}
+          <div className="space-y-[10px]">
+            <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
+              Key Trends
+            </h2>
+            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+              Quick insights into what's shaping investment choices
+            </p>
+          </div>
+          <div className="space-y-2">
+            {[
+              "Higher-yield northern areas gaining more attention",
+              "Regeneration corridors showing long-term potential",
+              "Student-friendly markets remaining stable",
+              "Energy-efficient homes rising in demand",
+            ].map((trend) => (
+              <div key={trend} className="flex items-start gap-3">
+                <div className="w-[6px] h-[6px] rounded-full bg-[#002f57] mt-[11px] flex-shrink-0" />
+                <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+                  {trend}
+                </p>
+              </div>
+            ))}
             </div>
           </div>
         </div>
@@ -268,39 +273,39 @@ export default function MarketInsightsPage() {
       <section className="max-w-[1336px] mx-[15px] lg:mx-auto mt-[80px] mb-[60px] lg:mb-[120px]">
         <div className="flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
           <div className="w-full lg:flex-1 max-w-[589px] space-y-[12px] p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
-            <div className="space-y-[10px]">
-              <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-                Regulatory Notes
-              </h2>
-              <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-                A few essential updates investors should keep in mind:
-              </p>
-            </div>
-            <div className="space-y-2">
-              {[
-                "EPC requirements are becoming more important for future-proofing",
-                "Licensing rules differ by borough and property type",
-                "Renting reforms may introduce changes to landlord processes",
-              ].map((note) => (
-                <div key={note} className="flex items-start gap-3">
-                  <div className="w-[6px] h-[6px] rounded-full bg-[#002f57] mt-[11px] flex-shrink-0" />
-                  <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-                    {note}
-                  </p>
-                </div>
-              ))}
-            </div>
+          <div className="space-y-[10px]">
+            <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
+              Regulatory Notes
+            </h2>
+            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+              A few essential updates investors should keep in mind:
+            </p>
           </div>
+          <div className="space-y-2">
+            {[
+              "EPC requirements are becoming more important for future-proofing",
+              "Licensing rules differ by borough and property type",
+              "Renting reforms may introduce changes to landlord processes",
+            ].map((note) => (
+              <div key={note} className="flex items-start gap-3">
+                <div className="w-[6px] h-[6px] rounded-full bg-[#002f57] mt-[11px] flex-shrink-0" />
+                <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+                  {note}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
 
-          <div className="flex-1 relative w-full max-w-[675px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
-            <Image
-              src="/images/Market Insights/Market_Insights_blog_-2.png"
-              alt="Real estate agent showing house model"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 675px"
-              unoptimized
-            />
+        <div className="flex-1 relative w-full max-w-[675px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
+          <Image
+            src="/images/Market Insights/Market_Insights_blog_-2.png"
+            alt="Real estate agent showing house model"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 675px"
+            unoptimized
+          />
           </div>
         </div>
       </section>
@@ -317,40 +322,15 @@ export default function MarketInsightsPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
-          {[
-            {
-              title: "Your Complete Guide to Smarter Home Buying Decisions",
-              image: "/images/Market Insights/Market_Insights_blog_-1.png",
-            },
-            {
-              title: "Smart Investments That Build Lasting Property Value",
-              image: "/images/Market Insights/Market_Insights_blog_-2.png",
-            },
-            {
-              title: "Unlock the Future of Modern Real Estate Living",
-              image: "/images/Market Insights/Market_Insights_blog_-3.png",
-            },
-            {
-              title: "Discover Your Dream Villa by the Sea",
-              image: "/images/Market Insights/Market_Insights_blog_-4.png",
-            },
-            {
-              title: "Modern Homes Designed for Family Living",
-              image: "/images/Market Insights/Market_Insights_blog_-5.png",
-            },
-            {
-              title: "The Rise of Eco-Friendly Modern Villas",
-              image: "/images/Market Insights/Market_Insights_blog_-6.png",
-            },
-          ].map((article, index) => (
+          {blogList.map((blog) => (
             <div
-              key={index}
+              key={blog.id}
               className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col h-[425px]"
             >
               <div className="relative w-full h-[300px] min-w-0 flex-shrink-0">
                 <Image
-                  src={article.image}
-                  alt={article.title}
+                  src={getImageUrl(blog.attributes.featured_image)}
+                  alt={blog.attributes.title}
                   fill
                   className="object-cover"
                   unoptimized
@@ -361,10 +341,10 @@ export default function MarketInsightsPage() {
               </div>
               <div className="p-4 flex flex-col gap-4 flex-1">
                 <h3 className="font-crimson font-semibold text-[20px] leading-[30px] text-[#333]">
-                  {article.title}
+                  {blog.attributes.title}
                 </h3>
                 <Link
-                  href="/blog"
+                  href={`/blog/${blog.attributes.slug}`}
                   className="font-manrope text-[18px] leading-[28px] text-[#333] hover:text-[#29902e] transition-colors inline-flex items-center gap-2"
                 >
                   Read More
