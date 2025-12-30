@@ -103,17 +103,6 @@ export default async function InvestmentOpportunitiesPage() {
 
         {/* Search Filter and Properties - Always show filter */}
         <FilteredProperties properties={featuredProperties} />
-
-        {featuredProperties.length > 0 && (
-          <div className="flex justify-center w-full">
-            <Link
-              href="/finding-property"
-              className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#001f3a] transition-colors"
-            >
-              View All Properties
-            </Link>
-          </div>
-        )}
       </section>
 
       {/* Why invest with us */}
