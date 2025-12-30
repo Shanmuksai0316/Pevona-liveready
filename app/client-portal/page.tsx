@@ -6,7 +6,7 @@ export default function ClientPortalPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero section */}
       <section className="relative h-screen w-full overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 z-0">
           <Image
             src="/images/client-portal-banner.png"
             alt="Client Portal"
@@ -14,12 +14,13 @@ export default function ClientPortalPage() {
             className="object-cover"
             priority
             unoptimized
+            sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/65 z-[1]" />
+          <div className="absolute inset-0 bg-black/65" />
         </div>
         
-        <div className="relative z-[2] h-full flex items-center justify-center">
-          <div className="max-w-[820px] text-center px-5 text-white">
+        <div className="relative z-10 h-full flex items-center justify-center px-4">
+          <div className="max-w-[820px] text-center text-white">
             <h1 className="font-crimson text-[2.2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-semibold mb-5 leading-tight">
               Secure Your Client Portal
             </h1>

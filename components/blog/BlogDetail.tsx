@@ -129,14 +129,14 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
                     alt={social.label}
                     width={social.name === "twitter" ? 24 : 20}
                     height={social.name === "twitter" ? 24 : 20}
-                    className="filter brightness-0 invert"
+                    className="object-contain"
                     style={{ 
                       filter: "brightness(0) invert(1)",
-                      objectFit: "contain"
                     }}
                     onError={() => {
                       setImageErrors((prev) => ({ ...prev, [social.name]: true }));
                     }}
+                    unoptimized
                   />
                 )}
               </button>
@@ -176,10 +176,14 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
                     alt={social.label}
                     width={18}
                     height={18}
-                    className="filter brightness-0 invert"
+                    className="object-contain"
+                    style={{ 
+                      filter: "brightness(0) invert(1)",
+                    }}
                     onError={() => {
                       setImageErrors((prev) => ({ ...prev, [social.name]: true }));
                     }}
+                    unoptimized
                   />
                 )}
               </button>
