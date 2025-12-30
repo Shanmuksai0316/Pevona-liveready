@@ -61,7 +61,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
   ];
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 max-w-7xl">
+    <div className="container mx-auto px-6 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 max-w-7xl">
       {/* Header */}
       <header className="mb-6 sm:mb-8">
         {attributes.category && (
@@ -86,7 +86,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
       
       {/* Featured Image - Wider, extends to container edges */}
       {attributes.featured_image?.data && (
-        <div className="relative w-[calc(100%+2rem)] sm:w-[calc(100%+3rem)] lg:w-[calc(100%+4rem)] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden mb-6 sm:mb-8 -mx-4 sm:-mx-6 lg:-mx-8">
+        <div className="relative w-[calc(100%+3rem)] sm:w-[calc(100%+4rem)] lg:w-[calc(100%+6rem)] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden mb-6 sm:mb-8 -mx-6 sm:-mx-8 lg:-mx-12">
           <Image
             src={imageUrl}
             alt={attributes.title}
@@ -105,9 +105,9 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
       )}
       
       {/* Content with Icons on Left (Desktop) / Below (Mobile) */}
-      <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
         {/* Left Sidebar - Social Share Icons (Desktop) */}
-        <aside className="hidden lg:flex flex-col items-center gap-4 pt-2 sticky top-24 h-fit w-16 flex-shrink-0">
+        <aside className="hidden lg:flex flex-col items-center gap-4 pt-2 sticky top-24 h-fit w-20 flex-shrink-0">
           <div className="text-[#002f57] font-manrope text-sm font-medium mb-2 writing-vertical-rl whitespace-nowrap">
             Share
           </div>
@@ -116,7 +116,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
               <button
                 key={social.name}
                 onClick={() => handleShare(social.name)}
-                className="w-12 h-12 rounded-full bg-[#002f57] flex items-center justify-center hover:bg-[#003d6b] transition-colors"
+                className="w-12 h-12 rounded-full bg-[#002f57] flex items-center justify-center hover:bg-[#003d6b] transition-colors relative"
                 aria-label={social.label}
               >
                 {imageErrors[social.name] ? (
@@ -127,9 +127,13 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
                   <Image
                     src={social.icon}
                     alt={social.label}
-                    width={20}
-                    height={20}
+                    width={social.name === "twitter" ? 24 : 20}
+                    height={social.name === "twitter" ? 24 : 20}
                     className="filter brightness-0 invert"
+                    style={{ 
+                      filter: "brightness(0) invert(1)",
+                      objectFit: "contain"
+                    }}
                     onError={() => {
                       setImageErrors((prev) => ({ ...prev, [social.name]: true }));
                     }}
