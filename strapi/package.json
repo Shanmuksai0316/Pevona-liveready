@@ -1,0 +1,28 @@
+{
+  "name": "pevona-strapi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "strapi develop",
+    "build": "strapi build",
+    "start": "strapi start",
+    "seed": "node seed/seed.js"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "^4.24.0",
+    "@strapi/plugin-users-permissions": "^4.24.0",
+    "@strapi/strapi": "^4.24.0",
+    "pg": "^8.13.1",
+    "react": "~18.3.1",
+    "react-dom": "~18.3.1",
+    "react-router-dom": "~5.3.4",
+    "sharp": "~0.32.6",
+    "styled-components": "~5.3.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
