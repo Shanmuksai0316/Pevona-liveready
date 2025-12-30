@@ -5,45 +5,31 @@ export default function ClientPortalPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero section */}
-      <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pb-[260px]">
-          {/* Background image with gradient */}
-          <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
-              <Image
-                src="/images/Client Portal page/Client_Portal_page_banner.png"
-                alt="Client portal dashboard"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/95 via-[#002f57]/80 to-transparent" />
-            </div>
-          </div>
-
-          {/* Hero copy */}
-          <div className="relative max-w-[700px] mt-10 space-y-6 text-white">
-            <h1 className="font-crimson text-[40px] md:text-[56px] lg:text-[66px] leading-[66px] tracking-[-1.98px]">
-              Stay in Control with the Pevona Client Portal
+      <section className="relative h-screen w-full overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/client-portal-banner.png"
+            alt="Client Portal"
+            fill
+            className="object-cover"
+            priority
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-black/65 z-[1]" />
+        </div>
+        
+        <div className="relative z-[2] h-full flex items-center justify-center">
+          <div className="max-w-[820px] text-center px-5 text-white">
+            <h1 className="font-crimson text-[2.2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-semibold mb-5 leading-tight">
+              Secure Your Client Portal
             </h1>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
-              Secure, always-on access to your properties, documents, statements and key updates – all in
-              one place, from any device.
+            <p className="font-manrope text-base sm:text-lg md:text-xl leading-[1.7] opacity-90 max-w-[720px] mx-auto">
+              Access all your property information in one secure place.
+              Track progress, view documents, manage updates, and stay connected anytime, anywhere.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-              >
-                Request Portal Access
-              </Link>
-              <Link
-                href="/login"
-                className="inline-flex items-center justify-center h-[56px] px-6 rounded-[8px] border border-white text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-white hover:text-[#002f57] transition-colors"
-              >
-                Log In
-              </Link>
-            </div>
+            <span className="inline-block mt-7 text-sm font-semibold tracking-wider uppercase text-white opacity-85">
+              Coming Soon
+            </span>
           </div>
         </div>
       </section>

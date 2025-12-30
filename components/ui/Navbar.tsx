@@ -70,6 +70,7 @@ export default function Navbar() {
         { name: "Compliance & Licensing", href: "/compliance-licensing" },
         { name: "Maintenance & repair", href: "/maintenance-repair" },
         { name: "House Of Multiple Occupations (HMO)", href: "/hmo" },
+        { name: "Client Portal", href: "/client-portal" },
       ]
     },
     { 
