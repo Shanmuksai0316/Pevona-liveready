@@ -54,10 +54,10 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
 
   const socialIcons = [
-    { name: "facebook", label: "Share on Facebook", icon: "/images/blog-icons/facebook.svg", fallback: "f" },
-    { name: "instagram", label: "Share on Instagram", icon: "/images/blog-icons/instagram.svg", fallback: "📷" },
-    { name: "linkedin", label: "Share on LinkedIn", icon: "/images/blog-icons/linkedin.svg", fallback: "in" },
-    { name: "twitter", label: "Share on Twitter/X", icon: "/images/blog-icons/twitter.svg", fallback: "X" },
+    { name: "facebook", label: "Share on Facebook", icon: "/images/blog-icons/facebook.png", fallback: "f" },
+    { name: "instagram", label: "Share on Instagram", icon: "/images/blog-icons/instagram.png", fallback: "📷" },
+    { name: "linkedin", label: "Share on LinkedIn", icon: "/images/blog-icons/linkedin.png", fallback: "in" },
+    { name: "twitter", label: "Share on Twitter/X", icon: "/images/blog-icons/twitter.png", fallback: "X" },
   ];
 
   return (
