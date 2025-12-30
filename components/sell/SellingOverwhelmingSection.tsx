@@ -9,7 +9,7 @@ export default function SellingOverwhelmingSection() {
       <div className="max-w-[1600px] mx-auto">
         <div className="w-full bg-transparent flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[80px] items-start shadow-none">
           {/* Left Column - Text and Small Image */}
-          <div className="flex-1 w-full space-y-6 sm:space-y-8">
+          <div className="w-full lg:flex-1 space-y-6 sm:space-y-8">
             <div className="space-y-4 sm:space-y-6">
               <h2 className="font-crimson text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
                 Selling a property can feel overwhelming
@@ -31,7 +31,7 @@ export default function SellingOverwhelmingSection() {
           </div>
 
           {/* Right Column - Large Image */}
-          <div className="flex-1 w-full relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
+          <div className="w-full lg:flex-1 relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
             <Image
               src="/images/Sell/2nd_sec_image_-_2.png"
               alt="People signing contract with keys"

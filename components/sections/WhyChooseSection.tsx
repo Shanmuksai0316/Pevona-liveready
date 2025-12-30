@@ -151,7 +151,7 @@ function ImageCard({
         {title}
       </h4>
 
-      <div className="relative w-full h-[200px] min-h-[200px] min-w-0 mx-[16px] my-[12px] rounded-[16px] overflow-hidden">
+      <div className="relative w-[calc(100%-32px)] h-[200px] min-h-[200px] min-w-0 mx-[16px] my-[12px] rounded-[16px] overflow-hidden">
         <Image src={img} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" unoptimized />
       </div>
 

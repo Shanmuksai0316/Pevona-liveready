@@ -268,7 +268,7 @@ export default function AboutUsPage() {
         <div className="lg:hidden flex flex-col min-h-[850px]">
           {/* Top Half: Dark Blue with Text */}
           <div className="relative w-full min-h-[425px] bg-[#002f57] rounded-t-[20px] flex flex-col justify-center items-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <div className="space-y-4 sm:space-y-6 max-w-[600px]">
+            <div className="space-y-4 sm:space-y-6 max-w-[600px] pt-[120px] lg:pt-0">
               <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] leading-tight tracking-[-1.1px]">
                 Built on Trust.
                 <br />
@@ -387,7 +387,7 @@ export default function AboutUsPage() {
       <section className="bg-[#002f57] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] py-[60px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="max-w-[1506px] mx-auto">
           <div className="flex flex-col lg:flex-row gap-[78px] items-center">
-            <div className="flex-1 max-w-[672px] space-y-[36px]">
+            <div className="w-full lg:flex-1 max-w-[672px] space-y-[36px]">
               <div className="space-y-4">
                 <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-white">
                   Our Services
@@ -432,7 +432,7 @@ export default function AboutUsPage() {
               </div>
             </div>
 
-            <div className="flex-1 relative w-full lg:w-[630px] h-[540px] rounded-[16px] overflow-hidden">
+            <div className="w-full lg:flex-1 relative lg:w-[630px] h-[540px] rounded-[16px] overflow-hidden">
               <Image
                 src={serviceImages[activeServiceTab] || "/images/services_-_For_Landlords.png"}
                 alt={activeServiceTab}

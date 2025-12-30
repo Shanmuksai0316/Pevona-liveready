@@ -191,7 +191,7 @@ export default function LandlordServicesPage() {
       {/* Renting with Confidence for Landlords */}
       <div className="lg:px-0 px-5 overflow-x-auto">
         <section className="max-w-[1336px] mx-auto mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
-          <div className="flex-1 max-w-[589px] space-y-4 pl-[5%]">
+          <div className="w-full lg:flex-1 max-w-[589px] space-y-4 pl-[5%]">
             <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
               Renting with Confidence
             </h2>
@@ -238,7 +238,7 @@ export default function LandlordServicesPage() {
             />
           </div>
 
-          <div className="flex-1 max-w-[589px] space-y-4 pr-[5%]">
+          <div className="w-full lg:flex-1 max-w-[589px] space-y-4 p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
             <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
               Smart Management. Seamless Support.
             </h2>

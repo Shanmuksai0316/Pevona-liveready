@@ -109,7 +109,7 @@ export default async function RentPage() {
       </section>
 
       {/* Key Tenant Information */}
-      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[80px] items-start mb-[120px]">
+      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[30px] lg:gap-[80px] items-start mb-[60px] lg:mb-[120px]">
         <div className="flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Key Tenant Information (Mandatory Transparency)
@@ -148,7 +148,7 @@ export default async function RentPage() {
       </section>
 
       {/* CTA: Ready to find your next home? */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px]">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] lg:mb-[120px]">
         <div className="relative w-full h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden bg-[#002f57] px-[40px] lg:px-[119px] py-[56px] flex items-center">
           <Image
             src="http://localhost:3845/assets/0999bd2d031064a0aae1ce805d457c481f69951f.png"

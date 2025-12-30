@@ -298,8 +298,8 @@ export default function PortfolioManagementPage() {
       </section>
 
       {/* Suitable For */}
-      <section className="max-w-[1336px] mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
-        <div className="flex-1 relative w-full max-w-[675px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
+      <section className="max-w-[1336px] mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
+        <div className="w-full lg:flex-1 relative max-w-[675px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
           <Image
             src="/images/Portfolio page/5th_Suitable_For.png"
             alt="Team inspecting house model"
@@ -309,7 +309,7 @@ export default function PortfolioManagementPage() {
           />
         </div>
 
-        <div className="flex-1 max-w-[589px] space-y-[12px] order-1 lg:order-2">
+        <div className="w-full lg:flex-1 max-w-[589px] space-y-[12px] order-1 lg:order-2 p-[5%] lg:p-0">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Suitable For
           </h2>

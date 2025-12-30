@@ -160,7 +160,7 @@ rental market with good long-term fundamentals.`,
 
       {/* How we help section */}
       <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row items-center gap-[70px]">
-        <div className="lg:w-[50%] space-y-8">
+        <div className="w-full lg:w-[50%] space-y-8">
           <div className="space-y-4">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-0.06em] text-[#002f57]">
               How We Help You Find the Right Property
@@ -191,7 +191,7 @@ rental market with good long-term fundamentals.`,
           </Link>
         </div>
 
-        <div className="lg:w-[50%] flex justify-center">
+        <div className="w-full lg:w-[50%] flex justify-center">
           <div className="relative w-full max-w-[520px] h-[420px] rounded-[24px] overflow-hidden">
             <Image
               src="/images/buy-guide/help.png"
@@ -235,7 +235,7 @@ rental market with good long-term fundamentals.`,
           </div>
 
           <div className="mt-8 flex flex-col lg:flex-row items-center gap-10">
-            <div className="lg:w-1/2 space-y-6">
+            <div className="w-full lg:w-1/2 space-y-6">
               <h3 className="font-crimson text-[26px] leading-[30px] text-white">
                 {active.title}
               </h3>
@@ -250,7 +250,7 @@ rental market with good long-term fundamentals.`,
               </ul>
             </div>
 
-            <div className="lg:w-1/2 flex justify-center">
+            <div className="w-full lg:w-1/2 flex justify-center">
               <div className="relative w-full max-w-[520px] h-[360px] rounded-[24px] overflow-hidden">
                 <Image
                   src={active.image}
@@ -314,7 +314,7 @@ rental market with good long-term fundamentals.`,
 
       {/* Preparing to Buy checklist */}
       <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row items-center gap-[70px]">
-        <div className="lg:w-[50%] relative h-[320px] rounded-[24px] overflow-hidden">
+        <div className="w-full lg:w-[50%] relative h-[320px] rounded-[24px] overflow-hidden">
           <Image
             src="/images/buy-guide/checklist.png"
             alt="Couple reviewing documents"
@@ -324,7 +324,7 @@ rental market with good long-term fundamentals.`,
           />
         </div>
 
-        <div className="lg:w-[50%] space-y-6">
+        <div className="w-full lg:w-[50%] space-y-6">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-0.06em] text-[#002f57]">
             Preparing to Buy – Quick Checklist
           </h2>

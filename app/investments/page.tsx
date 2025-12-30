@@ -121,12 +121,6 @@ export default async function InvestmentOpportunitiesPage() {
             <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
               Properties will be displayed here once available. Please check back soon or contact us for current investment opportunities.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#001f3a] transition-colors mt-6"
-            >
-              Contact Us for Investment Opportunities
-            </Link>
           </div>
         )}
       </section>
@@ -397,7 +391,7 @@ export default async function InvestmentOpportunitiesPage() {
 
       {/* Due diligence & investor protections */}
       <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-5 lg:gap-[144px] items-center mb-[60px] lg:mb-[120px]">
-        <div className="flex-1 max-w-[543px] space-y-[10px]">
+        <div className="w-full lg:flex-1 max-w-[543px] space-y-[10px]">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Due diligence &amp; investor protections
           </h2>
@@ -434,7 +428,7 @@ export default async function InvestmentOpportunitiesPage() {
           />
         </div>
 
-        <div className="flex-1 max-w-[543px] space-y-[10px] order-1 lg:order-2">
+        <div className="w-full lg:flex-1 max-w-[543px] space-y-[10px] order-1 lg:order-2">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Fees &amp; legal note
           </h2>

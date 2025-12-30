@@ -223,7 +223,7 @@ export default function MarketInsightsPage() {
       </section>
 
       {/* Key Trends */}
-      <section className="max-w-[1336px] mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+      <section className="max-w-[1336px] mx-[15px] lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         <div className="flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
           <div className="flex-1 relative w-full max-w-[675px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden order-2 lg:order-1">
             <Image
@@ -236,7 +236,7 @@ export default function MarketInsightsPage() {
             />
           </div>
 
-          <div className="flex-1 max-w-[589px] space-y-[12px] order-1 lg:order-2 pr-[5%]">
+          <div className="w-full lg:flex-1 max-w-[589px] space-y-[12px] order-1 lg:order-2 p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
             <div className="space-y-[10px]">
               <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
                 Key Trends
@@ -265,9 +265,9 @@ export default function MarketInsightsPage() {
       </section>
 
       {/* Regulatory Notes */}
-      <section className="max-w-[1336px] mx-auto mt-[80px] mb-[60px] lg:mb-[120px]">
+      <section className="max-w-[1336px] mx-[15px] lg:mx-auto mt-[80px] mb-[60px] lg:mb-[120px]">
         <div className="flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
-          <div className="flex-1 max-w-[589px] space-y-[12px] pl-[5%]">
+          <div className="w-full lg:flex-1 max-w-[589px] space-y-[12px] p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
             <div className="space-y-[10px]">
               <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
                 Regulatory Notes
