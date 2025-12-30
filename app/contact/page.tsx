@@ -68,6 +68,8 @@ export default function ContactPage() {
       });
 
       if (response.ok) {
+        const responseData = await response.json().catch(() => ({}));
+        console.log("Form submitted successfully:", responseData);
         setSubmitStatus("success");
         (e.target as HTMLFormElement).reset();
         // Reset success message after 5 seconds
@@ -80,7 +82,9 @@ export default function ContactPage() {
           status: response.status,
           statusText: response.statusText,
           error: errorData,
-          submittedData: { name, email, phone: phone ? "provided" : "missing", subject, message: message ? "provided" : "missing" }
+          submittedData: { name, email, phone: phone ? "provided" : "missing", subject, message: message ? "provided" : "missing" },
+          strapiUrl: errorData.strapiUrl,
+          hasToken: errorData.hasToken,
         });
         setSubmitStatus("error");
       }

@@ -74,6 +74,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Log the data being sent to Strapi (without sensitive info)
+    console.log("Saving to Strapi:", {
+      url: `${STRAPI_URL}/api/property-enquiries`,
+      hasToken: !!STRAPI_API_TOKEN,
+      dataFields: Object.keys(enquiryData.data),
+    });
+
     const strapiResponse = await fetch(`${STRAPI_URL}/api/property-enquiries`, {
       method: "POST",
       headers: {
@@ -83,28 +90,54 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify(enquiryData),
     });
 
+    const responseText = await strapiResponse.text();
+    console.log("Strapi response status:", strapiResponse.status);
+    console.log("Strapi response:", responseText.substring(0, 500)); // Log first 500 chars
+
     if (!strapiResponse.ok) {
-      const errorText = await strapiResponse.text();
-      console.error("Strapi error:", strapiResponse.status, errorText);
+      console.error("Strapi error details:", {
+        status: strapiResponse.status,
+        statusText: strapiResponse.statusText,
+        url: `${STRAPI_URL}/api/property-enquiries`,
+        response: responseText,
+      });
       
       // Try to parse error for better message
-      let errorMessage = "Failed to save enquiry";
+      let errorMessage = "Failed to save enquiry to database";
       try {
-        const errorJson = JSON.parse(errorText);
+        const errorJson = JSON.parse(responseText);
         if (errorJson.error?.message) {
           errorMessage = errorJson.error.message;
+        } else if (errorJson.error?.details) {
+          errorMessage = JSON.stringify(errorJson.error.details);
         }
       } catch (e) {
         // Use default message
+        errorMessage = `Strapi returned error: ${responseText.substring(0, 200)}`;
       }
       
       return NextResponse.json(
-        { error: errorMessage, details: errorText },
+        { 
+          error: errorMessage, 
+          details: responseText,
+          strapiUrl: STRAPI_URL,
+          hasToken: !!STRAPI_API_TOKEN,
+        },
         { status: strapiResponse.status }
       );
     }
 
-    const savedEnquiry = await strapiResponse.json();
+    let savedEnquiry;
+    try {
+      savedEnquiry = JSON.parse(responseText);
+      console.log("Successfully saved to Strapi:", savedEnquiry.data?.id);
+    } catch (e) {
+      console.error("Failed to parse Strapi response:", e);
+      return NextResponse.json(
+        { error: "Failed to parse response from Strapi", details: responseText },
+        { status: 500 }
+      );
+    }
 
     // Send email notification via Mailgun
     try {
