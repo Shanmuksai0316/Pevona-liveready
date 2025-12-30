@@ -12,7 +12,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, phone, message, propertySlug, propertyTitle } = body;
+    const { name, email, phone, message, propertySlug, propertyTitle, subject } = body;
 
     // Validate required fields
     if (!name || !email || !phone) {
@@ -113,8 +113,9 @@ export async function POST(request: NextRequest) {
         email,
         phone,
         message,
-        propertyTitle: propertyTitle || "General Enquiry",
+        propertyTitle: propertyTitle || subject || "General Enquiry",
         propertySlug: propertySlug || "",
+        subject: subject || "",
       });
     } catch (emailError) {
       console.error("Email sending failed:", emailError);
@@ -141,6 +142,7 @@ async function sendEmailNotification(data: {
   message?: string;
   propertyTitle: string;
   propertySlug: string;
+  subject?: string;
 }) {
   if (!MAILGUN_API_KEY || !MAILGUN_DOMAIN) {
     console.warn("Mailgun not configured, skipping email");
@@ -198,6 +200,7 @@ async function sendEmailNotification(data: {
                     <h2 style="margin: 0 0 16px 0; color: #002f57; font-size: 20px; font-weight: 600;">
                       ${escapeHtml(data.propertyTitle)}
                     </h2>
+                    ${data.subject && !data.propertySlug ? `<p style="margin: 0 0 8px 0; color: #666666; font-size: 14px;">Subject: ${escapeHtml(data.subject)}</p>` : ""}
                     ${data.propertySlug ? `<p style="margin: 0; color: #666666; font-size: 14px;"><a href="${propertyLink}" style="color: #0073B5; text-decoration: none;">View Property →</a></p>` : ""}
                   </div>
                   

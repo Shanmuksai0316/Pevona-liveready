@@ -1,6 +1,76 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+
+  const subjectLabels: { [key: string]: string } = {
+    "property-management": "Property Management",
+    "lettings": "Lettings",
+    "investments": "Investments",
+    "valuation": "Property Valuation",
+    "general": "General Inquiry",
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const phone = formData.get("phone") as string;
+    const subject = formData.get("subject") as string;
+    const message = formData.get("message") as string;
+
+    // Format message to include subject
+    const subjectLabel = subjectLabels[subject] || subject;
+    const fullMessage = `Subject: ${subjectLabel}\n\n${message}`;
+
+    // Use subject as propertyTitle for general enquiries
+    const propertyTitle = subjectLabel;
+
+    const data = {
+      name,
+      email,
+      phone: phone || "", // Make phone optional but send empty string if not provided
+      message: fullMessage,
+      propertySlug: "",
+      propertyTitle,
+      subject: subjectLabel, // Send subject separately for API
+    };
+
+    try {
+      const response = await fetch("/api/property-enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        (e.target as HTMLFormElement).reset();
+        // Reset success message after 5 seconds
+        setTimeout(() => setSubmitStatus("idle"), 5000);
+      } else {
+        const errorData = await response.json().catch(() => ({}));
+        console.error("Form submission error:", response.status, errorData);
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="flex flex-col items-center w-full min-h-screen">
       {/* Hero Section */}
@@ -24,7 +94,7 @@ export default function ContactPage() {
             <h2 className="font-crimson text-[26px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-tight lg:leading-[42px] text-[#002f57] tracking-tight lg:tracking-[-1.26px] mb-[24px] sm:mb-[32px]">
               Send Us a Message
             </h2>
-            <form className="flex flex-col gap-[20px] sm:gap-[24px]">
+            <form className="flex flex-col gap-[20px] sm:gap-[24px]" onSubmit={handleSubmit}>
               <div className="flex flex-col gap-[6px] sm:gap-[8px]">
                 <label htmlFor="name" className="font-manrope font-medium text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333]">
                   Full Name *
@@ -55,12 +125,13 @@ export default function ContactPage() {
 
               <div className="flex flex-col gap-[6px] sm:gap-[8px]">
                 <label htmlFor="phone" className="font-manrope font-medium text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333]">
-                  Phone Number
+                  Phone Number *
                 </label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
+                  required
                   className="border border-[rgba(0,0,0,0.12)] rounded-[8px] px-[12px] sm:px-[16px] py-[10px] sm:py-[12px] font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[26px] text-[#333333] focus:outline-none focus:border-[#002f57]"
                   placeholder="+44 20 1234 5678"
                 />
@@ -99,12 +170,30 @@ export default function ContactPage() {
                 ></textarea>
               </div>
 
+              {/* Success/Error Messages */}
+              {submitStatus === "success" && (
+                <div className="bg-green-50 border border-green-200 rounded-[8px] p-4">
+                  <p className="font-manrope text-[14px] sm:text-[16px] text-green-800">
+                    Thank you! Your message has been sent successfully. We'll get back to you soon.
+                  </p>
+                </div>
+              )}
+
+              {submitStatus === "error" && (
+                <div className="bg-red-50 border border-red-200 rounded-[8px] p-4">
+                  <p className="font-manrope text-[14px] sm:text-[16px] text-red-800">
+                    Sorry, there was an error sending your message. Please try again or contact us directly.
+                  </p>
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="bg-[#002f57] px-[10px] py-[10px] rounded-[8px] w-full h-[48px] sm:h-[56px] mt-[8px] hover:bg-[#001a2e] transition-colors"
+                disabled={isSubmitting}
+                className="bg-[#002f57] px-[10px] py-[10px] rounded-[8px] w-full h-[48px] sm:h-[56px] mt-[8px] hover:bg-[#001a2e] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <span className="font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white">
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </span>
               </button>
             </form>
