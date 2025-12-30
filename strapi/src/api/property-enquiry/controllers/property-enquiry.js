@@ -9,3 +9,4 @@ const { createCoreController } = require('@strapi/strapi').factories;
 module.exports = createCoreController('api::property-enquiry.property-enquiry');
 
 
+

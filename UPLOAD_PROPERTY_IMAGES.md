@@ -67,3 +67,4 @@ node seed/upload-property-images.js
 - If a property is not found (no matching keywords), it will be skipped
 - Images are uploaded from: `C:\Users\Nagraj Y R\Downloads\Pevona property images`
 
+
