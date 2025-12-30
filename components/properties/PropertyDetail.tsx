@@ -92,7 +92,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
     <div className="bg-white min-h-screen">
       {/* Hero / Gallery */}
       <section className="relative w-full">
-        <div className="relative h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden">
+        <div className="relative h-[500px] md:h-[600px] lg:h-[700px] min-h-[500px] overflow-hidden">
           {hasImages ? (
             <>
               <Image
@@ -100,6 +100,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                 alt={attributes.title}
                 fill
                 className="object-cover"
+                sizes="100vw"
                 unoptimized
               />
 

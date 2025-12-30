@@ -27,7 +27,7 @@ export default function SolutionsSection() {
       className="
         flex flex-col gap-[26px] items-center w-full overflow-hidden
         mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]
-        px-4 sm:px-6 lg:px-0
+        px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
       "
     >
       {/* HEADING */}

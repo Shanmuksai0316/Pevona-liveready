@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhyChooseSection() {
   return (
-    <div className="w-full mt-[120px] px-4 sm:px-6 md:px-10 lg:px-[131.5px]">
+    <div className="w-full mt-[120px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
       <h2
         className="
           font-crimson text-[#002f57] tracking-[-1.68px]
@@ -151,8 +151,8 @@ function ImageCard({
         {title}
       </h4>
 
-      <div className="relative h-[200px] mx-[16px] my-[12px] rounded-[16px] overflow-hidden">
-        <Image src={img} alt={title} fill className="object-cover" unoptimized />
+      <div className="relative w-full h-[200px] min-h-[200px] min-w-0 mx-[16px] my-[12px] rounded-[16px] overflow-hidden">
+        <Image src={img} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" unoptimized />
       </div>
 
       <p className="px-[25px] pb-[20px] font-manrope font-normal text-[18px] leading-[28px] text-[#333333]">

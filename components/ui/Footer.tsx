@@ -1,17 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { fetchStrapi } from "@/lib/strapi";
-import type { StrapiBlog } from "@/types/strapi";
 
-export default async function Footer() {
-  // Fetch recent blogs
-  const blogsResponse = await fetchStrapi<StrapiBlog[]>(
-    "/api/blogs?populate=*&sort=publishedAt:desc&pagination[limit]=5"
-  );
-  const recentBlogs = blogsResponse?.data || [];
+export default function Footer() {
   return (
     <footer className="bg-[#002f57] flex flex-col gap-[36px] items-center justify-end px-6 lg:px-0 pt-[73px] pb-12 lg:pb-[16px] w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-      <div className="flex flex-col lg:flex-row items-start justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] w-full max-w-[1560px] gap-12 lg:gap-0">
+      <div className="flex flex-col lg:flex-row items-start justify-between px-0 lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] w-full max-w-[1560px] gap-12 lg:gap-0">
         {/* Logo and Description */}
         <div className="flex flex-col gap-[26px] items-start w-full lg:w-[480px]">
           <div className="h-[50px] w-[193px] relative">
@@ -40,7 +33,7 @@ export default async function Footer() {
             <div className="flex flex-col gap-[10px] items-start font-manrope font-normal text-[18px] leading-[28px] text-white opacity-80">
               <Link href="/about" className="hover:text-white hover:opacity-100 transition-opacity">About Us</Link>
               <Link href="/contact" className="hover:text-white hover:opacity-100 transition-opacity">Contact Us</Link>
-              <Link href="/blog" className="hover:text-white hover:opacity-100 transition-opacity">News & Insights</Link>
+              <Link href="/blog" className="hover:text-white hover:opacity-100 transition-opacity">Blogs</Link>
             </div>
           </div>
 
@@ -55,32 +48,13 @@ export default async function Footer() {
             </div>
           </div>
 
-          {/* Blogs */}
-          <div className="flex flex-col gap-[10px] items-start min-w-[140px]">
-            <p className="font-crimson font-semibold text-[26px] leading-[30px] text-white">Blogs</p>
-            <div className="flex flex-col gap-[10px] items-start font-manrope font-normal text-[18px] leading-[28px] text-white opacity-80">
-              <Link href="/blog" className="hover:text-white hover:opacity-100 transition-opacity">All Blogs</Link>
-              {recentBlogs.slice(0, 4).map((blog) => (
-                <Link
-                  key={blog.id}
-                  href={`/blog/${blog.attributes.slug}`}
-                  className="hover:text-white hover:opacity-100 transition-opacity line-clamp-1"
-                >
-                  {blog.attributes.title}
-                </Link>
-              ))}
-            </div>
-          </div>
-
           {/* Follow Us */}
           <div className="flex flex-col gap-[10px] items-start min-w-[140px]">
             <p className="font-crimson font-semibold text-[26px] leading-[30px] text-white">Follow Us</p>
             <div className="flex flex-col gap-[10px] items-start font-manrope font-normal text-[18px] leading-[28px] text-white opacity-80">
-              <Link href="#" className="hover:text-white hover:opacity-100 transition-opacity">Youtube</Link>
-              <Link href="#" className="hover:text-white hover:opacity-100 transition-opacity">Twitter</Link>
-              <Link href="#" className="hover:text-white hover:opacity-100 transition-opacity">LinkedIn</Link>
-              <Link href="#" className="hover:text-white hover:opacity-100 transition-opacity">Instagram</Link>
-              <Link href="#" className="hover:text-white hover:opacity-100 transition-opacity">Facebook</Link>
+              <Link href="https://www.linkedin.com/in/pevona-ltd-6a3512389?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:opacity-100 transition-opacity">LinkedIn</Link>
+              <Link href="https://www.instagram.com/pevona_pevonaltd?igsh=cDNpb3ZwaXVtMm5t" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:opacity-100 transition-opacity">Instagram</Link>
+              <Link href="https://www.facebook.com/share/1Kma9mu8tr/" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:opacity-100 transition-opacity">Facebook</Link>
             </div>
           </div>
         </div>
@@ -90,7 +64,7 @@ export default async function Footer() {
       <div className="flex flex-col gap-[16px] items-center w-full px-6">
         <div className="h-px w-full max-w-[1560px] border-t border-white opacity-20"></div>
         <p className="font-manrope font-medium text-[16px] leading-[26px] text-white opacity-60 text-center">
-          Copyright © All rights reserved Pevona
+          Copyright © {new Date().getFullYear()} All rights reserved Pevona
         </p>
       </div>
     </footer>

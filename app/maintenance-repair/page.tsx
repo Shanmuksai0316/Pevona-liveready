@@ -36,12 +36,11 @@ export default function MaintenanceRepairPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero – Property Care That Never Stops */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
-        {/* Desktop Layout */}
-        <div className="hidden lg:flex relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[260px] items-center justify-center text-center">
-          {/* Background image with layered look */}
+      {/* Desktop Layout */}
+      <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10">
           <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
+            <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
                 src="/images/maintenance%20%26%20repair/main_bg_img.png"
                 alt="Property maintenance and repairs background"
@@ -49,52 +48,59 @@ export default function MaintenanceRepairPage() {
                 className="object-cover"
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/75 to-transparent" />
             </div>
           </div>
 
-          <div className="relative max-w-[880px] space-y-4 text-white mt-[120px]">
-            <h1 className="font-crimson text-[66px] leading-[66px] tracking-[-1.98px]">
+          {/* Content positioned bottom, center-aligned */}
+          <div className="relative flex items-end justify-center pb-[80px] h-[760px]">
+            <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Property Care That Never Stops
             </h1>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
-              We manage every maintenance request with speed, care, and compliance. From preventive
-              inspections to urgent repairs, Pevona ensures your property stays safe, efficient, and well
-              looked after — 365 days a year.
-            </p>
-          </div>
-        </div>
-
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
-            <Image
-              src="/images/maintenance%20%26%20repair/main_bg_img.png"
-              alt="Property maintenance and repairs background"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-          </div>
-
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
-              Property Care That Never Stops
-            </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               We manage every maintenance request with speed, care, and compliance. From preventive
               inspections to urgent repairs, Pevona ensures your property stays safe, efficient, and well
               looked after — 365 days a year.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+              className="inline-flex items-center justify-center h-[56px] px-8 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Consultation
             </Link>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Mobile Layout */}
+      <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
+        <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
+          <Image
+            src="/images/maintenance%20%26%20repair/maintenance-repair-bg-mbl.png"
+            alt="Property maintenance and repairs background"
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+
+        {/* Content positioned 50px from bottom, center-aligned */}
+        <div className="absolute bottom-[50px] left-0 right-0 flex flex-col items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
+          <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+            Property Care That Never Stops
+          </h1>
+          <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] max-w-[600px]">
+            We manage every maintenance request with speed, care, and compliance. From preventive
+            inspections to urgent repairs, Pevona ensures your property stays safe, efficient, and well
+            looked after — 365 days a year.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+          >
+            Book a Consultation
+          </Link>
         </div>
       </section>
 
@@ -139,8 +145,8 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* Comprehensive Property Care */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] flex flex-col gap-[36px] items-center">
-        <div className="text-center space-y-3">
+      <section className="max-w-[1560px] mx-auto px-[37px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[36px] items-center">
+        <div className="text-center space-y-3 w-full">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Comprehensive Property Care
           </h2>
@@ -167,13 +173,13 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* How We Handle Maintenance Requests */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] flex flex-col gap-[80px]">
-        <div className="space-y-9">
+      <section className="max-w-[1560px] mx-auto px-[37px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[80px]">
+        <div className="space-y-9 w-full">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             How We Handle Maintenance Requests
           </h2>
 
-          <div className="flex flex-col lg:flex-row items-center gap-[60px]">
+          <div className="flex flex-col lg:flex-row items-center gap-[60px] w-full">
             {/* Image stack */}
             <div className="flex-1 relative w-full max-w-[720px] h-[480px] rounded-[26px] overflow-hidden">
               <Image
@@ -271,8 +277,8 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* Working Together to Keep Properties Safe */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px]">
-        <div className="relative h-[450px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1560px] mx-[37px] lg:mx-auto lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px]">
+        <div className="relative w-full h-[450px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/maintenance%20%26%20repair/6th_Properties_Safe.png"
             alt="Safe, well-maintained homes"
@@ -280,9 +286,8 @@ export default function MaintenanceRepairPage() {
             className="object-cover"
             unoptimized
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#002f57] via-[#002f57]/85 to-transparent" />
 
-          <div className="absolute right-[98px] left-[98px] lg:left-auto lg:w-[620px] top-1/2 -translate-y-1/2 text-white space-y-4">
+          <div className="absolute right-0 left-0 lg:left-auto lg:right-[80px] lg:w-[620px] top-1/2 -translate-y-1/2 text-white space-y-4 px-[37px] lg:px-0">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
               Working Together to Keep Properties Safe
             </h2>
@@ -299,7 +304,7 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* Full Transparency, Every Step of the Way */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] mb-[140px] flex flex-col lg:flex-row items-center gap-[80px]">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row items-center gap-[80px]">
         <div className="flex-1 relative w-full max-w-[640px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/maintenance%20%26%20repair/7th_Full_Transparency.png"

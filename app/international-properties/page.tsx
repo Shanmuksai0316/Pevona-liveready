@@ -5,30 +5,67 @@ export default function InternationalPropertiesPage() {
   return (
     <main className="bg-white min-h-screen text-[#002f57]">
       {/* ================= HERO ================= */}
-      <section className="relative h-[400px] sm:h-[500px] md:h-[600px] bg-[#002f57] pt-[100px] lg:pt-[120px]">
-        <div className="absolute inset-0 opacity-30">
-          <Image
-            src="/images/International-Properties/Group 7614.png"
-            alt="International property background"
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-        <div className="absolute inset-0 bg-[#002f57] opacity-70" />
+      {/* Desktop Layout */}
+      <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
+          <div className="absolute inset-0 z-0">
+            <div className="relative w-full h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
+              <Image
+                src="/images/International-Properties/Group 7614.png"
+                alt="International property background"
+                fill
+                className="object-cover"
+                sizes="100vw"
+                unoptimized
+              />
+            </div>
+          </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] h-full flex items-center">
-          <div className="max-w-2xl">
-            <h1 className="font-crimson text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-tight sm:leading-[48px] md:leading-[56px] tracking-[-1.1px] md:tracking-[-1.68px] text-white mb-6">
+          <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Your Gateway to International Property Investments
             </h1>
-            <p className="font-manrope text-[16px] sm:text-[18px] md:text-[20px] text-white/90 mb-8 leading-[26px] sm:leading-[28px]">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               Explore high-growth markets, diversify your portfolio, and access
               exclusive development opportunities across Africa and Europe.
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-white text-[#002f57] px-8 py-3 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] hover:bg-white/90 transition-colors"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+            >
+              Explore Projects
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Mobile Layout */}
+      <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
+            <Image
+              src="/images/International-Properties/international-properties-bg-mbl.png"
+              alt="International property background"
+              fill
+              className="object-cover"
+              sizes="100vw"
+              unoptimized
+            />
+          </div>
+        </div>
+
+        <div className="relative w-full h-full flex flex-col justify-end items-center px-5 pb-[50px] z-10">
+          <div className="max-w-[600px] space-y-4 text-white text-center">
+            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight">
+              Your Gateway to International Property Investments
+            </h1>
+            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px]">
+              Explore high-growth markets, diversify your portfolio, and access
+              exclusive development opportunities across Africa and Europe.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Explore Projects
             </Link>
@@ -37,7 +74,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* ================= WHY INVEST ================= */}
-      <section className="py-16 bg-white mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+      <section className="pt-16 bg-white mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] mb-6">
@@ -76,9 +113,9 @@ export default function InternationalPropertiesPage() {
           <div className="flex justify-center max-w-6xl mx-auto">
             <Link
               href="/international-properties/buea-cameroon"
-              className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition max-w-md w-full"
+              className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-full max-w-[640px]"
             >
-              <div className="relative h-[400px]">
+              <div className="relative w-full h-[250px]">
                 <Image
                   src="/images/International-Properties/Mask group (4).png"
                   alt="Shopping Centre – Buea, Cameroon"
@@ -96,11 +133,12 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* ================= HOW PEVONA SUPPORTS ================= */}
-      <section className="py-16 bg-[#002f57] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[550px] overflow-hidden md:rounded-r-3xl order-2 md:order-1">
+      <section className="bg-white mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px] grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
+          {/* Left Section - Image */}
+          <div className="relative w-full h-[400px] md:h-[550px] lg:h-[600px] overflow-hidden rounded-2xl order-2 md:order-1">
             <Image
-              src="/images/International-Properties/Mask group (6).png"
+              src="/images/International-Properties/Mask group (5).png"
               alt="Global investment support"
               fill
               className="object-cover"
@@ -108,28 +146,38 @@ export default function InternationalPropertiesPage() {
             />
           </div>
 
+          {/* Right Section - Text Content with Timeline */}
           <div className="order-1 md:order-2">
-            <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-white mb-10">
+            <h2 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-tight md:leading-[48px] tracking-tight md:tracking-[-1.2px] text-[#002f57] mb-8 md:mb-10 text-left">
               How Pevona Supports Your Global Investment Journey
             </h2>
 
-            <div className="space-y-8">
+            <div className="relative pl-0 md:pl-8">
+              <div className="space-y-6 md:space-y-8">
               {[
                 ["1", "Consultation", "Understand goals, budget & markets"],
-                ["2", "Property Selection", "Vetted global opportunities"],
-                ["3", "Compliance & Legal", "Cross-border legal navigation"],
-                ["4", "Transaction & Management", "End-to-end secure support"],
-              ].map(([n, title, desc]) => (
-                <div key={n}>
-                  <span className="inline-block bg-white/20 px-3 py-1 rounded text-sm font-manrope font-semibold text-white mb-2">
-                    STEP {n}
-                  </span>
-                  <h3 className="font-crimson text-[24px] sm:text-[28px] md:text-[32px] text-white mt-2 mb-1">
+                  ["2", "Property Selection", "Match you with vetted opportunities"],
+                  ["3", "Compliance & Legal", "Navigate cross-border requirements"],
+                  ["4", "Transaction & Management", "Seamless, secure, end-to-end support"],
+                ].map(([n, title, desc], index) => (
+                  <div key={n} className="relative flex items-start gap-4 md:gap-6">
+                    {/* Pink Circular Marker */}
+                    <div className="flex-shrink-0 relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#FF69B4] flex items-center justify-center shadow-md">
+                      <span className="text-white font-manrope font-bold text-base md:text-lg">{n}</span>
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="flex-1 pt-1">
+                      <h3 className="font-crimson text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] text-[#002f57] mb-2 font-semibold">
                     {title}
                   </h3>
-                  <p className="font-manrope text-[16px] sm:text-[18px] text-white/80">{desc}</p>
+                      <p className="font-manrope text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-[#666] leading-[24px] md:leading-[26px]">
+                        {desc}
+                      </p>
+                    </div>
                 </div>
               ))}
+              </div>
             </div>
           </div>
         </div>
@@ -152,7 +200,7 @@ export default function InternationalPropertiesPage() {
                   "Market intelligence & due diligence",
                   "Commercial & residential projects",
                 ],
-                image: "/images/International-Properties/Mask group (3).png",
+                image: "/images/International-Properties/Mask group (6).png",
               },
               {
                 title: "Services Offered",
@@ -162,11 +210,11 @@ export default function InternationalPropertiesPage() {
                   "Cross-border financing",
                   "Developer partnerships",
                 ],
-                image: "/images/International-Properties/Mask group (4).png",
+                image: "/images/International-Properties/Mask group (7).png",
               },
             ].map((card, i) => (
               <div key={i} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="relative h-64">
+                <div className="relative h-[350px]">
                   <Image
                     src={card.image}
                     alt={card.title}
@@ -192,11 +240,11 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* ================= COMPLIANCE ================= */}
-      <section className="py-16 bg-white mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+      <section className="bg-white mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-[450px] rounded-lg overflow-hidden">
             <Image
-              src="/images/International-Properties/Mask group (5).png"
+              src="/images/International-Properties/Compliance & Transparency.png"
               alt="Compliance and transparency"
               fill
               className="object-cover"
@@ -218,7 +266,7 @@ export default function InternationalPropertiesPage() {
       </section>
 
       {/* ================= EXPERT SUPPORT ================= */}
-      <section className="py-16 bg-[#FAFAFA] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[60px] 650:mb-[80px] lg:mb-[100px] 1500:mb-[130px] 1600:mb-[150px]">
+      <section className="pt-16 bg-[#FAFAFA] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] mb-6">
@@ -238,7 +286,7 @@ export default function InternationalPropertiesPage() {
 
           <div className="relative h-[450px] rounded-lg overflow-hidden">
             <Image
-              src="/images/International-Properties/Mask group (6).png"
+              src="/images/International-Properties/investment-process.jpg"
               alt="Expert support"
               fill
               className="object-cover"

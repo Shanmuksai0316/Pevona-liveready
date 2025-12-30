@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import svgPaths from "../imports/svg-q9n7c86uub";
 
 export default function BueaCameroonProject() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -49,28 +50,29 @@ export default function BueaCameroonProject() {
   };
 
   return (
-    <div className="bg-[#FAFAFA] min-h-screen">
-      {/* Hero Section with Video Background */}
-      <section className="relative h-[600px] sm:h-[700px] lg:h-[760px] mx-5 mb-20 rounded-b-[36px] overflow-hidden pt-[100px] lg:pt-[120px]">
+    <div className="bg-[#fafafa] min-h-screen">
+      {/* Hero Section with Image Background */}
+      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] mb-[30px] md:mb-[75px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/International-Properties/Group 7614.png"
-            alt="Shopping Centre Buea Cameroon"
+            src="/images/International-Properties/buea-cameroon-bg.png"
+            alt="Shopping Centre - Buea, Cameroon"
             fill
             className="object-cover"
+            sizes="100vw"
             unoptimized
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]" />
-        <div className="relative h-full flex flex-col items-center justify-center text-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] max-w-[1070px] mx-auto">
-          <h1 className="font-crimson text-white text-[36px] sm:text-[48px] md:text-[56px] lg:text-[66px] leading-tight sm:leading-[56px] md:leading-[66px] lg:leading-[72px] tracking-[-1.1px] md:tracking-[-1.68px] mb-4">
+        <div className="relative h-full flex flex-col items-center justify-end text-center px-4 sm:px-6 max-w-[1300px] mx-auto pb-4 sm:pb-6 md:pb-[31px]">
+          <h1 className="font-crimson text-white text-[28px] sm:text-[36px] md:text-[48px] lg:text-[66px] leading-tight sm:leading-[42px] md:leading-[56px] lg:leading-[72px] tracking-tight lg:tracking-[-1.98px] mb-3 sm:mb-4">
             Shopping Centre - Buea, Cameroon
           </h1>
-          <p className="font-manrope text-white text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] mb-8 max-w-[1070px]">
+          <p className="font-manrope text-white text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] mb-6 sm:mb-8 max-w-[1300px] px-2">
             A contemporary shopping centre designed to support retail, dining, and lifestyle experiences for a fast‑growing urban community. Positioned along the Molyko corridor, this development offers strategic visibility, modern infrastructure, and strong long‑term commercial demand.
           </p>
           <Link
-            href="#enquiry"
+            href="/contact"
             className="bg-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-manrope font-semibold text-[#002f57] text-[16px] sm:text-[18px] hover:bg-white/90 transition-colors"
           >
             Register Your Interest
@@ -79,61 +81,124 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Project Highlights Section */}
-      <section className="max-w-[1280px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-20">
+      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-[139px] items-center">
-          <div className="w-full lg:w-[638px] h-[400px] sm:h-[450px] lg:h-[512px] rounded-[36px] overflow-hidden relative flex-shrink-0">
+          <div className="w-full lg:w-[638px] h-[300px] sm:h-[400px] lg:h-[512px] min-h-[300px] min-w-0 rounded-[24px] sm:rounded-[30px] lg:rounded-[36px] overflow-hidden relative flex-shrink-0">
             <Image
-              src="/images/International-Properties/Mask group (4).png"
+              src="/images/International-Properties/Project highlights.png"
               alt="Shopping Centre exterior"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 638px"
               unoptimized
             />
           </div>
           <div className="flex-1">
-            <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57] mb-8">
+            <h2 className="font-crimson text-[#002f57] text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] mb-6 sm:mb-8">
               Project highlights
             </h2>
-            <div className="space-y-7">
-              {[
-                { icon: "📍", text: "Buea, Cameroon" },
-                { icon: "🏢", text: "Retail & Mixed‑Use Commercial" },
-                { icon: "📐", text: "Proposed Development (Conceptual Design)" },
-                { icon: "📏", text: "~1,930 sqm" },
-                { icon: "🏗️", text: "Multi‑level retail structure" },
-                { icon: "💰", text: "Available on request" },
-              ].map((item, index) => (
-                <div key={index} className="flex gap-4 items-center">
-                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 text-[#002f57] text-xl">
-                    {item.icon}
-                  </div>
-                  <p className="font-crimson font-semibold text-[#002f57] text-[20px] sm:text-[24px] lg:text-[26px] leading-[28px] sm:leading-[30px]">
-                    {item.text}
-                  </p>
+            <div className="space-y-5 sm:space-y-7">
+              <div className="flex gap-3 sm:gap-4 items-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0 relative">
+                  <Image
+                    src="/images/International-Properties/Buea, Cameroon.svg"
+                    alt="Buea, Cameroon icon"
+                    width={40}
+                    height={40}
+                    className="object-contain w-full h-full"
+                    unoptimized
+                  />
                 </div>
-              ))}
+                <p className="font-crimson font-semibold text-[#002f57] text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] leading-[24px] sm:leading-[28px] lg:leading-[30px]">Buea, Cameroon</p>
+              </div>
+              <div className="flex gap-3 sm:gap-4 items-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0 relative">
+                  <Image
+                    src="/images/International-Properties/Retail & Mixed‑Use Commercial.svg"
+                    alt="Retail & Mixed‑Use Commercial icon"
+                    width={40}
+                    height={40}
+                    className="object-contain w-full h-full"
+                    unoptimized
+                  />
+                </div>
+                <p className="font-crimson font-semibold text-[#002f57] text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] leading-[24px] sm:leading-[28px] lg:leading-[30px]">Retail & Mixed‑Use Commercial</p>
+              </div>
+              <div className="flex gap-3 sm:gap-4 items-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0 relative">
+                  <Image
+                    src="/images/International-Properties/Proposed Development (Conceptual Design).svg"
+                    alt="Proposed Development icon"
+                    width={40}
+                    height={40}
+                    className="object-contain w-full h-full"
+                    unoptimized
+                  />
+                </div>
+                <p className="font-crimson font-semibold text-[#002f57] text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] leading-[24px] sm:leading-[28px] lg:leading-[30px]">Proposed Development (Conceptual Design)</p>
+              </div>
+              <div className="flex gap-3 sm:gap-4 items-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0 relative">
+                  <Image
+                    src="/images/International-Properties/~1,930 sqm.svg"
+                    alt="Area icon"
+                    width={40}
+                    height={40}
+                    className="object-contain w-full h-full"
+                    unoptimized
+                  />
+                </div>
+                <p className="font-crimson font-semibold text-[#002f57] text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] leading-[24px] sm:leading-[28px] lg:leading-[30px]">~1,930 sqm</p>
+              </div>
+              <div className="flex gap-3 sm:gap-4 items-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0 relative">
+                  <Image
+                    src="/images/International-Properties/Multi‑level retail structure.svg"
+                    alt="Multi-level retail structure icon"
+                    width={40}
+                    height={40}
+                    className="object-contain w-full h-full"
+                    unoptimized
+                  />
+                </div>
+                <p className="font-crimson font-semibold text-[#002f57] text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] leading-[24px] sm:leading-[28px] lg:leading-[30px]">Multi‑level retail structure</p>
+                  </div>
+              <div className="flex gap-3 sm:gap-4 items-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0 relative">
+                  <Image
+                    src="/images/International-Properties/Available on request.svg"
+                    alt="Available on request icon"
+                    width={40}
+                    height={40}
+                    className="object-contain w-full h-full"
+                    unoptimized
+                  />
+                </div>
+                <p className="font-crimson font-semibold text-[#002f57] text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] leading-[24px] sm:leading-[28px] lg:leading-[30px]">Available on request</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* A New Standard Section */}
-      <section className="max-w-[1280px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-20">
+      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
           <div className="flex-1">
-            <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57] mb-4">
+            <h2 className="font-crimson text-[#002f57] text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] mb-4">
               A New Standard of Place‑Making
             </h2>
-            <p className="font-manrope text-gray-700 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
+            <p className="font-manrope text-[#333] opacity-80 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
               Situated in Buea's thriving Molyko corridor, the Shopping Centre reimagines local commerce and everyday convenience with a refined retail boulevard, modern commercial spaces, and flexible units for tenants of all categories. The masterplan blends functionality with contemporary design creating a dynamic retail destination built for strong long‑term returns.
             </p>
           </div>
-          <div className="w-full lg:w-[609px] h-[350px] sm:h-[400px] lg:h-[450px] rounded-[26px] overflow-hidden border border-[rgba(0,0,0,0.12)] relative flex-shrink-0">
+          <div className="w-full lg:w-[609px] h-[300px] sm:h-[400px] lg:h-[450px] min-h-[300px] min-w-0 rounded-[20px] sm:rounded-[24px] lg:rounded-[26px] overflow-hidden border border-[rgba(0,0,0,0.12)] relative flex-shrink-0">
             <Image
-              src="/images/International-Properties/Mask group (5).png"
+              src="/images/International-Properties/A New Standard of Place‑Making.png"
               alt="Modern restaurant interior"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 609px"
               unoptimized
             />
           </div>
@@ -141,54 +206,47 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Masterplan Overview Section */}
-      <section className="max-w-[1296px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-20">
+      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-[100px] items-start">
-          <div className="w-full lg:w-[650px] h-[400px] sm:h-[500px] lg:h-[656px] rounded-[36px] overflow-hidden relative flex-shrink-0">
+          <div className="w-full lg:w-[650px] h-[400px] sm:h-[500px] lg:h-[656px] min-h-[400px] min-w-0 rounded-[24px] sm:rounded-[30px] lg:rounded-[36px] overflow-hidden relative flex-shrink-0">
             <Image
-              src="/images/International-Properties/Mask group (3).png"
+              src="/images/International-Properties/Masterplan Overview.png"
               alt="Masterplan overview"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 650px"
               unoptimized
             />
           </div>
           <div className="flex-1 pt-0 lg:pt-8">
-            <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[66px] tracking-tight lg:tracking-[-1.68px] text-[#002f57] mb-8">
+            <h2 className="font-crimson text-[#002f57] text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[66px] tracking-tight lg:tracking-[-1.68px] mb-6 sm:mb-8">
               Masterplan Overview
             </h2>
 
-            <div className="space-y-9">
+            <div className="space-y-6 sm:space-y-9">
               <div>
-                <h3 className="font-crimson font-semibold text-[#002f57] text-[22px] sm:text-[24px] lg:text-[26px] leading-[28px] sm:leading-[32px] lg:leading-[36px] mb-3">
+                <h3 className="font-crimson font-semibold text-[#1e1e1e] text-[20px] sm:text-[24px] lg:text-[26px] leading-[28px] sm:leading-[32px] lg:leading-[36px] mb-3">
                   Site Characteristics
                 </h3>
                 <div className="space-y-2">
-                  {[
-                    "Located in a growing commercial node within Buea",
-                    "Proximity to the University of Buea",
-                    "Surrounded by dense residential clusters",
-                    "High pedestrian and vehicular flow",
-                    "Accessible via adjacent road networks",
-                  ].map((text, i) => (
-                    <BulletPoint key={i} text={text} />
-                  ))}
+                  <BulletPoint text="Located in a growing commercial node within Buea" />
+                  <BulletPoint text="Proximity to the University of Buea" />
+                  <BulletPoint text="Surrounded by dense residential clusters" />
+                  <BulletPoint text="High pedestrian and vehicular flow" />
+                  <BulletPoint text="Accessible via adjacent road networks" />
                 </div>
               </div>
 
               <div>
-                <h3 className="font-crimson font-semibold text-[#002f57] text-[22px] sm:text-[24px] lg:text-[26px] leading-[28px] sm:leading-[32px] lg:leading-[36px] mb-3">
+                <h3 className="font-crimson font-semibold text-[#1e1e1e] text-[20px] sm:text-[24px] lg:text-[26px] leading-[28px] sm:leading-[32px] lg:leading-[36px] mb-3">
                   Design Intent
                 </h3>
                 <div className="space-y-2">
-                  {[
-                    "Clear functional zoning across multiple levels",
-                    "Optimised circulation for visitors and tenants",
-                    "Flexible retail bay layouts supporting diverse business types",
-                    "Strong back‑of‑house service pathways",
-                    "Structural grid designed for efficient construction",
-                  ].map((text, i) => (
-                    <BulletPoint key={i} text={text} />
-                  ))}
+                  <BulletPoint text="Clear functional zoning across multiple levels" />
+                  <BulletPoint text="Optimised circulation for visitors and tenants" />
+                  <BulletPoint text="Flexible retail bay layouts supporting diverse business types" />
+                  <BulletPoint text="Strong back‑of‑house service pathways" />
+                  <BulletPoint text="Structural grid designed for efficient construction" />
                 </div>
               </div>
             </div>
@@ -197,72 +255,72 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Crafted for Elegance Section */}
-      <section className="max-w-[1280px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-20">
+      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-[60px] items-start">
           {/* Left Column - Text Content */}
           <div className="w-full lg:w-[638px] flex-shrink-0">
-            <div className="mb-8">
-              <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] text-[#002f57] mb-4">
+            <div className="mb-6 sm:mb-8">
+              <h2 className="font-crimson text-[#002f57] text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] mb-4">
                 Crafted for Elegance, Engineered for Performance
               </h2>
-              <p className="font-manrope text-gray-700 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
+              <p className="font-manrope text-[#333] opacity-80 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
                 The architectural concept balances practicality with contemporary visual appeal. The building massing maximises frontage for retailers, while its façade integrates clean geometric lines, prominent signage zones, and glazed surfaces that elevate the customer experience.
               </p>
             </div>
 
             <div className="mb-6">
-              <h3 className="font-crimson font-semibold text-[#002f57] text-[18px] sm:text-[20px] leading-[24px] sm:leading-[28px] mb-4">
+              <h3 className="font-crimson font-semibold text-[#1e1e1e] text-[18px] sm:text-[20px] leading-[24px] sm:leading-[28px] mb-4">
                 Key Features
               </h3>
               <div className="space-y-2">
-                {[
-                  "Multiple access points",
-                  "Prominent façade visibility",
-                  "Optimised natural lighting",
-                  "Efficient internal circulation",
-                  "Retail-friendly layouts",
-                ].map((text, i) => (
-                  <KeyFeatureBullet key={i} text={text} />
-                ))}
+                <KeyFeatureBullet text="Multiple access points" />
+                <KeyFeatureBullet text="Prominent façade visibility" />
+                <KeyFeatureBullet text="Optimised natural lighting" />
+                <KeyFeatureBullet text="Efficient internal circulation" />
+                <KeyFeatureBullet text="Retail-friendly layouts" />
               </div>
             </div>
           </div>
 
           {/* Right Column - Images */}
           <div className="flex-1 flex flex-col gap-4 sm:gap-6 lg:gap-[26px]">
-            <div className="w-full h-[200px] sm:h-[226px] rounded-[24px] overflow-hidden relative">
+            <div className="w-full h-[180px] sm:h-[200px] lg:h-[226px] min-h-[180px] min-w-0 rounded-[20px] sm:rounded-[24px] overflow-hidden relative">
               <Image
-                src="/images/International-Properties/Mask group (4).png"
+                src="/images/International-Properties/Crafted for Elegance, Engineered for Performance-1.png"
                 alt="Architectural detail 1"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 unoptimized
               />
             </div>
-            <div className="w-full h-[200px] sm:h-[226px] rounded-[24px] overflow-hidden relative">
+            <div className="w-full h-[180px] sm:h-[200px] lg:h-[226px] min-h-[180px] min-w-0 rounded-[20px] sm:rounded-[24px] overflow-hidden relative">
               <Image
-                src="/images/International-Properties/Mask group (5).png"
+                src="/images/International-Properties/Crafted for Elegance, Engineered for Performance-2.png"
                 alt="Architectural detail 2"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 unoptimized
               />
             </div>
-            <div className="w-full h-[200px] sm:h-[226px] rounded-[24px] overflow-hidden relative">
+            <div className="w-full h-[180px] sm:h-[200px] lg:h-[226px] min-h-[180px] min-w-0 rounded-[20px] sm:rounded-[24px] overflow-hidden relative">
               <Image
-                src="/images/International-Properties/Mask group (6).png"
+                src="/images/International-Properties/Crafted for Elegance, Engineered for Performance-3.png"
                 alt="Architectural detail 3"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 unoptimized
               />
             </div>
-            <div className="w-full h-[200px] sm:h-[226px] rounded-[24px] overflow-hidden relative">
+            <div className="w-full h-[180px] sm:h-[200px] lg:h-[226px] min-h-[180px] min-w-0 rounded-[20px] sm:rounded-[24px] overflow-hidden relative">
               <Image
-                src="/images/International-Properties/Mask group (3).png"
+                src="/images/International-Properties/Crafted for Elegance, Engineered for Performance-4.png"
                 alt="Architectural detail 4"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 unoptimized
               />
             </div>
@@ -271,53 +329,51 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Discover the Layout Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-          <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[46px] leading-tight lg:leading-[56px] text-center text-[#002f57] mb-12">
+      <section className="bg-white py-[30px] md:py-[75px]">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
+          <h2 className="font-crimson text-[#002f57] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[46px] leading-tight lg:leading-[56px] text-center mb-8 sm:mb-12">
             Discover the Layout
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Ground Floor Plan */}
             <div className="relative rounded-[16px] overflow-hidden">
-              <div className="relative w-full h-[300px] sm:h-[350px]">
+              <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] min-h-[250px] min-w-0">
                 <Image
                   src="/images/International-Properties/Mask group (4).png"
                   alt="Ground Floor - Retail Plan"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
                   unoptimized
                 />
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#002f57] to-transparent">
-                <h3 className="font-crimson font-semibold text-white text-[24px] sm:text-[28px] lg:text-[32px] mb-3">
-                  Ground Floor - Retail Plan
-                </h3>
-                <ul className="space-y-1.5">
-                  <li className="font-manrope text-white text-[14px]">• On-site pedestrian movement</li>
-                  <li className="font-manrope text-white text-[14px]">• Rental-optimised lot arrangement</li>
-                  <li className="font-manrope text-white text-[14px]">• Rear corridors for operations</li>
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 bg-gradient-to-t from-[#002f57] to-transparent">
+                <h3 className="font-crimson font-semibold text-white text-[24px] sm:text-[28px] lg:text-[32px] mb-2 sm:mb-3">Ground Floor - Retail Plan</h3>
+                <ul className="space-y-1 sm:space-y-1.5">
+                  <li className="font-manrope text-white text-[12px] sm:text-[14px]">• On-site pedestrian movement</li>
+                  <li className="font-manrope text-white text-[12px] sm:text-[14px]">• Rental-optimised lot arrangement</li>
+                  <li className="font-manrope text-white text-[12px] sm:text-[14px]">• Rear corridors for operations</li>
                 </ul>
               </div>
             </div>
             {/* First Floor Plan */}
             <div className="relative rounded-[16px] overflow-hidden">
-              <div className="relative w-full h-[300px] sm:h-[350px]">
+              <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] min-h-[250px] min-w-0">
                 <Image
                   src="/images/International-Properties/Mask group (5).png"
                   alt="First Floor - Retail & Commercial"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
                   unoptimized
                 />
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#002f57] to-transparent">
-                <h3 className="font-crimson font-semibold text-white text-[24px] sm:text-[28px] lg:text-[32px] mb-3">
-                  First Floor - Retail & Commercial
-                </h3>
-                <ul className="space-y-1.5">
-                  <li className="font-manrope text-white text-[14px]">• Scalable offices, services, retail, and restaurants</li>
-                  <li className="font-manrope text-white text-[14px]">• Open walkways and spatial variety</li>
-                  <li className="font-manrope text-white text-[14px]">• Suitable for multiple tenant types</li>
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 bg-gradient-to-t from-[#002f57] to-transparent">
+                <h3 className="font-crimson font-semibold text-white text-[24px] sm:text-[28px] lg:text-[32px] mb-2 sm:mb-3">First Floor - Retail & Commercial</h3>
+                <ul className="space-y-1 sm:space-y-1.5">
+                  <li className="font-manrope text-white text-[12px] sm:text-[14px]">• Scalable offices, services, retail, and restaurants</li>
+                  <li className="font-manrope text-white text-[12px] sm:text-[14px]">• Open walkways and spatial variety</li>
+                  <li className="font-manrope text-white text-[12px] sm:text-[14px]">• Suitable for multiple tenant types</li>
                 </ul>
               </div>
             </div>
@@ -326,13 +382,13 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Explore the Collection Section */}
-      <section className="bg-[#FAFAFA] py-20">
-        <div className="max-w-[1100px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-          <div className="text-center mb-8">
-            <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[46px] leading-tight lg:leading-[56px] mb-3 text-[#002f57]">
+      <section className="bg-[#fafafa] py-[30px] md:py-[75px]">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="font-crimson text-[#002f57] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[46px] leading-tight lg:leading-[56px] mb-3">
               Explore the Collection
             </h2>
-            <p className="font-manrope text-gray-600 text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px]">
+            <p className="font-manrope text-[#333] opacity-70 text-[14px] sm:text-[16px]">
               Build your modern lifestyle or invest in the design, retail, and commercial anchors that bring the destination to life.
             </p>
           </div>
@@ -342,37 +398,35 @@ export default function BueaCameroonProject() {
               <table className="w-full min-w-[600px]">
                 <thead>
                   <tr className="bg-[#002f57]">
-                    <th className="font-crimson font-semibold text-white text-[16px] sm:text-[18px] px-4 sm:px-6 py-4 text-left">
-                      Type
-                    </th>
-                    <th className="font-crimson font-semibold text-white text-[16px] sm:text-[18px] px-4 sm:px-6 py-4 text-left">
-                      Level
-                    </th>
-                    <th className="font-crimson font-semibold text-white text-[16px] sm:text-[18px] px-4 sm:px-6 py-4 text-left">
-                      Size
-                    </th>
-                    <th className="font-crimson font-semibold text-white text-[16px] sm:text-[18px] px-4 sm:px-6 py-4 text-left">
-                      Starting At
-                    </th>
-                    <th className="font-crimson font-semibold text-white text-[16px] sm:text-[18px] px-4 sm:px-6 py-4 text-left">
-                      Availability
-                    </th>
+                    <th className="font-crimson font-semibold text-white text-[14px] sm:text-[16px] lg:text-[18px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4 text-left">Type</th>
+                    <th className="font-crimson font-semibold text-white text-[14px] sm:text-[16px] lg:text-[18px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4 text-left">Level</th>
+                    <th className="font-crimson font-semibold text-white text-[14px] sm:text-[16px] lg:text-[18px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4 text-left">Size</th>
+                    <th className="font-crimson font-semibold text-white text-[14px] sm:text-[16px] lg:text-[18px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4 text-left">Starting At</th>
+                    <th className="font-crimson font-semibold text-white text-[14px] sm:text-[16px] lg:text-[18px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4 text-left">Availability</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {[
-                    { type: "Retail Unit", level: "Ground Floor", size: "25 m²", price: "AVAILABLE ASP", availability: "Available" },
-                    { type: "Small Office Space", level: "1st Floor", size: "30 m²", price: "AVAILABLE ASP", availability: "Available" },
-                    { type: "Office Space", level: "1st Floor", size: "45 m²", price: "AVAILABLE ASP", availability: "Sold" },
-                  ].map((row, i) => (
-                    <tr key={i} className="border-b border-[rgba(0,0,0,0.08)]">
-                      <td className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.type}</td>
-                      <td className="font-manrope text-gray-700 text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.level}</td>
-                      <td className="font-manrope text-gray-700 text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.size}</td>
-                      <td className="font-manrope text-gray-700 text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.price}</td>
-                      <td className="font-manrope text-gray-700 text-[14px] sm:text-[16px] px-4 sm:px-6 py-4">{row.availability}</td>
+                  <tr className="border-b border-[rgba(0,0,0,0.08)]">
+                    <td className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">Retail Unit</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">Ground Floor</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">25 m²</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">AVAILABLE ASP</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">Available</td>
+                  </tr>
+                  <tr className="border-b border-[rgba(0,0,0,0.08)]">
+                    <td className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">Small Office Space</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">1st Floor</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">30 m²</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">AVAILABLE ASP</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">Available</td>
+                  </tr>
+                  <tr className="border-b border-[rgba(0,0,0,0.08)]">
+                    <td className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">Office Space</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">1st Floor</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">45 m²</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">AVAILABLE ASP</td>
+                    <td className="font-manrope text-[#333] text-[14px] sm:text-[16px] px-3 sm:px-4 lg:px-6 py-3 sm:py-4">Sold</td>
                     </tr>
-                  ))}
                 </tbody>
               </table>
             </div>
@@ -381,32 +435,27 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Why Invest Here Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+      <section className="bg-white py-[30px] md:py-[75px]">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="flex-1">
-              <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[46px] leading-tight lg:leading-[56px] mb-6 text-[#002f57]">
+              <h2 className="font-crimson text-[#002f57] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[46px] leading-tight lg:leading-[56px] mb-4 sm:mb-6">
                 Why Invest Here
               </h2>
-              <ul className="space-y-3">
-                {[
-                  "Strong demand from students, families, and local businesses",
-                  "High footfall stemming from strategic location",
-                  "Diverse tenant opportunities",
-                  "Positioned adjacent to a high-density residential",
-                ].map((item, i) => (
-                  <li key={i} className="font-manrope text-gray-700 text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px]">
-                    • {item}
-                  </li>
-                ))}
+              <ul className="space-y-2 sm:space-y-3">
+                <li className="font-manrope text-[#333] text-[14px] sm:text-[16px]">• Strong demand from students, families, and local businesses</li>
+                <li className="font-manrope text-[#333] text-[14px] sm:text-[16px]">• High footfall stemming from strategic location</li>
+                <li className="font-manrope text-[#333] text-[14px] sm:text-[16px]">• Diverse tenant opportunities</li>
+                <li className="font-manrope text-[#333] text-[14px] sm:text-[16px]">• Positioned adjacent to a high-density residential</li>
               </ul>
             </div>
-            <div className="w-full lg:w-[520px] h-[300px] sm:h-[350px] rounded-[16px] overflow-hidden flex-shrink-0 relative">
+            <div className="w-full lg:w-[520px] h-[250px] sm:h-[300px] lg:h-[350px] min-h-[250px] min-w-0 rounded-[16px] overflow-hidden flex-shrink-0 relative">
               <Image
-                src="/images/International-Properties/Mask group (6).png"
+                src="/images/International-Properties/Why Invest Here.png"
                 alt="Investment opportunity"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 520px"
                 unoptimized
               />
             </div>
@@ -415,97 +464,82 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Payment Plans Section */}
-      <section className="bg-[#FAFAFA] py-20">
-        <div className="max-w-[1280px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+      <section className="bg-[#fafafa] py-[30px] md:py-[75px]">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
           <div className="flex flex-col sm:flex-row items-start justify-between mb-3 gap-4">
-            <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[46px] leading-tight lg:leading-[56px] text-[#002f57]">
+            <h2 className="font-crimson text-[#002f57] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[46px] leading-tight lg:leading-[56px]">
               Payment Plans & Ownership Options
             </h2>
-            <div className="flex items-center gap-4 font-manrope text-gray-700 text-[14px] sm:text-[16px]">
+            <div className="flex items-center gap-3 sm:gap-4 font-manrope text-[#333] text-[14px] sm:text-[16px]">
               <span>•</span>
               <span>XAF</span>
               <span>USD</span>
               <span>GBP</span>
             </div>
           </div>
-          <p className="font-manrope text-gray-600 text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] mb-10">
+          <p className="font-manrope text-[#333] opacity-70 text-[14px] sm:text-[16px] mb-8 sm:mb-10">
             Flexible pathways designed for both local and international clients. Prices displayed in XAF with optional USD/GBP toggle.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Payment Channels",
-                items: [
-                  "Mobile Money",
-                  "Orange Money",
-                  "MoneyGram",
-                  "International bank transfers (USD/GBP)",
-                  "Escrow-protected reservation process",
-                ],
-              },
-              {
-                title: "Reservation",
-                items: ["Secure your unit from 500,000 XAF"],
-              },
-              {
-                title: "Payment Schedules",
-                items: [
-                  "Milestone-based",
-                  "Monthly plan options",
-                  "Early-bird incentives (where applicable)",
-                ],
-              },
-            ].map((card, i) => (
-              <div key={i} className="bg-white rounded-[16px] p-6 sm:p-8 border border-[rgba(0,0,0,0.08)]">
-                <h3 className="font-crimson font-semibold text-[#002f57] text-[20px] sm:text-[24px] mb-6">
-                  {card.title}
-                </h3>
-                <ul className="space-y-3">
-                  {card.items.map((item, idx) => (
-                    <li key={idx} className="font-manrope text-gray-700 text-[13px] sm:text-[15px] leading-[20px] sm:leading-[22px]">
-                      • {item}
-                    </li>
-                  ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 border border-[rgba(0,0,0,0.08)]">
+              <h3 className="font-crimson font-semibold text-[#002f57] text-[20px] sm:text-[24px] mb-4 sm:mb-6">Payment Channels</h3>
+              <ul className="space-y-2 sm:space-y-3">
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• Mobile Money</li>
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• Orange Money</li>
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• MoneyGram</li>
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• International bank transfers (USD/GBP)</li>
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• Escrow-protected reservation process</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 border border-[rgba(0,0,0,0.08)]">
+              <h3 className="font-crimson font-semibold text-[#002f57] text-[20px] sm:text-[24px] mb-4 sm:mb-6">Reservation</h3>
+              <ul className="space-y-2 sm:space-y-3">
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• Secure your unit from 500,000 XAF</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 border border-[rgba(0,0,0,0.08)]">
+              <h3 className="font-crimson font-semibold text-[#002f57] text-[20px] sm:text-[24px] mb-4 sm:mb-6">Payment Schedules</h3>
+              <ul className="space-y-2 sm:space-y-3">
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• Milestone-based</li>
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• Monthly plan options</li>
+                <li className="font-manrope text-[#333] text-[13px] sm:text-[15px]">• Early-bird incentives (where applicable)</li>
                 </ul>
               </div>
-            ))}
           </div>
         </div>
       </section>
 
       {/* Resources Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-[1280px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-          <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[46px] leading-tight lg:leading-[56px] mb-10 text-[#002f57]">
-            Resources
-          </h2>
+      <section className="bg-white py-[30px] md:py-[75px]">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="flex-1">
-              <ul className="space-y-4">
-                {[
-                  "Project Brochure - [Download PDF]",
-                  "Floor Plans - [Download PDF]",
-                  "Sales Pack - [Send via Email]",
-                  "Investment Overview - [Send via Email]",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <a
-                      href="#"
-                      className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline hover:text-[#29902e] transition-colors"
-                    >
-                      • {item}
-                    </a>
+              <h2 className="font-crimson text-[#002f57] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[46px] leading-tight lg:leading-[56px] mb-6 sm:mb-10">
+                Resources
+              </h2>
+              <ul className="space-y-3 sm:space-y-4">
+                <li>
+                  <a href="#" className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline">• Project Brochure - [Download PDF]</a>
+                </li>
+                <li>
+                  <a href="#" className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline">• Floor Plans - [Download PDF]</a>
+                </li>
+                <li>
+                  <a href="#" className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline">• Sales Pack - [Send via Email]</a>
+                </li>
+                <li>
+                  <a href="#" className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline">• Investment Overview - [Send via Email]</a>
                   </li>
-                ))}
               </ul>
             </div>
-            <div className="w-full lg:w-[480px] h-[250px] sm:h-[320px] rounded-[16px] overflow-hidden flex-shrink-0">
+            <div className="w-full lg:w-[480px] h-[250px] sm:h-[300px] lg:h-[320px] min-h-[250px] min-w-0 rounded-[16px] overflow-hidden flex-shrink-0 relative">
               <Image
-                src="/images/International-Properties/Mask group (6).png"
+                src="/images/International-Properties/Resources.png"
                 alt="Resources"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 480px"
                 unoptimized
               />
             </div>
@@ -514,58 +548,37 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Register Your Interest Section */}
-      <section id="enquiry" className="bg-[#FAFAFA] py-20">
-        <div className="max-w-[1100px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+      <section id="enquiry" className="bg-[#fafafa] py-[30px] md:py-[75px]">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             <div>
-              <h2 className="font-crimson text-[36px] sm:text-[42px] md:text-[46px] leading-tight lg:leading-[56px] mb-4 text-[#002f57]">
+              <h2 className="font-crimson text-[#002f57] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[46px] leading-tight lg:leading-[56px] mb-4">
                 Register Your Interest
               </h2>
-              <p className="font-manrope text-gray-600 text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px]">
+              <p className="font-manrope text-[#333] opacity-70 text-[14px] sm:text-[16px]">
                 Get in touch with us early and you can lock your spot in the property. We're currently in the early commercial phase.
               </p>
             </div>
             <div className="bg-white rounded-[16px] p-6 sm:p-8 border border-[rgba(0,0,0,0.08)]">
-              <h3 className="font-crimson font-semibold text-[#002f57] text-[24px] sm:text-[28px] mb-6">
+              <h3 className="font-crimson font-semibold text-[#002f57] text-[24px] sm:text-[28px] mb-4 sm:mb-6">
                 Enquiry Form
               </h3>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
-                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Full Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white focus:outline-none focus:border-[#002f57]"
-                    placeholder="Enter your full name"
-                  />
+                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Full Name</label>
+                  <input type="text" name="name" required className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white" placeholder="Enter your full name" />
                 </div>
                 <div>
-                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Email Address</label>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white focus:outline-none focus:border-[#002f57]"
-                    placeholder="your@email.com"
-                  />
+                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Email Address</label>
+                  <input type="email" name="email" required className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white" placeholder="your@email.com" />
                 </div>
                 <div>
-                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Phone Number</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white focus:outline-none focus:border-[#002f57]"
-                    placeholder="+237"
-                  />
+                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Phone Number</label>
+                  <input type="tel" name="phone" required className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white" placeholder="+237" />
                 </div>
                 <div>
-                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Budget</label>
-                  <select
-                    name="budget"
-                    className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white focus:outline-none focus:border-[#002f57]"
-                  >
+                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Budget</label>
+                  <select name="budget" className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white">
                     <option>Select budget range</option>
                     <option>$10,000 - $25,000</option>
                     <option>$25,000 - $50,000</option>
@@ -573,11 +586,11 @@ export default function BueaCameroonProject() {
                   </select>
                 </div>
                 <div>
-                  <label className="block font-manrope text-gray-700 text-[14px] mb-2">Message</label>
+                  <label className="block font-manrope text-[#333] text-[14px] mb-2">Message</label>
                   <textarea
                     name="message"
                     rows={4}
-                    className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white focus:outline-none focus:border-[#002f57] resize-none"
+                    className="w-full px-4 py-3 border border-[rgba(0,0,0,0.12)] rounded-[8px] font-manrope text-[14px] sm:text-[16px] bg-white resize-none"
                     placeholder="Tell us about your interest..."
                   />
                 </div>
@@ -591,11 +604,7 @@ export default function BueaCameroonProject() {
                     Something went wrong. Please try again or contact us directly.
                   </div>
                 )}
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-[#002f57] text-white px-8 py-4 rounded-[8px] font-manrope font-semibold text-[14px] sm:text-[16px] hover:bg-[#003d70] transition disabled:opacity-50 disabled:cursor-not-allowed"
-                >
+                <button type="submit" disabled={isSubmitting} className="w-full bg-[#002f57] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[14px] sm:text-[16px] hover:bg-[#003d70] transition disabled:opacity-50 disabled:cursor-not-allowed">
                   {isSubmitting ? "Submitting..." : "Register Interest"}
                 </button>
               </form>
@@ -609,22 +618,18 @@ export default function BueaCameroonProject() {
 
 function BulletPoint({ text }: { text: string }) {
   return (
-    <div className="flex items-start gap-3">
-      <div className="w-[6px] h-[6px] rounded-full bg-[#002f57] mt-3 flex-shrink-0" />
-      <p className="font-manrope text-gray-700 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
-        {text}
-      </p>
+    <div className="flex items-start gap-2 sm:gap-3">
+      <div className="w-[6px] h-[6px] rounded-full bg-[#002f57] mt-2 sm:mt-3 flex-shrink-0" />
+      <p className="font-manrope text-[#333] opacity-80 text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px]">{text}</p>
     </div>
   );
 }
 
 function KeyFeatureBullet({ text }: { text: string }) {
   return (
-    <div className="flex items-start gap-4">
-      <div className="w-[7px] h-[7px] rounded-full bg-[#002f57] mt-3 flex-shrink-0" />
-      <p className="font-manrope text-gray-700 text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px]">
-        {text}
-      </p>
+    <div className="flex items-start gap-3 sm:gap-4">
+      <div className="w-[7px] h-[7px] rounded-full bg-[#002f57] mt-2 sm:mt-3 flex-shrink-0" />
+      <p className="font-manrope text-[#333] opacity-80 text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px]">{text}</p>
     </div>
   );
 }

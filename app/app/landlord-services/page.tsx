@@ -188,7 +188,7 @@ export default function LandlordServicesPage() {
       </section>
 
       {/* Smart Management. Seamless Support. */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[80px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pr-[60px]">
+      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[80px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pr-[60px]">
         <div className="flex-1 relative w-full max-w-[680px] h-[450px] rounded-[26px] overflow-hidden">
           <Image
             src="http://localhost:3845/assets/fc486cbdbbc44791e24b3f8acd6f22744c533934.png"

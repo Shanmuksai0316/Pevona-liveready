@@ -126,7 +126,7 @@ export default function BuyGuidePage() {
       </section>
 
       {/* Area Insights section */}
-      <section className="mt-[160px] w-full bg-[#002f57] py-[80px]">
+      <section className="mt-[60px] lg:mt-[160px] w-full bg-[#002f57] py-[80px]">
         <div className="max-w-[1320px] mx-auto px-6 lg:px-0 text-white space-y-10">
           <div className="text-center space-y-3">
             <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-0.06em]">
@@ -144,11 +144,10 @@ export default function BuyGuidePage() {
               <button
                 key={city}
                 type="button"
-                className={`px-4 py-2 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] ${
-                  idx === 0
-                    ? "bg-white text-[#002f57]"
-                    : "bg-white/20 text-white hover:bg-white/30"
-                }`}
+                className={`px-4 py-2 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] ${idx === 0
+                  ? "bg-white text-[#002f57]"
+                  : "bg-white/20 text-white hover:bg-white/30"
+                  }`}
               >
                 {city.toUpperCase()}
               </button>
@@ -237,7 +236,7 @@ export default function BuyGuidePage() {
       </section>
 
       {/* Preparing to Buy checklist */}
-      <section className="max-w-[1320px] mx-auto px-6 lg:px-0 mt-[140px] mb-[120px] flex flex-col lg:flex-row items-center gap-[70px]">
+      <section className="max-w-[1320px] mx-auto px-6 lg:px-0 mt-[140px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row items-center gap-[70px]">
         <div className="lg:w-[50%] relative h-[320px] rounded-[24px] overflow-hidden">
           <Image
             src="http://localhost:3845/assets/1926b3a51a628be90e643875382fc48acb98c3b8.png"

@@ -11,63 +11,68 @@ export default async function FindingPropertyPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px] pt-[100px] lg:pt-[120px]">
-        {/* Desktop Layout - Split Design */}
-        <div className="hidden lg:flex relative max-w-[1560px] mx-auto min-h-[760px] rounded-b-[36px] overflow-hidden">
-          {/* Left: Dark Blue Section with Text */}
-          <div className="flex-1 bg-[#002f57] flex items-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-            <div className="max-w-[600px] space-y-9 text-white">
-              <h1 className="font-crimson text-[66px] leading-[1.05] tracking-[-1.98px]">
-                Find the Right Property With Confidence
-              </h1>
-              <p className="font-manrope text-[18px] leading-[28px] text-white/90">
-                Buying a home or investing in UK property should feel simple, transparent, and well-supported. We help you navigate every stage with market insight, verified information, and guidance tailored to your goal.
-              </p>
-              <Link href="/contact" className="inline-flex items-center justify-center bg-white text-[#002f57] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-white/90 transition-colors">
-                Book a Consultation
-              </Link>
+      <section className="relative w-full h-[850px] lg:h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
+          {/* Mobile Background */}
+          <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">
+            <div className="relative w-full h-[850px] rounded-b-[24px] sm:rounded-b-[30px] overflow-hidden">
+              <Image
+                src="/images/finding-property-bg-mbl.png"
+                alt="Finding property background mobile"
+                fill
+                className="object-cover"
+                sizes="100vw"
+                unoptimized
+              />
             </div>
           </div>
 
-          {/* Right: House Image */}
-          <div className="flex-1 relative">
+          {/* Desktop Background */}
+          <div className="hidden lg:block absolute inset-0 z-0 -mx-[60px] lg:-mx-[80px] 1300:-mx-[80px] 1400:-mx-[80px] 1500:-mx-[100px] 1600:-mx-[130px]">
+            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
             <Image
               src="/images/bg_img.png"
               alt="Modern real estate house"
               fill
               className="object-cover"
+                sizes="100vw"
               unoptimized
             />
+            </div>
           </div>
+
+          {/* Mobile Content - Center Aligned, Bottom 50px */}
+          <div className="lg:hidden relative flex items-end justify-center h-[850px] pb-[50px]">
+            <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
+              <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
+                Find the Right Property With Confidence
+              </h1>
+              <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
+                Buying a home or investing in UK property should feel simple, transparent, and well-supported. We help you navigate every stage with market insight, verified information, and guidance tailored to your goal.
+              </p>
+              <Link href="/contact" className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors">
+                Book a Consultation
+              </Link>
         </div>
-
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
-            <Image
-              src="/images/bg_img.png"
-              alt="Modern real estate house"
-              fill
-              className="object-cover"
-              unoptimized
-            />
           </div>
 
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+          {/* Desktop Content - Original Layout */}
+          <div className="hidden lg:block relative max-w-[780px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] space-y-4 sm:space-y-6 text-white">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Find the Right Property With Confidence
             </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               Buying a home or investing in UK property should feel simple, transparent, and well-supported. We help you navigate every stage with market insight, verified information, and guidance tailored to your goal.
             </p>
-            <Link href="/contact" className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2">
+            <Link href="/contact" className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors">
               Book a Consultation
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Properties Section with Filter (client-side, Strapi-backed) */}
+      <PropertiesFilterSection properties={properties} limit={7} />
 
       {/* Your Property Search, Simplified */}
       <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[80px]">
@@ -144,31 +149,31 @@ export default async function FindingPropertyPage() {
           {[
             {
               number: "1",
-              icon: "/images/Trusted Partner Network.svg",
+              icon: "/images/Tailored Property Search.svg",
               title: "Tailored Property Search",
               body: "We shortlist suitable homes or investments based on your criteria, location preferences, and long-term plans.",
             },
             {
               number: "2",
-              icon: "/images/Certifications-1.svg",
+              icon: "/images/Completion Guidance.svg",
               title: "Completion Guidance",
               body: "We guide you through surveys, contracts, legal checks, and final handover steps to ensure a smooth completion.",
             },
             {
               number: "3",
-              icon: "/images/Time & Stress Saving.svg",
+              icon: "/images/Financial & Rental Assessment.svg",
               title: "Financial & Rental Assessment",
               body: "We provide realistic estimates for returns, running costs, and occupancy trends to support informed choices.",
             },
             {
               number: "4",
-              icon: "/images/Transparent Process.png",
+              icon: "/images/Full Due Diligence.svg",
               title: "Full Due Diligence",
               body: "Each shortlisted property is reviewed for condition, market alignment, compliance considerations, and rental performance (where applicable).",
             },
             {
               number: "5",
-              icon: "/images/proven expertise 1.svg",
+              icon: "/images/Offer & Negotiation Support.svg",
               title: "Offer & Negotiation Support",
               body: "Clear communication, structured offers, and transparent expectations help you move forward confidently.",
             },
@@ -207,7 +212,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* For Residential Buyers / For Investors Split */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex gap-4">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-4">
         <div className="relative flex-1 min-h-[422px] rounded-[24px] overflow-hidden">
           <Image
             src="/images/finding-property/for-residential.png"
@@ -268,9 +273,9 @@ export default async function FindingPropertyPage() {
 
           <div className="flex-1 relative">
             {/* Vertical line */}
-            <div className="absolute left-[96px] top-[10px] bottom-[10px] w-px bg-[#002f57]/15 hidden lg:block" />
+            <div className="absolute left-[19px] top-[10px] bottom-[10px] w-px bg-[#002f57]/15 hidden lg:block" />
           
-            <div className="space-y-[48px] pl-[76px]">
+            <div className="space-y-[48px]">
             {[
               {
                 number: "01",
@@ -320,9 +325,6 @@ export default async function FindingPropertyPage() {
           </div>
         </div>
       </section>
-
-      {/* Properties Section with Filter (client-side, Strapi-backed) */}
-      <PropertiesFilterSection properties={properties} limit={7} />
     </div>
   );
 }

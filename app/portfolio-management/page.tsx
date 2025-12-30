@@ -5,76 +5,70 @@ export default function PortfolioManagementPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Banner */}
-      <section className="relative w-full overflow-hidden min-h-[950px] lg:min-h-[760px]">
-        {/* Desktop Layout */}
-        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[628px]">
-          {/* Background with solid color and image */}
+      {/* Desktop Layout */}
+      <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden bg-[#002f57]">
+            <div className="relative w-full h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
                 src="/images/Portfolio page/Portfolio_page_banne.png"
                 alt="House investments elements"
                 fill
-                className="object-cover opacity-80"
+                className="object-cover"
                 unoptimized
               />
             </div>
           </div>
 
-          {/* Hero Content */}
-          <div className="relative max-w-[738px] mt-[255px] space-y-4 text-white">
-            <h1 className="font-crimson text-[66px] leading-[66px] tracking-[-1.98px]">
+          <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Build, Optimise &amp; Scale Your Property Portfolio
             </h1>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               Whether you own a single rental home or a multi-property portfolio, effective
               management is essential for long-term value and sustained returns. Our approach is
               structured around financial performance, compliance, tenant reliability, and ongoing
               asset growth - helping investors increase yield, minimise void periods, and maintain
               market stability.
             </p>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               We manage portfolios with complete transparency, regular reporting, and hands-on
               operational support across the UK's rental landscape.
             </p>
           </div>
         </div>
+      </section>
 
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col min-h-[950px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[400px] overflow-hidden rounded-t-[20px]">
+      {/* Mobile Layout */}
+      <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
             <Image
-              src="/images/Portfolio page/Portfolio_page_banne.png"
+              src="/images/Portfolio page/portfolio-management-bg-mbl.png"
               alt="House investments elements"
               fill
               className="object-cover"
               unoptimized
             />
           </div>
+        </div>
 
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full min-h-[550px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+        <div className="relative w-full h-full flex flex-col justify-end items-center px-5 pb-[50px] z-10">
+          <div className="max-w-[600px] space-y-4 text-white text-center">
+            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight">
               Build, Optimise &amp; Scale Your Property Portfolio
             </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
+            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px]">
               Whether you own a single rental home or a multi-property portfolio, effective
               management is essential for long-term value and sustained returns. Our approach is
               structured around financial performance, compliance, tenant reliability, and ongoing
               asset growth - helping investors increase yield, minimise void periods, and maintain
               market stability.
             </p>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
+            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px]">
               We manage portfolios with complete transparency, regular reporting, and hands-on
               operational support across the UK's rental landscape.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
-            >
-              Book a Consultation
-            </Link>
           </div>
         </div>
       </section>
@@ -304,7 +298,7 @@ export default function PortfolioManagementPage() {
       </section>
 
       {/* Suitable For */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pr-[80px] 1300:pr-[80px] 1400:pr-[80px] 1500:pr-[100px] 1600:pr-[130px]">
+      <section className="max-w-[1336px] mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
         <div className="flex-1 relative w-full max-w-[675px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
           <Image
             src="/images/Portfolio page/5th_Suitable_For.png"

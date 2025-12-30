@@ -42,7 +42,7 @@ export default function Navbar() {
     { name: "About Us", href: "/about" },
     { 
       name: "Buy", 
-      href: "/buy", 
+      href: "/", 
       hasDropdown: true,
       submenu: [
         { name: "Finding Property", href: "/finding-property" },
@@ -52,7 +52,7 @@ export default function Navbar() {
     { name: "Sell", href: "/sell" },
     { 
       name: "Rent", 
-      href: "/rent", 
+      href: "/", 
       hasDropdown: true,
       submenu: [
         { name: "Properties to Let", href: "/properties-to-let" },
@@ -132,6 +132,22 @@ export default function Navbar() {
           }
 
           // Regular dropdown for other menu items
+          // If no dropdown, render as simple link
+          if (!('hasDropdown' in link && link.hasDropdown)) {
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="group relative flex items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 whitespace-nowrap cursor-pointer overflow-hidden"
+              >
+                <p className="font-manrope font-medium leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center transition-all">
+                  {link.name}
+                </p>
+                <span className="absolute bottom-0 left-0 h-[2px] bg-[#002f57] w-0 group-hover:w-full transition-all duration-300 ease-out"></span>
+              </Link>
+            );
+          }
+
           return (
             <div 
               key={link.name} 
@@ -144,38 +160,39 @@ export default function Navbar() {
               onMouseEnter={() => 'hasDropdown' in link && link.hasDropdown && setOpenDropdown(link.name)}
               onMouseLeave={() => 'hasDropdown' in link && link.hasDropdown && setOpenDropdown(null)}
             >
-              <div className="flex items-center gap-[2px] cursor-pointer">
-                <Link href={link.href} className="font-manrope font-medium text-[16px] leading-[26px] text-[#002f57] hover:text-[#29902e] transition-colors">
+              <button
+                className="group relative flex gap-[2px] items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 whitespace-nowrap w-full lg:w-auto cursor-pointer overflow-hidden"
+              >
+                <p className={`font-manrope leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center font-medium transition-all ${
+                  openDropdown === link.name ? 'font-bold' : ''
+                }`}>
                   {link.name}
-                </Link>
+                </p>
                 {'hasDropdown' in link && link.hasDropdown && (
-                  <svg 
-                    className={`w-4 h-4 transition-transform ${openDropdown === link.name ? 'rotate-45' : ''}`} 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
-                  </svg>
+                  <span className={`font-manrope leading-[26px] text-[#002f57] text-[24px] lg:text-[16px] ml-[2px] ${
+                    openDropdown === link.name ? 'font-bold' : 'font-medium'
+                  }`}>
+                    {openDropdown === link.name ? '−' : '+'}
+                  </span>
                 )}
-              </div>
+                <span className="absolute bottom-0 left-0 h-[2px] bg-[#002f57] w-0 group-hover:w-full transition-all duration-300 ease-out"></span>
+              </button>
               
               {/* Dropdown Menu */}
               {'hasDropdown' in link && link.hasDropdown && openDropdown === link.name && (
                 <div 
-                  className="absolute top-full left-0 mt-1 bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg min-w-[220px] py-2 z-[10005] pointer-events-auto"
-                  onMouseEnter={() => setOpenDropdown(link.name)}
-                  onMouseLeave={() => setOpenDropdown(null)}
+                  className="absolute top-full left-0 pt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] p-[15px] pointer-events-auto"
                 >
                   {'submenu' in link && link.submenu?.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="block px-6 py-3 font-manrope font-medium text-[16px] leading-[26px] text-[#002f57] hover:bg-[#FAFAFA] hover:text-[#29902e] transition-colors first:rounded-t-[16px] last:rounded-b-[16px] pointer-events-auto"
+                      className="flex items-center px-3 lg:px-4 py-2 w-full hover:bg-[#FAFAFA] transition-colors first:rounded-t-[16px] last:rounded-b-[16px] cursor-pointer"
                       onClick={() => setOpenDropdown(null)}
-                      onMouseDown={(e) => e.stopPropagation()}
                     >
+                      <p className="font-manrope font-medium leading-[26px] text-[#002f57] text-[24px] lg:text-[16px] text-left hover:font-bold transition-all">
                       {item.name}
+                      </p>
                     </Link>
                   ))}
                 </div>
@@ -217,7 +234,7 @@ export default function Navbar() {
                   <>
                     <button
                       onClick={() => setOpenDropdown(isDropdownOpen ? null : link.name)}
-                      className="w-full font-manrope font-medium text-[24px] text-[#002f57] py-4 flex justify-between items-center"
+                      className="w-full font-manrope font-medium text-[18px] text-[#002f57] py-4 flex justify-between items-center"
                     >
                       {link.name}
                       <svg 
@@ -242,7 +259,7 @@ export default function Navbar() {
                               setOpenDropdown(null);
                             }}
                             onMouseDown={(e) => e.stopPropagation()}
-                            className="block py-3 font-manrope font-medium text-[24px] text-[#666666] hover:text-[#002f57] transition-colors pointer-events-auto cursor-pointer"
+                            className="block py-3 font-manrope font-medium text-[16px] text-[#666666] hover:text-[#002f57] transition-colors pointer-events-auto cursor-pointer"
                           >
                             {item.name}
                           </Link>
@@ -254,7 +271,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="block font-manrope font-medium text-[24px] text-[#002f57] py-4"
+                    className="block font-manrope font-medium text-[18px] text-[#002f57] py-4"
                   >
                     {link.name}
                   </Link>

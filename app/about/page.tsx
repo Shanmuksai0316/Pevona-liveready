@@ -267,7 +267,7 @@ export default function AboutUsPage() {
         {/* Mobile Layout - Split Design: Text on top, Image on bottom */}
         <div className="lg:hidden flex flex-col min-h-[850px]">
           {/* Top Half: Dark Blue with Text */}
-          <div className="relative w-full min-h-[425px] bg-[#002f57] rounded-t-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
+          <div className="relative w-full min-h-[425px] bg-[#002f57] rounded-t-[20px] flex flex-col justify-center items-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-8 space-y-4 sm:space-y-6 text-white text-center">
             <div className="space-y-4 sm:space-y-6 max-w-[600px]">
               <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] leading-tight tracking-[-1.1px]">
                 Built on Trust.
@@ -316,7 +316,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* Center Text */}
-        <div className="w-full lg:flex-1 text-center space-y-6 px-6">
+        <div className="w-full lg:flex-1 text-center space-y-6 px-5 lg:px-0">
           <h2 className="font-crimson text-[48px] sm:text-[56px] leading-tight tracking-[-1.68px] text-[#002f57]">
             Who We Are
           </h2>
@@ -351,8 +351,8 @@ export default function AboutUsPage() {
         <div className="w-full space-y-[26px]">
           {/* Mission */}
           <div className="flex flex-col lg:flex-row items-stretch justify-between gap-8">
-            <div className="flex-1 relative w-full h-[300px] lg:h-[350px] rounded-[16px] overflow-hidden">
-              <Image src="/images/3rd_Mission.png" alt="Mission" fill className="object-cover" />
+            <div className="flex-1 relative w-full h-[300px] lg:h-[350px] min-h-[300px] rounded-[16px] overflow-hidden">
+              <Image src="/images/3rd_Mission.png" alt="Mission" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" unoptimized />
             </div>
             <div className="flex-1 bg-white rounded-[16px] px-[30px] py-[26px] h-[300px] lg:h-[350px] flex flex-col items-center justify-center text-center border border-[rgba(0,0,0,0.06)] shadow-sm">
               <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57] mb-2">
@@ -376,8 +376,8 @@ export default function AboutUsPage() {
                 community support, and environmental stewardship.
               </p>
             </div>
-            <div className="flex-1 relative w-full h-[300px] lg:h-[350px] rounded-[16px] overflow-hidden order-1 lg:order-2">
-              <Image src="/images/3rd_Vision.png" alt="Vision" fill className="object-cover" />
+            <div className="flex-1 relative w-full h-[300px] lg:h-[350px] min-h-[300px] rounded-[16px] overflow-hidden order-1 lg:order-2">
+              <Image src="/images/3rd_Vision.png" alt="Vision" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" unoptimized />
             </div>
           </div>
         </div>
@@ -526,7 +526,7 @@ export default function AboutUsPage() {
           </p>
         </div>
 
-        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-[716px]">
+        <div className="flex-1 grid grid-cols-2 gap-4 w-full max-w-[716px]">
           {[
             "/images/Certifications-1.svg",
             "/images/Certifications-2.svg",
@@ -564,15 +564,14 @@ export default function AboutUsPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6 w-full">
             {[
-              "/images/network-logos/A Network of Reputed Clients-img.svg",
-              "/images/network-logos/A Network of Reputed Clients-img1.svg.svg",
-              "/images/network-logos/A Network of Reputed Clients-img2.svg",
-              "/images/network-logos/A Network of Reputed Clients-img3.svg",
-              "/images/network-logos/A Network of Reputed Clients-img4.svg",
-              "/images/network-logos/A Network of Reputed Clients-img5.svg",
-              "/images/network-logos/A Network of Reputed Clients-img6.svg",
-              "/images/network-logos/A Network of Reputed Clients-img8.svg",
-              "/images/network-logos/A Network of Reputed Clients-img8 (1).svg",
+              "/images/Reputed Clients.svg",
+              "/images/Reputed Clients-1.svg",
+              "/images/Reputed Clients-2.svg",
+              "/images/Reputed Clients-3.svg",
+              "/images/Reputed Clients-4.svg",
+              "/images/Reputed Clients-5.svg",
+              "/images/Reputed Clients-6.svg",
+              "/images/Reputed Clients-7.svg",
             ].map((logo, index) => (
               <div
                 key={index}
@@ -593,12 +592,12 @@ export default function AboutUsPage() {
       </section>
 
       {/* Why Choose Pevona? */}
-      <section className="max-w-[1337px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1337px] mx-auto mt-[60px] md:mt-[150px] mb-[60px] md:mb-[120px] px-5 md:px-0 flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Why Choose Pevona?
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 w-full">
           {[
             {
               title: "Proven Expertise",
@@ -616,6 +615,7 @@ export default function AboutUsPage() {
               description:
                 "Digital tools that simplify communication, reporting, and performance tracking.",
               icon: "/images/workflow_18119733 1.svg",
+              tall: true,
             },
             {
               title: "Transparent Process",
@@ -651,39 +651,64 @@ export default function AboutUsPage() {
               description:
                 "Simplifying your real estate journey with efficient processes, expert guidance, and seamless coordination - saving you time, effort, and stress.",
               icon: "/images/Time & Stress Saving.svg",
+              tall: true,
             },
-          ].map((item, index) => (
+          ].map((item, index) => {
+            let heightClass = '';
+            let paddingClass = '';
+            
+            if (item.image) {
+              heightClass = 'h-auto md:h-[345px]';
+              paddingClass = 'py-[19px] px-[8px]';
+            } else if (item.tall) {
+              heightClass = 'h-auto md:h-[345px]';
+              paddingClass = 'p-8';
+            } else {
+              heightClass = 'h-auto md:h-[234px]';
+              paddingClass = 'p-8';
+            }
+            
+            return (
             <div
               key={index}
-              className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-8 flex flex-col gap-4 h-[345px]"
+              className={`bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] flex flex-col items-center text-center break-inside-avoid mb-4 ${heightClass} ${paddingClass}`}
             >
-              <div className="space-y-2">
-                <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57]">
+              {item.image ? (
+                <>
+                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57] mb-0">
                   {item.title}
                 </h3>
-              </div>
-              {item.image && (
-                <div className="relative w-full h-[185px] rounded-[16px] overflow-hidden">
-                  <Image src={item.image} alt={item.title} fill className="object-cover" />
+                  <div className="relative w-full h-[185px] min-h-[185px] rounded-[16px] overflow-hidden flex-shrink-0 my-4">
+                  <Image src={item.image} alt={item.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" unoptimized />
                 </div>
-              )}
+                  <p className="font-manrope text-[18px] leading-[28px] text-[#333] flex-grow mt-0">
+                    {item.description}
+                  </p>
+                </>
+              ) : (
+                <>
               {item.icon && (
-                <div className="w-[36px] h-[36px] relative">
-                  <Image src={item.icon} alt={item.title} fill className="object-contain" />
+                    <div className="w-[36px] h-[36px] relative flex-shrink-0 mb-4">
+                  <Image src={item.icon} alt={item.title} fill className="object-contain" sizes="36px" unoptimized />
                 </div>
               )}
-              <div className="space-y-2">
-                <p className="font-manrope text-[18px] leading-[28px] text-[#333]">
+                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57] mb-4">
+                    {item.title}
+                  </h3>
+                  <p className="font-manrope text-[18px] leading-[28px] text-[#333] flex-grow mt-0">
                   {item.description}
                 </p>
-              </div>
+                </>
+              )}
             </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
+
       {/* Testimonials */}
-      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[150px] flex flex-col gap-[50px] items-center w-full">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] md:mb-[150px] flex flex-col gap-[50px] items-center w-full">
         <div className="text-center space-y-4 max-w-[942px]">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Experiences That Inspire Confidence
@@ -778,7 +803,8 @@ export default function AboutUsPage() {
       </section>
 
       {/* ESG Section */}
-      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] relative h-[400px] sm:h-[450px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
+      <div className="px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+      <section className="max-w-[1600px] mx-auto mb-[60px] md:mb-[120px] relative h-[400px] sm:h-[450px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/ESG_section_Bg_img.png"
@@ -794,7 +820,7 @@ export default function AboutUsPage() {
         <div className="lg:hidden absolute bottom-0 left-0 right-0 h-[66.67%] bg-[#002f57] opacity-95 z-[1]" />
 
         {/* Desktop Layout */}
-        <div className="hidden lg:block relative z-10 max-w-[618px] pt-[105px] pb-[105px] space-y-4 text-white">
+        <div className="hidden lg:block relative z-10 max-w-[618px] pt-[105px] pb-[105px] pl-[5%] space-y-4 text-white">
           <h2 className="font-crimson text-[56px] leading-tight leading-[56px] tracking-tight tracking-[-1.68px]">
             Environmental &amp;
             <br />
@@ -809,7 +835,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* Mobile Layout - positioned on the dark overlay */}
-        <div className="lg:hidden absolute bottom-0 left-0 right-0 z-10 px-4 sm:px-6 py-6 sm:py-8 space-y-3 sm:space-y-4 text-white">
+        <div className="lg:hidden absolute bottom-0 left-0 right-0 z-10 px-5 350:px-5 480:px-5 650:px-[60px] py-6 sm:py-8 space-y-3 sm:space-y-4 text-white">
           <h2 className="font-crimson text-[22px] sm:text-[28px] leading-tight tracking-tight">
             Environmental &amp; Social Governance (ESG)
           </h2>
@@ -821,6 +847,7 @@ export default function AboutUsPage() {
           </p>
         </div>
       </section>
+      </div>
     </div>
   );
 }

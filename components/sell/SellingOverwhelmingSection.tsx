@@ -6,31 +6,35 @@ const PAGE_PADDING =
 export default function SellingOverwhelmingSection() {
   return (
     <section className={`${PAGE_PADDING} mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]`}>
-      <div className="w-full bg-white rounded-[24px] border border-[rgba(0,0,0,0.08)] flex flex-col lg:flex-row overflow-hidden">
-        <div className="flex-1 p-6 sm:p-8 space-y-4">
-          <h2 className="font-crimson text-[40px] sm:text-[48px] md:text-[56px] leading-[1.05] tracking-[-1.68px] text-[#002f57]">
-            Selling doesn&apos;t have to feel overwhelming
+      <div className="max-w-[1600px] mx-auto">
+        <div className="w-full bg-transparent flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[80px] items-start shadow-none">
+          {/* Left Column - Text and Small Image */}
+          <div className="flex-1 w-full space-y-6 sm:space-y-8">
+            <div className="space-y-4 sm:space-y-6">
+              <h2 className="font-crimson text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
+                Selling a property can feel overwhelming
           </h2>
-          <p className="font-manrope text-[16px] sm:text-[18px] leading-[26px] text-[#333] opacity-80">
-            This section is a placeholder that explains how Pevona simplifies the journey from
-            valuation to completion. It can be extended with more detailed copy or dynamic content
-            in future iterations.
+              <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333] opacity-80">
+                The paperwork, the pricing, the viewings and the negotiations. Our approach keeps things simple. With clear guidance, transparent updates and a well-defined sales process, you&apos;ll know exactly what to expect from start to finish.
           </p>
         </div>
-        <div className="flex gap-4 w-full lg:w-[40%]">
-          <div className="relative flex-1 h-[260px] sm:h-[300px] lg:h-auto">
+            {/* Small Image at Bottom Left */}
+            <div className="relative w-full max-w-[400px] h-[250px] sm:h-[280px] md:h-[300px] rounded-[20px] overflow-hidden">
             <Image
               src="/images/Sell/2nd_sec_image_-_1.png"
-              alt="Selling overview"
+                alt="Keys on blueprint with model house"
               fill
               className="object-cover"
               unoptimized
             />
           </div>
-          <div className="relative flex-1 h-[260px] sm:h-[300px] lg:h-auto">
+          </div>
+
+          {/* Right Column - Large Image */}
+          <div className="flex-1 w-full relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
             <Image
               src="/images/Sell/2nd_sec_image_-_2.png"
-              alt="Selling process"
+              alt="People signing contract with keys"
               fill
               className="object-cover"
               unoptimized

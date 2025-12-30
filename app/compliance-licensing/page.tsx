@@ -38,66 +38,68 @@ export default function ComplianceLicensingPage() {
 
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
-      {/* Hero: Protecting Properties Through Full Compliance */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
-        {/* Desktop Layout */}
-        <div className="hidden lg:flex relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[260px] items-center justify-center text-center">
-          {/* Background image with mask-like rounded bottom */}
-          <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
-              <Image
-                src="/images/com_bg_img.png"
-                alt="Compliance and licensing background"
-                fill
-                className="object-cover"
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-[#002f57]/70" />
-            </div>
-          </div>
-
-          <div className="relative max-w-[880px] space-y-4 text-white mt-[120px]">
-            <h1 className="font-crimson text-[66px] leading-[66px] tracking-[-1.98px]">
-              Protecting Properties Through Full Compliance
-            </h1>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
-              Every property managed by Pevona meets strict UK legal and safety standards. From licensing
-              and inspections to data protection and client money safeguarding, we manage every compliance
-              detail — protecting landlords, tenants, and investments.
-            </p>
-          </div>
+      {/* Hero section */}
+      {/* Desktop Layout */}
+      <section className="hidden lg:block relative w-full h-[760px] overflow-hidden shadow-sm">
+        <div className="relative w-full h-full rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden z-0">
+          <Image
+            src="/images/com_bg_img.png"
+            alt="Compliance and licensing background"
+            fill
+            className="object-cover"
+            unoptimized
+          />
         </div>
 
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
-            <Image
-              src="/images/com_bg_img.png"
-              alt="Compliance and licensing background"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-          </div>
-
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-end pb-[80px]">
+          <div className="max-w-[1000px] px-5 650:px-[60px] lg:px-[80px] space-y-6 text-white text-center">
+            <h1 className="font-crimson text-[40px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Protecting Properties Through Full Compliance
             </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
+            <p className="font-manrope text-[20px] leading-[30px] text-white/90">
               Every property managed by Pevona meets strict UK legal and safety standards. From licensing
               and inspections to data protection and client money safeguarding, we manage every compliance
               detail — protecting landlords, tenants, and investments.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+              className="inline-flex items-center justify-center h-[56px] px-8 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Consultation
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Mobile Layout */}
+      <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
+        <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
+          <Image
+            src="/images/compliance-licensing-bg-mbl.png"
+            alt="Compliance and licensing background"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            unoptimized
+          />
+        </div>
+
+        {/* Content positioned 50px from bottom, center-aligned */}
+        <div className="absolute bottom-[50px] left-0 right-0 flex flex-col items-center px-5 sm:px-8 space-y-4 sm:space-y-6 text-white text-center">
+          <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+            Protecting Properties Through Full Compliance
+          </h1>
+          <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] max-w-[600px]">
+            Every property managed by Pevona meets strict UK legal and safety standards. From licensing
+            and inspections to data protection and client money safeguarding, we manage every compliance
+            detail — protecting landlords, tenants, and investments.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+          >
+            Book a Consultation
+          </Link>
         </div>
       </section>
 
@@ -127,8 +129,8 @@ export default function ComplianceLicensingPage() {
       </section>
 
       {/* Key Compliance Areas */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] flex flex-col gap-[36px] items-center">
-        <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] text-center">
+      <section className="max-w-[1560px] mx-auto px-[37px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[36px] items-center">
+        <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] text-center w-full">
           Key Compliance Areas
         </h2>
 
@@ -170,7 +172,7 @@ export default function ComplianceLicensingPage() {
       </section>
 
       {/* How We Manage Compliance */}
-      <section className="mt-[160px] bg-[#002f57]">
+      <section className="mt-[60px] lg:mt-[160px] bg-[#002f57]">
         <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center text-white">
           <div className="flex-1 max-w-[621px] space-y-[24px]">
             <div className="space-y-4">
@@ -210,8 +212,8 @@ export default function ComplianceLicensingPage() {
       </section>
 
       {/* Responsibilities – Landlords and Tenants */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[160px] mb-[120px] flex flex-col gap-[36px] items-center">
-        <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
+      <section className="max-w-[1560px] mx-auto px-[37px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] mb-[60px] lg:mb-[120px] flex flex-col gap-[36px] items-center">
+        <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] w-full">
           Responsibilities
         </h2>
 

@@ -5,12 +5,11 @@ export default function ApplicationProcessPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero section */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
-        {/* Desktop Layout */}
-        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[260px]">
-          {/* Background image with gradient */}
+      {/* Desktop Layout */}
+      <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
+            <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
                 src="/images/Application process/Application_process_banner.png"
                 alt="Rental application form"
@@ -18,53 +17,20 @@ export default function ApplicationProcessPage() {
                 className="object-cover"
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/95 via-[#002f57]/80 to-transparent" />
             </div>
           </div>
 
-          {/* Hero copy */}
-          <div className="relative max-w-[680px] mt-10 space-y-6 text-white">
-            <h1 className="font-crimson text-[66px] leading-[66px] tracking-[-1.98px]">
+          <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               A Simple, Transparent Rental Application Process
             </h1>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               Brief explanation that applying for a property is straightforward, digital, and
               in line with UK housing standards.
             </p>
             <Link
               href="/properties-to-let"
-              className="inline-flex items-center justify-center h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-            >
-              View Available Properties
-            </Link>
-          </div>
-        </div>
-
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
-            <Image
-              src="/images/Application process/Application_process_banner.png"
-              alt="Rental application form"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-          </div>
-
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
-              A Simple, Transparent Rental Application Process
-            </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
-              Brief explanation that applying for a property is straightforward, digital, and
-              in line with UK housing standards.
-            </p>
-            <Link
-              href="/properties-to-let"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               View Available Properties
             </Link>
@@ -72,9 +38,40 @@ export default function ApplicationProcessPage() {
         </div>
       </section>
 
+      {/* Mobile Layout */}
+      <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
+        <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
+          <Image
+            src="/images/Application process/application-process-bg-mbl.png"
+            alt="Rental application form"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            unoptimized
+          />
+        </div>
+
+        {/* Content positioned 50px from bottom, center-aligned */}
+        <div className="absolute bottom-[50px] left-0 right-0 flex flex-col items-center px-5 sm:px-8 space-y-4 sm:space-y-6 text-white text-center">
+          <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+            A Simple, Transparent Rental Application Process
+          </h1>
+          <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] max-w-[600px]">
+            Brief explanation that applying for a property is straightforward, digital, and
+            in line with UK housing standards.
+          </p>
+          <Link
+            href="/properties-to-let"
+            className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+          >
+            View Available Properties
+          </Link>
+        </div>
+      </section>
+
       {/* What to Expect */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
-        <div className="flex-1 max-w-[589px] space-y-4">
+      <section className="max-w-[1336px] mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
+        <div className="flex-1 max-w-[589px] space-y-4 pl-[5%]">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             What to Expect
           </h2>
@@ -85,7 +82,7 @@ export default function ApplicationProcessPage() {
           </p>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[675px] h-[450px] rounded-[26px] overflow-hidden">
+        <div className="flex-1 relative w-full max-w-[675px] aspect-[4/3] lg:aspect-auto lg:h-[450px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/Application process/2nd_What_to_Expect.png"
             alt="Tenants reviewing documents"
@@ -118,7 +115,7 @@ export default function ApplicationProcessPage() {
 
         <div className="flex-1 relative">
           <div className="absolute left-[10px] top-0 bottom-0 w-px bg-[#002f57]/20 hidden md:block" />
-          <div className="space-y-8 pl-0 md:pl-[65px]">
+          <div className="space-y-8 pl-0 ">
             {[
               {
                 title: "Book a Viewing",
@@ -164,7 +161,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Required Documents */}
-      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] flex flex-col gap-[26px]">
+      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col gap-[26px]">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
           Required Documents
         </h2>
@@ -188,8 +185,8 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Compliance & Tenant Protection */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] mb-[140px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
-        <div className="basis-0 grow min-w-px min-h-px space-y-4 max-w-[640px]">
+      <section className="max-w-[1336px] mx-5 lg:mx-auto mt-[60px] lg:mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
+        <div className="basis-0 grow min-w-px space-y-4 max-w-[640px] pl-[5%]">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Compliance &amp; Tenant Protection
           </h2>
@@ -214,7 +211,7 @@ export default function ApplicationProcessPage() {
           </div>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[706px] h-[470px] rounded-[26px] overflow-hidden">
+        <div className="flex-1 relative w-full max-w-[706px] aspect-[4/3] lg:aspect-auto lg:h-[470px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/Application process/5th_Compliance__Tenant_Protection.png"
             alt="Agent showing property to tenants"

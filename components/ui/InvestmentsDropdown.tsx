@@ -95,57 +95,35 @@ export default function InvestmentsDropdown({
         ref={dropdownRef} 
         data-name="Property 1=Variant2"
         onMouseEnter={triggerHover ? () => { setIsOpen(true); onToggle?.(true); } : undefined}
-        onMouseLeave={triggerHover ? (e) => {
-          const relatedTarget = e.relatedTarget as HTMLElement;
-          if (relatedTarget) {
-            if (dropdownRef.current?.querySelector('.dropdown-menu')?.contains(relatedTarget) ||
-                relatedTarget.closest('a')) {
-              return;
-            }
-          }
-          if (!dropdownRef.current?.contains(relatedTarget)) {
+        onMouseLeave={triggerHover ? () => {
+          // Simple: only close when truly leaving the entire container
             setIsOpen(false);
             onToggle?.(false);
-          }
         } : undefined}
       >
         <button
           onClick={!triggerHover ? handleToggle : undefined}
-          className="bg-[#fafafa] cursor-pointer flex gap-[2px] items-center px-[10px] py-[16px] relative shrink-0 hover:bg-[#f0f0f0] transition-colors whitespace-nowrap w-full lg:w-auto"
+          className="group relative cursor-pointer flex gap-[2px] items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 whitespace-nowrap w-full lg:w-auto overflow-hidden"
         >
-          <p className="font-manrope font-bold leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-left">
+          <p className="font-manrope font-medium leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center transition-all">
             Investments
           </p>
-          <span className="font-manrope font-bold leading-[26px] text-[#002f57] text-[24px] lg:text-[16px] ml-[2px]">−</span>
+          <span className="font-manrope font-medium leading-[26px] text-[#002f57] text-[24px] lg:text-[16px] ml-[2px]">−</span>
+          <span className="absolute bottom-0 left-0 h-[2px] bg-[#002f57] w-0 group-hover:w-full transition-all duration-300 ease-out"></span>
         </button>
         <div 
-          className="dropdown-menu absolute top-full left-0 mt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] py-2 pointer-events-auto"
-          onMouseEnter={triggerHover ? () => { setIsOpen(true); onToggle?.(true); } : undefined}
-          onMouseLeave={triggerHover ? (e) => {
-            const relatedTarget = e.relatedTarget as HTMLElement;
-            if (relatedTarget && (relatedTarget.closest('a') || relatedTarget.tagName === 'A')) {
-              return;
-            }
-            if (!dropdownRef.current?.contains(relatedTarget)) {
-              setIsOpen(false);
-              onToggle?.(false);
-            }
-          } : undefined}
+          className="dropdown-menu absolute top-full left-0 pt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] p-[15px] pointer-events-auto"
         >
           {items.map((item, index) => (
             <Link
               key={item.href}
               href={item.href}
-              className="flex items-center px-4 lg:px-[36px] py-[16px] w-full hover:bg-[#FAFAFA] transition-colors first:rounded-t-[16px] last:rounded-b-[16px] cursor-pointer"
+              className="flex items-center px-3 lg:px-4 py-2 w-full hover:bg-[#FAFAFA] transition-colors first:rounded-t-[16px] last:rounded-b-[16px] cursor-pointer"
               onClick={(e) => {
-                e.stopPropagation();
                 handleItemClick(e, item);
               }}
-              onMouseDown={(e) => {
-                e.stopPropagation();
-              }}
             >
-              <p className="font-manrope font-medium leading-[26px] text-[#002f57] text-[24px] lg:text-[16px] text-left hover:text-[#29902e] transition-colors">
+              <p className="font-manrope font-medium leading-[26px] text-[#002f57] text-[24px] lg:text-[16px] text-left hover:font-bold transition-all">
                 {item.name}
               </p>
             </Link>
@@ -165,13 +143,14 @@ export default function InvestmentsDropdown({
     >
       <button
         onClick={!triggerHover ? handleToggle : undefined}
-        className="flex gap-[2px] items-center px-[10px] py-[16px] relative shrink-0 hover:bg-[#fafafa] transition-colors cursor-pointer whitespace-nowrap w-full lg:w-auto"
+        className="group relative flex gap-[2px] items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 cursor-pointer whitespace-nowrap w-full lg:w-auto overflow-hidden"
         data-name="Property 1=Default"
       >
-        <p className="font-manrope font-medium leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-left">
+        <p className="font-manrope font-medium leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center transition-all">
           Investments
         </p>
         <span className="font-manrope font-medium leading-[26px] text-[#002f57] text-[24px] lg:text-[16px] ml-[2px]">+</span>
+        <span className="absolute bottom-0 left-0 h-[2px] bg-[#002f57] w-0 group-hover:w-full transition-all duration-300 ease-out"></span>
       </button>
     </div>
   );

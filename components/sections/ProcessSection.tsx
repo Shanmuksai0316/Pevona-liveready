@@ -21,7 +21,7 @@ export default function ProcessSection() {
   };
 
   return (
-    <div className="flex flex-col gap-[36px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] overflow-hidden px-4 sm:px-6 lg:px-0">
+    <div className="flex flex-col gap-[36px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] overflow-hidden px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
       
       {/* HEADING */}
       <div className="flex flex-col gap-[10px] items-center text-center w-full">
@@ -45,15 +45,12 @@ export default function ProcessSection() {
       <div className="
         flex flex-col lg:flex-row
         items-center justify-center w-full
-        gap-[40px] lg:gap-0
+        gap-[40px] lg:gap-[7%]
       ">
 
         {/* IMAGE */}
         <div className="
           flex-1
-          px-0
-          sm:px-[40px]
-          lg:pl-[130px] lg:pr-[100px]
         ">
           <div className="relative w-full rounded-[26px] overflow-hidden">
             <Image
@@ -70,9 +67,6 @@ export default function ProcessSection() {
         {/* STEPS */}
         <div className="
           flex-1 flex flex-col gap-[26px] items-start
-          px-0
-          sm:px-[40px]
-          lg:pl-0 lg:pr-[140px]
           w-full
         ">
           {steps.map((step, i) => (

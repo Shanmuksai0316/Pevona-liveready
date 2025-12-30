@@ -335,7 +335,7 @@ export default function OurManagementServicesPage() {
       </section>
 
       {/* Why Choose Our Management Services */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[120px] mb-[140px] flex flex-col gap-[46px] items-center">
+      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col gap-[46px] items-center">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Why Choose Our Management Services
         </h2>

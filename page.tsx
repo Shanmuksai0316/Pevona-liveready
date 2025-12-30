@@ -13,7 +13,7 @@ export default function Home() {
     <div className="bg-[#FAFAFA]">
 
       {/* Header Section */}
-      <div className="fixed top-0 left-0 right-0 z-[9999] flex justify-center px-4">
+      <div className="fixed top-0 left-0 right-0 z-[9999] flex justify-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4">
           <div className="h-[40px] lg:h-[60px] w-[110px] lg:w-[145px] relative">
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
@@ -67,31 +67,99 @@ export default function Home() {
 
       {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 bg-white z-[10000] lg:hidden transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex flex-col h-full pt-32 px-8 gap-8 overflow-y-auto">
-          {['About Us', 'Buy', 'Sell', 'Rent', 'Property Management', 'Investments', 'Contact Us'].map((item) => (
+        <div className="flex flex-col h-full pt-32 px-8 gap-0 overflow-y-auto">
+          <Link
+            href="/about"
+            onClick={() => setIsMenuOpen(false)}
+            className="font-manrope font-medium text-[18px] text-[#002f57] border-b border-gray-100 py-4"
+          >
+            About Us
+          </Link>
+          <Link
+            href="/buy"
+            onClick={() => setIsMenuOpen(false)}
+            className="font-manrope font-medium text-[18px] text-[#002f57] border-b border-gray-100 py-4"
+          >
+            Buy
+          </Link>
+          <Link
+            href="/sell"
+            onClick={() => setIsMenuOpen(false)}
+            className="font-manrope font-medium text-[18px] text-[#002f57] border-b border-gray-100 py-4"
+          >
+            Sell
+          </Link>
+          <Link
+            href="/rent"
+            onClick={() => setIsMenuOpen(false)}
+            className="font-manrope font-medium text-[18px] text-[#002f57] border-b border-gray-100 py-4"
+          >
+            Rent
+          </Link>
+          <Link
+            href="/property-management"
+            onClick={() => setIsMenuOpen(false)}
+            className="font-manrope font-medium text-[18px] text-[#002f57] border-b border-gray-100 py-4"
+          >
+            Property Management
+          </Link>
+          <div className="border-b border-gray-100">
+            <div className="font-manrope font-medium text-[18px] text-[#002f57] py-4">
+              Investments
+            </div>
+            <div className="pl-4 pb-2">
+              <Link
+                href="/investments"
+                onClick={() => setIsMenuOpen(false)}
+                className="block font-manrope font-medium text-[16px] text-[#666666] hover:text-[#002f57] transition-colors py-3"
+              >
+                Investment Opportunities
+              </Link>
+              <Link
+                href="/market-insights"
+                onClick={() => setIsMenuOpen(false)}
+                className="block font-manrope font-medium text-[16px] text-[#666666] hover:text-[#002f57] transition-colors py-3"
+              >
+                Market Insights
+              </Link>
+              <Link
+                href="/portfolio-management"
+                onClick={() => setIsMenuOpen(false)}
+                className="block font-manrope font-medium text-[16px] text-[#666666] hover:text-[#002f57] transition-colors py-3"
+              >
+                Portfolio Management
+              </Link>
+              <Link
+                href="/international-properties"
+                onClick={() => setIsMenuOpen(false)}
+                className="block font-manrope font-medium text-[16px] text-[#666666] hover:text-[#002f57] transition-colors py-3"
+              >
+                International Properties
+              </Link>
+            </div>
+          </div>
             <Link
-              key={item}
-              href="#"
+            href="/contact"
               onClick={() => setIsMenuOpen(false)}
-              className="font-manrope font-medium text-[24px] text-[#002f57] border-b border-gray-100 pb-2"
+            className="font-manrope font-medium text-[18px] text-[#002f57] border-b border-gray-100 py-4"
             >
-              {item}
+            Contact Us
             </Link>
-          ))}
-          <Link href="/contact" className="bg-[#002f57] mt-4 px-[10px] py-[18px] rounded-[12px] w-full text-center inline-block">
+          <Link href="/contact" className="bg-[#002f57] mt-6 px-[10px] py-[18px] rounded-[12px] w-full text-center inline-block">
             <span className="font-manrope font-semibold text-[18px] text-white">Book a Free Valuation</span>
           </Link>
         </div>
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full h-[600px] sm:h-[700px] lg:h-[900px] overflow-hidden rounded-b-[36px]">
+      <div className="relative w-full h-[600px] sm:h-[700px] lg:h-[900px] min-h-[600px] overflow-hidden rounded-b-[36px]">
         <div className="absolute inset-0">
           <Image
             src="http://localhost:3845/assets/383fd913059b8fb108d652e2bd3bf80d19e18a3e.png"
             alt="Hero background"
             fill
             className="object-cover rounded-b-[36px]"
+            sizes="100vw"
             unoptimized
           />
           <div className="absolute inset-0 bg-black bg-opacity-[0.69] rounded-b-[36px]"></div>
@@ -146,55 +214,78 @@ export default function Home() {
       <FeaturedProperties />
 
       {/* About Us Section */}
-      <div className="relative w-full h-[811px] lg:h-[800px] flex flex-col gap-[31px] items-start justify-center lg:justify-end pb-12 lg:pb-[36px] pt-12 lg:pt-0 px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+      <div className="relative w-full h-[811px] lg:h-auto lg:min-h-[800px] flex flex-col items-center justify-center overflow-hidden mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         {/* Desktop Background */}
-        <Image
-          src="http://localhost:3845/assets/069af032e465c46ca3308131d6b7c34885ece7db.png"
-          alt="About Us Background"
-          fill
-          className="object-cover hidden lg:block"
-          unoptimized
-        />
-        {/* Mobile Background - will be provided by user */}
-        <div className="absolute inset-0 lg:hidden">
+        <div className="absolute inset-0 hidden lg:block">
           <Image
-            src="/images/About_Pevona_sec.png"
-            alt="About Us Background Mobile"
+            src="http://localhost:3845/assets/069af032e465c46ca3308131d6b7c34885ece7db.png"
+            alt="About Us Background"
             fill
             className="object-cover"
+            sizes="100vw"
             unoptimized
           />
+          {/* Gradient overlay from house to dark blue */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]"></div>
         </div>
-        <div className="absolute inset-0 bg-black bg-opacity-40 lg:hidden"></div>
-        <div className="relative z-10 flex flex-col gap-[16px] items-start max-w-[600px] text-white w-full">
-          <div className="flex flex-col gap-[8px] items-start">
-            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">About Pevona</h2>
-            <p className="font-manrope font-normal text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px] leading-[20px] sm:leading-[24px] md:leading-[26px] lg:leading-[32px]">Rooted in Trust. Driven by Expertise.</p>
+        {/* Mobile Background - House image fading into dark blue */}
+        <div className="absolute inset-0 lg:hidden h-[811px]">
+          <Image
+            src="/images/Home page/About Pevona-bg-mbl.png"
+            alt="About Us Background Mobile"
+            fill
+            className="object-cover object-top"
+            sizes="100vw"
+            priority
+            quality={90}
+            unoptimized
+            style={{ objectPosition: 'top' }}
+          />
+          {/* Gradient overlay to fade house into dark blue - smooth transition */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/70 via-[#002f57]/90 to-[#002f57]"></div>
+        </div>
+        
+        {/* Content Container */}
+        <div className="relative z-10 flex flex-col gap-[20px] lg:gap-[40px] items-center justify-center w-full max-w-[1300px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-8 lg:py-20 h-[811px] lg:h-auto">
+          {/* About Pevona Text Section */}
+          <div className="flex flex-col gap-[10px] lg:gap-[16px] items-center text-center text-white w-full max-w-[800px] pr-[600px] 1400:pr-0">
+            <h2 className="font-crimson text-[28px] sm:text-[32px] lg:text-[56px] leading-tight tracking-tight lg:tracking-[-1.68px]">
+              About Pevona
+            </h2>
+            <p className="font-manrope font-semibold text-[16px] sm:text-[18px] lg:text-[22px] leading-[22px] sm:leading-[26px] lg:leading-[32px]">
+              Rooted in Trust. Driven by Expertise.
+            </p>
+            <p className="font-manrope font-normal text-[14px] sm:text-[15px] lg:text-[18px] leading-[20px] sm:leading-[22px] lg:leading-[28px] opacity-90 mt-1 lg:mt-2 px-4">
+              Pevona Ltd is a UK real estate company specialising in lettings, management, and investments. We deliver transparent, compliant, and client-focused solutions that protect assets and maximise returns.
+            </p>
           </div>
-          <p className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] opacity-80">
-            Pevona Ltd is a UK real estate company specialising in lettings, management, and investments. We deliver transparent, compliant, and client-focused solutions that protect assets and maximise returns.
-          </p>
-        </div>
-        <div className="relative z-10 flex flex-col gap-[16px] items-start w-full">
-          <p className="font-crimson text-[20px] lg:text-[22px] leading-[32px] text-white">Certifications</p>
-          <div className="flex flex-wrap gap-[16px] items-start max-w-[350px]">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="bg-white border border-[rgba(0,0,0,0.12)] h-[50px] lg:h-[60px] rounded-[10px] w-[140px] lg:w-[150px] flex items-center justify-center">
-                <Image
-                  src={`http://localhost:3845/assets/cert${i}.png`}
-                  alt={`Certification ${i}`}
-                  width={70}
-                  height={24}
-                  className="object-contain"
-                  unoptimized
-                />
-              </div>
-            ))}
+
+          {/* Certifications Section */}
+          <div className="flex flex-col gap-[12px] lg:gap-[20px] items-center w-full max-w-[600px]">
+            <p className="font-crimson text-[18px] sm:text-[20px] lg:text-[24px] leading-[26px] sm:leading-[28px] lg:leading-[32px] text-white text-center">
+              Certifications
+            </p>
+            <div className="grid grid-cols-2 gap-[10px] sm:gap-[12px] lg:gap-[16px] w-full max-w-[400px]">
+              {[1, 2, 3, 4].map((i) => (
+                <div key={i} className="bg-white border border-[rgba(0,0,0,0.12)] h-[55px] sm:h-[60px] lg:h-[80px] rounded-[10px] flex items-center justify-center p-2">
+                  <Image
+                    src={`http://localhost:3845/assets/cert${i}.png`}
+                    alt={`Certification ${i}`}
+                    width={120}
+                    height={40}
+                    className="object-contain w-full h-full"
+                    unoptimized
+                  />
+                </div>
+              ))}
+            </div>
           </div>
+
+          {/* Learn More Button */}
+          <Link href="/about" className="bg-white border border-[rgba(0,0,0,0.12)] hover:bg-gray-50 px-[10px] py-[10px] rounded-[8px] w-full sm:w-[240px] h-[48px] sm:h-[56px] transition-colors inline-flex items-center justify-center mt-2 lg:mt-0">
+            <span className="font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#002f57]">Learn More About Us</span>
+          </Link>
         </div>
-        <button className="relative z-10 bg-white px-[10px] py-[10px] rounded-[8px] w-full sm:w-[240px] h-[56px]">
-          <span className="font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57]">Learn More About Us</span>
-        </button>
       </div>
 
       <div className="flex flex-col gap-[36px] items-center justify-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
@@ -223,7 +314,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col gap-[26px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-        <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] text-[#002f57] text-center tracking-tight md:tracking-[-1.68px] max-w-[562px]">
+        <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] text-[#002f57] text-center tracking-tight md:tracking-[-1.68px] max-w-[562px] w-full">
           Solutions That Protect and Grow Your Assets.
         </h2>
         <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[26px] items-start justify-center w-full max-w-[1400px]">
@@ -254,8 +345,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative w-full flex flex-col gap-[10px] items-center overflow-hidden py-[100px] lg:py-[204px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-6">
-        <div className="absolute inset-0 w-full flex justify-center">
+      <div className="relative w-full flex flex-col gap-[10px] items-center overflow-hidden py-[100px] lg:py-[204px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+        {/* Background Image Container - respects parent padding */}
+        <div className="absolute top-0 bottom-0 left-5 350:left-5 480:left-5 650:left-[60px] lg:left-[80px] 1300:left-[80px] 1400:left-[80px] 1500:left-[100px] 1600:left-[130px] right-5 350:right-5 480:right-5 650:right-[60px] lg:right-[80px] 1300:right-[80px] 1400:right-[80px] 1500:right-[100px] 1600:right-[130px] flex justify-center items-center">
           <div className="relative w-full max-w-[1336px] h-full">
             <Image
               src="http://localhost:3845/assets/e95fc985941feb01d9a5975e6ed8d9296695239e.png"
@@ -272,7 +364,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="relative z-10 flex flex-col gap-[20px] items-center justify-center text-center text-white w-full max-w-[800px] pt-[60px] sm:pt-[80px] lg:pt-[100px] px-4">
+        {/* Content - respects parent padding */}
+        <div className="relative z-10 flex flex-col gap-[20px] items-center justify-center text-center text-white w-full max-w-[800px] mx-auto pt-[60px] sm:pt-[80px] lg:pt-[100px]">
           <h2 className="font-crimson text-[32px] sm:text-[40px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px]">
             Investment Opportunities
           </h2>
@@ -283,8 +376,8 @@ export default function Home() {
       </div>
 
       {/* Footer Section */}
-      <footer className="bg-[#002f57] flex flex-col gap-[36px] items-center justify-end px-6 lg:px-0 pt-[73px] pb-12 lg:pb-[16px] w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-        <div className="flex flex-col lg:flex-row items-start justify-between lg:px-[135px] w-full max-w-[1560px] gap-12 lg:gap-0">
+      <footer className="bg-[#002f57] flex flex-col gap-[36px] items-center justify-end px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[73px] pb-12 lg:pb-[16px] w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+        <div className="flex flex-col lg:flex-row items-start justify-between w-full max-w-[1560px] gap-12 lg:gap-0">
           <div className="flex flex-col gap-[26px] items-start w-full lg:w-[480px]">
             <div className="h-[50px] w-[193px] relative">
               <Link href="/">
@@ -325,16 +418,14 @@ export default function Home() {
             <div className="flex flex-col gap-[10px] items-start min-w-[140px]">
               <p className="font-crimson font-semibold text-[26px] leading-[30px] text-white">Follow Us</p>
               <div className="flex flex-col gap-[10px] items-start font-manrope font-normal text-[18px] leading-[28px] text-white opacity-80">
-                <Link href="#" className="hover:text-white transition-opacity">Youtube</Link>
-                <Link href="#" className="hover:text-white transition-opacity">Twitter</Link>
-                <Link href="#" className="hover:text-white transition-opacity">LinkedIn</Link>
-                <Link href="#" className="hover:text-white transition-opacity">Instagram</Link>
-                <Link href="#" className="hover:text-white transition-opacity">Facebook</Link>
+                <Link href="https://www.linkedin.com/in/pevona-ltd-6a3512389?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:opacity-100 transition-opacity">LinkedIn</Link>
+                <Link href="https://www.instagram.com/pevona_pevonaltd?igsh=cDNpb3ZwaXVtMm5t" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:opacity-100 transition-opacity">Instagram</Link>
+                <Link href="https://www.facebook.com/share/1Kma9mu8tr/" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:opacity-100 transition-opacity">Facebook</Link>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[16px] items-center w-full px-6">
+        <div className="flex flex-col gap-[16px] items-center w-full">
           <div className="h-px w-full max-w-[1560px] border-t border-white opacity-20"></div>
           <p className="font-manrope font-medium text-[16px] leading-[26px] text-white opacity-60 text-center">
             Copyright © All rights reserved Pevona

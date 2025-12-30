@@ -5,66 +5,33 @@ export default function OurManagementServicesPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
-        {/* Desktop Layout */}
-        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[260px]">
-          {/* Background image with mask-like rounded bottom */}
+      {/* Desktop Layout */}
+      <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
+            <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
                 src="/images/Our Management Services/mang_bg_img.png"
                 alt="Professional property management"
                 fill
                 className="object-cover"
+                sizes="100vw"
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/95 via-[#002f57]/85 to-transparent" />
             </div>
           </div>
 
-          {/* Hero copy */}
-          <div className="relative max-w-[780px] mt-10 space-y-6 text-white">
-            <h1 className="font-crimson text-[66px] leading-[1.05] tracking-[-0.06em]">
+          <div className="relative max-w-[780px] mx-auto mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white text-center">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Professional Property Management, Made Simple
             </h1>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               Comprehensive management services for landlords across the UK – from tenant
               placement and rent collection to compliance, maintenance, and reporting.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-            >
-              Book a Free Valuation
-            </Link>
-          </div>
-        </div>
-
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
-            <Image
-              src="/images/Our Management Services/mang_bg_img.png"
-              alt="Professional property management"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-          </div>
-
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
-              Professional Property Management, Made Simple
-            </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
-              Comprehensive management services for landlords across the UK – from tenant
-              placement and rent collection to compliance, maintenance, and reporting.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Free Valuation
             </Link>
@@ -72,14 +39,46 @@ export default function OurManagementServicesPage() {
         </div>
       </section>
 
+      {/* Mobile Layout */}
+      <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
+        <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
+          <Image
+            src="/images/Our Management Services/our-management-services-bg-mbl.png"
+            alt="Professional property management"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            unoptimized
+          />
+        </div>
+
+        {/* Content positioned 50px from bottom, center-aligned */}
+        <div className="absolute bottom-[50px] left-0 right-0 flex flex-col items-center px-5 sm:px-8 space-y-4 sm:space-y-6 text-white text-center">
+          <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+            Professional Property Management, Made Simple
+          </h1>
+          <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] max-w-[600px]">
+            Comprehensive management services for landlords across the UK – from tenant
+            placement and rent collection to compliance, maintenance, and reporting.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+          >
+            Book a Free Valuation
+          </Link>
+        </div>
+      </section>
+
       {/* Managing Every Detail */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
-        <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[100px] items-center">
+        <div className="flex-1 relative w-full max-w-[720px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Our Management Services/2nd_managing_every_details_section_image.png"
             alt="Digital housing market graph"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 720px"
             unoptimized
           />
         </div>
@@ -98,7 +97,7 @@ export default function OurManagementServicesPage() {
       </section>
 
       {/* What's Included in Our Management Service */}
-      <section className="max-w-[1380px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[140px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1380px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] flex flex-col gap-[36px] items-center">
         <div className="text-center max-w-[840px] space-y-3">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             What's Included in Our Management Service
@@ -111,12 +110,13 @@ export default function OurManagementServicesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 w-full">
           {/* Card 1 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="/images/Our Management Services/3rd_Whats_Included_img_-_1.png"
                 alt="Lettings marketing"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -133,12 +133,13 @@ export default function OurManagementServicesPage() {
 
           {/* Card 2 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="/images/Our Management Services/3rd_Whats_Included_img_-_2.png"
                 alt="Architect reviewing floor plans"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -155,12 +156,13 @@ export default function OurManagementServicesPage() {
 
           {/* Card 3 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
-                src="/images/Our Management Services/3rd_Whats_Included_img_-_3.png"
+                src="/images/Our Management Services/3nd_Whats_Included_img_-_3.png"
                 alt="Maintenance worker repairing"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -177,12 +179,13 @@ export default function OurManagementServicesPage() {
 
           {/* Card 4 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="/images/Our Management Services/3rd_Whats_Included_img_-_4.png"
                 alt="Interior inspection"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -199,12 +202,13 @@ export default function OurManagementServicesPage() {
 
           {/* Card 5 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="/images/Our Management Services/3rd_Whats_Included_img_-_5.png"
                 alt="Rent and finance management"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -221,12 +225,13 @@ export default function OurManagementServicesPage() {
 
           {/* Card 6 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="/images/Our Management Services/3rd_Whats_Included_img_-_6.png"
                 alt="Team reviewing portfolio performance"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -250,12 +255,13 @@ export default function OurManagementServicesPage() {
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-[60px] items-start">
-          <div className="flex-1 relative w-full max-w-[640px] h-[460px] rounded-[26px] overflow-hidden">
+          <div className="flex-1 relative w-full max-w-[640px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
             <Image
               src="/images/Our Management Services/4th_mang_Our_Process_sec_image.png"
               alt="Property management discussion"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 640px"
               unoptimized
             />
           </div>
@@ -351,12 +357,13 @@ export default function OurManagementServicesPage() {
             </div>
           </div>
 
-          <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
+          <div className="flex-1 relative w-full max-w-[720px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
             <Image
               src="/images/Our Management Services/5th_sec_mang_Fully_Compliant_sec_img.png"
               alt="Homeowner with keys and protection concept"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 720px"
               unoptimized
             />
           </div>
@@ -364,7 +371,7 @@ export default function OurManagementServicesPage() {
       </section>
 
       {/* Why Choose Our Management Services */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] mb-[140px] flex flex-col gap-[46px] items-center">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col gap-[46px] items-center">
         <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] text-center">
           Why Choose Our Management Services
         </h2>
@@ -391,20 +398,21 @@ export default function OurManagementServicesPage() {
             </div>
           </article>
 
-          <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] px-8 py-10 space-y-6">
-            <div className="relative size-[36px] flex-shrink-0">
-              <Image
-                src="/images/icons/check-mark_5290058 1.png"
-                alt="Compliance Confidence"
-                fill
-                className="object-contain"
-                unoptimized
-              />
-            </div>
+          <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] py-[19px] px-2 space-y-6">
             <div className="space-y-3">
               <h3 className="font-crimson text-[24px] md:text-[26px] leading-[30px] text-[#002f57]">
                 Compliance Confidence
               </h3>
+              <div className="relative w-full h-[185px] min-h-[185px] min-w-0 rounded-[12px] overflow-hidden">
+                <Image
+                  src="/images/Compliance Confidence.png"
+                  alt="Compliance Confidence"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized
+                />
+              </div>
               <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-90">
                 Your property always meets UK legal standards with proactive checks and
                 renewals.

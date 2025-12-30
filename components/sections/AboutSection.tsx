@@ -7,13 +7,31 @@ export default function AboutSection() {
       className="
         relative w-full flex flex-col items-start justify-end overflow-hidden
         gap-[31px]
-        h-[620px] sm:h-[700px] lg:h-[800px]
+        h-[811px] lg:h-[800px]
         pb-[24px] sm:pb-[30px] lg:pb-[36px]
-        px-4 sm:px-[40px] lg:px-[98px]
+        px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
         mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]
       "
     >
-      {/* BACKGROUND IMAGE */}
+      {/* Mobile Background Image */}
+      <div className="absolute inset-0 lg:hidden h-[811px]">
+        <Image
+          src="/images/Home page/About Pevona-bg-mbl.png"
+          alt="About Us Background Mobile"
+          fill
+          className="object-cover object-top"
+          sizes="100vw"
+          priority
+          quality={90}
+          unoptimized
+          style={{ objectPosition: 'top' }}
+        />
+        {/* Gradient overlay to fade house into dark blue */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/70 via-[#002f57]/90 to-[#002f57]"></div>
+      </div>
+      
+      {/* Desktop Background Image */}
+      <div className="absolute inset-0 hidden lg:block">
       <Image
         src="/images/About_Pevona_sec.png"
         alt="About Us Background"
@@ -21,6 +39,7 @@ export default function AboutSection() {
         className="object-cover"
         unoptimized
       />
+      </div>
 
       {/* TEXT CONTENT */}
       <div

@@ -19,59 +19,67 @@ export default async function PropertiesToLetPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero – Find Your Next Home with Pevona */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
-        {/* Desktop Layout */}
-        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[260px]">
-          {/* Background image with gradient and rounded bottom */}
-          <div className="absolute inset-0 z-0">
+      <section className="relative w-full h-[850px] lg:h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
+          {/* Mobile Background */}
+          <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">
+            <div className="relative w-full h-[850px] rounded-b-[24px] sm:rounded-b-[30px] overflow-hidden">
+              <Image
+                src="/images/properties-to-let.png"
+                alt="Properties to let background mobile"
+                fill
+                className="object-cover"
+                sizes="100vw"
+                unoptimized
+              />
+            </div>
+          </div>
+
+          {/* Desktop Background */}
+          <div className="hidden lg:block absolute inset-0 z-0 -mx-[60px] lg:-mx-[80px] 1300:-mx-[80px] 1400:-mx-[80px] 1500:-mx-[100px] 1600:-mx-[130px]">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
               <Image
                 src="/images/Properties to let/LET_bg_img.png"
                 alt="Modern rental property exterior"
                 fill
                 className="object-cover"
+                sizes="100vw"
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/75 to-transparent" />
             </div>
           </div>
 
-          <div className="relative max-w-[652px] mt-[140px] space-y-4 text-white">
-            <h1 className="font-crimson text-[66px] leading-[66px] tracking-[-1.98px]">
-              Find Your Next Home with Pevona
-            </h1>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
-              Explore our range of verified rental properties across the UK. Every listing is managed with
-              transparency, care, and full compliance with UK housing standards.
-            </p>
-          </div>
-        </div>
-
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
-            <Image
-              src="/images/Properties to let/LET_bg_img.png"
-              alt="Modern rental property exterior"
-              fill
-              className="object-cover"
-              unoptimized
-            />
+          {/* Mobile Content - Center Aligned, Bottom 50px */}
+          <div className="lg:hidden relative flex items-end justify-center h-[850px] pb-[50px]">
+            <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
+              <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
+                Find Your Next Home with Pevona
+              </h1>
+              <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
+                Explore our range of verified rental properties across the UK. Every listing is managed with
+                transparency, care, and full compliance with UK housing standards.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+              >
+                Book a Consultation
+              </Link>
+            </div>
           </div>
 
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+          {/* Desktop Content - Original Layout */}
+          <div className="hidden lg:block relative max-w-[780px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] space-y-4 sm:space-y-6 text-white">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Find Your Next Home with Pevona
             </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               Explore our range of verified rental properties across the UK. Every listing is managed with
               transparency, care, and full compliance with UK housing standards.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Consultation
             </Link>
@@ -97,7 +105,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* How We Maintain Quality Standards */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 lg:pl-[80px] 1300:pl-[80px] 1400:pl-[80px] 1500:pl-[100px] 1600:pl-[130px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 mx-5 lg:mx-auto">
         <div className="flex-1 max-w-[589px] space-y-[10px]">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             How We Maintain Quality Standards
@@ -109,25 +117,27 @@ export default async function PropertiesToLetPage() {
           </p>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[816px] h-[460px] rounded-[26px] overflow-hidden">
+        <div className="flex-1 relative w-full max-w-[816px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Properties to let/3rd_How_We_Maintain_Quality_Standards.png"
             alt="How we maintain quality standards"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 816px"
             unoptimized
           />
         </div>
       </section>
 
       {/* Renting with Pevona */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[80px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 lg:pr-[80px] 1300:pr-[80px] 1400:pr-[80px] 1500:pr-[100px] 1600:pr-[130px]">
-        <div className="flex-1 relative w-full max-w-[696px] h-[460px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[80px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 mx-5 lg:mx-auto">
+        <div className="flex-1 relative w-full max-w-[696px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Properties to let/4rd_Renting_with_Pevona.png"
             alt="Renting with Pevona"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 696px"
             unoptimized
           />
         </div>
@@ -144,7 +154,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* Key Tenant Information */}
-      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] flex flex-col lg:flex-row gap-[80px] items-start mb-[120px]">
+      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[80px] items-start mb-[120px]">
         <div className="flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Key Tenant Information (Mandatory Transparency)
@@ -176,18 +186,46 @@ export default async function PropertiesToLetPage() {
       <AreaInsights />
 
       {/* CTA: Ready to Find Your Next Home? */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px]">
-        <div className="relative h-[450px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[150px] mb-[120px]">
+        {/* Mobile Layout */}
+        <div className="lg:hidden relative w-full min-h-[450px] rounded-[26px] overflow-hidden">
+          <Image
+            src="/images/Ready to Find Your Next Home-mbl-bg.png"
+            alt="Ready to find your next home mobile"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            unoptimized
+          />
+          <div className="absolute inset-0 flex items-end justify-center pb-[50px]">
+            <div className="max-w-[519px] w-full px-5 text-center space-y-6 text-white">
+              <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
+                Ready to Find Your Next Home?
+              </h2>
+              <p className="font-manrope text-[18px] leading-[28px]">
+                Whether you&apos;re moving locally or relocating across the UK, Pevona helps you find a home
+                that fits your lifestyle.
+              </p>
+              <Link href="/contact" className="inline-flex items-center justify-center bg-white text-[#002f57] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors">
+                Contact Lettings Team
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout */}
+        <div className="hidden lg:block relative w-full h-[450px] min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Properties to let/6th_Ready_to_Find_Your_Next_Home_.png"
             alt="Ready to find your next home"
             fill
             className="object-cover"
+            sizes="100vw"
             unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#002f57] via-[#002f57]/85 to-transparent" />
 
-          <div className="relative max-w-[519px] ml-[0] lg:ml-[119px] mt-[80px] space-y-6 text-white">
+          <div className="relative max-w-[519px] ml-[119px] mt-[80px] space-y-6 text-white">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
               Ready to Find Your Next Home?
             </h2>

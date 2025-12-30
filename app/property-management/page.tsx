@@ -5,34 +5,33 @@ export default function PropertyManagementPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero */}
-      <section className="relative w-full overflow-hidden">
-        <div className="relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[260px]">
-          {/* Background image with mask-like rounded bottom */}
+      <section className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
+            <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] min-h-[500px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
                 src="http://localhost:3845/assets/c41a835ca6f677973c5d8a5f8bab7f491c02c58d.png"
                 alt="Professional property management"
                 fill
                 className="object-cover"
+                sizes="100vw"
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/95 via-[#002f57]/85 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/75 to-transparent" />
             </div>
           </div>
 
-          {/* Hero copy */}
-          <div className="relative max-w-[780px] mt-10 space-y-6 text-white">
-            <h1 className="font-crimson text-[40px] md:text-[56px] lg:text-[66px] leading-[1.05] tracking-[-0.06em]">
+          <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Professional Property Management, Made Simple
             </h1>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               Comprehensive management services for landlords across the UK – from tenant
               placement and rent collection to compliance, maintenance, and reporting.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Free Valuation
             </Link>
@@ -41,13 +40,14 @@ export default function PropertyManagementPage() {
       </section>
 
       {/* Managing Every Detail */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
-        <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[100px] items-center">
+        <div className="flex-1 relative w-full max-w-[720px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="http://localhost:3845/assets/8c635a6811cac99f508d3af65acc70648e8d9e5c.png"
             alt="Digital housing market graph"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 720px"
             unoptimized
           />
           <div className="absolute inset-0 mix-blend-multiply">
@@ -56,6 +56,7 @@ export default function PropertyManagementPage() {
               alt="Professional using laptop with property data"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 720px"
               unoptimized
             />
           </div>
@@ -75,7 +76,7 @@ export default function PropertyManagementPage() {
       </section>
 
       {/* What's Included in Our Management Service */}
-      <section className="max-w-[1380px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[140px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1380px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] flex flex-col gap-[36px] items-center">
         <div className="text-center max-w-[840px] space-y-3">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             What's Included in Our Management Service
@@ -88,12 +89,13 @@ export default function PropertyManagementPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 w-full">
           {/* Card 1 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="http://localhost:3845/assets/6271a7d00ed6ac50b236623f908417de9ef70cc1.png"
                 alt="Lettings marketing"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -111,12 +113,13 @@ export default function PropertyManagementPage() {
 
           {/* Card 2 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="http://localhost:3845/assets/99167a298e10bbe0c70c969ce8298a2f4290be1e.png"
                 alt="Architect reviewing floor plans"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -133,12 +136,13 @@ export default function PropertyManagementPage() {
 
           {/* Card 3 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="http://localhost:3845/assets/83aa6c5cafb7c95dd4508b39aac1208316485032.png"
                 alt="Maintenance worker repairing"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -155,12 +159,13 @@ export default function PropertyManagementPage() {
 
           {/* Card 4 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="http://localhost:3845/assets/3fb88f4927dd73a2151486c481215e193468160b.png"
                 alt="Interior inspection"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -177,12 +182,13 @@ export default function PropertyManagementPage() {
 
           {/* Card 5 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="http://localhost:3845/assets/7d5e57ea9136fcd1a2aa5a20a50a28168a60f70a.png"
                 alt="Rent and finance management"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -199,12 +205,13 @@ export default function PropertyManagementPage() {
 
           {/* Card 6 */}
           <article className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col">
-            <div className="relative w-full h-[220px]">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0">
               <Image
                 src="http://localhost:3845/assets/329e4aebb386daabc508efdd4c04ccafe1f45b11.png"
                 alt="Team reviewing portfolio performance"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -228,12 +235,13 @@ export default function PropertyManagementPage() {
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-[60px] items-start">
-          <div className="flex-1 relative w-full max-w-[640px] h-[460px] rounded-[26px] overflow-hidden">
+          <div className="flex-1 relative w-full max-w-[640px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
             <Image
               src="http://localhost:3845/assets/4d6323f216fb3b1783c21d7771cee17effcc5526.png"
               alt="Property management discussion"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 640px"
               unoptimized
             />
           </div>
@@ -323,12 +331,13 @@ export default function PropertyManagementPage() {
             </div>
           </div>
 
-          <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
+          <div className="flex-1 relative w-full max-w-[720px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
             <Image
               src="http://localhost:3845/assets/8a20fef8761b3d243a6fdc22825d95aa63a18633.png"
               alt="Homeowner with keys and protection concept"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 720px"
               unoptimized
             />
           </div>
@@ -336,7 +345,7 @@ export default function PropertyManagementPage() {
       </section>
 
       {/* Why Choose Our Management Services */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] mb-[140px] flex flex-col gap-[46px] items-center">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col gap-[46px] items-center">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Why Choose Our Management Services
         </h2>

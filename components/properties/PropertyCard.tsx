@@ -42,12 +42,13 @@ export default function PropertyCard({ property }: PropertyCardProps) {
     <Link href={`/properties/${attributes.slug}`}>
       <div className="bg-white border border-[rgba(0,0,0,0.12)] flex flex-col gap-[26px] pb-[31px] pt-[5px] px-[5px] rounded-[16px] h-full">
         {/* Image wrapper with fixed aspect ratio to avoid vertical stretching */}
-        <div className="relative w-full aspect-[4/3] rounded-[12px] overflow-hidden">
+        <div className="relative w-full aspect-[4/3] min-h-[200px] min-w-0 rounded-[12px] overflow-hidden">
           <Image
             src={imageUrl}
             alt={attributes.title}
             fill
             className="object-cover rounded-[12px]"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             unoptimized
           />
         </div>

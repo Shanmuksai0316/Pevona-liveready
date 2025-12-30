@@ -106,7 +106,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* Key Tenant Information */}
-      <section className="max-w-[1320px] mx-auto px-6 lg:px-0 mt-[120px] flex flex-col lg:flex-row gap-[80px] items-start mb-[120px]">
+      <section className="max-w-[1320px] mx-auto px-6 lg:px-0 mt-[120px] flex flex-col lg:flex-row gap-[80px] items-start mb-[60px] lg:mb-[120px]">
         <div className="flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Key Tenant Information (Mandatory Transparency)
@@ -144,7 +144,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* CTA: Ready to find your next home? */}
-      <section className="max-w-[1560px] mx-auto px-6 lg:px-0 mb-[120px]">
+      <section className="max-w-[1560px] mx-auto px-6 lg:px-0 mb-[60px] lg:mb-[120px]">
         <div className="relative h-[450px] rounded-[26px] overflow-hidden bg-[#002f57] px-[40px] lg:px-[119px] py-[56px] flex items-center">
           <Image
             src="http://localhost:3845/assets/0999bd2d031064a0aae1ce805d457c481f69951f.png"

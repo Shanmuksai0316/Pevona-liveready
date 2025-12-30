@@ -163,7 +163,7 @@ export default function TenantServicesPage() {
       </section>
 
       {/* Maintenance and Communication */}
-      <section className="max-w-[1560px] mx-auto px-6 lg:px-[52px] mt-[140px] mb-[120px]">
+      <section className="max-w-[1560px] mx-auto px-6 lg:px-[52px] mt-[140px] mb-[60px] lg:mb-[120px]">
         <div className="relative h-[450px] rounded-[26px] overflow-hidden bg-[#002f57] flex items-center px-[40px] lg:px-[60px]">
           <Image
             src="http://localhost:3845/assets/15d79eea300e3b6fddbb61c0fa4d7a4b45196cce.png"

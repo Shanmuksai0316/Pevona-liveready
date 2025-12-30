@@ -1,62 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
+import { fetchStrapi } from "@/lib/strapi";
+import type { StrapiProperty } from "@/types/strapi";
+import PropertyCard from "@/components/properties/PropertyCard";
 
-export default function InvestmentOpportunitiesPage() {
+export default async function InvestmentOpportunitiesPage() {
+  // Fetch properties from Strapi
+  let featuredProperties: StrapiProperty[] = [];
+  try {
+    const res = await fetchStrapi<StrapiProperty[]>("/api/properties?populate=*");
+    if (res?.data && Array.isArray(res.data)) {
+      featuredProperties = res.data.slice(0, 6);
+    }
+  } catch (error) {
+    console.error("Error fetching properties:", error);
+  }
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero Banner */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
-        {/* Desktop Layout */}
-        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[628px]">
-          {/* Background image with gradient */}
+      {/* Desktop Layout */}
+      <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
+            <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
                 src="/images/Investment Opportunities/Investment_Opportunities_banner.png"
                 alt="Modern house with wooden deck and lights at night"
                 fill
                 className="object-cover"
+                sizes="100vw"
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/75 to-transparent" />
             </div>
           </div>
 
-          {/* Hero Content */}
-          <div className="relative max-w-[606px] mt-[305px] space-y-4 text-white">
-            <h1 className="font-crimson text-[66px] leading-[66px] tracking-[-1.98px]">
+          <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Curated Investment{" "}
               <br />
               Opportunities
             </h1>
-            <p className="font-manrope text-[18px] leading-[28px] text-white/90">
-              We source and vet property investments across London and the UK with a focus on
-              transparency, compliance and sustainability. Each opportunity includes a full
-              investment pack so you can assess commercial metrics, legal structure and exit
-              strategy before you commit.
-            </p>
-          </div>
-        </div>
-
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
-            <Image
-              src="/images/Investment Opportunities/Investment_Opportunities_banner.png"
-              alt="Modern house with wooden deck and lights at night"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-          </div>
-
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
-              Curated Investment Opportunities
-            </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               We source and vet property investments across London and the UK with a focus on
               transparency, compliance and sustainability. Each opportunity includes a full
               investment pack so you can assess commercial metrics, legal structure and exit
@@ -64,7 +48,7 @@ export default function InvestmentOpportunitiesPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Consultation
             </Link>
@@ -72,21 +56,97 @@ export default function InvestmentOpportunitiesPage() {
         </div>
       </section>
 
+      {/* Mobile Layout */}
+      <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
+        <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
+          <Image
+            src="/images/Investment Opportunities/investments-bg-mbl.png"
+            alt="Modern house with wooden deck and lights at night"
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+
+        {/* Content positioned 50px from bottom, center-aligned */}
+        <div className="absolute bottom-[50px] left-0 right-0 flex flex-col items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
+          <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
+            Curated Investment{" "}
+            <br />
+            Opportunities
+          </h1>
+          <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] max-w-[600px]">
+            We source and vet property investments across London and the UK with a focus on
+            transparency, compliance and sustainability. Each opportunity includes a full
+            investment pack so you can assess commercial metrics, legal structure and exit
+            strategy before you commit.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+          >
+            Book a Consultation
+          </Link>
+        </div>
+      </section>
+
+      {/* Featured Investment Properties */}
+      <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col items-center gap-9">
+        <div className="max-w-[861px] text-center space-y-4">
+          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
+            Featured Investment Properties
+          </h2>
+          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+            Discover our curated selection of investment opportunities. Each property has been carefully vetted for potential returns, location fundamentals, and long-term value.
+          </p>
+        </div>
+
+        {featuredProperties.length > 0 ? (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+              {featuredProperties.map((property) => (
+                <PropertyCard key={property.id} property={property} />
+              ))}
+            </div>
+
+            <Link
+              href="/finding-property"
+              className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#001f3a] transition-colors mt-4"
+            >
+              View All Properties
+            </Link>
+          </>
+        ) : (
+          <div className="w-full text-center py-12">
+            <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+              Properties will be displayed here once available. Please check back soon or contact us for current investment opportunities.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#001f3a] transition-colors mt-6"
+            >
+              Contact Us for Investment Opportunities
+            </Link>
+          </div>
+        )}
+      </section>
+
       {/* Why invest with us */}
       <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Why invest with us
         </h2>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
           {/* Left side - Large card with image */}
-          <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] h-[384px] relative overflow-hidden">
+          <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] h-[384px] min-h-[300px] sm:min-h-[350px] lg:min-h-[384px] w-full min-w-0 relative overflow-hidden">
             <div className="absolute inset-0">
               <Image
                 src="/images/Investment Opportunities/2nd_Why_invest_with_us.png"
                 alt="Managed execution"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 unoptimized
               />
             </div>
@@ -159,12 +219,13 @@ export default function InvestmentOpportunitiesPage() {
         <div className="flex flex-col lg:flex-row gap-4 w-full max-w-[1420px]">
           {/* Property Card 1 */}
           <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col h-[320px]">
-            <div className="relative w-full h-[220px] flex-shrink-0">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0 flex-shrink-0">
               <Image
                 src="/images/Investment Opportunities/3rd_Current_Investment_Opportunities_img_-_1.png"
                 alt="London SE1 Riverside Apartments"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -181,12 +242,13 @@ export default function InvestmentOpportunitiesPage() {
 
           {/* Property Card 2 */}
           <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col h-[320px]">
-            <div className="relative w-full h-[220px] flex-shrink-0">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0 flex-shrink-0">
               <Image
                 src="/images/Investment Opportunities/3rd_Current_Investment_Opportunities_img_-_2.png"
                 alt="Manchester M3 City Tower Units"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -203,12 +265,13 @@ export default function InvestmentOpportunitiesPage() {
 
           {/* Property Card 3 */}
           <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col h-[320px]">
-            <div className="relative w-full h-[220px] flex-shrink-0">
+            <div className="relative w-full h-[220px] min-h-[220px] min-w-0 flex-shrink-0">
               <Image
                 src="/images/Investment Opportunities/3rd_Current_Investment_Opportunities_img_-_3.png"
                 alt="Birmingham B1 Jewellery Quarter Lofts"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 unoptimized
               />
             </div>
@@ -244,7 +307,7 @@ export default function InvestmentOpportunitiesPage() {
             <div className="hidden lg:block absolute left-[10px] right-[10px] top-[20px] h-px bg-[#002f57]/20" />
 
             {/* Step 1 */}
-            <div className="relative z-10 flex flex-col items-center text-center max-w-[280px]">
+            <div className="relative z-10 flex flex-col items-center text-center w-full lg:max-w-[280px]">
               <div className="bg-[#002f57] rounded-[20px] size-[40px] flex items-center justify-center mb-4">
                 <span className="font-crimson font-semibold text-[20px] leading-[30px] text-white">
                   01
@@ -261,7 +324,7 @@ export default function InvestmentOpportunitiesPage() {
             </div>
 
             {/* Step 2 */}
-            <div className="relative z-10 flex flex-col items-center text-center max-w-[280px]">
+            <div className="relative z-10 flex flex-col items-center text-center w-full lg:max-w-[280px]">
               <div className="bg-[#002f57] rounded-[20px] size-[40px] flex items-center justify-center mb-4">
                 <span className="font-crimson font-semibold text-[20px] leading-[30px] text-white">
                   02
@@ -279,7 +342,7 @@ export default function InvestmentOpportunitiesPage() {
             </div>
 
             {/* Step 3 */}
-            <div className="relative z-10 flex flex-col items-center text-center max-w-[280px]">
+            <div className="relative z-10 flex flex-col items-center text-center w-full lg:max-w-[280px]">
               <div className="bg-[#002f57] rounded-[20px] size-[40px] flex items-center justify-center mb-4">
                 <span className="font-crimson font-semibold text-[20px] leading-[30px] text-white">
                   03
@@ -296,7 +359,7 @@ export default function InvestmentOpportunitiesPage() {
             </div>
 
             {/* Step 4 */}
-            <div className="relative z-10 flex flex-col items-center text-center max-w-[280px]">
+            <div className="relative z-10 flex flex-col items-center text-center w-full lg:max-w-[280px]">
               <div className="bg-[#002f57] rounded-[20px] size-[40px] flex items-center justify-center mb-4">
                 <span className="font-crimson font-semibold text-[20px] leading-[30px] text-white">
                   04
@@ -313,7 +376,7 @@ export default function InvestmentOpportunitiesPage() {
             </div>
 
             {/* Step 5 */}
-            <div className="relative z-10 flex flex-col items-center text-center max-w-[280px]">
+            <div className="relative z-10 flex flex-col items-center text-center w-full lg:max-w-[280px]">
               <div className="bg-[#002f57] rounded-[20px] size-[40px] flex items-center justify-center mb-4">
                 <span className="font-crimson font-semibold text-[20px] leading-[30px] text-white">
                   05
@@ -333,7 +396,7 @@ export default function InvestmentOpportunitiesPage() {
       </section>
 
       {/* Due diligence & investor protections */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[144px] items-center mb-[120px]">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-5 lg:gap-[144px] items-center mb-[60px] lg:mb-[120px]">
         <div className="flex-1 max-w-[543px] space-y-[10px]">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Due diligence &amp; investor protections
@@ -346,25 +409,27 @@ export default function InvestmentOpportunitiesPage() {
           </p>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[636px] h-[450px] rounded-[26px] overflow-hidden">
+        <div className="flex-1 relative w-full max-w-[636px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Investment Opportunities/5th_Due_diligence__investor_protections.png"
             alt="Business team analyzing investment documents"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 636px"
             unoptimized
           />
         </div>
       </section>
 
       {/* Fees & legal note */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[120px] flex flex-col lg:flex-row gap-[144px] items-center">
-        <div className="flex-1 relative w-full max-w-[636px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
+      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row gap-5 lg:gap-[144px] items-center">
+        <div className="flex-1 relative w-full max-w-[636px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
           <Image
             src="/images/Investment Opportunities/6th_Fees__legal_note.png"
             alt="Real estate agent showing house model"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 636px"
             unoptimized
           />
         </div>

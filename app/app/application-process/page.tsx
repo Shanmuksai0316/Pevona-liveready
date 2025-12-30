@@ -156,7 +156,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Compliance & Tenant Protection */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[120px] mb-[140px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
+      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
         <div className="basis-0 grow min-w-px min-h-px space-y-4 max-w-[640px]">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Compliance &amp; Tenant Protection

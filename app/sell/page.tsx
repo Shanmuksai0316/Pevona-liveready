@@ -18,7 +18,7 @@ function Card({
 }) {
   return (
     <div
-      className={`relative rounded-[22px] overflow-hidden ${
+      className={`relative w-full min-w-0 rounded-[22px] overflow-hidden ${
         large
           ? "h-full min-h-[300px] sm:min-h-[400px] lg:min-h-[527px]"
           : small
@@ -27,7 +27,7 @@ function Card({
       }`}
     >
       {/* Image */}
-      <Image src={image} alt={text} fill className="object-cover" />
+      <Image src={image} alt={text} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" unoptimized />
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#002f57]/90 via-[#002f57]/40 to-transparent" />
@@ -49,23 +49,57 @@ export default async function SellPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero section */}
-      <section className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] overflow-hidden">
-        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
-          {/* Background image with gradient */}
-          <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
+      <section className="relative w-full h-[850px] lg:h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
+          {/* Mobile Background */}
+          <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">
+            <div className="relative w-full h-[850px] rounded-b-[24px] sm:rounded-b-[30px] overflow-hidden">
+              <Image
+                src="/images/sell.png"
+                alt="Sell property background mobile"
+                fill
+                className="object-cover"
+                sizes="100vw"
+                unoptimized
+              />
+            </div>
+          </div>
+
+          {/* Desktop Background */}
+          <div className="hidden lg:block absolute inset-0 z-0 -mx-[60px] lg:-mx-[80px] 1300:-mx-[80px] 1400:-mx-[80px] 1500:-mx-[100px] 1600:-mx-[130px]">
+            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
               <Image
                 src="/images/Sell/banner_bg_img.png"
                 alt="Modern property for sale"
                 fill
                 className="object-cover"
+                sizes="100vw"
+                unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/75 to-transparent" />
             </div>
           </div>
 
-          {/* Hero copy */}
-          <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
+          {/* Mobile Content - Center Aligned, Bottom 50px */}
+          <div className="lg:hidden relative flex items-end justify-center h-[850px] pb-[50px]">
+            <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
+              <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
+                Sell your property with clarity and confidence
+              </h1>
+              <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
+                From valuation to completion, each step is handled with clear communication, targeted
+                marketing and a structured sales process
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+              >
+                Book a Seller Consultation
+              </Link>
+            </div>
+          </div>
+
+          {/* Desktop Content - Original Layout */}
+          <div className="hidden lg:block relative max-w-[780px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] space-y-4 sm:space-y-6 text-white">
             <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Sell your property with clarity and confidence
             </h1>
@@ -82,6 +116,20 @@ export default async function SellPage() {
           </div>
         </div>
       </section>
+
+      {/* Properties List Section */}
+      <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px]">
+        <div className="max-w-[861px] mx-auto text-center space-y-4 mb-9">
+          <h2 className="font-crimson text-[32px] md:text-[66px] leading-tight md:leading-[66px] tracking-tight md:tracking-[-1.98px] text-[#002f57]">
+            Featured Properties
+          </h2>
+          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
+            Explore our current listings and find your perfect property.
+          </p>
+        </div>
+        <PropertiesFilterSection properties={properties} limit={6} />
+      </section>
+
 
       {/* Selling Overwhelming Section */}
       <SellingOverwhelmingSection />
@@ -237,12 +285,13 @@ export default async function SellPage() {
           </ul>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">
+        <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] min-w-0 rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">
           <Image
-            src="/images/Sell/2nd_sec_image_-_2.png"
+            src="/images/Sell/Marketing Strategy img.png"
             alt="Marketing strategy"
             fill
             className="object-cover"
+            unoptimized
           />
         </div>
       </section>
@@ -251,10 +300,11 @@ export default async function SellPage() {
       <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
         <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none order-2 lg:order-1">
           <Image
-            src="/images/Sell/2nd_sec_image_-_1.png"
+            src="/images/Sell/Legal & Compliance Support image.png"
             alt="Legal and compliance support"
             fill
             className="object-cover"
+            unoptimized
           />
         </div>
 
@@ -294,9 +344,9 @@ export default async function SellPage() {
           </Link>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">
+        <div className="flex-1 relative w-full max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] min-w-0 rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">
           <Image
-            src="/images/Sell/2nd_sec_image_-_1.png"
+            src="/images/Sell/Valuation sec image.png"
             alt="Market valuation"
             fill
             className="object-cover"
@@ -305,18 +355,7 @@ export default async function SellPage() {
         </div>
       </section>
 
-      {/* Properties List Section */}
-      <section className="max-w-[1440px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[120px]">
-        <div className="max-w-[861px] mx-auto text-center space-y-4 mb-9">
-          <h2 className="font-crimson text-[32px] md:text-[66px] leading-tight md:leading-[66px] tracking-tight md:tracking-[-1.98px] text-[#002f57]">
-            Featured Properties
-          </h2>
-          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-            Explore our current listings and find your perfect property.
-          </p>
-        </div>
-        <PropertiesFilterSection properties={properties} limit={6} />
-      </section>
+
     </div>
   );
 }

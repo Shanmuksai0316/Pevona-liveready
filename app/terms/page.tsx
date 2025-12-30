@@ -1,11 +1,11 @@
 export default function TermsPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
-      <div className="max-w-4xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-16">
-        <h1 className="font-crimson text-[40px] md:text-5xl font-bold text-[#002f57] mb-4">
+      <div className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] pt-[100px] sm:pt-[120px] md:pt-[150px] pb-8 sm:pb-12 md:pb-16">
+        <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[40px] lg:text-5xl font-bold text-[#002f57] mb-4">
           Pevona Ltd — Terms & Conditions
         </h1>
-        <p className="font-manrope text-gray-600 mb-12">Last Updated: 2025</p>
+        <p className="font-manrope text-[14px] sm:text-[16px] text-gray-600 mb-8 sm:mb-10 md:mb-12">Last Updated: 2025</p>
         
         <div className="prose prose-lg max-w-none">
           <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-12">
@@ -13,8 +13,8 @@ export default function TermsPage() {
             carefully before instructing us.
           </p>
           
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               1. Introduction
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -34,8 +34,8 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               2. The Company
             </h2>
             <div className="space-y-3 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -53,55 +53,55 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               3. Scope of Services
             </h2>
             
-            <div className="mb-8">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-6 sm:mb-7 md:mb-8">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Lettings Service Tiers
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
                 A comparison of our standard lettings service levels:
               </p>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse border border-gray-300 mb-6">
+              <div className="overflow-x-auto -mx-4 sm:mx-0">
+                <table className="w-full border-collapse border border-gray-300 mb-4 sm:mb-6 min-w-[600px]">
                   <thead>
                     <tr className="bg-[#002f57] text-white">
-                      <th className="border border-gray-300 px-4 py-3 text-left font-manrope font-semibold text-[14px] md:text-[16px]">Service Inclusion</th>
-                      <th className="border border-gray-300 px-4 py-3 text-center font-manrope font-semibold text-[14px] md:text-[16px]">Let-Only</th>
-                      <th className="border border-gray-300 px-4 py-3 text-center font-manrope font-semibold text-[14px] md:text-[16px]">Rent Collection</th>
-                      <th className="border border-gray-300 px-4 py-3 text-center font-manrope font-semibold text-[14px] md:text-[16px]">Full Management</th>
+                      <th className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 text-left font-manrope font-semibold text-[12px] sm:text-[14px] md:text-[16px]">Service Inclusion</th>
+                      <th className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 text-center font-manrope font-semibold text-[12px] sm:text-[14px] md:text-[16px]">Let-Only</th>
+                      <th className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 text-center font-manrope font-semibold text-[12px] sm:text-[14px] md:text-[16px]">Rent Collection</th>
+                      <th className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 text-center font-manrope font-semibold text-[12px] sm:text-[14px] md:text-[16px]">Full Management</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Marketing & Tenant Find</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Marketing & Tenant Find</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Referencing & Agreements</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Referencing & Agreements</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Rent Collection & Arrears</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Rent Collection & Arrears</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">No</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Maintenance Management</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Maintenance Management</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">No</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">No</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Inspections & Checkouts</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Inspections & Checkouts</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">No</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">No</td>
                       <td className="border border-gray-300 px-4 py-3 text-center font-manrope text-[14px] md:text-[16px] text-gray-700">Yes</td>
@@ -111,8 +111,8 @@ export default function TermsPage() {
               </div>
             </div>
 
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Additional Services
               </h3>
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -135,8 +135,8 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               4. Fees & Payments
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -152,12 +152,12 @@ export default function TermsPage() {
             </ul>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               5. Maintenance
             </h2>
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Routine Repairs
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -167,7 +167,7 @@ export default function TermsPage() {
               </p>
             </div>
             <div>
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Emergency Authority
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -177,13 +177,13 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               6. Responsibilities
             </h2>
             
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Landlord Obligations
               </h3>
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -194,8 +194,8 @@ export default function TermsPage() {
               </ul>
             </div>
 
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Tenant Obligations
               </h3>
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -206,7 +206,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Buyer & Seller Obligations
               </h3>
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -217,13 +217,13 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               7. Compliance
             </h2>
             
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Statutory Requirements
               </h3>
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -233,29 +233,29 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Material Information (Transparency)
               </h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
                     <tr className="bg-[#002f57] text-white">
-                      <th className="border border-gray-300 px-4 py-3 text-left font-manrope font-semibold text-[14px] md:text-[16px]">Information Type</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left font-manrope font-semibold text-[14px] md:text-[16px]">Requirement</th>
+                      <th className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 text-left font-manrope font-semibold text-[12px] sm:text-[14px] md:text-[16px]">Information Type</th>
+                      <th className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 text-left font-manrope font-semibold text-[12px] sm:text-[14px] md:text-[16px]">Requirement</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Tenure</td>
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Freehold / Leasehold / Commonhold</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Tenure</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Freehold / Leasehold / Commonhold</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Costs</td>
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Council Tax, Service Charges, Ground Rent</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Costs</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Council Tax, Service Charges, Ground Rent</td>
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Condition</td>
-                      <td className="border border-gray-300 px-4 py-3 font-manrope text-[14px] md:text-[16px] text-gray-700">Known Physical Defects, Safety Risks</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Condition</td>
+                      <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Known Physical Defects, Safety Risks</td>
                     </tr>
                   </tbody>
                 </table>
@@ -263,13 +263,13 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               8. Legal Terms
             </h2>
             
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Limitation of Liability
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -280,8 +280,8 @@ export default function TermsPage() {
               </p>
             </div>
 
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Termination of Services
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -291,7 +291,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Governing Law
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -300,8 +300,8 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               9. Contact Us
             </h2>
             <div className="space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">

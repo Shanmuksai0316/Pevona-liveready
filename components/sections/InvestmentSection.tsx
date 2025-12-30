@@ -7,41 +7,28 @@ export default function InvestmentSection() {
         relative w-full flex flex-col gap-[10px] items-center overflow-hidden
         py-[120px] sm:py-[160px] lg:py-[204px]
         mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]
+        px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
       "
     >
       {/* BACKGROUND IMAGE + STRIP */}
-      <div className="absolute left-1/2 top-0 w-full transform -translate-x-1/2">
+      <div className="absolute top-0 bottom-0 left-5 350:left-5 480:left-5 650:left-[60px] lg:left-[80px] 1300:left-[80px] 1400:left-[80px] 1500:left-[100px] 1600:left-[130px] right-5 350:right-5 480:right-5 650:right-[60px] lg:right-[80px] 1300:right-[80px] 1400:right-[80px] 1500:right-[100px] 1600:right-[130px] flex justify-center items-center">
+        <div className="relative w-full max-w-[1336px] h-full">
         <Image
           src="/images/investment_opportunities.webp"
           alt="Investment Background"
-          width={1336}
-          height={711}
-          className="
-            absolute left-1/2 top-0 object-cover transform -translate-x-1/2
-            w-full max-w-[1336px]
-          "
-          style={{
-            borderBottomRightRadius: '16px !important',
-            borderBottomLeftRadius: '16px !important',
-            overflow: 'hidden',
-          }}
+            fill
+            className="object-cover rounded-[16px]"
           unoptimized
         />
 
         <div
           className="
-            absolute left-1/2 transform -translate-x-1/2
-            w-full max-w-[1336px]
-            h-[64px] sm:h-[72px] lg:h-[80px]
+              absolute bottom-0 left-0 right-0
+              h-[100px] sm:h-[72px] lg:h-[80px]
             bg-[#29902E] flex items-center justify-center
-            top-[560px] sm:top-[600px] lg:top-[631px]
+              rounded-b-[16px]
             px-4
           "
-          style={{
-            borderBottomRightRadius: '16px !important',
-            borderBottomLeftRadius: '16px !important',
-            overflow: 'hidden',
-          }}
         >
           <p
             className="
@@ -54,6 +41,7 @@ export default function InvestmentSection() {
           >
             Market Research & Sourcing   -   Return on Investment & Financial Modelling   -   Legal Due Diligence   -   Portfolio Management
           </p>
+          </div>
         </div>
       </div>
 
@@ -63,7 +51,6 @@ export default function InvestmentSection() {
           relative z-10 flex flex-col gap-[10px] items-center justify-center
           text-center text-white w-full
           pt-[140px] sm:pt-[160px] lg:pt-[180px]
-          px-4
         "
       >
         <h2

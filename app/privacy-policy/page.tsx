@@ -1,11 +1,11 @@
 export default function PrivacyPolicyPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
-      <div className="max-w-4xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-16">
-        <h1 className="font-crimson text-[40px] md:text-5xl font-bold text-[#002f57] mb-4">
+      <div className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] pt-[100px] sm:pt-[120px] md:pt-[150px] pb-8 sm:pb-12 md:pb-16">
+        <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[40px] lg:text-5xl font-bold text-[#002f57] mb-4">
           Pevona Ltd — Privacy Policy
         </h1>
-        <p className="font-manrope text-gray-600 mb-12">Last Updated: 2025</p>
+        <p className="font-manrope text-[14px] sm:text-[16px] text-gray-600 mb-8 sm:mb-10 md:mb-12">Last Updated: 2025</p>
         
         <div className="prose prose-lg max-w-none">
           <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-12">
@@ -13,8 +13,8 @@ export default function PrivacyPolicyPage() {
             in accordance with the UK General Data Protection Regulation (UK GDPR).
           </p>
           
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               1. Who We Are
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -44,14 +44,14 @@ export default function PrivacyPolicyPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               2. Scope of Services
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
               This policy covers personal data processed across all our service lines, including:
             </p>
-            <ol className="list-decimal pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+              <ol className="list-decimal pl-4 sm:pl-5 md:pl-6 space-y-2 font-manrope text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[28px] text-gray-700">
               <li>Sales & Lettings Agency (Let-Only, Rent Collection, Full Management)</li>
               <li>Property Management</li>
               <li>Investment & Portfolio Management</li>
@@ -60,16 +60,16 @@ export default function PrivacyPolicyPage() {
             </ol>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               3. Data We Collect
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
               We collect personal data through the following methods:
             </p>
             
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 A. Data You Provide
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -83,8 +83,8 @@ export default function PrivacyPolicyPage() {
               </ul>
             </div>
 
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 B. Data From Third Parties
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -97,8 +97,8 @@ export default function PrivacyPolicyPage() {
               </ul>
             </div>
 
-            <div className="mb-6">
-              <h3 className="font-crimson text-[22px] md:text-2xl font-semibold text-[#002f57] mb-4">
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 C. Technical Data
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -121,8 +121,8 @@ export default function PrivacyPolicyPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               4. Lawful Bases for Processing
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -140,8 +140,8 @@ export default function PrivacyPolicyPage() {
             </ul>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               5. How We Use Your Data
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -157,8 +157,8 @@ export default function PrivacyPolicyPage() {
             </ul>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               6. Sharing Your Data
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -180,50 +180,50 @@ export default function PrivacyPolicyPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               7. Data Retention
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
               We retain your data only as long as necessary to fulfill the purposes we collected it for.
             </p>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-gray-300 mb-6">
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full border-collapse border border-gray-300 mb-4 sm:mb-6 min-w-[600px]">
                 <thead>
                   <tr className="bg-[#002f57] text-white">
-                    <th className="border border-gray-300 px-4 py-3 text-left font-manrope font-semibold text-[16px]">Data Type</th>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-manrope font-semibold text-[16px]">Retention Period</th>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-manrope font-semibold text-[16px]">Reason</th>
+                    <th className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 text-left font-manrope font-semibold text-[12px] sm:text-[14px] md:text-[16px]">Data Type</th>
+                    <th className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 text-left font-manrope font-semibold text-[12px] sm:text-[14px] md:text-[16px]">Retention Period</th>
+                    <th className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 text-left font-manrope font-semibold text-[12px] sm:text-[14px] md:text-[16px]">Reason</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Transaction Records</td>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">7 Years</td>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Tax (HMRC) & Legal Claims</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Transaction Records</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">7 Years</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Tax (HMRC) & Legal Claims</td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">AML / ID Checks</td>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">5 Years</td>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Money Laundering Regulations</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">AML / ID Checks</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">5 Years</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Money Laundering Regulations</td>
                   </tr>
                   <tr>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Tenancy Agreements</td>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">6 Years</td>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Limitation Act 1980</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Tenancy Agreements</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">6 Years</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Limitation Act 1980</td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Marketing Data</td>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Until Opt-out</td>
-                    <td className="border border-gray-300 px-4 py-3 font-manrope text-[16px] text-gray-700">Consent / Legitimate Interest</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Marketing Data</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Until Opt-out</td>
+                    <td className="border border-gray-300 px-2 sm:px-3 md:px-4 py-2 sm:py-3 font-manrope text-[12px] sm:text-[14px] md:text-[16px] text-gray-700">Consent / Legitimate Interest</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               8. Your Rights Under UK GDPR
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
@@ -241,8 +241,8 @@ export default function PrivacyPolicyPage() {
             </ul>
           </section>
 
-          <section className="mb-12">
-            <h2 className="font-crimson text-[28px] md:text-3xl font-semibold text-[#002f57] mb-6">
+          <section className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               9. Contact Us
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">

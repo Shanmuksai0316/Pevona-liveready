@@ -46,63 +46,67 @@ rental market with good long-term fundamentals.`,
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero */}
-      <section className="relative w-full overflow-hidden h-[850px] lg:min-h-[760px]">
-        {/* Desktop Layout */}
-        <div className="hidden lg:block relative max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[100px] lg:pt-[120px] pb-[80px]">
-          <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] rounded-b-[40px] overflow-hidden">
+      <section className="relative w-full h-[850px] lg:h-[760px] overflow-hidden">
+        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
+          {/* Mobile Background */}
+          <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">
+            <div className="relative w-full h-[850px] rounded-b-[24px] sm:rounded-b-[30px] overflow-hidden">
               <Image
-                src="/images/buy-guide/banner.png"
-                alt="Modern UK homes from above"
+                src="/images/buy-guide.png"
+                alt="Buy guide background mobile"
                 fill
                 className="object-cover"
+                sizes="100vw"
                 unoptimized
               />
             </div>
           </div>
 
-          <div className="relative max-w-[700px] mt-10 space-y-6 text-white">
-            <h1 className="font-crimson text-[66px] leading-[1.05] tracking-[-0.06em]">
+          {/* Desktop Background */}
+          <div className="hidden lg:block absolute inset-0 z-0 -mx-[60px] lg:-mx-[80px] 1300:-mx-[80px] 1400:-mx-[80px] 1500:-mx-[100px] 1600:-mx-[130px]">
+            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
+              <Image
+                src="/images/buy-guide/banner.png"
+                alt="Modern UK homes from above"
+                fill
+                className="object-cover"
+                sizes="100vw"
+                unoptimized
+              />
+            </div>
+          </div>
+
+          {/* Mobile Content - Center Aligned, Bottom 50px */}
+          <div className="lg:hidden relative flex items-end justify-center h-[850px] pb-[50px]">
+            <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
+              <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
+                Buy with Clarity – Guidance, Areas &amp; Property Search in One Place
+              </h1>
+              <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
+                Your complete buying hub — a simple step-by-step guide, quick area insights and an easy
+                way to find the right property across the UK.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+              >
+                Book a Consultation
+              </Link>
+            </div>
+          </div>
+
+          {/* Desktop Content - Original Layout */}
+          <div className="hidden lg:block relative max-w-[780px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] space-y-4 sm:space-y-6 text-white">
+            <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Buy with Clarity – Guidance, Areas &amp; Property Search in One Place
             </h1>
-            <p className="font-manrope text-[18px] leading-[28px]">
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               Your complete buying hub — a simple step-by-step guide, quick area insights and an easy
               way to find the right property across the UK.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-            >
-              Book a Consultation
-            </Link>
-          </div>
-        </div>
-
-        {/* Mobile Layout - Split Design */}
-        <div className="lg:hidden flex flex-col h-[850px]">
-          {/* Top Half: Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-t-[20px]">
-            <Image
-              src="/images/buy-guide/banner.png"
-              alt="Modern UK homes from above"
-              fill
-              className="object-cover"
-              unoptimized
-            />
-          </div>
-
-          {/* Bottom Half: Dark Blue with Text */}
-          <div className="relative w-full h-[425px] bg-[#002f57] rounded-b-[20px] flex flex-col justify-center items-center px-5 sm:px-8 py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <h1 className="font-crimson text-[28px] sm:text-[32px] leading-tight tracking-tight max-w-[600px]">
-              Buy with Clarity – Guidance, Areas &amp; Property Search in One Place
-            </h1>
-            <p className="font-manrope text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-left max-w-[600px]">
-              Your complete buying hub — a simple step-by-step guide, quick area insights and an easy
-              way to find the right property across the UK.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Consultation
             </Link>
@@ -111,7 +115,7 @@ rental market with good long-term fundamentals.`,
       </section>
 
       {/* Quick Buying Guide – steps */}
-      <section className="max-w-[1320px] mx-auto px-4 lg:px-0 lg:pl-[80px] lg:pr-[80px] 1300:pl-[80px] 1300:pr-[80px] 1400:pl-[80px] 1400:pr-[80px] 1500:pl-[100px] 1500:pr-[100px] 1600:pl-[130px] 1600:pr-[130px] mt-[120px] flex flex-col lg:flex-row gap-[48px] items-start">
+      <section className="max-w-[1320px] mx-auto px-4 lg:px-0 lg:pl-[80px] lg:pr-[80px] 1300:pl-[80px] 1300:pr-[80px] 1400:pl-[80px] 1400:pr-[80px] 1500:pl-[100px] 1500:pr-[100px] 1600:pl-[130px] 1600:pr-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[48px] items-start">
         {/* Left: intro + image */}
         <div className="lg:w-[40%] flex flex-col gap-8">
           <div className="space-y-4 text-center lg:text-left">
@@ -155,7 +159,7 @@ rental market with good long-term fundamentals.`,
       </section>
 
       {/* How we help section */}
-      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[140px] flex flex-col lg:flex-row items-center gap-[70px]">
+      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row items-center gap-[70px]">
         <div className="lg:w-[50%] space-y-8">
           <div className="space-y-4">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-0.06em] text-[#002f57]">
@@ -201,7 +205,7 @@ rental market with good long-term fundamentals.`,
       </section>
 
       {/* Area Insights section */}
-      <section className="mt-[160px] w-full bg-[#002f57] py-[80px]">
+      <section className="mt-[60px] lg:mt-[160px] w-full bg-[#002f57] py-[80px]">
         <div className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] text-white space-y-10">
           <div className="text-center space-y-3">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-0.06em]">
@@ -219,11 +223,10 @@ rental market with good long-term fundamentals.`,
               <button
                 key={city}
                 type="button"
-                className={`px-4 py-2 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] ${
-                  activeCity === city
-                    ? "bg-white text-[#002f57]"
-                    : "bg-white/20 text-white hover:bg-white/30"
-                }`}
+                className={`px-4 py-2 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] ${activeCity === city
+                  ? "bg-white text-[#002f57]"
+                  : "bg-white/20 text-white hover:bg-white/30"
+                  }`}
                 onClick={() => setActiveCity(city)}
               >
                 {city.toUpperCase()}
@@ -263,7 +266,7 @@ rental market with good long-term fundamentals.`,
       </section>
 
       {/* For homebuyers / investors cards */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[120px] flex flex-col lg:flex-row gap-4">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-4">
         <div className="relative flex-1 min-h-[360px] rounded-[24px] overflow-hidden">
           <Image
             src="/images/buy-guide/manchester.png"
@@ -310,7 +313,7 @@ rental market with good long-term fundamentals.`,
       </section>
 
       {/* Preparing to Buy checklist */}
-      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[140px] mb-[120px] flex flex-col lg:flex-row items-center gap-[70px]">
+      <section className="max-w-[1560px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row items-center gap-[70px]">
         <div className="lg:w-[50%] relative h-[320px] rounded-[24px] overflow-hidden">
           <Image
             src="/images/buy-guide/checklist.png"

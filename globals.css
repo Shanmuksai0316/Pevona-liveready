@@ -2,22 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1 {
-    font-size: clamp(2.8125rem, 2.1875rem + 3.125vw, 3.125rem) !important;
-    line-height: 1.2 !important;
-  }
-  
-  h2 {
-    font-size: clamp(1.75rem, 1.5rem + 1.25vw, 1.875rem) !important;
-  }
+ @layer base {
+ 
   
   /* Apply Manrope font to all paragraphs and lists */
-  p {
-    font-family: 'Manrope', sans-serif !important;
-    font-size: clamp(0.9375rem, 0.8125rem + 0.625vw, 1rem) !important;
-  }
-  
   ul, ol {
     font-family: 'Manrope', sans-serif !important;
   }
@@ -51,6 +39,23 @@ body {
 
 .font-crimson {
   font-family: 'Crimson Text', serif;
+}
+
+@media screen and (max-width: 1600px) {   
+
+h1 {
+    font-size: clamp(2.8125rem, 2.1875rem + 3.125vw, 3.125rem) !important;
+    line-height: 1.2 !important;
+  }
+h2 {
+    font-size: clamp(1.875rem, 1.1786rem + 2.3214vw, 3.5rem) !important;
+  } 
+  p {
+    font-family: 'Manrope', sans-serif !important;
+    font-size: clamp(0.9375rem, 0.8125rem + 0.625vw, 1rem) !important;
+  }
+
+
 }
 
 /* Mobile heading size corrections */
