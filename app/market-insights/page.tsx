@@ -59,12 +59,6 @@ export default async function MarketInsightsPage() {
               Simple updates and clear snapshots to help you understand today's UK property
               market.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
-            >
-              Book a Consultation
-            </Link>
         </div>
       </section>
 

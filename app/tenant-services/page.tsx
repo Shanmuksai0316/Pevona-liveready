@@ -5,7 +5,7 @@ export default function TenantServicesPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero section */}
-      <section className="relative w-full h-[850px] lg:h-[760px] overflow-hidden">
+      <section className="relative w-full h-[850px] lg:h-[760px] overflow-hidden rounded-b-[26px]">
         <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
           {/* Mobile Background */}
           <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">

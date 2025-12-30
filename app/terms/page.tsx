@@ -41,8 +41,9 @@ export default function TermsPage() {
             <div className="space-y-3 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
               <p className="font-semibold text-gray-900">Pevona Ltd</p>
               <p>
-                123 Property Plaza<br />
-                London, SW1A 1AA
+                Flat 14, Burgundy House<br />
+                25 Liberty Bridge Road<br />
+                London, E20 1AQ
               </p>
               <ul className="list-disc pl-6 space-y-1">
                 <li>Company Registration: 12345678</li>
@@ -306,10 +307,13 @@ export default function TermsPage() {
             </h2>
             <div className="space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
               <p>
-                Email: <a href="mailto:admin-pev@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">admin-pev@pevonaltd.co.uk</a>
+                Address: Flat 14, Burgundy House, 25 Liberty Bridge Road, London, E20 1AQ.
               </p>
               <p>
-                Phone: <a href="tel:+442071234567" className="text-[#0073B5] hover:underline">+44 (0) 20 7123 4567</a>
+                Email: <a href="mailto:pev@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">pev@pevonaltd.co.uk</a>
+              </p>
+              <p>
+                Phone: <a href="tel:+4420386329485" className="text-[#0073B5] hover:underline">+44-203-8632-9485</a> | <a href="tel:+447944228811" className="text-[#0073B5] hover:underline">+447944-228811</a>
               </p>
               <p className="mt-4">
                 Formal notices should be sent to the registered address above.

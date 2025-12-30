@@ -268,8 +268,8 @@ export default function ContactPage() {
                   <h3 className="font-crimson font-semibold text-[18px] sm:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] lg:leading-[32px] text-[#002f57]">
                     Email
                   </h3>
-                  <a href="mailto:pebans@pevonaltd.co.uk" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
-                    pebans@pevonaltd.co.uk
+                  <a href="mailto:pev@pevonaltd.co.uk" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
+                    pev@pevonaltd.co.uk
                   </a>
                 </div>
               </div>

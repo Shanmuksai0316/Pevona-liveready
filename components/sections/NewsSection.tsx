@@ -25,16 +25,11 @@ export default async function NewsSection() {
             Discover market insights, smart investments, and modern living ideas shaping the future of real estate.
           </p>
         </div>
-        <Link href="/blog" className="flex-shrink-0">
-          <button className="bg-[#29902e] px-[10px] py-[10px] rounded-[8px] w-full sm:w-[106px] h-[48px]">
-            <span className="font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white">View All</span>
-          </button>
-        </Link>
       </div>
       <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-[26px] items-stretch lg:items-center justify-center w-full">
         {/* Left: Large card with image */}
         {firstBlog && (
-          <div className="w-full lg:flex-1 bg-white border border-[rgba(0,0,0,0.12)] flex flex-col gap-4 sm:gap-6 lg:gap-[26px] items-center p-3 sm:p-4 lg:p-[5px] rounded-[12px] sm:rounded-[16px]">
+          <div className={`w-full lg:flex-1 bg-white border border-[rgba(0,0,0,0.12)] flex flex-col gap-4 sm:gap-6 lg:gap-[26px] items-center p-3 sm:p-4 lg:p-[5px] rounded-[12px] sm:rounded-[16px] ${blogList.length === 1 ? 'max-w-[600px] mx-auto' : ''}`}>
             <Link href={`/blog/${firstBlog.attributes.slug}`} className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[465px] rounded-[10px] sm:rounded-[12px] overflow-hidden">
               <Image
                 src={getImageUrl(firstBlog.attributes.featured_image)}

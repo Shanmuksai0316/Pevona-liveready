@@ -185,7 +185,7 @@ rental market with good long-term fundamentals.`,
 
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center h-[48px] px-6 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] transition-colors"
+            className="inline-flex items-center justify-center h-[48px] px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#003d70] transition-colors"
           >
             Book a Consultation
           </Link>
@@ -337,7 +337,7 @@ rental market with good long-term fundamentals.`,
           </ul>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center h-[48px] px-6 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] transition-colors"
+            className="inline-flex items-center justify-center h-[48px] px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#003d70] transition-colors"
           >
             Book a Consultation
           </Link>

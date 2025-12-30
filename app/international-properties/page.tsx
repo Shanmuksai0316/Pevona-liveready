@@ -29,12 +29,6 @@ export default function InternationalPropertiesPage() {
               Explore high-growth markets, diversify your portfolio, and access
               exclusive development opportunities across Africa and Europe.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-            >
-              Explore Projects
-            </Link>
           </div>
         </div>
       </section>
@@ -63,12 +57,6 @@ export default function InternationalPropertiesPage() {
               Explore high-growth markets, diversify your portfolio, and access
               exclusive development opportunities across Africa and Europe.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-            >
-              Explore Projects
-            </Link>
           </div>
         </div>
       </section>

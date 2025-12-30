@@ -30,7 +30,7 @@ export default async function FeaturedProperties() {
         </div>
       </div>
       <Link href="/properties">
-        <button className="bg-[#29902e] px-[10px] py-[10px] rounded-[8px] w-[223px] h-[48px]">
+        <button className="bg-[#002f57] px-[10px] py-[10px] rounded-[8px] w-[223px] h-[48px] hover:bg-[#003d70] transition-colors">
           <span className="font-manrope font-semibold text-[18px] leading-[28px] text-white">View All Properties</span>
         </button>
       </Link>

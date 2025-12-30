@@ -681,7 +681,7 @@ export default function AboutUsPage() {
             {
               title: "Transparent Process",
               description: "Every step is clear, compliant, and designed to build lasting trust.",
-              image: "/images/Transparent Process.png",
+              image: "/images/Market Insights/Market_Insights_blog_-3.png",
             },
             {
               title: "Compliance First",

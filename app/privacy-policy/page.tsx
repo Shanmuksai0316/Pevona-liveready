@@ -25,9 +25,9 @@ export default function PrivacyPolicyPage() {
                 <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">Registered Address</p>
                 <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
                   Pevona Ltd<br />
-                  123 Property Plaza<br />
-                  London, UK<br />
-                  SW1A 1AA
+                  Flat 14, Burgundy House<br />
+                  25 Liberty Bridge Road<br />
+                  London, E20 1AQ
                 </p>
               </div>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
               <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">Data Protection Officer (DPO)</p>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
                 Peter Banyong<br />
-                Email: <a href="mailto:dpo@pevona.com" className="text-[#0073B5] hover:underline">dpo@pevona.com</a><br />
+                Email: <a href="mailto:pev@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">pev@pevonaltd.co.uk</a><br />
                 Phone: <a href="tel:+442071234567" className="text-[#0073B5] hover:underline">+44 (0) 20 7123 4567</a>
               </p>
             </div>
@@ -251,10 +251,13 @@ export default function PrivacyPolicyPage() {
             </p>
             <div className="space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
               <p>
-                Email: <a href="mailto:privacy@pevona.com" className="text-[#0073B5] hover:underline">privacy@pevona.com</a>
+                Address: Flat 14, Burgundy House, 25 Liberty Bridge Road, London, E20 1AQ.
               </p>
               <p>
-                Phone: <a href="tel:+442071234567" className="text-[#0073B5] hover:underline">+44 (0) 20 7123 4567</a>
+                Email: <a href="mailto:pev@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">pev@pevonaltd.co.uk</a>
+              </p>
+              <p>
+                Phone: <a href="tel:+4420386329485" className="text-[#0073B5] hover:underline">+44-203-8632-9485</a> | <a href="tel:+447944228811" className="text-[#0073B5] hover:underline">+447944-228811</a>
               </p>
             </div>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">

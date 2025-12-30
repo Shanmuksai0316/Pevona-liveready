@@ -183,7 +183,7 @@ export default function PropertiesFilter({
         <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
           <button
             type="button"
-            className="h-[44px] sm:h-[48px] px-4 sm:px-5 bg-[#29902E] rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white hover:bg-[#0073B5] transition-colors flex-1 sm:flex-initial"
+            className="h-[44px] sm:h-[48px] px-4 sm:px-5 bg-[#002f57] rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white hover:bg-[#003d70] transition-colors flex-1 sm:flex-initial"
           >
             Apply
           </button>

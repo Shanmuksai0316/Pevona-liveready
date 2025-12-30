@@ -707,16 +707,22 @@ export default function BueaCameroonProject() {
                 Resources
               </h2>
               <ul className="space-y-3 sm:space-y-4">
-                <li>
+                <li className="hidden">
                   <a href="#" className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline">• Project Brochure - [Download PDF]</a>
                 </li>
                 <li>
-                  <a href="#" className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline">• Floor Plans - [Download PDF]</a>
+                  <a 
+                    href="/images/International-Properties/Shopping Centre Buea Cameroon - PDF file (2).pdf" 
+                    download="Shopping Centre Buea Cameroon - PDF file (2).pdf"
+                    className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline hover:text-[#003d70] transition-colors"
+                  >
+                    • Floor Plans - [Download PDF]
+                  </a>
                 </li>
-                <li>
+                <li className="hidden">
                   <a href="#" className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline">• Sales Pack - [Send via Email]</a>
                 </li>
-                <li>
+                <li className="hidden">
                   <a href="#" className="font-manrope text-[#002f57] text-[14px] sm:text-[16px] underline">• Investment Overview - [Send via Email]</a>
                   </li>
               </ul>

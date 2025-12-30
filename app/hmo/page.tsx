@@ -96,7 +96,7 @@ export default function HMOPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#237a27] transition-colors"
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
               >
                 Book a Compliance Consultation
               </Link>
@@ -113,7 +113,7 @@ export default function HMOPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#237a27] transition-colors"
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
               >
                 Request a Management Quote
               </Link>
@@ -130,7 +130,7 @@ export default function HMOPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#237a27] transition-colors"
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
               >
                 Request a Management Quote
               </Link>
@@ -147,7 +147,7 @@ export default function HMOPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#237a27] transition-colors"
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
               >
                 Book a Conversion Consultation
               </Link>
@@ -164,7 +164,7 @@ export default function HMOPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#237a27] transition-colors"
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
               >
                 Report a Repair
               </Link>

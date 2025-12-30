@@ -180,7 +180,7 @@ export default function PropertiesFilterSection({
           <div className="flex items-center gap-4">
             <button
               type="button"
-              className="h-[48px] px-5 bg-[#29902E] rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] text-white hover:bg-[#0073B5] transition-colors"
+              className="h-[48px] px-5 bg-[#002f57] rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] text-white hover:bg-[#003d70] transition-colors"
             >
               Apply
             </button>
@@ -237,7 +237,7 @@ export default function PropertiesFilterSection({
       <div className="mt-[36px] flex justify-center">
         <Link
           href="/properties"
-          className="inline-flex items-center justify-center h-[48px] px-6 rounded-[8px] bg-[#29902E] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] transition-colors"
+          className="inline-flex items-center justify-center h-[48px] px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#003d70] transition-colors"
         >
           View More
         </Link>

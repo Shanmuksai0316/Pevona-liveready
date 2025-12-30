@@ -152,7 +152,7 @@ export default async function SellPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-[#22C55E] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#16A34A] transition-colors"
+              className="inline-block bg-[#002f57] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#003d70] transition-colors"
             >
               Start Your Sale
             </Link>
@@ -338,7 +338,7 @@ export default async function SellPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block mt-4 sm:mt-6 bg-[#22C55E] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#16A34A] transition-all duration-300 hover:shadow-lg hover:scale-105"
+            className="inline-block mt-4 sm:mt-6 bg-[#002f57] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#003d70] transition-all duration-300 hover:shadow-lg hover:scale-105"
           >
             Request Valuation
           </Link>
