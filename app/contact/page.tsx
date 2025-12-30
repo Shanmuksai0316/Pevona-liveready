@@ -75,7 +75,14 @@ export default function ContactPage() {
         // Reset success message after 5 seconds
         setTimeout(() => setSubmitStatus("idle"), 5000);
       } else {
-        const errorData = await response.json().catch(() => ({}));
+        let errorData;
+        try {
+          errorData = await response.json();
+        } catch (e) {
+          const text = await response.text().catch(() => "Unable to read error response");
+          errorData = { error: "Failed to parse error response", rawResponse: text };
+        }
+        
         console.error("Form submission error:", response.status, errorData);
         // Log more details for debugging
         console.error("Error details:", {
@@ -85,6 +92,7 @@ export default function ContactPage() {
           submittedData: { name, email, phone: phone ? "provided" : "missing", subject, message: message ? "provided" : "missing" },
           strapiUrl: errorData.strapiUrl,
           hasToken: errorData.hasToken,
+          errorMessage: errorData.message || errorData.error,
         });
         setSubmitStatus("error");
       }

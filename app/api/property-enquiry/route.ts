@@ -188,16 +188,25 @@ export async function POST(request: NextRequest) {
     console.error("API error:", error);
     const errorMessage = error instanceof Error ? error.message : "Unknown error";
     const errorStack = error instanceof Error ? error.stack : undefined;
+    const errorName = error instanceof Error ? error.name : "Error";
+    
     console.error("Error details:", {
+      name: errorName,
       message: errorMessage,
       stack: errorStack,
       error: error,
+      strapiUrl: STRAPI_URL,
+      hasToken: !!STRAPI_API_TOKEN,
     });
+    
     return NextResponse.json(
       { 
         error: "Internal server error",
         message: errorMessage,
-        details: process.env.NODE_ENV === "development" ? errorStack : undefined,
+        errorName: errorName,
+        strapiUrl: STRAPI_URL,
+        hasToken: !!STRAPI_API_TOKEN,
+        details: process.env.NODE_ENV === "development" ? errorStack : "Check server logs for details",
       },
       { status: 500 }
     );
