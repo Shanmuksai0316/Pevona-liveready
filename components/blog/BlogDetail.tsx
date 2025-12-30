@@ -64,11 +64,6 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
     <div className="container mx-auto px-6 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 max-w-7xl">
       {/* Header */}
       <header className="mb-6 sm:mb-8 text-center">
-        {attributes.category && (
-          <span className="inline-block bg-pevona-dark text-white text-sm font-manrope px-3 py-1 rounded-full mb-4">
-            {attributes.category}
-          </span>
-        )}
         <h1 className="font-crimson text-2xl sm:text-3xl md:text-4xl font-bold text-pevona-dark mb-4">
           {attributes.title}
         </h1>
