@@ -3,11 +3,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { fetchStrapi } from "@/lib/strapi";
+
+interface StrapiTestimonial {
+  id: number;
+  attributes: {
+    title: string;
+    quote: string;
+    name: string;
+    order?: number;
+    publishedAt?: string;
+  };
+}
 
 export default function AboutUsPage() {
   const [activeServiceTab, setActiveServiceTab] = useState("For Landlords");
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const testimonialScrollRef = useRef<HTMLDivElement | null>(null);
+  const [strapiTestimonials, setStrapiTestimonials] = useState<Array<{
+    title: string;
+    quote: string;
+    author: string;
+  }>>([]);
 
   // Mouse drag scrolling states
   const [isDragging, setIsDragging] = useState(false);
@@ -95,7 +112,8 @@ export default function AboutUsPage() {
     },
   ];
 
-  const testimonials = [
+  // Hardcoded testimonials (keep as is)
+  const hardcodedTestimonials = [
     {
       title: "Exceeded All Expectations!",
       quote:
@@ -121,6 +139,49 @@ export default function AboutUsPage() {
       author: "James T.",
     },
   ];
+
+  // Fetch testimonials from Strapi
+  useEffect(() => {
+    async function fetchTestimonials() {
+      try {
+        const response = await fetchStrapi<StrapiTestimonial[]>(
+          "/api/testimonials?populate=*&sort=order:asc,publishedAt:desc"
+        );
+        
+        if (response?.data) {
+          // Convert Strapi testimonials to the format used by the component
+          const formatted = response.data
+            .filter((t) => t.attributes.publishedAt) // Only published testimonials
+            .map((t) => {
+              // Convert richtext to plain text (remove HTML tags)
+              const quoteText = t.attributes.quote
+                .replace(/<[^>]*>/g, "") // Remove HTML tags
+                .replace(/&nbsp;/g, " ") // Replace &nbsp; with space
+                .replace(/&amp;/g, "&") // Replace &amp; with &
+                .replace(/&lt;/g, "<") // Replace &lt; with <
+                .replace(/&gt;/g, ">") // Replace &gt; with >
+                .replace(/&quot;/g, '"') // Replace &quot; with "
+                .trim();
+
+              return {
+                title: t.attributes.title,
+                quote: quoteText,
+                author: t.attributes.name,
+              };
+            });
+          
+          setStrapiTestimonials(formatted);
+        }
+      } catch (error) {
+        console.error("Failed to fetch testimonials:", error);
+      }
+    }
+
+    fetchTestimonials();
+  }, []);
+
+  // Combine hardcoded and Strapi testimonials
+  const testimonials = [...hardcodedTestimonials, ...strapiTestimonials];
 
   // Update active testimonial based on scroll position
   useEffect(() => {
