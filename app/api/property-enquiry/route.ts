@@ -11,7 +11,17 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
+    let body;
+    try {
+      body = await request.json();
+    } catch (parseError) {
+      console.error("Failed to parse request body:", parseError);
+      return NextResponse.json(
+        { error: "Invalid request body", details: parseError instanceof Error ? parseError.message : "Unknown error" },
+        { status: 400 }
+      );
+    }
+    
     const { name, email, phone, message, propertySlug, propertyTitle, subject } = body;
 
     // Validate required fields
@@ -81,14 +91,29 @@ export async function POST(request: NextRequest) {
       dataFields: Object.keys(enquiryData.data),
     });
 
-    const strapiResponse = await fetch(`${STRAPI_URL}/api/property-enquiries`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${STRAPI_API_TOKEN}`,
-      },
-      body: JSON.stringify(enquiryData),
-    });
+    let strapiResponse;
+    try {
+      strapiResponse = await fetch(`${STRAPI_URL}/api/property-enquiries`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${STRAPI_API_TOKEN}`,
+        },
+        body: JSON.stringify(enquiryData),
+      });
+    } catch (fetchError) {
+      console.error("Failed to connect to Strapi:", fetchError);
+      const errorMessage = fetchError instanceof Error ? fetchError.message : "Unknown network error";
+      return NextResponse.json(
+        { 
+          error: "Failed to connect to Strapi backend",
+          message: errorMessage,
+          strapiUrl: STRAPI_URL,
+          hasToken: !!STRAPI_API_TOKEN,
+        },
+        { status: 500 }
+      );
+    }
 
     const responseText = await strapiResponse.text();
     console.log("Strapi response status:", strapiResponse.status);
@@ -161,8 +186,19 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     console.error("API error:", error);
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    const errorStack = error instanceof Error ? error.stack : undefined;
+    console.error("Error details:", {
+      message: errorMessage,
+      stack: errorStack,
+      error: error,
+    });
     return NextResponse.json(
-      { error: "Internal server error" },
+      { 
+        error: "Internal server error",
+        message: errorMessage,
+        details: process.env.NODE_ENV === "development" ? errorStack : undefined,
+      },
       { status: 500 }
     );
   }
