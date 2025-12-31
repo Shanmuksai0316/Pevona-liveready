@@ -158,8 +158,14 @@ export async function POST(request: NextRequest) {
       console.log("Successfully saved to Strapi:", savedEnquiry.data?.id);
     } catch (e) {
       console.error("Failed to parse Strapi response:", e);
+      console.error("Response text that failed to parse:", responseText);
       return NextResponse.json(
-        { error: "Failed to parse response from Strapi", details: responseText },
+        { 
+          error: "Failed to parse response from Strapi", 
+          details: responseText.substring(0, 500),
+          strapiUrl: STRAPI_URL,
+          hasToken: !!STRAPI_API_TOKEN,
+        },
         { status: 500 }
       );
     }
@@ -197,19 +203,37 @@ export async function POST(request: NextRequest) {
       error: error,
       strapiUrl: STRAPI_URL,
       hasToken: !!STRAPI_API_TOKEN,
+      env: {
+        NODE_ENV: process.env.NODE_ENV,
+        hasStrapiUrl: !!STRAPI_URL,
+        hasStrapiToken: !!STRAPI_API_TOKEN,
+      },
     });
     
-    return NextResponse.json(
-      { 
-        error: "Internal server error",
-        message: errorMessage,
-        errorName: errorName,
-        strapiUrl: STRAPI_URL,
-        hasToken: !!STRAPI_API_TOKEN,
-        details: process.env.NODE_ENV === "development" ? errorStack : "Check server logs for details",
-      },
-      { status: 500 }
-    );
+    // Ensure we always return a valid JSON response
+    try {
+      return NextResponse.json(
+        { 
+          error: "Internal server error",
+          message: errorMessage,
+          errorName: errorName,
+          strapiUrl: STRAPI_URL,
+          hasToken: !!STRAPI_API_TOKEN,
+          details: process.env.NODE_ENV === "development" ? errorStack : "Check server logs for details",
+        },
+        { status: 500 }
+      );
+    } catch (jsonError) {
+      // Fallback if JSON.stringify fails
+      console.error("Failed to create JSON response:", jsonError);
+      return new NextResponse(
+        `Internal server error: ${errorMessage}`,
+        { 
+          status: 500,
+          headers: { "Content-Type": "text/plain" },
+        }
+      );
+    }
   }
 }
 
