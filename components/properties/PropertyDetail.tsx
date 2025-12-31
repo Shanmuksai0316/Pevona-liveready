@@ -18,6 +18,49 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
+  // Categorize documents from the documents array
+  const categorizeDocument = (doc: any): string | null => {
+    const name = (doc.attributes?.name || doc.attributes?.alternativeText || "").toLowerCase();
+    const url = (doc.attributes?.url || "").toLowerCase();
+    const fullText = `${name} ${url}`;
+
+    if (fullText.includes("epc") || fullText.includes("energy performance")) {
+      return "epc";
+    }
+    if (fullText.includes("gas safety") || fullText.includes("gas")) {
+      return "gas";
+    }
+    if (fullText.includes("eicr") || fullText.includes("electrical") || fullText.includes("electrical safety")) {
+      return "electrical";
+    }
+    if (fullText.includes("hmo") || fullText.includes("licence") || fullText.includes("license")) {
+      return "hmo";
+    }
+    return null;
+  };
+
+  // Get documents from the documents array, categorized
+  const allDocuments = (attributes.documents?.data as any[]) || [];
+  
+  // Get IDs of specific field documents to avoid duplicates
+  const specificDocIds = new Set([
+    attributes.epc_document?.data?.id,
+    attributes.gas_safety_certificate?.data?.id,
+    attributes.electrical_safety_report?.data?.id,
+    attributes.hmo_licence?.data?.id,
+  ].filter(Boolean));
+
+  // Filter out documents that are already in specific fields
+  const filteredDocuments = allDocuments.filter((doc) => !specificDocIds.has(doc.id));
+  
+  const categorizedDocs = {
+    epc: filteredDocuments.filter((doc) => categorizeDocument(doc) === "epc"),
+    gas: filteredDocuments.filter((doc) => categorizeDocument(doc) === "gas"),
+    electrical: filteredDocuments.filter((doc) => categorizeDocument(doc) === "electrical"),
+    hmo: filteredDocuments.filter((doc) => categorizeDocument(doc) === "hmo"),
+    other: filteredDocuments.filter((doc) => !categorizeDocument(doc)),
+  };
+
   const addressParts = [
     attributes.address,
     attributes.city,
@@ -483,19 +526,39 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                 Documents & Certifications
               </h2>
               <div className="space-y-3">
-                {attributes.epc_document?.data ? (
-                  <a
-                    href={getImageUrl(attributes.epc_document.data)}
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between py-3 border-b border-gray-100"
-                  >
-                    <span className="font-manrope text-sm text-gray-800">
-                      Energy Performance Certificate (EPC)
-                    </span>
-                    <span className="font-manrope text-sm text-pevona-green">Download</span>
-                  </a>
+                {/* Energy Performance Certificate (EPC) */}
+                {(attributes.epc_document?.data || categorizedDocs.epc.length > 0) ? (
+                  <>
+                    {attributes.epc_document?.data && (
+                      <a
+                        href={getImageUrl(attributes.epc_document.data)}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between py-3 border-b border-gray-100"
+                      >
+                        <span className="font-manrope text-sm text-gray-800">
+                          {attributes.epc_document.data.attributes?.name || attributes.epc_document.data.attributes?.alternativeText || "Energy Performance Certificate (EPC)"}
+                        </span>
+                        <span className="font-manrope text-sm text-pevona-green">Download</span>
+                      </a>
+                    )}
+                    {categorizedDocs.epc.map((doc) => (
+                      <a
+                        key={doc.id}
+                        href={getImageUrl(doc)}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between py-3 border-b border-gray-100"
+                      >
+                        <span className="font-manrope text-sm text-gray-800">
+                          {doc.attributes?.name || doc.attributes?.alternativeText || "Energy Performance Certificate (EPC)"}
+                        </span>
+                        <span className="font-manrope text-sm text-pevona-green">Download</span>
+                      </a>
+                    ))}
+                  </>
                 ) : (
                   <div className="flex items-center justify-between py-3 border-b border-gray-100">
                     <span className="font-manrope text-sm text-gray-800">
@@ -504,19 +567,40 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     <span className="font-manrope text-sm text-gray-500">-</span>
                   </div>
                 )}
-                {attributes.gas_safety_certificate?.data ? (
-                  <a
-                    href={getImageUrl(attributes.gas_safety_certificate.data)}
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between py-3 border-b border-gray-100"
-                  >
-                    <span className="font-manrope text-sm text-gray-800">
-                      Gas Safety Certificate
-                    </span>
-                    <span className="font-manrope text-sm text-pevona-green">Download</span>
-                  </a>
+
+                {/* Gas Safety Certificate */}
+                {(attributes.gas_safety_certificate?.data || categorizedDocs.gas.length > 0) ? (
+                  <>
+                    {attributes.gas_safety_certificate?.data && (
+                      <a
+                        href={getImageUrl(attributes.gas_safety_certificate.data)}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between py-3 border-b border-gray-100"
+                      >
+                        <span className="font-manrope text-sm text-gray-800">
+                          {attributes.gas_safety_certificate.data.attributes?.name || attributes.gas_safety_certificate.data.attributes?.alternativeText || "Gas Safety Certificate"}
+                        </span>
+                        <span className="font-manrope text-sm text-pevona-green">Download</span>
+                      </a>
+                    )}
+                    {categorizedDocs.gas.map((doc) => (
+                      <a
+                        key={doc.id}
+                        href={getImageUrl(doc)}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between py-3 border-b border-gray-100"
+                      >
+                        <span className="font-manrope text-sm text-gray-800">
+                          {doc.attributes?.name || doc.attributes?.alternativeText || "Gas Safety Certificate"}
+                        </span>
+                        <span className="font-manrope text-sm text-pevona-green">Download</span>
+                      </a>
+                    ))}
+                  </>
                 ) : (
                   <div className="flex items-center justify-between py-3 border-b border-gray-100">
                     <span className="font-manrope text-sm text-gray-800">
@@ -525,19 +609,40 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     <span className="font-manrope text-sm text-gray-500">-</span>
                   </div>
                 )}
-                {attributes.electrical_safety_report?.data ? (
-                  <a
-                    href={getImageUrl(attributes.electrical_safety_report.data)}
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between py-3 border-b border-gray-100"
-                  >
-                    <span className="font-manrope text-sm text-gray-800">
-                      Electrical Safety Report (EICR)
-                    </span>
-                    <span className="font-manrope text-sm text-pevona-green">Download</span>
-                  </a>
+
+                {/* Electrical Safety Report (EICR) */}
+                {(attributes.electrical_safety_report?.data || categorizedDocs.electrical.length > 0) ? (
+                  <>
+                    {attributes.electrical_safety_report?.data && (
+                      <a
+                        href={getImageUrl(attributes.electrical_safety_report.data)}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between py-3 border-b border-gray-100"
+                      >
+                        <span className="font-manrope text-sm text-gray-800">
+                          {attributes.electrical_safety_report.data.attributes?.name || attributes.electrical_safety_report.data.attributes?.alternativeText || "Electrical Safety Report (EICR)"}
+                        </span>
+                        <span className="font-manrope text-sm text-pevona-green">Download</span>
+                      </a>
+                    )}
+                    {categorizedDocs.electrical.map((doc) => (
+                      <a
+                        key={doc.id}
+                        href={getImageUrl(doc)}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between py-3 border-b border-gray-100"
+                      >
+                        <span className="font-manrope text-sm text-gray-800">
+                          {doc.attributes?.name || doc.attributes?.alternativeText || "Electrical Safety Report (EICR)"}
+                        </span>
+                        <span className="font-manrope text-sm text-pevona-green">Download</span>
+                      </a>
+                    ))}
+                  </>
                 ) : (
                   <div className="flex items-center justify-between py-3 border-b border-gray-100">
                     <span className="font-manrope text-sm text-gray-800">
@@ -546,19 +651,40 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     <span className="font-manrope text-sm text-gray-500">-</span>
                   </div>
                 )}
-                {attributes.hmo_licence?.data ? (
-                  <a
-                    href={getImageUrl(attributes.hmo_licence.data)}
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between py-3 border-b border-gray-100"
-                  >
-                    <span className="font-manrope text-sm text-gray-800">
-                      HMO Licence (if applicable)
-                    </span>
-                    <span className="font-manrope text-sm text-pevona-green">Download</span>
-                  </a>
+
+                {/* HMO Licence (if applicable) */}
+                {(attributes.hmo_licence?.data || categorizedDocs.hmo.length > 0) ? (
+                  <>
+                    {attributes.hmo_licence?.data && (
+                      <a
+                        href={getImageUrl(attributes.hmo_licence.data)}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between py-3 border-b border-gray-100"
+                      >
+                        <span className="font-manrope text-sm text-gray-800">
+                          {attributes.hmo_licence.data.attributes?.name || attributes.hmo_licence.data.attributes?.alternativeText || "HMO Licence (if applicable)"}
+                        </span>
+                        <span className="font-manrope text-sm text-pevona-green">Download</span>
+                      </a>
+                    )}
+                    {categorizedDocs.hmo.map((doc) => (
+                      <a
+                        key={doc.id}
+                        href={getImageUrl(doc)}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between py-3 border-b border-gray-100"
+                      >
+                        <span className="font-manrope text-sm text-gray-800">
+                          {doc.attributes?.name || doc.attributes?.alternativeText || "HMO Licence (if applicable)"}
+                        </span>
+                        <span className="font-manrope text-sm text-pevona-green">Download</span>
+                      </a>
+                    ))}
+                  </>
                 ) : (
                   <div className="flex items-center justify-between py-3 border-b border-gray-100">
                     <span className="font-manrope text-sm text-gray-800">
@@ -567,7 +693,9 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     <span className="font-manrope text-sm text-gray-500">-</span>
                   </div>
                 )}
-                {attributes.documents?.data?.map((doc) => (
+
+                {/* Other documents (not categorized) */}
+                {categorizedDocs.other.map((doc) => (
                   <a
                     key={doc.id}
                     href={getImageUrl(doc)}
