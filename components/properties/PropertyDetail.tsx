@@ -19,8 +19,6 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [modalImageIndex, setModalImageIndex] = useState(0);
-  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
-  const [modalImageIndex, setModalImageIndex] = useState(0);
 
   // Categorize documents from the documents array
   const categorizeDocument = (doc: any): string | null => {
