@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import type { StrapiProperty } from "@/types/strapi";
 import { getImageUrl } from "@/lib/images";
