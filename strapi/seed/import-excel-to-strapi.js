@@ -63,35 +63,70 @@ function buildAddress(row) {
   return parts.join(' ').trim();
 }
 
-async function updatePropertyInStrapi(propertyRef, data) {
+async function updatePropertyInStrapi(propertyRef, data, postcode) {
   try {
-    // First, find the property by internal reference or address
-    const searchResponse = await fetch(
-      `${STRAPI_URL}/api/properties?filters[title][$contains]=${encodeURIComponent(propertyRef)}&populate=*`,
-      {
-        headers: {
-          'Authorization': `Bearer ${STRAPI_API_TOKEN}`,
-        },
-      }
-    );
-    
-    const searchData = await searchResponse.json();
     let property = null;
     
-    if (searchData.data && searchData.data.length > 0) {
-      // Try to match by internal reference in title or slug
-      property = searchData.data.find(p => 
-        p.attributes.title.includes(propertyRef) || 
-        p.attributes.slug.includes(propertyRef.toLowerCase().replace(/\s+/g, '-'))
+    // First, try to match by postcode (most reliable)
+    if (postcode) {
+      const postcodeResponse = await fetch(
+        `${STRAPI_URL}/api/properties?filters[zipcode][$eq]=${encodeURIComponent(postcode)}&populate=*`,
+        {
+          headers: {
+            'Authorization': `Bearer ${STRAPI_API_TOKEN}`,
+          },
+        }
       );
       
-      if (!property) {
-        property = searchData.data[0]; // Use first match if exact match not found
+      const postcodeData = await postcodeResponse.json();
+      if (postcodeData.data && postcodeData.data.length > 0) {
+        property = postcodeData.data[0];
+        console.log(`   Matched by postcode: ${postcode}`);
+      }
+    }
+    
+    // If not found by postcode, try by address
+    if (!property && data.address) {
+      const addressParts = data.address.split(' ').filter(p => p.length > 2);
+      if (addressParts.length > 0) {
+        const searchTerm = addressParts[0]; // First part of address
+        const addressResponse = await fetch(
+          `${STRAPI_URL}/api/properties?filters[address][$contains]=${encodeURIComponent(searchTerm)}&populate=*`,
+          {
+            headers: {
+              'Authorization': `Bearer ${STRAPI_API_TOKEN}`,
+            },
+          }
+        );
+        
+        const addressData = await addressResponse.json();
+        if (addressData.data && addressData.data.length > 0) {
+          property = addressData.data[0];
+          console.log(`   Matched by address: ${searchTerm}`);
+        }
+      }
+    }
+    
+    // Last resort: try by title containing reference
+    if (!property) {
+      const titleResponse = await fetch(
+        `${STRAPI_URL}/api/properties?filters[title][$contains]=${encodeURIComponent(propertyRef)}&populate=*`,
+        {
+          headers: {
+            'Authorization': `Bearer ${STRAPI_API_TOKEN}`,
+          },
+        }
+      );
+      
+      const titleData = await titleResponse.json();
+      if (titleData.data && titleData.data.length > 0) {
+        property = titleData.data[0];
+        console.log(`   Matched by title: ${propertyRef}`);
       }
     }
     
     if (!property) {
-      console.log(`⚠️  Property not found for reference: ${propertyRef}`);
+      console.log(`⚠️  Property not found for reference: ${propertyRef} (Postcode: ${postcode || 'N/A'})`);
       return;
     }
     
@@ -143,6 +178,7 @@ async function importExcelData() {
       }
       
       console.log(`\nProcessing: ${propertyRef}`);
+      const postcode = row['Postcode'] || '';
       
       // Parse combined field
       const combinedField = parseCombinedField(row['Cladding - Building Safety - Rights & Restrictions - Flood Risk']);
@@ -209,7 +245,7 @@ async function importExcelData() {
         }
       });
       
-      await updatePropertyInStrapi(propertyRef, propertyData);
+      await updatePropertyInStrapi(propertyRef, propertyData, postcode);
     }
     
     console.log('\n✅ Import completed!');
