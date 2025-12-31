@@ -163,3 +163,11 @@ h2 {
     font-size: 15px !important;
   }
 }
+
+/* Property Detail Page - Force all headings to 24px */
+.components-properties-PropertyDetail h1,
+.components-properties-PropertyDetail h2,
+.components-properties-PropertyDetail h3,
+.components-properties-PropertyDetail .font-crimson.text-\[24px\] {
+  font-size: 24px !important;
+}
