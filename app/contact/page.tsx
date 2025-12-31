@@ -84,16 +84,28 @@ export default function ContactPage() {
         }
         
         console.error("Form submission error:", response.status, errorData);
-        // Log more details for debugging
-        console.error("Error details:", {
-          status: response.status,
-          statusText: response.statusText,
-          error: errorData,
-          submittedData: { name, email, phone: phone ? "provided" : "missing", subject, message: message ? "provided" : "missing" },
-          strapiUrl: errorData.strapiUrl,
-          hasToken: errorData.hasToken,
-          errorMessage: errorData.message || errorData.error,
+        // Log more details for debugging - expanded format for better visibility
+        console.group("🔴 Form Submission Error Details");
+        console.error("Status:", response.status, response.statusText);
+        console.error("Error Message:", errorData.error || errorData.message || "Unknown error");
+        console.error("Strapi URL:", errorData.strapiUrl || "Not provided");
+        console.error("Has API Token:", errorData.hasToken ? "✅ Yes" : "❌ No");
+        console.error("Status Code:", errorData.statusCode || response.status);
+        if (errorData.errorDetails) {
+          console.error("Error Details:", errorData.errorDetails);
+        }
+        if (errorData.details) {
+          console.error("Full Details:", errorData.details);
+        }
+        console.error("Submitted Data:", { 
+          name: name ? "provided" : "missing", 
+          email: email ? "provided" : "missing", 
+          phone: phone ? "provided" : "missing", 
+          subject: subject ? "provided" : "missing", 
+          message: message ? "provided" : "missing" 
         });
+        console.error("Full Error Object:", errorData);
+        console.groupEnd();
         setSubmitStatus("error");
       }
     } catch (error) {
