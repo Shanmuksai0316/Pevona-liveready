@@ -17,6 +17,10 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
   const [isFormOpen, setIsFormOpen] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const [modalImageIndex, setModalImageIndex] = useState(0);
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const [modalImageIndex, setModalImageIndex] = useState(0);
 
   // Categorize documents from the documents array
   const categorizeDocument = (doc: any): string | null => {
@@ -135,7 +139,15 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
     <div className="bg-white min-h-screen">
       {/* Hero / Gallery */}
       <section className="relative w-full">
-        <div className="relative h-[500px] md:h-[600px] lg:h-[700px] min-h-[500px] overflow-hidden">
+        <div 
+          className="relative h-[500px] md:h-[600px] lg:h-[700px] min-h-[500px] overflow-hidden cursor-pointer"
+          onClick={() => {
+            if (hasImages) {
+              setIsImageModalOpen(true);
+              setModalImageIndex(currentIndex);
+            }
+          }}
+        >
           {hasImages ? (
             <>
               <Image
@@ -151,7 +163,10 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                 <>
                   <button
                     type="button"
-                    onClick={prevImage}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      prevImage();
+                    }}
                     aria-label="Previous image"
                     className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 transition-colors z-10"
                   >
@@ -171,7 +186,10 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                   </button>
                   <button
                     type="button"
-                    onClick={nextImage}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      nextImage();
+                    }}
                     aria-label="Next image"
                     className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 transition-colors z-10"
                   >
@@ -220,6 +238,70 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
         )}
       </section>
 
+      {/* Image Modal/Popup */}
+      {isImageModalOpen && gallery.length > 0 && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+          onClick={() => setIsImageModalOpen(false)}
+        >
+          <button
+            onClick={() => setIsImageModalOpen(false)}
+            className="absolute top-4 right-4 text-white hover:text-gray-300 z-10 bg-black/70 rounded-full p-3 transition-colors"
+            aria-label="Close modal"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          <div 
+            className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={getImageUrl(gallery[modalImageIndex])}
+              alt={`${attributes.title} - Image ${modalImageIndex + 1}`}
+              width={1200}
+              height={800}
+              className="object-contain max-w-full max-h-full"
+              unoptimized
+            />
+
+            {gallery.length > 1 && (
+              <>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setModalImageIndex((prev) => (prev === 0 ? gallery.length - 1 : prev - 1));
+                  }}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-3 transition-colors z-10"
+                  aria-label="Previous image"
+                >
+                  <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setModalImageIndex((prev) => (prev === gallery.length - 1 ? 0 : prev + 1));
+                  }}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-3 transition-colors z-10"
+                  aria-label="Next image"
+                >
+                  <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded text-sm font-manrope">
+                  {modalImageIndex + 1} / {gallery.length}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Top summary bar */}
       <section className="border-b border-gray-200">
         <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -249,7 +331,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
             {/* Tenure Information */}
             {attributes.tenure_information && (
               <div>
-                <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                <p className="font-crimson font-semibold text-2xl text-pevona-dark mb-1">
                   Tenure Information:
                 </p>
                 <p className="font-manrope text-sm md:text-base text-gray-700">
@@ -401,7 +483,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
               </div>
               <div className="space-y-3">
                 <div>
-                  <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                  <p className="font-crimson font-semibold text-2xl text-pevona-dark mb-1">
                     Parking:
                   </p>
                   <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
@@ -409,7 +491,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                   </p>
                 </div>
                 <div>
-                  <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                  <p className="font-crimson font-semibold text-2xl text-pevona-dark mb-1">
                     Accessibility:
                   </p>
                   <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
