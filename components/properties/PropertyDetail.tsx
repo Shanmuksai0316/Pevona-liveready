@@ -402,14 +402,6 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
               <div className="space-y-3">
                 <div>
                   <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
-                    Utilities:
-                  </p>
-                  <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
-                    {attributes.utilities || "-"}
-                  </p>
-                </div>
-                <div>
-                  <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
                     Parking:
                   </p>
                   <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
@@ -491,44 +483,6 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                 <p className="font-manrope text-sm text-gray-500">NO Description</p>
               )}
             </div>
-
-            {/* Leasehold Financials */}
-            <div>
-              <h2 className="font-crimson text-2xl font-semibold text-pevona-dark mb-4">
-                Leasehold Financials
-              </h2>
-              <div className="space-y-3">
-                <div className="flex justify-between border-b border-gray-100 pb-2">
-                  <span className="font-manrope text-sm text-gray-600">Service Charge:</span>
-                  <span className="font-manrope text-sm text-gray-900">
-                    {attributes.service_charge
-                      ? `${attributes.currency || "GBP"}${attributes.service_charge.toLocaleString("en-GB")}`
-                      : "-"}
-                  </span>
-                </div>
-                <div className="flex justify-between border-b border-gray-100 pb-2">
-                  <span className="font-manrope text-sm text-gray-600">Ground Rent:</span>
-                  <span className="font-manrope text-sm text-gray-900">
-                    {attributes.ground_rent
-                      ? `${attributes.currency || "GBP"}${attributes.ground_rent.toLocaleString("en-GB")}`
-                      : "-"}
-                  </span>
-                </div>
-                <div className="flex justify-between border-b border-gray-100 pb-2">
-                  <span className="font-manrope text-sm text-gray-600">Review Period:</span>
-                  <span className="font-manrope text-sm text-gray-900">
-                    {attributes.review_period || "-"}
-                  </span>
-                </div>
-                <div className="flex justify-between border-b border-gray-100 pb-2">
-                  <span className="font-manrope text-sm text-gray-600">Lease Remaining:</span>
-                  <span className="font-manrope text-sm text-gray-900">
-                    {attributes.lease_remaining || "-"}
-                  </span>
-                </div>
-              </div>
-            </div>
-
 
             {/* Documents & Certifications */}
             <div>
