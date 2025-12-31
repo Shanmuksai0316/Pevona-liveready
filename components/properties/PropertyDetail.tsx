@@ -318,8 +318,8 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     </p>
                     <p className="font-manrope text-base text-gray-900">
                       {typeof attributes.annual_ground_rents === 'number'
-                        ? `${attributes.currency || "GBP"}${attributes.annual_ground_rents.toLocaleString("en-GB")}`
-                        : attributes.annual_ground_rents}
+                        ? `${attributes.currency || "GBP"}${(attributes.annual_ground_rents as number).toLocaleString("en-GB")}`
+                        : String(attributes.annual_ground_rents)}
                     </p>
                   </div>
                 )}
@@ -330,8 +330,8 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     </p>
                     <p className="font-manrope text-base text-gray-900">
                       {typeof attributes.estimated_annual_service_charges === 'number'
-                        ? `${attributes.currency || "GBP"}${attributes.estimated_annual_service_charges.toLocaleString("en-GB")}`
-                        : attributes.estimated_annual_service_charges}
+                        ? `${attributes.currency || "GBP"}${(attributes.estimated_annual_service_charges as number).toLocaleString("en-GB")}`
+                        : String(attributes.estimated_annual_service_charges)}
                     </p>
                   </div>
                 )}
