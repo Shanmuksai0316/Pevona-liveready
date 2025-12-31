@@ -20,6 +20,31 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [modalImageIndex, setModalImageIndex] = useState(0);
 
+  // Hide navbar when image modal is open
+  useEffect(() => {
+    if (isImageModalOpen) {
+      document.body.classList.add('image-modal-open');
+      // Hide navbar container (the fixed div in layout.tsx)
+      const navbarContainer = document.querySelector('body > div[class*="fixed"][class*="top-0"]');
+      if (navbarContainer) {
+        (navbarContainer as HTMLElement).style.display = 'none';
+      }
+    } else {
+      document.body.classList.remove('image-modal-open');
+      const navbarContainer = document.querySelector('body > div[class*="fixed"][class*="top-0"]');
+      if (navbarContainer) {
+        (navbarContainer as HTMLElement).style.display = '';
+      }
+    }
+    return () => {
+      document.body.classList.remove('image-modal-open');
+      const navbarContainer = document.querySelector('body > div[class*="fixed"][class*="top-0"]');
+      if (navbarContainer) {
+        (navbarContainer as HTMLElement).style.display = '';
+      }
+    };
+  }, [isImageModalOpen]);
+
   // Categorize documents from the documents array
   const categorizeDocument = (doc: any): string | null => {
     const name = (doc.attributes?.name || doc.attributes?.alternativeText || "").toLowerCase();
@@ -239,7 +264,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
       {/* Image Modal/Popup */}
       {isImageModalOpen && gallery.length > 0 && (
         <div 
-          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+          className="fixed inset-0 z-[10002] bg-black/95 flex items-center justify-center p-4"
           onClick={() => setIsImageModalOpen(false)}
         >
           <button
