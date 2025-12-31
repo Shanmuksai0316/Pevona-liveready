@@ -72,8 +72,13 @@ export interface StrapiProperty {
     longitude?: number;
     map_embed?: string;
     tenure_information?: string;
-    deposit?: number;
     council_tax_band?: string;
+    rent_price?: number;
+    annual_ground_rents?: string;
+    estimated_annual_service_charges?: string;
+    number_of_years_of_lease?: string;
+    hmo?: string;
+    local_council?: string;
     property_type?: string;
     utilities?: string;
     parking?: string;

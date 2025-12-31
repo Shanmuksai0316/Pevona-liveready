@@ -232,7 +232,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
             )}
           </div>
           <div className="flex flex-col items-start md:items-end gap-1">
-            <span className="font-manrope text-sm text-gray-500">Guide Price</span>
+            <span className="font-manrope text-sm text-gray-500">Sales Price</span>
             <span className="font-crimson text-2xl font-semibold text-pevona-dark">
               {attributes.currency || "GBP"}
               {attributes.price?.toLocaleString?.("en-GB") ?? attributes.price}
@@ -246,40 +246,15 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
         <div className="grid grid-cols-1 lg:[grid-template-columns:minmax(0,1.7fr)_minmax(0,1.3fr)] gap-10 lg:gap-12">
           {/* Left: details */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Tenure Information & Deposit */}
-            {(attributes.tenure_information || attributes.deposit || attributes.council_tax_band) && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {attributes.tenure_information && (
-                  <div>
-                    <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
-                      Tenure Information:
-                    </p>
-                    <p className="font-manrope text-sm md:text-base text-gray-700">
-                      {attributes.tenure_information}
-                    </p>
-                  </div>
-                )}
-                {attributes.deposit && (
-                  <div>
-                    <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
-                      Deposit:
-                    </p>
-                    <p className="font-manrope text-sm md:text-base text-gray-700">
-                      {attributes.currency || "GBP"}
-                      {attributes.deposit.toLocaleString("en-GB")}
-                    </p>
-                  </div>
-                )}
-                {attributes.council_tax_band && (
-                  <div>
-                    <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
-                      Council Tax band:
-                    </p>
-                    <p className="font-manrope text-sm md:text-base text-gray-700">
-                      {attributes.council_tax_band}
-                    </p>
-                  </div>
-                )}
+            {/* Tenure Information */}
+            {attributes.tenure_information && (
+              <div>
+                <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                  Tenure Information:
+                </p>
+                <p className="font-manrope text-sm md:text-base text-gray-700">
+                  {attributes.tenure_information}
+                </p>
               </div>
             )}
 
@@ -297,25 +272,16 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     UK
                   </p>
                 </div>
-                {attributes.status === "For Rent" && (
+                {attributes.rent_price && (
                   <div className="space-y-1">
                     <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
-                      Rent PM
+                      Rent Price
                     </p>
                     <p className="font-manrope text-base text-gray-900">
                       {attributes.currency || "GBP"}
-                      {attributes.price?.toLocaleString?.("en-GB") ?? attributes.price}
-                    </p>
-                  </div>
-                )}
-                {attributes.status === "For Sale" && (
-                  <div className="space-y-1">
-                    <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
-                      Sales
-                    </p>
-                    <p className="font-manrope text-base text-gray-900">
-                      {attributes.currency || "GBP"}
-                      {attributes.price?.toLocaleString?.("en-GB") ?? attributes.price}
+                      {typeof attributes.rent_price === 'number' 
+                        ? attributes.rent_price.toLocaleString("en-GB")
+                        : attributes.rent_price}
                     </p>
                   </div>
                 )}
@@ -332,7 +298,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     Local Council
                   </p>
                   <p className="font-manrope text-base text-gray-900">
-                    {attributes.city ? `${attributes.city} Council` : "-"}
+                    {attributes.local_council || (attributes.city ? `${attributes.city} Council` : "-")}
                   </p>
                 </div>
                 {attributes.council_tax_band && (
@@ -342,6 +308,50 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     </p>
                     <p className="font-manrope text-base text-gray-900">
                       {attributes.council_tax_band}
+                    </p>
+                  </div>
+                )}
+                {attributes.annual_ground_rents && attributes.annual_ground_rents !== "N/A" && (
+                  <div className="space-y-1">
+                    <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                      Annual Ground Rents
+                    </p>
+                    <p className="font-manrope text-base text-gray-900">
+                      {typeof attributes.annual_ground_rents === 'number'
+                        ? `${attributes.currency || "GBP"}${attributes.annual_ground_rents.toLocaleString("en-GB")}`
+                        : attributes.annual_ground_rents}
+                    </p>
+                  </div>
+                )}
+                {attributes.estimated_annual_service_charges && attributes.estimated_annual_service_charges !== "N/A" && (
+                  <div className="space-y-1">
+                    <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                      Estimated Annual Service Charges
+                    </p>
+                    <p className="font-manrope text-base text-gray-900">
+                      {typeof attributes.estimated_annual_service_charges === 'number'
+                        ? `${attributes.currency || "GBP"}${attributes.estimated_annual_service_charges.toLocaleString("en-GB")}`
+                        : attributes.estimated_annual_service_charges}
+                    </p>
+                  </div>
+                )}
+                {attributes.number_of_years_of_lease && attributes.number_of_years_of_lease !== "N/A" && (
+                  <div className="space-y-1">
+                    <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                      Number of Years of Lease
+                    </p>
+                    <p className="font-manrope text-base text-gray-900">
+                      {attributes.number_of_years_of_lease}
+                    </p>
+                  </div>
+                )}
+                {attributes.hmo && attributes.hmo !== "N/A" && (
+                  <div className="space-y-1">
+                    <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                      HMO
+                    </p>
+                    <p className="font-manrope text-base text-gray-900">
+                      {attributes.hmo}
                     </p>
                   </div>
                 )}

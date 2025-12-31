@@ -100,10 +100,25 @@
     "tenure_information": {
       "type": "string"
     },
-    "deposit": {
+    "council_tax_band": {
+      "type": "string"
+    },
+    "rent_price": {
       "type": "decimal"
     },
-    "council_tax_band": {
+    "annual_ground_rents": {
+      "type": "text"
+    },
+    "estimated_annual_service_charges": {
+      "type": "text"
+    },
+    "number_of_years_of_lease": {
+      "type": "string"
+    },
+    "hmo": {
+      "type": "string"
+    },
+    "local_council": {
       "type": "string"
     },
     "property_type": {
