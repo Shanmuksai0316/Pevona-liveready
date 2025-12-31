@@ -181,9 +181,6 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
       <section className="border-b border-gray-200">
         <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
-            <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em] mb-1">
-              {attributes.status || "For Sale"}
-            </p>
             <h1 className="font-crimson text-2xl font-semibold text-pevona-dark leading-snug">
               {attributes.title}
             </h1>
@@ -254,9 +251,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     Country
                   </p>
                   <p className="font-manrope text-base text-gray-900">
-                    {attributes.state === "England" || attributes.state === "Scotland" || attributes.state === "Wales" || attributes.state === "Northern Ireland" 
-                      ? "United Kingdom" 
-                      : attributes.state || "United Kingdom"}
+                    UK
                   </p>
                 </div>
                 {attributes.status === "For Rent" && (
