@@ -134,7 +134,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen property-detail-page">
       {/* Hero / Gallery */}
       <section className="relative w-full">
         <div 

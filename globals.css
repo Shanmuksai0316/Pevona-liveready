@@ -165,9 +165,9 @@ h2 {
 }
 
 /* Property Detail Page - Force all headings to 24px */
-.components-properties-PropertyDetail h1,
-.components-properties-PropertyDetail h2,
-.components-properties-PropertyDetail h3,
-.components-properties-PropertyDetail .font-crimson.text-\[24px\] {
+.property-detail-page h1,
+.property-detail-page h2,
+.property-detail-page h3,
+.property-detail-page .font-crimson.text-\[24px\] {
   font-size: 24px !important;
 }
