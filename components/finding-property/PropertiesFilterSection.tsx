@@ -55,13 +55,39 @@ export default function PropertiesFilterSection({
       // Type (map to status)
       if (type !== "Any" && attrs.status !== type) return false;
 
-      // Focus – currently a simple mapping based on status
+      // Focus – filter by property type
       if (focus !== "All") {
-        if (focus === "Residential" && attrs.status !== "For Sale") {
-          return false;
+        if (focus === "Residential") {
+          // Residential properties typically have bedrooms
+          // Check if property has bedrooms or property_type indicates residential
+          const propertyType = (attrs.property_type || "").toLowerCase();
+          const isResidential = 
+            attrs.bedrooms > 0 || 
+            propertyType.includes("house") ||
+            propertyType.includes("flat") ||
+            propertyType.includes("apartment") ||
+            propertyType.includes("maisonette") ||
+            propertyType.includes("bungalow") ||
+            propertyType.includes("cottage") ||
+            propertyType.includes("terraced") ||
+            propertyType.includes("semi-detached") ||
+            propertyType.includes("detached") ||
+            propertyType.includes("leasehold") ||
+            propertyType.includes("freehold");
+          
+          if (!isResidential) return false;
         }
-        if (focus === "Commercial" && attrs.status !== "For Rent") {
-          return false;
+        if (focus === "Commercial") {
+          // Commercial properties typically don't have bedrooms or have specific types
+          const propertyType = (attrs.property_type || "").toLowerCase();
+          const isCommercial = 
+            (attrs.bedrooms === 0 && !propertyType.includes("house") && !propertyType.includes("flat")) ||
+            propertyType.includes("commercial") ||
+            propertyType.includes("office") ||
+            propertyType.includes("retail") ||
+            propertyType.includes("warehouse");
+          
+          if (!isCommercial) return false;
         }
         // For now, "Investment" does not apply extra filtering until
         // you add a dedicated field/category in Strapi.
