@@ -118,6 +118,7 @@ export async function POST(request: NextRequest) {
     const responseText = await strapiResponse.text();
     console.log("Strapi response status:", strapiResponse.status);
     console.log("Strapi response:", responseText.substring(0, 500)); // Log first 500 chars
+    console.log("Data being sent to Strapi:", JSON.stringify(enquiryData, null, 2));
 
     if (!strapiResponse.ok) {
       console.error("Strapi error details:", {
@@ -125,30 +126,47 @@ export async function POST(request: NextRequest) {
         statusText: strapiResponse.statusText,
         url: `${STRAPI_URL}/api/property-enquiries`,
         response: responseText,
+        requestData: enquiryData,
       });
       
       // Try to parse error for better message
       let errorMessage = "Failed to save enquiry to database";
+      let errorDetails: any = null;
+      
       try {
         const errorJson = JSON.parse(responseText);
+        console.error("Parsed Strapi error JSON:", JSON.stringify(errorJson, null, 2));
+        
         if (errorJson.error?.message) {
           errorMessage = errorJson.error.message;
         } else if (errorJson.error?.details) {
+          errorDetails = errorJson.error.details;
           errorMessage = JSON.stringify(errorJson.error.details);
+        } else if (errorJson.error) {
+          errorMessage = JSON.stringify(errorJson.error);
+        }
+        
+        // Check for validation errors
+        if (errorJson.error?.details?.errors) {
+          const validationErrors = errorJson.error.details.errors;
+          errorMessage = `Validation errors: ${JSON.stringify(validationErrors)}`;
+          errorDetails = validationErrors;
         }
       } catch (e) {
-        // Use default message
+        console.error("Failed to parse Strapi error response:", e);
         errorMessage = `Strapi returned error: ${responseText.substring(0, 200)}`;
       }
       
       return NextResponse.json(
         { 
-          error: errorMessage, 
+          error: errorMessage,
+          errorDetails: errorDetails,
           details: responseText,
           strapiUrl: STRAPI_URL,
           hasToken: !!STRAPI_API_TOKEN,
+          statusCode: strapiResponse.status,
         },
-        { status: strapiResponse.status }
+        { status: strapiResponse.status >= 400 && strapiResponse.status < 600 ? strapiResponse.status : 500 }
       );
     }
 
