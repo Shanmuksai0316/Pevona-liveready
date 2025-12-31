@@ -190,7 +190,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
           </div>
           <div className="flex flex-col items-start md:items-end gap-1">
             <span className="font-manrope text-sm text-gray-500">Guide Price</span>
-            <span className="font-crimson text-2xl md:text-3xl font-semibold text-pevona-dark">
+            <span className="font-crimson text-2xl font-semibold text-pevona-dark">
               {attributes.currency || "GBP"}
               {attributes.price?.toLocaleString?.("en-GB") ?? attributes.price}
             </span>
@@ -242,7 +242,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
             {/* Property Details */}
             <div>
-              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+              <h2 className="font-crimson text-2xl font-semibold text-pevona-dark mb-4">
                 Property Details
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -317,7 +317,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
             {/* Property Essentials */}
             <div>
-              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+              <h2 className="font-crimson text-2xl font-semibold text-pevona-dark mb-4">
                 Property Essentials
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
@@ -376,7 +376,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
             {/* Risk, Safety & Legal Status */}
             <div>
-              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+              <h2 className="font-crimson text-2xl font-semibold text-pevona-dark mb-4">
                 Risk, Safety & Legal Status
               </h2>
               <div className="space-y-3">
@@ -413,7 +413,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
             {/* EPC - Energy Performance Certificate */}
             <div>
-              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+              <h2 className="font-crimson text-2xl font-semibold text-pevona-dark mb-4">
                 EPC - Energy Performance Certificate
               </h2>
               <div className="flex justify-between border-b border-gray-100 pb-2">
@@ -426,7 +426,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
             {/* Property Description */}
             <div>
-              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+              <h2 className="font-crimson text-2xl font-semibold text-pevona-dark mb-4">
                 Property Description
               </h2>
               {attributes.description ? (
@@ -441,7 +441,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
             {/* Leasehold Financials */}
             <div>
-              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+              <h2 className="font-crimson text-2xl font-semibold text-pevona-dark mb-4">
                 Leasehold Financials
               </h2>
               <div className="space-y-3">
@@ -479,7 +479,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
             {/* Documents & Certifications */}
             <div>
-              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+              <h2 className="font-crimson text-2xl font-semibold text-pevona-dark mb-4">
                 Documents & Certifications
               </h2>
               <div className="space-y-3">
@@ -595,7 +595,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                 className="w-full px-6 py-4 flex items-center justify-between gap-3 hover:bg-gray-50 transition-colors"
               >
                 <div className="text-left">
-                  <h3 className="font-crimson text-xl font-semibold text-pevona-dark">
+                  <h3 className="font-crimson text-2xl font-semibold text-pevona-dark">
                     Book a Viewing or Reserve
                   </h3>
                   <p className="font-manrope text-xs text-gray-500 mt-1 hidden sm:block">
@@ -725,7 +725,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
       {(attributes.map_embed || fullAddress || (attributes.latitude && attributes.longitude)) && (
         <section className="bg-gray-50 border-t border-gray-200 mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
           <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-10 md:py-14">
-            <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+            <h2 className="font-crimson text-2xl font-semibold text-pevona-dark mb-4">
               Location
             </h2>
             <p className="font-manrope text-sm text-gray-600 mb-4">{fullAddress}</p>
