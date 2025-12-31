@@ -325,7 +325,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
               <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
                 Property Essentials
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
                 <div className="space-y-1">
                   <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
                     Property Type
@@ -350,109 +350,84 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
                     {attributes.bathrooms ?? "-"}
                   </p>
                 </div>
-                <div className="space-y-1">
-                  <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
-                    Area (sq ft)
+              </div>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                    Utilities:
                   </p>
-                  <p className="font-manrope text-base text-gray-900">
-                    {attributes.area ? attributes.area.toLocaleString("en-GB") : "-"}
+                  <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
+                    {attributes.utilities || "-"}
+                  </p>
+                </div>
+                <div>
+                  <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                    Parking:
+                  </p>
+                  <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
+                    {attributes.parking || "-"}
+                  </p>
+                </div>
+                <div>
+                  <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
+                    Accessibility:
+                  </p>
+                  <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
+                    {attributes.accessibility || "-"}
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Parking, Accessibility */}
-            {(attributes.parking || attributes.accessibility) && (
-              <div>
-                <div className="space-y-3">
-                  {attributes.parking && (
-                    <div>
-                      <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
-                        Parking:
-                      </p>
-                      <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
-                        {attributes.parking}
-                      </p>
-                    </div>
-                  )}
-                  {attributes.accessibility && (
-                    <div>
-                      <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
-                        Accessibility:
-                      </p>
-                      <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
-                        {attributes.accessibility}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
-
             {/* Risk, Safety & Legal Status */}
-            {(attributes.cladding_building_safety ||
-              attributes.rights_restrictions ||
-              attributes.flood_risk ||
-              attributes.listed_status) && (
-              <div>
-                <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
-                  Risk, Safety & Legal Status
-                </h2>
-                <div className="space-y-3">
-                  {attributes.cladding_building_safety && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">
-                        Cladding / Building Safety:
-                      </span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.cladding_building_safety}
-                      </span>
-                    </div>
-                  )}
-                  {attributes.rights_restrictions && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">
-                        Rights & Restrictions:
-                      </span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.rights_restrictions}
-                      </span>
-                    </div>
-                  )}
-                  {attributes.flood_risk && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Flood Risk:</span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.flood_risk}
-                      </span>
-                    </div>
-                  )}
-                  {attributes.listed_status && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Listed Status:</span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.listed_status}
-                      </span>
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
-
-            {/* EPC - Energy Performance Certificate */}
-            {attributes.epc_rating && (
-              <div>
-                <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
-                  EPC - Energy Performance Certificate
-                </h2>
+            <div>
+              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+                Risk, Safety & Legal Status
+              </h2>
+              <div className="space-y-3">
                 <div className="flex justify-between border-b border-gray-100 pb-2">
-                  <span className="font-manrope text-sm text-gray-600">EPC Rating:</span>
+                  <span className="font-manrope text-sm text-gray-600">
+                    Cladding / Building Safety:
+                  </span>
                   <span className="font-manrope text-sm text-gray-900">
-                    {attributes.epc_rating}
+                    {attributes.cladding_building_safety || "-"}
+                  </span>
+                </div>
+                <div className="flex justify-between border-b border-gray-100 pb-2">
+                  <span className="font-manrope text-sm text-gray-600">
+                    Rights & Restrictions:
+                  </span>
+                  <span className="font-manrope text-sm text-gray-900">
+                    {attributes.rights_restrictions || "-"}
+                  </span>
+                </div>
+                <div className="flex justify-between border-b border-gray-100 pb-2">
+                  <span className="font-manrope text-sm text-gray-600">Flood Risk:</span>
+                  <span className="font-manrope text-sm text-gray-900">
+                    {attributes.flood_risk || "-"}
+                  </span>
+                </div>
+                <div className="flex justify-between border-b border-gray-100 pb-2">
+                  <span className="font-manrope text-sm text-gray-600">Listed Status:</span>
+                  <span className="font-manrope text-sm text-gray-900">
+                    {attributes.listed_status || "-"}
                   </span>
                 </div>
               </div>
-            )}
+            </div>
+
+            {/* EPC - Energy Performance Certificate */}
+            <div>
+              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+                EPC - Energy Performance Certificate
+              </h2>
+              <div className="flex justify-between border-b border-gray-100 pb-2">
+                <span className="font-manrope text-sm text-gray-600">EPC Rating:</span>
+                <span className="font-manrope text-sm text-gray-900">
+                  {attributes.epc_rating || "-"}
+                </span>
+              </div>
+            </div>
 
             {/* Property Description */}
             <div>
@@ -470,132 +445,150 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
             </div>
 
             {/* Leasehold Financials */}
-            {(attributes.service_charge ||
-              attributes.ground_rent ||
-              attributes.review_period ||
-              attributes.lease_remaining) && (
-              <div>
-                <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
-                  Leasehold Financials
-                </h2>
-                <div className="space-y-3">
-                  {attributes.service_charge && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Service Charge:</span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.currency || "GBP"}
-                        {attributes.service_charge.toLocaleString("en-GB")}
-                      </span>
-                    </div>
-                  )}
-                  {attributes.ground_rent && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Ground Rent:</span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.currency || "GBP"}
-                        {attributes.ground_rent.toLocaleString("en-GB")}
-                      </span>
-                    </div>
-                  )}
-                  {attributes.review_period && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Review Period:</span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.review_period}
-                      </span>
-                    </div>
-                  )}
-                  {attributes.lease_remaining && (
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="font-manrope text-sm text-gray-600">Lease Remaining:</span>
-                      <span className="font-manrope text-sm text-gray-900">
-                        {attributes.lease_remaining}
-                      </span>
-                    </div>
-                  )}
+            <div>
+              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+                Leasehold Financials
+              </h2>
+              <div className="space-y-3">
+                <div className="flex justify-between border-b border-gray-100 pb-2">
+                  <span className="font-manrope text-sm text-gray-600">Service Charge:</span>
+                  <span className="font-manrope text-sm text-gray-900">
+                    {attributes.service_charge
+                      ? `${attributes.currency || "GBP"}${attributes.service_charge.toLocaleString("en-GB")}`
+                      : "-"}
+                  </span>
+                </div>
+                <div className="flex justify-between border-b border-gray-100 pb-2">
+                  <span className="font-manrope text-sm text-gray-600">Ground Rent:</span>
+                  <span className="font-manrope text-sm text-gray-900">
+                    {attributes.ground_rent
+                      ? `${attributes.currency || "GBP"}${attributes.ground_rent.toLocaleString("en-GB")}`
+                      : "-"}
+                  </span>
+                </div>
+                <div className="flex justify-between border-b border-gray-100 pb-2">
+                  <span className="font-manrope text-sm text-gray-600">Review Period:</span>
+                  <span className="font-manrope text-sm text-gray-900">
+                    {attributes.review_period || "-"}
+                  </span>
+                </div>
+                <div className="flex justify-between border-b border-gray-100 pb-2">
+                  <span className="font-manrope text-sm text-gray-600">Lease Remaining:</span>
+                  <span className="font-manrope text-sm text-gray-900">
+                    {attributes.lease_remaining || "-"}
+                  </span>
                 </div>
               </div>
-            )}
+            </div>
 
 
             {/* Documents & Certifications */}
-            {(attributes.epc_document ||
-              attributes.gas_safety_certificate ||
-              attributes.electrical_safety_report ||
-              attributes.hmo_licence ||
-              attributes.documents?.data?.length) && (
-              <div>
-                <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
-                  Documents & Certifications
-                </h2>
-                <div className="space-y-3">
-                  {attributes.epc_document?.data && (
-                    <a
-                      href={getImageUrl(attributes.epc_document.data)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between py-3 border-b border-gray-100"
-                    >
-                      <span className="font-manrope text-sm text-gray-800">
-                        Energy Performance Certificate (EPC)
-                      </span>
-                      <span className="font-manrope text-sm text-pevona-green">View</span>
-                    </a>
-                  )}
-                  {attributes.gas_safety_certificate?.data && (
-                    <a
-                      href={getImageUrl(attributes.gas_safety_certificate.data)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between py-3 border-b border-gray-100"
-                    >
-                      <span className="font-manrope text-sm text-gray-800">
-                        Gas Safety Certificate
-                      </span>
-                      <span className="font-manrope text-sm text-pevona-green">View</span>
-                    </a>
-                  )}
-                  {attributes.electrical_safety_report?.data && (
-                    <a
-                      href={getImageUrl(attributes.electrical_safety_report.data)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between py-3 border-b border-gray-100"
-                    >
-                      <span className="font-manrope text-sm text-gray-800">
-                        Electrical Safety Report (EICR)
-                      </span>
-                      <span className="font-manrope text-sm text-pevona-green">View</span>
-                    </a>
-                  )}
-                  {attributes.hmo_licence?.data && (
-                    <a
-                      href={getImageUrl(attributes.hmo_licence.data)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between py-3 border-b border-gray-100"
-                    >
-                      <span className="font-manrope text-sm text-gray-800">HMO Licence</span>
-                      <span className="font-manrope text-sm text-pevona-green">View</span>
-                    </a>
-                  )}
-                  {attributes.documents?.data?.map((doc) => (
-                    <a
-                      key={doc.id}
-                      href={getImageUrl(doc)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between py-3 border-b border-gray-100"
-                    >
-                      <span className="font-manrope text-sm text-gray-800">
-                        {doc.attributes?.name || doc.attributes?.alternativeText || "Document"}
-                      </span>
-                      <span className="font-manrope text-sm text-pevona-green">View</span>
-                    </a>
-                  ))}
-                </div>
+            <div>
+              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+                Documents & Certifications
+              </h2>
+              <div className="space-y-3">
+                {attributes.epc_document?.data ? (
+                  <a
+                    href={getImageUrl(attributes.epc_document.data)}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between py-3 border-b border-gray-100"
+                  >
+                    <span className="font-manrope text-sm text-gray-800">
+                      Energy Performance Certificate (EPC)
+                    </span>
+                    <span className="font-manrope text-sm text-pevona-green">Download</span>
+                  </a>
+                ) : (
+                  <div className="flex items-center justify-between py-3 border-b border-gray-100">
+                    <span className="font-manrope text-sm text-gray-800">
+                      Energy Performance Certificate (EPC)
+                    </span>
+                    <span className="font-manrope text-sm text-gray-500">-</span>
+                  </div>
+                )}
+                {attributes.gas_safety_certificate?.data ? (
+                  <a
+                    href={getImageUrl(attributes.gas_safety_certificate.data)}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between py-3 border-b border-gray-100"
+                  >
+                    <span className="font-manrope text-sm text-gray-800">
+                      Gas Safety Certificate
+                    </span>
+                    <span className="font-manrope text-sm text-pevona-green">Download</span>
+                  </a>
+                ) : (
+                  <div className="flex items-center justify-between py-3 border-b border-gray-100">
+                    <span className="font-manrope text-sm text-gray-800">
+                      Gas Safety Certificate
+                    </span>
+                    <span className="font-manrope text-sm text-gray-500">-</span>
+                  </div>
+                )}
+                {attributes.electrical_safety_report?.data ? (
+                  <a
+                    href={getImageUrl(attributes.electrical_safety_report.data)}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between py-3 border-b border-gray-100"
+                  >
+                    <span className="font-manrope text-sm text-gray-800">
+                      Electrical Safety Report (EICR)
+                    </span>
+                    <span className="font-manrope text-sm text-pevona-green">Download</span>
+                  </a>
+                ) : (
+                  <div className="flex items-center justify-between py-3 border-b border-gray-100">
+                    <span className="font-manrope text-sm text-gray-800">
+                      Electrical Safety Report (EICR)
+                    </span>
+                    <span className="font-manrope text-sm text-gray-500">-</span>
+                  </div>
+                )}
+                {attributes.hmo_licence?.data ? (
+                  <a
+                    href={getImageUrl(attributes.hmo_licence.data)}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between py-3 border-b border-gray-100"
+                  >
+                    <span className="font-manrope text-sm text-gray-800">
+                      HMO Licence (if applicable)
+                    </span>
+                    <span className="font-manrope text-sm text-pevona-green">Download</span>
+                  </a>
+                ) : (
+                  <div className="flex items-center justify-between py-3 border-b border-gray-100">
+                    <span className="font-manrope text-sm text-gray-800">
+                      HMO Licence (if applicable)
+                    </span>
+                    <span className="font-manrope text-sm text-gray-500">-</span>
+                  </div>
+                )}
+                {attributes.documents?.data?.map((doc) => (
+                  <a
+                    key={doc.id}
+                    href={getImageUrl(doc)}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between py-3 border-b border-gray-100"
+                  >
+                    <span className="font-manrope text-sm text-gray-800">
+                      {doc.attributes?.name || doc.attributes?.alternativeText || "Document"}
+                    </span>
+                    <span className="font-manrope text-sm text-pevona-green">Download</span>
+                  </a>
+                ))}
               </div>
-            )}
+            </div>
           </div>
 
           {/* Right: booking form sidebar (floating) */}
