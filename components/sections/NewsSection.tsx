@@ -29,8 +29,8 @@ export default async function NewsSection() {
       <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-[26px] items-stretch lg:items-center justify-center w-full">
         {/* Left: Large card with image */}
         {firstBlog && (
-          <div className={`w-full lg:flex-1 bg-white border border-[rgba(0,0,0,0.12)] flex flex-col gap-4 sm:gap-6 lg:gap-[26px] items-center p-3 sm:p-4 lg:p-[5px] rounded-[12px] sm:rounded-[16px] ${blogList.length === 1 ? 'max-w-[600px] mx-auto' : ''}`}>
-            <Link href={`/blog/${firstBlog.attributes.slug}`} className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[465px] rounded-[10px] sm:rounded-[12px] overflow-hidden">
+          <div className={`w-full lg:flex-1 bg-white border border-[rgba(0,0,0,0.12)] flex flex-col gap-4 sm:gap-6 lg:gap-[26px] items-center p-3 sm:p-4 lg:p-[5px] rounded-[12px] sm:rounded-[16px] overflow-hidden ${blogList.length === 1 ? 'max-w-[600px] mx-auto' : ''}`}>
+            <Link href={`/blog/${firstBlog.attributes.slug}`} className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[465px] rounded-[10px] sm:rounded-[12px] overflow-hidden flex-shrink-0">
               <Image
                 src={getImageUrl(firstBlog.attributes.featured_image)}
                 alt={firstBlog.attributes.title}
@@ -47,7 +47,7 @@ export default async function NewsSection() {
                 <Link href={`/blog/${firstBlog.attributes.slug}`}>
                   <h4 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[26px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-[#002f57] hover:opacity-80 transition-opacity md:whitespace-nowrap text-center px-2">{firstBlog.attributes.title}</h4>
                 </Link>
-                <p className="font-manrope font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#333333]">
+                <p className="font-manrope font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#333333] w-full break-words mt-2">
                   {firstBlog.attributes.excerpt || "Explore high-return real estate opportunities designed for modern lifestyles"}
                 </p>
               </div>
@@ -61,9 +61,9 @@ export default async function NewsSection() {
         )}
         {/* Right: Three smaller cards */}
         {smallBlogs.length > 0 && (
-          <div className="w-full lg:flex-1 flex flex-col">
+          <div className="w-full lg:flex-1 flex flex-col min-w-0">
             {smallBlogs.map((blog, i) => (
-              <Link key={blog.id} href={`/blog/${blog.attributes.slug}`} className={`border-b border-[rgba(51,51,51,0.6)] flex flex-col sm:flex-row gap-3 sm:gap-[16px] items-start sm:items-center hover:opacity-80 transition-opacity ${i === 0 ? 'pb-4 sm:pb-[26px]' : 'py-4 sm:py-[26px]'}`}>
+              <Link key={blog.id} href={`/blog/${blog.attributes.slug}`} className={`border-b border-[rgba(51,51,51,0.6)] flex flex-col sm:flex-row gap-3 sm:gap-[16px] items-start sm:items-center hover:opacity-80 transition-opacity min-w-0 ${i === 0 ? 'pb-4 sm:pb-[26px]' : 'py-4 sm:py-[26px]'}`}>
                 <div className="w-full sm:w-[150px] h-[120px] sm:h-[120px] rounded-[10px] overflow-hidden flex-shrink-0">
                   <Image
                     src={getImageUrl(blog.attributes.featured_image)}
@@ -74,7 +74,7 @@ export default async function NewsSection() {
                     unoptimized
                   />
                 </div>
-                <h4 className="flex-1 font-crimson font-semibold text-[16px] sm:text-[18px] md:text-[20px] leading-[22px] sm:leading-[26px] md:leading-[30px] text-[#333333]">{blog.attributes.title}</h4>
+                <h4 className="flex-1 font-crimson font-semibold text-[16px] sm:text-[18px] md:text-[20px] leading-[22px] sm:leading-[26px] md:leading-[30px] text-[#333333] min-w-0 break-words">{blog.attributes.title}</h4>
               </Link>
             ))}
           </div>

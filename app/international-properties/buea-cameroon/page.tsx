@@ -135,7 +135,7 @@ export default function BueaCameroonProject() {
   return (
     <div className="bg-[#fafafa] min-h-screen">
       {/* Hero Section with Video Background */}
-      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[760px] mb-[30px] md:mb-[75px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden bg-[#002f57]">
+      <section className="relative h-[850px] sm:h-[600px] md:h-[700px] lg:h-[760px] mb-[30px] md:mb-[75px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden bg-[#002f57]">
         {/* Mobile Video Background */}
         <div className="absolute inset-0 lg:hidden z-0">
           <video
@@ -237,7 +237,7 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Project Highlights Section */}
-      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
+      <section className="max-w-[1300px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-[139px] items-center">
           <div className="w-full lg:w-[638px] h-[300px] sm:h-[400px] lg:h-[512px] min-h-[300px] min-w-0 rounded-[24px] sm:rounded-[30px] lg:rounded-[36px] overflow-hidden relative flex-shrink-0">
             <Image
@@ -338,7 +338,7 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* A New Standard Section */}
-      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
+      <section className="max-w-[1300px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
           <div className="w-full lg:flex-1">
             <h2 className="font-crimson text-[#002f57] text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-tight lg:leading-[56px] tracking-tight lg:tracking-[-1.68px] mb-4">
@@ -362,7 +362,7 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Masterplan Overview Section */}
-      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
+      <section className="max-w-[1300px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-[100px] items-start">
           <div className="w-full lg:w-[650px] h-[400px] sm:h-[500px] lg:h-[656px] min-h-[400px] min-w-0 rounded-[24px] sm:rounded-[30px] lg:rounded-[36px] overflow-hidden relative flex-shrink-0">
             <Image
@@ -411,7 +411,7 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Crafted for Elegance Section */}
-      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
+      <section className="max-w-[1300px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-4 sm:px-6 py-[30px] md:py-[75px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-[60px] items-start">
           {/* Left Column - Text Content */}
           <div className="w-full lg:w-[638px] flex-shrink-0">

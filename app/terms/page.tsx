@@ -310,10 +310,10 @@ export default function TermsPage() {
                 Address: Flat 14, Burgundy House, 25 Liberty Bridge Road, London, E20 1AQ.
               </p>
               <p>
-                Email: <a href="mailto:pev@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">pev@pevonaltd.co.uk</a>
+                Email: <a href="mailto:Pebans@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">Pebans@pevonaltd.co.uk</a>
               </p>
               <p>
-                Phone: <a href="tel:+4420386329485" className="text-[#0073B5] hover:underline">+44-203-8632-9485</a> | <a href="tel:+447944228811" className="text-[#0073B5] hover:underline">+447944-228811</a>
+                Phone: <a href="tel:+442036329485" className="text-[#0073B5] hover:underline">+44-203-632-9485</a> | <a href="tel:+447944228811" className="text-[#0073B5] hover:underline">+447944-228811</a>
               </p>
               <p className="mt-4">
                 Formal notices should be sent to the registered address above.

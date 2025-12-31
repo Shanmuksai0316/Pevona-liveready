@@ -7,7 +7,6 @@ export default function ApplicationProcessPage() {
       {/* Hero section */}
       {/* Desktop Layout */}
       <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
-        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
@@ -19,6 +18,7 @@ export default function ApplicationProcessPage() {
               />
             </div>
           </div>
+        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
 
           <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
             <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
@@ -70,7 +70,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* What to Expect */}
-      <section className="max-w-[1336px] mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
         <div className="w-full lg:flex-1 max-w-[589px] space-y-4 p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             What to Expect
@@ -94,7 +94,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Step-by-step Application Process */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[80px] flex flex-col lg:flex-row gap-[60px] items-start">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[80px] flex flex-col lg:flex-row gap-[60px] items-start">
         <div className="w-full lg:flex-1 flex flex-col gap-6 max-w-[526px]">
           <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px] text-[#002f57]">
             How It Works
@@ -161,7 +161,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Required Documents */}
-      <section className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col gap-[26px]">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col gap-[26px]">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
           Required Documents
         </h2>
@@ -185,7 +185,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Compliance & Tenant Protection */}
-      <section className="max-w-[1336px] mx-5 lg:mx-auto mt-[60px] lg:mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] mx-5 lg:mx-auto mt-[60px] lg:mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
         <div className="basis-0 grow min-w-px space-y-4 max-w-[640px] p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Compliance &amp; Tenant Protection

@@ -43,7 +43,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* Your Property Search, Simplified */}
-      <section className="max-w-[1320px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row items-center gap-[221px]">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row items-center gap-[221px]">
         <div className="max-w-[526px] space-y-9">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Your Property Search, Simplified
@@ -79,7 +79,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* What We Help You Buy */}
-      <section className="max-w-[1560px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col items-center gap-9">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col items-center gap-9">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           What We Help You Buy
         </h2>
@@ -118,7 +118,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* How We Support Your Purchase */}
-      <section className="max-w-[1320px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col items-center gap-9">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col items-center gap-9">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           How We Support Your Purchase
         </h2>
@@ -189,7 +189,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* For Residential Buyers / For Investors Split */}
-      <section className="max-w-[1560px] mx-auto px-6 lg:px-0 mt-[150px] flex gap-4">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] flex gap-4">
         <div className="relative flex-1 min-h-[422px] rounded-[24px] overflow-hidden">
           <Image
             src="http://localhost:3845/assets/bb003c73853fb7801928d36d0fa470b9f7cf72cd.png"
@@ -230,7 +230,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* Our Buying Process */}
-      <section className="max-w-[1269px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row gap-[70px] items-end">
+      <section className="max-w-[1269px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row gap-[70px] items-end">
         <div className="flex flex-col items-center gap-[46px] w-[419px]">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
             Our Buying Process

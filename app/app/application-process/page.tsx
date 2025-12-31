@@ -41,7 +41,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* What to Expect */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
         <div className="flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             What to Expect
@@ -65,7 +65,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Step-by-step Application Process */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[80px] flex flex-col lg:flex-row gap-[60px] items-start">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[80px] flex flex-col lg:flex-row gap-[60px] items-start">
         <div className="flex-1 flex flex-col gap-6 max-w-[526px]">
           <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px] text-[#002f57]">
             How It Works
@@ -132,7 +132,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Required Documents */}
-      <section className="max-w-[1320px] mx-auto px-6 lg:px-[132px] mt-[120px] flex flex-col gap-[26px]">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-[132px] mt-[120px] flex flex-col gap-[26px]">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
           Required Documents
         </h2>
@@ -156,7 +156,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Compliance & Tenant Protection */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-[40px] lg:py-[60px] lg:pl-[60px]">
         <div className="basis-0 grow min-w-px min-h-px space-y-4 max-w-[640px]">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Compliance &amp; Tenant Protection

@@ -39,7 +39,7 @@ export default function BuyGuidePage() {
       </section>
 
       {/* Quick Buying Guide – steps */}
-      <section className="max-w-[1320px] mx-auto px-6 lg:px-0 mt-[120px] flex flex-col lg:flex-row gap-[60px]">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[120px] flex flex-col lg:flex-row gap-[60px]">
         {/* Left: intro + image */}
         <div className="lg:w-[40%] flex flex-col gap-8">
           <div className="space-y-4">
@@ -80,7 +80,7 @@ export default function BuyGuidePage() {
       </section>
 
       {/* How we help section */}
-      <section className="max-w-[1320px] mx-auto px-6 lg:px-0 mt-[140px] flex flex-col lg:flex-row items-center gap-[70px]">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[140px] flex flex-col lg:flex-row items-center gap-[70px]">
         <div className="lg:w-[50%] space-y-8">
           <div className="space-y-4">
             <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-0.06em] text-[#002f57]">
@@ -189,7 +189,7 @@ export default function BuyGuidePage() {
       </section>
 
       {/* For homebuyers / investors cards */}
-      <section className="max-w-[1560px] mx-auto px-6 lg:px-0 mt-[120px] flex flex-col lg:flex-row gap-4">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[120px] flex flex-col lg:flex-row gap-4">
         <div className="relative flex-1 min-h-[260px] rounded-[24px] overflow-hidden">
           <Image
             src="http://localhost:3845/assets/bb003c73853fb7801928d36d0fa470b9f7cf72cd.png"
@@ -236,7 +236,7 @@ export default function BuyGuidePage() {
       </section>
 
       {/* Preparing to Buy checklist */}
-      <section className="max-w-[1320px] mx-auto px-6 lg:px-0 mt-[140px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row items-center gap-[70px]">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[140px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row items-center gap-[70px]">
         <div className="lg:w-[50%] relative h-[320px] rounded-[24px] overflow-hidden">
           <Image
             src="http://localhost:3845/assets/1926b3a51a628be90e643875382fc48acb98c3b8.png"

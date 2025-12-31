@@ -7,7 +7,6 @@ export default function LandlordServicesPage() {
       {/* Hero section */}
       {/* Desktop Layout */}
       <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
-        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
@@ -20,6 +19,7 @@ export default function LandlordServicesPage() {
               />
             </div>
           </div>
+        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
 
           <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
             <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
@@ -80,7 +80,7 @@ export default function LandlordServicesPage() {
       </section>
 
       {/* Why Landlords Choose Us */}
-      <section className="max-w-[1336px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] mb-8">
           Why Landlords Choose Us
         </h2>
@@ -119,7 +119,7 @@ export default function LandlordServicesPage() {
       </section>
 
       {/* Our Letting Process */}
-      <section className="max-w-[1316px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row gap-[70px] items-center">
+      <section className="max-w-[1316px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row gap-[70px] items-center">
         <div className="flex-1 w-full lg:max-w-[526px] space-y-9">
           <div className="space-y-4">
             <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px] text-[#002f57]">
@@ -190,7 +190,7 @@ export default function LandlordServicesPage() {
 
       {/* Renting with Confidence for Landlords */}
       <div className="lg:px-0 px-5 overflow-x-auto">
-        <section className="max-w-[1336px] mx-auto mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
+        <section className="max-w-[1336px] 1920:max-w-[1600px] mx-auto mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
           <div className="w-full lg:flex-1 max-w-[589px] space-y-4 pl-[5%]">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Renting with Confidence
@@ -226,7 +226,7 @@ export default function LandlordServicesPage() {
 
       {/* Smart Management. Seamless Support. */}
       <div className="lg:px-0 px-5 overflow-x-auto">
-        <section className="max-w-[1336px] mx-auto mt-[80px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
+        <section className="max-w-[1336px] 1920:max-w-[1600px] mx-auto mt-[80px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
         <div className="flex-1 relative w-full max-w-[680px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Landlord/5th_Smart_Management._Seamless_Support..png"

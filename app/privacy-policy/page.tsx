@@ -38,8 +38,8 @@ export default function PrivacyPolicyPage() {
               <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">Data Protection Officer (DPO)</p>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
                 Peter Banyong<br />
-                Email: <a href="mailto:pev@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">pev@pevonaltd.co.uk</a><br />
-                Phone: <a href="tel:+442071234567" className="text-[#0073B5] hover:underline">+44 (0) 20 7123 4567</a>
+                Email: <a href="mailto:Pebans@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">Pebans@pevonaltd.co.uk</a><br />
+                Phone: <a href="tel:+442036329485" className="text-[#0073B5] hover:underline">+44-203-632-9485</a>
               </p>
             </div>
           </section>
@@ -254,10 +254,10 @@ export default function PrivacyPolicyPage() {
                 Address: Flat 14, Burgundy House, 25 Liberty Bridge Road, London, E20 1AQ.
               </p>
               <p>
-                Email: <a href="mailto:pev@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">pev@pevonaltd.co.uk</a>
+                Email: <a href="mailto:Pebans@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">Pebans@pevonaltd.co.uk</a>
               </p>
               <p>
-                Phone: <a href="tel:+4420386329485" className="text-[#0073B5] hover:underline">+44-203-8632-9485</a> | <a href="tel:+447944228811" className="text-[#0073B5] hover:underline">+447944-228811</a>
+                Phone: <a href="tel:+442036329485" className="text-[#0073B5] hover:underline">+44-203-632-9485</a> | <a href="tel:+447944228811" className="text-[#0073B5] hover:underline">+447944-228811</a>
               </p>
             </div>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">

@@ -268,8 +268,8 @@ export default function ContactPage() {
                   <h3 className="font-crimson font-semibold text-[18px] sm:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] lg:leading-[32px] text-[#002f57]">
                     Email
                   </h3>
-                  <a href="mailto:pev@pevonaltd.co.uk" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
-                    pev@pevonaltd.co.uk
+                  <a href="mailto:admin-pev@pevonaltd.co.uk" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
+                    admin-pev@pevonaltd.co.uk
                   </a>
                 </div>
               </div>
@@ -285,8 +285,8 @@ export default function ContactPage() {
                   <h3 className="font-crimson font-semibold text-[18px] sm:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[28px] lg:leading-[32px] text-[#002f57]">
                     Phone
                   </h3>
-                  <a href="tel:+4420386329485" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
-                    +44-203-8632-9485
+                  <a href="tel:+442036329485" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
+                    +44-203-632-9485
                   </a>
                   <a href="tel:+447944228811" className="font-manrope font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-[#333333] hover:text-[#002f57] transition-colors">
                     +447944-228811

@@ -40,7 +40,7 @@ export default function OurManagementServicesPage() {
       </section>
 
       {/* Managing Every Detail */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row gap-[100px] items-center">
         <div className="flex-1 relative w-full max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
             src="http://localhost:3845/assets/8c635a6811cac99f508d3af65acc70648e8d9e5c.png"
@@ -74,7 +74,7 @@ export default function OurManagementServicesPage() {
       </section>
 
       {/* What’s Included in Our Management Service */}
-      <section className="max-w-[1380px] mx-auto px-6 lg:px-0 mt-[140px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1380px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[140px] flex flex-col gap-[36px] items-center">
         <div className="text-center max-w-[840px] space-y-3">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             What’s Included in Our Management Service
@@ -221,7 +221,7 @@ export default function OurManagementServicesPage() {
       </section>
 
       {/* Our Process */}
-      <section className="max-w-[1360px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col gap-[26px]">
+      <section className="max-w-[1360px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col gap-[26px]">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-left">
           Our Process – Simple, Transparent, Effective
         </h2>
@@ -335,7 +335,7 @@ export default function OurManagementServicesPage() {
       </section>
 
       {/* Why Choose Our Management Services */}
-      <section className="max-w-[1336px] mx-auto px-6 lg:px-0 mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col gap-[46px] items-center">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col gap-[46px] items-center">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Why Choose Our Management Services
         </h2>

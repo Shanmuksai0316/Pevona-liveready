@@ -6,7 +6,6 @@ export default function ChargesFeesPage() {
       {/* ================= HERO ================= */}
       {/* Desktop Layout */}
       <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
-        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
         <Image
@@ -19,6 +18,7 @@ export default function ChargesFeesPage() {
         />
             </div>
           </div>
+        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
 
           <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
             <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
@@ -63,7 +63,7 @@ export default function ChargesFeesPage() {
 
       {/* ================= INTRO & SALES DEPARTMENT ================= */}
       <section className="bg-white py-[30px] lg:py-[70px] px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px]">
-        <div className="max-w-[1410px] mx-auto">
+        <div className="max-w-[1410px] 1920:max-w-[1600px] mx-auto">
           {/* Header */}
           <div className="text-center mb-[26px]">
             <h2 className="font-crimson text-[36px] md:text-[56px] leading-[40px] md:leading-[56px] tracking-[-1.08px] md:tracking-[-1.68px] mb-4 text-[#002f57]">
@@ -307,7 +307,7 @@ export default function ChargesFeesPage() {
 
       {/* ================= COMPLIANCE ================= */}
       <section className="bg-white py-[30px] lg:py-[70px] px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px]">
-        <div className="max-w-[1316px] mx-auto">
+        <div className="max-w-[1316px] 1920:max-w-[1600px] mx-auto">
           <h3 className="font-crimson font-semibold text-[clamp(1.75rem,1.5625rem+0.9375vw,2.5rem)] leading-[40px] text-center mb-[26px] text-[#002f57] capitalize">
             Compliance
           </h3>
@@ -350,7 +350,7 @@ export default function ChargesFeesPage() {
 
       {/* ================= TENANT PAYMENTS ================= */}
       <section className="bg-white py-[30px] lg:py-[70px] px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px]">
-        <div className="max-w-[1316px] mx-auto">
+        <div className="max-w-[1316px] 1920:max-w-[1600px] mx-auto">
           <h3 className="font-crimson font-semibold text-[clamp(1.75rem,1.5625rem+0.9375vw,2.5rem)] leading-[40px] text-center mb-[16px] text-[#002f57] capitalize">
             Tenant Payments
           </h3>
@@ -384,7 +384,7 @@ export default function ChargesFeesPage() {
 
       {/* ================= LETTINGS DEPARTMENT ================= */}
       <section className="bg-white py-[30px] lg:py-[70px] px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px]">
-        <div className="max-w-[1412px] mx-auto">
+        <div className="max-w-[1412px] 1920:max-w-[1600px] mx-auto">
           <h3 className="font-crimson font-semibold text-[clamp(1.75rem,1.5625rem+0.9375vw,2.5rem)] leading-[40px] text-center mb-[16px] text-[#002f57] capitalize">
             Lettings Department
           </h3>
@@ -429,7 +429,7 @@ export default function ChargesFeesPage() {
 
       {/* ================= ADDITIONAL SERVICES ================= */}
       <section className="bg-white py-[30px] lg:py-[70px] px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px]">
-        <div className="max-w-[1412px] mx-auto">
+        <div className="max-w-[1412px] 1920:max-w-[1600px] mx-auto">
           <h3 className="font-crimson font-semibold text-[clamp(1.75rem,1.5625rem+0.9375vw,2.5rem)] leading-[40px] text-center mb-[26px] text-[#002f57] capitalize">
             Additional Services
           </h3>
@@ -544,7 +544,7 @@ export default function ChargesFeesPage() {
 
       {/* ================= PROPERTY MANAGEMENT DEPARTMENT ================= */}
       <section className="bg-white py-[30px] lg:py-[70px] px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px]">
-        <div className="max-w-[1410px] mx-auto">
+        <div className="max-w-[1410px] 1920:max-w-[1600px] mx-auto">
           <h3 className="font-crimson font-semibold text-[clamp(1.75rem,1.5625rem+0.9375vw,2.5rem)] leading-[40px] text-center mb-[26px] text-[#002f57] capitalize">
             Property Management Department
           </h3>
@@ -584,7 +584,7 @@ export default function ChargesFeesPage() {
 
       {/* ================= SOURCING & PURCHASING DEPARTMENT ================= */}
       <section className="bg-white pt-[30px] lg:pt-[70px] pb-0 px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px]">
-        <div className="max-w-[1296px] mx-auto">
+        <div className="max-w-[1296px] 1920:max-w-[1600px] mx-auto">
           <h3 className="font-crimson font-semibold text-[clamp(1.75rem,1.5625rem+0.9375vw,2.5rem)] leading-[40px] text-center mb-[26px] text-[#002f57] capitalize">
             Sourcing & Purchasing Department
           </h3>

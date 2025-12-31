@@ -70,7 +70,7 @@ export default function PropertiesFilterSection({
   }, [properties, locationQuery, minPrice, maxPrice, beds, type, focus]);
 
   return (
-    <section className="max-w-[1440px] mx-auto px-6 lg:px-0 mt-[150px] mb-[60px] lg:mb-[120px]">
+    <section className="max-w-[1440px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] mb-[60px] lg:mb-[120px]">
       {/* Search Filter */}
       <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] px-[36px] py-[26px] space-y-[10px]">
         {/* Top row: Location, Min Price, Max Price, Beds, Type, Apply/Clear */}

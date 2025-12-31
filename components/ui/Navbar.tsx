@@ -88,12 +88,12 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-center lg:justify-between px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[50px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[16px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible z-[10001]">
+    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-center lg:justify-between pl-[60px] pr-[60px] pt-[10px] pb-[10px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible z-[10001]">
       {/* Logo */}
-      <div className="h-[40px] lg:h-[60px] w-[110px] lg:w-[145px] relative z-[10001]">
+      <div className="h-[48px] lg:h-[72px] w-[130px] lg:w-[180px] relative z-[10001]">
         <Link href="/" onClick={() => setIsOpen(false)}>
           <Image
-            src="/images/Header-logo.svg"
+            src="/images/pevona-logo-new.svg"
             alt="Pevona Logo"
             fill
             className="object-contain"
