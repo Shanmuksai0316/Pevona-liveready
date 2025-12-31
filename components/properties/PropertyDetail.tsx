@@ -184,7 +184,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
             <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em] mb-1">
               {attributes.status || "For Sale"}
             </p>
-            <h1 className="font-crimson text-2xl md:text-3xl font-semibold text-pevona-dark leading-snug">
+            <h1 className="font-crimson text-2xl font-semibold text-pevona-dark leading-snug">
               {attributes.title}
             </h1>
             {fullAddress && (
@@ -243,6 +243,83 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
               </div>
             )}
 
+            {/* Property Details */}
+            <div>
+              <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
+                Property Details
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="space-y-1">
+                  <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                    Country
+                  </p>
+                  <p className="font-manrope text-base text-gray-900">
+                    {attributes.state === "England" || attributes.state === "Scotland" || attributes.state === "Wales" || attributes.state === "Northern Ireland" 
+                      ? "United Kingdom" 
+                      : attributes.state || "United Kingdom"}
+                  </p>
+                </div>
+                {attributes.status === "For Rent" && (
+                  <div className="space-y-1">
+                    <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                      Rent PM
+                    </p>
+                    <p className="font-manrope text-base text-gray-900">
+                      {attributes.currency || "GBP"}
+                      {attributes.price?.toLocaleString?.("en-GB") ?? attributes.price}
+                    </p>
+                  </div>
+                )}
+                {attributes.status === "For Sale" && (
+                  <div className="space-y-1">
+                    <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                      Sales
+                    </p>
+                    <p className="font-manrope text-base text-gray-900">
+                      {attributes.currency || "GBP"}
+                      {attributes.price?.toLocaleString?.("en-GB") ?? attributes.price}
+                    </p>
+                  </div>
+                )}
+                <div className="space-y-1">
+                  <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                    Property Size
+                  </p>
+                  <p className="font-manrope text-base text-gray-900">
+                    {attributes.area ? `${attributes.area.toLocaleString("en-GB")} sq ft` : "-"}
+                  </p>
+                </div>
+                <div className="space-y-1">
+                  <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                    Local Council
+                  </p>
+                  <p className="font-manrope text-base text-gray-900">
+                    {attributes.city ? `${attributes.city} Council` : "-"}
+                  </p>
+                </div>
+                {attributes.council_tax_band && (
+                  <div className="space-y-1">
+                    <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                      Council Tax Band
+                    </p>
+                    <p className="font-manrope text-base text-gray-900">
+                      {attributes.council_tax_band}
+                    </p>
+                  </div>
+                )}
+                {attributes.utilities && (
+                  <div className="space-y-1">
+                    <p className="font-manrope text-xs text-gray-500 uppercase tracking-[0.18em]">
+                      Utilities
+                    </p>
+                    <p className="font-manrope text-base text-gray-900">
+                      {attributes.utilities}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+
             {/* Property Essentials */}
             <div>
               <h2 className="font-crimson text-xl md:text-2xl font-semibold text-pevona-dark mb-4">
@@ -284,20 +361,10 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
               </div>
             </div>
 
-            {/* Utilities, Parking, Accessibility */}
-            {(attributes.utilities || attributes.parking || attributes.accessibility) && (
+            {/* Parking, Accessibility */}
+            {(attributes.parking || attributes.accessibility) && (
               <div>
                 <div className="space-y-3">
-                  {attributes.utilities && (
-                    <div>
-                      <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
-                        Utilities:
-                      </p>
-                      <p className="font-manrope text-sm md:text-base text-gray-700 whitespace-pre-line">
-                        {attributes.utilities}
-                      </p>
-                    </div>
-                  )}
                   {attributes.parking && (
                     <div>
                       <p className="font-crimson font-semibold text-base md:text-lg text-pevona-dark mb-1">
