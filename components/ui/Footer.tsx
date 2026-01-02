@@ -43,6 +43,7 @@ export default function Footer() {
             <div className="flex flex-col gap-[10px] items-start font-manrope font-normal text-[18px] leading-[28px] text-white opacity-80">
               <Link href="/privacy-policy" className="hover:text-white hover:opacity-100 transition-opacity">Privacy Policy</Link>
               <Link href="/terms" className="hover:text-white hover:opacity-100 transition-opacity">Terms & Conditions</Link>
+              <Link href="/cookie-policy" className="hover:text-white hover:opacity-100 transition-opacity">Cookie Policy</Link>
               <Link href="/charges-fees" className="hover:text-white hover:opacity-100 transition-opacity">Charges & Fees</Link>
             </div>
           </div>
