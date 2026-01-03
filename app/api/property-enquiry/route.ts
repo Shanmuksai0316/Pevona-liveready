@@ -289,7 +289,7 @@ async function sendEmailNotification(data: {
       email: data.email,
       phone: data.phone,
       message: data.message,
-      adminEmail: ADMIN_EMAIL,
+      adminEmails: ADMIN_EMAILS,
     });
     throw new Error("Mailgun not configured - cannot send email");
   }
