@@ -236,7 +236,7 @@ export default function ContactPage() {
                   </p>
                   <p className="font-manrope text-[12px] sm:text-[14px] text-red-600">
                     If the problem persists, please email us at{" "}
-                    <a href="mailto:pebans@pevonaltd.co.uk" className="underline">pebans@pevonaltd.co.uk</a>
+                    <a href="mailto:admin-pev@pevonaltd.co.uk" className="underline">admin-pev@pevonaltd.co.uk</a>
                     {" "}or call us at{" "}
                     <a href="tel:+4420386329485" className="underline">+44-203-8632-9485</a>.
                   </p>
