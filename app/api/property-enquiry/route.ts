@@ -6,7 +6,11 @@ const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337"
 const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY;
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN;
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin-pev@pevonaltd.co.uk";
+// Support multiple email addresses (comma-separated)
+const ADMIN_EMAILS = (process.env.ADMIN_EMAIL || "admin-pev@pevonaltd.co.uk")
+  .split(',')
+  .map(email => email.trim())
+  .filter(email => email.length > 0);
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export async function POST(request: NextRequest) {
@@ -199,7 +203,7 @@ export async function POST(request: NextRequest) {
         propertySlug: propertySlug || "",
         subject: subject || "",
       });
-      console.log("✅ Email notification sent successfully to", ADMIN_EMAIL);
+      console.log("✅ Email notification sent successfully to", ADMIN_EMAILS.join(", "));
     } catch (emailError) {
       console.error("❌ Email sending failed:", emailError);
       // Log detailed error for debugging
@@ -209,7 +213,7 @@ export async function POST(request: NextRequest) {
           stack: emailError.stack,
           hasMailgunKey: !!MAILGUN_API_KEY,
           hasMailgunDomain: !!MAILGUN_DOMAIN,
-          adminEmail: ADMIN_EMAIL,
+          adminEmails: ADMIN_EMAILS,
         });
       }
       // Don't fail the request if email fails - enquiry is still saved to Strapi
@@ -290,7 +294,7 @@ async function sendEmailNotification(data: {
     throw new Error("Mailgun not configured - cannot send email");
   }
 
-  if (!ADMIN_EMAIL) {
+  if (!ADMIN_EMAILS || ADMIN_EMAILS.length === 0) {
     console.error("❌ ADMIN_EMAIL is not set - cannot send email");
     throw new Error("ADMIN_EMAIL is not configured");
   }
@@ -418,7 +422,7 @@ This email was sent from the Pevona property enquiry system.
 
   await mg.messages.create(MAILGUN_DOMAIN, {
     from: `Pevona <noreply@${MAILGUN_DOMAIN}>`,
-    to: [ADMIN_EMAIL],
+    to: ADMIN_EMAILS, // Send to all email addresses
     subject: `New Property Enquiry: ${data.propertyTitle}`,
     text: emailText,
     html: emailHtml,
