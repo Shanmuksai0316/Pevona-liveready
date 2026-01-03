@@ -257,12 +257,12 @@ export async function POST(request: NextRequest) {
     }
 
     // Handle both single object and array responses from Strapi
-    const enquiryData = Array.isArray(savedEnquiry.data) 
-      ? savedEnquiry.data[0] 
+    const enquiryResponseData = Array.isArray(savedEnquiry.data)
+      ? savedEnquiry.data[0]
       : savedEnquiry.data;
     
     return NextResponse.json(
-      { success: true, data: enquiryData },
+      { success: true, data: enquiryResponseData },
       { status: 200 }
     );
   } catch (error) {
