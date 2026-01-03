@@ -60,6 +60,9 @@ export async function POST(request: NextRequest) {
       },
     };
 
+    // Log the exact data being sent
+    console.log("📤 Sending to Strapi:", JSON.stringify(enquiryData, null, 2));
+
     // If property slug is provided, try to link to property
     if (propertySlug) {
       try {
@@ -120,9 +123,9 @@ export async function POST(request: NextRequest) {
     }
 
     const responseText = await strapiResponse.text();
-    console.log("Strapi response status:", strapiResponse.status);
-    console.log("Strapi response:", responseText.substring(0, 500)); // Log first 500 chars
-    console.log("Data being sent to Strapi:", JSON.stringify(enquiryData, null, 2));
+    console.log("📥 Strapi response status:", strapiResponse.status);
+    console.log("📥 Strapi response URL:", `${STRAPI_URL}/api/property-enquiries`);
+    console.log("📥 Strapi response (full):", responseText);
 
     if (!strapiResponse.ok) {
       console.error("Strapi error details:", {
@@ -181,7 +184,15 @@ export async function POST(request: NextRequest) {
       const enquiryId = Array.isArray(savedEnquiry.data) 
         ? savedEnquiry.data[0]?.id 
         : savedEnquiry.data?.id;
-      console.log("Successfully saved to Strapi:", enquiryId);
+      
+      console.log("✅ Successfully saved to Strapi!");
+      console.log("✅ Enquiry ID:", enquiryId);
+      console.log("✅ Full response:", JSON.stringify(savedEnquiry, null, 2));
+      
+      if (!enquiryId) {
+        console.error("⚠️ WARNING: No enquiry ID in response!");
+        console.error("⚠️ Response structure:", Object.keys(savedEnquiry));
+      }
     } catch (e) {
       console.error("Failed to parse Strapi response:", e);
       console.error("Response text that failed to parse:", responseText);
