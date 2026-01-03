@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "CMS content for the Home page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_title": { "type": "string" },
+    "hero_subtitle": { "type": "richtext" },
+    "hero_button_text": { "type": "string" }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

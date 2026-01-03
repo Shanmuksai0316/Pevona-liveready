@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page",
+    "description": "CMS content for the About page sections"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "about_hero_title_line1": { "type": "string" },
+    "about_hero_title_line2": { "type": "string" },
+    "about_hero_body": { "type": "richtext" },
+    "about_hero_button_label": { "type": "string" },
+
+    "who_we_are_tagline": { "type": "string" },
+    "who_we_are_heading": { "type": "string" },
+    "who_we_are_paragraph1": { "type": "richtext" },
+    "who_we_are_paragraph2": { "type": "richtext" },
+
+    "mission_text": { "type": "richtext" },
+    "vision_text": { "type": "richtext" },
+
+    "values_heading": { "type": "string" },
+    "values_items": { "type": "json" },
+
+    "team_heading": { "type": "string" },
+    "team_subheading": { "type": "richtext" },
+
+    "esg_heading": { "type": "string" },
+    "esg_body": { "type": "richtext" },
+
+    "testimonials_heading": { "type": "string" },
+    "testimonials_subheading": { "type": "richtext" },
+    "testimonials": { "type": "json" }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

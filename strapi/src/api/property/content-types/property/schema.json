@@ -1,0 +1,209 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["For Sale", "For Rent", "Sold"],
+      "required": true,
+      "default": "For Sale"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "zipcode": {
+      "type": "string",
+      "required": true
+    },
+    "bedrooms": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "bathrooms": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "area": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "features": {
+      "type": "json"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "floor_plans": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "map_embed": {
+      "type": "text"
+    },
+    "tenure_information": {
+      "type": "string"
+    },
+    "council_tax_band": {
+      "type": "string"
+    },
+    "rent_price": {
+      "type": "decimal"
+    },
+    "annual_ground_rents": {
+      "type": "text"
+    },
+    "estimated_annual_service_charges": {
+      "type": "text"
+    },
+    "number_of_years_of_lease": {
+      "type": "string"
+    },
+    "hmo": {
+      "type": "string"
+    },
+    "local_council": {
+      "type": "string"
+    },
+    "property_type": {
+      "type": "string"
+    },
+    "utilities": {
+      "type": "text"
+    },
+    "parking": {
+      "type": "string"
+    },
+    "accessibility": {
+      "type": "text"
+    },
+    "cladding_building_safety": {
+      "type": "text"
+    },
+    "rights_restrictions": {
+      "type": "text"
+    },
+    "flood_risk": {
+      "type": "string"
+    },
+    "listed_status": {
+      "type": "string"
+    },
+    "epc_rating": {
+      "type": "string"
+    },
+    "service_charge": {
+      "type": "decimal"
+    },
+    "ground_rent": {
+      "type": "decimal"
+    },
+    "review_period": {
+      "type": "string"
+    },
+    "lease_remaining": {
+      "type": "string"
+    },
+    "documents": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "epc_document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "gas_safety_certificate": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "electrical_safety_report": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "hmo_licence": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
