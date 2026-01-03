@@ -24,7 +24,7 @@ MAILGUN_DOMAIN=your-mailgun-domain.com
 # For sandbox: sandboxXXXXX.mailgun.org (find in Mailgun dashboard)
 
 # Admin email (where property enquiry notifications go)
-ADMIN_EMAIL=nagraj@grape5.com
+ADMIN_EMAIL=admin-pev@pevonaltd.co.uk
 
 # Site URL (for email links)
 NEXT_PUBLIC_SITE_URL=http://localhost:3000

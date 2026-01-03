@@ -55,7 +55,7 @@ MAILGUN_API_KEY=your-mailgun-api-key-here
 MAILGUN_DOMAIN=your-mailgun-domain.com
 # or sandbox: sandboxXXXXX.mailgun.org
 
-ADMIN_EMAIL=nagraj@grape5.com
+ADMIN_EMAIL=admin-pev@pevonaltd.co.uk
 
 NEXT_PUBLIC_SITE_URL=https://yourdomain.com
 # or http://your-server-ip:3000 if not using domain
@@ -144,7 +144,7 @@ pm2 logs strapi
 4. Verify:
    - ✅ Success message appears
    - ✅ Check Strapi admin: `http://your-server-ip:1337/admin` → Content Manager → Property Enquiries
-   - ✅ Check email at `nagraj@grape5.com`
+   - ✅ Check email at `admin-pev@pevonaltd.co.uk`
 
 #### Check Strapi:
 - Visit: `http://your-server-ip:1337/admin`
@@ -188,7 +188,7 @@ sudo iptables -A INPUT -p tcp --dport 1337 -j ACCEPT
 ### Email Not Sending
 - Verify Mailgun credentials in `.env`
 - Check Mailgun dashboard for delivery logs
-- If using sandbox domain, ensure `nagraj@grape5.com` is authorized
+- If using sandbox domain, ensure `admin-pev@pevonaltd.co.uk` is authorized
 - Check server logs for Mailgun errors
 
 ## Quick Reference Commands

@@ -6,7 +6,7 @@ const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337"
 const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY;
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN;
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "nagraj@grape5.com";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin-pev@pevonaltd.co.uk";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export async function POST(request: NextRequest) {
@@ -199,9 +199,20 @@ export async function POST(request: NextRequest) {
         propertySlug: propertySlug || "",
         subject: subject || "",
       });
+      console.log("✅ Email notification sent successfully to", ADMIN_EMAIL);
     } catch (emailError) {
-      console.error("Email sending failed:", emailError);
-      // Don't fail the request if email fails
+      console.error("❌ Email sending failed:", emailError);
+      // Log detailed error for debugging
+      if (emailError instanceof Error) {
+        console.error("Email error details:", {
+          message: emailError.message,
+          stack: emailError.stack,
+          hasMailgunKey: !!MAILGUN_API_KEY,
+          hasMailgunDomain: !!MAILGUN_DOMAIN,
+          adminEmail: ADMIN_EMAIL,
+        });
+      }
+      // Don't fail the request if email fails - enquiry is still saved to Strapi
     }
 
     return NextResponse.json(
@@ -265,7 +276,8 @@ async function sendEmailNotification(data: {
   subject?: string;
 }) {
   if (!MAILGUN_API_KEY || !MAILGUN_DOMAIN) {
-    console.warn("Mailgun not configured, skipping email");
+    console.warn("⚠️ Mailgun not configured - email will not be sent");
+    console.warn("To enable email notifications, set MAILGUN_API_KEY and MAILGUN_DOMAIN in your environment variables");
     // Log enquiry details for local development
     console.log("📧 Property Enquiry (Email not configured):", {
       property: data.propertyTitle,
@@ -273,8 +285,14 @@ async function sendEmailNotification(data: {
       email: data.email,
       phone: data.phone,
       message: data.message,
+      adminEmail: ADMIN_EMAIL,
     });
-    return;
+    throw new Error("Mailgun not configured - cannot send email");
+  }
+
+  if (!ADMIN_EMAIL) {
+    console.error("❌ ADMIN_EMAIL is not set - cannot send email");
+    throw new Error("ADMIN_EMAIL is not configured");
   }
 
   const mailgun = new Mailgun(formData);
