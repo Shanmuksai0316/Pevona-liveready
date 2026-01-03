@@ -177,7 +177,11 @@ export async function POST(request: NextRequest) {
     let savedEnquiry;
     try {
       savedEnquiry = JSON.parse(responseText);
-      console.log("Successfully saved to Strapi:", savedEnquiry.data?.id);
+      // Handle both single object and array responses
+      const enquiryId = Array.isArray(savedEnquiry.data) 
+        ? savedEnquiry.data[0]?.id 
+        : savedEnquiry.data?.id;
+      console.log("Successfully saved to Strapi:", enquiryId);
     } catch (e) {
       console.error("Failed to parse Strapi response:", e);
       console.error("Response text that failed to parse:", responseText);
@@ -219,8 +223,13 @@ export async function POST(request: NextRequest) {
       // Don't fail the request if email fails - enquiry is still saved to Strapi
     }
 
+    // Handle both single object and array responses from Strapi
+    const enquiryData = Array.isArray(savedEnquiry.data) 
+      ? savedEnquiry.data[0] 
+      : savedEnquiry.data;
+    
     return NextResponse.json(
-      { success: true, data: savedEnquiry.data },
+      { success: true, data: enquiryData },
       { status: 200 }
     );
   } catch (error) {
