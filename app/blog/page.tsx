@@ -17,7 +17,7 @@ export default async function BlogPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Header Section */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[150px] pb-[60px] sm:pb-[80px] md:pb-[100px]">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[150px] pb-[60px] sm:pb-[80px] md:pb-[100px]">
         <div className="text-center space-y-4">
           <h1 className="font-crimson text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-tight tracking-tight text-[#002f57]">
             Blogs
@@ -30,7 +30,7 @@ export default async function BlogPage() {
 
       {/* Main Article Section - Latest Blog */}
       {latestBlog && (
-        <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] sm:mb-[80px]">
+        <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] sm:mb-[80px]">
           <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] overflow-hidden flex flex-col lg:flex-row">
             {/* Left: Content */}
             <div className="flex-1 p-6 sm:p-8 lg:p-[40px] flex flex-col justify-between min-w-0 relative">
@@ -85,7 +85,7 @@ export default async function BlogPage() {
 
       {/* Blog Posts Grid */}
       {gridBlogs.length > 0 && (
-        <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] sm:mb-[80px]">
+        <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] sm:mb-[80px]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
             {gridBlogs.map((blog) => {
               const imageUrl = blog.attributes.featured_image?.data
@@ -132,7 +132,7 @@ export default async function BlogPage() {
 
       {/* Empty State */}
       {blogList.length === 0 && (
-        <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] sm:mb-[80px]">
+        <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] sm:mb-[80px]">
           <div className="text-center py-16">
             <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
               No blog posts found. Please add blog posts in Strapi admin.

@@ -27,7 +27,7 @@ export default function SolutionsSection() {
       className="
         flex flex-col gap-[26px] items-center w-full overflow-hidden
         mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]
-        px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
+        px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1200:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
       "
     >
       {/* HEADING */}
@@ -50,6 +50,7 @@ export default function SolutionsSection() {
           md:flex-row
           gap-[26px]
           items-center justify-center w-full
+          max-w-full
         "
       >
         {services.map((service, i) => (
@@ -59,6 +60,7 @@ export default function SolutionsSection() {
               flex flex-col gap-[21px] items-center
               w-full
               sm:w-[445px]
+              max-w-full
             "
           >
             {/* IMAGE */}
@@ -99,8 +101,8 @@ export default function SolutionsSection() {
                 text-[16px] leading-[24px]
                 sm:text-[18px] sm:leading-[28px]
                 text-center sm:text-left
+                w-full max-w-[370px]
               "
-              style={{ width: `${service.width}px` }}
             >
               {service.description}
             </p>

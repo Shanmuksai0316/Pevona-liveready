@@ -10,7 +10,7 @@ export default function AboutSection() {
         gap-[31px]
         h-[811px] lg:h-[800px]
         pb-[24px] sm:pb-[30px] lg:pb-[36px]
-        px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
+        px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
         mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]
       "
     >
@@ -53,7 +53,8 @@ export default function AboutSection() {
           pr-0
           sm:pr-[200px]
           md:pr-[400px]
-          lg:pr-[800px]
+          lg:pr-[550px]
+          1300:pr-[800px]
         "
       >
         <div className="flex flex-col gap-[8px] items-start">

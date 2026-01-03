@@ -126,7 +126,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <div className="relative w-full h-[400px] sm:h-[450px] lg:h-[500px] flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-b from-[#002f57] to-[#001a2e]"></div>
-        <div className="relative z-10 flex flex-col items-center gap-[12px] sm:gap-[16px] text-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+        <div className="relative z-10 flex flex-col items-center gap-[12px] sm:gap-[16px] text-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
           <h1 className="font-crimson text-[28px] sm:text-[36px] md:text-[42px] lg:text-[56px] leading-tight lg:leading-[56px] text-white tracking-tight lg:tracking-[-1.68px]">
             Get In Touch
           </h1>
@@ -137,7 +137,7 @@ export default function ContactPage() {
       </div>
 
       {/* Contact Content */}
-      <div className="flex flex-col lg:flex-row gap-[40px] sm:gap-[50px] lg:gap-[60px] items-start justify-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[40px] sm:pt-[60px] lg:pt-[80px] w-full max-w-[1560px]">
+      <div className="flex flex-col lg:flex-row gap-[40px] sm:gap-[50px] lg:gap-[60px] items-start justify-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[40px] sm:pt-[60px] lg:pt-[80px] w-full max-w-[1560px]">
         {/* Contact Form */}
         <div className="flex-1 w-full max-w-[600px]">
           <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-[24px] sm:p-[32px] lg:p-[40px]">

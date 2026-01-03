@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhyChooseSection() {
   return (
-    <div className="w-full mt-[120px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+    <div className="w-full mt-[120px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
       <h2
         className="
           font-crimson text-[#002f57] tracking-[-1.68px]

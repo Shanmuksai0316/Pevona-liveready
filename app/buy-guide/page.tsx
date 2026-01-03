@@ -47,7 +47,7 @@ rental market with good long-term fundamentals.`,
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero */}
       <section className="relative w-full h-[850px] lg:h-[760px] overflow-hidden">
-        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
+        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
           {/* Mobile Background */}
           <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">
             <div className="relative w-full h-[850px] rounded-b-[24px] sm:rounded-b-[30px] overflow-hidden">
@@ -117,7 +117,7 @@ rental market with good long-term fundamentals.`,
       </section>
 
       {/* Quick Buying Guide – steps */}
-      <section className="max-w-[1320px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-4 lg:px-0 lg:pl-[80px] lg:pr-[80px] 1300:pl-[80px] 1300:pr-[80px] 1400:pl-[80px] 1400:pr-[80px] 1500:pl-[100px] 1500:pr-[100px] 1600:pl-[130px] 1600:pr-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[48px] items-start">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-4 lg:px-0 lg:pl-[40px] lg:pr-[40px] 1100:pl-[80px] 1100:pr-[80px] 1300:pl-[80px] 1300:pr-[80px] 1400:pl-[80px] 1400:pr-[80px] 1500:pl-[100px] 1500:pr-[100px] 1600:pl-[130px] 1600:pr-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[48px] items-start">
         {/* Left: intro + image */}
         <div className="lg:w-[40%] flex flex-col gap-8">
           <div className="space-y-4 text-center lg:text-left">
@@ -161,7 +161,7 @@ rental market with good long-term fundamentals.`,
       </section>
 
       {/* How we help section */}
-      <section className="max-w-[1320px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row items-center gap-[70px]">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row items-center gap-[70px]">
         <div className="w-full lg:w-[50%] space-y-8">
           <div className="space-y-4">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-0.06em] text-[#002f57]">
@@ -208,7 +208,7 @@ rental market with good long-term fundamentals.`,
 
       {/* Area Insights section */}
       <section className="mt-[60px] lg:mt-[160px] w-full bg-[#002f57] py-[80px]">
-        <div className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] text-white space-y-10">
+        <div className="max-w-[1320px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] text-white space-y-10">
           <div className="text-center space-y-3">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-0.06em]">
               Area Insights
@@ -268,7 +268,7 @@ rental market with good long-term fundamentals.`,
       </section>
 
       {/* For homebuyers / investors cards */}
-      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-4">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-4">
         <div className="relative flex-1 min-h-[360px] rounded-[24px] overflow-hidden">
           <Image
             src="/images/buy-guide/Buy%20Guide-%20for%20homebuyer-bg-dsk.webp"
@@ -315,7 +315,7 @@ rental market with good long-term fundamentals.`,
       </section>
 
       {/* Preparing to Buy checklist */}
-      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row items-center gap-[70px]">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row items-center gap-[70px]">
         <div className="w-full lg:w-[50%] relative h-[320px] rounded-[24px] overflow-hidden">
           <Image
             src="/images/buy-guide/checklist.png"

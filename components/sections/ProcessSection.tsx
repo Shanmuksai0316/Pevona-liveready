@@ -21,7 +21,7 @@ export default function ProcessSection() {
   };
 
   return (
-    <div className="flex flex-col gap-[36px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] overflow-hidden px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+    <div className="flex flex-col gap-[36px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] overflow-hidden px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
       
       {/* HEADING */}
       <div className="flex flex-col gap-[10px] items-center text-center w-full">

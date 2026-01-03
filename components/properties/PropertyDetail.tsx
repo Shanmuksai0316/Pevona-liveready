@@ -327,7 +327,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
 
       {/* Top summary bar */}
       <section className="border-b border-gray-200">
-        <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <h1 className="font-crimson text-[24px] font-semibold text-pevona-dark leading-snug">
               {attributes.title}
@@ -347,7 +347,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
       </section>
 
       {/* Main content + sidebar form */}
-      <section className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-10 md:py-14">
+      <section className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-10 md:py-14">
         <div className="grid grid-cols-1 lg:[grid-template-columns:minmax(0,1.7fr)_minmax(0,1.3fr)] gap-10 lg:gap-12">
           {/* Left: details */}
           <div className="lg:col-span-2 space-y-8">
@@ -921,7 +921,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
       {/* Location - At bottom */}
       {(attributes.map_embed || fullAddress || (attributes.latitude && attributes.longitude)) && (
         <section className="bg-gray-50 border-t border-gray-200 mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-          <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-10 md:py-14">
+          <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-10 md:py-14">
             <h2 className="font-crimson text-[24px] font-semibold text-pevona-dark mb-4">
               Location
             </h2>
