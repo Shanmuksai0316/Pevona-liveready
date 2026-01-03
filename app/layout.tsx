@@ -6,6 +6,11 @@ import Footer from "@/components/ui/Footer";
 export const metadata: Metadata = {
   title: "Pevona - Property Management & Investment",
   description: "Expert management, lettings, and investment opportunities across the UK - powered by transparency and modern compliance.",
+  icons: {
+    icon: "/favicon.webp",
+    shortcut: "/favicon.webp",
+    apple: "/favicon.webp",
+  },
 };
 
 export default function RootLayout({
