@@ -99,15 +99,26 @@ export async function POST(request: NextRequest) {
     });
 
     let strapiResponse;
+    const requestUrl = `${STRAPI_URL}/api/property-enquiries`;
+    const requestBody = JSON.stringify(enquiryData);
+    
+    console.log("📤 Making POST request to:", requestUrl);
+    console.log("📤 Request method: POST");
+    console.log("📤 Request body:", requestBody);
+    
     try {
-      strapiResponse = await fetch(`${STRAPI_URL}/api/property-enquiries`, {
+      strapiResponse = await fetch(requestUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${STRAPI_API_TOKEN}`,
         },
-        body: JSON.stringify(enquiryData),
+        body: requestBody,
       });
+      
+      console.log("📥 Response status:", strapiResponse.status);
+      console.log("📥 Response statusText:", strapiResponse.statusText);
+      console.log("📥 Response URL:", strapiResponse.url);
     } catch (fetchError) {
       console.error("Failed to connect to Strapi:", fetchError);
       const errorMessage = fetchError instanceof Error ? fetchError.message : "Unknown network error";
