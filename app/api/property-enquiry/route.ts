@@ -114,11 +114,22 @@ export async function POST(request: NextRequest) {
           Authorization: `Bearer ${STRAPI_API_TOKEN}`,
         },
         body: requestBody,
+        cache: "no-store", // Prevent caching
+        redirect: "manual", // Don't follow redirects automatically
       });
       
       console.log("📥 Response status:", strapiResponse.status);
       console.log("📥 Response statusText:", strapiResponse.statusText);
       console.log("📥 Response URL:", strapiResponse.url);
+      console.log("📥 Request URL was:", requestUrl);
+      
+      // Check for redirects
+      if (strapiResponse.status >= 300 && strapiResponse.status < 400) {
+        const location = strapiResponse.headers.get("location");
+        console.error("⚠️ REDIRECT DETECTED!");
+        console.error("⚠️ Redirect status:", strapiResponse.status);
+        console.error("⚠️ Redirect location:", location);
+      }
     } catch (fetchError) {
       console.error("Failed to connect to Strapi:", fetchError);
       const errorMessage = fetchError instanceof Error ? fetchError.message : "Unknown network error";
