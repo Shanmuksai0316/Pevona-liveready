@@ -36,9 +36,9 @@ export default function AboutSection() {
       <Image
           src="/images/Home%20page/Home-about-sec-bg-dsk.webp"
           alt="About Us Background Desktop"
-          fill
+        fill
           className="object-cover object-top"
-          unoptimized
+        unoptimized
           priority
           sizes="(max-width: 1920px) 100vw, 1920px"
           style={{ objectPosition: 'top center' }}

@@ -266,7 +266,7 @@ export default function PortfolioManagementPage() {
           ].map((step, index) => (
             <div
               key={index}
-              className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-[5px] flex flex-col gap-5 h-[310px] w-full max-w-[460px]"
+              className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-[5px] flex flex-col gap-5 h-auto md:min-h-[325px] w-full max-w-[460px]"
             >
               <div className="relative w-full h-[200px] rounded-[16px] overflow-hidden flex-shrink-0">
                 <Image
@@ -277,7 +277,7 @@ export default function PortfolioManagementPage() {
                   unoptimized
                 />
               </div>
-              <div className="px-[10px] py-0 flex flex-col gap-1">
+              <div className="px-[10px] py-0 pb-[10px] flex flex-col gap-1">
                 <h3 className="font-crimson font-semibold text-[20px] leading-[30px] text-[#002f57]">
                   {step.title}
                 </h3>

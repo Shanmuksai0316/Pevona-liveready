@@ -114,13 +114,13 @@ export default function PropertyManagementDropdown({
           <span className="absolute bottom-0 left-0 h-[2px] bg-[#002f57] w-0 group-hover:w-full transition-all duration-300 ease-out"></span>
         </button>
         <div 
-          className="dropdown-menu absolute top-full left-0 pt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] p-[15px] pointer-events-auto"
+          className="dropdown-menu absolute top-full left-0 pt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] !p-[12px] pointer-events-auto"
         >
           {items.map((item, index) => (
             <Link
               key={item.href}
               href={item.href}
-              className="flex items-center px-3 lg:px-4 py-2 w-full hover:bg-[#FAFAFA] transition-colors first:rounded-t-[16px] last:rounded-b-[16px] cursor-pointer"
+              className="flex items-center px-3 lg:px-4 py-2 w-full hover:bg-[#FAFAFA] transition-colors rounded-[6px] cursor-pointer"
               onClick={(e) => {
                 handleItemClick(e, item);
               }}

@@ -182,13 +182,13 @@ export default function Navbar() {
               {/* Dropdown Menu */}
               {'hasDropdown' in link && link.hasDropdown && openDropdown === link.name && (
                 <div 
-                  className="absolute top-full left-0 pt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] p-[15px] pointer-events-auto"
+                  className="absolute top-full left-0 pt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] !p-[12px] pointer-events-auto"
                 >
                   {'submenu' in link && link.submenu?.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="flex items-center px-3 lg:px-4 py-2 w-full hover:bg-[#FAFAFA] transition-colors first:rounded-t-[16px] last:rounded-b-[16px] cursor-pointer"
+                      className="flex items-center px-3 lg:px-4 py-2 w-full hover:bg-[#FAFAFA] transition-colors rounded-[6px] cursor-pointer"
                       onClick={() => setOpenDropdown(null)}
                     >
                       <p className="font-manrope font-medium leading-[26px] text-[#002f57] text-[24px] lg:text-[16px] text-left hover:font-bold transition-all">
