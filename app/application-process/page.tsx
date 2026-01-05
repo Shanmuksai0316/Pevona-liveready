@@ -71,7 +71,7 @@ export default function ApplicationProcessPage() {
 
       {/* What to Expect */}
       <section className="max-w-full mx-[20px] md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
-        <div className="w-full lg:flex-1 max-w-[589px] space-y-4 p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
+        <div className="w-full lg:w-[60%] space-y-4 p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             What to Expect
           </h2>
@@ -82,7 +82,7 @@ export default function ApplicationProcessPage() {
           </p>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[675px] aspect-[4/3] lg:aspect-auto lg:h-[450px] rounded-[26px] overflow-hidden">
+        <div className="w-full lg:w-[40%] relative aspect-[4/3] lg:aspect-auto lg:h-[450px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/Application process/2nd_What_to_Expect.png"
             alt="Tenants reviewing documents"
@@ -186,7 +186,7 @@ export default function ApplicationProcessPage() {
 
       {/* Compliance & Tenant Protection */}
       <section className="max-w-full mx-[20px] md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] lg:mt-[120px] mb-[60px] lg:mb-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
-        <div className="basis-0 grow min-w-px space-y-4 max-w-[640px] p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
+        <div className="w-full lg:w-[60%] space-y-4 p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Compliance &amp; Tenant Protection
           </h2>
@@ -211,7 +211,7 @@ export default function ApplicationProcessPage() {
           </div>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[706px] aspect-[4/3] lg:aspect-auto lg:h-[470px] rounded-[26px] overflow-hidden">
+        <div className="w-full lg:w-[40%] relative aspect-[4/3] lg:aspect-auto lg:h-[470px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/Application process/5th_Compliance__Tenant_Protection.png"
             alt="Agent showing property to tenants"
