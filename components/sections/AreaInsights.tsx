@@ -11,7 +11,7 @@ export default function AreaInsights() {
   const cityContent = {
     London: {
       title: "London Area Guide",
-      image: "/images/buy-guide/london.png",
+      image: "/images/buy-guide/Buy Guide- Area insight-sec-london-dsk.webp",
       body: `London offers unmatched connectivity, diverse neighbourhoods, and a strong property
 market with year-round activity. Whether you're buying or renting, the area provides
 options for every lifestyle — from modern apartments to family homes. High tenant and
@@ -19,21 +19,21 @@ buyer demand make it a stable and future-ready location.`,
     },
     Manchester: {
       title: "Manchester Area Guide",
-      image: "/images/buy-guide/manchester.png",
+      image: "/images/buy-guide/Buy Guide- Area insight-sec-manchester-dsk.webp",
       body: `Manchester combines a strong jobs market, growing regeneration zones and excellent
 transport links across the North. It offers a mix of city-centre apartments and family
 homes, making it attractive for both owner-occupiers and long-term investors.`,
     },
     Birmingham: {
       title: "Birmingham Area Guide",
-      image: "/images/buy-guide/birmingham.png",
+      image: "/images/buy-guide/Buy Guide- Area insight-sec-birmingham-dsk.webp",
       body: `Birmingham is a major UK hub with a diverse economy, strong student population and
 ongoing infrastructure investment. From new-build schemes to traditional suburbs, it
 provides a wide spread of options and strong rental demand.`,
     },
     Leeds: {
       title: "Leeds Area Guide",
-      image: "/images/buy-guide/leeds.png",
+      image: "/images/buy-guide/Buy Guide- Area insight-sec-leeds-dsk.webp",
       body: `Leeds offers a balance of city-centre living, leafy suburbs and strong regional
 employment. Its mix of professional tenants and families supports a stable sales and
 rental market with good long-term fundamentals.`,

@@ -16,6 +16,100 @@ interface StrapiTestimonial {
   };
 }
 
+/* ================= TEXT CARD ================= */
+function Card({
+  children,
+  tall = false,
+}: {
+  children: React.ReactNode;
+  tall?: boolean;
+}) {
+  return (
+    <div
+      className={`
+        bg-white border border-[rgba(0,0,0,0.12)]
+        rounded-[16px]
+        px-[20px] py-[32px]
+        mb-[16px]
+        break-inside-avoid
+        flex flex-col justify-between
+        h-auto
+        ${tall ? "md:h-[344px]" : "md:h-[234px]"}
+      `}
+    >
+      {children}
+    </div>
+  );
+}
+
+/* ================= IMAGE CARD ================= */
+function ImageCard({
+  title,
+  img,
+  text,
+}: {
+  title: string;
+  img: string;
+  text: string;
+}) {
+  return (
+    <div
+      className="
+        bg-white border border-[rgba(0,0,0,0.12)]
+        rounded-[16px]
+        mb-[16px]
+        break-inside-avoid
+        h-auto md:h-[344px]
+        flex flex-col
+      "
+    >
+      <h4 className="px-[20px] pt-[20px] font-crimson font-semibold leading-[30px] text-[#002f57]" style={{ fontSize: 'clamp(1.375rem, 1.2917rem + 0.2778vw, 1.625rem)' }}>
+        {title}
+      </h4>
+
+      <div className="relative w-[calc(100%-40px)] h-[150px] 1300:h-[185px] max-h-[185px] min-w-0 mx-[20px] my-[12px] rounded-[16px] overflow-hidden">
+        <Image src={img} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" unoptimized />
+      </div>
+
+      <p className="px-[20px] pb-[20px] font-manrope font-normal text-[18px] leading-[28px] text-[#333333]">
+        {text}
+      </p>
+    </div>
+  );
+}
+
+/* ================= SMALL PARTS ================= */
+function Icon({ iconPath }: { iconPath: string }) {
+  return (
+    <div className="mb-[20px]">
+      <Image 
+        src={iconPath} 
+        alt="Card icon" 
+        width={36} 
+        height={36} 
+        className="object-contain"
+        unoptimized
+      />
+    </div>
+  );
+}
+
+function Title({ children }: { children: React.ReactNode }) {
+  return (
+    <h4 className="font-crimson font-semibold leading-[30px] text-[#002f57] mb-[8px]" style={{ fontSize: 'clamp(1.375rem, 1.2917rem + 0.2778vw, 1.625rem)' }}>
+      {children}
+    </h4>
+  );
+}
+
+function Text({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="font-manrope font-normal text-[18px] leading-[28px] text-[#333333]">
+      {children}
+    </p>
+  );
+}
+
 export default function AboutUsPage() {
   const [activeServiceTab, setActiveServiceTab] = useState("For Landlords");
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -55,10 +149,10 @@ export default function AboutUsPage() {
   };
 
   const serviceImages: Record<string, string> = {
-    "For Landlords": "/images/About us/services_-_For_Landlords.png",
-    "For Tenants": "/images/About us/services_-_For_Tenants.png",
-    "For Investors": "/images/About us/services_-_For_Investors.png",
-    "For Buyers & Sellers": "/images/About us/services_-_For_Buyers__Sellers.png",
+    "For Landlords": "/images/About us/about-our service-sec-For Landlords-dsk.webp",
+    "For Tenants": "/images/About us/about-our service-sec-For Tenants-dsk.webp",
+    "For Investors": "/images/About us/about-our service-sec-For Investors-dsk.webp",
+    "For Buyers & Sellers": "/images/About us/about-our service-sec-For buyer&seller-dsk.webp",
   };
 
   const values = [
@@ -575,7 +669,7 @@ export default function AboutUsPage() {
       )}
 
       {/* Recognized by Leading Authorities */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[40px] 1300:gap-[150px] items-center">
+      <section className="max-w-full mx-0 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[40px] 1300:gap-[150px] items-center">
         <div className="flex-1 max-w-[507px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Recognized by Leading Authorities
@@ -667,118 +761,96 @@ export default function AboutUsPage() {
       </section>
 
       {/* Why Choose Pevona? */}
-      <section className="max-w-[1337px] 1920:max-w-[1600px] mx-auto mt-[60px] md:mt-[150px] mb-[60px] md:mb-[120px] px-5 md:px-0 flex flex-col gap-[36px] items-center">
-        <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
-          Why Choose Pevona?
-        </h2>
+      <section className="max-w-full mx-[20px] 1400:max-w-[1337px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] md:mt-[150px] mb-[60px] md:mb-[120px]">
+        {/* <div className="w-full px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]"> */}
+          <h2
+            className="
+              font-crimson text-[#002f57] tracking-[-1.68px]
+              text-[32px] leading-[38px]
+              sm:text-[40px] sm:leading-[46px]
+              lg:text-[56px] lg:leading-[56px]
+              text-center mb-[36px]
+            "
+          >
+            Why Choose Pevona?
+          </h2>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 w-full">
-          {[
-            {
-              title: "Proven Expertise",
-              description:
-                "Decades of combined experience across lettings, management, and UK property investments.",
-              icon: "/images/proven expertise 1.svg",
-            },
-            {
-              title: "End-to-End Solutions",
-              description: "From tenant placement to portfolio growth - we manage it all seamlessly.",
-              image: "/images/Home%20page/home-End-to-End%20Solutions-sec-dsk.webp",
-            },
-            {
-              title: "Streamlined Management Process",
-              description:
-                "Digital tools that simplify communication, reporting, and performance tracking.",
-              icon: "/images/workflow_18119733 1.svg",
-              tall: true,
-            },
-            {
-              title: "Transparent Process",
-              description: "Every step is clear, compliant, and designed to build lasting trust.",
-              image: "/images/Transparent Process.png",
-            },
-            {
-              title: "Compliance First",
-              description:
-                "We operate with full adherence to UK housing, licensing, & data protection standards.",
-              icon: "/images/complainence 1.svg",
-            },
-            {
-              title: "Client-Focused Approach",
-              description:
-                "Tailored strategies that protect your property and maximise long-term returns.",
-              image: "/images/8_sec_Client-Focused_Approach_image.png",
-            },
-            {
-              title: "Trusted Partner Network",
-              description:
-                "Building strong alliances with trusted partners to ensure seamless transactions, transparent dealings, and lasting value in every real estate project.",
-              icon: "/images/Trusted Partner Network.svg",
-            },
-            {
-              title: "Best Properties on the Market",
-              description:
-                "Access to premium listings & verified opportunities through Zoopla integration.",
-              image: "/images/8_sec_Best_Properties_on_the_Market_image.png",
-            },
-            {
-              title: "Time & Stress Saving",
-              description:
-                "Simplifying your real estate journey with efficient processes, expert guidance, and seamless coordination - saving you time, effort, and stress.",
-              icon: "/images/Time & Stress Saving.svg",
-              tall: true,
-            },
-          ].map((item, index) => {
-            let heightClass = '';
-            let paddingClass = '';
-            
-            if (item.image) {
-              heightClass = 'h-auto md:h-[345px]';
-              paddingClass = 'py-[19px] px-[8px]';
-            } else if (item.tall) {
-              heightClass = 'h-auto md:h-[345px]';
-              paddingClass = 'p-8';
-            } else {
-              heightClass = 'h-auto md:h-[234px]';
-              paddingClass = 'p-8';
-            }
-            
-            return (
-            <div
-              key={index}
-              className={`bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] flex flex-col items-center text-center break-inside-avoid mb-4 ${heightClass} ${paddingClass}`}
-            >
-              {item.image ? (
-                <>
-                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57] mb-0">
-                  {item.title}
-                </h3>
-                  <div className="relative w-full h-[185px] min-h-[185px] rounded-[16px] overflow-hidden flex-shrink-0 my-4">
-                  <Image src={item.image} alt={item.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" unoptimized />
-                </div>
-                  <p className="font-manrope text-[18px] leading-[28px] text-[#333] flex-grow mt-0">
-                    {item.description}
-                  </p>
-                </>
-              ) : (
-                <>
-              {item.icon && (
-                    <div className="w-[36px] h-[36px] relative flex-shrink-0 mb-4">
-                  <Image src={item.icon} alt={item.title} fill className="object-contain" sizes="36px" unoptimized />
-                </div>
-              )}
-                  <h3 className="font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57] mb-4">
-                    {item.title}
-                  </h3>
-                  <p className="font-manrope text-[18px] leading-[28px] text-[#333] flex-grow mt-0">
-                  {item.description}
-                </p>
-                </>
-              )}
-            </div>
-            );
-          })}
-        </div>
+          {/* MASONRY COLUMNS */}
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-[16px]">
+            {/* 1 */}
+            <Card>
+              <Icon iconPath="/images/proven expertise 1.svg" />
+              <Title>Proven Expertise</Title>
+              <Text>
+                Decades of combined experience across lettings, management, and UK property investments.
+              </Text>
+            </Card>
+
+            {/* 2 */}
+            <ImageCard
+              title="Transparent Process"
+              img="/images/Transparent Process.png"
+              text="Every step is clear, compliant, and designed to build lasting trust."
+            />
+
+            {/* 3 */}
+            <Card tall>
+              <Icon iconPath="/images/Trusted Partner Network.svg" />
+              <Title>Trusted Partner Network</Title>
+              <Text>
+                Building strong alliances with trusted partners to ensure seamless transactions, transparent dealings, and lasting value in every real estate project.
+              </Text>
+            </Card>
+
+            {/* 4 */}
+            <ImageCard
+              title="End-to-End Solutions"
+              img="/images/Home%20page/home-End-to-End%20Solutions-sec-dsk.webp"
+              text="From tenant placement to portfolio growth - we manage it all seamlessly."
+            />
+
+            {/* 5 */}
+            <Card>
+              <Icon iconPath="/images/complainence 1.svg" />
+              <Title>Compliance First</Title>
+              <Text>
+                We operate with full adherence to UK housing, licensing, & data protection standards.
+              </Text>
+            </Card>
+
+            {/* 6 */}
+            <ImageCard
+              title="Best Properties on the Market"
+              img="/images/Best Properties on the Market image.png"
+              text="Access to premium listings & verified opportunities through Zoopla integration."
+            />
+
+            {/* 7 – last text card */}
+            <Card>
+              <Icon iconPath="/images/workflow_18119733 1.svg" />
+              <Title>Streamlined Management Process</Title>
+              <Text>
+                Digital tools that simplify communication, reporting, and performance tracking.
+              </Text>
+            </Card>
+
+            {/* 8 */}
+            <ImageCard
+              title="Client-Focused Approach"
+              img="/images/Client-Focused Approach image.png"
+              text="Tailored strategies that protect your property and maximise long-term returns."
+            />
+
+            {/* 9 – last text card */}
+            <Card tall>
+              <Icon iconPath="/images/Time & Stress Saving.svg" />
+              <Title>Time & Stress Saving</Title>
+              <Text>
+                Simplifying your real estate journey with efficient processes, expert guidance, and seamless coordination - saving you time, effort, and stress.
+              </Text>
+            </Card>
+          </div>
+        {/* </div> */}
       </section>
 
 
@@ -880,19 +952,29 @@ export default function AboutUsPage() {
       {/* ESG Section */}
       <div className="px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
       <section className="max-w-[1600px] 1920:max-w-[1600px] mx-auto mb-[60px] md:mb-[120px] relative h-[400px] sm:h-[450px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
-        <div className="absolute inset-0">
+        {/* Mobile Background Image */}
+        <div className="absolute inset-0 lg:hidden">
           <Image
-            src="/images/ESG_section_Bg_img.png"
-            alt="ESG Background"
+            src="/images/About us/About-ESG-sec-bg-mbl.webp"
+            alt="ESG Background Mobile"
             fill
             className="object-cover"
+            unoptimized
+          />
+        </div>
+        
+        {/* Desktop Background Image */}
+        <div className="absolute inset-0 hidden lg:block">
+          <Image
+            src="/images/About us/About-ESG-sec-bg-dsk.webp"
+            alt="ESG Background Desktop"
+            fill
+            className="object-cover"
+            unoptimized
           />
           {/* Desktop: Gradient overlay */}
-          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/60 to-transparent" />
         </div>
-
-        {/* Mobile: Dark blue overlay covering bottom portion (approximately 2/3) */}
-        <div className="lg:hidden absolute bottom-0 left-0 right-0 h-[66.67%] bg-[#002f57] opacity-95 z-[1]" />
 
         {/* Desktop Layout */}
         <div className="hidden lg:block relative z-10 max-w-[618px] pt-[105px] pb-[105px] pl-[5%] space-y-4 text-white">

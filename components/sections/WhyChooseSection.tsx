@@ -113,7 +113,7 @@ function Card({
       className={`
         bg-white border border-[rgba(0,0,0,0.12)]
         rounded-[16px]
-        p-[32px]
+        px-[20px] py-[32px]
         mb-[16px]
         break-inside-avoid
         flex flex-col justify-between
@@ -148,15 +148,15 @@ function ImageCard({
         flex flex-col
       "
     >
-      <h4 className="px-[25px] pt-[20px] font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57]">
+      <h4 className="px-[20px] pt-[20px] font-crimson font-semibold leading-[30px] text-[#002f57]" style={{ fontSize: 'clamp(1.375rem, 1.2917rem + 0.2778vw, 1.625rem)' }}>
         {title}
       </h4>
 
-      <div className="relative w-[calc(100%-32px)] h-[200px] min-h-[200px] min-w-0 mx-[16px] my-[12px] rounded-[16px] overflow-hidden">
+      <div className="relative w-[calc(100%-40px)] h-[150px] 1300:h-[185px] max-h-[185px] min-w-0 mx-[20px] my-[12px] rounded-[16px] overflow-hidden">
         <Image src={img} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" unoptimized />
       </div>
 
-      <p className="px-[25px] pb-[20px] font-manrope font-normal text-[18px] leading-[28px] text-[#333333]">
+      <p className="px-[20px] pb-[20px] font-manrope font-normal text-[18px] leading-[28px] text-[#333333]">
         {text}
       </p>
     </div>
@@ -183,7 +183,7 @@ function Icon({ iconPath }: { iconPath: string }) {
 
 function Title({ children }: { children: React.ReactNode }) {
   return (
-    <h4 className="font-crimson font-semibold text-[26px] leading-[30px] text-[#002f57] mb-[8px]">
+    <h4 className="font-crimson font-semibold leading-[30px] text-[#002f57] mb-[8px]" style={{ fontSize: 'clamp(1.375rem, 1.2917rem + 0.2778vw, 1.625rem)' }}>
       {children}
     </h4>
   );

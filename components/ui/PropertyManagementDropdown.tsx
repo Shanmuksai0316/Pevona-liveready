@@ -105,7 +105,7 @@ export default function PropertyManagementDropdown({
       >
         <button
           onClick={!triggerHover ? handleToggle : undefined}
-          className="group relative cursor-pointer flex gap-[2px] items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 whitespace-nowrap w-full lg:w-auto overflow-hidden"
+          className="group relative cursor-pointer flex gap-[2px] items-center justify-center px-[10px] pt-[10px] pb-[10px] shrink-0 whitespace-nowrap w-full lg:w-auto overflow-hidden"
         >
           <p className="font-manrope font-medium leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center transition-all">
             Property Management
@@ -114,13 +114,13 @@ export default function PropertyManagementDropdown({
           <span className="absolute bottom-0 left-0 h-[2px] bg-[#002f57] w-0 group-hover:w-full transition-all duration-300 ease-out"></span>
         </button>
         <div 
-          className="dropdown-menu absolute top-full left-0 pt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] p-[15px] pointer-events-auto"
+          className="dropdown-menu absolute top-full left-0 pt-1 flex flex-col gap-[6px] items-start bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg w-full lg:w-[350px] z-[10005] !p-[12px] pointer-events-auto"
         >
           {items.map((item, index) => (
             <Link
               key={item.href}
               href={item.href}
-              className="flex items-center px-3 lg:px-4 py-2 w-full hover:bg-[#FAFAFA] transition-colors first:rounded-t-[16px] last:rounded-b-[16px] cursor-pointer"
+              className="flex items-center px-3 lg:px-4 py-2 w-full hover:bg-[#FAFAFA] transition-colors rounded-[6px] cursor-pointer"
               onClick={(e) => {
                 handleItemClick(e, item);
               }}
@@ -145,7 +145,7 @@ export default function PropertyManagementDropdown({
     >
       <button
         onClick={!triggerHover ? handleToggle : undefined}
-        className="group relative flex gap-[2px] items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 cursor-pointer whitespace-nowrap w-full lg:w-auto overflow-hidden"
+        className="group relative flex gap-[2px] items-center justify-center px-[10px] pt-[10px] pb-[10px] shrink-0 cursor-pointer whitespace-nowrap w-full lg:w-auto overflow-hidden"
         data-name="Property 1=Default"
       >
         <p className="font-manrope font-medium leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center transition-all">

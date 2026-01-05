@@ -12,15 +12,15 @@ export default function ResultsSection() {
       </div>
       <div className="flex flex-col md:flex-row gap-[26px] items-center justify-center w-full max-w-[1100px]">
         <div className="flex-1 w-full border-t border-[rgba(0,0,0,0.12)] flex flex-col gap-[8px] items-center justify-center py-8 lg:p-[26px] text-center">
-          <p className="font-crimson font-bold text-[30px] md:text-[42px] text-[#002f57] w-full">500+</p>
+          <span className="font-crimson font-bold text-[#002f57] w-full" style={{ fontSize: 'clamp(1.875rem, 1.625rem + 0.8333vw, 2.625rem)' }}>500+</span>
           <p className="font-manrope font-light text-[16px] md:text-[22px] text-[#333333] w-full">properties sold</p>
         </div>
         <div className="flex-1 w-full border-t border-[rgba(0,0,0,0.12)] flex flex-col gap-[8px] items-center justify-center py-8 lg:p-[26px] text-center">
-          <p className="font-crimson font-bold text-[30px] md:text-[42px] text-[#002f57] w-full">20</p>
+          <span className="font-crimson font-bold text-[#002f57] w-full" style={{ fontSize: 'clamp(1.875rem, 1.625rem + 0.8333vw, 2.625rem)' }}>20</span>
           <p className="font-manrope font-light text-[16px] md:text-[22px] text-[#333333] w-full">years of experience</p>
         </div>
         <div className="flex-1 w-full border-t border-[rgba(0,0,0,0.12)] flex flex-col gap-[8px] items-center justify-center py-8 lg:p-[26px] text-center">
-          <p className="font-crimson font-bold text-[30px] md:text-[42px] text-[#002f57] w-full">50+</p>
+          <span className="font-crimson font-bold text-[#002f57] w-full" style={{ fontSize: 'clamp(1.875rem, 1.625rem + 0.8333vw, 2.625rem)' }}>50+</span>
           <p className="font-manrope font-light text-[16px] md:text-[22px] text-[#333333] w-full">Awards & Recognitions</p>
         </div>
       </div>

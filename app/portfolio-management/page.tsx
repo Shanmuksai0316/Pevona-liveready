@@ -74,7 +74,7 @@ export default function PortfolioManagementPage() {
       </section>
 
       {/* What Our Portfolio Management Covers */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-full mx-0 md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           What Our Portfolio Management Covers
         </h2>
@@ -241,7 +241,7 @@ export default function PortfolioManagementPage() {
       </section>
 
       {/* Portfolio Review & Onboarding */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-full mx-0 md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center max-w-[750px]">
           Portfolio Review &amp; Onboarding
         </h2>
@@ -266,7 +266,7 @@ export default function PortfolioManagementPage() {
           ].map((step, index) => (
             <div
               key={index}
-              className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-[5px] flex flex-col gap-5 h-[310px] w-full max-w-[460px]"
+              className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-[5px] flex flex-col gap-5 h-auto md:min-h-[325px] w-full max-w-[460px]"
             >
               <div className="relative w-full h-[200px] rounded-[16px] overflow-hidden flex-shrink-0">
                 <Image
@@ -277,7 +277,7 @@ export default function PortfolioManagementPage() {
                   unoptimized
                 />
               </div>
-              <div className="px-[10px] py-0 flex flex-col gap-1">
+              <div className="px-[10px] py-0 pb-[10px] flex flex-col gap-1">
                 <h3 className="font-crimson font-semibold text-[20px] leading-[30px] text-[#002f57]">
                   {step.title}
                 </h3>
@@ -298,7 +298,7 @@ export default function PortfolioManagementPage() {
       </section>
 
       {/* Suitable For */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
+      <section className="max-w-full mx-[20px] md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[60px] lg:mb-[120px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
         <div className="w-full lg:flex-1 relative max-w-[675px] h-[450px] rounded-[26px] overflow-hidden order-2 lg:order-1">
           <Image
             src="/images/Portfolio page/5th_Suitable_For.png"

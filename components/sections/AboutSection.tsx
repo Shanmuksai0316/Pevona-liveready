@@ -8,7 +8,7 @@ export default function AboutSection() {
       className="
         relative w-full flex flex-col items-start justify-end overflow-hidden
         gap-[31px]
-        h-[811px] lg:h-[800px]
+        h-[811px] lg:h-[900px]
         pb-[24px] sm:pb-[30px] lg:pb-[36px]
         px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
         mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]
@@ -32,14 +32,16 @@ export default function AboutSection() {
       </div>
       
       {/* Desktop Background Image */}
-      <div className="absolute inset-0 hidden lg:block">
+      <div className="absolute top-0 left-1/2 hidden lg:block overflow-visible" style={{ width: '100%', maxWidth: '1920px', height: '900px', transform: 'translateX(-50%)' }}>
       <Image
           src="/images/Home%20page/Home-about-sec-bg-dsk.webp"
           alt="About Us Background Desktop"
         fill
-        className="object-cover"
+          className="object-cover object-top"
         unoptimized
           priority
+          sizes="(max-width: 1920px) 100vw, 1920px"
+          style={{ objectPosition: 'top center' }}
       />
         {/* Gradient overlay from house to dark blue */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]"></div>

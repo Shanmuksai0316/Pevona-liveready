@@ -74,7 +74,7 @@ export default async function FindingPropertyPage() {
       </section>
 
       {/* Properties Section with Filter (client-side, Strapi-backed) */}
-      <div className="mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+      <div className="mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mx-[20px] sm:mx-0">
         <PropertiesFilterSection properties={properties} limit={7} />
       </div>
 
