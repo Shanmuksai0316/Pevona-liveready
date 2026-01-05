@@ -191,7 +191,7 @@ export default function LandlordServicesPage() {
       {/* Renting with Confidence for Landlords */}
       <div className="lg:px-0 px-5 overflow-x-auto">
         <section className="max-w-full mx-0 md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
-          <div className="w-full lg:flex-1 max-w-[589px] space-y-4 pl-[5%]">
+          <div className="w-full lg:w-[60%] space-y-4 pl-[5%]">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Renting with Confidence
           </h2>
@@ -211,7 +211,7 @@ export default function LandlordServicesPage() {
           </p>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[675px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
+        <div className="w-full lg:w-[40%] relative h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Landlord/4th_Landlord_Renting_with_Confidence.png"
             alt="Tenant and landlord agreement"
@@ -227,7 +227,7 @@ export default function LandlordServicesPage() {
       {/* Smart Management. Seamless Support. */}
       <div className="lg:px-0 px-5 overflow-x-auto">
         <section className="max-w-full mx-0 md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[80px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
-        <div className="flex-1 relative w-full max-w-[680px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
+        <div className="w-full lg:w-[40%] relative h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Landlord/5th_Smart_Management._Seamless_Support..png"
             alt="Property management team"
@@ -238,7 +238,7 @@ export default function LandlordServicesPage() {
           />
         </div>
 
-          <div className="w-full lg:flex-1 max-w-[589px] space-y-4 p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
+          <div className="w-full lg:w-[60%] space-y-4 p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             Smart Management. Seamless Support.
           </h2>

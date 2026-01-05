@@ -456,7 +456,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Who We Are */}
-      <section className="max-w-[1800px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center justify-center gap-[50px]">
+      <section className="max-w-full mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center justify-center gap-[50px]">
         {/* Left Image */}
         <div className="relative w-full lg:flex-1 max-w-[400px] h-[300px] lg:h-[400px] rounded-r-[36px] overflow-hidden">
           <Image
@@ -688,8 +688,8 @@ export default function AboutUsPage() {
                 src="/images/Certifications-2.svg"
                 alt="Certification 1"
                 width={200}
-                height={100}
-                className="object-contain"
+                height={80}
+                className="object-contain lg:h-[80px]"
               />
             </div>
             <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] h-[200px] flex items-center justify-center p-8">
@@ -697,8 +697,8 @@ export default function AboutUsPage() {
                 src="/images/Certifications-4.svg"
                 alt="Certification 2"
                 width={200}
-                height={100}
-                className="object-contain"
+                height={80}
+                className="object-contain lg:h-[80px]"
               />
             </div>
           </div>
@@ -710,8 +710,8 @@ export default function AboutUsPage() {
                 src="/images/Reputed Clients-4.svg"
                 alt="Certification 3"
                 width={200}
-                height={100}
-                className="object-contain"
+                height={80}
+                className="object-contain lg:h-[80px]"
               />
             </div>
           </div>
@@ -751,7 +751,7 @@ export default function AboutUsPage() {
                   alt={`Client logo ${index + 1}`}
                   width={200}
                   height={80}
-                  className="object-contain max-w-full max-h-full w-auto h-auto"
+                  className="object-contain max-w-full max-h-full w-auto h-auto lg:h-[80px]"
                   unoptimized
                 />
               </div>
@@ -951,7 +951,7 @@ export default function AboutUsPage() {
 
       {/* ESG Section */}
       <div className="px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-      <section className="max-w-[1600px] 1920:max-w-[1600px] mx-auto mb-[60px] md:mb-[120px] relative h-[400px] sm:h-[450px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
+      <section className="max-w-[1337px] mx-auto mb-[60px] md:mb-[120px] relative h-[400px] sm:h-[450px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
         {/* Mobile Background Image */}
         <div className="absolute inset-0 lg:hidden">
           <Image
@@ -977,7 +977,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:block relative z-10 max-w-[618px] pt-[105px] pb-[105px] pl-[5%] space-y-4 text-white">
+        <div className="hidden lg:block relative z-10 max-w-[50%] pt-[105px] pb-[105px] pl-[5%] space-y-4 text-white">
           <h2 className="font-crimson text-[56px] leading-tight leading-[56px] tracking-tight tracking-[-1.68px]">
             Environmental &amp;
             <br />
@@ -992,7 +992,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* Mobile Layout - positioned on the dark overlay */}
-        <div className="lg:hidden absolute bottom-0 left-0 right-0 z-10 px-5 350:px-5 480:px-5 650:px-[60px] py-6 sm:py-8 space-y-3 sm:space-y-4 text-white">
+        <div className="lg:hidden absolute bottom-0 left-0 right-0 z-10 px-5 350:px-5 480:px-5 650:px-[60px] py-6 sm:py-8 space-y-3 sm:space-y-4 text-white max-w-[50%]">
           <h2 className="font-crimson text-[22px] sm:text-[28px] leading-tight tracking-tight">
             Environmental &amp; Social Governance (ESG)
           </h2>

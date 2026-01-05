@@ -50,7 +50,7 @@ h1 {
 h2 {
     font-size: clamp(1.875rem, 1.1786rem + 2.3214vw, 3.5rem) !important;
   } 
-  p {
+p,li,ul,ol {
     font-family: 'Manrope', sans-serif !important;
     font-size: clamp(0.9375rem, 0.8125rem + 0.625vw, 1rem) !important;
   }

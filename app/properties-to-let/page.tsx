@@ -115,7 +115,7 @@ export default async function PropertiesToLetPage() {
 
       {/* How We Maintain Quality Standards */}
       <section className="max-w-full mx-[20px] md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[26px] lg:gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] lg:py-0">
-        <div className="flex-1 max-w-[589px] space-y-[10px] p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
+        <div className="w-full lg:w-[60%] space-y-[10px] p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             How We Maintain Quality Standards
           </h2>
@@ -126,7 +126,7 @@ export default async function PropertiesToLetPage() {
           </p>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[816px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
+        <div className="w-full lg:w-[40%] relative h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Properties to let/3rd_How_We_Maintain_Quality_Standards.png"
             alt="How we maintain quality standards"
@@ -140,7 +140,7 @@ export default async function PropertiesToLetPage() {
 
       {/* Renting with Pevona */}
       <section className="max-w-full mx-[20px] md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[80px] flex flex-col lg:flex-row items-center gap-[26px] lg:gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] lg:py-0">
-        <div className="flex-1 relative w-full max-w-[696px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
+        <div className="w-full lg:w-[40%] relative h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Properties to let/4rd_Renting_with_Pevona.png"
             alt="Renting with Pevona"
@@ -151,7 +151,7 @@ export default async function PropertiesToLetPage() {
           />
         </div>
 
-        <div className="flex-1 max-w-[589px] space-y-[10px] p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
+        <div className="w-full lg:w-[60%] space-y-[10px] p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Renting with Pevona (Educational Touchpoint)
           </h2>

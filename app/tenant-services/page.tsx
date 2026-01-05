@@ -77,7 +77,7 @@ export default function TenantServicesPage() {
 
       {/* Renting with Confidence */}
       <section className="max-w-full mx-[20px] md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
-        <div className="w-full lg:flex-1 max-w-[589px] space-y-4 p-[5%]">
+        <div className="w-full lg:w-[60%] space-y-4 p-[5%]">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Renting with Confidence
           </h2>
@@ -88,7 +88,7 @@ export default function TenantServicesPage() {
           </p>
         </div>
 
-        <div className="flex-1 relative w-full max-w-[675px] h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
+        <div className="w-full lg:w-[40%] relative h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Tenant services/2nd_Renting_with_Confidence.png"
             alt="Renting with confidence"
@@ -102,7 +102,7 @@ export default function TenantServicesPage() {
 
       {/* Your Renting Journey */}
       <section className="max-w-full mx-[20px] md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[80px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
-        <div className="flex-1 relative w-full max-w-[696px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
+        <div className="w-full lg:w-[40%] relative h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Tenant services/3rd_Your_Renting_Journey.png"
             alt="Tenant viewing property"
@@ -113,7 +113,7 @@ export default function TenantServicesPage() {
           />
         </div>
 
-        <div className="w-full lg:flex-1 max-w-[600px] space-y-4 p-[5%]">
+        <div className="w-full lg:w-[60%] space-y-4 p-[5%] lg:pt-[2%] lg:pr-[5%] lg:pb-[2%] lg:pl-[2%]">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Your Renting Journey
           </h2>
@@ -182,7 +182,7 @@ export default function TenantServicesPage() {
       </section>
 
       {/* Maintenance and Communication */}
-      <section className="max-w-full mx-[20px] lg:w-[calc(100%-74px)] lg:mx-[37px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px]">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px]">
         {/* Mobile Layout */}
         <div className="lg:hidden relative w-full min-h-[450px] rounded-[26px] overflow-hidden">
           <Image
