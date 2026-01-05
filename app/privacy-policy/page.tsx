@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
               <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">Data Protection Officer (DPO)</p>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
                 Peter Banyong<br />
-                Email: <a href="mailto:admin-pev@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">admin-pev@pevonaltd.co.uk</a><br />
+                Email: <a href="mailto:Pebans@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">Pebans@pevonaltd.co.uk</a><br />
                 Phone: <a href="tel:+442036329485" className="text-[#0073B5] hover:underline">+44-203-632-9485</a>
               </p>
             </div>
