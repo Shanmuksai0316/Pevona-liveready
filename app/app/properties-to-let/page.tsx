@@ -57,7 +57,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* How we maintain quality standards */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 lg:pl-[60px]">
+      <section className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] 1600:max-w-[1330px] px-6 lg:px-0 mt-[150px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 lg:pl-[60px]">
         <div className="flex-1 max-w-[589px] space-y-[10px]">
           <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
             How We Maintain Quality Standards
@@ -82,7 +82,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* Renting with Pevona */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-6 lg:px-0 mt-[80px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 lg:pr-[60px]">
+      <section className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] 1600:max-w-[1330px] px-6 lg:px-0 mt-[80px] flex flex-col lg:flex-row items-center gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] py-10 lg:py-0 lg:pr-[60px]">
         <div className="flex-1 relative w-full max-w-[696px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
             src="http://localhost:3845/assets/3b0e902a9715bc47e3da3ff2995315a3ebfaff98.png"

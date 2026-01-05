@@ -105,7 +105,7 @@ export default function PropertyManagementDropdown({
       >
         <button
           onClick={!triggerHover ? handleToggle : undefined}
-          className="group relative cursor-pointer flex gap-[2px] items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 whitespace-nowrap w-full lg:w-auto overflow-hidden"
+          className="group relative cursor-pointer flex gap-[2px] items-center justify-center px-[10px] pt-[10px] pb-[10px] shrink-0 whitespace-nowrap w-full lg:w-auto overflow-hidden"
         >
           <p className="font-manrope font-medium leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center transition-all">
             Property Management
@@ -145,7 +145,7 @@ export default function PropertyManagementDropdown({
     >
       <button
         onClick={!triggerHover ? handleToggle : undefined}
-        className="group relative flex gap-[2px] items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 cursor-pointer whitespace-nowrap w-full lg:w-auto overflow-hidden"
+        className="group relative flex gap-[2px] items-center justify-center px-[10px] pt-[10px] pb-[10px] shrink-0 cursor-pointer whitespace-nowrap w-full lg:w-auto overflow-hidden"
         data-name="Property 1=Default"
       >
         <p className="font-manrope font-medium leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center transition-all">

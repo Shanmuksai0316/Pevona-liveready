@@ -114,7 +114,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* How We Maintain Quality Standards */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-5 md:mx-5 lg:mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[26px] lg:gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] lg:py-0">
+      <section className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[26px] lg:gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] lg:py-0">
         <div className="flex-1 max-w-[589px] space-y-[10px] p-[5%] lg:pl-[5%] lg:pr-0 lg:pt-0 lg:pb-0">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             How We Maintain Quality Standards
@@ -139,7 +139,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* Renting with Pevona */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-5 md:mx-5 lg:mx-auto mt-[80px] flex flex-col lg:flex-row items-center gap-[26px] lg:gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] lg:py-0">
+      <section className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[80px] flex flex-col lg:flex-row items-center gap-[26px] lg:gap-[78px] bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] lg:py-0">
         <div className="flex-1 relative w-full max-w-[696px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Properties to let/4rd_Renting_with_Pevona.png"
@@ -184,8 +184,8 @@ export default async function PropertiesToLetPage() {
                 <Image
                   src={tenantDocIcons[label]}
                   alt={label}
-                  width={28}
-                  height={28}
+                  width={46}
+                  height={46}
                   className="object-contain"
                   unoptimized
                 />

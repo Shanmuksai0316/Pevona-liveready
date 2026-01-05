@@ -139,7 +139,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="group relative flex items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 whitespace-nowrap cursor-pointer overflow-hidden"
+                className="group relative flex items-center justify-center px-[10px] pt-[10px] pb-[10px] shrink-0 whitespace-nowrap cursor-pointer overflow-hidden"
               >
                 <p className="font-manrope font-medium leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center transition-all">
                   {link.name}
@@ -162,7 +162,7 @@ export default function Navbar() {
               onMouseLeave={() => 'hasDropdown' in link && link.hasDropdown && setOpenDropdown(null)}
             >
               <button
-                className="group relative flex gap-[2px] items-center justify-center px-[10px] pt-0 pb-[10px] shrink-0 whitespace-nowrap w-full lg:w-auto cursor-pointer overflow-hidden"
+                className="group relative flex gap-[2px] items-center justify-center px-[10px] pt-[10px] pb-[10px] shrink-0 whitespace-nowrap w-full lg:w-auto cursor-pointer overflow-hidden"
               >
                 <p className={`font-manrope leading-[26px] relative shrink-0 text-[#002f57] text-[24px] lg:text-[16px] text-center font-medium transition-all ${
                   openDropdown === link.name ? 'font-bold' : ''

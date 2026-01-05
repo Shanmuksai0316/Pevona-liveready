@@ -12,7 +12,7 @@ export default function InvestmentSection() {
     >
       {/* BACKGROUND IMAGE + STRIP */}
       <div className="absolute top-0 bottom-0 left-5 350:left-5 480:left-5 650:left-[60px] lg:left-[80px] 1300:left-[80px] 1400:left-[80px] 1500:left-[100px] 1600:left-[130px] right-5 350:right-5 480:right-5 650:right-[60px] lg:right-[80px] 1300:right-[80px] 1400:right-[80px] 1500:right-[100px] 1600:right-[130px] flex justify-center items-center">
-        <div className="relative w-full max-w-[1336px] h-full">
+        <div className="relative w-full max-w-full 1400:max-w-[1336px] h-full">
           {/* Mobile Background Image */}
           <div className="relative w-full h-full lg:hidden">
             <Image

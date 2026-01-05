@@ -206,7 +206,7 @@ export default function ChargesFeesPage() {
 
       {/* ================= SALES AGENCY FEES ================= */}
       <section className="bg-white py-[30px] lg:py-[70px] px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px]">
-        <div className="max-w-[1336px] mx-auto">
+        <div className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto">
           <h3 className="font-crimson font-semibold text-[clamp(1.75rem,1.5625rem+0.9375vw,2.5rem)] leading-[40px] text-center mb-[26px] text-[#002f57] capitalize">
             Sales Agency Fees
           </h3>
@@ -242,7 +242,7 @@ export default function ChargesFeesPage() {
 
       {/* ================= SOURCING & INVESTMENT ================= */}
       <section className="bg-white py-[30px] lg:py-[70px] px-4 sm:px-5 md:px-6 lg:px-[60px] xl:px-[80px] 2xl:px-[100px]">
-        <div className="max-w-[1336px] mx-auto">
+        <div className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto">
           <h3 className="font-crimson font-semibold text-[clamp(1.75rem,1.5625rem+0.9375vw,2.5rem)] leading-[40px] text-center mb-[26px] text-[#002f57] capitalize">
             Sourcing & Investment
           </h3>

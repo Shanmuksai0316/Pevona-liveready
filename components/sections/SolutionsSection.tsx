@@ -49,7 +49,7 @@ export default function SolutionsSection() {
           flex flex-col
           md:flex-row
           gap-[26px]
-          items-center justify-center w-full
+          items-start justify-center w-full
           max-w-full
         "
       >
@@ -79,7 +79,7 @@ export default function SolutionsSection() {
                 className="object-cover rounded-[16px]"
                 unoptimized
               />
-              <div className="absolute bottom-[20px] left-[20px] sm:left-[30px] lg:left-[38px]">
+              <div className="absolute bottom-[20px] left-[18px] 1300:left-[38px]">
                 <h3
                   className="
                     font-crimson font-semibold text-white capitalize

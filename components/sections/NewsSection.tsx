@@ -42,10 +42,10 @@ export default async function NewsSection() {
                 <p className="font-manrope font-normal text-[12px] sm:text-[14px] leading-[20px] sm:leading-[24px] text-white">Latest update</p>
               </div>
             </Link>
-            <div className="flex flex-col gap-4 sm:gap-6 lg:gap-[26px] items-center w-full px-2 sm:px-0">
-              <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col gap-4 sm:gap-6 lg:gap-[26px] items-start w-full px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6 lg:pb-8">
+              <div className="flex flex-col items-start text-left w-full">
                 <Link href={`/blog/${firstBlog.attributes.slug}`}>
-                  <h4 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[26px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-[#002f57] hover:opacity-80 transition-opacity md:whitespace-nowrap text-center px-2">{firstBlog.attributes.title}</h4>
+                  <h4 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[26px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-[#002f57] hover:opacity-80 transition-opacity text-left w-full break-words">{firstBlog.attributes.title}</h4>
                 </Link>
                 <p className="font-manrope font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#333333] w-full break-words mt-2">
                   {firstBlog.attributes.excerpt || "Explore high-return real estate opportunities designed for modern lifestyles"}
