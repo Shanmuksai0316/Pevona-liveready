@@ -16,13 +16,26 @@ export default function Hero({
   return (
     <div className="relative w-full h-[826px] overflow-hidden rounded-b-[36px] z-0">
       <div className="absolute inset-0">
-        <div className="relative w-full h-full">
+        {/* Mobile Banner Image */}
+        <div className="relative w-full h-full lg:hidden">
           <Image
-            src="/images/Home_page_banner.png"
-            alt="Hero background"
+            src="/images/Home%20page/Home-banner-bg-mbl.webp"
+            alt="Hero background mobile"
             fill
             className="object-cover rounded-b-[36px]"
             unoptimized
+            priority
+          />
+        </div>
+        {/* Desktop Banner Image */}
+        <div className="relative w-full h-full hidden lg:block">
+          <Image
+            src="/images/Home%20page/Home-banner-bg-dsk.webp"
+            alt="Hero background desktop"
+            fill
+            className="object-cover rounded-b-[36px]"
+            unoptimized
+            priority
           />
         </div>
 

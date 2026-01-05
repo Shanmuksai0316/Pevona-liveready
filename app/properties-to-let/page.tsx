@@ -27,17 +27,18 @@ export default async function PropertiesToLetPage() {
     <div className="bg-[#FAFAFA] min-h-screen">
       {/* Hero – Find Your Next Home with Pevona */}
       <section className="relative w-full h-[850px] lg:h-[760px] overflow-hidden rounded-b-[26px]">
-        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
+        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
           {/* Mobile Background */}
           <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">
             <div className="relative w-full h-[850px] rounded-b-[24px] sm:rounded-b-[30px] overflow-hidden">
               <Image
-                src="/images/properties-to-let.png"
+                src="/images/Properties%20to%20let/properties%20to%20let-banner-bg-mbl.webp"
                 alt="Properties to let background mobile"
                 fill
                 className="object-cover"
                 sizes="100vw"
                 unoptimized
+                priority
               />
             </div>
           </div>
@@ -46,12 +47,13 @@ export default async function PropertiesToLetPage() {
           <div className="hidden lg:block absolute inset-0 z-0 -mx-[60px] lg:-mx-[80px] 1300:-mx-[80px] 1400:-mx-[80px] 1500:-mx-[100px] 1600:-mx-[130px]">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
               <Image
-                src="/images/Properties to let/LET_bg_img.png"
-                alt="Modern rental property exterior"
+                src="/images/Properties%20to%20let/properties%20to%20let-banner-bg-dsk.webp"
+                alt="Properties to let background desktop"
                 fill
                 className="object-cover"
                 sizes="100vw"
                 unoptimized
+                priority
               />
             </div>
           </div>
@@ -95,7 +97,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* Property Search + filter grid */}
-      <section className="max-w-[1440px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col items-center gap-9">
+      <section className="max-w-[1440px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col items-center gap-9">
         <div className="max-w-[861px] text-center space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Property Search
@@ -161,7 +163,7 @@ export default async function PropertiesToLetPage() {
       </section>
 
       {/* Key Tenant Information */}
-      <section className="max-w-[1320px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[30px] lg:gap-[80px] items-start mb-[60px] lg:mb-[120px]">
+      <section className="max-w-[1320px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col lg:flex-row gap-[30px] lg:gap-[80px] items-start mb-[60px] lg:mb-[120px]">
         <div className="flex-1 max-w-[589px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Key Tenant Information (Mandatory Transparency)
@@ -200,18 +202,19 @@ export default async function PropertiesToLetPage() {
       {/* <AreaInsights /> */}
 
       {/* CTA: Ready to Find Your Next Home? */}
-      <section className="max-w-[1560px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[150px] mb-[60px] lg:mb-[120px]">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[150px] mb-[60px] lg:mb-[120px]">
         {/* Mobile Layout */}
-        <div className="lg:hidden relative w-full min-h-[450px] rounded-[26px] overflow-hidden">
+        <div className="lg:hidden relative w-full h-[600px] rounded-[26px] overflow-hidden">
           <Image
-            src="/images/Ready to Find Your Next Home-mbl-bg.png"
+            src="/images/Properties%20to%20let/properties%20to%20let-ready%20to%20find%20your%20next%20home-bg-mbl.webp"
             alt="Ready to find your next home mobile"
             fill
             className="object-cover"
             sizes="100vw"
             unoptimized
+            priority
           />
-          <div className="absolute inset-0 flex items-end justify-center pb-[50px]">
+          <div className="absolute inset-0 flex items-end justify-center pb-[20px]">
             <div className="max-w-[519px] w-full px-5 text-center space-y-6 text-white">
               <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
                 Ready to Find Your Next Home?
@@ -230,12 +233,13 @@ export default async function PropertiesToLetPage() {
         {/* Desktop Layout */}
         <div className="hidden lg:block relative w-full h-[450px] min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
-            src="/images/Properties to let/6th_Ready_to_Find_Your_Next_Home_.png"
-            alt="Ready to find your next home"
+            src="/images/Properties%20to%20let/properties%20to%20let-ready%20to%20find%20your%20next%20home-bg-dsk.webp"
+            alt="Ready to find your next home desktop"
             fill
             className="object-cover"
             sizes="100vw"
             unoptimized
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#002f57] via-[#002f57]/85 to-transparent" />
 

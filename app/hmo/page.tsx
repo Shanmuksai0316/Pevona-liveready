@@ -9,18 +9,19 @@ export default function HMOPage() {
       <section className="hidden lg:block relative w-full h-[760px] overflow-hidden shadow-sm">
         <div className="relative w-full h-full rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden z-0">
               <Image
-                src="/images/House Of Multiple Occupations (HMO)/HMO_Bg_img.png"
+                src="/images/House%20Of%20Multiple%20Occupations%20(HMO)/House%20of%20multiple%20occupations%20-%20banner-bg-dsk.webp"
             alt="HMO property management background"
                 fill
                 className="object-cover"
                 unoptimized
+                priority
               />
         </div>
 
         {/* Dark blue overlay at bottom */}
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-end">
           <div className="w-full bg-gradient-to-t from-[#002f57] via-[#002f57]/90 to-transparent pb-[80px] pt-[200px]">
-            <div className="max-w-[1000px] mx-auto px-5 650:px-[60px] lg:px-[80px] text-white text-center">
+            <div className="max-w-[1000px] mx-auto px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] text-white text-center">
               <h1 className="font-crimson text-[40px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
                 House Of Multiple Occupations (HMO)
               </h1>
@@ -33,11 +34,12 @@ export default function HMOPage() {
       <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
         <div className="relative w-full h-[850px] rounded-b-[24px] overflow-hidden">
             <Image
-              src="/images/House Of Multiple Occupations (HMO)/HMO_Bg_img.png"
+              src="/images/House%20Of%20Multiple%20Occupations%20(HMO)/House%20of%20multiple%20occupations%20-%20banner-bg-mbl.webp"
             alt="HMO property management background"
               fill
               className="object-cover"
               unoptimized
+              priority
             />
           </div>
 
@@ -54,7 +56,7 @@ export default function HMOPage() {
       </section>
 
       {/* Why Choose Pevona Ltd for HMO Management? */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-[78px] items-center">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-[78px] items-center">
         {/* Image on left */}
         <div className="w-full lg:flex-1 relative max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-[16px] sm:rounded-[20px] lg:rounded-[26px] overflow-hidden order-2 lg:order-1">
           <Image
@@ -81,7 +83,7 @@ export default function HMOPage() {
       </section>
 
       {/* Our HMO Services */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px]">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px]">
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-[78px] items-start">
           {/* Service list on left */}
           <div className="flex-1 w-full space-y-6 sm:space-y-8 order-2 lg:order-1">
@@ -190,7 +192,7 @@ export default function HMOPage() {
       </section>
 
       {/* Benefits of Our HMO Services */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px]">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px]">
         {/* Heading at top center */}
         <h2 className="font-crimson text-[22px] sm:text-[28px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] text-center mb-8 sm:mb-10 lg:mb-12">
           Benefits of Our HMO Services

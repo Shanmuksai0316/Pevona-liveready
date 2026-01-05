@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhyChooseSection() {
   return (
-    <div className="w-full mt-[120px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+    <div className="w-full mt-[120px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
       <h2
         className="
           font-crimson text-[#002f57] tracking-[-1.68px]
@@ -47,7 +47,7 @@ export default function WhyChooseSection() {
         {/* 4 */}
     <ImageCard
           title="End-to-End Solutions"
-          img="/images/Market Insights/Market_Insights_blog_-3.png"
+          img="/images/Home%20page/home-End-to-End%20Solutions-sec-dsk.webp"
           text="From tenant placement to portfolio growth - we manage it all seamlessly."
         />
 
@@ -117,7 +117,8 @@ function Card({
         mb-[16px]
         break-inside-avoid
         flex flex-col justify-between
-        ${tall ? "h-[344px]" : "h-[234px]"}
+        h-auto
+        ${tall ? "md:h-[344px]" : "md:h-[234px]"}
       `}
     >
       {children}
@@ -143,7 +144,7 @@ function ImageCard({
         rounded-[16px]
         mb-[16px]
         break-inside-avoid
-        h-[344px]
+        h-auto md:h-[344px]
         flex flex-col
       "
     >

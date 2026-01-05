@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   title: "Pevona - Property Management & Investment",
   description: "Expert management, lettings, and investment opportunities across the UK - powered by transparency and modern compliance.",
   icons: {
-    icon: "/favicon.webp",
-    shortcut: "/favicon.webp",
-    apple: "/favicon.webp",
+    icon: "/images/pevona-fav.webp",
+    shortcut: "/images/pevona-fav.webp",
+    apple: "/images/pevona-fav.webp",
   },
 };
 

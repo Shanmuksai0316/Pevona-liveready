@@ -7,19 +7,34 @@ export default function InvestmentSection() {
         relative w-full flex flex-col gap-[10px] items-center overflow-hidden
         py-[120px] sm:py-[160px] lg:py-[204px]
         mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]
-        px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
+        px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]
       "
     >
       {/* BACKGROUND IMAGE + STRIP */}
       <div className="absolute top-0 bottom-0 left-5 350:left-5 480:left-5 650:left-[60px] lg:left-[80px] 1300:left-[80px] 1400:left-[80px] 1500:left-[100px] 1600:left-[130px] right-5 350:right-5 480:right-5 650:right-[60px] lg:right-[80px] 1300:right-[80px] 1400:right-[80px] 1500:right-[100px] 1600:right-[130px] flex justify-center items-center">
         <div className="relative w-full max-w-[1336px] h-full">
+          {/* Mobile Background Image */}
+          <div className="relative w-full h-full lg:hidden">
+            <Image
+              src="/images/Home%20page/home-investment%20opportunities-sec-bg-mbl.webp"
+              alt="Investment Background Mobile"
+              fill
+              className="object-cover rounded-[16px]"
+              unoptimized
+              priority
+            />
+          </div>
+          {/* Desktop Background Image */}
+          <div className="relative w-full h-full hidden lg:block">
         <Image
-          src="/images/investment_opportunities.webp"
-          alt="Investment Background"
+              src="/images/Home%20page/home-investment%20opportunities-sec-bg-dsk.webp"
+              alt="Investment Background Desktop"
             fill
             className="object-cover rounded-[16px]"
           unoptimized
+              priority
         />
+          </div>
 
         <div
           className="

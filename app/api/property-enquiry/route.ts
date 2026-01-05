@@ -6,11 +6,7 @@ const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337"
 const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
 const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY;
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN;
-// Support multiple email addresses (comma-separated)
-const ADMIN_EMAILS = (process.env.ADMIN_EMAIL || "admin-pev@pevonaltd.co.uk")
-  .split(',')
-  .map(email => email.trim())
-  .filter(email => email.length > 0);
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "nagraj@grape5.com";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export async function POST(request: NextRequest) {
@@ -60,9 +56,6 @@ export async function POST(request: NextRequest) {
       },
     };
 
-    // Log the exact data being sent
-    console.log("📤 Sending to Strapi:", JSON.stringify(enquiryData, null, 2));
-
     // If property slug is provided, try to link to property
     if (propertySlug) {
       try {
@@ -99,37 +92,15 @@ export async function POST(request: NextRequest) {
     });
 
     let strapiResponse;
-    const requestUrl = `${STRAPI_URL}/api/property-enquiries`;
-    const requestBody = JSON.stringify(enquiryData);
-    
-    console.log("📤 Making POST request to:", requestUrl);
-    console.log("📤 Request method: POST");
-    console.log("📤 Request body:", requestBody);
-    
     try {
-      strapiResponse = await fetch(requestUrl, {
+      strapiResponse = await fetch(`${STRAPI_URL}/api/property-enquiries`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${STRAPI_API_TOKEN}`,
         },
-        body: requestBody,
-        cache: "no-store", // Prevent caching
-        redirect: "manual", // Don't follow redirects automatically
+        body: JSON.stringify(enquiryData),
       });
-      
-      console.log("📥 Response status:", strapiResponse.status);
-      console.log("📥 Response statusText:", strapiResponse.statusText);
-      console.log("📥 Response URL:", strapiResponse.url);
-      console.log("📥 Request URL was:", requestUrl);
-      
-      // Check for redirects
-      if (strapiResponse.status >= 300 && strapiResponse.status < 400) {
-        const location = strapiResponse.headers.get("location");
-        console.error("⚠️ REDIRECT DETECTED!");
-        console.error("⚠️ Redirect status:", strapiResponse.status);
-        console.error("⚠️ Redirect location:", location);
-      }
     } catch (fetchError) {
       console.error("Failed to connect to Strapi:", fetchError);
       const errorMessage = fetchError instanceof Error ? fetchError.message : "Unknown network error";
@@ -145,9 +116,9 @@ export async function POST(request: NextRequest) {
     }
 
     const responseText = await strapiResponse.text();
-    console.log("📥 Strapi response status:", strapiResponse.status);
-    console.log("📥 Strapi response URL:", `${STRAPI_URL}/api/property-enquiries`);
-    console.log("📥 Strapi response (full):", responseText);
+    console.log("Strapi response status:", strapiResponse.status);
+    console.log("Strapi response:", responseText.substring(0, 500)); // Log first 500 chars
+    console.log("Data being sent to Strapi:", JSON.stringify(enquiryData, null, 2));
 
     if (!strapiResponse.ok) {
       console.error("Strapi error details:", {
@@ -202,19 +173,7 @@ export async function POST(request: NextRequest) {
     let savedEnquiry;
     try {
       savedEnquiry = JSON.parse(responseText);
-      // Handle both single object and array responses
-      const enquiryId = Array.isArray(savedEnquiry.data) 
-        ? savedEnquiry.data[0]?.id 
-        : savedEnquiry.data?.id;
-      
-      console.log("✅ Successfully saved to Strapi!");
-      console.log("✅ Enquiry ID:", enquiryId);
-      console.log("✅ Full response:", JSON.stringify(savedEnquiry, null, 2));
-      
-      if (!enquiryId) {
-        console.error("⚠️ WARNING: No enquiry ID in response!");
-        console.error("⚠️ Response structure:", Object.keys(savedEnquiry));
-      }
+      console.log("Successfully saved to Strapi:", savedEnquiry.data?.id);
     } catch (e) {
       console.error("Failed to parse Strapi response:", e);
       console.error("Response text that failed to parse:", responseText);
@@ -240,29 +199,13 @@ export async function POST(request: NextRequest) {
         propertySlug: propertySlug || "",
         subject: subject || "",
       });
-      console.log("✅ Email notification sent successfully to", ADMIN_EMAILS.join(", "));
     } catch (emailError) {
-      console.error("❌ Email sending failed:", emailError);
-      // Log detailed error for debugging
-      if (emailError instanceof Error) {
-        console.error("Email error details:", {
-          message: emailError.message,
-          stack: emailError.stack,
-          hasMailgunKey: !!MAILGUN_API_KEY,
-          hasMailgunDomain: !!MAILGUN_DOMAIN,
-          adminEmails: ADMIN_EMAILS,
-        });
-      }
-      // Don't fail the request if email fails - enquiry is still saved to Strapi
+      console.error("Email sending failed:", emailError);
+      // Don't fail the request if email fails
     }
 
-    // Handle both single object and array responses from Strapi
-    const enquiryResponseData = Array.isArray(savedEnquiry.data)
-      ? savedEnquiry.data[0]
-      : savedEnquiry.data;
-    
     return NextResponse.json(
-      { success: true, data: enquiryResponseData },
+      { success: true, data: savedEnquiry.data },
       { status: 200 }
     );
   } catch (error) {
@@ -322,8 +265,7 @@ async function sendEmailNotification(data: {
   subject?: string;
 }) {
   if (!MAILGUN_API_KEY || !MAILGUN_DOMAIN) {
-    console.warn("⚠️ Mailgun not configured - email will not be sent");
-    console.warn("To enable email notifications, set MAILGUN_API_KEY and MAILGUN_DOMAIN in your environment variables");
+    console.warn("Mailgun not configured, skipping email");
     // Log enquiry details for local development
     console.log("📧 Property Enquiry (Email not configured):", {
       property: data.propertyTitle,
@@ -331,14 +273,8 @@ async function sendEmailNotification(data: {
       email: data.email,
       phone: data.phone,
       message: data.message,
-      adminEmails: ADMIN_EMAILS,
     });
-    throw new Error("Mailgun not configured - cannot send email");
-  }
-
-  if (!ADMIN_EMAILS || ADMIN_EMAILS.length === 0) {
-    console.error("❌ ADMIN_EMAIL is not set - cannot send email");
-    throw new Error("ADMIN_EMAIL is not configured");
+    return;
   }
 
   const mailgun = new Mailgun(formData);
@@ -464,7 +400,7 @@ This email was sent from the Pevona property enquiry system.
 
   await mg.messages.create(MAILGUN_DOMAIN, {
     from: `Pevona <noreply@${MAILGUN_DOMAIN}>`,
-    to: ADMIN_EMAILS, // Send to all email addresses
+    to: [ADMIN_EMAIL],
     subject: `New Property Enquiry: ${data.propertyTitle}`,
     text: emailText,
     html: emailHtml,

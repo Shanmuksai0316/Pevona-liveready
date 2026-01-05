@@ -21,7 +21,7 @@ export default function ProcessSection() {
   };
 
   return (
-    <div className="flex flex-col gap-[36px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] overflow-hidden px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+    <div className="flex flex-col gap-[36px] items-center w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] overflow-hidden px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
       
       {/* HEADING */}
       <div className="flex flex-col gap-[10px] items-center text-center w-full">
@@ -53,14 +53,30 @@ export default function ProcessSection() {
           flex-1
         ">
           <div className="relative w-full rounded-[26px] overflow-hidden">
+            {/* Mobile Image */}
+            <div className="relative w-full lg:hidden">
+              <Image
+                src="/images/Home%20page/home-Property%20Management%20Process-sec-mbl.webp"
+                alt="Property Management Process Mobile"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover rounded-[26px]"
+                unoptimized
+                priority
+              />
+            </div>
+            {/* Desktop Image */}
+            <div className="relative w-full hidden lg:block">
             <Image
-              src="/images/3rd_Step-by-Step_Application_Process.png"
-              alt="Property Process"
+                src="/images/Home%20page/home-Property%20Management%20Process-sec-dsk.webp"
+                alt="Property Management Process Desktop"
               width={800}
               height={600}
               className="w-full h-auto object-cover rounded-[26px]"
               unoptimized
+                priority
             />
+            </div>
           </div>
         </div>
 
@@ -71,7 +87,7 @@ export default function ProcessSection() {
         ">
           {steps.map((step, i) => (
             <div key={i} className="w-full">
-              <div className="h-px w-full border-t border-[rgba(0,0,0,0.12)] mb-[26px]"></div>
+              {i > 0 && <div className="h-px w-full border-t border-[rgba(0,0,0,0.12)] mb-[26px]"></div>}
 
               <div
                 className="flex flex-col gap-[8px] items-start w-full cursor-pointer"
@@ -91,6 +107,7 @@ export default function ProcessSection() {
                     font-crimson font-bold text-[#002f57]
                     text-[30px]
                     lg:text-[36px]
+                    leading-[36px]
                     transition-transform duration-200
                   ">
                     {expandedSteps.includes(i) ? "-" : "+"}

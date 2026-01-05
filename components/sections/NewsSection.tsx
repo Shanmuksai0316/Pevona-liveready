@@ -15,7 +15,7 @@ export default async function NewsSection() {
   const smallBlogs = blogList.slice(1, 4);
 
   return (
-    <div className="flex flex-col gap-[26px] items-start px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+    <div className="flex flex-col gap-[26px] items-start px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 lg:gap-[110px] items-start sm:items-center justify-between w-full">
         <div className="flex-1 flex flex-col gap-[5px] items-start">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] text-[#002f57] tracking-tight md:tracking-[-1.68px] w-full">

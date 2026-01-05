@@ -103,7 +103,7 @@ MAILGUN_API_KEY=your-mailgun-api-key-here
 MAILGUN_DOMAIN=your-mailgun-domain.com
 # For sandbox: sandboxXXXXX.mailgun.org
 
-ADMIN_EMAIL=admin-pev@pevonaltd.co.uk
+ADMIN_EMAIL=nagraj@grape5.com
 
 NEXT_PUBLIC_SITE_URL=http://31.97.117.9:3000
 # Or if you have a domain:
@@ -271,7 +271,7 @@ sudo firewall-cmd --list-ports
 4. Verify:
    - ✅ Success message appears
    - ✅ Check Strapi admin: `http://31.97.117.9:1337/admin` → Content Manager → Property Enquiries
-   - ✅ Check email at `admin-pev@pevonaltd.co.uk`
+   - ✅ Check email at `nagraj@grape5.com`
 
 #### Test Strapi:
 - Visit: `http://31.97.117.9:1337/admin`

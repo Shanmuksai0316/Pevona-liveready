@@ -52,7 +52,7 @@ export default function ComplianceLicensingPage() {
         </div>
 
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-end pb-[80px]">
-          <div className="max-w-[1000px] px-5 650:px-[60px] lg:px-[80px] space-y-6 text-white text-center">
+          <div className="max-w-[1000px] px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] space-y-6 text-white text-center">
             <h1 className="font-crimson text-[40px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
               Protecting Properties Through Full Compliance
             </h1>
@@ -104,7 +104,7 @@ export default function ComplianceLicensingPage() {
       </section>
 
       {/* Our Commitment to Compliance */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[30px] lg:gap-[80px]">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center gap-[30px] lg:gap-[80px]">
         <div className="w-full lg:flex-1 relative max-w-[720px] h-[460px] rounded-[26px] overflow-hidden">
           <Image
             src="/images/com_2nd_sec_img.png"
@@ -129,7 +129,7 @@ export default function ComplianceLicensingPage() {
       </section>
 
       {/* Key Compliance Areas */}
-      <section className="max-w-[1560px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-[37px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-[37px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] text-center w-full">
           Key Compliance Areas
         </h2>
@@ -173,7 +173,7 @@ export default function ComplianceLicensingPage() {
 
       {/* How We Manage Compliance */}
       <section className="mt-[60px] lg:mt-[160px] bg-[#002f57]">
-        <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center text-white">
+        <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-[74px] flex flex-col lg:flex-row gap-[48px] items-center text-white">
           <div className="w-full lg:flex-1 max-w-[621px] space-y-[24px]">
             <div className="space-y-4">
               <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
@@ -212,7 +212,7 @@ export default function ComplianceLicensingPage() {
       </section>
 
       {/* Responsibilities – Landlords and Tenants */}
-      <section className="max-w-[1560px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-[37px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] mb-[60px] lg:mb-[120px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1600:max-w-[1330px] mx-auto px-[37px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] mb-[60px] lg:mb-[120px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] w-full">
           Responsibilities
         </h2>

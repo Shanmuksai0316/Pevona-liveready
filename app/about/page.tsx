@@ -293,17 +293,17 @@ export default function AboutUsPage() {
         {/* Desktop: Background Image */}
         <div className="hidden lg:block absolute inset-0">
           <Image
-            src="/images/Banner_image.png"
+            src="/images/About%20us/About-banner-bg-dsk.webp"
             alt="About us hero"
             fill
             className="object-cover"
             priority
+            unoptimized
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#002f57]/90 via-[#002f57]/50 to-transparent" />
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:flex relative h-full max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] flex-col justify-center">
+        <div className="hidden lg:flex relative h-full max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] flex-col justify-center">
           <div className="max-w-[600px] space-y-6 text-white">
             <h1 className="font-crimson text-[36px] leading-tight tracking-[-1.1px]">
               Built on Trust.
@@ -325,41 +325,38 @@ export default function AboutUsPage() {
           </div>
         </div>
 
-        {/* Mobile Layout - Split Design: Text on top, Image on bottom */}
-        <div className="lg:hidden flex flex-col min-h-[850px]">
-          {/* Top Half: Dark Blue with Text */}
-          <div className="relative w-full min-h-[425px] bg-[#002f57] rounded-t-[20px] flex flex-col justify-center items-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-8 space-y-4 sm:space-y-6 text-white text-center">
-            <div className="space-y-4 sm:space-y-6 max-w-[600px] pt-[120px] lg:pt-0">
+        {/* Mobile Layout - Image as background with text overlaid */}
+        <div className="lg:hidden relative h-[850px]">
+          <div className="absolute inset-0">
+            <Image
+              src="/images/About%20us/About-banner-bg-mbl.webp"
+              alt="About us hero"
+              fill
+              className="object-cover"
+              priority
+              unoptimized
+            />
+          </div>
+          <div className="relative h-full flex flex-col justify-start items-center px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[150px]">
+            <div className="max-w-[600px] space-y-6 text-white text-center">
               <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[36px] leading-tight tracking-[-1.1px]">
                 Built on Trust.
                 <br />
                 Driven by Expertise.
               </h1>
-              <p className="font-manrope text-[14px] sm:text-[16px] leading-[22px] sm:leading-[26px] text-left">
+              <p className="font-manrope text-[14px] sm:text-[16px] leading-[22px] sm:leading-[26px]">
                 We believe in the personal touch welcoming clients with familiar voices and friendly
                 faces. Our limited portfolio ensures dedicated service and long-term relationships. We
                 are committed to sustainability, ethical leadership, and environmental responsibility,
                 actively supporting animal welfare and reducing waste.
               </p>
-            </div>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 sm:px-[35px] rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] transition-all hover:bg-[#0073B5] hover:text-white mt-2"
+                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 sm:px-[35px] rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] transition-all hover:bg-[#0073B5] hover:text-white"
             >
               Speak To Our Team
             </Link>
           </div>
-
-          {/* Bottom Half: Building Image */}
-          <div className="relative w-full h-[425px] overflow-hidden rounded-b-[20px]">
-            <Image
-              src="/images/Banner_image.png"
-              alt="About us building"
-              fill
-              className="object-cover object-center"
-              priority
-              unoptimized
-            />
           </div>
         </div>
       </section>
@@ -367,12 +364,13 @@ export default function AboutUsPage() {
       {/* Who We Are */}
       <section className="max-w-[1800px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row items-center justify-center gap-[50px]">
         {/* Left Image */}
-        <div className="relative w-full lg:flex-1 h-[300px] lg:h-[400px] rounded-r-[36px] overflow-hidden">
+        <div className="relative w-full lg:flex-1 max-w-[400px] h-[300px] lg:h-[400px] rounded-r-[36px] overflow-hidden">
           <Image
-            src="/images/2nd_sec_who_we_re_left_img.png"
+            src="/images/About%20us/About-who%20we%20are-sec-left-dsk.webp"
             alt="Who we are left"
             fill
             className="object-cover"
+            unoptimized
           />
         </div>
 
@@ -393,18 +391,19 @@ export default function AboutUsPage() {
         </div>
 
         {/* Right Image */}
-        <div className="relative w-full lg:flex-1 h-[300px] lg:h-[400px] rounded-l-[36px] overflow-hidden">
+        <div className="relative w-full lg:flex-1 max-w-[400px] h-[300px] lg:h-[400px] rounded-l-[36px] overflow-hidden">
           <Image
-            src="/images/About us/2nd_sec_who_we_re_right_img.png"
+            src="/images/About%20us/About-who%20we%20are-sec-right-dsk.webp"
             alt="Who we are right"
             fill
             className="object-cover"
+            unoptimized
           />
         </div>
       </section>
 
       {/* Our Mission & Our Vision */}
-      <section className="max-w-[1300px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1300px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
         <h2 className="font-crimson text-[48px] sm:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] text-center">
           Our Mission &amp; Our Vision
         </h2>
@@ -445,7 +444,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Our Services */}
-      <section className="bg-[#002f57] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] py-[60px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+      <section className="bg-[#002f57] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] py-[60px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="max-w-[1506px] 1920:max-w-[1600px] mx-auto">
           <div className="flex flex-col lg:flex-row gap-[78px] items-center">
             <div className="w-full lg:flex-1 max-w-[672px] space-y-[36px]">
@@ -506,7 +505,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Our Values */}
-      <section className="max-w-[1300px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-12 items-center">
+      <section className="max-w-[1300px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-12 items-center">
         <div className="flex-1 relative w-full lg:w-[610px] h-[750px] rounded-[16px] overflow-hidden">
           <Image
             src="/images/Our_Values_-_Integrity.png"
@@ -540,7 +539,7 @@ export default function AboutUsPage() {
 
       {/* Our Team - Hidden */}
       {false && (
-      <section className="max-w-[1300px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1300px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[36px] items-center">
         <div className="text-center space-y-4 max-w-[942px]">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Our Team
@@ -576,7 +575,7 @@ export default function AboutUsPage() {
       )}
 
       {/* Recognized by Leading Authorities */}
-      <section className="max-w-[1336px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[40px] 1300:gap-[150px] items-center">
+      <section className="max-w-[1336px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[40px] 1300:gap-[150px] items-center">
         <div className="flex-1 max-w-[507px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Recognized by Leading Authorities
@@ -626,7 +625,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* A Network of Reputed Clients */}
-      <section className="bg-[#002f57] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] py-[60px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+      <section className="bg-[#002f57] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] py-[60px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
         <div className="max-w-[1296px] 1920:max-w-[1600px] mx-auto flex flex-col gap-[36px] items-center">
           <div className="text-center space-y-4 max-w-[942px] text-white">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
@@ -684,7 +683,7 @@ export default function AboutUsPage() {
             {
               title: "End-to-End Solutions",
               description: "From tenant placement to portfolio growth - we manage it all seamlessly.",
-              image: "/images/8_sec_End-to-End_Solutions_image.png",
+              image: "/images/Home%20page/home-End-to-End%20Solutions-sec-dsk.webp",
             },
             {
               title: "Streamlined Management Process",
@@ -696,7 +695,7 @@ export default function AboutUsPage() {
             {
               title: "Transparent Process",
               description: "Every step is clear, compliant, and designed to build lasting trust.",
-              image: "/images/Market Insights/Market_Insights_blog_-3.png",
+              image: "/images/Transparent Process.png",
             },
             {
               title: "Compliance First",
@@ -784,7 +783,7 @@ export default function AboutUsPage() {
 
 
       {/* Testimonials */}
-      <section className="max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] md:mb-[150px] flex flex-col gap-[50px] items-center w-full">
+      <section className="max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mb-[60px] md:mb-[150px] flex flex-col gap-[50px] items-center w-full">
         <div className="text-center space-y-4 max-w-[942px]">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Experiences That Inspire Confidence
@@ -879,7 +878,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* ESG Section */}
-      <div className="px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+      <div className="px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
       <section className="max-w-[1600px] 1920:max-w-[1600px] mx-auto mb-[60px] md:mb-[120px] relative h-[400px] sm:h-[450px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
         <div className="absolute inset-0">
           <Image

@@ -19,7 +19,7 @@ export default function InternationalPropertiesPage() {
           />
             </div>
         </div>
-        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
+        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
 
           <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
             <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
@@ -63,7 +63,7 @@ export default function InternationalPropertiesPage() {
 
       {/* ================= FEATURED PROJECTS ================= */}
       <section className="py-16 bg-[#FAFAFA]">
-        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
           <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-center text-[#002f57] mb-4">
             Featured International Projects
           </h2>
@@ -96,7 +96,7 @@ export default function InternationalPropertiesPage() {
 
       {/* ================= WHY INVEST ================= */}
       <section className="bg-white mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] mb-6">
               Why Invest Internationally?
@@ -173,7 +173,7 @@ export default function InternationalPropertiesPage() {
 
       {/* ================= INTERNATIONAL SERVICES ================= */}
       <section className="py-16 bg-[#FAFAFA] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
           <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-center text-[#002f57] mb-12">
             International Property Services
           </h2>
@@ -229,7 +229,7 @@ export default function InternationalPropertiesPage() {
 
       {/* ================= COMPLIANCE ================= */}
       <section className="bg-white mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-[450px] rounded-lg overflow-hidden">
             <Image
               src="/images/International-Properties/Compliance & Transparency.png"
@@ -255,7 +255,7 @@ export default function InternationalPropertiesPage() {
 
       {/* ================= EXPERT SUPPORT ================= */}
       <section className="pt-16 bg-[#FAFAFA] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-crimson text-[30px] sm:text-[36px] md:text-[40px] lg:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57] mb-6">
               Expert Support, Wherever You Are

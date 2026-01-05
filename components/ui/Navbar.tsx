@@ -88,9 +88,9 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-center lg:justify-between pl-[60px] pr-[60px] pt-[10px] pb-[10px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible z-[10001]">
+    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-center lg:justify-between pl-[20px] pr-[20px] 1300:pl-[60px] 1300:pr-[60px] pt-[10px] pb-[10px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible z-[10001]">
       {/* Logo */}
-      <div className="h-[48px] lg:h-[72px] w-[130px] lg:w-[180px] relative z-[10001]">
+      <div className="h-[48px] lg:h-[72px] w-[130px] lg:w-[230px] relative z-[10001]">
         <Link href="/" onClick={() => setIsOpen(false)}>
           <Image
             src="/images/pevona-logo-new.svg"
@@ -102,7 +102,7 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden lg:flex items-center gap-5 flex-shrink-0">
+      <nav className="hidden lg:flex items-center gap-0 flex-shrink-0">
         {navLinks.map((link) => {
           // Use PropertyManagementDropdown component for Property Management
           if (link.name === "Property Management" && 'hasDropdown' in link && link.hasDropdown && 'submenu' in link) {
@@ -205,8 +205,8 @@ export default function Navbar() {
 
       {/* Desktop CTA */}
       <div className="hidden lg:block">
-        <Link href="/contact" className="bg-[#002f57] hover:bg-[#001f3a] px-[10px] py-[12px] rounded-[100px] w-[225px] transition-all inline-block text-center">
-          <span className="font-manrope font-semibold text-[18px] leading-[28px] text-white">Book a Free Valuation</span>
+        <Link href="/contact" className="bg-[#002f57] hover:bg-[#001f3a] px-[10px] py-[12px] rounded-[100px] w-[190px] 1400:w-[225px] transition-all inline-block text-center">
+          <span className="font-manrope font-semibold text-[16px] leading-[24px] 1400:text-[18px] 1400:leading-[28px] text-white">Book a Free Valuation</span>
         </Link>
       </div>
 
