@@ -76,7 +76,7 @@ export default function TenantServicesPage() {
       </section>
 
       {/* Renting with Confidence */}
-      <section className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
+      <section className="max-w-full mx-[20px] md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
         <div className="w-full lg:flex-1 max-w-[589px] space-y-4 p-[5%]">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Renting with Confidence
@@ -101,7 +101,7 @@ export default function TenantServicesPage() {
       </section>
 
       {/* Your Renting Journey */}
-      <section className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[80px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
+      <section className="max-w-full mx-[20px] md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[80px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px]">
         <div className="flex-1 relative w-full max-w-[696px] h-[460px] min-h-[300px] sm:min-h-[400px] lg:min-h-[460px] min-w-0 rounded-[26px] overflow-hidden">
           <Image
             src="/images/Tenant services/3rd_Your_Renting_Journey.png"
@@ -182,7 +182,7 @@ export default function TenantServicesPage() {
       </section>
 
       {/* Maintenance and Communication */}
-      <section className="w-[calc(100%-74px)] mx-[37px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px]">
+      <section className="max-w-full mx-[20px] lg:w-[calc(100%-74px)] lg:mx-[37px] mt-[60px] lg:mt-[140px] mb-[60px] lg:mb-[120px]">
         {/* Mobile Layout */}
         <div className="lg:hidden relative w-full min-h-[450px] rounded-[26px] overflow-hidden">
           <Image

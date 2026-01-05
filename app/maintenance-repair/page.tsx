@@ -145,7 +145,7 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* Comprehensive Property Care */}
-      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-[37px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[36px] items-center">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-[20px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[36px] items-center">
         <div className="text-center space-y-3 w-full">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Comprehensive Property Care
@@ -173,7 +173,7 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* How We Handle Maintenance Requests */}
-      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-[37px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[30px] lg:gap-[80px]">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-[20px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px] flex flex-col gap-[30px] lg:gap-[80px]">
         <div className="space-y-9 w-full">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             How We Handle Maintenance Requests
@@ -277,7 +277,7 @@ export default function MaintenanceRepairPage() {
       </section>
 
       {/* Working Together to Keep Properties Safe */}
-      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-[37px] lg:mx-auto lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px]">
+      <section className="max-w-[1560px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-[20px] lg:mx-auto lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[160px]">
         <div className="relative w-full h-[600px] lg:h-[450px] rounded-[26px] overflow-hidden">
           {/* Mobile Image */}
           <div className="relative w-full h-full lg:hidden">

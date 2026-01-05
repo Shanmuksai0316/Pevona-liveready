@@ -98,7 +98,7 @@ export default function PropertiesFilterSection({
   }, [properties, locationQuery, minPrice, maxPrice, beds, type, focus]);
 
   return (
-    <section className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 mb-[60px] lg:mb-[120px]">
+    <section className="max-w-[1440px] mx-auto px-0 sm:px-6 md:px-8 lg:px-12 xl:px-16 mb-[60px] lg:mb-[120px]">
       {/* Search Filter */}
       <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[12px] sm:rounded-[16px] px-4 sm:px-6 md:px-[36px] py-4 sm:py-6 md:py-[26px] space-y-4 sm:space-y-6 md:space-y-[10px] relative z-[99]">
         {/* Top row: Location, Min Price, Max Price, Beds, Type, Apply/Clear */}

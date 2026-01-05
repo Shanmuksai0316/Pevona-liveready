@@ -42,7 +42,7 @@ export default function LandlordServicesPage() {
       </section>
 
       {/* Why Landlords Choose Us */}
-      <section className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] 1600:max-w-[1330px] px-6 lg:px-[132px] mt-[150px]">
+      <section className="max-w-full mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] 1600:max-w-[1330px] px-6 lg:px-[132px] mt-[60px] md:mt-[150px]">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] mb-8">
           Why Landlords Choose Us
         </h2>

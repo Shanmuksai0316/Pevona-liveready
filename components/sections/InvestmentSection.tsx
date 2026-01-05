@@ -27,7 +27,7 @@ export default function InvestmentSection() {
           {/* Desktop Background Image */}
           <div className="relative w-full h-full hidden lg:block">
         <Image
-              src="/images/Home%20page/home-investment%20opportunities-sec-bg-dsk.webp"
+              src="/images/Home%20page/home-investment%20opportunities-sec-bg-dsk1.webp"
               alt="Investment Background Desktop"
             fill
             className="object-cover rounded-[16px]"
