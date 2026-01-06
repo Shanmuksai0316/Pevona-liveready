@@ -125,9 +125,12 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
                     width={social.name === "twitter" ? 24 : 20}
                     height={social.name === "twitter" ? 24 : 20}
                     className="object-contain"
-                    style={{ 
-                      filter: "brightness(0) invert(1)",
-                    }}
+                    // Keep brand color for Twitter, apply white filter for others
+                    style={
+                      social.name === "twitter"
+                        ? undefined
+                        : { filter: "brightness(0) invert(1)" }
+                    }
                     onError={() => {
                       setImageErrors((prev) => ({ ...prev, [social.name]: true }));
                     }}
@@ -172,9 +175,12 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
                     width={18}
                     height={18}
                     className="object-contain"
-                    style={{ 
-                      filter: "brightness(0) invert(1)",
-                    }}
+                    // Keep brand color for Twitter, apply white filter for others
+                    style={
+                      social.name === "twitter"
+                        ? undefined
+                        : { filter: "brightness(0) invert(1)" }
+                    }
                     onError={() => {
                       setImageErrors((prev) => ({ ...prev, [social.name]: true }));
                     }}
