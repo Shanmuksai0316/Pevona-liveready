@@ -599,7 +599,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Our Values */}
-      <section className="max-w-[1300px] 1920:max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-12 items-center">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-12 items-center">
         <div className="flex-1 relative w-full lg:w-[610px] h-[750px] rounded-[16px] overflow-hidden">
           <Image
             src="/images/Our_Values_-_Integrity.png"
@@ -669,7 +669,7 @@ export default function AboutUsPage() {
       )}
 
       {/* Recognized by Leading Authorities */}
-      <section className="max-w-full mx-0 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[40px] 1300:gap-[150px] items-center">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[40px] 1300:gap-[150px] items-center">
         <div className="flex-1 max-w-[507px] space-y-4">
           <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
             Recognized by Leading Authorities
@@ -720,7 +720,7 @@ export default function AboutUsPage() {
 
       {/* A Network of Reputed Clients */}
       <section className="bg-[#002f57] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] py-[60px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-        <div className="max-w-[1296px] 1920:max-w-[1600px] mx-auto flex flex-col gap-[36px] items-center">
+        <div className="max-w-[1340px] mx-auto flex flex-col gap-[36px] items-center">
           <div className="text-center space-y-4 max-w-[942px] text-white">
             <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px]">
               A Network of Reputed Clients
@@ -761,7 +761,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Why Choose Pevona? */}
-      <section className="max-w-full mx-[20px] 1400:max-w-[1337px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] md:mt-[150px] mb-[60px] md:mb-[120px]">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] md:mt-[150px] mb-[60px] md:mb-[120px]">
         {/* <div className="w-full px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]"> */}
           <h2
             className="
@@ -951,7 +951,7 @@ export default function AboutUsPage() {
 
       {/* ESG Section */}
       <div className="px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-      <section className="max-w-[1337px] mx-auto mb-[60px] md:mb-[120px] relative h-[400px] sm:h-[450px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
+      <section className="max-w-full 1400:max-w-[1337px] mx-auto mb-[60px] md:mb-[120px] relative h-[400px] sm:h-[450px] lg:h-[450px] rounded-[20px] sm:rounded-[26px] overflow-hidden">
         {/* Mobile Background Image */}
         <div className="absolute inset-0 lg:hidden">
           <Image
@@ -992,7 +992,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* Mobile Layout - positioned on the dark overlay */}
-        <div className="lg:hidden absolute bottom-0 left-0 right-0 z-10 px-5 350:px-5 480:px-5 650:px-[60px] py-6 sm:py-8 space-y-3 sm:space-y-4 text-white max-w-[50%]">
+        <div className="lg:hidden absolute bottom-0 left-0 right-0 z-10 px-5 350:px-5 480:px-5 650:px-[60px] py-6 sm:py-8 space-y-3 sm:space-y-4 text-white w-full">
           <h2 className="font-crimson text-[22px] sm:text-[28px] leading-tight tracking-tight">
             Environmental &amp; Social Governance (ESG)
           </h2>

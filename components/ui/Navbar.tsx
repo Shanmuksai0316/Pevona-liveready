@@ -88,9 +88,9 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-start lg:justify-between pl-[20px] pr-[20px] 1300:pl-[60px] 1300:pr-[60px] pt-[10px] pb-[10px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible z-[10001]">
+    <div className="bg-white border border-[rgba(0,0,0,0.12)] flex items-center justify-start lg:justify-between py-[5px] px-[15px] rounded-[32px] lg:rounded-[100px] max-w-[1560px] w-full pointer-events-auto relative mt-4 overflow-visible z-[10001]">
       {/* Logo */}
-      <div className="h-[60px] lg:h-[72px] w-[130px] lg:w-[230px] relative z-[10001] py-[5px] px-[15px]">
+      <div className="h-[60px] lg:h-[72px] w-[155px] lg:w-[230px] relative z-[10001]">
         <Link href="/" onClick={() => setIsOpen(false)}>
           <Image
             src="/images/pevona-logo-new.svg"

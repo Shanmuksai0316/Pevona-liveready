@@ -120,7 +120,7 @@ export default async function SellPage() {
       </section>
 
       {/* Properties List Section */}
-      <section className="max-w-[1440px] 1920:max-w-[1600px] mx-[20px] 650:mx-auto px-0 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] md:mt-[150px] mb-[60px] lg:mb-[120px]">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] mb-[60px] lg:mb-[120px]">
         <div className="max-w-[861px] mx-auto text-center space-y-4 mb-9">
           <h2 className="font-crimson text-[32px] md:text-[66px] leading-tight md:leading-[66px] tracking-tight md:tracking-[-1.98px] text-[#002f57]">
             Featured Properties
@@ -129,7 +129,7 @@ export default async function SellPage() {
             Explore our current listings and find your perfect property.
           </p>
         </div>
-        <PropertiesFilterSection properties={properties} limit={6} />
+        <PropertiesFilterSection properties={properties} limit={6} removePadding removeMarginTop />
       </section>
 
 

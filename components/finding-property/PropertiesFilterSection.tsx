@@ -10,11 +10,17 @@ type FocusFilter = "All" | "Residential" | "Commercial" | "Investment";
 interface PropertiesFilterSectionProps {
   properties: StrapiProperty[];
   limit?: number;
+  removePadding?: boolean;
+  removeMarginTop?: boolean;
+  removeMarginX?: boolean;
 }
 
 export default function PropertiesFilterSection({
   properties,
   limit,
+  removePadding = false,
+  removeMarginTop = false,
+  removeMarginX = false,
 }: PropertiesFilterSectionProps) {
   const [locationQuery, setLocationQuery] = useState("");
   const [minPrice, setMinPrice] = useState<number | null>(null);
@@ -98,7 +104,7 @@ export default function PropertiesFilterSection({
   }, [properties, locationQuery, minPrice, maxPrice, beds, type, focus]);
 
   return (
-    <section className="max-w-[1440px] mx-auto px-0 sm:px-6 md:px-8 lg:px-12 xl:px-16 mb-[60px] lg:mb-[120px]">
+    <section className={`max-w-[1600px] min-w-full ${removeMarginX ? '' : 'mx-auto'} ${removePadding ? '' : 'px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]'} ${removeMarginTop ? '' : 'mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]'} mb-[60px] lg:mb-[120px]`}>
       {/* Search Filter */}
       <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[12px] sm:rounded-[16px] px-4 sm:px-6 md:px-[36px] py-4 sm:py-6 md:py-[26px] space-y-4 sm:space-y-6 md:space-y-[10px] relative z-[99]">
         {/* Top row: Location, Min Price, Max Price, Beds, Type, Apply/Clear */}
