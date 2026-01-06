@@ -80,7 +80,7 @@ export default function LandlordServicesPage() {
       </section>
 
       {/* Why Landlords Choose Us */}
-      <section className="max-w-full mx-0 md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
         <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] mb-8">
           Why Landlords Choose Us
         </h2>
@@ -119,7 +119,7 @@ export default function LandlordServicesPage() {
       </section>
 
       {/* Our Letting Process */}
-      <section className="max-w-[1316px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row gap-[70px] items-center">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[70px] items-center">
         <div className="flex-1 w-full lg:max-w-[526px] space-y-9">
           <div className="space-y-4">
             <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px] text-[#002f57]">

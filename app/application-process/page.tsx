@@ -94,7 +94,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Step-by-step Application Process */}
-      <section className="max-w-full mx-0 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[80px] flex flex-col lg:flex-row gap-[60px] items-start">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[60px] items-start">
         <div className="w-full lg:flex-1 flex flex-col gap-6 max-w-[526px]">
           <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px] text-[#002f57]">
             How It Works
@@ -161,7 +161,7 @@ export default function ApplicationProcessPage() {
       </section>
 
       {/* Required Documents */}
-      <section className="max-w-[1320px] 1920:max-w-[1600px] mx-0 px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] lg:mt-[120px] flex flex-col gap-[26px]">
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col gap-[26px]">
         <h2 className="font-crimson text-[40px] md:text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
           Required Documents
         </h2>
