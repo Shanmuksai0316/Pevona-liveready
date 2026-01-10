@@ -301,9 +301,124 @@ export default function TermsPage() {
             </div>
           </section>
 
+          <section className="mb-8 sm:mb-10 md:mb-12" id="cmp">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
+              9. Client Money Protection (CMP)
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
+              Pevona Ltd is a member of the UK Association of Letting Agents (UKALA) and is
+              covered by the UKALA Client Money Protection (CMP) Scheme. This provides total
+              loss protection for client money held by our agency, safeguarding landlords and
+              tenants in accordance with UK regulations.
+            </p>
+
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                Membership Details
+              </h3>
+              <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <li><strong>UKALA Membership No.:</strong> 006419</li>
+                <li><strong>CMP Scheme:</strong> UKALA Client Money Protection</li>
+                <li><strong>Approved by:</strong> Department for Levelling Up, Housing and Communities (DLUHC)</li>
+                <li><strong>Accepted by:</strong> Rent Smart Wales</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                Verification &amp; Downloads
+              </h3>
+              <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <li>
+                  <strong>Verify our UKALA membership:</strong>{" "}
+                  <a href="https://www.ukala.org.uk/agent-search/ukala-agent-directory/" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                    https://www.ukala.org.uk/agent-search/ukala-agent-directory/
+                  </a>
+                </li>
+                <li>
+                  <strong>Download CMP Certificate (PDF):</strong>{" "}
+                  <a href="/images/UKALA - CMP Certificates 006419.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                  UKALA - CMP Certificates (PDF)
+                  </a>
+                </li>
+                <li>
+                  <strong>Download UKALA Membership Certificate (PDF):</strong>{" "}
+                  <a href="/images/UKALA Membership.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                    UKALA Membership Certificate (PDF)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="mb-8 sm:mb-10 md:mb-12" id="complaints-redress">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
+              10. Complaints &amp; Redress (PRS)
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
+              We are a member of the Property Redress Scheme (PRS) and follow a clear, fair
+              complaints process.
+            </p>
+
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <li><strong>Acknowledgement:</strong> within 3 working days.</li>
+                <li><strong>Response:</strong> within 15 working days.</li>
+              </ul>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mt-4">
+                If you need reasonable adjustments or accessibility support to make or pursue a
+                complaint, please let us know and we will assist.
+              </p>
+            </div>
+
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                Escalation
+              </h3>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                If you remain dissatisfied after our final response, you may escalate the matter to
+                the Property Redress Scheme (PRS).
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                PRS Contact &amp; Verification
+              </h3>
+              <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <li>
+                  <strong>Telephone:</strong>{" "}
+                  <a href="tel:03333219418" className="text-[#0073B5] hover:underline">0333 321 9418</a>
+                </li>
+                <li>
+                  <strong>Email:</strong>{" "}
+                  <a href="mailto:info@propertyredress.co.uk" className="text-[#0073B5] hover:underline">info@propertyredress.co.uk</a>
+                </li>
+                <li>
+                  <strong>Address:</strong> Limelight, 1st Floor, Elstree Way, Borehamwood, Hertfordshire WD6 1JH
+                </li>
+                <li>
+                  <strong>Membership:</strong> Pevona Ltd is a member of PRS (see certificate).
+                </li>
+                <li>
+                  <strong>Download:</strong>{" "}
+                  <a href="/images/Complaints Handling Procedure.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                    Complaints Procedure (PDF)
+                  </a>
+                </li>
+                <li>
+                  <strong>View:</strong>{" "}
+                  <a href="/images/PRS Certificate 2025 -2026.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                    PRS Certificate (PDF)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
           <section className="mb-8 sm:mb-10 md:mb-12">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
-              9. Contact Us
+              11. Contact Us
             </h2>
             <div className="space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
               <p>

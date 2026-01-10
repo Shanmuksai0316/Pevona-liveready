@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import CookiePreferencesLink from "./CookiePreferencesLink";
 
 export default function Footer() {
   return (
@@ -44,7 +45,12 @@ export default function Footer() {
               <Link href="/privacy-policy" className="hover:text-white hover:opacity-100 transition-opacity">Privacy Policy</Link>
               <Link href="/terms" className="hover:text-white hover:opacity-100 transition-opacity">Terms & Conditions</Link>
               <Link href="/cookie-policy" className="hover:text-white hover:opacity-100 transition-opacity">Cookie Policy</Link>
+              <CookiePreferencesLink />
               <Link href="/charges-fees" className="hover:text-white hover:opacity-100 transition-opacity">Charges & Fees</Link>
+              <Link href="/terms#cmp" className="hover:text-white hover:opacity-100 transition-opacity">Client Money Protection</Link>
+              <Link href="/terms#complaints-redress" className="hover:text-white hover:opacity-100 transition-opacity">Complaints & Redress</Link>
+              <Link href="/privacy-policy#aml" className="hover:text-white hover:opacity-100 transition-opacity">AML & Compliance</Link>
+              <Link href="/privacy-policy#accessibility" className="hover:text-white hover:opacity-100 transition-opacity">Accessibility</Link>
             </div>
           </div>
 

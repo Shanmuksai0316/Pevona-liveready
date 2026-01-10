@@ -241,9 +241,122 @@ export default function PrivacyPolicyPage() {
             </ul>
           </section>
 
+          <section className="mb-8 sm:mb-10 md:mb-12" id="aml">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
+              9. Anti‑Money Laundering &amp; Compliance
+            </h2>
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-2">
+                <strong>Supervision:</strong> Pevona Ltd is subject to HMRC AML supervision (Registration/Approval No.: []).
+              </p>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <strong>MLRO:</strong> Peter Banyong (Nominated Officer) — responsible for AML governance, SAR decisions, and effectiveness reviews.
+              </p>
+            </div>
+
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                Our Risk‑Based Approach
+              </h3>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+                We apply documented Customer Due Diligence (CDD) and Enhanced Due Diligence
+                (EDD) proportional to risk, supported by a Firm‑Wide Risk Assessment (FWRA).
+                Controls include identity &amp; address verification, beneficial ownership checks
+                (corporate/trust clients), and right‑to‑rent (where applicable).
+              </p>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+                We conduct sanctions and PEP screening at onboarding and periodically using the
+                HM Treasury consolidated list and electronic tools (e.g., SmartSearch).
+              </p>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                We maintain ongoing monitoring of active relationships and retain AML records for
+                a minimum of 5 years after the relationship/transaction ends.
+              </p>
+            </div>
+
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                Suspicious Activity Reporting (SAR)
+              </h3>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                We operate robust SAR procedures: staff report suspicions to the MLRO; the
+                MLRO evaluates and, where required, submits SARs to the National Crime Agency
+                (NCA).
+              </p>
+            </div>
+
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                Client Money Controls
+              </h3>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                We operate designated client accounts under UKALA Client Money Protection (CMP)
+                requirements.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                Downloads
+              </h3>
+              <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <li>
+                  <strong>AML Policies, Controls &amp; Procedures (PCP)</strong> —{" "}
+                  <a href="/images/AML Policies, Controls & Procedures (PCP).pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                  AML_PCP.pdf
+                  </a>
+                </li>
+                <li>
+                  <strong>Firm‑Wide Risk Assessment (FWRA)</strong> —{" "}
+                  <a href="/images/Firm Wide Risk Assessment (FWRA).pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                  Firm‑Wide Risk Assessment (FWRA)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="mb-8 sm:mb-10 md:mb-12" id="accessibility">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
+              10. Accessibility (Site‑Wide Statement)
+            </h2>
+            <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+            Commitment:
+              </h3>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
+              We aim to align with WCAG 2.1 AA across our website.
+            </p>
+
+            <div className="mb-4 sm:mb-5 md:mb-6">
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                Features
+              </h3>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                Keyboard navigation, descriptive alt text, colour contrast, and ARIA
+                landmarks to improve screen‑reader navigation.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
+                Support &amp; Adjustments
+              </h3>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+                If you require reasonable adjustments or assistance to
+                access our website or services, please contact us and we will help.
+              </p>
+              <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                <strong>Contact for accessibility support:</strong>{" "}
+                <a href="mailto:admin-pev@pevonaltd.co.uk" className="text-[#0073B5] hover:underline">admin-pev@pevonaltd.co.uk</a> |{" "}
+                <a href="tel:+442036329485" className="text-[#0073B5] hover:underline">+44-203-632-9485</a>
+              </p>
+            </div>
+          </section>
+
+
           <section className="mb-8 sm:mb-10 md:mb-12">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
-              9. Contact Us
+              11. Contact Us
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
               If you have any questions about this Privacy Policy or our data practices, please contact our
