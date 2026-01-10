@@ -1,0 +1,121 @@
+[
+  {
+    "title": "Nova Residence",
+    "slug": "nova-residence",
+    "status": "For Sale",
+    "price": 14500,
+    "currency": "USD",
+    "address": "123 Main Street",
+    "city": "London",
+    "state": "Greater London",
+    "zipcode": "SW1A 1AA",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "area": 1550,
+    "short_description": "Beautiful modern residence in prime location",
+    "description": "<p>This stunning property features modern architecture and premium finishes throughout. Located in a desirable neighborhood with excellent transport links.</p>",
+    "features": ["Modern Kitchen", "Garden", "Parking", "Near Schools"]
+  },
+  {
+    "title": "Luxury Downtown Apartment",
+    "slug": "luxury-downtown-apartment",
+    "status": "For Rent",
+    "price": 3500,
+    "currency": "USD",
+    "address": "456 High Street",
+    "city": "Manchester",
+    "state": "Greater Manchester",
+    "zipcode": "M1 1AA",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 1200,
+    "short_description": "Spacious apartment in the heart of the city",
+    "description": "<p>Contemporary apartment with stunning city views. Perfect for professionals seeking a modern lifestyle.</p>",
+    "features": ["City Views", "Balcony", "Gym Access", "Concierge"]
+  },
+  {
+    "title": "Family Home in Suburbs",
+    "slug": "family-home-suburbs",
+    "status": "For Sale",
+    "price": 450000,
+    "currency": "GBP",
+    "address": "789 Oak Avenue",
+    "city": "Birmingham",
+    "state": "West Midlands",
+    "zipcode": "B1 1AA",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area": 2200,
+    "short_description": "Perfect family home with large garden",
+    "description": "<p>Detached family home in quiet residential area. Excellent schools nearby and close to amenities.</p>",
+    "features": ["Large Garden", "Garage", "Near Schools", "Quiet Area"]
+  },
+  {
+    "title": "Modern Studio Flat",
+    "slug": "modern-studio-flat",
+    "status": "For Rent",
+    "price": 1200,
+    "currency": "GBP",
+    "address": "321 Elm Road",
+    "city": "Bristol",
+    "state": "South West",
+    "zipcode": "BS1 1AA",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 500,
+    "short_description": "Compact and modern studio in city center",
+    "description": "<p>Well-designed studio flat perfect for single professionals. All bills included.</p>",
+    "features": ["Furnished", "Bills Included", "City Center", "Modern"]
+  },
+  {
+    "title": "Victorian Terrace House",
+    "slug": "victorian-terrace-house",
+    "status": "For Sale",
+    "price": 320000,
+    "currency": "GBP",
+    "address": "654 Park Lane",
+    "city": "Leeds",
+    "state": "West Yorkshire",
+    "zipcode": "LS1 1AA",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area": 1800,
+    "short_description": "Characterful Victorian property with period features",
+    "description": "<p>Beautifully restored Victorian terrace with original features. Close to city center and transport links.</p>",
+    "features": ["Period Features", "Garden", "Parking", "Near Transport"]
+  },
+  {
+    "title": "Penthouse Apartment",
+    "slug": "penthouse-apartment",
+    "status": "For Sale",
+    "price": 850000,
+    "currency": "GBP",
+    "address": "987 Sky Tower",
+    "city": "Edinburgh",
+    "state": "Scotland",
+    "zipcode": "EH1 1AA",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "area": 2500,
+    "short_description": "Luxury penthouse with panoramic city views",
+    "description": "<p>Exceptional penthouse apartment with stunning views across the city. Premium finishes and high-end appliances throughout.</p>",
+    "features": ["Panoramic Views", "Private Terrace", "Concierge", "Gym", "Parking"]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

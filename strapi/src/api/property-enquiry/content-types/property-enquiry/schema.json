@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_enquiries",
+  "info": {
+    "singularName": "property-enquiry",
+    "pluralName": "property-enquiries",
+    "displayName": "Property Enquiry",
+    "description": "Enquiries from property viewing/reservation forms"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "message": {
+      "type": "text"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property"
+    },
+    "property_slug": {
+      "type": "string"
+    },
+    "property_title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["new", "contacted", "viewing_scheduled", "closed"],
+      "default": "new"
+    }
+  }
+}
+
