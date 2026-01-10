@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TermsPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
@@ -319,6 +321,18 @@ export default function TermsPage() {
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
                 <li><strong>UKALA Membership No.:</strong> 006419</li>
                 <li><strong>CMP Scheme:</strong> UKALA Client Money Protection</li>
+              </ul>
+              <div className="mt-4 mb-4">
+                <Image
+                  src="/images/UKALA logo.jpg"
+                  alt="UKALA Logo"
+                  width={200}
+                  height={100}
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+              <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
                 <li><strong>Approved by:</strong> Department for Levelling Up, Housing and Communities (DLUHC)</li>
                 <li><strong>Accepted by:</strong> Rent Smart Wales</li>
               </ul>
@@ -369,6 +383,16 @@ export default function TermsPage() {
                 If you need reasonable adjustments or accessibility support to make or pursue a
                 complaint, please let us know and we will assist.
               </p>
+              <div className="mt-4 mb-4">
+                <Image
+                  src="/images/PRS Logo 1.jpg"
+                  alt="PRS Logo"
+                  width={200}
+                  height={100}
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
             </div>
 
             <div className="mb-4 sm:mb-5 md:mb-6">
