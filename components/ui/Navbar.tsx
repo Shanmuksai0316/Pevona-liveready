@@ -47,6 +47,7 @@ export default function Navbar() {
       submenu: [
         { name: "Finding Property", href: "/finding-property" },
         { name: "Buy Guide & Area Guide", href: "/buy-guide" },
+        { name: "ROI Calculator", href: "/roi-calculator" },
       ]
     },
     { name: "Sell", href: "/sell" },
