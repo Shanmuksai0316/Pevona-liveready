@@ -118,30 +118,30 @@ export default function ApplicationProcessPage() {
           <div className="space-y-8 pl-0 ">
             {[
               {
-                title: "Book a Viewing",
+                title: "1. Book a Viewing",
                 body: "Schedule a viewing and explore available properties.",
               },
               {
-                title: "Submit Your Application",
-                body: "Fill out a simple online form with your details.",
+                title: "2. Submit Your Application",
+                body: "Complete the online application form with your details.",
               },
               {
-                title: "Tenant Referencing",
-                body: "We verify your identity, employment, and rental history.",
+                title: "3. Holding Deposit (Reserve the Property)",
+                body: "Pay a refundable holding deposit (up to one week's rent) to secure the property while referencing and Right to Rent checks are completed. Property is withdrawn from marketing.",
               },
               {
-                title: "Holding Deposit",
-                body: "Once approved, pay a holding deposit (as per UK law) to secure your property.",
+                title: "4. Tenant Referencing & Right to Rent",
+                body: "We verify your identity, employment, rental history, and legal eligibility.",
               },
               {
-                title: "Sign & Pay",
-                body: "Sign your tenancy agreement digitally and complete your initial payment (rent + deposit).",
+                title: "5. Sign Tenancy & Pay Initial Monies",
+                body: "First month's rent in advance. Tenancy/Security Deposit (capped at 5 weeks' rent or 6 weeks if annual rent ≥ £50,000). Protected in a government-approved scheme within 30 days.",
               },
               {
-                title: "Move-In",
-                body: "Collect your keys, review your inventory, and enjoy your new home.",
+                title: "6. Move-In",
+                body: "Collect keys, review inventory, and enjoy your new home.",
               },
-            ].map((step) => (
+            ].map((step, index) => (
               <div key={step.title} className="relative flex items-start gap-4">
                 <div className="hidden md:flex items-center justify-center mt-1">
                   <span className="inline-block size-5 rounded-full bg-[#002f57]" />
@@ -150,9 +150,16 @@ export default function ApplicationProcessPage() {
                   <h3 className="font-crimson text-[24px] md:text-[26px] leading-[30px] text-[#002f57]">
                     {step.title}
                   </h3>
-                  <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-90">
-                    {step.body}
-                  </p>
+                  {index === 4 ? (
+                    <ul className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-90 list-disc pl-6 space-y-2">
+                      <li>First month's rent in advance</li>
+                      <li>Tenancy/Security Deposit (capped at 5 weeks' rent or 6 weeks if annual rent ≥ £50,000)Protected in a government-approved scheme within 30 days</li>
+                    </ul>
+                  ) : (
+                    <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-90">
+                      {step.body}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
