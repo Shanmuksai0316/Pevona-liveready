@@ -425,7 +425,7 @@ export default function TermsPage() {
                 </li>
                 <li>
                   <strong>Download:</strong>{" "}
-                  <a href="/images/Complaints Handling Procedure.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                  <a href="/images/COMPLA_1.PDF" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
                     Complaints Procedure (PDF)
                   </a>
                 </li>
