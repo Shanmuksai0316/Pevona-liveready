@@ -9,8 +9,7 @@ export default function PrivacyPolicyPage() {
         
         <div className="prose prose-lg max-w-none">
           <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-12">
-            This document explains how Pevona Ltd collects, uses, and protects your personal information
-            in accordance with the UK General Data Protection Regulation (UK GDPR).
+          Pevona Ltd (trading as Pevona) is committed to protecting your personal data. This Privacy Policy explains what data we collect, how we use it, your rights under UK GDPR, and how to contact us regarding any data concerns
           </p>
           
           <section className="mb-8 sm:mb-10 md:mb-12">
@@ -247,8 +246,7 @@ export default function PrivacyPolicyPage() {
             </h2>
             <div className="mb-4 sm:mb-5 md:mb-6">
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-2">
-                <strong>Supervision:</strong> Pevona Ltd is subject to HMRC AML supervision (Registration/Approval No.: []).
-              </p>
+                <strong>Supervision:</strong> Pevona Ltd (trading as Pevona) is supervised under the Money Laundering Regulations 2017. We conduct identity checks, source‑of‑funds reviews, sanctions screening, and maintain full internal AML controls</p>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
                 <strong>MLRO:</strong> Peter Banyong (Nominated Officer) — responsible for AML governance, SAR decisions, and effectiveness reviews.
               </p>
