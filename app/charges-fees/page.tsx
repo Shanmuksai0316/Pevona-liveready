@@ -70,8 +70,7 @@ export default function ChargesFeesPage() {
           Transparent & Competitive Estate Agency Fees
         </h2>
             <p className="max-w-[840px] mx-auto font-manrope text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] text-[#333]">
-              Our fees are fully inclusive, clearly structured, and designed to offer excellent value with complete transparency and compliance.
-            </p>
+            Pevona Ltd, trading as Pevona, is committed to full transparency in accordance with the Consumer Rights Act 2015 and the Tenant Fees Act 2019. Our fees are clearly outlined for landlords and tenants</p>
           </div>
 
           {/* Sales Department Title */}

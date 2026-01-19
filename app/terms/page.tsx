@@ -11,8 +11,7 @@ export default function TermsPage() {
         
         <div className="prose prose-lg max-w-none">
           <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-12">
-            Important information about using Pevona Ltd's services. Please read these terms
-            carefully before instructing us.
+          Pevona Ltd, trading as Pevona, is committed to full transparency in accordance with the Consumer Rights Act 2015 and the Tenant Fees Act 2019. Our fees are clearly outlined for landlords and tenants
           </p>
           
           <section className="mb-8 sm:mb-10 md:mb-12">
@@ -20,9 +19,9 @@ export default function TermsPage() {
               1. Introduction
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
-              These Terms & Conditions constitute a legally binding agreement between Pevona Ltd ("We",
-              "Us", "The Agent") and you ("The Client", "You"). By instructing us, accessing our platform, or
-              using any of our property services, you explicitly agree to these terms.
+                These Terms & Conditions constitute a legally binding agreement between Pevona Ltd ("We",
+                "Us", "The Agent") and you ("The Client", "You"). By instructing us, accessing our platform, or
+                using any of our property services, you explicitly agree to these terms.
             </p>
             <div>
               <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">Applicable To:</p>

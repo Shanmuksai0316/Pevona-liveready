@@ -474,13 +474,7 @@ export default function AboutUsPage() {
             Who We Are
           </h2>
           <p className="font-manrope text-[16px] sm:text-[18px] leading-[28px] text-[#333] opacity-80">
-            Pevona Ltd is a proudly independent, family-owned estate agency based in London, founded
-            in 2009. With over two decades of industry experience and deep roots in the construction
-            sector, we deliver personalised property solutions to both private and public sector
-            clients. Our multilingual and multicultural team provides expert guidance across
-            lettings, property management, and investment services. At Pevona, clients are treated as
-            partners in their property journey, fostering long-term relationships built on trust and
-            results.
+          Pevona is the trading name of Pevona Ltd, an independent, family‑run property company based in London. We specialise in lettings, property management, and investment services
           </p>
         </div>
 
