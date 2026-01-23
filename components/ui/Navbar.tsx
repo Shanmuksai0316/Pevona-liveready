@@ -60,7 +60,6 @@ export default function Navbar() {
         { name: "Tenant Services", href: "/tenant-services" },
         { name: "Landlord Services", href: "/landlord-services" },
         { name: "Application Process", href: "/application-process" },
-        { name: "Landlord Compliance & Onboarding", href: "/landlord-compliance-onboarding" },
       ]
     },
     { 
