@@ -453,21 +453,8 @@ ready to proceed.
                   Proof of identity (choose ONE of the following):
                 </h3>
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-start">
-                  {/* Left side - Examples Image */}
-                  <div className="w-full lg:w-1/2 flex-shrink-0">
-                    <div className="relative w-full h-[280px] min-h-[200px] sm:min-h-[250px] lg:min-h-[280px] rounded-[16px] overflow-hidden bg-[#FAFAFA] border border-[rgba(0,0,0,0.08)]">
-                      <Image
-                        src="/images/landlord-compliance-onboarding/Documents we need from you.webp"
-                        alt="Proof of identity examples - Passport and UK driving licence"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 1024px) 100vw, 50%"
-                        unoptimized
-                      />
-                    </div>
-                  </div>
                   {/* Right side - Options list */}
-                  <div className="w-full lg:w-1/2 flex-shrink-0">
+                  <div className="w-full lg:w-2/2 flex-shrink-0">
                     <ul className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 list-disc list-inside space-y-2">
                       <li>Passport (clear colour photo of the main photo page; include signature page if separate)</li>
                       <li>UK photocard driving licence (clear colour photos of the front and back)</li>
