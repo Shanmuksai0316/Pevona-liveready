@@ -127,7 +127,7 @@ export default function ApplicationProcessPage() {
               },
               {
                 title: "3. Holding Deposit (Reserve the Property)",
-                body: "Pay a refundable holding deposit (up to one week's rent) to secure the property while referencing and Right to Rent checks are completed. Property is withdrawn from marketing.",
+                body: "Pay a holding deposit (up to one week’s rent) to reserve the property while we complete referencing and Right to Rent checks. Your holding deposit is normally refunded, except in the limited situations allowed by the Tenant Fees Act 2019.",
               },
               {
                 title: "4. Tenant Referencing & Right to Rent",
