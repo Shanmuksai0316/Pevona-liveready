@@ -12,7 +12,7 @@ cat .env.local | grep MAILGUN
 Should show:
 ```env
 MAILGUN_API_KEY=your-mailgun-api-key-here
-MAILGUN_DOMAIN=em.pevonaltd.co.uk
+MAILGUN_DOMAIN=your-mailgun-domain.com
 ```
 
 ## Step 2: If Missing, Add to .env.local
@@ -24,8 +24,8 @@ nano .env.local
 Make sure these lines exist:
 ```env
 MAILGUN_API_KEY=your-mailgun-api-key-here
-MAILGUN_DOMAIN=em.pevonaltd.co.uk
-ADMIN_EMAIL=admin-pev@pevonaltd.co.uk,nagraj@grape5.com
+MAILGUN_DOMAIN=your-mailgun-domain.com
+ADMIN_EMAIL=your-admin@example.com
 ```
 
 Save: `Ctrl + O`, `Enter`, `Ctrl + X`
@@ -47,8 +47,8 @@ nano .env
 Add:
 ```env
 MAILGUN_API_KEY=your-mailgun-api-key-here
-MAILGUN_DOMAIN=em.pevonaltd.co.uk
-ADMIN_EMAIL=admin-pev@pevonaltd.co.uk,nagraj@grape5.com
+MAILGUN_DOMAIN=your-mailgun-domain.com
+ADMIN_EMAIL=your-admin@example.com
 ```
 
 ### Option B: Use PM2 Ecosystem File
@@ -88,8 +88,8 @@ cd /var/www/pevonalive
 # Add Mailgun vars to .env file
 cat >> .env << 'EOF'
 MAILGUN_API_KEY=your-mailgun-api-key-here
-MAILGUN_DOMAIN=em.pevonaltd.co.uk
-ADMIN_EMAIL=admin-pev@pevonaltd.co.uk,nagraj@grape5.com
+MAILGUN_DOMAIN=your-mailgun-domain.com
+ADMIN_EMAIL=your-admin@example.com
 EOF
 
 # Verify
