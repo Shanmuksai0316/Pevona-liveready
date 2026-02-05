@@ -35,9 +35,12 @@ export default async function FindingPropertyPage() {
             <p className="font-manrope text-[18px] leading-[28px] text-white/90">
               Buying a home or investing in UK property should feel simple, transparent, and well-supported. We help you navigate every stage with market insight, verified information, and guidance tailored to your goal
             </p>
-            <button className="bg-white text-[#002f57] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-white/90 transition-colors">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center bg-white text-[#002f57] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-white/90 transition-colors"
+            >
               Book a Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -51,9 +54,12 @@ export default async function FindingPropertyPage() {
           <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
             Whether you're a first-time buyer, a seasoned investor, or expanding your rental portfolio, our structured approach removes uncertainty. We focus on clarity, due diligence, and informed decision-making, giving you confidence at every step.
           </p>
-          <button className="bg-white border border-[rgba(0,0,0,0.12)] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57] hover:bg-[#0073B5] hover:text-white transition-colors">
+          <Link
+            href="/properties"
+            className="inline-flex items-center justify-center bg-white border border-[rgba(0,0,0,0.12)] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57] hover:bg-[#0073B5] hover:text-white transition-colors"
+          >
             View All Properties
-          </button>
+          </Link>
         </div>
 
         <div className="relative w-full max-w-[650px] flex-shrink-0">

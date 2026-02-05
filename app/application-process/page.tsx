@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function ApplicationProcessPage() {
   return (
@@ -28,12 +27,12 @@ export default function ApplicationProcessPage() {
               Brief explanation that applying for a property is straightforward, digital, and
               in line with UK housing standards.
             </p>
-            <Link
-              href="/properties-to-let"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+            <span
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] cursor-not-allowed opacity-90"
+              aria-disabled="true"
             >
               View Available Properties
-            </Link>
+            </span>
           </div>
         </div>
       </section>
@@ -60,12 +59,12 @@ export default function ApplicationProcessPage() {
               Brief explanation that applying for a property is straightforward, digital, and
               in line with UK housing standards.
             </p>
-            <Link
-              href="/properties-to-let"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors mt-2"
+            <span
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] cursor-not-allowed opacity-90 mt-2"
+              aria-disabled="true"
             >
               View Available Properties
-            </Link>
+            </span>
         </div>
       </section>
 

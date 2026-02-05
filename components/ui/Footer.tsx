@@ -49,7 +49,7 @@ export default function Footer() {
               <Link href="/charges-fees" className="hover:text-white hover:opacity-100 transition-opacity">Charges & Fees</Link>
               <Link href="/terms#cmp" className="hover:text-white hover:opacity-100 transition-opacity">Client Money Protection</Link>
               <Link href="/terms#complaints-redress" className="hover:text-white hover:opacity-100 transition-opacity">Complaints & Redress</Link>
-              <Link href="/privacy-policy#aml" className="hover:text-white hover:opacity-100 transition-opacity">AML & Compliance</Link>
+              <Link href="/aml-compliance" className="hover:text-white hover:opacity-100 transition-opacity">AML & Compliance</Link>
               <Link href="/privacy-policy#accessibility" className="hover:text-white hover:opacity-100 transition-opacity">Accessibility</Link>
             </div>
           </div>

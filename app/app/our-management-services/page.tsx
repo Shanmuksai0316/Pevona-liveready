@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OurManagementServicesPage() {
   return (
@@ -29,12 +30,12 @@ export default function OurManagementServicesPage() {
               Comprehensive management services for landlords across the UK – from tenant
               placement and rent collection to compliance, maintenance, and reporting.
             </p>
-            <button
-              type="button"
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center h-[56px] px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Free Valuation
-            </button>
+            </Link>
           </div>
         </div>
       </section>

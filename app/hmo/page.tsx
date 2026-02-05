@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function HMOPage() {
   return (
@@ -96,12 +95,12 @@ export default function HMOPage() {
                 Expert guidance on HMO licensing requirements, safety standards, and documentation 
                 to ensure your property meets all legal obligations.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
+              <span
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] cursor-not-allowed opacity-90"
+                aria-disabled="true"
               >
                 Book a Compliance Consultation
-              </Link>
+              </span>
             </div>
 
       {/* HMO Services */}
@@ -113,12 +112,12 @@ export default function HMOPage() {
                 Comprehensive management for multi-tenant properties, including tenant coordination, 
                 rent collection, maintenance scheduling, and day-to-day operations.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
+              <span
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] cursor-not-allowed opacity-90"
+                aria-disabled="true"
               >
                 Request a Management Quote
-              </Link>
+              </span>
             </div>
 
             {/* HMO Safety & Fire Risk Assessment */}
@@ -130,12 +129,12 @@ export default function HMOPage() {
                 Professional safety inspections covering smoke alarms, emergency lighting, escape 
                 routes, and full compliance with fire safety regulations for HMO properties.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
+              <span
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] cursor-not-allowed opacity-90"
+                aria-disabled="true"
               >
                 Request a Management Quote
-              </Link>
+              </span>
             </div>
 
             {/* HMO Conversion Advisory */}
@@ -147,12 +146,12 @@ export default function HMOPage() {
                 Expert guidance on converting your property into an HMO, including planning 
                 requirements, layout optimization, and compliance considerations.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
+              <span
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] cursor-not-allowed opacity-90"
+                aria-disabled="true"
               >
                 Book a Conversion Consultation
-              </Link>
+              </span>
             </div>
 
             {/* HMO Maintenance & Repairs Coordination */}
@@ -164,12 +163,12 @@ export default function HMOPage() {
                 Dedicated maintenance solutions for HMO properties, covering communal areas, 
                 individual rooms, and ensuring all repairs meet safety and compliance standards.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] hover:bg-[#003d70] transition-colors"
+              <span
+                className="inline-flex items-center justify-center h-[44px] sm:h-[48px] px-5 sm:px-6 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] cursor-not-allowed opacity-90"
+                aria-disabled="true"
               >
                 Report a Repair
-              </Link>
+              </span>
             </div>
         </div>
 
