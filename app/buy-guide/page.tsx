@@ -285,9 +285,9 @@ rental market with good long-term fundamentals.`,
             <p className="font-manrope text-[18px] leading-[28px]">
               Area guidance, viewing support and help coordinating surveys and conveyancing.
             </p>
-            <Link href="/finding-property" className="font-crimson text-[18px] leading-[28px] underline hover:no-underline">
+            <span className="font-crimson text-[18px] leading-[28px] underline cursor-not-allowed opacity-90" aria-disabled="true">
               Start Home Search
-            </Link>
+            </span>
           </div>
         </div>
 
@@ -307,9 +307,9 @@ rental market with good long-term fundamentals.`,
             <p className="font-manrope text-[18px] leading-[28px]">
               Yield insights, tenancy notes and suitability checks for buy-to-let and HMO options.
             </p>
-            <Link href="/investments" className="font-crimson text-[18px] leading-[28px] underline hover:no-underline">
+            <span className="font-crimson text-[18px] leading-[28px] underline cursor-not-allowed opacity-90" aria-disabled="true">
               Explore Investment Properties
-            </Link>
+            </span>
           </div>
         </div>
       </section>

@@ -263,12 +263,12 @@ export default async function InvestmentOpportunitiesPage() {
           </div>
         </div>
 
-        <Link
-          href="/contact"
-          className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#003d70] transition-colors mt-4"
+        <span
+          className="inline-flex items-center justify-center h-[48px] px-5 rounded-[8px] bg-[#002f57] text-white font-manrope font-semibold text-[18px] leading-[28px] cursor-not-allowed opacity-90 mt-4"
+          aria-disabled="true"
         >
           Request Current Opportunities
-        </Link>
+        </span>
       </section>
 
       {/* Investment process */}

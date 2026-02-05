@@ -52,7 +52,10 @@ export default async function FindingPropertyPage() {
               <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
                 Buying a home or investing in UK property should feel simple, transparent, and well-supported. We help you navigate every stage with market insight, verified information, and guidance tailored to your goal.
               </p>
-              <Link href="/contact" className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+              >
                 Book a Consultation
               </Link>
         </div>
@@ -66,7 +69,10 @@ export default async function FindingPropertyPage() {
             <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
               Buying a home or investing in UK property should feel simple, transparent, and well-supported. We help you navigate every stage with market insight, verified information, and guidance tailored to your goal.
             </p>
-            <Link href="/contact" className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+            >
               Book a Consultation
             </Link>
           </div>
@@ -87,7 +93,10 @@ export default async function FindingPropertyPage() {
           <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
             Whether you're a first-time buyer, a seasoned investor, or expanding your rental portfolio, our structured approach removes uncertainty. We focus on clarity, due diligence, and informed decision-making, giving you confidence at every step.
           </p>
-          <Link href="/properties" className="inline-flex items-center justify-center bg-white border border-[rgba(0,0,0,0.12)] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57] hover:bg-[#0073B5] hover:text-white transition-colors">
+          <Link
+            href="/properties"
+            className="inline-flex items-center justify-center bg-white border border-[rgba(0,0,0,0.12)] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57] hover:bg-[#0073B5] hover:text-white hover:border-[#0073B5] transition-colors"
+          >
             View All Properties
           </Link>
         </div>

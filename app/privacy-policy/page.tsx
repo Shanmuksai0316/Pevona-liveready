@@ -300,8 +300,8 @@ export default function PrivacyPolicyPage() {
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
                 <li>
                   <strong>AML Policies, Controls &amp; Procedures (PCP)</strong> —{" "}
-                  <a href="/images/AML Policies, Controls & Procedures (PCP).pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
-                  AML_PCP.pdf
+                  <a href="/images/Completed - Website Compliance Note (1).pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                  Website Compliance Note.pdf
                   </a>
                 </li>
                 <li>

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import svgPaths from "../imports/svg-q9n7c86uub";
 
@@ -227,12 +226,12 @@ export default function BueaCameroonProject() {
           <p className="font-manrope text-white text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] mb-6 sm:mb-8 max-w-[1300px] px-2">
             A contemporary shopping centre designed to support retail, dining, and lifestyle experiences for a fast‑growing urban community. Positioned along the Molyko corridor, this development offers strategic visibility, modern infrastructure, and strong long‑term commercial demand.
           </p>
-          <Link
-            href="/contact"
-            className="bg-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-manrope font-semibold text-[#002f57] text-[16px] sm:text-[18px] hover:bg-white/90 transition-colors"
+          <span
+            className="bg-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-manrope font-semibold text-[#002f57] text-[16px] sm:text-[18px] cursor-not-allowed opacity-90"
+            aria-disabled="true"
           >
             Register Your Interest
-          </Link>
+          </span>
         </div>
       </section>
 
