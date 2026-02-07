@@ -69,7 +69,7 @@ export default function ROICalculatorPage() {
 
   return (
     <div className="bg-[#FAFAFA] min-h-screen py-[60px] 650:py-[80px] lg:py-[100px] px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
-      <div className="max-w-[500px] mx-auto bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg p-6 lg:p-8">
+      <div className="max-w-[540px] mx-auto bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] shadow-lg p-6 lg:p-8">
         <h2 className="font-crimson text-[24px] md:text-[32px] leading-tight tracking-tight text-[#002f57] text-center mb-6">
           Return on Investment Calculator
         </h2>

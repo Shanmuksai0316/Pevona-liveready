@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function TermsPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
-      <div className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] pt-[100px] sm:pt-[120px] md:pt-[150px] pb-8 sm:pb-12 md:pb-16">
+      <div className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] pt-[100px] sm:pt-[120px] md:pt-[150px]">
         <h1 className="font-crimson text-[28px] sm:text-[32px] md:text-[40px] lg:text-5xl font-bold text-[#002f57] mb-4">
           Pevona Ltd — Terms & Conditions
         </h1>
@@ -47,10 +47,10 @@ export default function TermsPage() {
                 London, E20 1AQ
               </p>
               <ul className="list-disc pl-6 space-y-1">
-                <li>Company Registration: 12345678</li>
+                <li>Company Registration: 06910226</li>
                 <li>ICO Registration: ZA123456</li>
-                <li>PRS Membership: Verified</li>
-                <li>UKALA CMP: Verified</li>
+                <li>PRS Membership: PRS056704</li>
+                <li>CMP: Verified</li>
               </ul>
             </div>
           </section>
@@ -302,7 +302,7 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mb-8 sm:mb-10 md:mb-12" id="cmp">
+          <section className="mb-8 sm:mb-10 md:mb-12 hidden" id="cmp" aria-hidden="true">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               9. Client Money Protection (CMP)
             </h2>
@@ -366,7 +366,7 @@ export default function TermsPage() {
 
           <section className="mb-8 sm:mb-10 md:mb-12" id="complaints-redress">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
-              10. Complaints &amp; Redress (PRS)
+              9. Complaints &amp; Redress (PRS)
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
               We are a member of the Property Redress Scheme (PRS) and follow a clear, fair
@@ -441,7 +441,7 @@ export default function TermsPage() {
 
           <section className="mb-8 sm:mb-10 md:mb-12">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
-              11. Contact Us
+              10. Contact Us
             </h2>
             <div className="space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
               <p>

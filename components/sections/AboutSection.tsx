@@ -43,8 +43,6 @@ export default function AboutSection() {
           sizes="(max-width: 1920px) 100vw, 1920px"
           style={{ objectPosition: 'top center' }}
       />
-        {/* Gradient overlay from house to dark blue */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002f57]/50 to-[#002f57]"></div>
       </div>
 
       {/* TEXT CONTENT */}

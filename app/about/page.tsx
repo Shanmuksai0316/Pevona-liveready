@@ -679,14 +679,14 @@ export default function AboutUsPage() {
           <div className="flex flex-col gap-6 flex-1">
             <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] h-[200px] flex items-center justify-center p-8">
               <Image
-                src="/images/Certifications-2.svg"
+                src="/images/Reputed Clients-8.jpeg"
                 alt="Certification 1"
                 width={200}
                 height={80}
                 className="object-contain lg:h-[80px]"
               />
             </div>
-            <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] h-[200px] flex items-center justify-center p-8">
+            {/* <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] h-[200px] flex items-center justify-center p-8">
               <Image
                 src="/images/Certifications-4.svg"
                 alt="Certification 2"
@@ -694,7 +694,7 @@ export default function AboutUsPage() {
                 height={80}
                 className="object-contain lg:h-[80px]"
               />
-            </div>
+            </div> */}
           </div>
           
           {/* Right side - Third logo centered */}
@@ -725,16 +725,12 @@ export default function AboutUsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6 w-full">
             {[
-              "/images/Reputed Clients.svg",
-              "/images/propertymark-logo-white-1.svg",
-              "/images/Reputed Clients-2.svg",
-              "/images/Reputed Clients-3.svg",
               "/images/Reputed Clients-4.svg",
               "/images/Reputed Clients-5.svg",
               "/images/Reputed Clients-6.svg",
-              "/images/Reputed Clients-7.svg",
+              "/images/Reputed Clients-8.jpeg",
             ].map((logo, index) => (
               <div
                 key={index}
