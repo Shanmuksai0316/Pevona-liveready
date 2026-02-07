@@ -115,7 +115,6 @@ export default function AboutSection() {
         >
           {[
             { src: "/images/Certifications-1.svg", alt: "Certification 1", width: 74, height: 30 },
-            { src: "/images/Certifications-2.svg", alt: "Certification 2", width: 80, height: 33 },
             { src: "/images/Certifications-3.svg", alt: "Certification 3", width: 80, height: 32 },
             { src: "/images/Certifications-4.svg", alt: "Certification 4", width: 108, height: 20 },
           ].map((cert, i) => (

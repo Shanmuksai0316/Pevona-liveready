@@ -431,8 +431,8 @@ export default function TermsPage() {
                 </li>
                 <li>
                   <strong>View:</strong>{" "}
-                  <a href="/images/PRS Certificate 2025 -2026.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
-                    PRS Certificate (PDF)
+<a href="/images/PRS MemberShip Certificate (1).pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                  PRS Membership Certificate (PDF)
                   </a>
                 </li>
               </ul>
