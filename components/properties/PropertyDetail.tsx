@@ -918,6 +918,15 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
         </div>
       </section>
 
+      {/* AML notice - sales temporarily disabled */}
+      <section className="bg-amber-50 border-t border-amber-200 mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+        <div className="mx-auto max-w-6xl px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] py-4">
+          <p className="font-manrope text-sm text-amber-900">
+            Sales functionality is temporarily disabled while Pevona Ltd completes AML registration with HMRC.
+          </p>
+        </div>
+      </section>
+
       {/* Location - At bottom */}
       {(attributes.map_embed || fullAddress || (attributes.latitude && attributes.longitude)) && (
         <section className="bg-gray-50 border-t border-gray-200 mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
