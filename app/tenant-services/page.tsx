@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TenantServicesPage() {
   return (
@@ -45,12 +46,12 @@ export default function TenantServicesPage() {
               move-in day, our lettings team ensures every step is transparent, compliant,
               and handled with care.
             </p>
-            <span
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] cursor-not-allowed opacity-90"
-              aria-disabled="true"
+            <Link
+              href="/properties-to-let"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               View Available Properties
-            </span>
+            </Link>
           </div>
         </div>
 
@@ -64,12 +65,12 @@ export default function TenantServicesPage() {
               move-in day, our lettings team ensures every step is transparent, compliant,
               and handled with care.
             </p>
-            <span
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] cursor-not-allowed opacity-90"
-              aria-disabled="true"
+            <Link
+              href="/properties-to-let"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               View Available Properties
-            </span>
+            </Link>
           </div>
         </div>
       </section>

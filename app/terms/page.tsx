@@ -302,15 +302,15 @@ export default function TermsPage() {
             </div>
           </section>
 
-          <section className="mb-8 sm:mb-10 md:mb-12 hidden" id="cmp" aria-hidden="true">
+          <section className="mb-8 sm:mb-10 md:mb-12" id="cmp">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               9. Client Money Protection (CMP)
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
-              Pevona Ltd is a member of the UK Association of Letting Agents (UKALA) and is
-              covered by the UKALA Client Money Protection (CMP) Scheme. This provides total
-              loss protection for client money held by our agency, safeguarding landlords and
-              tenants in accordance with UK regulations.
+              Pevona Ltd is a member of the UK Association of Letting Agents. We are
+              covered by the Money Shield Client Money Protection (CMP) scheme. This provides
+              total loss protection for client money held by our agency, safeguarding landlords
+              and tenants in accordance with UK regulations.
             </p>
 
             <div className="mb-4 sm:mb-5 md:mb-6">
@@ -318,13 +318,14 @@ export default function TermsPage() {
                 Membership Details
               </h3>
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
-                <li><strong>UKALA Membership No.:</strong> 006419</li>
-                <li><strong>CMP Scheme:</strong> UKALA Client Money Protection</li>
+                <li><strong>Scheme:</strong> Money Shield</li>
+                <li><strong>Scheme Reference:</strong> 81853330</li>
+                <li><strong>Expiry Date:</strong> 01/03/2027</li>
               </ul>
               <div className="mt-4 mb-4">
                 <Image
-                  src="/images/UKALA logo.jpg"
-                  alt="UKALA Logo"
+                  src="/images/Money-Shield-logo.jpg"
+                  alt="Money Shield CMP logo"
                   width={200}
                   height={100}
                   className="object-contain"
@@ -342,22 +343,17 @@ export default function TermsPage() {
                 Verification &amp; Downloads
               </h3>
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
-                <li>
-                  <strong>Verify our UKALA membership:</strong>{" "}
-                  <a href="https://www.ukala.org.uk/agent-search/ukala-agent-directory/" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
-                    https://www.ukala.org.uk/agent-search/ukala-agent-directory/
-                  </a>
-                </li>
+          
                 <li>
                   <strong>Download CMP Certificate (PDF):</strong>{" "}
-                  <a href="/images/UKALA - CMP Certificates 006419.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
-                  UKALA - CMP Certificates (PDF)
+                  <a href="/images/Pevona Ltd Moneyshield CMP security cert 2026.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                  Money Shield certificate (PDF)
                   </a>
                 </li>
                 <li>
-                  <strong>Download UKALA Membership Certificate (PDF):</strong>{" "}
-                  <a href="/images/UKALA Membership.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
-                    UKALA Membership Certificate (PDF)
+                  <strong>Download Money Shield Membership Certificate (PDF):</strong>{" "}
+                  <a href="/images/Pevona Ltd Main Cert 2026.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                  Money Shield certificate (PDF)
                   </a>
                 </li>
               </ul>
@@ -366,7 +362,7 @@ export default function TermsPage() {
 
           <section className="mb-8 sm:mb-10 md:mb-12" id="complaints-redress">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
-              9. Complaints &amp; Redress (PRS)
+              10. Complaints &amp; Redress (PRS)
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
               We are a member of the Property Redress Scheme (PRS) and follow a clear, fair
@@ -384,7 +380,7 @@ export default function TermsPage() {
               </p>
               <div className="mt-4 mb-4">
                 <Image
-                  src="/images/PRS Logo 1.jpg"
+                  src="/images/PRS_Logo_high.jpg"
                   alt="PRS Logo"
                   width={200}
                   height={100}
@@ -408,7 +404,11 @@ export default function TermsPage() {
               <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 PRS Contact &amp; Verification
               </h3>
+          
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+                 <li><strong>Membership No:</strong> PRS056704</li>
+                <li><strong>Start Date:</strong>05/02/2026</li>
+                <li><strong>Expiry Date:</strong> 04/02/2027</li>
                 <li>
                   <strong>Telephone:</strong>{" "}
                   <a href="tel:03333219418" className="text-[#0073B5] hover:underline">0333 321 9418</a>
@@ -431,7 +431,7 @@ export default function TermsPage() {
                 </li>
                 <li>
                   <strong>View:</strong>{" "}
-<a href="/images/PRS MemberShip Certificate (1).pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+<a href="/images/PRS MemberShip Certificate.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
                   PRS Membership Certificate (PDF)
                   </a>
                 </li>
@@ -441,7 +441,7 @@ export default function TermsPage() {
 
           <section className="mb-8 sm:mb-10 md:mb-12">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
-              10. Contact Us
+              11. Contact Us
             </h2>
             <div className="space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
               <p>

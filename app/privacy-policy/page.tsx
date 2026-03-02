@@ -288,7 +288,7 @@ export default function PrivacyPolicyPage() {
                 Client Money Controls
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
-                We operate designated client accounts under UKALA Client Money Protection (CMP)
+                We operate designated client accounts under Money Shield Client Money Protection (CMP)
                 requirements.
               </p>
             </div>
@@ -310,6 +310,9 @@ export default function PrivacyPolicyPage() {
                   Firm‑Wide Risk Assessment (FWRA)
                   </a>
                 </li>
+
+
+                
               </ul>
             </div>
           </section>

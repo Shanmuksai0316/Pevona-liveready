@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { fetchStrapi } from "@/lib/strapi";
 import type { StrapiProperty } from "@/types/strapi";
 import PropertiesFilterSection from "@/components/finding-property/PropertiesFilterSection";
@@ -90,12 +91,12 @@ export default async function SellPage() {
                 From valuation to completion, each step is handled with clear communication, targeted
                 marketing and a structured sales process
               </p>
-              <span
-                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] cursor-not-allowed opacity-90"
-                aria-disabled="true"
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
               >
                 Book a Seller Consultation
-              </span>
+              </Link>
             </div>
           </div>
 
@@ -108,12 +109,12 @@ export default async function SellPage() {
               From valuation to completion, each step is handled with clear communication, targeted
               marketing and a structured sales process
             </p>
-            <span
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] cursor-not-allowed opacity-90"
-              aria-disabled="true"
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
             >
               Book a Seller Consultation
-            </span>
+            </Link>
           </div>
         </div>
       </section>
@@ -151,12 +152,12 @@ export default async function SellPage() {
               portfolio, our structured approach removes uncertainty. We focus on clarity, due
               diligence, and informed decision-making, giving you confidence at every step.
             </p>
-            <span
-              className="inline-block bg-[#002f57] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] cursor-not-allowed opacity-90"
-              aria-disabled="true"
+            <Link
+              href="/contact"
+              className="inline-block bg-[#002f57] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#003d70] transition-colors"
             >
               Start Your Sale
-            </span>
+            </Link>
           </div>
 
           {/* Right Section - Timeline */}
@@ -337,12 +338,12 @@ export default async function SellPage() {
             Our expert valuations combine local market knowledge, recent comparable sales, and
             current market trends.
           </p>
-          <span
-            className="inline-block mt-4 sm:mt-6 bg-[#002f57] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] cursor-not-allowed opacity-90"
-            aria-disabled="true"
+          <Link
+            href="/contact"
+            className="inline-block mt-4 sm:mt-6 bg-[#002f57] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#003d70] transition-colors"
           >
             Request Valuation
-          </span>
+          </Link>
         </div>
 
         <div className="w-full lg:flex-1 relative max-w-[675px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] min-w-0 rounded-[20px] sm:rounded-[26px] overflow-hidden shadow-none">

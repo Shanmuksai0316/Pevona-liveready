@@ -223,9 +223,12 @@ export default async function PropertiesToLetPage() {
                 Whether you&apos;re moving locally or relocating across the UK, Pevona helps you find a home
                 that fits your lifestyle.
               </p>
-              <span className="inline-flex items-center justify-center bg-white text-[#002f57] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] cursor-not-allowed opacity-90" aria-disabled="true">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center bg-white text-[#002f57] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+              >
                 Contact Lettings Team
-              </span>
+              </Link>
             </div>
           </div>
         </div>
@@ -251,9 +254,12 @@ export default async function PropertiesToLetPage() {
               Whether you&apos;re moving locally or relocating across the UK, Pevona helps you find a home
               that fits your lifestyle.
             </p>
-            <span className="inline-flex items-center justify-center bg-white text-[#002f57] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] cursor-not-allowed opacity-90" aria-disabled="true">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center bg-white text-[#002f57] px-6 py-3 rounded-[8px] font-manrope font-semibold text-[18px] leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+            >
               Contact Lettings Team
-            </span>
+            </Link>
           </div>
         </div>
       </section>

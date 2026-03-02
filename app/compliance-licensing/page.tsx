@@ -5,7 +5,7 @@ export default function ComplianceLicensingPage() {
   const keyAreasTop = [
     {
       title: "Client Money Protection (CMP)",
-      body: "All client funds are held in segregated accounts and protected under the UKALA Total Loss Client Money Protection Scheme, ensuring total financial transparency and security.",
+      body: "All client funds are held in segregated accounts and protected under the Money Shield Client Money Protection (CMP) scheme, ensuring total financial transparency and security.",
     },
     {
       title: "Health & Safety",

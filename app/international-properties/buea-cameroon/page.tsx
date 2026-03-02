@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import svgPaths from "../imports/svg-q9n7c86uub";
 
@@ -226,12 +227,12 @@ export default function BueaCameroonProject() {
           <p className="font-manrope text-white text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[24px] md:leading-[28px] mb-6 sm:mb-8 max-w-[1300px] px-2">
             A contemporary shopping centre designed to support retail, dining, and lifestyle experiences for a fast‑growing urban community. Positioned along the Molyko corridor, this development offers strategic visibility, modern infrastructure, and strong long‑term commercial demand.
           </p>
-          <span
-            className="bg-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-manrope font-semibold text-[#002f57] text-[16px] sm:text-[18px] cursor-not-allowed opacity-90"
-            aria-disabled="true"
+          <Link
+            href="/contact"
+            className="bg-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-manrope font-semibold text-[#002f57] text-[16px] sm:text-[18px] hover:bg-[#0073B5] hover:text-white transition-colors"
           >
             Register Your Interest
-          </span>
+          </Link>
         </div>
       </section>
 
@@ -741,7 +742,11 @@ export default function BueaCameroonProject() {
       </section>
 
       {/* Register Your Interest Section */}
-      <section id="enquiry" className="bg-[#fafafa] py-[30px] md:py-[75px]">
+      <section
+        id="enquiry"
+        className="bg-[#fafafa] py-[30px] md:py-[75px]"
+        suppressHydrationWarning
+      >
         <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             <div>

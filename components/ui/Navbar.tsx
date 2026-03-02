@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import PropertyManagementDropdown from "./PropertyManagementDropdown";
 import InvestmentsDropdown from "./InvestmentsDropdown";
@@ -11,7 +11,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
-  const router = useRouter();
+  const pathname = usePathname();
 
   // Lock scroll when mobile menu is open
   useEffect(() => {
@@ -135,7 +135,7 @@ export default function Navbar() {
 
           // Regular dropdown for other menu items
           // If no dropdown, render as simple link
-          if (!('hasDropdown' in link && link.hasDropdown)) {
+          if (!("hasDropdown" in link && link.hasDropdown)) {
             return (
               <Link
                 key={link.name}
@@ -204,10 +204,25 @@ export default function Navbar() {
         })}
       </nav>
 
-      {/* Desktop CTA */}
-      <div className="hidden lg:block">
-        <Link href="/contact" className="bg-[#002f57] hover:bg-[#001f3a] px-[10px] py-[12px] rounded-[100px] w-[190px] 1400:w-[225px] transition-all inline-block text-center">
-          <span className="font-manrope font-semibold text-[16px] leading-[24px] 1400:text-[18px] 1400:leading-[28px] text-white">Book a Free Valuation</span>
+      {/* Desktop CTAs */}
+      <div className="hidden lg:flex items-center gap-3">
+        <Link
+          href="/contact"
+          className="bg-[#002f57] hover:bg-[#001f3a] px-[10px] py-[12px] rounded-[100px] w-[190px] 1400:w-[225px] transition-all inline-flex items-center justify-center text-center"
+        >
+          <span className="font-manrope font-semibold text-[16px] leading-[24px] 1400:text-[18px] 1400:leading-[28px] text-white">
+            Book a Free Valuation
+          </span>
+        </Link>
+        <Link
+          href="/roi-calculator"
+          aria-label="ROI Calculator"
+          aria-current={pathname === "/roi-calculator" ? "page" : undefined}
+          className="bg-[#002f57] hover:bg-[#001f3a] px-[16px] py-[12px] rounded-[100px] transition-all inline-flex items-center justify-center text-center"
+        >
+          <span className="font-manrope font-semibold text-[16px] leading-[24px] 1400:text-[18px] 1400:leading-[28px] text-white">
+            ROI Calculator
+          </span>
         </Link>
       </div>
 
@@ -281,9 +296,26 @@ export default function Navbar() {
               </div>
             );
           })}
-          <Link href="/contact" className="bg-[#002f57] mt-6 px-[10px] py-[18px] rounded-[12px] w-full transition-all inline-block text-center">
-            <span className="font-manrope font-semibold text-[18px] text-white">Book a Free Valuation</span>
-          </Link>
+          <div className="mt-6 space-y-3">
+            <Link
+              href="/contact"
+              className="bg-[#002f57] px-[10px] py-[18px] rounded-[12px] w-full transition-all inline-block text-center"
+            >
+              <span className="font-manrope font-semibold text-[18px] text-white">
+                Book a Free Valuation
+              </span>
+            </Link>
+            <Link
+              href="/roi-calculator"
+              aria-label="ROI Calculator"
+              aria-current={pathname === "/roi-calculator" ? "page" : undefined}
+              className="bg-[#002f57] px-[10px] py-[18px] rounded-[12px] w-full transition-all inline-block text-center"
+            >
+              <span className="font-manrope font-semibold text-[18px] text-white">
+                ROI Calculator
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
