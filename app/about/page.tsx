@@ -473,9 +473,17 @@ export default function AboutUsPage() {
           <h2 className="font-crimson text-[48px] sm:text-[56px] leading-tight tracking-[-1.68px] text-[#002f57]">
             Who We Are
           </h2>
-          <p className="font-manrope text-[16px] sm:text-[18px] leading-[28px] text-[#333] opacity-80">
-          Pevona is the trading name of Pevona Ltd, an independent, family‑run property company based in London. We specialise in lettings, property management, and investment services
-          </p>
+          <div className="font-manrope text-[16px] sm:text-[18px] leading-[28px] text-[#333] opacity-80 space-y-4">
+            <p>
+              Pevona Ltd is an independent, family-run UK property company providing property sales, lettings, property management, and advisory services.
+            </p>
+            <p>
+              While public sales activity may appear limited at times, this reflects our compliance-led operating model, including AML registration, transaction due diligence, and regulatory readiness rather than inactivity.
+            </p>
+            <p>
+              Our services span residential property sales, lettings, tenancy management, compliance oversight, inspections, and strategic property advice delivered with transparency, professionalism, and regulatory integrity.
+            </p>
+          </div>
         </div>
 
         {/* Right Image */}
@@ -592,6 +600,73 @@ export default function AboutUsPage() {
         </div>
       </section>
 
+      {/* How We Work */}
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+        <div className="relative overflow-hidden rounded-[28px] border border-[#d8e2eb] bg-gradient-to-br from-[#f7fbff] via-white to-[#eef5fb] p-6 sm:p-8 lg:p-10 shadow-[0_20px_60px_rgba(0,47,87,0.08)]">
+          <div className="absolute right-[-60px] top-[-60px] h-[180px] w-[180px] rounded-full bg-[#0073B5]/10 blur-3xl" />
+          <div className="absolute bottom-[-80px] left-[-40px] h-[200px] w-[200px] rounded-full bg-[#002f57]/8 blur-3xl" />
+
+          <div className="relative grid grid-cols-1 xl:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-10 items-start">
+            <div className="space-y-6">
+              <div className="inline-flex items-center rounded-full border border-[#002f57]/10 bg-white/80 px-4 py-2">
+                <span className="font-manrope text-[12px] sm:text-[13px] uppercase tracking-[0.2em] text-[#0073B5]">
+                  Remote-First Operations
+                </span>
+              </div>
+
+              <div className="space-y-4 max-w-[760px]">
+                <h2 className="font-crimson text-[32px] sm:text-[40px] lg:text-[56px] leading-tight tracking-[-1.2px] lg:tracking-[-1.68px] text-[#002f57]">
+                  How We Work (Remote-First)
+                </h2>
+                <p className="font-manrope text-[16px] sm:text-[18px] leading-[28px] text-[#334155]">
+                  Pevona Ltd operates a remote-first business model designed to promote efficiency, accessibility, and environmental responsibility.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="rounded-[20px] bg-white/95 border border-[#d9e4ee] p-5 sm:p-6">
+                  <p className="font-crimson text-[22px] sm:text-[24px] leading-[30px] text-[#002f57] mb-2">
+                    Digital-First
+                  </p>
+                  <p className="font-manrope text-[15px] sm:text-[16px] leading-[26px] text-[#475569]">
+                    Secure communication, paperless records, and operational workflows built around compliance with AML, GDPR, and housing regulation.
+                  </p>
+                </div>
+
+                <div className="rounded-[20px] bg-[#002f57] border border-[#002f57] p-5 sm:p-6">
+                  <p className="font-crimson text-[22px] sm:text-[24px] leading-[30px] text-white mb-2">
+                    Essential Visits
+                  </p>
+                  <p className="font-manrope text-[15px] sm:text-[16px] leading-[26px] text-white/80">
+                    Inspections and sales-related appointments are supported by one company vehicle, managed carefully and used only where necessary.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4">
+              <div className="rounded-[24px] border border-[#cfe0ec] bg-white p-6 sm:p-7">
+                <p className="font-manrope text-[12px] uppercase tracking-[0.2em] text-[#0073B5] mb-3">
+                  Operating Model
+                </p>
+                <p className="font-manrope text-[16px] sm:text-[18px] leading-[28px] text-[#334155]">
+                  This approach reduces overhead, improves accessibility for clients, and keeps records and communications streamlined across the business.
+                </p>
+              </div>
+
+              <div className="rounded-[24px] border border-[#cfe0ec] bg-[#eef6fb] p-6 sm:p-7">
+                <p className="font-manrope text-[12px] uppercase tracking-[0.2em] text-[#0073B5] mb-3">
+                  Sustainability Link
+                </p>
+                <p className="font-manrope text-[16px] sm:text-[18px] leading-[28px] text-[#334155]">
+                  This operating model directly supports our Environmental Statement and underpins our commitment to sustainable and compliant property services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Values */}
       <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-12 items-center">
         <div className="flex-1 relative w-full lg:w-[610px] h-[750px] rounded-[16px] overflow-hidden">
@@ -674,40 +749,45 @@ export default function AboutUsPage() {
           </p>
         </div>
 
-        <div className="flex-1 flex flex-row items-center gap-6 w-full max-w-[716px]">
-          {/* Left side - First and Second logos stacked */}
-          <div className="flex flex-col gap-6 flex-1">
-            <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] h-[200px] flex items-center justify-center p-8">
-              <Image
-                src="/images/Reputed Clients-8.jpeg"
-                alt="Certification 1"
-                width={200}
-                height={80}
-                className="object-contain lg:h-[80px]"
-              />
-            </div>
-            {/* <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] h-[200px] flex items-center justify-center p-8">
-              <Image
-                src="/images/Certifications-4.svg"
-                alt="Certification 2"
-                width={200}
-                height={80}
-                className="object-contain lg:h-[80px]"
-              />
-            </div> */}
+        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6 w-full max-w-[780px]">
+          <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] min-h-[180px] sm:min-h-[200px] flex items-center justify-center p-6 sm:p-8">
+            <Image
+              src="/images/Reputed Clients-8.jpeg"
+              alt="My Deposits"
+              width={200}
+              height={80}
+              className="object-contain max-w-full h-auto lg:h-[80px]"
+            />
           </div>
-          
-          {/* Right side - Third logo centered */}
-          <div className="flex items-center justify-center flex-1">
-            <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] h-[200px] w-full flex items-center justify-center p-8">
-              <Image
-                src="/images/Reputed Clients-4.svg"
-                alt="Certification 3"
-                width={200}
-                height={80}
-                className="object-contain lg:h-[80px]"
-              />
-            </div>
+
+          <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] min-h-[180px] sm:min-h-[200px] flex items-center justify-center p-6 sm:p-8">
+            <Image
+              src="/images/Reputed Clients-4.svg"
+              alt="Client Money Protection"
+              width={220}
+              height={100}
+              className="object-contain max-w-full h-auto"
+            />
+          </div>
+
+          <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] min-h-[180px] sm:min-h-[200px] flex items-center justify-center p-6 sm:p-8">
+            <Image
+              src="/images/Money-Shield-logo.png"
+              alt="Money Shield"
+              width={220}
+              height={100}
+              className="object-contain max-w-full h-auto"
+            />
+          </div>
+
+          <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] min-h-[180px] sm:min-h-[200px] flex items-center justify-center p-6 sm:p-8">
+            <Image
+              src="/images/Propertymark-Company-logo.png"
+              alt="Propertymark"
+              width={240}
+              height={110}
+              className="object-contain max-w-full h-auto"
+            />
           </div>
         </div>
       </section>
@@ -725,28 +805,6 @@ export default function AboutUsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6 w-full">
-            {[
-              "/images/Reputed Clients-4.svg",
-              "/images/Reputed Clients-5.svg",
-              "/images/Reputed Clients-6.svg",
-              "/images/Reputed Clients-8.jpeg",
-            ].map((logo, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-[12px] sm:rounded-[16px] h-[100px] sm:h-[120px] md:h-[140px] lg:h-[150px] flex items-center justify-center p-4 sm:p-5 md:p-6 hover:shadow-lg transition-shadow"
-              >
-                <Image
-                  src={logo}
-                  alt={`Client logo ${index + 1}`}
-                  width={200}
-                  height={80}
-                  className="object-contain max-w-full max-h-full w-auto h-auto lg:h-[80px]"
-                  unoptimized
-                />
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -998,5 +1056,6 @@ export default function AboutUsPage() {
     </div>
   );
 }
+
 
 

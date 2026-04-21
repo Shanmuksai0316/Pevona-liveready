@@ -1,10 +1,27 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import CookiePreferencesLink from "./CookiePreferencesLink";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const pagesWithoutFooterTopMargin = [
+    "/rent",
+    "/estate-agents-london",
+    "/estate-agents-redbridge",
+    "/letting-agents-luton",
+    "/property-management-essex",
+    "/estate-agents-leicester",
+  ];
+  const footerSpacingClass =
+    pagesWithoutFooterTopMargin.includes(pathname)
+      ? ""
+      : "mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]";
+
   return (
-    <footer className="bg-[#002f57] flex flex-col gap-[36px] items-center justify-end px-6 lg:px-0 pt-[73px] pb-12 lg:pb-[16px] w-full mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
+    <footer className={`bg-[#002f57] flex flex-col gap-[36px] items-center justify-end px-6 lg:px-0 pt-[73px] pb-12 lg:pb-[16px] w-full ${footerSpacingClass}`}>
       <div className="flex flex-col lg:flex-row items-start justify-between px-0 lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] w-full max-w-[1560px] gap-12 lg:gap-0">
         {/* Logo and Description */}
         <div className="flex flex-col gap-[26px] items-start w-full lg:w-[480px]">
@@ -27,7 +44,7 @@ export default function Footer() {
         </div>
 
         {/* Links Sections */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row gap-12 lg:gap-[60px] w-full lg:w-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-[60px] w-full lg:w-auto">
           {/* Company */}
           <div className="flex flex-col gap-[10px] items-start min-w-[140px]">
             <p className="font-crimson font-semibold text-[26px] leading-[30px] text-white">Company</p>
@@ -48,9 +65,21 @@ export default function Footer() {
               <CookiePreferencesLink />
               <Link href="/charges-fees" className="hover:text-white hover:opacity-100 transition-opacity">Charges & Fees</Link>
               <Link href="/terms#cmp" className="hover:text-white hover:opacity-100 transition-opacity">Client Money Protection</Link>
-              <Link href="/terms#complaints-redress" className="hover:text-white hover:opacity-100 transition-opacity">Complaints & Redress</Link>
-              <Link href="/aml-compliance" className="hover:text-white hover:opacity-100 transition-opacity">AML & Compliance</Link>
               <Link href="/privacy-policy#accessibility" className="hover:text-white hover:opacity-100 transition-opacity">Accessibility</Link>
+            </div>
+          </div>
+
+          {/* Policies / Governance / ESG */}
+          <div className="flex flex-col gap-[10px] items-start min-w-[220px]">
+            <p className="font-crimson font-semibold text-[26px] leading-[30px] text-white">Policies / Governance / ESG</p>
+            <div className="flex flex-col gap-[10px] items-start font-manrope font-normal text-[18px] leading-[28px] text-white opacity-80">
+              <Link href="/policies/environmental-statement" className="hover:text-white hover:opacity-100 transition-opacity">Environmental Statement</Link>
+              <span>Equality, Diversity &amp; Inclusion - TBC</span>
+              <Link href="/policies/whistleblowing" className="hover:text-white hover:opacity-100 transition-opacity">Whistleblowing Policy</Link>
+              <Link href="/policies/anti-bribery-corruption" className="hover:text-white hover:opacity-100 transition-opacity">Anti-Bribery &amp; Anti-Corruption</Link>
+              <Link href="/policies/data-protection" className="hover:text-white hover:opacity-100 transition-opacity">Data Protection &amp; GDPR</Link>
+              <Link href="/policies/aml-compliance" className="hover:text-white hover:opacity-100 transition-opacity">AML &amp; Compliance</Link>
+              <Link href="/policies/complaints-handling" className="hover:text-white hover:opacity-100 transition-opacity">Complaints Handling</Link>
             </div>
           </div>
 

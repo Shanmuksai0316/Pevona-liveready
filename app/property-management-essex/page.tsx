@@ -2,88 +2,81 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Lettings & Tenant Sourcing",
-    description:
-      "Finding the right occupants for your property through targeted marketing and stringent referencing.",
-    image: "/images/5th_sec_Lettings.png",
-  },
-  {
     title: "Full Property Management",
     description:
-      "A completely hands-off solution, managing day-to-day tenant requests, repairs, and administration.",
+      "End-to-end property management support for landlords who want a structured and reliable service.",
     image: "/images/5th_sec_Property_Management.png",
   },
   {
-    title: "Compliance & Onboarding",
+    title: "Compliance Support",
     description:
-      "Support in navigating complex housing legislation to ensure full legal protection for landlords.",
+      "Practical support with landlord obligations, documentation, and current property regulations.",
     image: "/images/5th_sec_mang_Fully_Compliant_sec_img.png",
   },
   {
-    title: "Rental Valuation Guidance",
+    title: "Rent Collection",
     description:
-      "Data-driven appraisals to help you achieve maximum rental yield in the current market.",
+      "Clear rent collection processes designed to support consistency, records, and landlord visibility.",
     image: "/images/6th_secinvestment_opportunities_image.png",
   },
   {
-    title: "Ongoing Tenancy Management",
+    title: "Tenant Coordination",
     description:
-      "Handling renewals, rent collection, and regular property condition reports.",
+      "Ongoing communication and coordination across tenant requests, renewals, and tenancy matters.",
     image: "/images/5th_Maintenance_and_Communication.png",
+  },
+  {
+    title: "Ongoing Property Oversight",
+    description:
+      "Continued oversight to help landlords manage property performance, maintenance, and compliance needs.",
+    image: "/images/3rd_How_We_Maintain_Quality_Standards.png",
   },
 ];
 
 const reasons = [
   {
-    title: "Clear & Transparent Processes",
+    title: "Structured Management Processes",
     description:
-      "Structured workflows that keep you informed without overwhelming you.",
+      "Organised workflows that help landlords manage responsibilities clearly and efficiently.",
   },
   {
-    title: "Compliance & Regulation",
+    title: "Reliable Landlord Support",
     description:
-      "A strong focus on meeting legal requirements to protect your investment.",
+      "Consistent support and communication across the property management lifecycle.",
   },
   {
-    title: "Reliable Communication",
+    title: "Compliance-Focused Service Delivery",
     description:
-      "Consistent, clear updates throughout the lifecycle of the tenancy.",
-  },
-  {
-    title: "London Experience",
-    description:
-      "Extensive operational experience working across multiple London boroughs.",
+      "A service model designed around current regulations, documentation, and landlord obligations.",
   },
 ];
 
-const coveredAreas = ["East London", "Central London", "North London", "South London"];
+const coveredAreas = ["Romford", "Brentwood", "Chelmsford", "Basildon"];
 
 const transportLinks = [
-  "London Underground & Overground",
-  "Elizabeth Line",
-  "National Rail Services",
-  "Major Bus & Road Networks",
+  "Elizabeth Line access",
+  "Greater Anglia rail services",
+  "Road connectivity via A12 and A127",
 ];
 
-export default function RentPage() {
+export default function PropertyManagementEssexPage() {
   return (
     <main className="bg-white text-[#374151]">
       <section className="relative min-h-[500px] sm:min-h-[560px] lg:min-h-[680px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/5th_sec_Lettings.png')" }}
+          style={{ backgroundImage: "url('/images/5th_sec_Property_Management.png')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#061e38]/50 via-[#061e38]/60 to-[#061e38]/85" />
 
         <div className="relative mx-auto flex min-h-[500px] sm:min-h-[560px] lg:min-h-[680px] max-w-[1440px] items-center justify-center px-5 text-center 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[100px]">
           <div className="mt-10 max-w-3xl">
             <h1 className="font-crimson text-[40px] leading-tight text-white sm:text-[52px] lg:text-[68px]">
-              Estate Agents in London
+              Property Management in Essex
             </h1>
             <p className="mx-auto mt-6 max-w-2xl font-manrope text-[15px] leading-[26px] text-white/85 sm:text-[16px] sm:leading-[28px]">
-              Pevona provides professional estate agency and property management services
-              across London. We support landlords with a structured, transparent, and
-              compliance-focused approach to managing residential property.
+              Pevona offers property management services across Essex, helping landlords
+              manage properties efficiently and in line with current regulations.
             </p>
             <Link
               href="/contact"
@@ -99,12 +92,11 @@ export default function RentPage() {
         <div className="mx-auto max-w-[1440px] px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[100px]">
           <div className="mx-auto mb-14 max-w-3xl text-center">
             <h2 className="font-crimson text-[32px] leading-tight text-[#061e38] sm:text-[42px] lg:text-[48px]">
-              Our Services in London
+              Our Services in Essex
             </h2>
             <p className="mt-4 font-manrope text-[15px] leading-[26px] text-[#6b7280] sm:text-[16px] sm:leading-[28px]">
-              We offer a range of services tailored to landlords across London. Our
-              services are designed to ensure properties are managed efficiently while
-              meeting current regulatory requirements.
+              We help Essex landlords manage property responsibilities through structured
+              management, compliance support, and ongoing tenant coordination.
             </p>
           </div>
 
@@ -138,7 +130,7 @@ export default function RentPage() {
             Why Choose Pevona
           </h2>
 
-          <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
             {reasons.map((reason, index) => (
               <div
                 key={reason.title}
@@ -176,10 +168,6 @@ export default function RentPage() {
                 <h3 className="font-crimson text-[30px] leading-tight text-white">
                   Areas We Cover
                 </h3>
-                <p className="mt-4 font-manrope text-[15px] leading-[26px] text-white/75">
-                  We support landlords across the entire capital, maintaining a strong
-                  operational presence in:
-                </p>
                 <ul className="mt-5 grid grid-cols-1 gap-3 text-[15px] text-white/90 sm:grid-cols-2">
                   {coveredAreas.map((area) => (
                     <li key={area} className="flex items-center gap-3">
@@ -194,11 +182,7 @@ export default function RentPage() {
                 <h3 className="font-crimson text-[30px] leading-tight text-white">
                   Transport Links
                 </h3>
-                <p className="mt-4 font-manrope text-[15px] leading-[26px] text-white/75">
-                  London offers extensive transport connectivity, heavily influencing
-                  property value and tenant interest. Areas covered are serviced by:
-                </p>
-                <ul className="mt-5 grid grid-cols-1 gap-3 text-[15px] text-white/90 sm:grid-cols-2">
+                <ul className="mt-5 grid grid-cols-1 gap-3 text-[15px] text-white/90">
                   {transportLinks.map((item) => (
                     <li key={item} className="flex items-center gap-3">
                       <span className="text-[#2dd4bf]">+</span>
@@ -213,9 +197,8 @@ export default function RentPage() {
                   Rental Demand
                 </h3>
                 <p className="mt-4 rounded-[18px] border border-white/10 bg-white/5 p-5 font-manrope text-[15px] leading-[26px] text-white/80">
-                  London continues to see strong rental demand driven by unmatched
-                  employment opportunities, comprehensive transport access, and consistent
-                  long-term tenant demand across all boroughs.
+                  Essex continues to attract tenants due to affordability and strong
+                  commuter links into London.
                 </p>
               </div>
             </div>
@@ -229,8 +212,7 @@ export default function RentPage() {
             Speak to Our Team
           </h2>
           <p className="mt-4 font-manrope text-[15px] leading-[26px] text-[#6b7280] sm:text-[16px] sm:leading-[28px]">
-            If you are looking for estate agency or property management services in
-            London, contact our team to discuss your requirements.
+            Speak to our team about property management services in Essex.
           </p>
           <Link
             href="/contact"
