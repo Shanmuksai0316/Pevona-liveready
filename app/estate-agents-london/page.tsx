@@ -7,14 +7,12 @@ export const metadata = {
     "Pevona provides estate agency, lettings, management, and compliance-led support for landlords across London.",
 };
 
-const assetVersion = "?v=20260422";
-
 const services = [
   {
     title: "Lettings & Tenant Sourcing",
     description:
       "Targeted marketing, careful referencing, and a clear process for placing the right tenants.",
-    image: `/images/estate-agents-london/lettings-tenant-sourcing.png${assetVersion}`,
+    image: "/images/estate-agents-london/lettings-tenant-sourcing.png",
     span: "lg:col-span-7",
     ratio: "aspect-[16/10]",
   },
@@ -22,7 +20,7 @@ const services = [
     title: "Compliance & Onboarding",
     description:
       "A calmer start to the tenancy journey with documentation, checks, and onboarding handled well.",
-    image: `/images/estate-agents-london/compliance-onboarding.png${assetVersion}`,
+    image: "/images/estate-agents-london/compliance-onboarding.png",
     span: "lg:col-span-4",
     ratio: "aspect-[4/5]",
   },
@@ -30,7 +28,7 @@ const services = [
     title: "Full Property Management",
     description:
       "End-to-end support for day-to-day operations, tenant communication, and upkeep.",
-    image: `/images/estate-agents-london/full-property-management.png${assetVersion}`,
+    image: "/images/estate-agents-london/full-property-management.png",
     span: "lg:col-span-5",
     ratio: "aspect-[4/5]",
   },
@@ -38,7 +36,7 @@ const services = [
     title: "Rental Valuation Guidance",
     description:
       "Practical valuation support informed by property type, location, and current market expectations.",
-    image: `/images/estate-agents-london/rental-valuation-guidance.png${assetVersion}`,
+    image: "/images/estate-agents-london/rental-valuation-guidance.png",
     span: "lg:col-span-4",
     ratio: "aspect-[4/5]",
   },
@@ -46,7 +44,7 @@ const services = [
     title: "Ongoing Tenancy Management",
     description:
       "Reliable tenancy coordination, renewals, records, and communication over the long term.",
-    image: `/images/estate-agents-london/ongoing-tenancy-management.png${assetVersion}`,
+    image: "/images/estate-agents-london/ongoing-tenancy-management.png",
     span: "lg:col-span-4",
     ratio: "aspect-[4/5]",
   },
@@ -124,7 +122,7 @@ export default function EstateAgentsLondonPage() {
 
           <div className="relative min-h-[78svh]">
             <Image
-              src={`/images/estate-agents-london/hero-section-estate-agents-in-london.png${assetVersion}`}
+              src="/images/estate-agents-london/hero-section-estate-agents-in-london.png"
               alt="London residential street with estate agency boards"
               fill
               priority
@@ -246,7 +244,7 @@ export default function EstateAgentsLondonPage() {
 
           <div className="order-1 overflow-hidden rounded-[34px] shadow-[0_24px_70px_rgba(6,30,56,0.12)] lg:order-2">
             <Image
-              src={`/images/estate-agents-london/areas-we-cover.png${assetVersion}`}
+              src="/images/estate-agents-london/areas-we-cover.png"
               alt="Visual map-style illustration for areas we cover"
               width={580}
               height={626}
