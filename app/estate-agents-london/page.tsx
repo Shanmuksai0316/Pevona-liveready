@@ -17,19 +17,19 @@ const services = [
     ratio: "aspect-[16/10]",
   },
   {
-    title: "Full Property Management",
-    description:
-      "End-to-end support for day-to-day operations, tenant communication, and upkeep.",
-    image: "/images/estate-agents-london/full-property-management.png",
-    span: "lg:col-span-5",
-    ratio: "aspect-[4/5]",
-  },
-  {
     title: "Compliance & Onboarding",
     description:
       "A calmer start to the tenancy journey with documentation, checks, and onboarding handled well.",
     image: "/images/estate-agents-london/compliance-onboarding.png",
     span: "lg:col-span-4",
+    ratio: "aspect-[4/5]",
+  },
+  {
+    title: "Full Property Management",
+    description:
+      "End-to-end support for day-to-day operations, tenant communication, and upkeep.",
+    image: "/images/estate-agents-london/full-property-management.png",
+    span: "lg:col-span-5",
     ratio: "aspect-[4/5]",
   },
   {
