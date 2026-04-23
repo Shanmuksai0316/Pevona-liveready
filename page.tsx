@@ -265,19 +265,27 @@ export default function Home() {
             <p className="font-crimson text-[18px] sm:text-[20px] lg:text-[24px] leading-[26px] sm:leading-[28px] lg:leading-[32px] text-white text-center">
               Certifications
             </p>
-            <div className="grid grid-cols-2 gap-[10px] sm:gap-[12px] lg:gap-[16px] w-full max-w-[400px]">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="bg-white border border-[rgba(0,0,0,0.12)] h-[55px] sm:h-[60px] lg:h-[80px] rounded-[10px] flex items-center justify-center p-2">
-                  <Image
-                    src={`http://localhost:3845/assets/cert${i}.png`}
-                    alt={`Certification ${i}`}
-                    width={120}
-                    height={40}
-                    className="object-contain w-full h-full"
-                    unoptimized
-                  />
-                </div>
-              ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[10px] sm:gap-[12px] lg:gap-[16px] w-full max-w-[400px]">
+              <div className="bg-white border border-[rgba(0,0,0,0.12)] h-[55px] sm:h-[60px] lg:h-[80px] rounded-[10px] flex items-center justify-center p-2">
+                <Image
+                  src="/images/Money-Shield-logo.png"
+                  alt="Money Shield"
+                  width={160}
+                  height={60}
+                  className="object-contain w-full h-full"
+                  unoptimized
+                />
+              </div>
+              <div className="bg-white border border-[rgba(0,0,0,0.12)] h-[55px] sm:h-[60px] lg:h-[80px] rounded-[10px] flex items-center justify-center p-2">
+                <Image
+                  src="/images/Propertymark-Company-logo.png"
+                  alt="Propertymark"
+                  width={180}
+                  height={70}
+                  className="object-contain w-full h-full"
+                  unoptimized
+                />
+              </div>
             </div>
           </div>
 
@@ -434,7 +442,6 @@ export default function Home() {
     </div>
   );
 }
-
 
 
 
