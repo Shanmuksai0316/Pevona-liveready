@@ -74,7 +74,7 @@ export default function Footer() {
             <p className="font-crimson font-semibold text-[26px] leading-[30px] text-white">Policies / Governance / ESG</p>
             <div className="flex flex-col gap-[10px] items-start font-manrope font-normal text-[18px] leading-[28px] text-white opacity-80">
               <Link href="/policies/environmental-statement" className="hover:text-white hover:opacity-100 transition-opacity">Environmental Statement</Link>
-              <span>Equality, Diversity &amp; Inclusion - TBC</span>
+              <Link href="/policies/equality-diversity-inclusion" className="hover:text-white hover:opacity-100 transition-opacity">Equality, Diversity &amp; Inclusion</Link>
               <Link href="/policies/whistleblowing" className="hover:text-white hover:opacity-100 transition-opacity">Whistleblowing Policy</Link>
               <Link href="/policies/anti-bribery-corruption" className="hover:text-white hover:opacity-100 transition-opacity">Anti-Bribery &amp; Anti-Corruption</Link>
               <Link href="/policies/data-protection" className="hover:text-white hover:opacity-100 transition-opacity">Data Protection &amp; GDPR</Link>

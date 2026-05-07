@@ -1025,18 +1025,26 @@ export default function AboutUsPage() {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:block relative z-10 max-w-[50%] pt-[105px] pb-[105px] pl-[5%] space-y-4 text-white">
-          <h2 className="font-crimson text-[56px] leading-tight leading-[56px] tracking-tight tracking-[-1.68px]">
-            Environmental &amp;
-            <br />
-            Social Governance (ESG)
-          </h2>
-          <p className="font-manrope text-[18px] leading-[28px]">
-            Pevona Ltd integrates ESG principles into its operations. We promote sustainable
-            practices, ethical leadership, and community engagement. Our directors advocate vegan
-            values and support animal charities, aligning our business with future-focused
-            environmental responsibility.
-          </p>
+        <div className="hidden lg:flex relative z-10 h-full max-w-[50%] items-center pl-[5%]">
+          <div className="max-w-[560px] space-y-4 text-left text-white">
+            <h2 className="font-crimson text-[56px] leading-tight leading-[56px] tracking-tight tracking-[-1.68px]">
+              Environmental &amp;
+              <br />
+              Social Governance (ESG)
+            </h2>
+            <p className="font-manrope text-[18px] leading-[28px]">
+              Pevona Ltd integrates ESG principles into its operations. We promote sustainable
+              practices, ethical leadership, and community engagement. Our directors advocate vegan
+              values and support animal charities, aligning our business with future-focused
+              environmental responsibility.
+            </p>
+            <Link
+              href="/policies/environmental-statement"
+              className="inline-flex items-center justify-center min-h-[54px] rounded-[10px] bg-white px-7 py-3 font-manrope font-semibold text-[16px] leading-[24px] text-[#002f57] transition-all duration-300 hover:bg-[#0073B5] hover:text-white"
+            >
+              Known more
+            </Link>
+          </div>
         </div>
 
         {/* Mobile Layout - positioned on the dark overlay */}
@@ -1050,6 +1058,37 @@ export default function AboutUsPage() {
             values and support animal charities, aligning our business with future-focused
             environmental responsibility.
           </p>
+          <Link
+            href="/policies/environmental-statement"
+            className="inline-flex items-center justify-center min-h-[48px] rounded-[10px] bg-white px-6 py-3 font-manrope font-semibold text-[14px] sm:text-[16px] leading-[22px] text-[#002f57] transition-all duration-300 hover:bg-[#0073B5] hover:text-white"
+          >
+            Known more
+          </Link>
+        </div>
+      </section>
+
+      <section className="max-w-full 1400:max-w-[1337px] mx-auto mb-[60px] md:mb-[120px] rounded-[16px] sm:rounded-[26px] border border-[rgba(0,0,0,0.12)] bg-white p-[36px]">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <div className="max-w-[880px] space-y-3 text-left">
+            <h2 className="font-crimson text-[28px] sm:text-[34px] lg:text-[40px] leading-tight tracking-[-1px] text-[#002f57]">
+              Whistleblowing Policy
+            </h2>
+            <p className="font-manrope text-[15px] sm:text-[16px] lg:text-[18px] leading-[24px] sm:leading-[26px] lg:leading-[28px] text-[#333333] opacity-80">
+              Pevona Ltd encourages the confidential reporting of genuine concerns about wrongdoing,
+              including fraud, regulatory breaches, money laundering, data protection failures, and
+              serious misconduct. Concerns raised in good faith are handled sensitively and without
+              retaliation.
+            </p>
+          </div>
+
+          <div className="flex justify-start lg:justify-end lg:flex-shrink-0">
+            <Link
+              href="/policies/whistleblowing"
+              className="inline-flex items-center justify-center min-h-[48px] sm:min-h-[54px] rounded-[10px] bg-[#002f57] px-6 sm:px-7 py-3 font-manrope font-semibold text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] text-white transition-all duration-300 hover:bg-[#0073B5]"
+            >
+              Known more
+            </Link>
+          </div>
         </div>
       </section>
       </div>
