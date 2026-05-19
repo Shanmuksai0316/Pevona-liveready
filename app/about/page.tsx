@@ -1042,7 +1042,7 @@ export default function AboutUsPage() {
               href="/policies/environmental-statement"
               className="inline-flex items-center justify-center min-h-[54px] rounded-[10px] bg-white px-7 py-3 font-manrope font-semibold text-[16px] leading-[24px] text-[#002f57] transition-all duration-300 hover:bg-[#0073B5] hover:text-white"
             >
-              Known more
+              Know more
             </Link>
           </div>
         </div>
@@ -1062,7 +1062,7 @@ export default function AboutUsPage() {
             href="/policies/environmental-statement"
             className="inline-flex items-center justify-center min-h-[48px] rounded-[10px] bg-white px-6 py-3 font-manrope font-semibold text-[14px] sm:text-[16px] leading-[22px] text-[#002f57] transition-all duration-300 hover:bg-[#0073B5] hover:text-white"
           >
-            Known more
+            Know more
           </Link>
         </div>
       </section>
@@ -1086,7 +1086,7 @@ export default function AboutUsPage() {
               href="/policies/whistleblowing"
               className="inline-flex items-center justify-center min-h-[48px] sm:min-h-[54px] rounded-[10px] bg-[#002f57] px-6 sm:px-7 py-3 font-manrope font-semibold text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] text-white transition-all duration-300 hover:bg-[#0073B5]"
             >
-              Known more
+              Know more
             </Link>
           </div>
         </div>
