@@ -108,36 +108,31 @@ export default function AboutSection() {
 
         <div
           className="
-            flex flex-wrap gap-[16px] items-start overflow-hidden
+            grid grid-cols-1 sm:grid-cols-2 gap-[16px]
             w-full
             sm:w-[316px]
           "
         >
-          {[
-            { src: "/images/Certifications-1.svg", alt: "Certification 1", width: 74, height: 30 },
-            { src: "/images/Certifications-3.svg", alt: "Certification 3", width: 80, height: 32 },
-            { src: "/images/Certifications-4.svg", alt: "Certification 4", width: 108, height: 20 },
-          ].map((cert, i) => (
-            <div
-              key={i}
-              className="
-                bg-white border border-[rgba(0,0,0,0.12)]
-                h-[56px] sm:h-[60px]
-                w-[140px] sm:w-[150px]
-                rounded-[10px]
-                flex items-center justify-center
-              "
-            >
-              <Image
-                src={cert.src}
-                alt={cert.alt}
-                width={cert.width}
-                height={cert.height}
-                className="object-contain"
-                unoptimized
-              />
-            </div>
-          ))}
+          <div className="bg-white border border-[rgba(0,0,0,0.12)] h-[80px] sm:h-[80px] w-[140px] sm:w-[150px] rounded-[10px] p-[10px] flex items-center justify-center">
+            <Image
+              src="/images/Money-Shield-logo.png"
+              alt="Money Shield"
+              width={160}
+              height={60}
+              className="object-contain"
+              unoptimized
+            />
+          </div>
+          <div className="bg-white border border-[rgba(0,0,0,0.12)] h-[80px] sm:h-[80px] w-[140px] sm:w-[150px] rounded-[10px] p-[10px] flex items-center justify-center">
+            <Image
+              src="/images/Propertymark-Company-logo.png"
+              alt="Propertymark"
+              width={180}
+              height={70}
+              className="object-contain"
+              unoptimized
+            />
+          </div>
         </div>
       </div>
 

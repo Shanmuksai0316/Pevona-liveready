@@ -5,31 +5,31 @@ const services = [
     title: "Lettings and Tenant Sourcing",
     description:
       "Reliable support for finding suitable tenants through structured marketing and referencing.",
-    image: "/images/5th_sec_Lettings.png",
+    image: "/images/estate-agents-redbridge/lettings-and-tenant-sourcing-v2.png",
   },
   {
     title: "Property Management",
     description:
       "Day-to-day management support for landlords who want a consistent and organised service.",
-    image: "/images/5th_sec_Property_Management.png",
+    image: "/images/estate-agents-redbridge/property-management-v2.png",
   },
   {
     title: "Compliance and Onboarding Support",
     description:
       "Clear onboarding processes designed around current housing, AML, and landlord compliance requirements.",
-    image: "/images/5th_sec_mang_Fully_Compliant_sec_img.png",
+    image: "/images/estate-agents-redbridge/compliance-and-onboarding-support-v2.png",
   },
   {
     title: "Rental Guidance",
     description:
       "Practical rental guidance based on local conditions, property type, and landlord objectives.",
-    image: "/images/6th_secinvestment_opportunities_image.png",
+    image: "/images/estate-agents-redbridge/rental-guidance-v2.png",
   },
   {
     title: "Ongoing Tenancy Management",
     description:
       "Support with tenancy communication, renewals, maintenance coordination, and management records.",
-    image: "/images/5th_Maintenance_and_Communication.png",
+    image: "/images/estate-agents-redbridge/ongoing-tenancy-management-v2.png",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function EstateAgentsRedbridgePage() {
       <section className="relative min-h-[500px] sm:min-h-[560px] lg:min-h-[680px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/Area_Insights_image_-_1.png')" }}
+          style={{ backgroundImage: "url('/images/estate-agents-redbridge/hero-img-estate-agents-in-redbridge-v2.png')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#061e38]/50 via-[#061e38]/60 to-[#061e38]/85" />
 
@@ -161,14 +161,14 @@ export default function EstateAgentsRedbridgePage() {
       <section className="bg-[#061e38] py-16 text-white sm:py-20 lg:py-28">
         <div className="mx-auto max-w-[1320px] px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[100px]">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-20">
-            <div className="order-2 overflow-hidden rounded-[24px] shadow-2xl lg:order-1">
+            <div className="order-2 overflow-hidden rounded-[24px] shadow-2xl lg:order-2">
               <div
                 className="h-[420px] w-full bg-cover bg-center sm:h-[500px] lg:h-[560px]"
-                style={{ backgroundImage: "url('/images/Area_Insights_image_-_1.png')" }}
+                style={{ backgroundImage: "url('/images/estate-agents-redbridge/areas-we-cover-v2.png')" }}
               />
             </div>
 
-            <div className="order-1 space-y-10 lg:order-2">
+            <div className="order-1 space-y-10 lg:order-1">
               <div>
                 <h3 className="font-crimson text-[30px] leading-tight text-white">
                   Areas We Cover

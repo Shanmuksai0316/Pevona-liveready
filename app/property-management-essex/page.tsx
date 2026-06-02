@@ -5,31 +5,31 @@ const services = [
     title: "Full Property Management",
     description:
       "End-to-end property management support for landlords who want a structured and reliable service.",
-    image: "/images/5th_sec_Property_Management.png",
+    image: "/images/property-management-essex/full-property-management-v2.png",
   },
   {
     title: "Compliance Support",
     description:
       "Practical support with landlord obligations, documentation, and current property regulations.",
-    image: "/images/5th_sec_mang_Fully_Compliant_sec_img.png",
+    image: "/images/property-management-essex/compliance-support-v2.png",
   },
   {
     title: "Rent Collection",
     description:
       "Clear rent collection processes designed to support consistency, records, and landlord visibility.",
-    image: "/images/6th_secinvestment_opportunities_image.png",
+    image: "/images/property-management-essex/rent-collection-v2.png",
   },
   {
     title: "Tenant Coordination",
     description:
       "Ongoing communication and coordination across tenant requests, renewals, and tenancy matters.",
-    image: "/images/5th_Maintenance_and_Communication.png",
+    image: "/images/property-management-essex/tenant-coordination-v2.png",
   },
   {
     title: "Ongoing Property Oversight",
     description:
       "Continued oversight to help landlords manage property performance, maintenance, and compliance needs.",
-    image: "/images/3rd_How_We_Maintain_Quality_Standards.png",
+    image: "/images/property-management-essex/ongoing-property-oversight-v2.png",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function PropertyManagementEssexPage() {
       <section className="relative min-h-[500px] sm:min-h-[560px] lg:min-h-[680px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/5th_sec_Property_Management.png')" }}
+          style={{ backgroundImage: "url('/images/property-management-essex/hero-img-property-management-in-essex-v2.png')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#061e38]/50 via-[#061e38]/60 to-[#061e38]/85" />
 
@@ -159,7 +159,7 @@ export default function PropertyManagementEssexPage() {
             <div className="order-2 overflow-hidden rounded-[24px] shadow-2xl lg:order-1">
               <div
                 className="h-[420px] w-full bg-cover bg-center sm:h-[500px] lg:h-[560px]"
-                style={{ backgroundImage: "url('/images/Area_Insights_image_-_1.png')" }}
+                style={{ backgroundImage: "url('/images/property-management-essex/areas-we-cover-v2.png')" }}
               />
             </div>
 

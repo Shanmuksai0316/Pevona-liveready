@@ -5,31 +5,31 @@ const services = [
     title: "Tenant Sourcing",
     description:
       "Structured support for finding suitable tenants through clear marketing and referencing processes.",
-    image: "/images/5th_sec_Lettings.png",
+    image: "/images/estate-agents-luton/tenant-sourcing-v2.png",
   },
   {
     title: "Property Management",
     description:
       "Practical day-to-day management support for landlords who want a reliable and organised service.",
-    image: "/images/5th_sec_Property_Management.png",
+    image: "/images/estate-agents-luton/property-management-v2.png",
   },
   {
     title: "Compliance Handling",
     description:
       "Support with key landlord compliance steps, documentation, and tenancy requirements.",
-    image: "/images/5th_sec_mang_Fully_Compliant_sec_img.png",
+    image: "/images/estate-agents-luton/compliance-handling-v2.png",
   },
   {
     title: "Rent Collection",
     description:
       "Clear rent collection processes designed to support consistency and landlord visibility.",
-    image: "/images/6th_secinvestment_opportunities_image.png",
+    image: "/images/estate-agents-luton/rent-collection-v2.png",
   },
   {
     title: "Tenancy Coordination",
     description:
       "Ongoing coordination for tenancy communication, renewals, maintenance, and management records.",
-    image: "/images/5th_Maintenance_and_Communication.png",
+    image: "/images/estate-agents-luton/tenancy-coordination-v2.png",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function LettingAgentsLutonPage() {
       <section className="relative min-h-[500px] sm:min-h-[560px] lg:min-h-[680px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/5th_sec_Lettings.png')" }}
+          style={{ backgroundImage: "url('/images/estate-agents-luton/hero-img-letting-agents-in-luton-v2.png')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#061e38]/50 via-[#061e38]/60 to-[#061e38]/85" />
 
@@ -159,7 +159,7 @@ export default function LettingAgentsLutonPage() {
             <div className="order-2 overflow-hidden rounded-[24px] shadow-2xl lg:order-1">
               <div
                 className="h-[420px] w-full bg-cover bg-center sm:h-[500px] lg:h-[560px]"
-                style={{ backgroundImage: "url('/images/Area_Insights_image_-_1.png')" }}
+                style={{ backgroundImage: "url('/images/estate-agents-luton/areas-we-cover-v2.png')" }}
               />
             </div>
 

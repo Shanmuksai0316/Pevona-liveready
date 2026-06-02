@@ -5,31 +5,31 @@ const services = [
     title: "Lettings & Tenant Sourcing",
     description:
       "Finding the right occupants for your property through targeted marketing and stringent referencing.",
-    image: "/images/estate-agents-london/lettings-tenant-sourcing.png",
+    image: "/images/estate-agents-london/lettings-tenant-sourcing-v2.png",
   },
   {
     title: "Full Property Management",
     description:
       "A completely hands-off solution, managing day-to-day tenant requests, repairs, and administration.",
-    image: "/images/estate-agents-london/full-property-management.png",
+    image: "/images/estate-agents-london/full-property-management-v2.png",
   },
   {
     title: "Compliance & Onboarding",
     description:
       "Support in navigating complex housing legislation to ensure full legal protection for landlords.",
-    image: "/images/estate-agents-london/compliance-onboarding.png",
+    image: "/images/estate-agents-london/compliance-onboarding-v2.png",
   },
   {
     title: "Rental Valuation Guidance",
     description:
       "Data-driven appraisals to help you achieve maximum rental yield in the current market.",
-    image: "/images/estate-agents-london/rental-valuation-guidance.png",
+    image: "/images/estate-agents-london/rental-valuation-guidance-v2.png",
   },
   {
     title: "Ongoing Tenancy Management",
     description:
       "Handling renewals, rent collection, and regular property condition reports.",
-    image: "/images/estate-agents-london/ongoing-tenancy-management.png",
+    image: "/images/estate-agents-london/ongoing-tenancy-management-v2.png",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function RentPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('/images/estate-agents-london/hero-section-estate-agents-in-london.png')",
+              "url('/images/estate-agents-london/hero-section-estate-agents-in-london-v2.png')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#061e38]/50 via-[#061e38]/60 to-[#061e38]/85" />
@@ -171,7 +171,7 @@ export default function RentPage() {
               <div
                 className="h-[420px] w-full bg-cover bg-center sm:h-[500px] lg:h-[560px]"
                 style={{
-                  backgroundImage: "url('/images/estate-agents-london/areas-we-cover.png')",
+                  backgroundImage: "url('/images/estate-agents-london/areas-we-cover-v2.png')",
                 }}
               />
             </div>
