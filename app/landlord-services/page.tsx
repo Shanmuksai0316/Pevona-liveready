@@ -1,17 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const serviceLevels = [
+  {
+    title: "Tenant Introduction Only",
+    body:
+      "We take reasonable steps to introduce prospective tenants to the Landlord. All subsequent arrangements, including compliance, tenancy documentation, and deposit handling, remain the responsibility of the Landlord.",
+  },
+  {
+    title: "Tenant Find Only",
+    body:
+      "In addition to introductions, we take reasonable steps to market the property, conduct accompanied viewings, process applications and referencing, carry out Right to Rent checks, and prepare tenancy documentation in line with current statutory requirements. Ongoing management and compliance remain the Landlord’s responsibility unless otherwise agreed.",
+  },
+  {
+    title: "Rent Collection",
+    body:
+      "We take reasonable steps to collect rent and provide regular statements. While we exercise reasonable care and skill, rental payments and arrears recovery cannot be guaranteed.",
+  },
+  {
+    title: "Full Management",
+    body:
+      "We take reasonable steps to manage the day-to-day operation of the tenancy, including coordinating maintenance and repairs, liaising with tenants on routine matters, conducting periodic inspections, and supporting the Landlord in meeting statutory obligations. Where required, we may act without prior instruction in genuine emergencies to protect the Property, subject to reasonable cost controls.",
+  },
+];
+
 export default function LandlordServicesPage() {
   return (
     <div className="bg-[#FAFAFA] min-h-screen">
-      {/* Hero section */}
-      {/* Desktop Layout */}
-      <section className="hidden lg:block relative w-full h-[760px] overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
+      <section className="relative w-full h-[850px] lg:h-[760px] overflow-hidden rounded-b-[26px]">
+        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10 h-full">
+          <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">
+            <div className="relative w-full h-[850px] rounded-b-[24px] sm:rounded-b-[30px] overflow-hidden">
               <Image
-                src="/images/Landlord/Landlord_bg_img.png"
-                alt="Business meeting with landlords"
+                src="/images/Landlord/landlord-services-bg-mbl.png"
+                alt="Landlord services background mobile"
                 fill
                 className="object-cover"
                 sizes="100vw"
@@ -19,16 +41,45 @@ export default function LandlordServicesPage() {
               />
             </div>
           </div>
-        <div className="relative max-w-[1920px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] z-10">
 
-          <div className="relative max-w-[780px] mt-4 sm:mt-6 md:mt-10 space-y-4 sm:space-y-6 text-white">
+          <div className="hidden lg:block absolute inset-0 z-0 -mx-[60px] lg:-mx-[80px] 1300:-mx-[80px] 1400:-mx-[80px] 1500:-mx-[100px] 1600:-mx-[130px]">
+            <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
+              <Image
+                src="/images/Landlord/landlord-services-bg-mbl.png"
+                alt="Landlord services background"
+                fill
+                className="object-cover"
+                sizes="100vw"
+                unoptimized
+              />
+            </div>
+          </div>
+
+          <div className="lg:hidden relative flex items-end justify-center h-[850px] pb-[50px]">
+            <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
+              <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px]">Landlord Services</p>
+              <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
+                Landlord Services
+              </h1>
+              <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
+                At Pevona Ltd, we provide a structured range of landlord services designed to support compliance, maximise rental performance, and deliver efficient property management. Our services are delivered in accordance with current legislation, including the Renters&apos; Rights Act 2025, and are tailored to the selected level of service.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
+              >
+                Request a Consultation
+              </Link>
+            </div>
+          </div>
+
+          <div className="hidden lg:block relative max-w-[780px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] space-y-4 sm:space-y-6 text-white">
+            <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px]">Landlord Services</p>
             <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
-              Professional Lettings and Management for UK Landlords
+              Landlord Services
             </h1>
             <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
-              End-to-end property management that saves time, reduces risk, and ensures
-              full legal compliance. Trusted by landlords who value clear communication and
-              consistent results.
+              At Pevona Ltd, we provide a structured range of landlord services designed to support compliance, maximise rental performance, and deliver efficient property management. Our services are delivered in accordance with current legislation, including the Renters&apos; Rights Act 2025, and are tailored to the selected level of service.
             </p>
             <Link
               href="/contact"
@@ -40,220 +91,44 @@ export default function LandlordServicesPage() {
         </div>
       </section>
 
-      {/* Mobile Layout */}
-      <section className="lg:hidden relative w-full h-[850px] overflow-hidden">
-        <div className="relative max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] z-10">
-          {/* Mobile Background */}
-          <div className="lg:hidden absolute inset-0 z-0 -mx-5 350:-mx-5 480:-mx-5 650:-mx-[60px]">
-            <div className="relative w-full h-[850px] rounded-b-[24px] sm:rounded-b-[30px] overflow-hidden">
-            <Image
-                src="/images/Landlord/landlord-services-bg-mbl.png"
-              alt="Business meeting with landlords"
-              fill
-              className="object-cover"
-              sizes="100vw"
-              unoptimized
-            />
-            </div>
+      <section className="bg-white py-16 sm:py-20 lg:py-24">
+        <div className="mx-auto max-w-[1440px] px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[100px]">
+          <div className="mx-auto mb-14 max-w-3xl text-center">
+            <h2 className="font-crimson text-[32px] leading-tight text-[#061e38] sm:text-[42px] lg:text-[48px]">Service Levels</h2>
+            <p className="mt-4 font-manrope text-[15px] leading-[26px] text-[#6b7280] sm:text-[16px] sm:leading-[28px]">A structured range of landlord services tailored to the selected level of service.</p>
           </div>
-
-          {/* Mobile Content - Center Aligned, Bottom 50px */}
-          <div className="lg:hidden relative flex items-end justify-center pb-[50px] h-[850px]">
-            <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
-              <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
-              Professional Lettings and Management for UK Landlords
-            </h1>
-              <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
-              End-to-end property management that saves time, reduces risk, and ensures
-              full legal compliance. Trusted by landlords who value clear communication and
-              consistent results.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[56px] px-4 sm:px-6 rounded-[8px] bg-white text-[#002f57] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#0073B5] hover:text-white transition-colors"
-            >
-              Request a Consultation
-            </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Landlords Choose Us */}
-      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px]">
-        <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57] mb-8">
-          Why Landlords Choose Us
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
-            {
-              title: "Transparency",
-              body: "Clear reporting, no hidden fees, and easy access to property insights.",
-            },
-            {
-              title: "Compliance",
-              body: "Every property meets UK standards, from EPC to deposit protection.",
-            },
-            {
-              title: "Efficiency",
-              body: "Streamlined systems that save time and minimise stress.",
-            },
-            {
-              title: "Reliability",
-              body: "Professional support and proactive communication at every step.",
-            },
-          ].map((card) => (
-            <div
-              key={card.title}
-              className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] px-[30px] py-[20px] h-[180px] flex flex-col justify-center"
-            >
-              <h3 className="font-crimson text-[26px] leading-[30px] text-[#002f57] mb-2">
-                {card.title}
-              </h3>
-              <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-                {card.body}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Our Letting Process */}
-      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] 650:mt-[80px] lg:mt-[100px] 1500:mt-[130px] 1600:mt-[150px] flex flex-col lg:flex-row gap-[70px] items-center">
-        <div className="flex-1 w-full lg:max-w-[526px] space-y-9">
-          <div className="space-y-4">
-            <p className="font-crimson text-[20px] leading-[30px] tracking-[-0.6px] text-[#002f57]">
-              How It Works
-            </p>
-            <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-              Our Letting Process
-            </h2>
-          </div>
-          <div className="relative w-full max-w-[528px] h-[352px] min-h-[300px] sm:min-h-[350px] lg:min-h-[352px] min-w-0 rounded-[24px] overflow-hidden">
-            <Image
-              src="/images/Landlord/3rd_Landlord_Our_Letting_Process.png"
-              alt="Landlord signing documents"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 528px"
-              unoptimized
-            />
-          </div>
-        </div>
-
-        <div className="flex-1 relative">
-          {/* Vertical line */}
-          <div className="absolute left-[20px] top-0 bottom-0 w-px bg-[#002f57]/15 hidden lg:block" />
-
-          <div className="space-y-[20px] lg:space-y-[70px] pl-[70px]">
-            {[
-              {
-                title: "Property Valuation",
-                body: "We assess your property's market potential and rental value.",
-              },
-              {
-                title: "Marketing & Listings",
-                body: "Professional photos and listings across trusted UK portals.",
-              },
-              {
-                title: "Tenant Selection",
-                body: "Comprehensive referencing, right-to-rent checks, and approval.",
-              },
-              {
-                title: "Tenancy & Management",
-                body: "Contracts, inspections, and ongoing maintenance handled efficiently.",
-              },
-              {
-                title: "Reporting & Renewals",
-                body: "Regular updates and renewal management for stable returns.",
-              },
-            ].map((step, index) => (
-              <div key={index} className="relative flex gap-4">
-                <div className="flex-shrink-0 absolute left-[-60px] top-[6px]">
-                  <div className="w-[20px] h-[20px] rounded-full bg-[#002f57] flex items-center justify-center">
-                    <span className="w-[12px] h-[12px] rounded-full bg-white" />
-                  </div>
-                </div>
-                <div className="space-y-[2px]">
-                  <h3 className="font-crimson text-[26px] leading-[30px] text-[#002f57]">
-                    {step.title}
-                  </h3>
-                  <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-                    {step.body}
-                  </p>
-                </div>
-              </div>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-2">
+            {serviceLevels.map((level) => (
+              <article key={level.title} className="rounded-[24px] border border-[#e5e9ef] bg-[#f9fafb] p-7 shadow-sm transition hover:shadow-md">
+                <h3 className="font-crimson text-[28px] leading-tight text-[#061e38]">{level.title}</h3>
+                <p className="mt-4 font-manrope text-[15px] leading-[27px] text-[#52606d] sm:text-[16px] sm:leading-[29px]">{level.body}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Renting with Confidence for Landlords */}
-      <div className="lg:px-0 px-5 overflow-x-auto">
-        <section className="max-w-full mx-0 md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[60px] lg:mt-[140px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
-          <div className="w-full lg:w-[60%] space-y-4 pl-[5%]">
-          <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-            Renting with Confidence
-          </h2>
-          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-            Every property we manage adheres to UK government regulations, including:
-          </p>
-          <ul className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 space-y-2 mt-2">
-            <li>Tenant Fees Act 2019</li>
-            <li>Deposit Protection Scheme registration (DPS / MyDeposits / TDS)</li>
-            <li>Energy Performance Certificate (EPC)</li>
-            <li>Gas &amp; Electrical Safety checks</li>
-            <li>Right to Rent verification</li>
-          </ul>
-          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80 mt-2">
-            We operate with complete transparency, ensuring landlords and tenants are always
-            protected.
-          </p>
-        </div>
-
-        <div className="w-full lg:w-[40%] relative h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
-          <Image
-            src="/images/Landlord/4th_Landlord_Renting_with_Confidence.png"
-            alt="Tenant and landlord agreement"
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 675px"
-            unoptimized
-          />
+      <section className="bg-[#061e38] py-16 text-white sm:py-20 lg:py-24">
+        <div className="mx-auto max-w-[1440px] px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[100px]">
+          <div className="rounded-[30px] border border-white/10 bg-white/6 p-7 backdrop-blur-sm sm:p-8">
+            <h2 className="font-crimson text-[32px] leading-tight sm:text-[42px] lg:text-[48px]">Important Notice</h2>
+            <p className="mt-5 max-w-4xl font-manrope text-[15px] leading-[27px] text-white/82 sm:text-[16px] sm:leading-[29px]">
+              Pevona Ltd supports landlords in meeting their legal obligations; however, ultimate responsibility for compliance remains with the Landlord.
+            </p>
+          </div>
         </div>
       </section>
-      </div>
 
-      {/* Smart Management. Seamless Support. */}
-      <div className="lg:px-0 px-5 overflow-x-auto">
-        <section className="max-w-full mx-0 md:mx-[60px] 1400:max-w-[1336px] 1400:mx-auto 1920:max-w-[1600px] mt-[80px] flex flex-col lg:flex-row gap-[26px] lg:gap-[78px] items-center bg-white border border-[rgba(0,0,0,0.12)] rounded-[26px] min-w-[calc(100vw-40px)] lg:min-w-0">
-        <div className="w-full lg:w-[40%] relative h-[450px] min-h-[300px] sm:min-h-[400px] lg:min-h-[450px] min-w-0 rounded-[26px] overflow-hidden">
-          <Image
-            src="/images/Landlord/5th_Smart_Management._Seamless_Support..png"
-            alt="Property management team"
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 680px"
-            unoptimized
-          />
-        </div>
-
-          <div className="w-full lg:w-[60%] space-y-4 p-[5%] lg:pr-[5%] lg:pl-0 lg:pt-0 lg:pb-0">
-          <h2 className="font-crimson text-[56px] leading-[56px] tracking-[-1.68px] text-[#002f57]">
-            Smart Management. Seamless Support.
-          </h2>
-          <p className="font-manrope text-[18px] leading-[28px] text-[#333] opacity-80">
-            We handle every detail – from rent collection and maintenance to inspection
-            reports and renewals – all through a streamlined, fully digital system that
-            keeps you informed and in control.
-          </p>
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-5 text-center 650:px-[60px] lg:px-[40px]">
+          <h2 className="font-crimson text-[32px] leading-tight text-[#061e38] sm:text-[40px]">Speak to Our Team</h2>
+          <p className="mt-4 font-manrope text-[15px] leading-[26px] text-[#6b7280] sm:text-[16px] sm:leading-[28px]">Speak to our team to discuss the right landlord service level for your property.</p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Link href="/contact" className="inline-flex min-h-[54px] items-center justify-center rounded-full bg-[#061e38] px-8 py-3 text-[14px] font-semibold text-white transition hover:bg-[#031224]">Contact Us Today</Link>
+            <Link href="/terms#cmp" className="inline-flex min-h-[54px] items-center justify-center rounded-full border border-[#d7dde6] bg-white px-8 py-3 text-[14px] font-semibold text-[#061e38] transition hover:bg-[#f7f8fa]">Compliance &amp; CMP</Link>
+          </div>
         </div>
       </section>
-      </div>
     </div>
   );
 }
-
-
-
-

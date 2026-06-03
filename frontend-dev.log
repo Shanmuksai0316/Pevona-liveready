@@ -1,0 +1,21 @@
+
+> pevona-app@0.1.0 dev
+> next dev -H 0.0.0.0
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+ ✓ Ready in 3.2s
+ ○ Compiling /about ...
+ ✓ Compiled /about in 6.5s (563 modules)
+ ✓ Compiled in 732ms (288 modules)
+ GET /about 200 in 7269ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1055ms (582 modules)
+Failed to fetch from Strapi: TypeError: fetch failed
+Failed to fetch from Strapi: TypeError: fetch failed
+Failed to fetch from Strapi: TypeError: fetch failed
+ GET / 200 in 1368ms
+^C^C

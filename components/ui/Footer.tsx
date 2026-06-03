@@ -14,6 +14,7 @@ export default function Footer() {
     "/letting-agents-luton",
     "/property-management-essex",
     "/estate-agents-leicester",
+    "/landlord-services",
   ];
   const footerSpacingClass =
     pagesWithoutFooterTopMargin.includes(pathname)
@@ -22,7 +23,7 @@ export default function Footer() {
 
   return (
     <footer className={`bg-[#002f57] flex flex-col gap-[36px] items-center justify-end px-6 lg:px-0 pt-[73px] pb-12 lg:pb-[16px] w-full ${footerSpacingClass}`}>
-      <div className="flex flex-col lg:flex-row items-start justify-between px-0 lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] w-full max-w-[1560px] gap-12 lg:gap-0">
+      <div className="flex flex-col lg:flex-row items-start justify-between px-0 lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] w-full max-w-[1560px] gap-20 lg:gap-[80px]">
         {/* Logo and Description */}
         <div className="flex flex-col gap-[26px] items-start w-full lg:w-[480px]">
           <div className="h-[50px] w-[193px] relative">

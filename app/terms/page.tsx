@@ -9,12 +9,62 @@ export default function TermsPage() {
         </h1>
         <p className="font-manrope text-[14px] sm:text-[16px] text-gray-600 mb-8 sm:mb-10 md:mb-12">Last Updated: 2025</p>
 
+        <section className="mb-8 sm:mb-10 md:mb-12">
+          <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
+            Terms of Business – Summary
+          </h2>
+          <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
+            This website provides a summary of Pevona Ltd’s Terms of Business. The full Terms of Business are
+            provided separately and form the legally binding agreement for our services.
+          </p>
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="rounded-[16px] bg-[#f9fafb] p-4">
+              <p className="font-manrope font-semibold text-[#002f57] mb-1">Service Delivery</p>
+              <p className="font-manrope text-[15px] md:text-[16px] leading-[24px] text-gray-700">
+                All services are delivered using reasonable care and skill, in accordance with the agreed level of service.
+              </p>
+            </div>
+            <div className="rounded-[16px] bg-[#f9fafb] p-4">
+              <p className="font-manrope font-semibold text-[#002f57] mb-1">Compliance</p>
+              <p className="font-manrope text-[15px] md:text-[16px] leading-[24px] text-gray-700">
+                We assist our clients in meeting statutory requirements; however, all clients retain overall responsibility for compliance with applicable legislation.
+              </p>
+            </div>
+            <div className="rounded-[16px] bg-[#f9fafb] p-4">
+              <p className="font-manrope font-semibold text-[#002f57] mb-1">Fees</p>
+              <p className="font-manrope text-[15px] md:text-[16px] leading-[24px] text-gray-700">
+                Fees are charged in accordance with the agreed service level and reflect the work undertaken. Where applicable, reasonable and evidenced costs incurred may be charged.
+              </p>
+            </div>
+            <div className="rounded-[16px] bg-[#f9fafb] p-4">
+              <p className="font-manrope font-semibold text-[#002f57] mb-1">Termination</p>
+              <p className="font-manrope text-[15px] md:text-[16px] leading-[24px] text-gray-700">
+                Where a Service Agreement is terminated prior to tenancy creation, cost recovery may apply. Where termination occurs during an active tenancy, a Termination Fee may apply.
+              </p>
+            </div>
+          </div>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <a
+              href="#full-terms"
+              className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#002f57] px-5 py-3 font-manrope text-[14px] font-semibold text-white transition hover:bg-[#01365f]"
+            >
+              Download Full Terms of Business (PDF)
+            </a>
+            <a
+              href="#section-1-introduction"
+              className="inline-flex min-h-[48px] items-center justify-center rounded-full border border-[#d9e2ec] bg-white px-5 py-3 font-manrope text-[14px] font-semibold text-[#002f57] transition hover:bg-[#f7fafc]"
+            >
+              View Full Terms on This Page
+            </a>
+          </div>
+        </section>
+
         <div className="prose prose-lg max-w-none">
           <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-12">
             Pevona Ltd, trading as Pevona, is committed to full transparency in accordance with the Consumer Rights Act 2015 and the Tenant Fees Act 2019. Our fees are clearly outlined for landlords and tenants
           </p>
 
-          <section className="mb-8 sm:mb-10 md:mb-12">
+          <section className="mb-8 sm:mb-10 md:mb-12" id="section-1-introduction">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               1. Introduction
             </h2>
@@ -287,8 +337,9 @@ export default function TermsPage() {
                 Termination of Services
               </h3>
               <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
-                Agreements may be terminated by written notice (typically 3 months). Upon termination, all
-                outstanding fees must be settled immediately.
+                Agreements may be terminated by written notice (typically 3 months). Where termination occurs prior
+                to tenancy creation, cost recovery may apply. Where termination occurs during an active tenancy, a
+                Termination Fee may apply. Upon termination, all outstanding fees must be settled immediately.
               </p>
             </div>
 
@@ -354,6 +405,23 @@ export default function TermsPage() {
                   </a>
                 </li>
               </ul>
+            </div>
+          </section>
+
+          <section className="mb-8 sm:mb-10 md:mb-12" id="full-terms">
+            <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
+              Full Terms Document
+            </h2>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
+              The downloadable full Terms of Business PDF will be linked here once available.
+            </p>
+            <div className="mt-4">
+              <a
+                href="#full-terms"
+                className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#002f57] px-5 py-3 font-manrope text-[14px] font-semibold text-white transition hover:bg-[#01365f]"
+              >
+                Download Full Terms of Business (PDF)
+              </a>
             </div>
           </section>
 

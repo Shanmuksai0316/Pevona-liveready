@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/about/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,15 +11,80 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/privacy-policy/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/privacy-policy/page.js"
+      "static/chunks/app/page.js"
+    ],
+    "/areas-we-cover/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/areas-we-cover/page.js"
+    ],
+    "/property-management/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/property-management/page.js"
     ],
     "/terms/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/terms/page.js"
+    ],
+    "/properties-to-let/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/properties-to-let/page.js"
+    ],
+    "/charges-fees/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/charges-fees/page.js"
+    ],
+    "/application-process/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/application-process/page.js"
+    ],
+    "/sell/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/sell/page.js"
+    ],
+    "/estate-agents-london/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/estate-agents-london/page.js"
+    ],
+    "/estate-agents-redbridge/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/estate-agents-redbridge/page.js"
+    ],
+    "/property-management-essex/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/property-management-essex/page.js"
+    ],
+    "/letting-agents-luton/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/letting-agents-luton/page.js"
+    ],
+    "/estate-agents-leicester/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/estate-agents-leicester/page.js"
+    ],
+    "/tenant-services/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/tenant-services/page.js"
+    ],
+    "/landlord-services/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/landlord-services/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

@@ -1,0 +1,495 @@
+
+> pevona-app@0.1.0 dev
+> next dev -H 0.0.0.0 -p 3001
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3001
+  - Network:      http://0.0.0.0:3001
+
+ ✓ Starting...
+ ✓ Ready in 6s
+ ○ Compiling / ...
+ ✓ Compiled / in 9s (596 modules)
+ GET /about 200 in 10798ms
+ GET / 200 in 10878ms
+ ✓ Compiled in 1835ms (290 modules)
+ GET / 200 in 234ms
+ GET / 200 in 149ms
+ GET / 200 in 578ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 5.9s (590 modules)
+ GET /areas-we-cover 404 in 7573ms
+ GET / 200 in 207ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 66ms
+ ○ Compiling /areas-we-cover ...
+ ✓ Compiled /areas-we-cover in 4s (583 modules)
+ ✓ Compiled in 2.1s (594 modules)
+ GET /areas-we-cover 200 in 255ms
+ ○ Compiling /estate-agents-london ...
+ ✓ Compiled /estate-agents-london in 1030ms (598 modules)
+ GET /estate-agents-london 200 in 1278ms
+ GET /areas-we-cover 200 in 94ms
+ GET /estate-agents-london 200 in 76ms
+ GET /areas-we-cover 200 in 117ms
+ ○ Compiling /estate-agents-redbridge ...
+ ✓ Compiled /estate-agents-redbridge in 733ms (588 modules)
+ ✓ Compiled in 2.3s (599 modules)
+ GET /areas-we-cover 200 in 282ms
+ GET /areas-we-cover 200 in 95ms
+ ✓ Compiled /_not-found in 442ms (588 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 630ms
+ ✓ Compiled in 4.8s (585 modules)
+ GET /areas-we-cover 200 in 232ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 556ms (588 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 788ms
+ ✓ Compiled in 3s (601 modules)
+ GET /estate-agents-london 200 in 117ms
+ ✓ Compiled /estate-agents-redbridge in 317ms (308 modules)
+ ✓ Compiled in 1ms (308 modules)
+ GET /estate-agents-london 200 in 629ms
+ ✓ Compiled in 1ms (308 modules)
+ ✓ Compiled in 0ms (308 modules)
+ GET /estate-agents-redbridge 200 in 1097ms
+ ✓ Compiled in 0ms (308 modules)
+ ○ Compiling /estate-agents-leicester ...
+ ✓ Compiled /estate-agents-leicester in 1102ms (595 modules)
+ GET /property-management-essex 200 in 1494ms
+ GET /letting-agents-luton 200 in 1481ms
+ GET /estate-agents-leicester 200 in 1484ms
+ GET /estate-agents-redbridge 200 in 104ms
+ GET /property-management-essex 200 in 68ms
+ ✓ Compiled in 2s (592 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.4s (602 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 2915ms
+ ✓ Compiled /areas-we-cover in 302ms (312 modules)
+ ○ Compiling /property-management ...
+ ✓ Compiled /property-management in 2.8s (606 modules)
+ ✓ Compiled /estate-agents-leicester in 212ms (312 modules)
+ ○ Compiling /terms ...
+ ✓ Compiled /terms in 2.2s (605 modules)
+ GET /terms 200 in 3056ms
+ ✓ Compiled in 3.7s (603 modules)
+ ✓ Compiled /estate-agents-london in 323ms (310 modules)
+ ✓ Compiled (312 modules)
+ GET /terms 200 in 1235ms
+ GET /estate-agents-london 200 in 1242ms
+ GET /estate-agents-redbridge 200 in 1253ms
+ GET /estate-agents-london 200 in 63ms
+ GET /property-management-essex 200 in 66ms
+ ✓ Compiled /letting-agents-luton in 259ms (314 modules)
+ GET /letting-agents-luton 200 in 438ms
+ GET /estate-agents-leicester 200 in 78ms
+ GET /terms 200 in 67ms
+ GET /terms 200 in 118ms
+ ✓ Compiled in 1518ms (603 modules)
+ GET /terms 200 in 217ms
+ ✓ Compiled in 701ms (603 modules)
+ ○ Compiling /properties-to-let ...
+ ✓ Compiled /properties-to-let in 21.6s (617 modules)
+ GET /properties-to-let 200 in 27070ms
+ ○ Compiling /charges-fees ...
+ ✓ Compiled /charges-fees in 1416ms (602 modules)
+ ✓ Compiled /application-process in 424ms (603 modules)
+ ✓ Compiled /_not-found in 483ms (606 modules)
+ GET /images/Application%20process/Application_process_banner.png 404 in 792ms
+ ○ Compiling /sell ...
+ ✓ Compiled /sell in 583ms (603 modules)
+ ✓ Compiled in 6.1s (601 modules)
+ GET /terms 200 in 430ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1211ms (604 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 10.9s (824 modules)
+ GET /_next/static/chunks/webpack.js?v=1780466577078 500 in 13657ms
+ GET /_next/static/css/app/layout.css?v=1780466577078 500 in 13695ms
+ GET /_next/static/chunks/main-app.js?v=1780466577078 500 in 153ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 146ms
+ GET /_next/static/chunks/app/terms/page.js 500 in 148ms
+ GET /charges-fees 500 in 185ms
+ GET /charges-fees 500 in 40ms
+ GET /terms 500 in 42ms
+ ✓ Compiled in 3.1s (835 modules)
+ GET /terms 200 in 847ms
+ GET /charges-fees 200 in 836ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 717ms (824 modules)
+ GET /_next/static/css/app/layout.css?v=1780466724991 404 in 1216ms
+ GET /_next/static/css/app/layout.css?v=1780466725040 404 in 1180ms
+ GET /_next/static/chunks/main-app.js?v=1780466724991 404 in 1190ms
+ GET /_next/static/chunks/main-app.js?v=1780466725040 404 in 793ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 308ms
+ GET /_next/static/chunks/app/terms/page.js 404 in 339ms
+ GET /_next/static/chunks/app/charges-fees/page.js 404 in 205ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 53ms
+ GET /terms 500 in 65ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 74ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 84ms
+ GET /_next/static/chunks/fallback/main.js 404 in 74ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 75ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 46ms
+ GET /charges-fees 500 in 66ms
+ GET /_next/static/chunks/fallback/main.js 404 in 209ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 217ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 207ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 207ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 207ms
+ ✓ Compiled in 3s (838 modules)
+ GET /charges-fees 500 in 52ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 35ms
+ GET /_next/static/chunks/fallback/main.js 500 in 52ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 49ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 48ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 53ms
+ GET /charges-fees 500 in 49ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 23ms
+ GET /_next/static/chunks/fallback/main.js 500 in 51ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 48ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 47ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 47ms
+ GET /terms 200 in 193ms
+ GET /_next/static/css/app/layout.css?v=1780466798799 500 in 22ms
+ GET /_next/static/chunks/main-app.js?v=1780466798799 500 in 26ms
+ GET /_next/static/chunks/app/terms/page.js 500 in 34ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 34ms
+ GET /charges-fees 500 in 47ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 61ms
+ GET /_next/static/chunks/fallback/main.js 500 in 57ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 58ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 58ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 57ms
+ GET /terms 200 in 92ms
+ GET /_next/static/css/app/layout.css?v=1780466859213 500 in 30ms
+ GET /_next/static/chunks/main-app.js?v=1780466859213 500 in 32ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 42ms
+ GET /_next/static/chunks/app/terms/page.js 500 in 33ms
+ ○ Compiling / ...
+ ✓ Compiled / in 780ms (359 modules)
+ GET / 200 in 1115ms
+ GET /_next/static/css/app/layout.css?v=1780466862523 500 in 23ms
+ GET /_next/static/chunks/main-app.js?v=1780466862523 500 in 60ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 56ms
+ GET /_next/static/chunks/app/page.js 500 in 56ms
+ GET / 200 in 115ms
+ GET /_next/static/css/app/layout.css?v=1780466930657 500 in 34ms
+ GET /_next/static/chunks/main-app.js?v=1780466930657 500 in 38ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 35ms
+ GET /_next/static/chunks/app/page.js 500 in 18ms
+ GET / 200 in 99ms
+ GET /_next/static/css/app/layout.css?v=1780466986395 500 in 29ms
+ GET /_next/static/chunks/main-app.js?v=1780466986395 500 in 29ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 29ms
+ GET /_next/static/chunks/app/page.js 500 in 15ms
+ GET / 200 in 107ms
+ GET / 200 in 202ms
+ GET / 200 in 111ms
+ GET /_next/static/css/app/layout.css?v=1780467075550 500 in 37ms
+ GET /_next/static/chunks/main-app.js?v=1780467075550 500 in 51ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 45ms
+ GET /_next/static/chunks/app/page.js 500 in 56ms
+ GET /terms 200 in 80ms
+ GET /_next/static/css/app/layout.css?v=1780467079878 500 in 24ms
+ GET /_next/static/chunks/main-app.js?v=1780467079878 500 in 82ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 73ms
+ GET /_next/static/chunks/app/terms/page.js 500 in 73ms
+ GET /terms 200 in 2051ms
+ GET /_next/static/css/app/layout.css?v=1780467282389 500 in 225ms
+ GET /_next/static/chunks/webpack.js?v=1780467282389 500 in 218ms
+ GET /_next/static/chunks/main-app.js?v=1780467282389 500 in 43ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 82ms
+ GET /_next/static/chunks/app/terms/page.js 500 in 80ms
+ GET /_next/static/chunks/app/layout.js 500 in 39ms
+ GET / 200 in 262ms
+ GET /_next/static/css/app/layout.css?v=1780467329162 500 in 33ms
+ GET /_next/static/chunks/webpack.js?v=1780467329162 500 in 33ms
+ GET /_next/static/chunks/main-app.js?v=1780467329162 500 in 40ms
+ GET /_next/static/chunks/app-pages-internals.js 500 in 29ms
+ GET /_next/static/chunks/app/layout.js 500 in 28ms
+ GET /_next/static/chunks/app/page.js 500 in 29ms
+ ○ Compiling /areas-we-cover ...
+ ✓ Compiled /areas-we-cover in 1994ms (364 modules)
+ GET /areas-we-cover 500 in 2410ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 25ms
+ GET /_next/static/chunks/fallback/main.js 500 in 66ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 63ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 54ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 64ms
+ GET /areas-we-cover 500 in 90ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 48ms
+ GET /areas-we-cover 500 in 70ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 23ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 23ms
+ GET /_next/static/chunks/fallback/main.js 500 in 45ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 32ms
+ GET /areas-we-cover 500 in 98ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 18ms
+ GET /_next/static/chunks/fallback/main.js 500 in 34ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 33ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 32ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 40ms
+ GET /terms 500 in 26ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 30ms
+ GET /_next/static/chunks/fallback/main.js 500 in 26ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 14ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 22ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 9ms
+ GET / 500 in 43ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 51ms
+ GET /_next/static/chunks/fallback/main.js 500 in 49ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 49ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 58ms
+ GET / 500 in 167ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 22ms
+ GET /_next/static/chunks/fallback/main.js 500 in 82ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 82ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 84ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 84ms
+ GET / 500 in 209ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 71ms
+ GET /_next/static/chunks/fallback/main.js 500 in 79ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 76ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 74ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 76ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 71ms
+ GET / 500 in 115ms
+ GET /_next/static/chunks/fallback/main.js 500 in 56ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 61ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 70ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 68ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 59ms
+ GET / 500 in 48ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 28ms
+ GET /_next/static/chunks/fallback/main.js 500 in 26ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 22ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 20ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 11ms
+ GET / 500 in 42ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 142ms
+ GET /_next/static/chunks/fallback/main.js 500 in 138ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 139ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 139ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 139ms
+ GET / 500 in 37ms
+ GET / 500 in 37ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 56ms
+ GET /_next/static/chunks/fallback/main.js 500 in 50ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 49ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 50ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 50ms
+ ✓ Compiled in 3.8s (835 modules)
+ ✓ Compiled / in 254ms (358 modules)
+ GET / 500 in 322ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 691ms (840 modules)
+ GET / 500 in 781ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 776ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 446ms
+ GET /_next/static/chunks/fallback/main.js 500 in 322ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 321ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 308ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 34ms
+ GET /_next/static/chunks/fallback/main.js 500 in 37ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 37ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 36ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 36ms
+ ✓ Compiled in 9.5s (835 modules)
+ ✓ Compiled in 1983ms (835 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 1775ms (358 modules)
+ GET / 200 in 2796ms
+ ○ Compiling /areas-we-cover ...
+ ✓ Compiled /areas-we-cover in 1077ms (363 modules)
+ ○ Compiling /estate-agents-london ...
+ ✓ Compiled /estate-agents-london in 2.3s (858 modules)
+ ✓ Compiled /_not-found in 487ms (847 modules)
+ GET /_next/static/webpack/8012b544cb8d707c.webpack.hot-update.json 404 in 840ms
+ GET /estate-agents-london 200 in 103ms
+ GET /estate-agents-london 200 in 76ms
+ ○ Compiling /estate-agents-leicester ...
+ ✓ Compiled /estate-agents-leicester in 650ms (348 modules)
+ GET /estate-agents-leicester 200 in 825ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1034ms (844 modules)
+ GET /_next/static/chunks/app/estate-agents-leicester/page.js 404 in 1260ms
+ ✓ Compiled /estate-agents-redbridge in 304ms (351 modules)
+ GET /estate-agents-redbridge 200 in 514ms
+ GET /estate-agents-london 200 in 139ms
+ ○ Compiling /property-management-essex ...
+ ✓ Compiled /property-management-essex in 535ms (350 modules)
+ GET /property-management-essex 200 in 738ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 82ms
+ GET /property-management-essex 200 in 360ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 154ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 77ms
+ GET /estate-agents-redbridge 200 in 184ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 9.3s (838 modules)
+ GET /property-management-essex 200 in 5447ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 100ms
+ GET /estate-agents-london 404 in 58ms
+ ○ Compiling /estate-agents-london ...
+ ✓ Compiled /estate-agents-london in 2.6s (826 modules)
+ ✓ Compiled in 1523ms (824 modules)
+ GET /estate-agents-redbridge 404 in 130ms
+ ○ Compiling /estate-agents-redbridge ...
+ ✓ Compiled /estate-agents-redbridge in 2.6s (826 modules)
+ GET /estate-agents-london 200 in 134ms
+ GET /estate-agents-redbridge 200 in 62ms
+ ✓ Compiled /terms in 499ms (347 modules)
+ GET /property-management-essex 200 in 92ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 529ms (817 modules)
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 669ms
+ GET /property-management-essex 200 in 71ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 93ms
+ GET /estate-agents-redbridge 200 in 74ms
+ GET /property-management-essex 200 in 66ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 69ms
+ ○ Compiling /letting-agents-luton ...
+ ✓ Compiled /letting-agents-luton in 607ms (338 modules)
+ GET /letting-agents-luton 200 in 803ms
+ GET /property-management-essex 200 in 104ms
+ GET /_next/static/chunks/app/letting-agents-luton/page.js 404 in 135ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 78ms
+ ✓ Compiled /estate-agents-leicester in 377ms (340 modules)
+ GET /estate-agents-leicester 200 in 523ms
+ GET /_next/static/chunks/app/estate-agents-leicester/page.js 404 in 37ms
+ GET /property-management-essex 200 in 370ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 156ms
+ ✓ Compiled in 2.5s (828 modules)
+ ✓ Compiled in 2.2s (828 modules)
+ ✓ Compiled in 1589ms (828 modules)
+ ✓ Compiled in 565ms (493 modules)
+ ✓ Compiled in 735ms (493 modules)
+ GET /estate-agents-redbridge 200 in 345ms
+ ✓ Compiled in 1395ms (828 modules)
+ GET /estate-agents-london 200 in 141ms
+ GET /estate-agents-redbridge 200 in 89ms
+ GET /property-management-essex 200 in 194ms
+ ○ Compiling /letting-agents-luton ...
+ ✓ Compiled /letting-agents-luton in 801ms (337 modules)
+ GET /letting-agents-luton 500 in 1034ms
+ GET /property-management-essex 200 in 287ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1997ms (835 modules)
+ GET /estate-agents-leicester 500 in 2287ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 2130ms
+ GET /terms 200 in 142ms
+ ✓ Compiled in 1669ms (835 modules)
+ GET /estate-agents-london 200 in 140ms
+ GET /estate-agents-redbridge 200 in 119ms
+ GET /property-management-essex 200 in 97ms
+ GET /letting-agents-luton 200 in 73ms
+ GET /estate-agents-leicester 200 in 106ms
+ GET /terms 200 in 123ms
+ GET /terms 200 in 104ms
+ GET /estate-agents-london 200 in 102ms
+ GET /property-management-essex 200 in 76ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 99ms
+ GET /property-management-essex 200 in 69ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 133ms
+ GET /letting-agents-luton 200 in 208ms
+ GET /_next/static/chunks/app/letting-agents-luton/page.js 404 in 268ms
+ ○ Compiling /landlord-services ...
+ ✓ Compiled /landlord-services in 2.3s (831 modules)
+ GET /letting-agents-luton 200 in 305ms
+ GET /property-management-essex 200 in 218ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 882ms (820 modules)
+ GET /_next/static/chunks/app/letting-agents-luton/page.js 404 in 1352ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 1341ms
+ GET /images/Landlord/Landlord_bg_img.png 404 in 1282ms
+ GET /terms 200 in 120ms
+ GET /images/Landlord/4th_Landlord_Renting_with_Confidence.png 404 in 73ms
+ ✓ Compiled in 2.5s (829 modules)
+ GET /landlord-services 200 in 188ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1309ms (818 modules)
+ GET /images/Landlord/Landlord_bg_img.png 404 in 1610ms
+ GET /images/Landlord/4th_Landlord_Renting_with_Confidence.png 404 in 1581ms
+ ✓ Compiled /property-management-essex in 386ms (339 modules)
+ GET /property-management-essex 200 in 735ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 209ms
+ GET /property-management-essex 200 in 162ms
+ GET /_next/static/chunks/app/property-management-essex/page.js 404 in 120ms
+ GET /estate-agents-london 200 in 143ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 142ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 11.6s (830 modules)
+ GET /property-management-essex 404 in 4620ms
+ GET /property-management-essex 404 in 719ms
+ ○ Compiling /property-management-essex ...
+ ✓ Compiled /property-management-essex in 2.6s (818 modules)
+ ✓ Compiled in 2.1s (832 modules)
+ ✓ Compiled in 2.1s (818 modules)
+ ✓ Compiled in 2.1s (832 modules)
+ ✓ Compiled in 1622ms (815 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 3s (829 modules)
+ GET /landlord-services 404 in 569ms
+ ○ Compiling /landlord-services ...
+ ✓ Compiled /landlord-services in 3.2s (817 modules)
+ GET /images/Landlord/Landlord_bg_img.png 404 in 251ms
+ GET /property-management-essex 200 in 96ms
+ ○ Compiling /letting-agents-luton ...
+ ✓ Compiled /letting-agents-luton in 1565ms (819 modules)
+ GET /letting-agents-luton 200 in 1850ms
+ ○ Compiling /estate-agents-leicester ...
+ ✓ Compiled /estate-agents-leicester in 1800ms (821 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1243ms
+ GET /estate-agents-leicester 200 in 2124ms
+ GET /landlord-services 200 in 156ms
+ GET /terms 200 in 323ms
+ GET /property-management-essex 200 in 150ms
+ GET /letting-agents-luton 200 in 115ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 74ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 750ms
+ ✓ Compiled in 6.9s (816 modules)
+ ✓ Compiled in 723ms (816 modules)
+ GET /landlord-services 200 in 133ms
+ GET /property-management-essex 200 in 103ms
+ GET /letting-agents-luton 200 in 94ms
+ ✓ Compiled /estate-agents-leicester in 158ms (325 modules)
+ GET /estate-agents-leicester 200 in 352ms
+ GET /landlord-services 200 in 81ms
+ ○ Compiling /tenant-services ...
+ ✓ Compiled /tenant-services in 1022ms (816 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 544ms (819 modules)
+ GET /images/Tenant%20services/Tenant_BANNER_IMG.png 404 in 814ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 135ms
+ GET /areas-we-cover 500 in 1105ms
+ GET /areas-we-cover 500 in 49ms
+ ○ Compiling /_not-found ...
+ GET /_next/static/chunks/fallback/webpack.js 500 in 525ms
+ GET /_next/static/chunks/fallback/main.js 500 in 485ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 190ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 485ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 197ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 45ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 45ms
+ GET /_next/static/chunks/fallback/main.js 500 in 43ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 31ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 26ms
+ ✓ Compiled /_not-found in 5.3s (831 modules)
+ GET /areas-we-cover 500 in 2509ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 343ms
+ GET /_next/static/chunks/fallback/main.js 404 in 403ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 90ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 87ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 91ms
+ GET /areas-we-cover 200 in 102ms
+ GET /areas-we-cover 200 in 87ms
+ GET /tenant-services 200 in 4663ms
+ GET /images/Tenant%20services/Tenant_BANNER_IMG.png 404 in 149ms
+ GET /tenant-services 200 in 156ms
+ GET /images/Tenant%20services/Tenant_BANNER_IMG.png 404 in 147ms
+ ✓ Compiled in 10.3s (829 modules)
+ ✓ Compiled (815 modules)
+ GET /landlord-services 404 in 925ms
+ ○ Compiling /landlord-services ...
+ ✓ Compiled /landlord-services in 1877ms (817 modules)
+ GET /landlord-services 200 in 165ms
+ GET /tenant-services 200 in 72ms
+ GET /landlord-services 200 in 173ms
