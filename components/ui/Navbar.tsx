@@ -48,6 +48,7 @@ export default function Navbar() {
         { name: "Finding Property", href: "/finding-property" },
         { name: "Buy Guide & Area Guide", href: "/buy-guide" },
         { name: "ROI Calculator", href: "/roi-calculator" },
+        { name: "Areas We Cover", href: "/areas-we-cover" },
       ]
     },
     { name: "Sell", href: "/sell" },

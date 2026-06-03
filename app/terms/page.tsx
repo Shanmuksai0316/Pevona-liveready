@@ -8,20 +8,20 @@ export default function TermsPage() {
           Pevona Ltd — Terms & Conditions
         </h1>
         <p className="font-manrope text-[14px] sm:text-[16px] text-gray-600 mb-8 sm:mb-10 md:mb-12">Last Updated: 2025</p>
-        
+
         <div className="prose prose-lg max-w-none">
           <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-12">
-          Pevona Ltd, trading as Pevona, is committed to full transparency in accordance with the Consumer Rights Act 2015 and the Tenant Fees Act 2019. Our fees are clearly outlined for landlords and tenants
+            Pevona Ltd, trading as Pevona, is committed to full transparency in accordance with the Consumer Rights Act 2015 and the Tenant Fees Act 2019. Our fees are clearly outlined for landlords and tenants
           </p>
-          
+
           <section className="mb-8 sm:mb-10 md:mb-12">
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               1. Introduction
             </h2>
             <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-4">
-                These Terms & Conditions constitute a legally binding agreement between Pevona Ltd ("We",
-                "Us", "The Agent") and you ("The Client", "You"). By instructing us, accessing our platform, or
-                using any of our property services, you explicitly agree to these terms.
+              These Terms & Conditions constitute a legally binding agreement between Pevona Ltd ("We",
+              "Us", "The Agent") and you ("The Client", "You"). By instructing us, accessing our platform, or
+              using any of our property services, you explicitly agree to these terms.
             </p>
             <div>
               <p className="font-manrope font-semibold text-[16px] md:text-[18px] text-gray-900 mb-2">Applicable To:</p>
@@ -59,7 +59,7 @@ export default function TermsPage() {
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               3. Scope of Services
             </h2>
-            
+
             <div className="mb-6 sm:mb-7 md:mb-8">
               <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Lettings Service Tiers
@@ -183,7 +183,7 @@ export default function TermsPage() {
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               6. Responsibilities
             </h2>
-            
+
             <div className="mb-4 sm:mb-5 md:mb-6">
               <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Landlord Obligations
@@ -223,7 +223,7 @@ export default function TermsPage() {
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               7. Compliance
             </h2>
-            
+
             <div className="mb-4 sm:mb-5 md:mb-6">
               <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Statutory Requirements
@@ -269,7 +269,7 @@ export default function TermsPage() {
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               8. Legal Terms
             </h2>
-            
+
             <div className="mb-4 sm:mb-5 md:mb-6">
               <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 Limitation of Liability
@@ -306,12 +306,9 @@ export default function TermsPage() {
             <h2 className="font-crimson text-[22px] sm:text-[24px] md:text-[28px] lg:text-3xl font-semibold text-[#002f57] mb-4 sm:mb-5 md:mb-6">
               9. Client Money Protection (CMP)
             </h2>
-            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">
-              Pevona Ltd is a member of the UK Association of Letting Agents. We are
-              covered by the Money Shield Client Money Protection (CMP) scheme. This provides
-              total loss protection for client money held by our agency, safeguarding landlords
-              and tenants in accordance with UK regulations.
-            </p>
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">Pevona Ltd is a member of Propertymark. We are covered by the Money Shield Client Money Protection (CMP) scheme, providing full protection for client funds held by our agency and safeguarding landlords and tenants in accordance with UK regulations.</p>
+
+            <p className="font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700 mb-6">All client money is managed in accordance with our Client Money Handling Procedures. Funds are held in designated client accounts, separate from company finances, with regular reconciliations, controlled access, and strict internal controls to ensure transparency, accuracy, and full regulatory compliance at all times.</p>
 
             <div className="mb-4 sm:mb-5 md:mb-6">
               <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
@@ -343,17 +340,17 @@ export default function TermsPage() {
                 Verification &amp; Downloads
               </h3>
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
-          
+
                 <li>
                   <strong>Download CMP Certificate (PDF):</strong>{" "}
-                  <a href="/images/Pevona Ltd Moneyshield CMP security cert 2026.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
-                  Money Shield certificate (PDF)
+                  <a href="/images/Client Money Protection.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                    CMP Certificate (PDF)
                   </a>
                 </li>
                 <li>
                   <strong>Download Money Shield Membership Certificate (PDF):</strong>{" "}
                   <a href="/images/Pevona Ltd Main Cert 2026.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
-                  Money Shield certificate (PDF)
+                    Money Shield certificate (PDF)
                   </a>
                 </li>
               </ul>
@@ -404,9 +401,9 @@ export default function TermsPage() {
               <h3 className="font-crimson text-[18px] sm:text-[20px] md:text-[22px] lg:text-2xl font-semibold text-[#002f57] mb-3 sm:mb-4">
                 PRS Contact &amp; Verification
               </h3>
-          
+
               <ul className="list-disc pl-6 space-y-2 font-manrope text-[16px] md:text-[18px] leading-[26px] md:leading-[28px] text-gray-700">
-                 <li><strong>Membership No:</strong> PRS056704</li>
+                <li><strong>Membership No:</strong> PRS056704</li>
                 <li><strong>Start Date:</strong>05/02/2026</li>
                 <li><strong>Expiry Date:</strong> 04/02/2027</li>
                 <li>
@@ -431,8 +428,8 @@ export default function TermsPage() {
                 </li>
                 <li>
                   <strong>View:</strong>{" "}
-<a href="/images/PRS MemberShip Certificate.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
-                  PRS Membership Certificate (PDF)
+                  <a href="/images/PRS MemberShip Certificate.pdf" target="_blank" rel="noopener" className="text-[#0073B5] hover:underline">
+                    PRS Membership Certificate (PDF)
                   </a>
                 </li>
               </ul>
