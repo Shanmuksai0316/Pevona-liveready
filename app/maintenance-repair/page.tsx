@@ -282,7 +282,7 @@ export default function MaintenanceRepairPage() {
           {/* Mobile Image */}
           <div className="relative w-full h-full lg:hidden">
             <Image
-              src="/images/maintenance%20%26%20repair/Maintainence-working%20together%20to%20keep%20properties%20safe-sec-bg-mbl.webp"
+              src="/images/maintenance-repair/maintenance-working-together-to-keep-properties-safe-sec-bg-mbl.webp"
               alt="Safe, well-maintained homes mobile"
               fill
               className="object-cover"
@@ -293,7 +293,7 @@ export default function MaintenanceRepairPage() {
           {/* Desktop Image */}
           <div className="relative w-full h-full hidden lg:block">
           <Image
-              src="/images/maintenance%20%26%20repair/Maintainence-working%20together%20to%20keep%20properties%20safe-sec-bg-dsk.webp"
+              src="/images/maintenance-repair/maintenance-working-together-to-keep-properties-safe-sec-bg-dsk.webp"
               alt="Safe, well-maintained homes desktop"
             fill
             className="object-cover"
