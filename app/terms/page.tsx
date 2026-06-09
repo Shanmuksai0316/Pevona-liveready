@@ -39,11 +39,13 @@ export default function TermsPage() {
             <div className="rounded-[16px] bg-[#f9fafb] p-4">
               <p className="font-manrope font-semibold text-[#002f57] mb-1">Termination</p>
               <p className="font-manrope text-[15px] md:text-[16px] leading-[24px] text-gray-700">
-                Where a Service Agreement is terminated prior to tenancy creation, cost recovery may apply. Where termination occurs during an active tenancy, a Termination Fee may apply.
+                Where a &ldquo;Service Agreement&rdquo; is terminated prior to tenancy creation, cost recovery may
+                apply. Where termination occurs during an active tenancy, a Termination Fee may apply. Further
+                details are set out in the full Terms of Business.
               </p>
             </div>
           </div>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          {/* <div className="mt-6 flex flex-wrap items-center gap-3">
             <a
               href="#full-terms"
               className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#002f57] px-5 py-3 font-manrope text-[14px] font-semibold text-white transition hover:bg-[#01365f]"
@@ -56,7 +58,7 @@ export default function TermsPage() {
             >
               View Full Terms on This Page
             </a>
-          </div>
+          </div> */}
         </section>
 
         <div className="prose prose-lg max-w-none">

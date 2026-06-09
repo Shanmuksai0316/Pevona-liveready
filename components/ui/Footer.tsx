@@ -37,7 +37,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="font-manrope font-normal text-[18px] leading-[28px] text-white">
-            Get an accurate, expert-led valuation tailored to your property and local market. Book now and take the next step with confidence.
+            Get a professional, expert-led valuation tailored to your property and local market. Book now and take the next step with confidence.
           </p>
           <Link href="/contact" className="bg-white hover:bg-gray-100 px-[10px] py-[10px] rounded-[8px] w-full lg:w-[240px] h-[56px] transition-colors inline-block text-center flex items-center justify-center">
             <span className="font-manrope font-semibold text-[18px] leading-[28px] text-[#002f57]">Book a Free Valuation</span>

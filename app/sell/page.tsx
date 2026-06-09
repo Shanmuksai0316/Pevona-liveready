@@ -18,13 +18,12 @@ function Card({
 }) {
   return (
     <div
-      className={`relative w-full min-w-0 rounded-[22px] overflow-hidden ${
-        large
-          ? "h-full min-h-[300px] sm:min-h-[400px] lg:min-h-[527px]"
-          : small
+      className={`relative w-full min-w-0 rounded-[22px] overflow-hidden ${large
+        ? "h-full min-h-[300px] sm:min-h-[400px] lg:min-h-[527px]"
+        : small
           ? "h-[200px] sm:h-[240px]"
           : "h-[240px] sm:h-[255px]"
-      }`}
+        }`}
     >
       {/* Image */}
       <Image src={image} alt={text} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" unoptimized />
@@ -85,11 +84,10 @@ export default async function SellPage() {
           <div className="lg:hidden relative flex items-end justify-center h-[850px] pb-[50px]">
             <div className="max-w-[780px] w-full text-center space-y-4 sm:space-y-6 text-white">
               <h1 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
-                Sell your property with clarity and confidence
+                Sales Services
               </h1>
               <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
-                From valuation to completion, each step is handled with clear communication, targeted
-                marketing and a structured sales process
+                At Pevona Ltd, we provide structured residential sales services designed to support sellers through each stage of the transaction process, from initial valuation to completion. All services are delivered using reasonable care and skill, supported by a transparent and process-driven approach.
               </p>
               <Link
                 href="/contact"
@@ -103,11 +101,10 @@ export default async function SellPage() {
           {/* Desktop Content - Original Layout */}
           <div className="hidden lg:block relative max-w-[780px] pt-[200px] sm:pt-[250px] md:pt-[300px] pb-[80px] sm:pb-[120px] md:pb-[150px] space-y-4 sm:space-y-6 text-white">
             <h1 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em]">
-              Sell your property with clarity and confidence
+              Sales Services
             </h1>
             <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-white/90">
-              From valuation to completion, each step is handled with clear communication, targeted
-              marketing and a structured sales process
+              At Pevona Ltd, we provide structured residential sales services designed to support sellers through each stage of the transaction process, from initial valuation to completion. All services are delivered using reasonable care and skill, supported by a transparent and process-driven approach.
             </p>
             <Link
               href="/contact"
@@ -142,15 +139,16 @@ export default async function SellPage() {
           {/* Left Section */}
           <div className="flex-1 w-full max-w-[600px] space-y-6 sm:space-y-8">
             <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#0073B5]">
-              How We Sell
+              Our Sales Approach
             </p>
             <h2 className="font-crimson text-[22px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.06em] text-[#002F57]">
-              A Simple 5-Step Process
+              Our Sales Approach
             </h2>
             <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333333]">
-              Whether you're a first-time buyer, a seasoned investor, or expanding your rental
-              portfolio, our structured approach removes uncertainty. We focus on clarity, due
-              diligence, and informed decision-making, giving you confidence at every step.
+              We take reasonable steps to assess your property, provide market guidance, develop a
+              tailored marketing strategy, promote your property across major platforms, manage
+              enquiries and viewings, support negotiation, and liaise with solicitors through to
+              completion.
             </p>
             <Link
               href="/contact"
@@ -168,24 +166,17 @@ export default async function SellPage() {
             <div className="space-y-[40px] sm:space-y-[50px] pl-[40px] sm:pl-[50px] lg:pl-[60px]">
               {[
                 {
-                  title: "Valuation & Sale Strategy",
-                  body: "We assess the property, review local market conditions and agree a pricing strategy that suits your goals.",
+                  title: "Assess property, provide market guidance, develop tailored strategy",
                 },
                 {
-                  title: "Marketing Preparation",
-                  body: "We arrange professional photography, floorplans and listing assets that present your property at its best",
+                  title: "Promote across major platforms",
                 },
                 {
-                  title: "Targeted Exposure",
-                  body: "Your property is promoted through major UK portals and our active buyer network for maximum visibility.",
+                  title: "Manage enquiries, viewings, support negotiation",
                 },
                 {
-                  title: "Viewings & Offers",
-                  body: "We manage enquiries, conduct viewings, vet buyers, and support you with offer review and negotiation.",
-                },
-                {
-                  title: "Exchange & Completion",
-                  body: "We coordinate with solicitors, monitor progress and keep you updated until the sale is completed.",
+                  title: "Liaise with solicitors through to completion",
+
                 },
               ].map((step, index) => (
                 <div key={index} className="relative flex gap-4 sm:gap-6">
@@ -197,9 +188,9 @@ export default async function SellPage() {
                     <h3 className="font-crimson text-[22px] sm:text-[24px] md:text-[26px] leading-[28px] sm:leading-[30px] text-[#002F57]">
                       {step.title}
                     </h3>
-                    <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333333]">
+                    {/* <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333333]">
                       {step.body}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               ))}
@@ -327,20 +318,41 @@ export default async function SellPage() {
         </div>
       </section>
 
-      {/* Get an Accurate Market Valuation */}
+      {/* Property Valuation */}
       <section className="max-w-[1600px] 1920:max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px] flex flex-col lg:flex-row gap-[40px] sm:gap-[60px] lg:gap-[78px] items-center shadow-none">
-        <div className="w-full lg:flex-1 max-w-[589px] space-y-4">
-          <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
-            Get an Accurate Market Valuation
-          </h2>
-          <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333] opacity-80">
-            Understanding your property's true market value is the first step to a successful sale.
-            Our expert valuations combine local market knowledge, recent comparable sales, and
-            current market trends.
-          </p>
+        <div className="w-full lg:flex-1 max-w-[589px] space-y-6">
+          <div className="space-y-4">
+            <h2 className="font-crimson text-[22px] md:text-[56px] leading-tight md:leading-[56px] tracking-tight md:tracking-[-1.68px] text-[#002f57]">
+              Property Valuation — Understanding your property&apos;s potential market value
+            </h2>
+            <p className="font-manrope text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] text-[#333] opacity-80">
+              Understanding your property&apos;s potential market value is the first step in the sales process.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h3 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[24px] text-[#002f57]">
+              Our Valuation Approach
+            </h3>
+            <p className="font-manrope text-[15px] sm:text-[16px] leading-[24px] text-[#333] opacity-80">
+              We take reasonable steps to assess your property by considering local market conditions,
+              comparable data, property condition, and buyer demand.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h3 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[24px] text-[#002f57]">
+              Important Notice
+            </h3>
+            <p className="font-manrope text-[14px] sm:text-[15px] leading-[22px] text-[#333] opacity-60 italic">
+              Valuations are professional opinions based on information available at the time and do not
+              constitute a guaranteed sale price. Market conditions may affect the final outcome.
+            </p>
+          </div>
+
           <Link
             href="/contact"
-            className="inline-block mt-4 sm:mt-6 bg-[#002f57] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#003d70] transition-colors"
+            className="inline-block mt-2 bg-[#002f57] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] font-manrope font-semibold text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] hover:bg-[#003d70] transition-colors"
           >
             Request Valuation
           </Link>
@@ -357,7 +369,58 @@ export default async function SellPage() {
         </div>
       </section>
 
+      {/* Charges & Fees Section */}
+      <section className="bg-white py-[40px] sm:py-[60px] md:py-[80px] lg:py-[120px] mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[140px]">
+        <div className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px]">
+          <h2 className="font-crimson text-[32px] md:text-[56px] lg:text-[66px] leading-tight md:leading-[1.05] tracking-tight md:tracking-[-0.04em] text-[#002F57] text-center mb-[40px] sm:mb-[60px] md:mb-[80px]">
+            Charges & Fees
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-6 lg:p-8 space-y-3">
+              <h3 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[24px] text-[#002f57]">
+                Charges & Fees
+              </h3>
+              <p className="font-manrope text-[15px] sm:text-[16px] leading-[24px] text-[#333333] opacity-80">
+                Our sales fees are transparent, fair, and aligned with industry standards. Fees reflect the work undertaken and are confirmed in writing at the point of instruction.
+              </p>
+            </div>
+            <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-6 lg:p-8 space-y-3">
+              <h3 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[24px] text-[#002f57]">
+                Commission Structure
+              </h3>
+              <p className="font-manrope text-[15px] sm:text-[16px] leading-[24px] text-[#333333] opacity-80">
+                Sales fees are typically charged as a percentage of the final agreed sale price and are payable upon successful completion of the transaction.
+              </p>
+            </div>
+            <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-6 lg:p-8 space-y-3">
+              <h3 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[24px] text-[#002f57]">
+                Withdrawal & Cancellation
+              </h3>
+              <p className="font-manrope text-[15px] sm:text-[16px] leading-[24px] text-[#333333] opacity-80">
+                If the property is withdrawn prior to completion, reasonable and evidenced costs incurred may apply, including marketing, advertising, and administrative costs. All charges will be fair, proportionate, and transparently itemised upon request.
+              </p>
+            </div>
+            <div className="bg-white border border-[rgba(0,0,0,0.12)] rounded-[16px] p-6 lg:p-8 space-y-3">
+              <h3 className="font-crimson font-semibold text-[20px] sm:text-[22px] md:text-[24px] text-[#002f57]">
+                Agency Terms
+              </h3>
+              <p className="font-manrope text-[15px] sm:text-[16px] leading-[24px] text-[#333333] opacity-80">
+                The agency arrangement will be defined as either sole agency or multi-agency and confirmed in writing at the point of instruction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Important Notice */}
+      <section className="max-w-[1600px] mx-auto px-5 350:px-5 480:px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[80px] 1400:px-[80px] 1500:px-[100px] 1600:px-[130px] mt-8 mb-12">
+        <div className="bg-[#f7f7f3] border-l-4 border-[#002f57] p-6 rounded-r-[12px]">
+          <p className="font-manrope font-semibold text-[16px] sm:text-[18px] text-[#002f57] mb-2">Important Notice:</p>
+          <p className="font-manrope text-[15px] sm:text-[16px] leading-[24px] text-[#333333] opacity-90">
+            Pevona Ltd provides professional guidance throughout the sales process; however, market conditions, buyer behaviour, and transaction timelines are outside our control and cannot be guaranteed.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

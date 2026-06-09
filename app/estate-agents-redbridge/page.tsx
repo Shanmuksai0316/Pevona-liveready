@@ -122,15 +122,6 @@ export default function EstateAgentsRedbridgePage() {
               </Link>
             ))}
           </div>
-
-          <div className="mt-10 flex justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex min-h-[54px] items-center justify-center rounded-full bg-[#061e38] px-8 py-3 text-[14px] font-semibold text-white transition hover:bg-[#031224]"
-            >
-              Book a Free Valuation
-            </Link>
-          </div>
         </div>
       </section>
 

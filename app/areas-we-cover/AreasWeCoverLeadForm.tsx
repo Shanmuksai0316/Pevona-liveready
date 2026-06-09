@@ -149,30 +149,6 @@ export default function AreasWeCoverLeadForm() {
           </div>
         </form>
 
-        <div className="mt-6 grid gap-3 sm:grid-cols-2">
-          <a
-            href="tel:+442036329485"
-            className="rounded-[20px] border border-[#e5e9ef] bg-[#f9fafb] px-5 py-4 transition hover:border-[#cfd8e3] hover:bg-white"
-          >
-            <p className="font-manrope text-[12px] font-semibold uppercase tracking-[0.18em] text-[#7c8b91]">
-              Phone
-            </p>
-            <p className="mt-2 font-crimson text-[24px] leading-tight text-[#061e38]">
-              +44-203-632-9485
-            </p>
-          </a>
-          <a
-            href="mailto:admin-pev@pevonaltd.co.uk"
-            className="rounded-[20px] border border-[#e5e9ef] bg-[#f9fafb] px-5 py-4 transition hover:border-[#cfd8e3] hover:bg-white"
-          >
-            <p className="font-manrope text-[12px] font-semibold uppercase tracking-[0.18em] text-[#7c8b91]">
-              Callback or email
-            </p>
-            <p className="mt-2 font-crimson text-[24px] leading-tight text-[#061e38]">
-              Speak to a Property Expert
-            </p>
-          </a>
-        </div>
       </div>
     </div>
   );

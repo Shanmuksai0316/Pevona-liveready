@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/about/page": [
+    "/sell/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/page.js"
+      "static/chunks/app/sell/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,55 +11,70 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/charges-fees/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
-    "/areas-we-cover/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/areas-we-cover/page.js"
-    ],
-    "/property-management/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/property-management/page.js"
+      "static/chunks/app/charges-fees/page.js"
     ],
     "/terms/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/terms/page.js"
     ],
-    "/properties-to-let/page": [
+    "/landlord-services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/properties-to-let/page.js"
+      "static/chunks/app/landlord-services/page.js"
     ],
-    "/charges-fees/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/charges-fees/page.js"
+      "static/chunks/app/page.js"
     ],
-    "/application-process/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/application-process/page.js"
+      "static/chunks/app/about/page.js"
     ],
-    "/sell/page": [
+    "/compliance-licensing/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/sell/page.js"
+      "static/chunks/app/compliance-licensing/page.js"
     ],
-    "/estate-agents-london/page": [
+    "/tenant-services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/estate-agents-london/page.js"
+      "static/chunks/app/tenant-services/page.js"
+    ],
+    "/areas-we-cover/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/areas-we-cover/page.js"
+    ],
+    "/finding-property/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/finding-property/page.js"
+    ],
+    "/buy-guide/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/buy-guide/page.js"
+    ],
+    "/roi-calculator/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/roi-calculator/page.js"
     ],
     "/estate-agents-redbridge/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/estate-agents-redbridge/page.js"
+    ],
+    "/estate-agents-london/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/estate-agents-london/page.js"
     ],
     "/property-management-essex/page": [
       "static/chunks/webpack.js",
@@ -76,15 +91,85 @@
       "static/chunks/main-app.js",
       "static/chunks/app/estate-agents-leicester/page.js"
     ],
-    "/tenant-services/page": [
+    "/properties-to-let/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/tenant-services/page.js"
+      "static/chunks/app/properties-to-let/page.js"
     ],
-    "/landlord-services/page": [
+    "/application-process/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/landlord-services/page.js"
+      "static/chunks/app/application-process/page.js"
+    ],
+    "/our-management-services/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/our-management-services/page.js"
+    ],
+    "/maintenance-repair/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/maintenance-repair/page.js"
+    ],
+    "/hmo/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hmo/page.js"
+    ],
+    "/client-portal/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/client-portal/page.js"
+    ],
+    "/investments/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/investments/page.js"
+    ],
+    "/market-insights/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/market-insights/page.js"
+    ],
+    "/portfolio-management/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/portfolio-management/page.js"
+    ],
+    "/international-properties/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/international-properties/page.js"
+    ],
+    "/international-properties/buea-cameroon/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/international-properties/buea-cameroon/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
+    ],
+    "/buy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/buy/page.js"
+    ],
+    "/rent/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rent/page.js"
+    ],
+    "/property-management/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/property-management/page.js"
+    ],
+    "/properties/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/properties/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

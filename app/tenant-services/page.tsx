@@ -24,14 +24,14 @@ export default function TenantServicesPage() {
           {/* Desktop Background */}
           <div className="hidden lg:block absolute inset-0 z-0 -mx-[60px] lg:-mx-[80px] 1300:-mx-[80px] 1400:-mx-[80px] 1500:-mx-[100px] 1600:-mx-[130px]">
             <div className="relative w-full h-[760px] rounded-b-[36px] overflow-hidden">
-              <Image
-                src="/images/Tenant services/Tenant_BANNER_IMG.png"
-                alt="Supportive tenancy consultation"
-                fill
-                className="object-cover"
-                sizes="100vw"
-                unoptimized
-              />
+            <Image
+              src="/images/Tenant__BANNER_IMG.png"
+              alt="Supportive tenancy consultation"
+              fill
+              className="object-cover"
+              sizes="100vw"
+              unoptimized
+            />
             </div>
           </div>
 

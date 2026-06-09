@@ -1,8 +1,9 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/estate-agents-london/page": "app/estate-agents-london/page.js",
+  "/charges-fees/page": "app/charges-fees/page.js",
   "/areas-we-cover/page": "app/areas-we-cover/page.js",
-  "/tenant-services/page": "app/tenant-services/page.js",
-  "/property-management-essex/page": "app/property-management-essex/page.js",
-  "/landlord-services/page": "app/landlord-services/page.js"
+  "/page": "app/page.js",
+  "/application-process/page": "app/application-process/page.js",
+  "/properties-to-let/page": "app/properties-to-let/page.js",
+  "/finding-property/page": "app/finding-property/page.js"
 }

@@ -103,10 +103,10 @@ const relatedLinks = [
 export default function AreasWeCoverPage() {
   return (
     <main className="bg-[#fafafa] text-[#374151]">
-      <section className="overflow-hidden bg-[#061e38] text-white">
+      <section className="overflow-hidden bg-[#002f57] text-white">
         <div className="mx-auto grid max-w-[1600px] lg:grid-cols-[1.02fr_0.98fr]">
           <div className="relative px-5 pb-16 pt-32 sm:px-10 lg:px-[80px] lg:pb-20 lg:pt-40">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(45,212,191,0.18),transparent_34%),linear-gradient(135deg,#061e38_0%,#082649_55%,#10375f_100%)]" />
+            <div className="absolute inset-0 bg-[#002f57]" />
             <div className="relative z-10 max-w-3xl">
               <h1 className="mt-6 max-w-3xl font-crimson text-[42px] leading-[1.04] text-white sm:text-[58px] lg:text-[74px]">
                 Property Services Across London, Essex &amp; Key UK Regions
@@ -160,11 +160,10 @@ export default function AreasWeCoverPage() {
             </div>
           </div>
 
-          <div className="relative min-h-[420px] overflow-hidden lg:min-h-[780px]">
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,30,56,0.18),rgba(6,30,56,0.58)),radial-gradient(circle_at_top_right,rgba(45,212,191,0.28),transparent_25%),linear-gradient(135deg,#184a6f_0%,#10375f_38%,#f3efe5_38%,#f3efe5_100%)]" />
+          <div className="relative min-h-[420px] overflow-hidden bg-[#002f57] lg:min-h-[780px]">
             <div className="absolute inset-0 flex items-end justify-end p-6 sm:p-10 lg:p-12">
               <div className="grid w-full max-w-[620px] gap-4 sm:grid-cols-2">
-                {seoPages.slice(0, 4).map((page, index) => (
+                {seoPages.map((page, index) => (
                   <Link
                     key={page.href}
                     href={page.href}
@@ -195,29 +194,31 @@ export default function AreasWeCoverPage() {
       </section>
 
       <section className="bg-white py-16 sm:py-20 lg:py-24">
-        <div className="mx-auto grid max-w-[1600px] gap-10 px-5 650:px-[60px] lg:grid-cols-[0.95fr_1.05fr] lg:px-[40px] 1100:px-[80px] 1300:px-[100px]">
-          <div>
-            <h2 className="font-crimson text-[34px] leading-tight text-[#061e38] sm:text-[44px] lg:text-[54px]">
-              Introduction
-            </h2>
-          </div>
-          <div className="space-y-5">
-            <p className="font-manrope text-[15px] leading-[26px] text-[#52606d] sm:text-[16px] sm:leading-[28px]">
-              At Pevona Ltd, we provide professional estate agency, lettings, and
-              property management services across London, Essex, and selected UK regions.
-              Our approach is centred on transparency, compliance, structured management,
-              and long-term value for clients.
-            </p>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {valuePoints.map((point) => (
-                <div
-                  key={point}
-                  className="rounded-[20px] border border-[#e6eaef] bg-[#f8fafc] px-4 py-4 font-manrope text-[14px] font-medium text-[#1f2937] shadow-sm"
-                >
-                  {point}
-                </div>
-              ))}
+        <div className="mx-auto max-w-[1600px] px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[100px]">
+          <div className="grid items-start gap-10 lg:grid-cols-[0.82fr_1.18fr]">
+            <div className="lg:pr-6">
+              <h2 className="font-crimson text-[34px] leading-tight text-[#061e38] sm:text-[44px] lg:text-[54px]">
+                Introduction
+              </h2>
             </div>
+            <div>
+              <p className="font-manrope text-[15px] leading-[26px] text-[#52606d] sm:text-[16px] sm:leading-[28px]">
+                At Pevona Ltd, we provide professional estate agency, lettings, and
+                property management services across London, Essex, and selected UK regions.
+                Our approach is centred on transparency, compliance, structured management,
+                and long-term value for clients.
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {valuePoints.map((point) => (
+              <div
+                key={point}
+                className="w-full rounded-[20px] border border-[#e6eaef] bg-[#f8fafc] px-5 py-6 font-manrope text-[15px] font-medium text-[#1f2937] shadow-sm flex items-center justify-center text-center"
+              >
+                {point}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -230,22 +231,22 @@ export default function AreasWeCoverPage() {
             </h2>
           </div>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+          <div className="mt-10 grid gap-[16px] lg:grid-cols-3">
             {servicePathways.map((pathway) => (
               <article
                 key={pathway.label}
                 className={`group overflow-hidden rounded-[30px] bg-gradient-to-br ${pathway.accent} p-[1px] shadow-[0_20px_60px_rgba(6,30,56,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_80px_rgba(6,30,56,0.18)]`}
               >
-                <div className="h-full rounded-[29px] bg-[#061e38] p-7 text-white">
-                  <span className="inline-flex rounded-full border border-white/12 bg-white/8 px-3 py-2 text-[12px] font-semibold uppercase tracking-[0.22em] text-white/72">
+                <div className="flex min-h-[300px] h-full flex-col rounded-[29px] bg-[#061e38] p-7 text-white">
+                  <span className="inline-flex w-fit rounded-full border border-white/10 bg-transparent px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.26em] text-white/88">
                     {pathway.label}
                   </span>
-                  <h3 className="mt-5 font-crimson text-[30px] leading-tight text-white">
+                  <h3 className="mt-7 w-full font-crimson text-[30px] leading-tight text-white">
                     {pathway.title}
                   </h3>
                   <Link
                     href={pathway.href}
-                    className="mt-8 inline-flex min-h-[52px] items-center justify-center rounded-full border border-white/12 bg-white/8 px-6 py-3 font-manrope text-[14px] font-semibold text-white transition hover:bg-white hover:text-[#061e38]"
+                    className="mt-auto inline-flex min-h-[52px] w-fit items-center justify-center rounded-full border border-white/12 bg-white/8 px-6 py-3 font-manrope text-[14px] font-semibold text-white transition hover:bg-white hover:text-[#061e38]"
                   >
                     {pathway.cta}
                   </Link>
@@ -369,42 +370,6 @@ export default function AreasWeCoverPage() {
             <h2 className="font-crimson text-[34px] leading-tight text-[#061e38] sm:text-[44px] lg:text-[54px]">
               Conversion Section
             </h2>
-
-            <div className="mt-8 space-y-4">
-              <a
-                href="tel:+442036329485"
-                className="flex items-center justify-between rounded-[24px] border border-[#dbe2ea] bg-white px-5 py-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div>
-                  <p className="font-manrope text-[12px] font-semibold uppercase tracking-[0.2em] text-[#7c8b91]">
-                    Call us
-                  </p>
-                  <p className="mt-2 font-crimson text-[28px] leading-tight text-[#061e38]">
-                    +44-203-632-9485
-                  </p>
-                </div>
-                <span className="font-manrope text-[14px] font-semibold text-[#061e38]">
-                  Immediate callback option
-                </span>
-              </a>
-
-              <Link
-                href="/contact"
-                className="flex items-center justify-between rounded-[24px] border border-[#dbe2ea] bg-white px-5 py-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div>
-                  <p className="font-manrope text-[12px] font-semibold uppercase tracking-[0.2em] text-[#7c8b91]">
-                    Prefer email
-                  </p>
-                  <p className="mt-2 font-crimson text-[28px] leading-tight text-[#061e38]">
-                    Speak to a Property Expert
-                  </p>
-                </div>
-                <span className="font-manrope text-[14px] font-semibold text-[#061e38]">
-                  Contact page
-                </span>
-              </Link>
-            </div>
           </div>
 
           <AreasWeCoverLeadForm />
@@ -419,12 +384,12 @@ export default function AreasWeCoverPage() {
             </h2>
           </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {governanceLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-[22px] border border-[#e5e9ef] bg-[#f8fafc] px-5 py-5 font-manrope text-[15px] font-medium text-[#1f2937] transition hover:border-[#cfd8e3] hover:bg-white"
+                className="rounded-full border border-[#e5e9ef] bg-[#f8fafc] px-6 py-3 min-h-[56px] flex items-center font-manrope text-[15px] font-medium text-[#1f2937] transition hover:border-[#cfd8e3] hover:bg-white"
               >
                 {link.name}
               </Link>
