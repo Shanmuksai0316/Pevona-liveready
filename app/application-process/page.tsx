@@ -10,7 +10,7 @@ export default function ApplicationProcessPage() {
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
-                src="/images/Application process/Application_process_banner.png"
+                src="/images/Application_process_banner.png"
                 alt="Rental application form"
                 fill
                 className="object-cover"

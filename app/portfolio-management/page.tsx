@@ -10,7 +10,7 @@ export default function PortfolioManagementPage() {
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
-                src="/images/Portfolio page/Portfolio_page_banne.png"
+                src="/images/Portfolio_page_banne.png"
                 alt="House investments elements"
                 fill
                 className="object-cover"

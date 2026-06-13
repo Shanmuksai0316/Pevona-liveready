@@ -10,7 +10,7 @@ export default function OurManagementServicesPage() {
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
-                src="/images/Our Management Services/mang_bg_img.png"
+                src="/images/mang_bg_img.png"
                 alt="Professional property management"
                 fill
                 className="object-cover"

@@ -128,12 +128,15 @@ export default function EstateAgentsRedbridgePage() {
       <section className="bg-[#061e38] py-16 text-white sm:py-20 lg:py-28">
         <div className="mx-auto max-w-[1320px] px-5 650:px-[60px] lg:px-[40px] 1100:px-[80px] 1300:px-[100px]">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-20">
-            <div className="order-2 overflow-hidden rounded-[24px] shadow-2xl lg:order-1">
-              <div
-                className="h-[420px] w-full bg-cover bg-center sm:h-[500px] lg:h-[560px]"
-                style={{
-                  backgroundImage: "url('/images/estate-agents-redbridge/areas-we-cover-v2.png')",
-                }}
+            <div className="order-2 overflow-hidden rounded-[24px] shadow-2xl lg:order-1 h-[420px] w-full sm:h-[500px] lg:h-[560px]">
+              <iframe
+                src="https://www.google.com/maps?q=Redbridge,%20London&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
 
@@ -188,10 +191,6 @@ export default function EstateAgentsRedbridgePage() {
             <h2 className="font-crimson text-[32px] leading-tight text-[#061e38] sm:text-[42px] lg:text-[48px]">
               Area Index &amp; Internal Links
             </h2>
-            <p className="mt-4 max-w-3xl font-manrope text-[15px] leading-[27px] text-[#52606d] sm:text-[16px] sm:leading-[29px]">
-              Use this page and our central areas hub to browse every SEO location page,
-              improve internal linking, and support clearer user navigation between services and regions.
-            </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {relatedLinks.map((link) => (
                 <Link

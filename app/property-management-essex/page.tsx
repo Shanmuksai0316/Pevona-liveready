@@ -174,7 +174,6 @@ export default function PropertyManagementEssexPage() {
             </div>
             <div className="rounded-[30px] border border-[#e5e9ef] bg-[#f9fafb] p-7 sm:p-8">
               <h2 className="font-crimson text-[32px] leading-tight text-[#061e38] sm:text-[42px] lg:text-[48px]">Area Index &amp; Internal Links</h2>
-              <p className="mt-4 max-w-3xl font-manrope text-[15px] leading-[27px] text-[#52606d] sm:text-[16px] sm:leading-[29px]">Use this page alongside our central areas hub to navigate all SEO location pages, strengthen internal linking, and support smoother navigation for landlords and investors.</p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {relatedLinks.map((link) => (<Link key={link.href} href={link.href} className="rounded-[18px] border border-[#dbe2ea] bg-white px-4 py-4 font-manrope text-[14px] font-medium text-[#1f2937] transition hover:border-[#cfd8e3]">{link.name}</Link>))}
               </div>

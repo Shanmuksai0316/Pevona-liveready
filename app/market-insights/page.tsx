@@ -15,7 +15,7 @@ export default async function MarketInsightsPage() {
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-[760px] min-h-[760px] rounded-b-[24px] sm:rounded-b-[30px] lg:rounded-b-[36px] overflow-hidden">
               <Image
-                src="/images/Market Insights/Market_Insights_banner.png"
+                src="/images/Market_Insights_banner.png"
                 alt="Examining business documents"
                 fill
                 className="object-cover"

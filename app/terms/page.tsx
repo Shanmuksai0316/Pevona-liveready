@@ -418,12 +418,8 @@ export default function TermsPage() {
               The downloadable full Terms of Business PDF will be linked here once available.
             </p>
             <div className="mt-4">
-              <a
-                href="#full-terms"
-                className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#002f57] px-5 py-3 font-manrope text-[14px] font-semibold text-white transition hover:bg-[#01365f]"
-              >
-                Download Full Terms of Business (PDF)
-              </a>
+              <a href="/images/Terms of Business Summary (Website Replacement Content).pdf" download target="_blank" rel="noopener" className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#002f57] px-5 py-3 font-manrope text-[14px] font-semibold text-white transition hover:bg-[#01365f]" >
+                Download Full Terms of Business (PDF)</a>
             </div>
           </section>
 
